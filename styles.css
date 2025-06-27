@@ -1,0 +1,83 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.landing-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    rgba(0,0,0,0.3) 33%,
+    rgba(0,0,0,0.2) 66%,
+    rgba(0,0,0,0.4) 100%
+  );
+}
+
+.animated-title {
+  font-size: 3rem;
+  color: #fff;
+  letter-spacing: 0.15em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: 700;
+  text-shadow: 0 4px 24px rgba(0,0,0,0.6), 0 1px 0 #e0456e;
+}
+
+.animated-title span {
+  opacity: 0;
+  transform: translateY(40px) scale(0.8) rotate(-8deg);
+  animation: fadeInText 0.8s forwards;
+  animation-delay: calc(0.05s * var(--i));
+  display: inline-block;
+}
+
+.animated-title span {
+  /* Assign CSS variable for animation delay based on index with JS */
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.8) rotate(-8deg);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-7px) scale(1.1) rotate(5deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .animated-title {
+    font-size: 1.6rem;
+    padding: 0 0.5em;
+  }
+}
