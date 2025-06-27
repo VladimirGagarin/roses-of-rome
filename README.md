@@ -1,12 +1,12 @@
-# 🌹 Roses of Romee
+# 🌹 Roses of Rome
 
-**Roses of Romee** is a cinematic and artistic website that celebrates storytelling through elegance, emotion, and design. It serves as the official home of *Roses of Rome Pictures*, blending visual creativity with deep narratives, from ancient themes to futuristic dreams.
+**Roses of Rome** is a cinematic and artistic website that celebrates storytelling through elegance, emotion, and design. It serves as the official home of *Roses of Rome Pictures*, blending visual creativity with deep narratives, from ancient themes to futuristic dreams.
 
 ---
 
 ## 🎬 About
 
-Roses of Romee is more than a website — it's a gateway to a world of:
+Roses of Rome is more than a website — it's a gateway to a world of:
 - Original films like **God Not God: Grand Order of Design (G.O.D.)**
 - Musical creations such as **Impeccable Arms**, **Trápeza Metamýēsis**, and more
 - Sacred inspirations, angelic tales, and spiritual concepts wrapped in cinematic style
@@ -18,7 +18,7 @@ Crafted with care by **Kevo**, this project weaves art, faith, and technology in
 ## 🛠️ Tech Stack
 
 - **HTML5, CSS3, JavaScript**
-- **Vanilla JS animations** and scroll effects
+- **React** and scroll effects
 - **Responsive design**
 - GitHub for version control and publishing
 
