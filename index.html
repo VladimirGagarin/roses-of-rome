@@ -8,11 +8,14 @@
 </head>
 <body>
   <header>
-    <video class="landing-video" playsinline>
+    <video class="landing-video" playsinline id="landingVideo">
       <source src="rorp.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <div class="controls"></div>
+    <div class="controls">
+      <button id="playPauseBtn" aria-label="Play/Pause">⏸️</button>
+      <button id="muteBtn" aria-label="Mute/Unmute">🔊</button>
+    </div>
     <div class="overlay">
       <h1 class="animated-title">
         <span>R</span><span>o</span><span>s</span><span>e</span><span>s</span>
@@ -29,5 +32,45 @@
     <!-- You can add studio info, gallery, contact, etc. here -->
   </main>
   <script src="animated-title.js"></script>
+  <script>
+    // Video controls logic
+    const video = document.getElementById('landingVideo');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const muteBtn = document.getElementById('muteBtn');
+
+    // Set initial button states
+    function updatePlayPauseIcon() {
+      playPauseBtn.textContent = video.paused ? '▶️' : '⏸️';
+    }
+
+    function updateMuteIcon() {
+      muteBtn.textContent = video.muted ? '🔇' : '🔊';
+    }
+
+    playPauseBtn.addEventListener('click', () => {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+      updatePlayPauseIcon();
+    });
+
+    muteBtn.addEventListener('click', () => {
+      video.muted = !video.muted;
+      updateMuteIcon();
+    });
+
+    // Update icons on state change
+    video.addEventListener('play', updatePlayPauseIcon);
+    video.addEventListener('pause', updatePlayPauseIcon);
+    video.addEventListener('volumechange', updateMuteIcon);
+
+    // Set initial icons on load
+    document.addEventListener('DOMContentLoaded', () => {
+      updatePlayPauseIcon();
+      updateMuteIcon();
+    });
+  </script>
 </body>
 </html>
