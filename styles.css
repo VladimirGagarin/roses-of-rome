@@ -24,60 +24,66 @@ header {
 
 .overlay {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(
-    rgba(0,0,0,0.3) 33%,
-    rgba(0,0,0,0.2) 66%,
-    rgba(0,0,0,0.4) 100%
-  );
+  pointer-events: none;
 }
 
 .animated-title {
   font-size: 3rem;
   color: #fff;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.6);
   letter-spacing: 0.15em;
+  font-family: 'Georgia', serif;
+  text-align: center;
+}
+
+.controls {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  font-weight: 700;
-  text-shadow: 0 4px 24px rgba(0,0,0,0.6), 0 1px 0 #e0456e;
+  gap: 1.2rem;
+  background: rgba(0,0,0,0.4);
+  padding: 0.7rem 1.6rem;
+  border-radius: 2.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.20);
 }
 
-.animated-title span {
-  opacity: 0;
-  transform: translateY(40px) scale(0.8) rotate(-8deg);
-  animation: fadeInText 0.8s forwards;
-  animation-delay: calc(0.05s * var(--i));
-  display: inline-block;
+.controls button {
+  background: none;
+  border: none;
+  font-size: 1.7rem;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: color 0.2s;
+  padding: 0 0.5rem;
 }
 
-.animated-title span {
-  /* Assign CSS variable for animation delay based on index with JS */
+.controls button:hover, .controls button:focus {
+  color: #f7b6b6;
 }
 
-@keyframes fadeInText {
-  0% {
-    opacity: 0;
-    transform: translateY(40px) scale(0.8) rotate(-8deg);
-  }
-  70% {
-    opacity: 1;
-    transform: translateY(-7px) scale(1.1) rotate(5deg);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1) rotate(0deg);
-  }
-}
-
-/* Responsive */
 @media (max-width: 600px) {
   .animated-title {
-    font-size: 1.6rem;
-    padding: 0 0.5em;
+    font-size: 1.5rem;
+  }
+  .controls {
+    padding: 0.4rem 0.8rem;
+    gap: 0.5rem;
+  }
+  .controls button {
+    font-size: 1.1rem;
   }
 }
+/* Responsive */
+
