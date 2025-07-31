@@ -1,0 +1,1 @@
+import{FaPlay, FaPause, FaArrowLeft} from 

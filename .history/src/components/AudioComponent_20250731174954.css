@@ -1,0 +1,99 @@
+.audio-component {
+  width: 90%;
+  margin: 1.5em auto;
+  padding: 1.5em 1.2em;
+  background: #fff;
+  box-shadow: 0 2px 14px #0002;
+  border-radius: 14px;
+  position:fixed;
+  bottom:0;
+  left: 0;
+  right: 0;
+  z
+  font-family: system-ui, serif;
+}
+.audio-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.audio-back {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  margin-right: 0.7em;
+  cursor: pointer;
+  color: #374151;
+}
+.audio-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  flex: 1;
+  text-align: left;
+  color: #222;
+}
+.audio-controls {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.audio-playpause {
+  background: #f1f5f9;
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35em;
+  color: #374151;
+  cursor: pointer;
+  box-shadow: 0 1px 4px #0001;
+  transition: background 0.15s;
+}
+.audio-playpause:hover {
+  background: #e0e7ef;
+}
+.audio-progress-container {
+  flex: 1;
+  cursor: pointer;
+  height: 16px;
+  display: flex;
+  align-items: center;
+}
+.audio-progress-bar {
+  width: 100%;
+  height: 5px;
+  background: #e5e7eb;
+  border-radius: 2.5px;
+  overflow: hidden;
+  position: relative;
+}
+.audio-progress {
+  height: 100%;
+  background: #3b82f6;
+  border-radius: 2.5px 0 0 2.5px;
+  transition: width 0.18s linear;
+}
+.audio-time {
+  font-size: 0.95em;
+  width: 68px;
+  text-align: right;
+  color: #4b5563;
+}
+.audio-overlay {
+  position: absolute;
+  inset: 0;
+  background: #fff9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #2563eb;
+  border-radius: 14px;
+  pointer-events: none;
+  z-index: 5;
+  transition: opacity 0.2s;
+}
