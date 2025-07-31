@@ -155,7 +155,7 @@ body {
   text-align: center;
   margin-bottom: 1rem;
   font-size: 0.95rem;
-  color: red;
+  color: #;
   font-style: italic;
 }
 
@@ -184,8 +184,5 @@ body {
     ),
     url("/sonnet_bg.jpg");
       color: white;
-  }
-  .audio-notice {
-    color: orange;
   }
 }

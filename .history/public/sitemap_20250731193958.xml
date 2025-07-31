@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://vladimirgagarin.github.io/roses-of-rome/</loc>
+    <priority>1.0</priority>
+    <changefreq>daily</changefreq>
+  </url>
+  <!--
+    Add more <url> blocks if you have subpages, like:
+    <url>
+      <loc>https://vladimirgagarin.github.io/roses-of-rome/about</loc>
+      <priority>0.8</priority>
+      <changefreq>weekly</changefreq>
+    </url>
+  -->
+</urlset>

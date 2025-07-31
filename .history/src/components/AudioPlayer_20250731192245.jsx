@@ -49,8 +49,7 @@ export default function AudioComponent({ audioFile, title }) {
     const audio = audioRef.current;
       if (!audio) return;
       
-      if (loading || error || stalled) return;
-      
+      if()
     if (isPlaying) {
       audio.pause();
     } else {

@@ -54,7 +54,7 @@ export default function HomeScreen() {
      )}
 
      <AudioComponent audioFile={RomeOne} title={audioTitles.romeOne[language]} />
-    <AudioComponent audioFile={RomeTwo} title={audioTitles.romeTwo[language]} />
+     <AudioComponent audioFile={RomeTwo} title={audioTitles.romeOne[language] />
    </div>
  );
 

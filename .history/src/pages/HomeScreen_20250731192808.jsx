@@ -17,19 +17,7 @@ export default function HomeScreen() {
       heading: "Benvenuto a Roses Of Rome Pictures",
       subheading: "Dove la poesia diventa visione.",
     },
-    };
-    
-    const audioTitles = {
-      romeOne: {
-        en: "Roses Of Rome",
-        it: "Rose di Roma",
-      },
-      romeTwo: {
-        en: "Roses Of Rome (Epic Version)",
-        it: "Rose di Roma (Versione Epica)",
-      },
-    };
-
+  };
 
  return (
    <div className="home-container">
@@ -53,8 +41,8 @@ export default function HomeScreen() {
        </p>
      )}
 
-     <AudioComponent audioFile={RomeOne} title={audioTitles.romeOne[language]} />
-    <AudioComponent audioFile={RomeTwo} title={audioTitles.romeTwo[language]} />
+     <AudioComponent audioFile={RomeOne} title="Roses Of Rome" />
+     <AudioComponent audioFile={RomeTwo} title="Roses Of Rome (Epic Version)" />
    </div>
  );
 

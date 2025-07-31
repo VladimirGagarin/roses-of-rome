@@ -1,6 +1,6 @@
 export function TheSonnet() {
   const sonnet = {
-    title: { en: "The Sonnet", it: "Un Sonetto" },
+    title: { en: "The Sonnet", it: " Un Sonetto" },
     verses: [
       {
         type: "verse",
