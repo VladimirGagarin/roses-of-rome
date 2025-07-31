@@ -108,12 +108,7 @@ export default function AudioComponent({ audioFile, title }) {
     setStalled(false);
     setIsPlaying(false);
   };
-   const handleCanPlayThrough = () => {
-    setLoading(false);
-    setStalled(false);
-    setError(null);
-    // Optionally, you could auto play or enable controls here
-  };
+  
 
   return (
     <div className="audio-component">
@@ -132,7 +127,6 @@ export default function AudioComponent({ audioFile, title }) {
         onEnded={handleEnded}
         onPlaying={handlePlaying}
         onError={handleError}
-        onCanPlayThrough={handleCanPlayThrough}
         preload="auto"
       />
       <div className="audio-controls">
@@ -163,6 +157,7 @@ export default function AudioComponent({ audioFile, title }) {
           {error ? errorMsg : loading ? loadingMsg : stalledMsg}
         </div>
       )}
+     
     </div>
   );
 }

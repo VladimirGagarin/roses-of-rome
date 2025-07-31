@@ -132,7 +132,6 @@ export default function AudioComponent({ audioFile, title }) {
         onEnded={handleEnded}
         onPlaying={handlePlaying}
         onError={handleError}
-        onCanPlayThrough={handleCanPlayThrough}
         preload="auto"
       />
       <div className="audio-controls">
@@ -163,6 +162,7 @@ export default function AudioComponent({ audioFile, title }) {
           {error ? errorMsg : loading ? loadingMsg : stalledMsg}
         </div>
       )}
+     
     </div>
   );
 }
