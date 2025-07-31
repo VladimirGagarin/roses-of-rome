@@ -1,0 +1,36 @@
+.yt-header-nav {
+  display: flex;
+  gap: 20px;
+  padding: 10px 20px;
+  background-color: transparent; /* YouTube dark theme */
+  border-bottom: 1px solid #333;
+  overflow-x: auto;
+}
+
+.yt-tab {
+
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  padding: 8px 10px;
+  transition: color 0.2s ease;
+}
+
+.yt-tab:hover {
+  color: white;
+}
+
+.yt-tab.active {
+  color: white;
+  border-bottom: 2px solid red;
+}
+
+.yt-icon {
+  font-size: 18px;
+}
+
+.yt-text {
+  margin-top: 4px;
+}

@@ -1,0 +1,42 @@
+.yt-header-nav {
+  display: flex;
+  align-items: flex-end; /* <-- aligns tab items to the bottom */
+  gap: 20px;
+  padding: 0 20px;
+  height: 48px; /* consistent height */
+  background-color: transparent;
+  border-bottom: 1px solid #3;
+  overflow-x: auto;
+}
+
+.yt-tab {
+  color: #aaa;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 13px;
+  padding: 0 10px 6px; /* padding-bottom ensures space for underline */
+  height: 100%;
+  transition: color 0.2s ease;
+}
+
+.yt-tab:hover {
+  color: white;
+}
+
+.yt-tab.active {
+  color: white;
+  border-bottom: 2px solid red;
+}
+
+.yt-icon {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.yt-text {
+  margin-top: 2px;
+  font-size: 12px;
+}

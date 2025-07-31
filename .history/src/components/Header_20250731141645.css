@@ -1,0 +1,71 @@
+.yt-header-nav {
+  display: flex;
+  align-items: flex-end; /* <-- aligns tab items to the bottom */
+  gap: 20px;
+  padding: 0 20px;
+  height: 50px; /* consistent height */
+  width: 100%;
+  background-color: transparent;
+  overflow-x: auto;
+ margin: 10px 0;
+}
+
+.yt-tab {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 13px;
+  padding: 0 10px 6px; /* padding-bottom ensures space for underline */
+  height: 100%;
+  transition: color 0.2s ease;
+  position: relative;
+  flex: 1;
+}
+
+.yt-tab:hover {
+  color: rgb(117, 30, 30);
+}
+
+
+.yt-icon {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.yt-text {
+  margin-top: 2px;
+  font-size: 12px;
+}
+
+.yt-tab-container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border-bottom: 2px solid #000; */
+  overflow: hidden;
+}
+
+
+
+.yt-icon {
+  display: block;
+  font-size: 1.2rem;
+  margin: 0 5px;
+}
+
+.yt-text {
+  font-size: 0.9rem;
+}
+
+.yt-slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: calc(100% / 5); /* Update if number of tabs changes */
+  background-color: red;
+  transition: transform 0.75s ease-in-out;
+}

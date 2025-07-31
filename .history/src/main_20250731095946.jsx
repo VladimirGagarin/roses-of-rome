@@ -1,0 +1,28 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx';
+import LanguageProvider from './components/LanguageContext.jsx';
+import  {createHashRouter, RouterProvider } from "react-router-dom"
+import  HomeScreen from './pages/HomeScreen.jsx';
+import VideoScreen from './pages/VideoScreen.jsx';
+
+
+const routes = createHashRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      { index: true, path: "pages/home", element: <HomeScreen /> },
+      { path: "pages/videos", element: <VideoScreen /> },
+      {path: "pages/playlist", element: <Pla}
+    ]
+  }
+])
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <LanguageProvider>
+      <RouterProvider router={routes}/>
+    </LanguageProvider>
+  </StrictMode>,
+)
