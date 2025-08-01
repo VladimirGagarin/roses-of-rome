@@ -10,7 +10,7 @@ import SupriseSong from "../assets/audios/yourome.mp3";
 import { SupriseSongLyrics } from "../components/Utils";
 import { useLanguage } from "../components/LanguageContext";
 import { useRef, useEffect, useState } from "react";
-import { FaPlay, FaPause,FaSpinner } from "react-icons/fa6";
+import { FaPlay, FaPause } from "react-icons/fa6";
 import BgVid from "../assets/videos/bg_vid.mp4"
 import "../index.css"
 
@@ -196,10 +196,10 @@ export default function HomeScreen() {
         <p>{SurpriseMessage[language]}</p>
         <button
           onClick={() => {
-            window.dispatchEvent(
-              new CustomEvent("pause-all-audio", { detail: null })
-            );
-            setSurprise(true);
+             window.dispatchEvent(
+               new CustomEvent("pause-all-audio", { detail: null })
+             );
+            setSurprise(true)
           }}
           disabled={showSurprise}
           className="Suprise-btn"
@@ -211,6 +211,8 @@ export default function HomeScreen() {
       </div>
 
       <Sonnet />
+
+ 
 
       <AudioComponent
         audioFile={language === "it" ? ItalianOne : RomeOne}
@@ -282,19 +284,9 @@ export default function HomeScreen() {
                     setPlaying(true);
                   }
                 }}
-                disabled={
-                  audioState === "loading" ||
-                  audioState === "stalled" ||
-                  audioState === "waiting"
-                }
+                disabled={}
               >
-                {audioState === "loading" || audioState === "waiting" ? (
-                  <FaSpinner className="spinner-icon" />
-                ) : isPlaying ? (
-                  <FaPause />
-                ) : (
-                  <FaPlay />
-                )}
+                {isPlaying ? <FaPause /> : <FaPlay />}
               </button>
 
               <button

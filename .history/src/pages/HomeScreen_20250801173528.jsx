@@ -10,7 +10,7 @@ import SupriseSong from "../assets/audios/yourome.mp3";
 import { SupriseSongLyrics } from "../components/Utils";
 import { useLanguage } from "../components/LanguageContext";
 import { useRef, useEffect, useState } from "react";
-import { FaPlay, FaPause,FaSpinner } from "react-icons/fa6";
+import { FaPlay, FaPause } from "react-icons/fa6";
 import BgVid from "../assets/videos/bg_vid.mp4"
 import "../index.css"
 
@@ -289,7 +289,7 @@ export default function HomeScreen() {
                 }
               >
                 {audioState === "loading" || audioState === "waiting" ? (
-                  <FaSpinner className="spinner-icon" />
+                  <span className="spinner" ><
                 ) : isPlaying ? (
                   <FaPause />
                 ) : (
