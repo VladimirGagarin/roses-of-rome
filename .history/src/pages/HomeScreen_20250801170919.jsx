@@ -195,12 +195,7 @@ export default function HomeScreen() {
       <div className="suprise-div" ref={containerRef}>
         <p>{SurpriseMessage[language]}</p>
         <button
-          onClick={() => {
-             window.dispatchEvent(
-               new CustomEvent("pause-all-audio", { detail: null })
-             );
-            setSurprise(true)
-          }}
+          onClick={() => {setSurprise(true)}}
           disabled={showSurprise}
           className="Suprise-btn"
         >

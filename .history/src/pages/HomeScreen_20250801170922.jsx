@@ -196,9 +196,6 @@ export default function HomeScreen() {
         <p>{SurpriseMessage[language]}</p>
         <button
           onClick={() => {
-             window.dispatchEvent(
-               new CustomEvent("pause-all-audio", { detail: null })
-             );
             setSurprise(true)
           }}
           disabled={showSurprise}
