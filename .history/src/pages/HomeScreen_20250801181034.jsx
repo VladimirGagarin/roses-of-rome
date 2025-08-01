@@ -156,7 +156,7 @@ export default function HomeScreen() {
       subheading: "Aeternum Floreamus - Let us Bloom Forever",
     },
     it: {
-      heading: "Benvenuto a Immagini di Rosa di Roma",
+      heading: "Benvenuto a Immagini di Rosa Di Roma",
       subheading: "Aeternum Floreamus - Fioriamo per sempre.",
     },
   };
