@@ -1,0 +1,30 @@
+import { useParams } from "react-router-dom";
+import { RosesOfRomeVideos } from "../components/Video";
+import { useEffect, useState } from "react";
+import VideoPlayer from "../components/VideoPlayer";
+import {use}
+
+export default function VideoPlayerScreen() {
+  const { id } = useParams();
+  const allVideos = RosesOfRomeVideos();
+  const [currentVideoObj, setCurrentVideoObj] = useState(null);
+
+  useEffect(() => {
+    const foundVid = allVideos.find((vid) => vid.id === id);
+    setCurrentVideoObj(foundVid || null);
+  }, [id, allVideos]);
+
+  if (!currentVideoObj) {
+    return (
+      <div className="Video-player-screen">
+        <p>Video not found or loading...</p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="Video-player-screen">
+      <VideoPlayer videoFile={currentVideoObj.src} />
+    </div>
+  );
+}

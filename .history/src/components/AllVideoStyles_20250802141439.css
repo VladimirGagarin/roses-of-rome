@@ -1,0 +1,70 @@
+.video-card {
+  border: 1px solid #000;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: transform 0.2s ease-in-out;
+  margin: 1rem auto;
+  text-decoration: none;
+  color: inherit;
+}
+
+.video-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #4b2727;
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    .video-card {
+        border-color:#fff;
+    }
+    .card-text{
+        color: rgba(255, 166, 0, 0.744);
+    }
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  justify-items: center;
+  align-items: start;
+}
+
+.video-link {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  max-width: 500px;
+}
