@@ -227,16 +227,7 @@ export default function HomeScreen() {
         title={audioTitles.hybrid2[language]}
       />
       {showSurprise && (
-        <SurpriseOverlay
-          language={language}
-          audioRef={audioRef}
-          currentLine={currentLine}
-          isPlaying={isPlaying}
-          setPlaying={setPlaying}
-          audioState={audioState}
-          setSurprise={setSurprise}
-          title={language === "it" ? "Versione Speciale" : "Special Version"}
-        />
+        <
       )}
     </div>
   );

@@ -235,7 +235,6 @@ export default function HomeScreen() {
           setPlaying={setPlaying}
           audioState={audioState}
           setSurprise={setSurprise}
-          title={language === "it" ? "Versione Speciale" : "Special Version"}
         />
       )}
     </div>
