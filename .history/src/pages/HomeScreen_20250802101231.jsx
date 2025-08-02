@@ -10,7 +10,7 @@ import SupriseSong from "../assets/audios/yourome.mp3";
 import { SupriseSongLyrics } from "../components/Utils";
 import { useLanguage } from "../components/LanguageContext";
 import { useRef, useEffect, useState } from "react";
-import BgImg from "../assets/images/txt_bg.jpg"
+import BgImg from "../assets/images/wh_sonnet_bg.jpg"
 import SurpriseOverlay from "../components/SurpriseOverlay";
 import "../index.css"
 

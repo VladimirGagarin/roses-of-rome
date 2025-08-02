@@ -2,7 +2,7 @@
 // import { useRef, useEffect } from "react";
 import { FaPlay, FaPause, FaSpinner } from "react-icons/fa6";
 import BgVid from "../assets/videos/bg_vid.mp4";
-
+import SupriseSong from "../assets/audios/yourome.mp3";
 
 export default function SurpriseOverlay({
   language,
@@ -35,7 +35,7 @@ export default function SurpriseOverlay({
         <h3>{title}</h3>
 
         <audio ref={audioRef}>
-          <source src={song} type="audio/mp3" />
+          <source src={SupriseSong} type="audio/mp3" />
           Your browser does not support the audio element.
         </audio>
 

@@ -2,7 +2,7 @@
 // import { useRef, useEffect } from "react";
 import { FaPlay, FaPause, FaSpinner } from "react-icons/fa6";
 import BgVid from "../assets/videos/bg_vid.mp4";
-
+import SupriseSong from "../assets/audios/yourome.mp3";
 
 export default function SurpriseOverlay({
   language,
