@@ -20,7 +20,7 @@ export default function Navs() {
       path: "/pages/videos",
     },
     {
-      tabName: { en: "Playlist", it: "Playlist" },
+      tabName: { en: "Songs", it: "Canzoni" },
       icon: <FaListUl />,
       path: "/pages/playlist",
     },

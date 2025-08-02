@@ -234,7 +234,11 @@ export default function HomeScreen() {
           setPlaying={setPlaying}
           audioState={audioState}
           setSurprise={setSurprise}
-          title={language === "it" ? "Versione Speciale" : "Special Version"}
+          title={
+            language === "it"
+              ? "Versione Speciale per Te"
+              : "Special Version for You"
+          }
           dynamicBgImage={BgImg}
           song={SupriseSong}
         />
