@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import {
   FaSpinner,
   FaPlay,
@@ -162,22 +162,20 @@ export default function VideoPlayer({ videoFile, type = "video/mp4", autoPlay = 
       videoContainer.removeEventListener("click", resetActivityTimer);
       clearTimeout(activityTimeout);
     };
-  }, [resetActivityTimer, activityTimeout]);
-
+  }, [resetActivityTimer]);
+  
   // Toggle play/pause
   const togglePlayPause = () => {
     if (!videoRef.current || isLoading) return;
 
     if (isPlaying) {
       videoRef.current.pause();
-      setShowControls(true); // Keep controls visible when paused
     } else {
       videoRef.current.play().catch((err) => {
         // Optional: handle autoplay block here
         console.warn("Playback failed:", err);
         setIsPlaying(false);
       });
-      resetActivityTimer();
     }
   };
 
@@ -221,12 +219,7 @@ export default function VideoPlayer({ videoFile, type = "video/mp4", autoPlay = 
   };
 
   return (
-    <div
-      className={`video-player-container ${!isPlaying ? "paused" : ""} ${
-        isLoading ? "loading" : ""
-      }`}
-      ref={containerRef}
-    >
+    <div className="video-player-container" ref={containerRef}>
       {!permission ? (
         <div
           style={{
@@ -263,9 +256,7 @@ export default function VideoPlayer({ videoFile, type = "video/mp4", autoPlay = 
           {/* Loading / error overlay */}
           {(isLoading || hasError) && (
             <div
-              className={`video-controls ${
-                showControls || !isPlaying || isLoading ? "visible" : ""
-              }`}
+              className="video-loading-overlay"
               style={{
                 position: "absolute",
                 top: 0,

@@ -177,7 +177,7 @@ export default function VideoPlayer({ videoFile, type = "video/mp4", autoPlay = 
         console.warn("Playback failed:", err);
         setIsPlaying(false);
       });
-      resetActivityTimer();
+      
     }
   };
 

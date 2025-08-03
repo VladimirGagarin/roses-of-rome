@@ -170,14 +170,13 @@ export default function VideoPlayer({ videoFile, type = "video/mp4", autoPlay = 
 
     if (isPlaying) {
       videoRef.current.pause();
-      setShowControls(true); // Keep controls visible when paused
+       setShowControls(true); // Keep controls visible when paused
     } else {
       videoRef.current.play().catch((err) => {
         // Optional: handle autoplay block here
         console.warn("Playback failed:", err);
         setIsPlaying(false);
       });
-      resetActivityTimer();
     }
   };
 

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import {
   FaSpinner,
   FaPlay,
@@ -25,7 +25,7 @@ export default function VideoPlayer({ videoFile, type = "video/mp4", autoPlay = 
   const [showControls, setShowControls] = useState(true);
   const [activityTimeout, setActivityTimeout] = useState(null);
 
-  useEffect(() => {
+     useEffect(() => {
     const video = videoRef.current;
 
     if (autoPlay && video) {
@@ -40,7 +40,7 @@ export default function VideoPlayer({ videoFile, type = "video/mp4", autoPlay = 
       };
       tryPlay();
 
-      videoRef.current.scrollIntoView({ block: "center", behavior: "smooth" });
+      videoRef.current.scrollIntoView({block: "center", behavior: "smooth"})
     }
   }, [autoPlay, videoFile]);
   // Video event listeners
@@ -134,52 +134,21 @@ export default function VideoPlayer({ videoFile, type = "video/mp4", autoPlay = 
     };
   }, []);
 
-  // Add these inside your component
-
-  const resetActivityTimer = useCallback(() => {
-    setShowControls(true);
-    clearTimeout(activityTimeout);
-
-    setActivityTimeout(
-      setTimeout(() => {
-        setShowControls(false);
-      }, 3000)
-    ); // Hide after 3 seconds of inactivity
-  }, [activityTimeout]);
-
-  useEffect(() => {
-    const videoContainer = containerRef.current;
-    if (!videoContainer) return;
-
-    // Set up event listeners
-    videoContainer.addEventListener("mousemove", resetActivityTimer);
-    videoContainer.addEventListener("touchstart", resetActivityTimer);
-    videoContainer.addEventListener("click", resetActivityTimer);
-
-    return () => {
-      videoContainer.removeEventListener("mousemove", resetActivityTimer);
-      videoContainer.removeEventListener("touchstart", resetActivityTimer);
-      videoContainer.removeEventListener("click", resetActivityTimer);
-      clearTimeout(activityTimeout);
-    };
-  }, [resetActivityTimer, activityTimeout]);
-
   // Toggle play/pause
-  const togglePlayPause = () => {
-    if (!videoRef.current || isLoading) return;
+ const togglePlayPause = () => {
+   if (!videoRef.current || isLoading) return;
 
-    if (isPlaying) {
-      videoRef.current.pause();
-      setShowControls(true); // Keep controls visible when paused
-    } else {
-      videoRef.current.play().catch((err) => {
-        // Optional: handle autoplay block here
-        console.warn("Playback failed:", err);
-        setIsPlaying(false);
-      });
-      resetActivityTimer();
-    }
-  };
+   if (isPlaying) {
+     videoRef.current.pause();
+   } else {
+     videoRef.current.play().catch((err) => {
+       // Optional: handle autoplay block here
+       console.warn("Playback failed:", err);
+       setIsPlaying(false);
+     });
+   }
+ };
+
 
   // Handle user seeking via progress bar
   const handleProgressChange = (e) => {
@@ -221,150 +190,134 @@ export default function VideoPlayer({ videoFile, type = "video/mp4", autoPlay = 
   };
 
   return (
+    
     <div
-      className={`video-player-container ${!isPlaying ? "paused" : ""} ${
-        isLoading ? "loading" : ""
-      }`}
+      className="video-player-container"
       ref={containerRef}
     >
-      {!permission ? (
+        {!permission ? (
+      <div style={{ backgroundColor: "#111", color: "#fff", borderRadius: "8px", width: "100%", height: "100%" , display: "flex", alignItems: "center", justifyContent: "center"}}>
+        {language === "it" ? "Accesso negato al video." : "Video access denied."}
+      </div>
+    ) : (
+    <>
+      <video
+        ref={videoRef}
+        src={videoFile}
+        type={type}
+        playsInline
+        autoPlay={autoPlay}
+        disablePictureInPicture
+        onContextMenu={(e) => e.preventDefault()}
+        onClick={togglePlayPause}
+        onDoubleClick={toggleFullscreen}
+        preload="auto"
+        className="video-player"
+      />
+
+      {/* Loading / error overlay */}
+      {(isLoading || hasError) && (
         <div
+          className="video-loading-overlay"
           style={{
-            backgroundColor: "#111",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: "rgba(0,0,0,0.6)",
             color: "#fff",
-            borderRadius: "8px",
-            width: "100%",
-            height: "100%",
             display: "flex",
-            alignItems: "center",
+            flexDirection: "column",
             justifyContent: "center",
+            alignItems: "center",
+            zIndex: 10,
           }}
         >
-          {language === "it"
-            ? "Accesso negato al video."
-            : "Video access denied."}
-        </div>
-      ) : (
-        <>
-          <video
-            ref={videoRef}
-            src={videoFile}
-            type={type}
-            playsInline
-            autoPlay={autoPlay}
-            disablePictureInPicture
-            onContextMenu={(e) => e.preventDefault()}
-            onClick={togglePlayPause}
-            onDoubleClick={toggleFullscreen}
-            preload="auto"
-            className="video-player"
-          />
-
-          {/* Loading / error overlay */}
-          {(isLoading || hasError) && (
-            <div
-              className={`video-controls ${
-                showControls || !isPlaying || isLoading ? "visible" : ""
-              }`}
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-                backgroundColor: "rgba(0,0,0,0.6)",
-                color: "#fff",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-                zIndex: 10,
-              }}
-            >
-              {!hasError ? (
-                <>
-                  <FaSpinner
-                    className="spinner-icon"
-                    style={{
-                      fontSize: "2rem",
-                      animation: "spin 1.5s linear infinite",
-                    }}
-                  />
-                  <p style={{ marginTop: "10px" }}>
-                    {language === "it"
-                      ? "Caricamento video..."
-                      : "Loading video..."}
-                  </p>
-                </>
-              ) : (
-                <p className="error-message">
-                  {language === "it"
-                    ? "Errore nel caricamento video"
-                    : "Error loading video"}
-                </p>
-              )}
-            </div>
+          {!hasError ? (
+            <>
+              <FaSpinner
+                className="spinner-icon"
+                style={{
+                  fontSize: "2rem",
+                  animation: "spin 1.5s linear infinite",
+                }}
+              />
+              <p style={{ marginTop: "10px" }}>
+                {language === "it"
+                  ? "Caricamento video..."
+                  : "Loading video..."}
+              </p>
+            </>
+          ) : (
+            <p className="error-message">
+              {language === "it"
+                ? "Errore nel caricamento video"
+                : "Error loading video"}
+            </p>
           )}
-
-          {/* Controls below video */}
-          <div className="video-controls">
-            {/* Play/Pause button */}
-            {!isLoading && (
-              <button
-                onClick={togglePlayPause}
-                aria-label={
-                  isPlaying
-                    ? language === "it"
-                      ? "Pausa"
-                      : "Pause"
-                    : language === "it"
-                    ? "Riproduci"
-                    : "Play"
-                }
-              >
-                {isPlaying ? <FaPause /> : <FaPlay />}
-              </button>
-            )}
-
-            {/* Progress bar */}
-            <input
-              type="range"
-              ref={progressBarRef}
-              min={0}
-              max={100}
-              step={0.1}
-              value={progress}
-              onChange={handleProgressChange}
-              aria-label={
-                language === "it"
-                  ? "Barra di avanzamento video"
-                  : "Video progress bar"
-              }
-            />
-
-            {/* Time elapsed / duration */}
-            <div>
-              {formatTime((progress / 100) * duration)} / {formatTime(duration)}
-            </div>
-
-            {/* Fullscreen toggle */}
-            <button
-              onClick={toggleFullscreen}
-              aria-label={
-                isFullscreen
-                  ? language === "it"
-                    ? "Riduci a schermo normale"
-                    : "Exit Fullscreen"
-                  : language === "it"
-                  ? "Schermo intero"
-                  : "Fullscreen"
-              }
-            >
-              {isFullscreen ? <FaMinimize /> : <FaExpand />}
-            </button>
-          </div>
-        </>
+        </div>
       )}
+
+      {/* Controls below video */}
+      <div className="video-controls">
+              {/* Play/Pause button */}
+              {!isLoading && (
+                  <button
+                      onClick={togglePlayPause}
+                      aria-label={
+                          isPlaying
+                              ? language === "it"
+                                  ? "Pausa"
+                                  : "Pause"
+                              : language === "it"
+                                  ? "Riproduci"
+                                  : "Play"
+                      }
+                  >
+                      {isPlaying ? <FaPause /> : <FaPlay />}
+                  </button>
+              )}
+
+        {/* Progress bar */}
+        <input
+          type="range"
+          ref={progressBarRef}
+          min={0}
+          max={100}
+          step={0.1}
+          value={progress}
+          onChange={handleProgressChange}
+          aria-label={
+            language === "it"
+              ? "Barra di avanzamento video"
+              : "Video progress bar"
+          }
+        />
+
+        {/* Time elapsed / duration */}
+        <div>
+          {formatTime((progress / 100) * duration)} / {formatTime(duration)}
+        </div>
+
+        {/* Fullscreen toggle */}
+        <button
+          onClick={toggleFullscreen}
+          aria-label={
+            isFullscreen
+              ? language === "it"
+                ? "Riduci a schermo normale"
+                : "Exit Fullscreen"
+              : language === "it"
+              ? "Schermo intero"
+              : "Fullscreen"
+          }
+        >
+          {isFullscreen ? <FaMinimize /> : <FaExpand />}
+        </button>
+      </div>
+         </>
+    )}
 
       {/* Spinner animation CSS */}
       <style>{`
@@ -374,6 +327,8 @@ export default function VideoPlayer({ videoFile, type = "video/mp4", autoPlay = 
         }
        
       `}</style>
+      
+      
     </div>
   );
 }

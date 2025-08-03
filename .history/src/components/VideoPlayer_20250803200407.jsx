@@ -170,14 +170,12 @@ export default function VideoPlayer({ videoFile, type = "video/mp4", autoPlay = 
 
     if (isPlaying) {
       videoRef.current.pause();
-      setShowControls(true); // Keep controls visible when paused
     } else {
       videoRef.current.play().catch((err) => {
         // Optional: handle autoplay block here
         console.warn("Playback failed:", err);
         setIsPlaying(false);
       });
-      resetActivityTimer();
     }
   };
 
@@ -221,12 +219,7 @@ export default function VideoPlayer({ videoFile, type = "video/mp4", autoPlay = 
   };
 
   return (
-    <div
-      className={`video-player-container ${!isPlaying ? "paused" : ""} ${
-        isLoading ? "loading" : ""
-      }`}
-      ref={containerRef}
-    >
+    <div  className={`video-player-container ${!isPlaying ? 'paused' : ''} ${isLoading ? 'loading' : ''} ref={containerRef}>
       {!permission ? (
         <div
           style={{
@@ -266,20 +259,7 @@ export default function VideoPlayer({ videoFile, type = "video/mp4", autoPlay = 
               className={`video-controls ${
                 showControls || !isPlaying || isLoading ? "visible" : ""
               }`}
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
-                backgroundColor: "rgba(0,0,0,0.6)",
-                color: "#fff",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-                zIndex: 10,
-              }}
+             
             >
               {!hasError ? (
                 <>
