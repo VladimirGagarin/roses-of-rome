@@ -1,0 +1,126 @@
+.yt-header-nav {
+  display: flex;
+  align-items: flex-end; /* <-- aligns tab items to the bottom */
+  justify-content: center;
+  gap: 20px;
+  padding: 0 20px;
+  height: 50px; /* consistent height */
+  width: 97%;
+  background-color: transparent;
+  overflow-x: auto;
+ margin: 10px 0;
+}
+
+.yt-tab {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 13px;
+  padding: 0 10px 6px; /* padding-bottom ensures space for underline */
+  height: 100%;
+  margin: 0 20px;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.yt-tab:hover {
+  color: rgb(117, 30, 30);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.yt-tab.active{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+
+.yt-icon {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.yt-text {
+  margin-top: 2px;
+  font-size: 12px;
+}
+
+.yt-tab-container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border-bottom: 2px solid #000; */
+  overflow: hidden;
+}
+
+
+
+.yt-icon {
+  display: block;
+  font-size: 1.2rem;
+  
+}
+
+.yt-text {
+  font-size: 0.9rem;
+}
+
+.yt-slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: calc(100% / 5); /* Update if number of tabs changes */
+  background-color: red;
+  transition: transform 0.75s ease-in-out;
+}
+
+/* --- Responsive adjustments for 768px and below --- */
+@media (max-width: 800px) {
+  .yt-header-nav {
+    gap: 0;
+    padding: 10px;
+    height: 55px;
+    margin: 4px 0;
+    font-size: 0.97em;
+    border-bottom: 1px solid #000;
+    overflow-x: auto;
+  }
+
+  .yt-tab {
+    font-size: 1.4rem;
+    padding: 4px;
+    margin: 0 1.3re;
+    box-shadow: none;
+  }
+  .yt-tab.active, .yt-tab:hover{
+    box-shadow: none;
+  }
+  .yt-icon {
+    font-size: 1.4rem;
+  }
+  .yt-text {
+    font-size: 0.75rem;
+    margin-top: 1px;
+  }
+  .yt-slider {
+    height: 2px;
+     width: calc(95% / 5);
+  }
+}
+
+
+@media (prefers-color-scheme: dark)  {
+    .yt-slider{
+        background-color: orange;
+    }
+
+    .yt-tab:hover {
+  color: #d9a658;
+}
+
+.yt-header-nav{
+    border-color: #d9a658;
+}
+
+}
