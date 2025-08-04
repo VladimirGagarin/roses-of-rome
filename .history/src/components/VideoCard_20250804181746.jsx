@@ -1,0 +1,47 @@
+import { useLanguage } from "./LanguageContext";
+import Thumbnail from "../assets/images/ror.png"; // fallback thumbnail
+import "./AllVideoStyles.css";
+
+export function VideoCard({ details }) {
+  const { language } = useLanguage();
+  const { title, thumbnail, author, datePublished, permission } = details;
+
+  console.log("Permission for this video:", permission, typeof permission);
+
+
+  return (
+    <div className="video-card">
+      {/* Premium Ribbon - only shown if permission is true */}
+      {!permission && ( // Explicitly check for true
+        <div className="premium-ribbon">
+          {language === "it" ? "Premium" : "Premium"}
+        </div>
+      )}
+
+      <div className="card-image-container">
+        <img
+          src={thumbnail || Thumbnail}
+          className="card-img"
+          alt={title[language] || title.en}
+          loading="lazy" // Lazy loading for better performance
+        />
+      </div>
+
+      <div className="card-body">
+        <h5 className="card-title">{title[language] || title.en}</h5>
+       
+        {datePublished && (
+          <p className="card-text">
+            <small>
+              {new Date(datePublished).toLocaleDateString(language, {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </small>
+          </p>
+        )}
+      </div>
+    </div>
+  );
+}
