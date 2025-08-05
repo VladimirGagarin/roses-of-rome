@@ -1,0 +1,114 @@
+/* Outer container scrolls vertically like TikTok */
+.shorts-feed {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+/* Each video takes full screen height */
+.short-wrapper {
+  scroll-snap-align: start;
+  min-height: 100vh;
+  max-height: 101vh;
+  min-width: 40%;
+  width: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+/* Video full screen like TikTok/Reels */
+.short-video {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Overlay controls (e.g. play/pause) go above video */
+.short-wrapper > .short-controls {
+  z-index: 2;
+  position: absolute;
+  bottom: 80px;
+  left: 20px;
+  color: white;
+}
+
+
+
+.shorts-video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.shorts-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-control {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ccc;
+  border-top: 4px solid #555;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
+
+@media (max-width: 800px) {
+  .short-wrapper{
+    width: 95%;
+    height: 100vh;
+  }
+  .shorts-video  {
+    object-fit: contain;
+  }
+  .video-control{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    display: flex;
+  }
+}

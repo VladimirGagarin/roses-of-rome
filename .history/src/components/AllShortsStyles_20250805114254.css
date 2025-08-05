@@ -1,0 +1,43 @@
+/* Outer container scrolls vertically like TikTok */
+.shorts-container {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fle
+}
+
+/* Each video takes full screen height */
+.short-wrapper {
+  scroll-snap-align: start;
+  height: 100vh;
+  width: 40%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Video full screen like TikTok/Reels */
+.short-video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Overlay controls (e.g. play/pause) go above video */
+.short-wrapper > .short-controls {
+  z-index: 2;
+  position: absolute;
+  bottom: 80px;
+  left: 20px;
+  color: white;
+}

@@ -1,0 +1,19 @@
+import ShortVideo1 from "../assets/video/short_001.mp4";
+import ShortVideo2 from "../assets/video/short_002.mp4";
+import ShortVideo3 from "../assets/video/short_003.mp4";
+import ShortVideo4 from "../assets/video/short_004.mp4";
+import ShortVideo5 from "../assets/video/short_005.mp4";
+import ShortVideo6 from "../assets/video/short_006.mp4";
+
+
+export default function ShortsScreen() {
+  const shortsVid = [
+    ShortVideo1,
+    ShortVideo2,
+    ShortVideo3,
+    ShortVideo4,
+    ShortVideo5,
+    ShortVideo6,
+  ];
+  return <h1>...</h1>;
+}

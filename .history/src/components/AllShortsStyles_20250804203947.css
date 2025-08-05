@@ -1,0 +1,155 @@
+/* AllShorts.css */
+
+/* Shorts Screen Container */
+.shorts-screen {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  background-color: #000;
+}
+
+/* Individual Short Container */
+.short-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Video Element */
+.short-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #000;
+}
+
+/* Video Controls */
+.short-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.short-controls button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.short-controls button:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+}
+
+.short-controls svg {
+  color: white;
+  font-size: 20px;
+}
+
+/* Loading/Error Overlay */
+.notification-alert-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 1.2rem;
+  z-index: 5;
+}
+
+/* Progress Indicator (optional) */
+.progress-indicator {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  z-index: 20;
+}
+
+/* Navigation Arrows (optional) */
+.nav-arrow {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 2rem;
+  z-index: 10;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.nav-arrow:hover {
+  opacity: 1;
+}
+
+.nav-arrow.up {
+  top: 20px;
+}
+
+.nav-arrow.down {
+  bottom: 20px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .short-controls button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .short-controls svg {
+    font-size: 16px;
+  }
+
+  .notification-alert-overlay {
+    font-size: 1rem;
+  }
+}
+
+/* Portrait Orientation */
+@media (orientation: portrait) {
+  .short-video {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Landscape Orientation */
+@media (orientation: landscape) {
+  .short-video {
+    width: 100%;
+    height: 100;
+  }
+}
