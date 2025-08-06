@@ -2,6 +2,7 @@
 // import { useRef, useEffect } from "react";
 import { FaPlay, FaPause, FaSpinner } from "react-icons/fa6";
 import BgVid from "../assets/videos/bg_vid2.mp4";
+import "../index.css";
 
 
 export default function SurpriseOverlay({

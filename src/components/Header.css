@@ -70,7 +70,7 @@
   bottom: 0;
   left: 0;
   height: 3px;
-  width: calc(100% / 5); /* Update if number of tabs changes */
+  width: calc(100% / 3); /* Update if number of tabs changes */
   background-color: red;
   transition: transform 0.75s ease-in-out;
 }
@@ -106,7 +106,7 @@
   }
   .yt-slider {
     height: 2px;
-     width: calc(95% / 5);
+     width: calc(95% / 3);
   }
 }
 

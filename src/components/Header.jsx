@@ -29,14 +29,14 @@ export default function Navs() {
       icon: <FaBolt />,
       path: "/pages/shorts",
     },
-    {
-      tabName: {
-        en: "Notifications",
-        it: "Notifiche",
-      },
-      icon: <FaBell />,
-      path: "/pages/notifications",
-    },
+    // {
+    //   tabName: {
+    //     en: "Notifications",
+    //     it: "Notifiche",
+    //   },
+    //   icon: <FaBell />,
+    //   path: "/pages/notifications",
+    // },
   ];
 
   const shouldShowNav = tabs.some(
