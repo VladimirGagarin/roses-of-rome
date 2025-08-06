@@ -286,10 +286,18 @@ useEffect(() => {
               borderRadius: "5px",
               textDecoration: "none",
               fontWeight: "bold",
+              display: "inline-flex",      // ✅ Aligns icon and text
+              alignItems: "center",        // ✅ Vertically centers them
+              gap: "0.5rem",               // ✅ Adds space between text and icon
             }}
           >
-             {language === "it" ? "Guarda su  " : "Watch on  "}{"  "} <FaYoutube/> YouTube
+            <span>
+              {language === "it" ? "Guarda su" : "Watch on"}
+            </span>
+            <FaYoutube size={20} />
+            <span>YouTube</span>
           </a>
+
         </div>
       ) : (
         <>
@@ -412,7 +420,10 @@ useEffect(() => {
               {formatTime((progress / 100) * duration)} / {formatTime(duration)}
             </div>
 
-            <Link to={ytLink} style={{textDecoration: "none"}}> <FaYoutube style={{fontSize:"1.3rem", display: "inline-block"}}/> {" "}YouTube</Link>
+            <Link to={ytLink} style={{textDecoration: "none",  display: "inline-flex",      // ✅ Aligns icon and text
+              alignItems: "center",        // ✅ Vertically centers them
+              gap: "0.5rem",               // ✅ Adds space between text and icon
+            }}> <FaYoutube /> {" "}YouTube</Link>
 
             {/* Fullscreen toggle */}
             <button
