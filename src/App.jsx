@@ -21,6 +21,19 @@ function App() {
    }
  }, [setLanguage]);
 
+
+
+  useEffect(() => {
+    const today = new Date().toDateString(); // e.g. "Wed Aug 06 2025"
+    const lastVisit = localStorage.getItem("lastVisitDate");
+
+    if (lastVisit !== today) {
+      // Clear videoPermissions for a new day
+      localStorage.removeItem("videoPermissions");
+      localStorage.setItem("lastVisitDate", today);
+    }
+  }, []);
+
   
 
   return (

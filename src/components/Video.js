@@ -66,7 +66,7 @@ export function RosesOfRomeVideos () {
         captions: null,
         copyright: false,
         playlist: "Roses Of Rome",
-        externalLink: null,
+        externalLink: "https://youtu.be/FMHWQaJnCu0?si=TMGwHt168Vj4TyDo",
         permission: true,
       },
       {
@@ -96,7 +96,7 @@ export function RosesOfRomeVideos () {
         captions: null,
         copyright: false,
         playlist: "SWM",
-        externalLink: null,
+        externalLink: "https://youtu.be/a3E5O9-6Ui0?list=RDAWl6sMzGHr0",
         permission: true,
       },
       {
@@ -139,7 +139,7 @@ export function RosesOfRomeVideos () {
         copyright: false,
         playlist: "La Famiglia Crameri",
         externalLink: "https://youtu.be/4DVNO5Ogt_8", // replace with actual link
-        permission: false,
+        permission: true,
       },
       {
         id: "kenart006AC",
@@ -203,7 +203,7 @@ export function RosesOfRomeVideos () {
         captions: null,
         copyright: false,
         playlist: "Sing With Magdalene",
-        externalLink: null,
+        externalLink: "https://youtu.be/a3E5O9-6Ui0?list=RDAWl6sMzGHr0",
         permission: true,
       },
     ];

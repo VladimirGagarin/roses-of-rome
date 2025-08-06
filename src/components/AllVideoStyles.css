@@ -210,7 +210,7 @@
   opacity: 1;
 }
 
-.video-controls button {
+.video-controls button, .video-controls a {
   background: none;
   border: none;
   color: white;
@@ -264,7 +264,7 @@
   position: relative;
   width: 80%;
   height: 80vh;
-  margin-top: 15px;
+  margin: 10px 0;
   padding: 0;
   border-radius: 12px;
   background: #000; /* Black background for better video contrast */
@@ -281,6 +281,7 @@
     box-shadow: none;
     min-width: 100%;
     height: 35vh;
+    margin-bottom: 20px;
   }
   .more-actions{
     width: 97%;
@@ -291,7 +292,10 @@
   }
 
   .video-controls{
-    padding: 0;
+    padding: 5px 0;
+  }
+  .progress-duration{
+    display: none;
   }
 }
 
@@ -321,6 +325,9 @@
   padding: 2rem;
   overflow-y: auto;
   max-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 

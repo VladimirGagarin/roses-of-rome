@@ -6,6 +6,10 @@ import "../components/AllVideoStyles.css";
 import { useLanguage } from "../components/LanguageContext";
 import { FaArrowLeft, FaEllipsisV } from "react-icons/fa";
 
+function getPlayCount(id) {
+  return parseInt(sessionStorage.getItem(`play_${id}`) || "0");
+}
+
 export default function VideoPlayerScreen() {
   const { id } = useParams();
   const allVideos = RosesOfRomeVideos();
@@ -16,15 +20,25 @@ export default function VideoPlayerScreen() {
 
   const toggleDetail = () => setShowDetail(!showDetail);
 
+  const [playCount, setPlayCount] = useState(getPlayCount(id));
+  
+
 
   useEffect(() => {
     const foundVid = allVideos.find((vid) => vid.id === id);
     setCurrentVideoObj(foundVid || null);
 
+    
+    if (foundVid) {
+      const count = getPlayCount(id);
+      setPlayCount(count);
+    }
+
     return () => {
       setCurrentVideoObj(null); // Cleanup on unmount
     };
   }, [id, allVideos]);
+
 
  const GoBack = useCallback(() => {
    if (window.history.length > 1) {
@@ -62,7 +76,8 @@ export default function VideoPlayerScreen() {
           <VideoPlayer
             videoFile={currentVideoObj?.src}
             autoPlay={true}
-            permission={currentVideoObj?.permission}
+            ytLink={currentVideoObj?.externalLink}
+            videoId={currentVideoObj?.id}
           />
         </div>
         {showDetail && currentVideoObj && (
@@ -106,13 +121,7 @@ export default function VideoPlayerScreen() {
                     </a>
                   </p>
                 )}
-                <p>
-                 
-                  {language === "it"
-                    ? "Accesso consentito"
-                    : "Permission Granted"}
-                  : {currentVideoObj.permission ? "✔️" : "❌"}
-                </p>
+                
 
                 {currentVideoObj.description && (
                   <p>

@@ -1,18 +1,34 @@
 import { useLanguage } from "./LanguageContext";
 import Thumbnail from "../assets/images/ror.png"; // fallback thumbnail
 import "./AllVideoStyles.css";
+import {useState, useEffect} from "react";
+
+
+function getPermission(id) {
+  const permissions = JSON.parse(localStorage.getItem("videoPermissions") || "{}");
+  return permissions[id] !== false; // default is true
+}
+
 
 export function VideoCard({ details }) {
   const { language } = useLanguage();
-  const { title, thumbnail, datePublished, permission } = details;
+  const { title, thumbnail, datePublished} = details;
+   const [hasPermission, setHasPermission] = useState(() => getPermission(details.id));
 
-  console.log("Permission for this video:", permission, typeof permission);
+  // Sync with localStorage updates
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setHasPermission(getPermission(details.id));
+    }, 1000); // Poll every second if needed
 
+    return () => clearInterval(interval);
+  }, [details.id]);
+  
 
   return (
     <div className="video-card">
       {/* Premium Ribbon - only shown if permission is true */}
-      {!permission && ( // Explicitly check for true
+      {!hasPermission && ( // Explicitly check for true
         <div className="premium-ribbon">
           {language === "it" ? "Premium" : "Premium"}
         </div>

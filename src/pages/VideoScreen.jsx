@@ -5,11 +5,11 @@ import "../components/AllVideoStyles.css";
 
 export default function VideoScreen() {
   const allVideos = RosesOfRomeVideos();
-  const LongVideos = allVideos.filter((vid) => vid.type === "long");
+ 
 
   return (
     <div className="video-container">
-      {LongVideos.map((vid) => (
+      {allVideos.map((vid) => (
         <Link key={vid.id} to={`/pages/vid/${vid.id}`} className="video-link">
           <VideoCard details={vid} />
         </Link>

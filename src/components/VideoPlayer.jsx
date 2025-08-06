@@ -5,44 +5,71 @@ import {
   FaPause,
   FaExpand,
   FaMinimize,
+  FaYoutube
 } from "react-icons/fa6";
 import { useLanguage } from "./LanguageContext";
 import "../components/AllVideoStyles.css";
+import {Link} from "react-router-dom";
 
-export default function VideoPlayer({ videoFile, type = "video/mp4", autoPlay = false, permission }) {
+
+
+function getPlayCount(id) {
+  return parseInt(sessionStorage.getItem(`play_${id}`) || "0");
+}
+
+function incrementPlayCount(id) {
+  const current = getPlayCount(id);
+  sessionStorage.setItem(`play_${id}`, current + 1);
+  return current + 1;
+}
+
+
+export default function VideoPlayer({ videoFile, type = "video/mp4", autoPlay = false, ytLink , videoId }) {
   const videoRef = useRef(null);
   const progressBarRef = useRef(null);
   const containerRef = useRef(null);
+  
 
   const { language } = useLanguage();
 
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [progress, setProgress] = useState(0); // Range: 0 to 100
+  const [progress, setProgress] = useState(0);
   const [duration, setDuration] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [showControls, setShowControls] = useState(true);
   const [activityTimeout, setActivityTimeout] = useState(null);
 
+  const [localPermission, setLocalPermission] = useState(true);
+
+    
+useEffect(() => {
+  const permissions = JSON.parse(localStorage.getItem("videoPermissions") || "{}");
+  const allowed = permissions[videoId] !== false; // Default to true if not set
+  setLocalPermission(allowed);
+}, [videoId]);
+
+
+
   useEffect(() => {
-    const video = videoRef.current;
+  const video = videoRef.current;
+  if (autoPlay && video && localPermission) {
+    const tryPlay = async () => {
+      try {
+        await video.play();
+        setIsPlaying(true);
+      } catch (err) {
+        console.warn("Autoplay was blocked:", err);
+        setIsPlaying(false);
+      }
+    };
+    tryPlay();
 
-    if (autoPlay && video) {
-      const tryPlay = async () => {
-        try {
-          await video.play();
-          setIsPlaying(true);
-        } catch (err) {
-          console.warn("Autoplay was blocked:", err);
-          setIsPlaying(false);
-        }
-      };
-      tryPlay();
+    video.scrollIntoView({ block: "center", behavior: "smooth" });
+  }
+}, [autoPlay, videoFile, localPermission]); // ✅ include localPermission in dependencies
 
-      videoRef.current.scrollIntoView({ block: "center", behavior: "smooth" });
-    }
-  }, [autoPlay, videoFile]);
   // Video event listeners
   useEffect(() => {
     const video = videoRef.current;
@@ -165,25 +192,25 @@ export default function VideoPlayer({ videoFile, type = "video/mp4", autoPlay = 
   }, [resetActivityTimer, activityTimeout]);
 
   // Toggle play/pause
-  const togglePlayPause = () => {
-    if (!videoRef.current || isLoading) return;
+ const togglePlayPause = () => {
+  if (!videoRef.current || isLoading || !localPermission) return;
 
-    if (isPlaying) {
-      videoRef.current.pause();
-      setShowControls(true); // Keep controls visible when paused
-    } else {
-      videoRef.current.play().catch((err) => {
-        // Optional: handle autoplay block here
-        console.warn("Playback failed:", err);
-        setIsPlaying(false);
-      });
-      resetActivityTimer();
-    }
-  };
+  if (isPlaying) {
+    videoRef.current.pause();
+    setShowControls(true);
+  } else {
+    videoRef.current.play().catch((err) => {
+      console.warn("Playback failed:", err);
+      setIsPlaying(false);
+    });
+    resetActivityTimer();
+  }
+};
+
 
   // Handle user seeking via progress bar
   const handleProgressChange = (e) => {
-    if (!videoRef.current) return;
+    if (!videoRef.current || !localPermission) return;
     const newProgress = Number(e.target.value);
     setProgress(newProgress);
     const newTime = (newProgress / 100) * duration;
@@ -227,7 +254,7 @@ export default function VideoPlayer({ videoFile, type = "video/mp4", autoPlay = 
       }`}
       ref={containerRef}
     >
-      {!permission ? (
+      {!localPermission ?  (
         <div
           style={{
             backgroundColor: "#111",
@@ -236,13 +263,33 @@ export default function VideoPlayer({ videoFile, type = "video/mp4", autoPlay = 
             width: "100%",
             height: "100%",
             display: "flex",
+            flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
+            padding: "0",
+            textAlign: "center",
           }}
         >
-          {language === "it"
-            ? "Accesso negato al video."
-            : "Video access denied."}
+          <p style={{ fontSize: "1.2rem", marginBottom: "1rem" }}>
+            {language === "it"
+              ? "Hai raggiunto il limite di visualizzazioni."
+              : "You’ve reached the viewing limit."}
+          </p>
+          <a
+            href={ytLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              backgroundColor: "#ff0000",
+              color: "#fff",
+              padding: "0.8rem 1.5rem",
+              borderRadius: "5px",
+              textDecoration: "none",
+              fontWeight: "bold",
+            }}
+          >
+             {language === "it" ? "Guarda su  " : "Watch on  "}{"  "} <FaYoutube/> YouTube
+          </a>
         </div>
       ) : (
         <>
@@ -256,6 +303,24 @@ export default function VideoPlayer({ videoFile, type = "video/mp4", autoPlay = 
             onContextMenu={(e) => e.preventDefault()}
             onClick={togglePlayPause}
             onDoubleClick={toggleFullscreen}
+             onEnded={() => {
+              const id = videoFile; // Or pass the video ID as a prop if needed
+              const count = incrementPlayCount(id);
+             if (count >= 2) {
+                setLocalPermission(false);
+                // Fetch existing permissions from localStorage
+                const existingPermissions = JSON.parse(localStorage.getItem("videoPermissions") || "{}");
+
+                // Update the permission for the specific videoId
+                existingPermissions[videoId] = false;
+
+                // Save updated permissions back to localStorage
+                localStorage.setItem("videoPermissions", JSON.stringify(existingPermissions));
+
+                videoRef.current.pause();
+              }
+
+            }}
             preload="auto"
             className="video-player"
           />
@@ -343,9 +408,11 @@ export default function VideoPlayer({ videoFile, type = "video/mp4", autoPlay = 
             />
 
             {/* Time elapsed / duration */}
-            <div>
+            <div className="progress-duration">
               {formatTime((progress / 100) * duration)} / {formatTime(duration)}
             </div>
+
+            <Link to={ytLink} style={{textDecoration: "none"}}> <FaYoutube style={{fontSize:"1.3rem", display: "inline-block"}}/> {" "}YouTube</Link>
 
             {/* Fullscreen toggle */}
             <button
