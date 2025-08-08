@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: flex-end;
   font-size: 13px;
-  padding:10px; /* padding-bottom ensures space for underline */
+  padding: 0 10px; /* padding-bottom ensures space for underline */
   height: 100%;
   margin: 0 20px;
   transition: color 0.2s ease;

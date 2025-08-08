@@ -67,7 +67,7 @@ export default function Navs() {
             </div>
           );
         })}
-      </div>
+        
     </nav>
   );
 }

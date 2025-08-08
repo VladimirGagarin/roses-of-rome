@@ -5938,248 +5938,279 @@ export function CottolengoAnthemItalianLyrics() {
       end: 32340,
       text: {
         en: "(Music)",
-        it: "(Musica)",
-      },
+        it: "(Musica)"
+      }
     },
-    // Verso 1
     {
       start: 38200,
       end: 42759,
       text: {
         en: "Life bloomed from roots in sacred ground,",
-        it: "La vita sbocciò da radici sante,",
-      },
+        it: "La vita sbocciò da radici sante."
+      }
     },
     {
       start: 44059,
       end: 48460,
       text: {
         en: "A love was cradled, safe and sound.",
-        it: "Un amore cullato, dolce e costante.",
-      },
+        it: "L'amore cullato, dolce e costante."
+      }
     },
     {
       start: 50139,
       end: 54339,
       text: {
         en: "A dream was whispered through the rain,",
-        it: "Un sogno sussurrato sotto la pioggia,",
-      },
+        it: "Un sogno sussurrato sotto la pioggia."
+      }
     },
     {
       start: 56020,
       end: 59979,
       text: {
         en: "And a prayer rose from pain.",
-        it: "E una preghiera nata dalla piaga.",
-      },
+        it: "E una preghiera nata dalla piaga."
+      }
     },
-    // 🎶 Ritornello
+    // Chorus 1
     {
       start: 61139,
       end: 65519,
       text: {
         en: "In our hymns, Cottolengo, you are grace,",
-        it: "Nei nostri inni, Cottolengo, sei grazia,",
-      },
+        it: "Nei nostri Cottolengo sei grazie."
+      }
     },
     {
       start: 67059,
-      end: 75919,
+      end: 70919,
       text: {
         en: "In our psalms, a light no night erases,",
-        it: "Nei nostri salmi, una luce che mai si spegne,",
-      },
+        it: "Dei nostri salmi una luce che mai si"
+      }
+    },
+    {
+      start: 71000,
+      end: 75919,
+      text: {
+        en: "In our voices, your love still flows,",
+        it: "spegne nelle nostre voci il tuo amore"
+      }
     },
     {
       start: 76000,
       end: 80659,
       text: {
-        en: "In our voices, your love still flows,",
-        it: "Nelle nostre voci, il tuo amore scorre ancora,",
-      },
+        en: "God gave us Cottolengo —",
+        it: "scorre ancora. Dio ci donò il"
+      }
     },
     {
       start: 80699,
       end: 85079,
       text: {
-        en: "God gave us Cottolengo —",
-        it: "Dio ci donò il Cottolengo —",
-      },
+        en: "Forever we sing: Deo Gratias,",
+        it: "Cottolengo per sempre cantiamo Deo"
+      }
     },
     {
       start: 85099,
+      end: 90059,
+      text: {
+        en: "Cottolengo—the name we call home,",
+        it: "gratias. Cottolengo,"
+      }
+    },
+    {
+      start: 90099,
       end: 92460,
       text: {
-        en: "Forever we sing: Deo Gratias,",
-        it: "Per sempre cantiamo: Deo Gracias.",
-      },
+        en: "",
+        it: "il nome che chiamiamo casa."
+      }
     },
-    // Verso 2
+    // Verse 2
     {
       start: 95040,
       end: 97960,
       text: {
-        en: "Cottolengo—the name we call home,",
-        it: "Cottolengo—il nome che chiamiamo casa,",
-      },
+        en: "A shelter when the thunder roars,",
+        it: "Un rifugio quando il tuono si alza."
+      }
     },
     {
       start: 100919,
       end: 104699,
       text: {
-        en: "A shelter when the thunder roars,",
-        it: "Un rifugio quando il tuono si alza,",
-      },
+        en: "A vase where delicate hearts are held,",
+        it: "Un vaso che cuor delicati raccoglie."
+      }
     },
     {
       start: 1046819,
       end: 1051559,
       text: {
-        en: "A vase where delicate hearts are held,",
-        it: "Un vaso che cuor delicati raccoglie,",
-      },
+        en: "A dream that time could never fold.",
+        it: "Un sogno che il tempo non scioglie."
+      }
     },
+    // Chorus 2
     {
       start: 1051639,
       end: 1055759,
       text: {
-        en: "A dream that time could never fold.",
-        it: "Un sogno che il tempo non scioglie.",
-      },
+        en: "In our hymns, Cottolengo, you are grace,",
+        it: "Nei nostri Cottolengo sei grazie."
+      }
     },
-    // 🎶 Ritornello
     {
       start: 1057099,
       end: 1062039,
       text: {
-        en: "In our hymns, Cottolengo, you are grace,",
-        it: "Nei nostri inni, Cottolengo, sei grazia,",
-      },
+        en: "In our psalms, a light no night erases,",
+        it: "Dei nostri salmi una luce che mai si spegne."
+      }
     },
     {
       start: 1063000,
       end: 1067859,
       text: {
-        en: "In our psalms, a light no night erases,",
-        it: "Nei nostri salmi, una luce che mai si spegne,",
-      },
+        en: "In our voices, your love still flows,",
+        it: "Nelle nostre voci il tuo amore scorre ancora."
+      }
     },
     {
       start: 1068899,
       end: 1073580,
       text: {
-        en: "In our voices, your love still flows,",
-        it: "Nelle nostre voci, il tuo amore scorre ancora,",
-      },
+        en: "God gave us Cottolengo —",
+        it: "Dio ci donò il Cottolengo."
+      }
     },
     {
       start: 1073679,
       end: 1075920,
       text: {
-        en: "God gave us Cottolengo —",
-        it: "Dio ci donò il Cottolengo —",
-      },
+        en: "Forever we sing: Deo Gratias,",
+        it: "Per sempre cantiamo Deo gratias."
+      }
     },
     {
       start: 1078059,
       end: 1084360,
       text: {
-        en: "Forever we sing: Deo Gratias,",
-        it: "Per sempre cantiamo: Deo Gracias.",
-      },
+        en: "(Music)",
+        it: "(Musica)"
+      }
     },
-    // Verso 3
+    // Verse 3
     {
       start: 1087099,
       end: 1091579,
       text: {
         en: "We are the roses time can't fade,",
-        it: "Siamo le rose che il tempo non sfiorisce,",
-      },
+        it: "Siamo le rose che il tempo non sfiorisce."
+      }
     },
     {
       start: 1092979,
       end: 1097279,
       text: {
         en: "We are the joy Cottolengo dreamt",
-        it: "Siamo la gioia che Cottolengo sognava,",
-      },
+        it: "Siamo la gioia che Cottolengo sognava."
+      }
     },
     {
       start: 1098119,
       end: 1102119,
       text: {
         en: "We are the love etched in Cottolengo's heart",
-        it: "Siamo l'amore inciso nel suo cuore,",
-      },
+        it: "Siamo l'amore inciso nel suo cuore"
+      }
     },
     {
       start: 1102199,
-      end: 1111319,
+      end: 1107180,
       text: {
         en: "Through every tear, joy and whispered prayer,",
-        it: "Tra ogni lacrima, gioia e sussurrata preghiera,",
-      },
+        it: "tra ogni lacrima, gioia e sussurrata preghiera."
+      }
     },
+    {
+      start: 1107199,
+      end: 1111319,
+      text: {
+        en: "We still remain roses of Cottolengo",
+        it: "Rimaniamo le rose di Cottolengo."
+      }
+    },
+    // Chorus 3
     {
       start: 1111779,
       end: 1116319,
       text: {
-        en: "We still remain roses of Cottolengo",
-        it: "Rimaniamo le rose di Cottolengo.",
-      },
+        en: "In our hymns, Cottolengo, you are grace,",
+        it: "Nei nostri Cottolengo, sei grazie."
+      }
     },
-    // 🎶 Ritornello
     {
       start: 1116399,
       end: 1121179,
       text: {
-        en: "In our hymns, Cottolengo, you are grace,",
-        it: "Nei nostri inni, Cottolengo, sei grazia,",
-      },
+        en: "In our psalms, a light no night erases",
+        it: "Dei nostri salmi, una luce che mai si spegne"
+      }
     },
     {
       start: 1121879,
+      end: 1125559,
+      text: {
+        en: "In our voices, your love still flows,",
+        it: "nelle nostre voci il tuo amore scorre"
+      }
+    },
+    {
+      start: 1125580,
       end: 1129659,
       text: {
-        en: "In our psalms, a light no night erases",
-        it: "Nei nostri salmi, una luce che mai si spegne,",
-      },
+        en: "God gave us Cottolengo —",
+        it: "ancora. Dio ci donò il"
+      }
     },
     {
       start: 1129659,
       end: 1134020,
       text: {
-        en: "In our voices, your love still flows,",
-        it: "Nelle nostre voci, il tuo amore scorre ancora,",
-      },
+        en: "Forever we sing: Deo Gratias,",
+        it: "Cottolengo. Per sempre cantiamo Deo"
+      }
     },
+    // Outro
     {
       start: 1134080,
       end: 1138479,
       text: {
-        en: "God gave us Cottolengo —",
-        it: "Dio ci donò il Cottolengo —",
-      },
+        en: "Caritas Christi urget nos —",
+        it: "gratias. Caritas"
+      }
     },
-    // Finale
     {
       start: 1138539,
       end: 1140979,
       text: {
-        en: "Caritas Christi urget nos —",
-        it: "Caritas Christi urget nos —",
-      },
+        en: "With Cottolengo, Deo Gratias.",
+        it: "Christi urget nos."
+      }
     },
     {
       start: 1143899,
       end: 1147024,
       text: {
-        en: "With Cottolengo, Deo Gratias.",
-        it: "Con Cottolengo, Deo Gracias.",
-      },
-    },
+        en: "",
+        it: "Con Cottolengo Deo gratias."
+      }
+    }
   ];
 }
 

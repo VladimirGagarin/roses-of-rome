@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: flex-end;
   font-size: 13px;
-  padding:10px; /* padding-bottom ensures space for underline */
+  padding: 0 10px 6px; /* padding-bottom ensures space for underline */
   height: 100%;
   margin: 0 20px;
   transition: color 0.2s ease;
@@ -31,8 +31,7 @@
 }
 .yt-tab.active{
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-     color: rgb(187, 5, 253);
-     border-bottom: 1px solid #0056b3;
+     color: rgb(117, 30, 30);
 }
 
 
@@ -118,9 +117,8 @@
         background-color: orange;
     }
 
-    .yt-tab:hover, .yt-tab.active {
+    .yt-tab:hover {
   color: #d9a658;
-  border-color:aliceblue;
 }
 
 .yt-header-nav{

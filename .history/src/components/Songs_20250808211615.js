@@ -7,15 +7,7 @@ import  DeoGratias from "../assets/audios/DEOGRATIAS.mp3";
 import DeoGratiasIt from "../assets/audios/gratias.mp3";
 
 // lyrics
-import {
-    AnthemLyrics,
-    SonnetLyrics,
-    sonnet2Lyrics,
-    SplenderSongLyrics,
-    SplenderSong2Lyrics,
-    CottolengoAnthemLyrics,
-    CottolengoAnthemItalianLyrics
-} from "./SongData";
+import {AnthemLyrics, SonnetLyrics, sonnet2Lyrics, SplenderSongLyrics, SplenderSong2Lyrics} from "./SongData";
 
 export function RosesOfRomeSongs() {
     const songs = [
@@ -73,20 +65,20 @@ export function RosesOfRomeSongs() {
         songId: "rorMusic_006",
         songFile: DeoGratias,
         songName: {
-          en: "Deo Gratias",
-          it: "Deo Gratias",
+          en: "Splendor | Splender",
+          it: "Splendore | Splendere",
         },
-        songLyrics: CottolengoAnthemLyrics(),
+        songLyrics: SplenderSongLyrics(),
         songAlbum: "Roses Of Rome",
       },
       {
         songId: "rorMusic_007",
         songFile: DeoGratiasIt,
         songName: {
-          en: "Deo Gratias (italian)",
-          it: "Deo Gratias (italiano",
+          en: "",
+          it: "Splendore || - Splendere ||",
         },
-        songLyrics: CottolengoAnthemItalianLyrics(),
+        songLyrics: [],
         songAlbum: "Roses Of Rome",
       },
     ];

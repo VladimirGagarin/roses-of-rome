@@ -12,9 +12,7 @@ import {
     SonnetLyrics,
     sonnet2Lyrics,
     SplenderSongLyrics,
-    SplenderSong2Lyrics,
-    CottolengoAnthemLyrics,
-    CottolengoAnthemItalianLyrics
+    SplenderSong2Lyrics, CottolengoAnthemLyrics, CottolengoAnthemItalianLyrics
 } from "./SongData";
 
 export function RosesOfRomeSongs() {

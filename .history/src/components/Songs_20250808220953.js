@@ -10,11 +10,7 @@ import DeoGratiasIt from "../assets/audios/gratias.mp3";
 import {
     AnthemLyrics,
     SonnetLyrics,
-    sonnet2Lyrics,
-    SplenderSongLyrics,
-    SplenderSong2Lyrics,
-    CottolengoAnthemLyrics,
-    CottolengoAnthemItalianLyrics
+    sonnet2Lyrics, SplenderSongLyrics, SplenderSong2Lyrics, CottolengoAnthemLyrics, CottolengoAnthemItalianLyrics
 } from "./SongData";
 
 export function RosesOfRomeSongs() {

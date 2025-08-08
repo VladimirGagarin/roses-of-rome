@@ -7,15 +7,7 @@ import  DeoGratias from "../assets/audios/DEOGRATIAS.mp3";
 import DeoGratiasIt from "../assets/audios/gratias.mp3";
 
 // lyrics
-import {
-    AnthemLyrics,
-    SonnetLyrics,
-    sonnet2Lyrics,
-    SplenderSongLyrics,
-    SplenderSong2Lyrics,
-    CottolengoAnthemLyrics,
-    CottolengoAnthemItalianLyrics
-} from "./SongData";
+import {AnthemLyrics, SonnetLyrics, sonnet2Lyrics, SplenderSongLyrics, SplenderSong2Lyrics} from "./SongData";
 
 export function RosesOfRomeSongs() {
     const songs = [
@@ -74,9 +66,9 @@ export function RosesOfRomeSongs() {
         songFile: DeoGratias,
         songName: {
           en: "Deo Gratias",
-          it: "Deo Gratias",
+          it: "",
         },
-        songLyrics: CottolengoAnthemLyrics(),
+        songLyrics: [],
         songAlbum: "Roses Of Rome",
       },
       {
@@ -86,7 +78,7 @@ export function RosesOfRomeSongs() {
           en: "Deo Gratias (italian)",
           it: "Deo Gratias (italiano",
         },
-        songLyrics: CottolengoAnthemItalianLyrics(),
+        songLyrics: [],
         songAlbum: "Roses Of Rome",
       },
     ];

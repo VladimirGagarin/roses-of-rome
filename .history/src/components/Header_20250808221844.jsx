@@ -67,6 +67,14 @@ export default function Navs() {
             </div>
           );
         })}
+        <div
+          className="yt-slider"
+          style={{
+            transform: `translateX(${
+              tabs.findIndex((t) => location.pathname.includes(t.path)) * 100
+            }%)`,
+          }}
+        />
       </div>
     </nav>
   );

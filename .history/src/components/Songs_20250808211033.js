@@ -3,19 +3,10 @@ import RomeTwo from "../assets/audios/rome2.mp3";
 import SWMAnthem from "../assets/audios/anthem.mp3";
 import Splendor from "../assets/audios/splender.mp3";
 import Splendor2 from "../assets/audios/splender2.mp3";
-import  DeoGratias from "../assets/audios/DEOGRATIAS.mp3";
-import DeoGratiasIt from "../assets/audios/gratias.mp3";
+import  Deo
 
 // lyrics
-import {
-    AnthemLyrics,
-    SonnetLyrics,
-    sonnet2Lyrics,
-    SplenderSongLyrics,
-    SplenderSong2Lyrics,
-    CottolengoAnthemLyrics,
-    CottolengoAnthemItalianLyrics
-} from "./SongData";
+import {AnthemLyrics, SonnetLyrics, sonnet2Lyrics, SplenderSongLyrics, SplenderSong2Lyrics} from "./SongData";
 
 export function RosesOfRomeSongs() {
     const songs = [
@@ -36,7 +27,7 @@ export function RosesOfRomeSongs() {
           en: "Roses Of Rome: The Sonnet (Epic)",
           it: "Rose Di Roma: Le Sonnet (Epica)",
         },
-        songLyrics: SonnetLyrics(),
+        songLyrics: SonnetLyrics(), 
         songAlbum: "Roses Of Rome",
       },
       {
@@ -46,7 +37,7 @@ export function RosesOfRomeSongs() {
           en: "Anthem - Sing With Magdalene",
           it: "Utunno - Canti Con Magdalena",
         },
-        songLyrics: AnthemLyrics(),
+        songLyrics: AnthemLyrics(), 
         songAlbum: "Sing With Magdalene",
       },
       {
@@ -67,26 +58,6 @@ export function RosesOfRomeSongs() {
           it: "Splendore || - Splendere ||",
         },
         songLyrics: SplenderSong2Lyrics(),
-        songAlbum: "Roses Of Rome",
-      },
-      {
-        songId: "rorMusic_006",
-        songFile: DeoGratias,
-        songName: {
-          en: "Deo Gratias",
-          it: "Deo Gratias",
-        },
-        songLyrics: CottolengoAnthemLyrics(),
-        songAlbum: "Roses Of Rome",
-      },
-      {
-        songId: "rorMusic_007",
-        songFile: DeoGratiasIt,
-        songName: {
-          en: "Deo Gratias (italian)",
-          it: "Deo Gratias (italiano",
-        },
-        songLyrics: CottolengoAnthemItalianLyrics(),
         songAlbum: "Roses Of Rome",
       },
     ];
