@@ -337,7 +337,6 @@ header {
 @media (max-width: 800px) {
   .share-nav {
     gap: 5px;
-    width: 100%;
   }
   
   .share-content {
@@ -347,10 +346,6 @@ header {
   
   .share-content h1 {
     font-size: 1.5rem;
-  }
-  .share-screen{
-    width: 100%;
-    padding: 0;
   }
 }
 

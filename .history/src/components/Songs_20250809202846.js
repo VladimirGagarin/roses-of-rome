@@ -86,10 +86,10 @@ export function RosesOfRomeSongs() {
         songFile: DeoGratias,
         songName: {
           en: "Deo Gratias - Cottolengo",
-          it: "Deo Gratias - Cottolengo",
+          it: "Deo Gratias - C",
         },
         songLyrics: CottolengoAnthemLyrics(),
-        songAlbum: "Piccola Casa della Gioia",
+        songAlbum: "Roses Of Rome",
       },
       {
         songId: SONG_UUIDS.rorMusic_007,
@@ -99,7 +99,7 @@ export function RosesOfRomeSongs() {
           it: "Deo Gratias (italiano",
         },
         songLyrics: CottolengoAnthemItalianLyrics(),
-        songAlbum: "Piccola Casa della Gioia",
+        songAlbum: "Roses Of Rome",
       },
     ];
     return songs

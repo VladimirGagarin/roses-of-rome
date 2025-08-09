@@ -137,11 +137,8 @@ export default function PlaylistScreen() {
 
   const handleShareSong = async (song) => {
    
-   const baseUrl = `${window.location.origin}${import.meta.env.BASE_URL.replace(
-     /\/$/,
-     ""
-   )}`;
-   const songUrl = `${baseUrl}/#/pages/share/${song.songId}`;
+   const baseUrl = `${window.location.origin}${import.meta.env.BASE_URL.replace(/\/$/, '')}`;
+const songUrl = `${baseUrl}/#/pages/share/${song.songId}`;
 const songTitle = song.songName[language] || song.songName.en;
     const albumName = song.songAlbum || "";
     const textTemplates = {

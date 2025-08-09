@@ -99,7 +99,7 @@ export function RosesOfRomeSongs() {
           it: "Deo Gratias (italiano",
         },
         songLyrics: CottolengoAnthemItalianLyrics(),
-        songAlbum: "Piccola Casa della Gioia",
+        songAlbum: "Roses Of Rome",
       },
     ];
     return songs

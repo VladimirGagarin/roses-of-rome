@@ -69,7 +69,7 @@ export default function ShareScreen() {
        );
      }
    } catch (err) {
-     console.error("Sharing failed Try agin:", err);
+     console.error("Sharing failed:", err);
    }
  };
 

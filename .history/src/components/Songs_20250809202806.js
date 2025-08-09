@@ -76,7 +76,7 @@ export function RosesOfRomeSongs() {
         songFile: Splendor2,
         songName: {
           en: "The Splendor",
-          it: "Un Splendore",
+          it: "USplendore",
         },
         songLyrics: SplenderSong2Lyrics(),
         songAlbum: "Roses Of Rome",
@@ -85,11 +85,11 @@ export function RosesOfRomeSongs() {
         songId: SONG_UUIDS.rorMusic_006,
         songFile: DeoGratias,
         songName: {
-          en: "Deo Gratias - Cottolengo",
-          it: "Deo Gratias - Cottolengo",
+          en: "Deo Gratias",
+          it: "Deo Gratias",
         },
         songLyrics: CottolengoAnthemLyrics(),
-        songAlbum: "Piccola Casa della Gioia",
+        songAlbum: "Roses Of Rome",
       },
       {
         songId: SONG_UUIDS.rorMusic_007,
@@ -99,7 +99,7 @@ export function RosesOfRomeSongs() {
           it: "Deo Gratias (italiano",
         },
         songLyrics: CottolengoAnthemItalianLyrics(),
-        songAlbum: "Piccola Casa della Gioia",
+        songAlbum: "Roses Of Rome",
       },
     ];
     return songs
