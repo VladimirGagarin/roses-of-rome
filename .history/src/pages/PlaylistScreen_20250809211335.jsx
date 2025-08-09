@@ -23,19 +23,11 @@ export default function PlaylistScreen() {
   const [audioState, setAudioState] = useState({});
 
 
-   useEffect(() => {
-     if (!showSurprise) {
-       setPlaying(false);
-       const audio = audioRef.current;
-       if (audio) {
-         audio.pause();
-         audio.currentTime = 0;
-         setCurrentLine("");
-       }
-     }
-   }, [showSurprise]);
-
-  
+  useEffect(() => {
+    if (!showSurprise) {
+      setPlaying(false); 
+    }
+  }, [showSurprise]);
 
    useEffect(() => {
      const audio = audioRef.current;
@@ -87,8 +79,6 @@ export default function PlaylistScreen() {
      }
 
      return () => {
-        audio.removeEventListener("playing", handlePlaying);
-        audio.removeEventListener("pause", handlePause);
        audio.removeEventListener("timeupdate", handleTimeUpdate);
        audio.removeEventListener("waiting", handleWaiting);
        audio.removeEventListener("stalled", handleStalled);
@@ -191,18 +181,18 @@ const songTitle = song.songName[language] || song.songName.en;
         });
       } catch (err) {
         console.error("Sharing failed:", err);
-        fallbackCopyToClipboard(songUrl);
+        fallbackCopyToClipboard(songUrl, shareText);
       }
     } else {
       // Clipboard fallback
-      fallbackCopyToClipboard(songUrl);
+      fallbackCopyToClipboard(songUrl, shareText);
     }
   };
 
   // Clipboard fallback (unchanged)
-  const fallbackCopyToClipboard = (url) => {
+  const fallbackCopyToClipboard = (url, text) => {
     navigator.clipboard
-      .writeText(`${url}`)
+      .writeText(`${text}\n${url}`)
       .then(() => {
         alert(
           language === "it"

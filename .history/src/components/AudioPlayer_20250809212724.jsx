@@ -159,15 +159,7 @@ export default function AudioComponent({ audioFile, title }) {
               ? "Riproduci"
               : "Play"
           }
-          title={
-            isPlaying
-              ? language === "it"
-                ? "Pausa"
-                : "Pause"
-              : language === "it"
-              ? "Riproduci"
-              : "Play"
-          }
+          title={isPlaying ? "Pause" : "Play"}
         >
           {isPlaying ? <FaPause /> : <FaPlay />}
         </button>

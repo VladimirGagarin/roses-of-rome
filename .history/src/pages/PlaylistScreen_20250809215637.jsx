@@ -195,14 +195,14 @@ const songTitle = song.songName[language] || song.songName.en;
       }
     } else {
       // Clipboard fallback
-      fallbackCopyToClipboard(songUrl);
+      fallbackCopyToClipboard(songUrl, shareText);
     }
   };
 
   // Clipboard fallback (unchanged)
-  const fallbackCopyToClipboard = (url) => {
+  const fallbackCopyToClipboard = (url, text) => {
     navigator.clipboard
-      .writeText(`${url}`)
+      .writeText(`${text}\n${url}`)
       .then(() => {
         alert(
           language === "it"

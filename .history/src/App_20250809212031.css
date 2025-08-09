@@ -376,7 +376,7 @@ header {
   font-weight: bold;
   z-index: 100; /* Ensure it appears above other content */
   border-radius: inherit; /* Match parent's border radius */
-  -webkit-backdrop-filter: blur(2px);
+  -webkit-backdrop-fliter: blur(2px);
   backdrop-filter: blur(2px); /* Optional: slight blur effect */
   animation: fadeIn 0.3s ease-out;
 }

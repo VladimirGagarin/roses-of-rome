@@ -30,12 +30,15 @@ export default function PlaylistScreen() {
        if (audio) {
          audio.pause();
          audio.currentTime = 0;
-         setCurrentLine("");
+         setCurrentLine("")
        }
      }
    }, [showSurprise]);
 
-  
+   useEffect(() => {
+     const cleanup = setupAudioListeners();
+     return cleanup;
+   }, []);
 
    useEffect(() => {
      const audio = audioRef.current;
@@ -191,18 +194,18 @@ const songTitle = song.songName[language] || song.songName.en;
         });
       } catch (err) {
         console.error("Sharing failed:", err);
-        fallbackCopyToClipboard(songUrl);
+        fallbackCopyToClipboard(songUrl, shareText);
       }
     } else {
       // Clipboard fallback
-      fallbackCopyToClipboard(songUrl);
+      fallbackCopyToClipboard(songUrl, shareText);
     }
   };
 
   // Clipboard fallback (unchanged)
-  const fallbackCopyToClipboard = (url) => {
+  const fallbackCopyToClipboard = (url, text) => {
     navigator.clipboard
-      .writeText(`${url}`)
+      .writeText(`${text}\n${url}`)
       .then(() => {
         alert(
           language === "it"

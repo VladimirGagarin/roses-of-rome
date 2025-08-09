@@ -202,7 +202,7 @@ const songTitle = song.songName[language] || song.songName.en;
   // Clipboard fallback (unchanged)
   const fallbackCopyToClipboard = (url) => {
     navigator.clipboard
-      .writeText(`${url}`)
+      .writeText(`${text}\n${url}`)
       .then(() => {
         alert(
           language === "it"

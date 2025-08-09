@@ -23,85 +23,60 @@ export default function PlaylistScreen() {
   const [audioState, setAudioState] = useState({});
 
 
-   useEffect(() => {
-     if (!showSurprise) {
-       setPlaying(false);
-       const audio = audioRef.current;
-       if (audio) {
-         audio.pause();
-         audio.currentTime = 0;
-         setCurrentLine("");
-       }
-     }
-   }, [showSurprise]);
-
-  
+  useEffect(() => {
+    if (!showSurprise) {
+      setPlaying(false); 
+    }
+  }, [showSurprise]);
 
    useEffect(() => {
-     const audio = audioRef.current;
-     if (!audio || !showSurprise) return;
+    const audio = audioRef.current;
+    if (!audio || !showSurprise) return;
 
-      const handlePlaying = () => {
-        setAudioState("playing");
-        setPlaying(true);
-      };
+    // Add all event listeners
+    const handleTimeUpdate = () => {
+      const timeMs = audio.currentTime * 1000;
+      setCurrentTime(timeMs);
+      
+    };
 
-      const handlePause = () => {
-        setPlaying(false);
-     };
-     
-     // Add all event listeners
-     const handleTimeUpdate = () => {
-       const timeMs = audio.currentTime * 1000;
-       setCurrentTime(timeMs);
-     };
+    const handleWaiting = () => setAudioState("waiting");
+    const handleStalled = () => setAudioState("stalled");
+    const handleCanPlay = () => setAudioState("idle");
+    const handleLoadStart = () => setAudioState("loading");
+    const handleEnded = () => setPlaying(false);
+    
 
+    audio.addEventListener("timeupdate", handleTimeUpdate);
+    audio.addEventListener("waiting", handleWaiting);
+    audio.addEventListener("stalled", handleStalled);
+    audio.addEventListener("canplay", handleCanPlay);
+    audio.addEventListener("loadstart", handleLoadStart);
+    audio.addEventListener("ended", handleEnded);
 
-     const handleWaiting = () => setAudioState("waiting");
-     const handleStalled = () => setAudioState("stalled");
-     const handleCanPlay = () => setAudioState("idle");
-     const handleLoadStart = () => setAudioState("loading");
-     const handleEnded = () => setPlaying(false);
-     const handleError = () => setAudioState("error");
+    // Initial play attempt
+    const playPromise = audio.play();
+    if (playPromise !== undefined) {
+      playPromise
+        .then(() => setPlaying(true))
+        .catch(() => {
+          setPlaying(false);
+          
+        });
+    }
 
-
-
-     audio.addEventListener("playing", handlePlaying);
-     audio.addEventListener("pause", handlePause);
-     audio.addEventListener("error", handleError);
-     audio.addEventListener("timeupdate", handleTimeUpdate);
-     audio.addEventListener("waiting", handleWaiting);
-     audio.addEventListener("stalled", handleStalled);
-     audio.addEventListener("canplay", handleCanPlay);
-     audio.addEventListener("loadstart", handleLoadStart);
-     audio.addEventListener("ended", handleEnded);
-
-     // Initial play attempt
-     const playPromise = audio.play();
-     if (playPromise !== undefined) {
-       playPromise
-         .then(() => setPlaying(true))
-         .catch(() => {
-           setPlaying(false);
-         });
-     }
-
-     return () => {
-        audio.removeEventListener("playing", handlePlaying);
-        audio.removeEventListener("pause", handlePause);
-       audio.removeEventListener("timeupdate", handleTimeUpdate);
-       audio.removeEventListener("waiting", handleWaiting);
-       audio.removeEventListener("stalled", handleStalled);
-       audio.removeEventListener("canplay", handleCanPlay);
-       audio.removeEventListener("loadstart", handleLoadStart);
-       audio.removeEventListener("ended", handleEnded);
-       audio.removeEventListener("error", handleError);
-       
-       audio.pause();
-       audio.currentTime = 0;
-       setPlaying(false);
-     };
-   }, [showSurprise]); // Only re-run when showSurprise changes
+    return () => {
+      audio.removeEventListener("timeupdate", handleTimeUpdate);
+      audio.removeEventListener("waiting", handleWaiting);
+      audio.removeEventListener("stalled", handleStalled);
+      audio.removeEventListener("canplay", handleCanPlay);
+      audio.removeEventListener("loadstart", handleLoadStart);
+      audio.removeEventListener("ended", handleEnded);
+      audio.pause();
+      audio.currentTime = 0;
+      setPlaying(false);
+    };
+  }, [showSurprise]); // Only re-run when showSurprise changes
 
    useEffect(() => {
     const audio = audioRef.current;
@@ -191,18 +166,18 @@ const songTitle = song.songName[language] || song.songName.en;
         });
       } catch (err) {
         console.error("Sharing failed:", err);
-        fallbackCopyToClipboard(songUrl);
+        fallbackCopyToClipboard(songUrl, shareText);
       }
     } else {
       // Clipboard fallback
-      fallbackCopyToClipboard(songUrl);
+      fallbackCopyToClipboard(songUrl, shareText);
     }
   };
 
   // Clipboard fallback (unchanged)
-  const fallbackCopyToClipboard = (url) => {
+  const fallbackCopyToClipboard = (url, text) => {
     navigator.clipboard
-      .writeText(`${url}`)
+      .writeText(`${text}\n${url}`)
       .then(() => {
         alert(
           language === "it"
@@ -235,9 +210,7 @@ const songTitle = song.songName[language] || song.songName.en;
             />
           </div>
 
-          {Array.isArray(song.songLyrics) &&
-          song.songLyrics.length > 0 &&
-          !["waiting", "stalled"].includes(audioState) ? (
+          {Array.isArray(song.songLyrics) && song.songLyrics.length > 0 && !["waiting", "stalled"].includes(audioState) ? (
             <div className="more-action-card">
               {/* Replace <p> with Share Button */}
               {song.songAlbum && (
@@ -253,12 +226,7 @@ const songTitle = song.songName[language] || song.songName.en;
                   <span>{song.songAlbum}</span>
                 </button>
               )}
-             
-              {["waiting", "stalled", "error"].includes(audioState) && (
-                <div className="audio-state-warning">
-                  {language === "it" ? "Problema audio" : "Audio issue"}
-                </div>
-              )}
+
               {/* Existing YouTube Button */}
               <button
                 className="surprise-button"
@@ -271,7 +239,8 @@ const songTitle = song.songName[language] || song.songName.en;
                 <FaYoutube />
               </button>
             </div>
-          ) : null}
+          ) : null
+        }
         </div>
       ))}
 

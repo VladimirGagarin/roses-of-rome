@@ -100,12 +100,11 @@ export default function AudioComponent({ audioFile, title }) {
   const handleWaiting = () => {
     setLoading(true);
     setStalled(false);
-    setIsPlaying(false);
+    
   };
   const handleStalled = () => {
     setLoading(false);
     setStalled(true);
-    setIsPlaying(false);
   };
   const handleEnded = () => {
     setIsPlaying(false);
@@ -150,24 +149,7 @@ export default function AudioComponent({ audioFile, title }) {
         <button
           className="audio-playpause"
           onClick={handlePlayPause}
-          aria-label={
-            isPlaying
-              ? language === "it"
-                ? "Pausa"
-                : "Pause"
-              : language === "it"
-              ? "Riproduci"
-              : "Play"
-          }
-          title={
-            isPlaying
-              ? language === "it"
-                ? "Pausa"
-                : "Pause"
-              : language === "it"
-              ? "Riproduci"
-              : "Play"
-          }
+          aria-label={isPlaying ? "Pause" : "Play"}
         >
           {isPlaying ? <FaPause /> : <FaPlay />}
         </button>
