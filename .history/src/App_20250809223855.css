@@ -401,15 +401,15 @@ header {
   background-size: 200% auto; /* Make it large enough to scroll */
   background-repeat: repeat;
   background-position: 0% 0%;
- 
+  
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   text-shadow: none;
   padding: 0.5rem 1rem;
   display: inline-block;
-  text-transform: uppercase;
-  animation: scrollBackground 11s linear infinite;
+  text-transform: capitalize;
+  animation: scrollBackground 8s linear infinite;
 }
 
 @keyframes scrollBackground {

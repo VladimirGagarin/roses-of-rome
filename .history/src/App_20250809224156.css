@@ -409,7 +409,7 @@ header {
   padding: 0.5rem 1rem;
   display: inline-block;
   text-transform: uppercase;
-  animation: scrollBackground 11s linear infinite;
+  animation: scrollBackground 8s linear infinite;
 }
 
 @keyframes scrollBackground {

@@ -246,7 +246,7 @@ export default function ShareScreen() {
 
   return (
     <div className="share-screen">
-      <h1 className="share-title">
+      <h1 class>
         {language === "it"
           ? "Rose Di Roma Immagini"
           : "Roses Of Rome  Pictures"}

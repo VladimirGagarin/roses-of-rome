@@ -246,11 +246,6 @@ export default function ShareScreen() {
 
   return (
     <div className="share-screen">
-      <h1 className="share-title">
-        {language === "it"
-          ? "Rose Di Roma Immagini"
-          : "Roses Of Rome  Pictures"}
-      </h1>
       {/* Navigation */}
       <nav className="share-nav">
         <button
@@ -276,6 +271,7 @@ export default function ShareScreen() {
 
       {/* Song Player */}
       <div className="share-content">
+        <h1>{language === "it" ? "Rose Di Rom"}</h1>
         <h2>{songTitle}</h2>
 
         {currentSongObj.songAlbum && (
@@ -306,6 +302,7 @@ export default function ShareScreen() {
                   className="share-button"
                   onClick={() => handleShare(currentSongObj)}
                   title={language === "it" ? "Condividi canzone" : "Share song"}
+
                   aria-label={
                     language === "it" ? "Condividi canzone" : "Share song"
                   }
@@ -334,26 +331,26 @@ export default function ShareScreen() {
             </div>
           ) : null}
         </div>
-      </div>
-
-      {showSurprise && supriseSong && (
-        <SurpriseOverlay
-          language={language}
-          audioRef={audioRef}
-          currentLine={currentLine}
-          isPlaying={isPlaying}
-          setPlaying={setPlaying}
-          audioState={audioState}
-          setSurprise={setShowSurprise}
-          title={
-            language === "it"
-              ? "Versione Speciale per Te"
-              : "Special Version for You"
-          }
-          dynamicBgImage={BgImg}
-          song={supriseSong}
-        />
-      )}
+          </div>
+          
+            {showSurprise && supriseSong && (
+                  <SurpriseOverlay
+                    language={language}
+                    audioRef={audioRef}
+                    currentLine={currentLine}
+                    isPlaying={isPlaying}
+                    setPlaying={setPlaying}
+                    audioState={audioState}
+                    setSurprise={setShowSurprise}
+                    title={
+                      language === "it"
+                        ? "Versione Speciale per Te"
+                        : "Special Version for You"
+                    }
+                    dynamicBgImage={BgImg}
+                    song={supriseSong}
+                  />
+                )}
     </div>
   );
 }

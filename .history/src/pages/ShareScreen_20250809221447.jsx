@@ -2,10 +2,8 @@ import { useParams, useNavigate } from "react-router-dom";
 import { RosesOfRomeSongs } from "../components/Songs.js";
 import AudioComponent from "../components/AudioPlayer.jsx";
 import { useState, useEffect, useRef } from "react";
-import { FaHome, FaMusic, FaShareAlt, FaYoutube } from "react-icons/fa";
+import { FaHome, FaMusic, FaShareAlt } from "react-icons/fa";
 import { useLanguage } from "../components/LanguageContext";
-import SurpriseOverlay from "../components/SurpriseOverlay";
-import BgImg from "../assets/images/wh_sonnet_bg.jpg";
 import "../App.css";
 
 export default function ShareScreen() {
@@ -17,11 +15,9 @@ export default function ShareScreen() {
   const [isPlaying, setPlaying] = useState(false);
   const [audioState, setAudioState] = useState("idle");
     const audioRef = useRef(null);
+  
      const [currentTime, setCurrentTime] = useState(0);
-    const [currentLine, setCurrentLine] = useState("");
-     const [supriseSong, setSurpriseSong] = useState(null);
-     const [showSurprise, setShowSurprise] = useState(false);
-     const [lyricsArray, setLyricsArray] = useState([]);
+     const [currentLine, setCurrentLine] = useState("");
      
     
      useEffect(() => {
@@ -246,11 +242,6 @@ export default function ShareScreen() {
 
   return (
     <div className="share-screen">
-      <h1 className="share-title">
-        {language === "it"
-          ? "Rose Di Roma Immagini"
-          : "Roses Of Rome  Pictures"}
-      </h1>
       {/* Navigation */}
       <nav className="share-nav">
         <button
@@ -272,11 +263,20 @@ export default function ShareScreen() {
           <FaMusic />
           <span>{language === "it" ? "Playlist" : "Playlist"}</span>
         </button>
+
+        <button
+          className="share-button"
+          onClick={handleShare}
+          disabled={audioState === "waiting" || audioState === "stalled"}
+        >
+          <FaShareAlt />
+          <span>{language === "it" ? "Condividi" : "Share"}</span>
+        </button>
       </nav>
 
       {/* Song Player */}
       <div className="share-content">
-        <h2>{songTitle}</h2>
+        <h1>{songTitle}</h1>
 
         {currentSongObj.songAlbum && (
           <p className="song-album">
@@ -335,25 +335,6 @@ export default function ShareScreen() {
           ) : null}
         </div>
       </div>
-
-      {showSurprise && supriseSong && (
-        <SurpriseOverlay
-          language={language}
-          audioRef={audioRef}
-          currentLine={currentLine}
-          isPlaying={isPlaying}
-          setPlaying={setPlaying}
-          audioState={audioState}
-          setSurprise={setShowSurprise}
-          title={
-            language === "it"
-              ? "Versione Speciale per Te"
-              : "Special Version for You"
-          }
-          dynamicBgImage={BgImg}
-          song={supriseSong}
-        />
-      )}
     </div>
   );
 }
