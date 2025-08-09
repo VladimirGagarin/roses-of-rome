@@ -46,10 +46,7 @@ export default function ShareScreen() {
    if (!currentSongObj) return;
 
    // Get the correct base URL for your deployment
- const baseUrl = `${window.location.origin}${import.meta.env.BASE_URL.replace(
-   /\/$/,
-   ""
- )}`;
+ const baseUrl = `${window.location.origin}${import.meta.env.BASE_URL.replace(/\/$/, '')}`;
 
 
    const songTitle =
