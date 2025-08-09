@@ -43,43 +43,38 @@ export default function ShareScreen() {
 
   // Handle sharing
  const handleShare = async () => {
-   if (!currentSongObj) return;
+  if (!currentSongObj) return;
 
-   // Get the correct base URL for your deployment
-   const baseUrl = window.location.host.includes("github.io")
-     ? `${window.location.origin}/roses-of-rome`
-     : window.location.origin;
+  // Get the correct base URL for your deployment
+  const baseUrl = window.location.host.includes('github.io') 
+    ? `${window.location.origin}/roses-of-rome`
+    : window.location.origin;
 
-   const songTitle =
-     currentSongObj.songName[language] || currentSongObj.songName.en;
-   const shareUrl = `${baseUrl}/#/pages/share/${currentSongObj.uuid}`;
+  const songTitle = currentSongObj.songName[language] || currentSongObj.songName.en;
+  const shareUrl = `${baseUrl}/#/pages/share/${currentSongObj.uuid}`;
 
-   const shareData = {
-     title: songTitle,
-     text:
-       language === "it"
-         ? `Ascolta "${songTitle}" 🎶`
-         : `Listen to "${songTitle}" 🎶`,
-     url: shareUrl, // Use the corrected URL
-   };
+  const shareData = {
+    title: songTitle,
+    text: language === "it" 
+      ? `Ascolta "${songTitle}" 🎶` 
+      : `Listen to "${songTitle}" 🎶`,
+    url: shareUrl // Use the corrected URL
+  };
 
-   try {
-     if (navigator.share) {
-       await navigator.share(shareData);
-     } else {
-       await navigator.clipboard.writeText(
-         `${shareData.text}\n${shareData.url}`
-       );
-       alert(
-         language === "it"
-           ? "Link copiato negli appunti!"
-           : "Link copied to clipboard!"
-       );
-     }
-   } catch (err) {
-     console.error("Sharing failed:", err);
-   }
- };
+  try {
+    if (navigator.share) {
+      await navigator.share(shareData);
+    } else {
+      await navigator.clipboard.writeText(`${shareData.text}\n${shareData.url}`);
+      alert(language === "it" 
+        ? "Link copiato negli appunti!" 
+        : "Link copied to clipboard!"
+      );
+    }
+  } catch (err) {
+    console.error("Sharing failed:", err);
+  }
+};
 
   // Fallback UI if song not found
   if (!currentSongObj) {
