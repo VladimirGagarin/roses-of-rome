@@ -19,7 +19,7 @@ import {
     SplenderSong2Lyrics,
     CottolengoAnthemLyrics,
   CottolengoAnthemItalianLyrics, 
-  DeoGratiasFMVLyrics,
+  DeoGratiasFMVLyrics
     DivenProvLyrics
 } from "./SongData";
 
@@ -128,7 +128,7 @@ export function RosesOfRomeSongs() {
           en: "Divine Providence",
           it: "Divinia Providenzza",
         },
-        songLyrics:DivenProvLyrics(),
+        songLyrics: [],
         songAlbum: "Piccola Casa della Gioia",
       },
       {

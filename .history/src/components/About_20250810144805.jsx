@@ -78,7 +78,7 @@ export default function AboutComponent() {
               rel="noopener noreferrer"
             >
               <FaUserPlus />
-              {language === "en" ? "Follow" : "Seguici"}
+              {language === "en" ? "Follow" : "Seguici su"}
             </a>
             <a
               href="https://chat.whatsapp.com/IoJTdMJyJPpFjEOL8yFxWa"

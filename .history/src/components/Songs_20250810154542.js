@@ -19,7 +19,7 @@ import {
     SplenderSong2Lyrics,
     CottolengoAnthemLyrics,
   CottolengoAnthemItalianLyrics, 
-  DeoGratiasFMVLyrics,
+  DeoGratiasFMVLyrics
     DivenProvLyrics
 } from "./SongData";
 

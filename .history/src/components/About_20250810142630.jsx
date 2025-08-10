@@ -1,7 +1,7 @@
 import Logo from "../assets/images/rorps.png";
 import { useState } from "react";
 import "./About.css"
-import { FaBell, FaUserPlus, FaWhatsapp } from "react-icons/fa";
+import { FaBell, FaUserPlus } from "react-icons/fa";
 import { useLanguage } from "./LanguageContext";
 
 
@@ -78,16 +78,10 @@ export default function AboutComponent() {
               rel="noopener noreferrer"
             >
               <FaUserPlus />
-              {language === "en" ? "Follow" : "Seguici"}
+             {language === "en" ? "Follow" : "Seguici su"}
             </a>
-            <a
-              href="https://chat.whatsapp.com/IoJTdMJyJPpFjEOL8yFxWa"
-              target="_blank"
-              rel="noopener noreferrer"
-              
-            >
-              <FaWhatsapp />
-              {language === "it" ? "Unisciti" : "Join"}
+            <a href="https://chat.whatsapp.com/IoJTdMJyJPpFjEOL8yFxWa" target="_blank" rel="noopener noreferrer">
+            <Fa>/</Fa>
             </a>
           </div>
         </div>

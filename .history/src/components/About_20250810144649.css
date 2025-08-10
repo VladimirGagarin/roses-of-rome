@@ -151,11 +151,11 @@
   }
   .right-side-about .bottom {
     margin-top: .3rem;
-    width: 40%;
+    flex: 1 1 50%; /* grow, shrink, basis */
     display: flex;
     gap: .4rem;
     justify-content: space-between;
-    /* flex-direction: column; */
+    flex-direction: column;
   }
   .right-side-about .bottom a {
     padding: 8px;

@@ -6474,7 +6474,7 @@ export function DeoGratiasFMVLyrics() {
 
 
 export function  DivenProvLyrics() {
-  const lyrics = [
+  export const lyrics = [
     {
       start: 99,
       end: 13960,
@@ -6876,7 +6876,7 @@ export function  DivenProvLyrics() {
       },
     },
   ];
-  return lyrics;
+  return
 }
 
 export  function UncalledLyrics () {

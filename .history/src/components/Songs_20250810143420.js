@@ -19,8 +19,7 @@ import {
     SplenderSong2Lyrics,
     CottolengoAnthemLyrics,
   CottolengoAnthemItalianLyrics, 
-  DeoGratiasFMVLyrics,
-    DivenProvLyrics
+    DeoGratiasFMVLyrics
 } from "./SongData";
 
 // utils/songUUIDs.js
@@ -122,31 +121,11 @@ export function RosesOfRomeSongs() {
         songAlbum: "Piccola Casa della Gioia",
       },
       {
-        songId: SONG_UUIDS.rorMusic_009,
-        songFile: Divine,
+        songId: SONG_UUIDS.rorMusic_008,
+        songFile: DeoGratiasFM,
         songName: {
-          en: "Divine Providence",
-          it: "Divinia Providenzza",
-        },
-        songLyrics:DivenProvLyrics(),
-        songAlbum: "Piccola Casa della Gioia",
-      },
-      {
-        songId: SONG_UUIDS.rorMusic_010,
-        songFile: Divine2,
-        songName: {
-          en: "Divine Providence (Soft version)",
-          it: "Divinia Providenzza (Versione soft)",
-        },
-        songLyrics: [],
-        songAlbum: "Piccola Casa della Gioia",
-      },
-      {
-        songId: SONG_UUIDS.rorMusic_011,
-        songFile: DivineIt,
-        songName: {
-          en: "Divine Providence (Italian)",
-          it: "Divinia Providenzza(Italiano)",
+          en: "Deo Gratias (Female voice)",
+          it: "Deo Gratias (voce femminile)",
         },
         songLyrics: [],
         songAlbum: "Piccola Casa della Gioia",

@@ -130,7 +130,7 @@
   .right-side-about {
     padding: 0;
     align-items: start;
-   flex: 1;
+   flex-grow: 1;
 
   }
   .right-side-about .top h1 {
@@ -145,17 +145,17 @@
   }
   .right-side-about .center button {
     margin: .5rem 0;
-    width: 90%;
+    width: 100%;
     padding: 8px;
     
   }
   .right-side-about .bottom {
     margin-top: .3rem;
-    width: 40%;
+    width: 100%;
     display: flex;
     gap: .4rem;
     justify-content: space-between;
-    /* flex-direction: column; */
+    flex-direction: column;
   }
   .right-side-about .bottom a {
     padding: 8px;

@@ -6474,7 +6474,7 @@ export function DeoGratiasFMVLyrics() {
 
 
 export function  DivenProvLyrics() {
-  const lyrics = [
+  export const lyrics = [
     {
       start: 99,
       end: 13960,
