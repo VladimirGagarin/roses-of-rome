@@ -104,7 +104,7 @@ header {
 }
 
 /* Surprise button */
-.share-button, .surprise-button {
+.surprise-button {
   background: transparent; /* YouTube red */
   color: #000;
   border: 1px solid #000;
@@ -119,8 +119,8 @@ header {
 }
 
 .surprise-button:hover {
- background-color: rgba(255, 255, 255, 0.2);
-  transform: scale(1.05);
+  background: purple;
+  transform: scale(1.1);
 }
 
 .surprise-button:active {
@@ -191,7 +191,7 @@ header {
     color: #fff;
   }
 
-  .surprise-button, .share-button {
+  .surprise-button {
   background: transparent; /* YouTube red */
   color: #fff;
     border-color: #fff;

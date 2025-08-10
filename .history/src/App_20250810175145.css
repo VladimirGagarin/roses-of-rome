@@ -119,8 +119,8 @@ header {
 }
 
 .surprise-button:hover {
- background-color: rgba(255, 255, 255, 0.2);
-  transform: scale(1.05);
+  background: purple;
+  transform: scale(1.1);
 }
 
 .surprise-button:active {

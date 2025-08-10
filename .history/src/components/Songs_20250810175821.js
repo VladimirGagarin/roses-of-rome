@@ -22,7 +22,7 @@ import {
   DeoGratiasFMVLyrics,
     DivenProvLyrics,
   DivineFMVLyrics,
-    DivneITLyrics
+    DivneITLyrics()
 } from "./SongData";
 
 // utils/songUUIDs.js
@@ -150,7 +150,7 @@ export function RosesOfRomeSongs() {
           en: "Divine Providence (Italian)",
           it: "Divinia Providenzza(Italiano)",
         },
-        songLyrics: DivneITLyrics(),
+        songLyrics: [],
         songAlbum: "Piccola Casa della Gioia",
       },
     ];
