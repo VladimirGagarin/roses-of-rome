@@ -39,7 +39,6 @@ import {
    rorMusic_009: "i9j0k1l2-m3n4-5678-9012-cdef12345678",
    rorMusic_010: "j0k1l2m3-n4o5-6789-0123-def123456789",
    rorMusic_011: "k1l2m3n4-o5p6-7890-1234-ef1234567890",
-   rorMusic_012: "3f9b2c1a-4d6e-4a8f-9b2c-0e1f2d3c4b5a",
  };
 
 
@@ -155,7 +154,7 @@ export function RosesOfRomeSongs() {
         songLyrics: DivneITLyrics(),
         songAlbum: "Piccola Casa della Gioia",
       },
-      {
+{
         songId: SONG_UUIDS.rorMusic_012,
         songFile: Congrats,
         songName: {
@@ -163,7 +162,7 @@ export function RosesOfRomeSongs() {
           it: "Congratulazioni",
         },
         songLyrics: [],
-        songAlbum: "Roses Of Rome",
+        songAlbum: "Piccola Casa della Gioia",
       },    
     ];
     return songs
