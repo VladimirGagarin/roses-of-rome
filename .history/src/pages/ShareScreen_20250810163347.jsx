@@ -330,6 +330,7 @@ export default function ShareScreen() {
                 }
               >
                 <FaYoutube /> {language === "it" ? "Liriche" : "Lyrics"}
+
               </button>
             </div>
           ) : null}

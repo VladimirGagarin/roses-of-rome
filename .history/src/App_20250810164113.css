@@ -119,7 +119,7 @@ header {
 }
 
 .surprise-button:hover {
-  background: purple;
+  background: rgba(255, 0, 0, 0.9);
   transform: scale(1.1);
 }
 
@@ -186,15 +186,14 @@ header {
 }
 
 @media (prefers-color-scheme: dark) {
-  .share-button, .nav-button{
+  .share-button, .nav-button, .surprise-button{
     border-color: #fff;
     color: #fff;
   }
 
   .surprise-button {
   background: transparent; /* YouTube red */
-  color: #fff;
-    border-color: #fff;
+  color: #;
   }
   
 }

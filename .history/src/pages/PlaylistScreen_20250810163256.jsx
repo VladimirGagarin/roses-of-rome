@@ -253,7 +253,7 @@ const songTitle = song.songName[language] || song.songName.en;
                   <span>{song.songAlbum}</span>
                 </button>
               )}
-
+             
               {["waiting", "stalled", "error"].includes(audioState) && (
                 <div className="audio-state-warning">
                   {language === "it" ? "Problema audio" : "Audio issue"}
@@ -268,8 +268,8 @@ const songTitle = song.songName[language] || song.songName.en;
                   language === "it" ? "Guarda i testi" : "View lyrics"
                 }
               >
-                <FaYoutube />
-                {language === "it" ? "Liriche" : "Lyrics"}
+                <FaYoutube />{language === "it" ? "Liriche" : "Lyrics"}
+
               </button>
             </div>
           ) : null}
