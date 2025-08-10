@@ -15,8 +15,7 @@ import {
     SplenderSongLyrics,
     SplenderSong2Lyrics,
     CottolengoAnthemLyrics,
-  CottolengoAnthemItalianLyrics, 
-    DeoGratiasFMVLyrics
+    CottolengoAnthemItalianLyrics
 } from "./SongData";
 
 // utils/songUUIDs.js
@@ -108,10 +107,10 @@ export function RosesOfRomeSongs() {
         songId: SONG_UUIDS.rorMusic_008,
         songFile: DeoGratiasFM,
         songName: {
-          en: "Deo Gratias (Female voice)",
-          it: "Deo Gratias (voce femminile)",
+          en: "Deo Gratias (Female)",
+          it: "Deo Gratias (italiano)",
         },
-        songLyrics:  DeoGratiasFMVLyrics(),
+        songLyrics: CottolengoAnthemItalianLyrics(),
         songAlbum: "Piccola Casa della Gioia",
       },
     ];

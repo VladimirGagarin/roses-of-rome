@@ -5,7 +5,7 @@ import Splendor from "../assets/audios/splender.mp3";
 import Splendor2 from "../assets/audios/splender2.mp3";
 import  DeoGratias from "../assets/audios/DEOGRATIAS.mp3";
 import DeoGratiasIt from "../assets/audios/gratias.mp3";
-import DeoGratiasFM from "../assets/audios/DEOGRATIAS3.mp3";
+import DeoGratias from "../assets/audios/DEOGRATIAS3.mp3";
 
 // lyrics
 import {
@@ -15,8 +15,7 @@ import {
     SplenderSongLyrics,
     SplenderSong2Lyrics,
     CottolengoAnthemLyrics,
-  CottolengoAnthemItalianLyrics, 
-    DeoGratiasFMVLyrics
+    CottolengoAnthemItalianLyrics
 } from "./SongData";
 
 // utils/songUUIDs.js
@@ -99,19 +98,9 @@ export function RosesOfRomeSongs() {
         songFile: DeoGratiasIt,
         songName: {
           en: "Deo Gratias (italian)",
-          it: "Deo Gratias (italiano)",
+          it: "Deo Gratias (italiano",
         },
         songLyrics: CottolengoAnthemItalianLyrics(),
-        songAlbum: "Piccola Casa della Gioia",
-      },
-      {
-        songId: SONG_UUIDS.rorMusic_008,
-        songFile: DeoGratiasFM,
-        songName: {
-          en: "Deo Gratias (Female voice)",
-          it: "Deo Gratias (voce femminile)",
-        },
-        songLyrics:  DeoGratiasFMVLyrics(),
         songAlbum: "Piccola Casa della Gioia",
       },
     ];

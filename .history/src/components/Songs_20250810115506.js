@@ -111,7 +111,7 @@ export function RosesOfRomeSongs() {
           en: "Deo Gratias (Female voice)",
           it: "Deo Gratias (voce femminile)",
         },
-        songLyrics:  DeoGratiasFMVLyrics(),
+        songLyrics: DeoGratiasFMVLyrics(),
         songAlbum: "Piccola Casa della Gioia",
       },
     ];

@@ -6469,7 +6469,7 @@ export function DeoGratiasFMVLyrics() {
       },
     },
   ];
-  return lyrics;
+  
 }
 
 export function MomentsLyrics() {
