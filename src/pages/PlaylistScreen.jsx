@@ -5,6 +5,7 @@ import { FaYoutube, FaShareAlt } from "react-icons/fa";
 import { useRef, useEffect, useState } from "react";
 import SurpriseOverlay from "../components/SurpriseOverlay";
 import BgImg from "../assets/images/wh_sonnet_bg.jpg";
+import BgImg2 from "../assets/images/txt_bg.jpg";
 import "../App.css";
 
 export default function PlaylistScreen() {
@@ -21,6 +22,8 @@ export default function PlaylistScreen() {
   const [currentTime, setCurrentTime] = useState(0);
   const [currentLine, setCurrentLine] = useState("");
   const [audioState, setAudioState] = useState({});
+  const [currentImg, setCurrentImg] = useState(0);
+  const bgsImg = [BgImg, BgImg2];
 
 
    useEffect(() => {
@@ -36,6 +39,10 @@ export default function PlaylistScreen() {
    }, [showSurprise]);
 
   
+  useEffect(() => {
+  setCurrentImg(prev => (prev + 1) % bgsImg.length);
+}, [currentLine]);
+
 
    useEffect(() => {
      const audio = audioRef.current;
@@ -149,7 +156,7 @@ export default function PlaylistScreen() {
 
     audio.addEventListener("ended", handleEnded);
     return () => audio.removeEventListener("ended", handleEnded);
-  }, [])          ;
+  }, []) ;
           
 
   const handleSurprise = (song) => {
@@ -223,43 +230,39 @@ const songTitle = song.songName[language] || song.songName.en;
     <div className="playlist-container">
       {allSongs.map((song) => (
         <div className="song-card" key={song.songId}>
+          {song.songAlbum && (
+            <p style={{ textAlign: "left" }}>
+              {" "}
+              {language === "it" ? "Dall'album" : "From album"}:{" "}
+              {song.songAlbum}
+            </p>
+          )}
           <div className="audio-wrapper">
             <AudioComponent
               audioFile={song.songFile}
               title={song.songName[language] || ""}
-              audioRef={audioRef}
-              isPlaying={isPlaying}
-              setPlaying={setPlaying}
-              setCurrentLine={setCurrentLine}
-              setAudioState={setAudioState}
+             
             />
           </div>
 
-          {Array.isArray(song.songLyrics) &&
-          song.songLyrics.length > 0 &&
-          !["waiting", "stalled"].includes(audioState) ? (
-            <div className="more-action-card">
-              {/* Replace <p> with Share Button */}
-              {song.songAlbum && (
-                <button
-                  className="share-button"
-                  onClick={() => handleShareSong(song)}
-                  title={language === "it" ? "Condividi canzone" : "Share song"}
-                  aria-label={
-                    language === "it" ? "Condividi canzone" : "Share song"
-                  }
-                >
-                  <FaShareAlt /> {/* Using react-icons' share icon */}
-                  <span>{song.songAlbum}</span>
-                </button>
-              )}
+          <div className="more-action-card">
+            {/* Replace <p> with Share Button */}
+            {song.songId && (
+              <button
+                className="share-button"
+                onClick={() => handleShareSong(song)}
+                title={language === "it" ? "Condividi canzone" : "Share song"}
+                aria-label={
+                  language === "it" ? "Condividi canzone" : "Share song"
+                }
+              >
+                <FaShareAlt /> {/* Using react-icons' share icon */}
+                <span>{language === "it" ? "Condividi" : "Share"}</span>
+              </button>
+            )}
 
-              {["waiting", "stalled", "error"].includes(audioState) && (
-                <div className="audio-state-warning">
-                  {language === "it" ? "Problema audio" : "Audio issue"}
-                </div>
-              )}
-              {/* Existing YouTube Button */}
+            {/* Existing YouTube Button */}
+            {Array.isArray(song.songLyrics) && song.songLyrics.length > 0 && (
               <button
                 className="surprise-button"
                 onClick={() => handleSurprise(song)}
@@ -271,8 +274,8 @@ const songTitle = song.songName[language] || song.songName.en;
                 <FaYoutube />
                 {language === "it" ? "Liriche" : "Lyrics"}
               </button>
-            </div>
-          ) : null}
+            )}
+          </div>
         </div>
       ))}
 
@@ -290,7 +293,7 @@ const songTitle = song.songName[language] || song.songName.en;
               ? "Versione Speciale per Te"
               : "Special Version for You"
           }
-          dynamicBgImage={BgImg}
+          dynamicBgImage={bgsImg[currentImg]}
           song={supriseSong}
         />
       )}

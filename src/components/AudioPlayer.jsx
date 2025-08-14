@@ -11,6 +11,7 @@ export default function AudioComponent({ audioFile, title }) {
   const [currentTime, setCurrentTime] = useState(0);
   const [loading, setLoading] = useState(false);
   const [stalled, setStalled] = useState(false);
+   const [isCurrent, setIsCurrent] = useState(false);
   const [error, setError] = useState(null);
 
   const { language } = useLanguage();
@@ -53,6 +54,16 @@ export default function AudioComponent({ audioFile, title }) {
     }
   }, [audioFile]);
 
+  useEffect(() => {
+  const handleSetCurrent = (e) => {
+    // if the event is from THIS audio element, mark current
+    setIsCurrent(e.detail === audioRef.current);
+  };
+  window.addEventListener("set-current-audio", handleSetCurrent);
+  return () => window.removeEventListener("set-current-audio", handleSetCurrent);
+}, []);
+
+
   const handlePlayPause = () => {
     const audio = audioRef.current;
     if (!audio) return;
@@ -67,6 +78,7 @@ export default function AudioComponent({ audioFile, title }) {
       );
       audio.play();
     }
+
   };
 
   const handleLoadedMetadata = () => {
@@ -95,6 +107,8 @@ export default function AudioComponent({ audioFile, title }) {
     setLoading(false);
     setStalled(false);
     setError(null);
+     // Tell all AudioComponents who is the current one
+  window.dispatchEvent(new CustomEvent("set-current-audio", { detail: audioRef.current }));
   };
   const handlePause = () => setIsPlaying(false);
   const handleWaiting = () => {
@@ -111,6 +125,8 @@ export default function AudioComponent({ audioFile, title }) {
     setIsPlaying(false);
     setCurrentTime(0);
     setProgress(0);
+    window.dispatchEvent(new CustomEvent("set-current-audio", { detail: null }));
+
   };
   const handleError = () => {
     setError(true);
@@ -126,7 +142,7 @@ export default function AudioComponent({ audioFile, title }) {
   };
 
   return (
-    <div className="audio-component">
+    <div className={`audio-component ${isCurrent ? "current" : ""}`}>
       <div className="audio-header">
         <span className="audio-title">{title}</span>
       </div>
@@ -177,7 +193,7 @@ export default function AudioComponent({ audioFile, title }) {
         >
           <div className="audio-progress-bar">
             <div
-              className="audio-progress"
+              className={`audio-progress ${isCurrent ? "active" : ""}`}
               style={{ width: `${progress * 100}%` }}
             />
           </div>
