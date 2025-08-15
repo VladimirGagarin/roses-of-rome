@@ -12,7 +12,7 @@ import DivineIt from "../assets/audios/divine_it.mp3";
 import Congrats from "../assets/audios/Congrats.mp3";
 import Boomerang from "../assets/audios/boomerang.mp3";
 import Boomerang2 from "../assets/audios/boomerang_female.mp3";
-
+import Boomerang3 from "../assets/audios/boomerang3.mp3";
 // lyrics
 import {
     AnthemLyrics,
@@ -44,6 +44,7 @@ import {
    rorMusic_012: "3f9b2c1a-4d6e-4a8f-9b2c-0e1f2d3c4b5a",
    rorMusic_013: "f9470c44-6e57-4d91-9d83-5fb6f9493db7",
    rorMusic_014: "4d9303d8-79e3-46ea-a7c3-9b9db58b4c1e",
+   rorMusic_015: "dee7092d-f34042998-5aec-8184bd247a2h",
  };
 
 
@@ -171,21 +172,31 @@ export function RosesOfRomeSongs() {
       },
       {
         songId: SONG_UUIDS.rorMusic_013,
-        songFile: Boomerang2,
+        songFile: Boomerang3,
         songName: {
-          en: "Boomerang Love (Female version)",
-          it: "Amore Boomerang (versione femminile)",
+          en: "Boomerang Love",
+          it: "Amore Boomerang",
         },
         songLyrics: [],
         songAlbum: "Roses Of Rome",
       },
       {
         songId: SONG_UUIDS.rorMusic_014,
-        songFile: Boomerang,
+        songFile: Boomerang2,
         songName: {
-          en: "Boomerang Love (Male version)",
-          it: "Amore Boomerang (versione maschile)",
+          en: "Boomerang Love (Soft version)",
+          it: "Amore Boomerang (versione soft)",
         },
+        songLyrics: [],
+        songAlbum: "Roses Of Rome",
+      },
+      {
+        songId: SONG_UUIDS.rorMusic_015,
+        songFile: Boomerang,
+      songName: {
+        en: "Boomerang Love (Country version)",
+        it: "Amore Boomerang (versione country)",
+      },
         songLyrics: [],
         songAlbum: "Roses Of Rome",
       },
