@@ -286,6 +286,7 @@ body {
   animation: fadeIn 0.3s ease;
 }
 
+
 .overlay-content-surprise {
   width: 90%;
   max-width: 900px;
@@ -294,10 +295,10 @@ body {
   padding: 2rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  text-align: center;
   position: relative;
-  overflow: hidden; /* Hide video overflow */
+  overflow: hidden;
 }
+
 
 /* Video background container */
 .video-background {
@@ -321,7 +322,7 @@ body {
 
 /* Lyrics Container (with Background Image) */
 .lyrics.synced {
-  height: 50vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -330,6 +331,8 @@ body {
   padding: 2rem;
   margin: 1.5rem 0;
   position: relative;
+  flex-direction: column;
+
 }
 
 
@@ -551,6 +554,37 @@ body {
 }
 
 
+
+.progress-border {
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 0;
+  background: 
+    linear-gradient(#111, #111) content-box,
+    conic-gradient(#ff4d4d 0deg, transparent 0deg) border-box;
+  border: 2px solid transparent;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  transition: background 0.1s linear;
+  z-index: 3;
+}
+
+.progress-border {
+  /* ... other styles ... */
+  /* Ensure border is visible on transparent bg */
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.1) inset;
+  
+  /* Mobile-specific */
+  @media (max-width: 800px) {
+    background: transparent !important;
+    border: 2px solid transparent;
+  }
+}
 
 
 @media (max-width: 800px) {

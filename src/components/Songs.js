@@ -13,6 +13,7 @@ import Congrats from "../assets/audios/Congrats.mp3";
 import Boomerang from "../assets/audios/boomerang.mp3";
 import Boomerang2 from "../assets/audios/boomerang_female.mp3";
 import Boomerang3 from "../assets/audios/boomerang3.mp3";
+import Boomerang4 from "../assets/audios/boomerang3_it.mp3";
 // lyrics
 import {
     AnthemLyrics,
@@ -25,7 +26,8 @@ import {
   DeoGratiasFMVLyrics,
     DivenProvLyrics,
   DivineFMVLyrics,
-    DivneITLyrics
+    DivneITLyrics,
+    BoomerangLyrics
 } from "./SongData";
 
 // utils/songUUIDs.js
@@ -45,6 +47,7 @@ import {
    rorMusic_013: "f9470c44-6e57-4d91-9d83-5fb6f9493db7",
    rorMusic_014: "4d9303d8-79e3-46ea-a7c3-9b9db58b4c1e",
    rorMusic_015: "dee7092d-f34042998-5aec-8184bd247a2h",
+   rorMusic_016: "2g8a1b6-5yht87jt7687iyhjtr75686554yjgh"
  };
 
 
@@ -177,6 +180,16 @@ export function RosesOfRomeSongs() {
           en: "Boomerang Love",
           it: "Amore Boomerang",
         },
+        songLyrics: BoomerangLyrics(),
+        songAlbum: "Roses Of Rome",
+      },
+      {
+        songId: SONG_UUIDS.rorMusic_016,
+        songFile: Boomerang4,
+        songName: {
+          en: "Boomerang Love (Italian)",
+          it: "Amore Boomerang(Italiano)",
+        },
         songLyrics: [],
         songAlbum: "Roses Of Rome",
       },
@@ -200,6 +213,7 @@ export function RosesOfRomeSongs() {
         songLyrics: [],
         songAlbum: "Roses Of Rome",
       },
+       
     ];
     return songs
 }

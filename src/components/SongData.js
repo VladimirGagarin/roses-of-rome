@@ -7384,6 +7384,381 @@ export  function DivneITLyrics() {
 return lyrics
 }
 
+export function BoomerangLyrics() {
+  const lyrics = [
+    {
+      start: 10800,
+      end: 12900,
+      text: { 
+        en: "no matter the distance",
+        it: "Non conta la distanza, né gli anni che van,"
+      }
+    },
+    {
+      start: 13320,
+      end: 15620,
+      text: { 
+        en: "no matter how years turn",
+        it: "l'amore si alza, con promessa tornerà."
+      }
+    },
+    {
+      start: 16840,
+      end: 20500,
+      text: { 
+        en: "love takes flight with a promise of return",
+        it: "Gira il mondo intero, sa dove posar,"
+      }
+    },
+    {
+      start: 21520,
+      end: 26540,
+      text: { 
+        en: "it circles the world it knows where to land",
+        it: "ancora caldo nel tocco di chi sa aspettar."
+      }
+    },
+    {
+      start: 26680,
+      end: 31420,
+      text: { 
+        en: "still warm in the touch of a welcoming hand",
+        it: "ancora caldo nel tocco di una mano che accoglie."
+      }
+    },
+    {
+      start: 31920,
+      end: 34560,
+      text: { 
+        en: "boomerang of love",
+        it: "Boomerang d'amore, un volo che non si perde,"
+      }
+    },
+    {
+      start: 34560,
+      end: 36960,
+      text: { 
+        en: "a flight never lost",
+        it: "tra ombre e tempeste, la sua rotta si stende."
+      }
+    },
+    {
+      start: 36960,
+      end: 39760,
+      text: { 
+        en: "through shadows and storms",
+        it: "Ogni volta lanciato, più in alto volerà,"
+      }
+    },
+    {
+      start: 39760,
+      end: 42300,
+      text: { 
+        en: "it still makes its course",
+        it: "ritornando per sempre — il Boomerang d'amor sarà."
+      }
+    },
+    {
+      start: 42480,
+      end: 47780,
+      text: { 
+        en: "each time it is cast it will rise far above",
+        it: "ogni volta lanciato, più in alto si alzerà,"
+      }
+    },
+    {
+      start: 48080,
+      end: 53700,
+      text: { 
+        en: "returning again the boomerang of love",
+        it: "ritornando di nuovo — il Boomerang d'amore."
+      }
+    },
+    {
+      start: 65400,
+      end: 69940,
+      text: { 
+        en: "Return oh boomerang to hearts that are warm",
+        it: "Ritorna, o boomerang, ai cuori che sanno scaldar,"
+      }
+    },
+    {
+      start: 70680,
+      end: 72500,
+      text: { 
+        en: "to the unlove",
+        it: "agli incompresi, ai gentili, ai buoni nel mar."
+      }
+    },
+    {
+      start: 72680,
+      end: 77480,
+      text: { 
+        en: "the gentle the kind and the storm and above",
+        it: "E sopra ogni cosa, ritorna con verità,"
+      }
+    },
+    {
+      start: 77480,
+      end: 80900,
+      text: { 
+        en: "all return with the truth from above",
+        it: "per ridare ciò che fu dato — ritorna come amor sarà."
+      }
+    },
+    {
+      start: 81840,
+      end: 84200,
+      text: { 
+        en: "to restore what was given",
+        it: "per restituire ciò che fu donato,"
+      }
+    },
+    {
+      start: 84200,
+      end: 86420,
+      text: { 
+        en: "return as love",
+        it: "ritorna come amore."
+      }
+    },
+    {
+      start: 86520,
+      end: 89040,
+      text: { 
+        en: "boomerang of love",
+        it: "Boomerang d'amore, un volo che non si perde,"
+      }
+    },
+    {
+      start: 89040,
+      end: 91560,
+      text: { 
+        en: "of flight never lost",
+        it: "tra ombre e tempeste, la sua rotta si stende."
+      }
+    },
+    {
+      start: 91560,
+      end: 94320,
+      text: { 
+        en: "through shadows and storms",
+        it: "Ogni volta lanciato, più in alto volerà,"
+      }
+    },
+    {
+      start: 94320,
+      end: 96860,
+      text: { 
+        en: "it still makes its course",
+        it: "ritornando per sempre — il Boomerang d'amor sarà."
+      }
+    },
+    {
+      start: 97040,
+      end: 102540,
+      text: { 
+        en: "each time it is cast it will rise far above",
+        it: "ogni volta lanciato, più in alto si alzerà,"
+      }
+    },
+    {
+      start: 102640,
+      end: 117000,
+      text: { 
+        en: "returning again the boomerang of love",
+        it: "ritornando di nuovo — il Boomerang d'amore."
+      }
+    },
+    {
+      start: 119800,
+      end: 122240,
+      text: { 
+        en: "through the arc of the sky",
+        it: "Attraverso l'arco del cielo e il respiro della terra,"
+      }
+    },
+    {
+      start: 122240,
+      end: 125380,
+      text: { 
+        en: "and the breath of the earth",
+        it: "l'amore trova chi è perso e la speranza riafferra."
+      }
+    },
+    {
+      start: 125920,
+      end: 127880,
+      text: { 
+        en: "love finds the lost",
+        it: "Nessuna forza lo ferma, nessuna ombra lo può legar,"
+      }
+    },
+    {
+      start: 127880,
+      end: 130740,
+      text: { 
+        en: "and rekindles their worth",
+        it: "la strada promessa dall'amor saprà sempre trovar."
+      }
+    },
+    {
+      start: 130800,
+      end: 134800,
+      text: { 
+        en: "no force can deter",
+        it: "Nessuna forza lo può fermare,"
+      }
+    },
+    {
+      start: 134800,
+      end: 136300,
+      text: { 
+        en: "no shadow can stay",
+        it: "nessuna ombra lo può trattenere."
+      }
+    },
+    {
+      start: 136720,
+      end: 139600,
+      text: { 
+        en: "the path of love's promise",
+        it: "Il cammino della promessa d'amore"
+      }
+    },
+    {
+      start: 139600,
+      end: 142140,
+      text: { 
+        en: "will find its own way",
+        it: "saprà sempre trovare la sua via."
+      }
+    },
+   {
+  start: 143760,  // 00:02:23,760
+  end: 146180,    // 00:02:26,180
+  text: { 
+    en: "boomerang of love",
+    it: "Boomerang d'amore, un volo che non si perde,"
+  }
+},
+{
+  start: 146280,  // 00:02:26,280
+  end: 148840,    // 00:02:28,840
+  text: { 
+    en: "a flight never lost",
+    it: "tra ombre e tempeste, la sua rotta si stende."
+  }
+},
+{
+  start: 148840,  // 00:02:28,840
+  end: 151600,    // 00:02:31,600
+  text: { 
+    en: "through shadows and storms",
+    it: "Ogni volta lanciato, più in alto volerà,"
+  }
+},
+{
+  start: 151600,  // 00:02:31,600
+  end: 153540,    // 00:02:33,540
+  text: { 
+    en: "it still makes its course",
+    it: "ritornando per sempre — il Boomerang d'amor sarà."
+  }
+},
+{
+  start: 154320,  // 00:02:34,320
+  end: 157040,    // 00:02:37,040
+  text: { 
+    en: "each time it is cast",
+    it: "ogni volta che viene lanciato"
+  }
+},
+{
+  start: 157040,  // 00:02:37,040
+  end: 159620,    // 00:02:39,620
+  text: { 
+    en: "it will rise far above",
+    it: "si alzerà sempre più in alto"
+  }
+},
+{
+  start: 159880,  // 00:02:39,880
+  end: 165180,    // 00:02:45,180
+  text: { 
+    en: "returning again the boomerang of love",
+    it: "ritornando di nuovo — il Boomerang d'amore."
+  }
+},
+{
+  start: 167920,  // 00:02:47,920
+  end: 170580,    // 00:02:50,580
+  text: { 
+    en: "boomerang of love",
+    it: "Per sempre gira, per sempre volerà,"
+  }
+},
+{
+  start: 174080,  // 00:02:54,080
+  end: 176700,    // 00:02:56,700
+  text: { 
+    en: "forever it circles",
+    it: "sotto il sole, nei cieli senza finità."
+  }
+},
+{
+  start: 176920,  // 00:02:56,920
+  end: 181460,    // 00:03:01,460
+  text: { 
+    en: "forever it flies beneath the sun",
+    it: "Boomerang d'amore, nel suo eterno tornar,"
+  }
+},
+{
+  start: 182200,  // 00:03:02,200
+  end: 184640,    // 00:03:04,640
+  text: { 
+    en: "through unending skies",
+    it: "la fiamma rimane, i cuori a bruciar."
+  }
+},
+{
+  start: 184640,  // 00:03:04,640
+  end: 187040,    // 00:03:07,040
+  text: { 
+    en: "boomerang of love",
+    it: "Boomerang d'amore,"
+  }
+},
+{
+  start: 187040,  // 00:03:07,040
+  end: 189380,    // 00:03:09,380
+  text: { 
+    en: "in its endless return",
+    it: "nel suo eterno ritorno,"
+  }
+},
+{
+  start: 189880,  // 00:03:09,880
+  end: 192540,    // 00:03:12,540
+  text: { 
+    en: "the fire keeps glowing",
+    it: "la fiamma continua a brillare,"
+  }
+},
+{
+  start: 192680,  // 00:03:12,680
+  end: 194900,    // 00:03:14,900
+  text: { 
+    en: "the heart's ever burned",
+    it: "i cuori restano sempre accesi."
+  }
+}
+  ];
+  return lyrics;
+}
+
+
 export  function UncalledLyrics () {
   const subtitles = [
   {

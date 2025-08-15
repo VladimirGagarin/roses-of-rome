@@ -243,6 +243,7 @@ export default function HomeScreen() {
           setPlaying={setPlaying}
           audioState={audioState}
           setSurprise={setSurprise}
+           setCurrentLine= {currentLine}
           title={
             language === "it"
               ? "Versione Speciale per Te"

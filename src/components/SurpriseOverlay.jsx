@@ -1,5 +1,5 @@
 // SurpriseOverlay.jsx
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { FaPlay, FaPause, FaSpinner } from "react-icons/fa6";
 import BgVid from "../assets/videos/bg_vid2.mp4";
 import BgImg from "../assets/images/ror.png";
@@ -17,7 +17,11 @@ export default function SurpriseOverlay({
   dynamicBgImage,
   song,
 }) {
-    const [isSlowNetwork, setIsSlowNetwork] = useState(false);
+    const [isSlowNetwork, setIsSlowNetwork] = useState(true);
+    const [progress, setProgress] = useState(0);
+    const progressRef = useRef(null);
+    const frameRef = useRef();
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
 
   useEffect(() => {
     if ("connection" in navigator) {
@@ -43,6 +47,51 @@ export default function SurpriseOverlay({
       };
     }
   }, []);
+
+   // In your component
+const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 800);
+
+useEffect(() => {
+  const updateProgress = () => {
+    if (audioRef.current && progressRef.current) {
+      const currentTime = audioRef.current.currentTime;
+      const duration = audioRef.current.duration || 1;
+      const progressPercent = (currentTime / duration) * 100;
+
+      // Transparent background for mobile, solid for desktop
+      const bgStyle = isMobile 
+        ? 'transparent' 
+        : 'linear-gradient(#111, #111) content-box';
+
+      progressRef.current.style.background = 
+        `${bgStyle},
+         conic-gradient(
+           #4dffdeff 0deg,
+           #4dd5ffff ${(progressPercent / 100) * 360}deg,
+           transparent ${(progressPercent / 100) * 360}deg,
+           transparent 360deg
+         ) border-box`;
+    }
+    frameRef.current = requestAnimationFrame(updateProgress);
+  };
+
+  // Add resize listener
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 800);
+  };
+
+  window.addEventListener('resize', handleResize);
+  return () => {
+    cancelAnimationFrame(frameRef.current);
+    window.removeEventListener('resize', handleResize);
+  };
+}, [isPlaying, isMobile]); // Add isMobile to dependencies
+
+   // Add this to your existing audio event handlers
+  const handlePlay = () => {
+    setPlaying(true);
+    frameRef.current = requestAnimationFrame(updateProgress);
+  };
 
   return (
     <div className="overlay-modal-suprise">
@@ -98,16 +147,20 @@ export default function SurpriseOverlay({
           </div>
         )}
 
+        <div className="progress-border" ref={progressRef}></div>
+
         <div className="lyrics synced">
+           
           <p
             key={dynamicBgImage}
             style={{
               backgroundImage: `url(${dynamicBgImage})`,
+              gap: "4px"
             }}
           >
-            {" "}
-            {currentLine}
+          {currentLine || "🎵"}
           </p>
+      
         </div>
 
         <div className="actions-btn">
@@ -146,9 +199,10 @@ export default function SurpriseOverlay({
                 audioRef.current.pause();
                 audioRef.current.currentTime = 0;
                 setPlaying(false);
-                currentLine = "";
+                
               }
               setSurprise(false);
+              setCurrentLine("");
             }}
           >
             ✕

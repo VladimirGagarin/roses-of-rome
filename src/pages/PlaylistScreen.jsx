@@ -140,7 +140,11 @@ export default function PlaylistScreen() {
     const handleStalled = () => setAudioState("stalled");
     const handleCanPlay = () => setAudioState("idle");
     const handleLoadStart = () => setAudioState("loading");
-    const handleEnded = () => setPlaying(false);
+    const handleEnded = () => {
+      setCurrentImg(0);
+      setPlaying(false);
+      setCurrentLine("");
+    };
 
     audio.addEventListener("waiting", handleWaiting);
     audio.addEventListener("stalled", handleStalled);
@@ -174,7 +178,11 @@ export default function PlaylistScreen() {
     const audio = audioRef.current;
     if (!audio) return;
 
-    const handleEnded = () => setPlaying(false);
+     const handleEnded = () => {
+      setCurrentImg(0);
+      setPlaying(false);
+      setCurrentLine("");
+    };
 
     audio.addEventListener("ended", handleEnded);
     return () => audio.removeEventListener("ended", handleEnded);
@@ -187,6 +195,7 @@ export default function PlaylistScreen() {
      window.dispatchEvent(
         new CustomEvent("pause-all-audio", { detail: null })
     );
+    
     setSurpriseSong(song.songFile);
     setShowSurprise(true);
     setLyricsArray(song.songLyrics)
@@ -306,6 +315,7 @@ const songTitle = song.songName[language] || song.songName.en;
           language={language}
           audioRef={audioRef}
           currentLine={currentLine}
+          setCurrentLine= {currentLine}
           isPlaying={isPlaying}
           setPlaying={setPlaying}
           audioState={audioState}

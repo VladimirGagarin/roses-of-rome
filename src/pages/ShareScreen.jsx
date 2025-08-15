@@ -336,6 +336,7 @@ export default function ShareScreen() {
           setPlaying={setPlaying}
           audioState={audioState}
           setSurprise={setShowSurprise}
+          setCurrentLine= {currentLine}
           title={
             language === "it"
               ? "Versione Speciale per Te"
