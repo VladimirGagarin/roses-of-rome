@@ -21,7 +21,7 @@ export default function SurpriseOverlay({
     const [progress, setProgress] = useState(0);
     const progressRef = useRef(null);
     const frameRef = useRef();
-    const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 800);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
 
   useEffect(() => {
     if ("connection" in navigator) {
