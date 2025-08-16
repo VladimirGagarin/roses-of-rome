@@ -14,9 +14,7 @@ import Boomerang from "../assets/audios/boomerang.mp3";
 import Boomerang2 from "../assets/audios/boomerang_female.mp3";
 import Boomerang3 from "../assets/audios/boomerang3.mp3";
 import Boomerang4 from "../assets/audios/boomerang3_it.mp3";
-import VisionShortSong from "../assets/audios/vision_short.mp3";
-import VisionShortSongIt from "../assets/audios/vision_it.mp3";
-
+import VisionShortSong from "../assets/audios/vision_short"
 // lyrics
 import {
     AnthemLyrics,
@@ -50,9 +48,8 @@ import {
    rorMusic_013: "f9470c44-6e57-4d91-9d83-5fb6f9493db7",
    rorMusic_014: "4d9303d8-79e3-46ea-a7c3-9b9db58b4c1e",
    rorMusic_015: "dee7092d-f34042998-5aec-8184bd247a2h",
-   rorMusic_016: "a8b9c0d1-e2f3-4956-789a-bcdef0123456",
-   rorMusic_017: "1b2a3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
-   rorMusic_018: "9c1d2e3f-4a5b-4c6d-8e9f-0a1b2c3d4e5f",
+    rorMusic_016: "a8b9c0d1-e2f3-4956-789a-bcdef0123456",
+  rorMusic_017: "1b2a3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d"
  };
 
 
@@ -211,33 +208,14 @@ export function RosesOfRomeSongs() {
       {
         songId: SONG_UUIDS.rorMusic_015,
         songFile: Boomerang,
-        songName: {
-          en: "Boomerang Love (Country version)",
-          it: "Amore Boomerang (versione country)",
-        },
+      songName: {
+        en: "Boomerang Love (Country version)",
+        it: "Amore Boomerang (versione country)",
+      },
         songLyrics: [],
         songAlbum: "Roses Of Rome",
       },
-      {
-        songId: SONG_UUIDS.rorMusic_017,
-        songFile: VisionShortSong,
-        songName: {
-          en: "Roses of Rome Vision",
-          it: "Visione delle Rose di Roma",
-        },
-        songLyrics: [],
-        songAlbum: "Roses Of Rome",
-      },
-      {
-        songId: SONG_UUIDS.rorMusic_018,
-        songFile: VisionShortSongIt,
-        songName: {
-          en: "Roses of Rome Vision (italian)",
-          it: "Visione delle Rose di Roma (italaiano)",
-        },
-        songLyrics: [],
-        songAlbum: "Roses Of Rome",
-      },
+       
     ];
     return songs
 }

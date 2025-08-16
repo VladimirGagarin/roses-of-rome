@@ -232,8 +232,8 @@ export function RosesOfRomeSongs() {
         songId: SONG_UUIDS.rorMusic_018,
         songFile: VisionShortSongIt,
         songName: {
-          en: "Roses of Rome Vision (italian)",
-          it: "Visione delle Rose di Roma (italaiano)",
+          en: "Roses of Rome Vision",
+          it: "Visione delle Rose di Roma",
         },
         songLyrics: [],
         songAlbum: "Roses Of Rome",

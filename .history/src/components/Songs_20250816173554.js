@@ -233,7 +233,7 @@ export function RosesOfRomeSongs() {
         songFile: VisionShortSongIt,
         songName: {
           en: "Roses of Rome Vision (italian)",
-          it: "Visione delle Rose di Roma (italaiano)",
+          it: "Visione delle Rose di Roma (",
         },
         songLyrics: [],
         songAlbum: "Roses Of Rome",
