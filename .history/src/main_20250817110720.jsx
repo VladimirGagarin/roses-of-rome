@@ -11,7 +11,7 @@ import ShortsScreen from './pages/Shorts.jsx';
 import SearchScreen from './pages/Search.jsx';
 import VideoPlayerScreen from "./pages/VideoPlayerScreen.jsx";
 import ShareScreen from './pages/ShareScreen.jsx';
-import EmbedSong from './pages/EmbededSong.jsx';
+import EmbededSong
 
 const routes = createHashRouter([
   {
@@ -30,7 +30,6 @@ const routes = createHashRouter([
     path: "pages/share/:id",
     element: <ShareScreen/>
   },
-  {path: "pages/embed/:songId", element: <EmbedSong/>},
   { path: '*', element: <Navigate to="pages/home" replace /> },
 ]);
 

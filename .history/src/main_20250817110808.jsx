@@ -30,7 +30,7 @@ const routes = createHashRouter([
     path: "pages/share/:id",
     element: <ShareScreen/>
   },
-  {path: "pages/embed/:songId", element: <EmbedSong/>},
+  {path: "pages/embeded/:id"},
   { path: '*', element: <Navigate to="pages/home" replace /> },
 ]);
 

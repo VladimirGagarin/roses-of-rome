@@ -347,20 +347,6 @@ const songTitle = song.songName[language] || song.songName.en;
                   {language === "it" ? "Liriche" : "Lyrics"}
                 </button>
               )}
-
-            {song.songId && (
-              <button
-                className="share-button"
-                onClick={() => handleEmbedSong(song)}
-                title={language === "it" ? "Incorpora canzone" : "Embed song"}
-                aria-label={
-                  language === "it" ? "Incorpora canzone" : "Embed song"
-                }
-              >
-                <span>📋</span> {/* or use a react-icon like <FaCode /> */}
-                <span>{language === "it" ? "Incorpora" : "Embed"}</span>
-              </button>
-            )}
           </div>
         </div>
       ))}

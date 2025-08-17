@@ -350,7 +350,7 @@ const songTitle = song.songName[language] || song.songName.en;
 
             {song.songId && (
               <button
-                className="share-button"
+                className="embed-button"
                 onClick={() => handleEmbedSong(song)}
                 title={language === "it" ? "Incorpora canzone" : "Embed song"}
                 aria-label={

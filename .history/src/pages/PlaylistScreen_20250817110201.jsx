@@ -270,32 +270,7 @@ const songTitle = song.songName[language] || song.songName.en;
       });
   };
 
-  const handleEmbedSong = (song) => {
-    const baseUrl = `${
-      window.location.origin
-    }${import.meta.env.BASE_URL.replace(/\/$/, "")}`;
-    const embedUrl = `${baseUrl}/#/embed/${song.songId}`;
-
-    const iframeCode = `<iframe width="400" height="120" src="${embedUrl}" frameborder="0" allow="autoplay"></iframe>`;
-
-    navigator.clipboard
-      .writeText(iframeCode)
-      .then(() => {
-        alert(
-          language === "it"
-            ? "Codice embed copiato negli appunti! 📋"
-            : "Embed code copied to clipboard! 📋"
-        );
-      })
-      .catch(() => {
-        alert(
-          language === "it"
-            ? "Impossibile copiare il codice."
-            : "Failed to copy embed code."
-        );
-      });
-  };
-
+  
 
   return (
     <div className="playlist-container">
@@ -347,20 +322,6 @@ const songTitle = song.songName[language] || song.songName.en;
                   {language === "it" ? "Liriche" : "Lyrics"}
                 </button>
               )}
-
-            {song.songId && (
-              <button
-                className="share-button"
-                onClick={() => handleEmbedSong(song)}
-                title={language === "it" ? "Incorpora canzone" : "Embed song"}
-                aria-label={
-                  language === "it" ? "Incorpora canzone" : "Embed song"
-                }
-              >
-                <span>📋</span> {/* or use a react-icon like <FaCode /> */}
-                <span>{language === "it" ? "Incorpora" : "Embed"}</span>
-              </button>
-            )}
           </div>
         </div>
       ))}
