@@ -1,7 +1,7 @@
 import { RosesOfRomeSongs } from "../components/Songs.js";
 import AudioComponent from "../components/AudioPlayer";
 import { useLanguage } from "../components/LanguageContext";
-import { FaYoutube, FaShareAlt, FaCode } from "react-icons/fa";
+import { FaYoutube, FaShareAlt, FaCode, FaLink } from "react-icons/fa";
 import { useRef, useEffect, useState } from "react";
 import SurpriseOverlay from "../components/SurpriseOverlay";
 import BgImg from "../assets/images/wh_sonnet_bg.jpg";
@@ -27,7 +27,11 @@ export default function PlaylistScreen() {
 
   const [supriseSong, setSurpriseSong] = useState(null);
   const [showSurprise, setShowSurprise] = useState(false);
-   const [lyricsArray, setLyricsArray] = useState([]);
+  const [lyricsArray, setLyricsArray] = useState([]);
+  const [showShareMenu, setShowShareMenu] = useState(false);
+  const [shareMenuPosition, setShareMenuPosition] = useState({ x: 0, y: 0 });
+  const [currentSongForShare, setCurrentSongForShare] = useState(null);
+
 
   // Placeholder audioRef etc. (should ideally come from AudioComponent or be centralized)
   const audioRef = useRef(null);
@@ -77,6 +81,19 @@ export default function PlaylistScreen() {
   useEffect(() => {
   setCurrentImg(prev => (prev + 1) % bgsImg.length);
 }, [currentLine]);
+  const handleShareClick = (song, event) => {
+    setCurrentSongForShare(song);
+    setShareMenuPosition({
+      x: event.clientX,
+      y: event.clientY
+    });
+    setShowShareMenu(true);
+  };
+
+  const closeShareMenu = () => {
+    setShowShareMenu(false);
+  };
+
 
 
    useEffect(() => {
@@ -214,41 +231,42 @@ export default function PlaylistScreen() {
     setLyricsArray(song.songLyrics)
   };
 
-  const handleShareSong = async (song) => {
-   
-   const baseUrl = `${window.location.origin}${import.meta.env.BASE_URL.replace(
-     /\/$/,
-     ""
-   )}`;
-   const songUrl = `${baseUrl}/#/pages/share/${song.songId}`;
-const songTitle = song.songName[language] || song.songName.en;
-    const albumName = song.songAlbum || "";
-    const textTemplates = {
-      it: `Ascolta "${songTitle}"${
-        albumName ? ` dall'album ${albumName}` : ""
-      } 🎶`,
-      en: `Listen to "${songTitle}"${albumName ? ` from ${albumName}` : ""} 🎶`,
-    };
-    const shareText = textTemplates[language] || textTemplates.en;
+  
+ 
 
 
-    // Web Share API (mobile/Chrome)
-    if (navigator.share) {
-      try {
-        await navigator.share({
-          title: songTitle,
-          text: shareText,
-          url: songUrl, // Uses the dynamic URL
-        });
-      } catch (err) {
-        console.error("Sharing failed:", err);
-        fallbackCopyToClipboard(songUrl);
-      }
-    } else {
-      // Clipboard fallback
-      fallbackCopyToClipboard(songUrl);
-    }
-  };
+   const handleShareSong = async (song) => {
+     const baseUrl = `${
+       window.location.origin
+     }${import.meta.env.BASE_URL.replace(/\/$/, "")}`;
+     const songUrl = `${baseUrl}/#/pages/share/${song.songId}`;
+     const songTitle = song.songName[language] || song.songName.en;
+     const albumName = song.songAlbum || "";
+     const textTemplates = {
+       it: `Ascolta "${songTitle}"${
+         albumName ? ` dall'album ${albumName}` : ""
+       } 🎶`,
+       en: `Listen to "${songTitle}"${
+         albumName ? ` from ${albumName}` : ""
+       } 🎶`,
+     };
+     const shareText = textTemplates[language] || textTemplates.en;
+
+     if (navigator.share) {
+       try {
+         await navigator.share({
+           title: songTitle,
+           text: shareText,
+           url: songUrl,
+         });
+       } catch (err) {
+         fallbackCopyToClipboard(songUrl);
+         console.warn(err)
+       }
+     } else {
+       fallbackCopyToClipboard(songUrl);
+     }
+   };
 
   // Clipboard fallback (unchanged)
   const fallbackCopyToClipboard = (url) => {
@@ -275,118 +293,132 @@ const songTitle = song.songName[language] || song.songName.en;
       window.location.origin
     }${import.meta.env.BASE_URL.replace(/\/$/, "")}`;
     const embedUrl = `${baseUrl}/#/pages/embed/${song.songId}?autoplay=1&theme=dark`;
+    const iframeCode = `<iframe width="600px" height="300px" src="${embedUrl}" loading="lazy" frameborder="0" allow="autoplay" style="border:none" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>`;
 
-   const iframeCode = `<iframe  width="800px" height="300px" src="${embedUrl}" loading="lazy" frameborder="0" allow="autoplay" style="border:none" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>`;
-    navigator.clipboard
-      .writeText(iframeCode)
-      .then(() => {
-        alert(
-          language === "it"
-            ? "Codice embed copiato negli appunti! 📋"
-            : "Embed code copied to clipboard! 📋"
-        );
-      })
-      .catch((err) => {
-        console.error("Failed to copy:", err);
-        // Fallback for browsers without clipboard API
-        const textarea = document.createElement("textarea");
-        textarea.value = iframeCode;
-        document.body.appendChild(textarea);
-        textarea.select();
-        document.execCommand("copy");
-        document.body.removeChild(textarea);
-        console.log("Used fallback copy method");
-      });
+    navigator.clipboard.writeText(iframeCode).catch(() => {
+      // Fallback for browsers without clipboard API
+      const textarea = document.createElement("textarea");
+      textarea.value = iframeCode;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textarea);
+    });
   };
 
 
-  return (
-    <div className="playlist-container">
-      {shuffledSongs.map((song) => (
-        <div className="song-card" key={song.songId}>
-          {song.songAlbum && (
-            <p style={{ textAlign: "left" }}>
-              {" "}
-              {language === "it" ? "Dall'album" : "From album"}:{" "}
-              {song.songAlbum}
-            </p>
-          )}
-          <div className="audio-wrapper">
-            <AudioComponent
-              audioFile={song.songFile}
-              title={song.songName[language] || ""}
-            />
-          </div>
+  const handleCopyLink = async () => {
+    if (!currentSongForShare) return;
+    await handleShareSong(currentSongForShare);
+    closeShareMenu();
+  };
 
-          <div className="more-action-card">
-            {/* Replace <p> with Share Button */}
-            {song.songId && (
-              <button
-                className="share-button"
-                onClick={() => handleShareSong(song)}
-                title={language === "it" ? "Condividi canzone" : "Share song"}
-                aria-label={
-                  language === "it" ? "Condividi canzone" : "Share song"
-                }
-              >
-                <FaShareAlt /> {/* Using react-icons' share icon */}
-                <span>{language === "it" ? "Condividi" : "Share"}</span>
-              </button>
+  const handleCopyEmbed = () => {
+    if (!currentSongForShare) return;
+    handleEmbedSong(currentSongForShare);
+    closeShareMenu();
+  };
+
+
+    return (
+      <div className="playlist-container">
+        {shuffledSongs.map((song) => (
+          <div className="song-card" key={song.songId}>
+            {song.songAlbum && (
+              <p style={{ textAlign: "left" }}>
+                {language === "it" ? "Dall'album" : "From album"}:{" "}
+                {song.songAlbum}
+              </p>
             )}
+            <div className="audio-wrapper">
+              <AudioComponent
+                audioFile={song.songFile}
+                title={song.songName[language] || ""}
+              />
+            </div>
 
-            {song.songId && (
-              <button
-                className="share-button"
-                onClick={() => handleEmbedSong(song)}
-                title={language === "it" ? "Incorpora canzone" : "Embed song"}
-                aria-label={
-                  language === "it" ? "Incorpora canzone" : "Embed song"
-                }
-              >
-                <FaCode />
-                <span>{language === "it" ? "Incorpora" : "Embed"}</span>
-              </button>
-            )}
-
-            {/* Existing YouTube Button */}
-            {Array.isArray(song.songLyrics) &&
-              song.songLyrics.length > 0 &&
-              isOnline && (
+            <div className="more-action-card">
+              {/* Single Share Button that will show the menu */}
+              {song.songId && (
                 <button
-                  className="surprise-button"
-                  onClick={() => handleSurprise(song)}
-                  title={language === "it" ? "Guarda i testi" : "View lyrics"}
+                  className="share-button"
+                  onClick={(e) => handleShareClick(song, e)}
+                  title={language === "it" ? "Condividi canzone" : "Share song"}
                   aria-label={
-                    language === "it" ? "Guarda i testi" : "View lyrics"
+                    language === "it" ? "Condividi canzone" : "Share song"
                   }
                 >
-                  <FaYoutube />
-                  {language === "it" ? "Liriche" : "Lyrics"}
+                  <FaShareAlt />
+                  <span>{language === "it" ? "Condividi" : "Share"}</span>
                 </button>
               )}
-          </div>
-        </div>
-      ))}
 
-      {showSurprise && supriseSong && (
-        <SurpriseOverlay
-          language={language}
-          audioRef={audioRef}
-          currentLine={currentLine}
-          setCurrentLine={currentLine}
-          isPlaying={isPlaying}
-          setPlaying={setPlaying}
-          audioState={audioState}
-          setSurprise={setShowSurprise}
-          title={
-            language === "it"
-              ? "Versione Speciale per Te"
-              : "Special Version for You"
-          }
-          dynamicBgImage={bgsImg[currentImg]}
-          song={supriseSong}
-        />
-      )}
-    </div>
-  );
+              {/* Existing YouTube Button */}
+              {Array.isArray(song.songLyrics) &&
+                song.songLyrics.length > 0 &&
+                isOnline && (
+                  <button
+                    className="surprise-button"
+                    onClick={() => handleSurprise(song)}
+                    title={language === "it" ? "Guarda i testi" : "View lyrics"}
+                    aria-label={
+                      language === "it" ? "Guarda i testi" : "View lyrics"
+                    }
+                  >
+                    <FaYoutube />
+                    {language === "it" ? "Liriche" : "Lyrics"}
+                  </button>
+                )}
+            </div>
+          </div>
+        ))}
+
+        {/* Share Menu Overlay */}
+        {showShareMenu && (
+          <div className="share-menu-overlay" onClick={closeShareMenu}>
+            <div
+              className="share-menu"
+              style={{
+                position: "fixed",
+                left: `${Math.min(
+                  shareMenuPosition.x,
+                  window.innerWidth - 200
+                )}px`,
+                top: `${shareMenuPosition.y}px`,
+                transform:
+                  shareMenuPosition.y > window.innerHeight - 150
+                    ? "translateY(-100%)"
+                    : "none",
+              }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button onClick={handleCopyLink}>
+                <FaLink />
+                {language === "it" ? "Copia link" : "Copy link"}
+              </button>
+              <button onClick={handleCopyEmbed}>
+                <FaCode />
+                {language === "it" ? "Codice embed" : "Embed code"}
+              </button>
+            </div>
+          </div>
+        )}
+
+        {showSurprise && supriseSong && (
+          <SurpriseOverlay
+            language={language}
+            audioRef={audioRef}
+            currentLine={currentLine}
+            setCurrentLine={currentLine}
+            isPlaying={isPlaying}
+            setPlaying={setPlaying}
+            audioState={audioState}
+            setSurprise={setShowSurprise}
+
+            dynamicBgImage={bgsImg[currentImg]}
+            song={supriseSong}
+          />
+        )}
+      </div>
+    );
 }

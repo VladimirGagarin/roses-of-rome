@@ -215,10 +215,11 @@ export function RosesOfRomeVideos () {
           en: "Roses Of Rome Vision",
           it: "Rosa Di Roma Visione",
         },
-        description: {
-          en: "",
-          it: "",
+       description: {
+          en: "We are Roses of Rome: humble in spirit, turning strangers into kin, opening our gates with compassion, and crowned by kindness.",
+          it: "Siamo le Rose di Roma: umili nello spirito, trasformiamo gli stranieri in fratelli, apriamo le nostre porte con compassione e siamo incoronati dalla gentilezza.",
         },
+
         thumbnail: null,
         author: "Roses Of Rome",
         datePublished: null,

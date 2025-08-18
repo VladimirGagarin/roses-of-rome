@@ -22,6 +22,7 @@ import WelcomeSongIt from "../assets/audios/welcome_it.mp3";
 import VisionFemale from "../assets/audios/vision_female.mp3";
 import VisionDuet from "../assets/audios/vision_duet.mp3";
 import Everything from "../assets/audios/Everything(Remix).mp3";
+import Tutto from "../assets/audios/tutto.mp3";
 // lyrics
 import {
   AnthemLyrics,
@@ -69,7 +70,23 @@ const SONG_UUIDS = {
   rorMusic_021: "7A9B2E1D-4F8C-3D6A-9E2B-1C4F3FJY6HGd",
   rorMusic_022: "f0406d2b-e7a3-4cf5-9f56-5b081bba2dbb",
   rorMusic_023: "64e0015c-f4a9-4b93-8352-795e464736af",
-  rorMusic_024: ""
+  rorMusic_024: "cfcc80ce-bce3-445e-ab37-78409520338f",
+  rorMusic_025: "3e4e6a60-fa63-484d-a777-0c0c8924f2c3",
+  rorMusic_026: "02aec31e-8575-43e5-ba37-ac704da49524",
+  rorMusic_027: "e1955d40-6c0b-4c97-a6c7-30e03c440188",
+  rorMusic_028: "18ebf2ac-adde-4a17-8366-e6c7c121bf99",
+  rorMusic_029: "7cb080c7-6988-4eaa-a9a5-5a34341f9288",
+  rorMusic_030: "9e281028-d9e5-4557-b8ec-a61e74eebc87",
+  rorMusic_031: "3029d759-7473-469e-a244-2304458d573e",
+  rorMusic_032: "1576ec78-11e7-496e-9a6a-e0848d560ef7",
+  rorMusic_033: "9429e9a0-1b0b-426c-890e-45004584e381",
+  rorMusic_034: "1c5bbc52-515a-4d9a-be98-cbc2845cb8c8",
+  rorMusic_035: "35ee11b6-fe8f-410f-8a02-2f01c4fe7d8d",
+  rorMusic_036: "c954bd7f-c2fb-4838-9d94-2e1f2c18f270",
+  rorMusic_037: "a8b2c4d6-e8f0-42a5-93b7-c1d3e5f7a9b1",
+  rorMusic_038: "b9c3d5e7-f9e1-53b6-84c9-d2e4f6a8b0c2",
+  rorMusic_039: "c0d4e6f8-0a2b-64c7-95d8-e3f5a7b9c1d3",
+  rorMusic_040: "d1e5f7a9-1b2c-75d8-a6e9-f4a6b8c0d2e4",
 };
 
 export function RosesOfRomeSongs() {
@@ -310,6 +327,16 @@ export function RosesOfRomeSongs() {
       songName: {
         en: "Everything to see you again (Remix)",
         it: "Tutto per rivederti (RMX)",
+      },
+      songLyrics: [],
+      songAlbum: "Roses Of Rome",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_025,
+      songFile: Tutto,
+      songName: {
+        en: "Everything to see you again",
+        it: "Tutto per rivederti",
       },
       songLyrics: [],
       songAlbum: "Roses Of Rome",
