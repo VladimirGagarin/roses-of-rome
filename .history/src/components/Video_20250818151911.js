@@ -209,7 +209,7 @@ export function RosesOfRomeVideos () {
       },
       {
         id: "RorVision",
-        src: Video9, // assuming you've imported it as Video6
+        src: Video, // assuming you've imported it as Video6
         type: "long",
         title: {
           en: "Roses Of Rome Vision",

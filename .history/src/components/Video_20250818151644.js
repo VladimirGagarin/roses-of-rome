@@ -6,7 +6,7 @@ import Video5 from "../assets/videos/vid_005.mp4";
 import Video6 from "../assets/videos/vid_006.mp4";
 import Video7 from "../assets/videos/vid_007.mp4";
 import Video8 from "../assets/videos/anthem-swm.mp4";
-import Video9 from "../assets/videos/vision.mp4";
+import Video9 from "../assets/videos/visiom.mp4";
 
 export function RosesOfRomeVideos () {
     const videos = [
@@ -209,23 +209,23 @@ export function RosesOfRomeVideos () {
       },
       {
         id: "RorVision",
-        src: Video9, // assuming you've imported it as Video6
+        src: Video8, // assuming you've imported it as Video6
         type: "long",
         title: {
-          en: "Roses Of Rome Vision",
-          it: "Rosa Di Roma Visione",
+          en: "Anthem - Sing With Magdalene",
+          it: "Inno - Canta con Maddalena",
         },
         description: {
           en: "",
-          it: "",
-        },
+          it: ""
+         },
         thumbnail: null,
         author: "Roses Of Rome",
         datePublished: null,
         captions: null,
         copyright: false,
-        playlist: "Roses Of Rome",
-        externalLink: "https://youtu.be/mm_YE8V6HZM",
+        playlist: "Sing With Magdalene",
+        externalLink: "https://youtu.be/a3E5O9-6Ui0?list=RDAWl6sMzGHr0",
         permission: true,
       },
     ];
