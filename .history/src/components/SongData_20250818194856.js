@@ -9391,326 +9391,326 @@ return subtitles;
 
 export function VisionDuetLyrics () {
   const vision_duet = [
-    {
-      start: 99,
-      end: 8420,
-      text: {
-        en: "(instrumental music plays)",
-        it: "(musica strumentale)",
-      },
-    },
-    {
-      start: 12359,
-      end: 16799,
-      text: {
-        en: "We are the ones who carve light from the stone,",
-        it: "Noi siamo coloro che scolpiscono la luce dalla pietra,",
-      },
-    },
-    {
-      start: 18319,
-      end: 23040,
-      text: {
-        en: "who turn every street into galleries",
-        it: "Che trasformano ogni strada in gallerie",
-      },
-    },
-    {
-      start: 23079,
-      end: 27399,
-      text: {
-        en: "unknown. We paint the world in colors yet",
-        it: "sconosciute. Dipingeremo il mondo con colori mai",
-      },
-    },
-    {
-      start: 27420,
-      end: 32299,
-      text: {
-        en: "untold (yet untold). We shape the marble",
-        it: "raccontati. Plasmiamo il marmo",
-      },
-    },
-    {
-      start: 32360,
-      end: 36779,
-      text: {
-        en: "to outlast the gold. This is our",
-        it: "perché superi l'oro. Questo è il nostro",
-      },
-    },
-    {
-      start: 36860,
-      end: 41220,
-      text: {
-        en: "creed, beauty is heirloom and",
-        it: "credo: la bellezza è eredità e",
-      },
-    },
-    {
-      start: 41379,
-      end: 45180,
-      text: {
-        en: "fire. Let's paint our hearts with colors",
-        it: "fiamma. Dipingeremo i nostri cuori con colori",
-      },
-    },
-    {
-      start: 45219,
-      end: 48700,
-      text: {
-        en: "unafraid. Let the",
-        it: "senza paura. Lasciamo che",
-      },
-    },
-    {
-      start: 48840,
-      end: 52699,
-      text: {
-        en: "crayons speak where words have strayed.",
-        it: "i pastelli parlino dove le parole sono svanite.",
-      },
-    },
-    {
-      start: 54159,
-      end: 58699,
-      text: {
-        en: "Let the brush weave dreams in hues of hope.",
-        it: "Che il pennello tessa sogni in tinte di speranza,",
-      },
-    },
-    {
-      start: 60159,
-      end: 64779,
-      text: {
-        en: "Let the canvas cradle our future",
-        it: "Che la tela culli il nostro futuro",
-      },
-    },
-    {
-      start: 64860,
-      end: 69660,
-      text: {
-        en: "bright. As roses of Rome let us",
-        it: "luminoso. Come Rose di Roma, lasciateci",
-      },
-    },
-    {
-      start: 69720,
-      end: 72419,
-      text: {
-        en: "bloom forever.",
-        it: "fiorire per sempre.",
-      },
-    },
-    {
-      start: 76639,
-      end: 81559,
-      text: {
-        en: "(instrumental music plays) We are the ones whose hearts are",
-        it: "(musica strumentale) Noi siamo coloro i cui cuori sono",
-      },
-    },
-    {
-      start: 81580,
-      end: 86180,
-      text: {
-        en: "unbound, who turn pain into",
-        it: "liberi, che trasformano il dolore in",
-      },
-    },
-    {
-      start: 86220,
-      end: 90800,
-      text: {
-        en: "light from the deepest wound. We give",
-        it: "luce dalle ferite più profonde. Doniamo",
-      },
-    },
-    {
-      start: 90900,
-      end: 94959,
-      text: {
-        en: "joy like rivers that never run",
-        it: "gioia come fiumi che non si prosciugano",
-      },
-    },
-    {
-      start: 95019,
-      end: 99360,
-      text: {
-        en: "dry. We pray love will find us",
-        it: "mai. Preghiamo che l'amore ci trovi",
-      },
-    },
-    {
-      start: 99699,
-      end: 103739,
-      text: {
-        en: "beneath every sky. This is our vow,",
-        it: "sotto ogni cielo. Questo è il nostro voto:",
-      },
-    },
-    {
-      start: 104399,
-      end: 108839,
-      text: {
-        en: "love conquers all. Let's paint our",
-        it: "l'amore vince su tutto. Dipingiamo i nostri",
-      },
-    },
-    {
-      start: 108959,
-      end: 112659,
-      text: {
-        en: "hearts with colors unafraid.",
-        it: "cuori con colori senza paura.",
-      },
-    },
-    {
-      start: 114139,
-      end: 118979,
-      text: {
-        en: "Let the crayons speak where words have strayed.",
-        it: "Lasciamo che i pastelli parlino dove le parole sono svanite.",
-      },
-    },
-    {
-      start: 120139,
-      end: 124739,
-      text: {
-        en: "Let the brush weave dreams in hues of hope.",
-        it: "Che il pennello tessa sogni in tinte di speranza,",
-      },
-    },
-    {
-      start: 126139,
-      end: 130779,
-      text: {
-        en: "Let the canvas cradle our future",
-        it: "Che la tela culli il nostro futuro",
-      },
-    },
-    {
-      start: 130839,
-      end: 135679,
-      text: {
-        en: "bright. As roses of Rome let us",
-        it: "luminoso. Come Rose di Roma, lasciateci",
-      },
-    },
-    {
-      start: 135699,
-      end: 137879,
-      text: {
-        en: "bloom forever.",
-        it: "fiorire per sempre.",
-      },
-    },
-    {
-      start: 143399,
-      end: 147679,
-      text: {
-        en: "(instrumental music plays) We are the ones who kneel in the",
-        it: "(musica strumentale) Noi siamo coloro che si inginocchiano nella",
-      },
-    },
-    {
-      start: 147739,
-      end: 152179,
-      text: {
-        en: "dust, who turn strangers to",
-        it: "polvere, che trasformano stranieri in",
-      },
-    },
-    {
-      start: 152220,
-      end: 156839,
-      text: {
-        en: "kin through unwavering trust. We give",
-        it: "fratelli con fiducia incrollabile. Doniamo",
-      },
-    },
-    {
-      start: 156899,
-      end: 160979,
-      text: {
-        en: "not just alms, but the keys to our",
-        it: "non solo elemosine, ma le chiavi delle nostre",
-      },
-    },
-    {
-      start: 161059,
-      end: 165159,
-      text: {
-        en: "gates. We pray compassion",
-        it: "porte. Preghiamo che la compassione",
-      },
-    },
-    {
-      start: 165539,
-      end: 169739,
-      text: {
-        en: "outlives all our fates. This is our law,",
-        it: "sopravviva a tutti i nostri destini. Questo è il nostro legge,",
-      },
-    },
-    {
-      start: 170360,
-      end: 174880,
-      text: {
-        en: "kindness crowns us all. Let's paint our",
-        it: "la gentilezza ci incorona tutti. Dipingiamo i nostri",
-      },
-    },
-    {
-      start: 174979,
-      end: 178619,
-      text: {
-        en: "hearts with colors unafraid.",
-        it: "cuori con colori senza paura.",
-      },
-    },
-    {
-      start: 180159,
-      end: 184659,
-      text: {
-        en: "Let the crayons speak where words have strayed.",
-        it: "Lasciamo che i pastelli parlino dove le parole sono svanite.",
-      },
-    },
-    {
-      start: 186119,
-      end: 190739,
-      text: {
-        en: "Let the brush weave dreams in hues of hope.",
-        it: "Che il pennello tessa sogni in tinte di speranza,",
-      },
-    },
-    {
-      start: 192119,
-      end: 196720,
-      text: {
-        en: "Let the canvas cradle our future",
-        it: "Che la tela culli il nostro futuro",
-      },
-    },
-    {
-      start: 196899,
-      end: 201680,
-      text: {
-        en: "bright. As roses of Rome let us",
-        it: "luminoso. Come Rose di Roma, lasciateci",
-      },
-    },
-    {
-      start: 201739,
-      end: 206712,
-      text: {
-        en: "bloom forever. (instrumental music plays)",
-        it: "fiorire per sempre. (musica strumentale)",
-      },
-    },
-  ];
+  {
+    "start": 99,
+    "end": 8420,
+    "text": {
+      "en": "(instrumental music plays)",
+      "it": "(musica strumentale)"
+    }
+  },
+  {
+    "start": 12359,
+    "end": 16799,
+    "text": {
+      "en": "We are the ones who carve light from the stone,",
+      "it": "Noi siamo coloro che scolpiscono la luce dalla pietra,"
+    }
+  },
+  {
+    "start": 18319,
+    "end": 23040,
+    "text": {
+      "en": "who turn every street into galleries",
+      "it": "Che trasformano ogni strada in gallerie"
+    }
+  },
+  {
+    "start": 23079,
+    "end": 27399,
+    "text": {
+      "en": "unknown. We paint the world in colors yet",
+      "it": "sconosciute. Dipingeremo il mondo con colori mai"
+    }
+  },
+  {
+    "start": 27420,
+    "end": 32299,
+    "text": {
+      "en": "untold (yet untold). We shape the marble",
+      "it": "raccontati. Plasmiamo il marmo"
+    }
+  },
+  {
+    "start": 32360,
+    "end": 36779,
+    "text": {
+      "en": "to outlast the gold. This is our",
+      "it": "perché superi l'oro. Questo è il nostro"
+    }
+  },
+  {
+    "start": 36860,
+    "end": 41220,
+    "text": {
+      "en": "creed, beauty is heirloom and",
+      "it": "credo: la bellezza è eredità e"
+    }
+  },
+  {
+    "start": 41379,
+    "end": 45180,
+    "text": {
+      "en": "fire. Let's paint our hearts with colors",
+      "it": "fiamma. Dipingeremo i nostri cuori con colori"
+    }
+  },
+  {
+    "start": 45219,
+    "end": 48700,
+    "text": {
+      "en": "unafraid. Let the",
+      "it": "senza paura. Lasciamo che"
+    }
+  },
+  {
+    "start": 48840,
+    "end": 52699,
+    "text": {
+      "en": "crayons speak where words have strayed.",
+      "it": "i pastelli parlino dove le parole sono svanite."
+    }
+  },
+  {
+    "start": 54159,
+    "end": 58699,
+    "text": {
+      "en": "Let the brush weave dreams in hues of hope.",
+      "it": "Che il pennello tessa sogni in tinte di speranza,"
+    }
+  },
+  {
+    "start": 60159,
+    "end": 64779,
+    "text": {
+      "en": "Let the canvas cradle our future",
+      "it": "Che la tela culli il nostro futuro"
+    }
+  },
+  {
+    "start": 64860,
+    "end": 69660,
+    "text": {
+      "en": "bright. As roses of Rome let us",
+      "it": "luminoso. Come Rose di Roma, lasciateci"
+    }
+  },
+  {
+    "start": 69720,
+    "end": 72419,
+    "text": {
+      "en": "bloom forever.",
+      "it": "fiorire per sempre."
+    }
+  },
+  {
+    "start": 76639,
+    "end": 81559,
+    "text": {
+      "en": "(instrumental music plays) We are the ones whose hearts are",
+      "it": "(musica strumentale) Noi siamo coloro i cui cuori sono"
+    }
+  },
+  {
+    "start": 81580,
+    "end": 86180,
+    "text": {
+      "en": "unbound, who turn pain into",
+      "it": "liberi, che trasformano il dolore in"
+    }
+  },
+  {
+    "start": 86220,
+    "end": 90800,
+    "text": {
+      "en": "light from the deepest wound. We give",
+      "it": "luce dalle ferite più profonde. Doniamo"
+    }
+  },
+  {
+    "start": 90900,
+    "end": 94959,
+    "text": {
+      "en": "joy like rivers that never run",
+      "it": "gioia come fiumi che non si prosciugano"
+    }
+  },
+  {
+    "start": 95019,
+    "end": 99360,
+    "text": {
+      "en": "dry. We pray love will find us",
+      "it": "mai. Preghiamo che l'amore ci trovi"
+    }
+  },
+  {
+    "start": 99699,
+    "end": 103739,
+    "text": {
+      "en": "beneath every sky. This is our vow,",
+      "it": "sotto ogni cielo. Questo è il nostro voto:"
+    }
+  },
+  {
+    "start": 104399,
+    "end": 108839,
+    "text": {
+      "en": "love conquers all. Let's paint our",
+      "it": "l'amore vince su tutto. Dipingiamo i nostri"
+    }
+  },
+  {
+    "start": 108959,
+    "end": 112659,
+    "text": {
+      "en": "hearts with colors unafraid.",
+      "it": "cuori con colori senza paura."
+    }
+  },
+  {
+    "start": 114139,
+    "end": 118979,
+    "text": {
+      "en": "Let the crayons speak where words have strayed.",
+      "it": "Lasciamo che i pastelli parlino dove le parole sono svanite."
+    }
+  },
+  {
+    "start": 120139,
+    "end": 124739,
+    "text": {
+      "en": "Let the brush weave dreams in hues of hope.",
+      "it": "Che il pennello tessa sogni in tinte di speranza,"
+    }
+  },
+  {
+    "start": 126139,
+    "end": 130779,
+    "text": {
+      "en": "Let the canvas cradle our future",
+      "it": "Che la tela culli il nostro futuro"
+    }
+  },
+  {
+    "start": 130839,
+    "end": 135679,
+    "text": {
+      "en": "bright. As roses of Rome let us",
+      "it": "luminoso. Come Rose di Roma, lasciateci"
+    }
+  },
+  {
+    "start": 135699,
+    "end": 137879,
+    "text": {
+      "en": "bloom forever.",
+      "it": "fiorire per sempre."
+    }
+  },
+  {
+    "start": 143399,
+    "end": 147679,
+    "text": {
+      "en": "(instrumental music plays) We are the ones who kneel in the",
+      "it": "(musica strumentale) Noi siamo coloro che si inginocchiano nella"
+    }
+  },
+  {
+    "start": 147739,
+    "end": 152179,
+    "text": {
+      "en": "dust, who turn strangers to",
+      "it": "polvere, che trasformano stranieri in"
+    }
+  },
+  {
+    "start": 152220,
+    "end": 156839,
+    "text": {
+      "en": "kin through unwavering trust. We give",
+      "it": "fratelli con fiducia incrollabile. Doniamo"
+    }
+  },
+  {
+    "start": 156899,
+    "end": 160979,
+    "text": {
+      "en": "not just alms, but the keys to our",
+      "it": "non solo elemosine, ma le chiavi delle nostre"
+    }
+  },
+  {
+    "start": 161059,
+    "end": 165159,
+    "text": {
+      "en": "gates. We pray compassion",
+      "it": "porte. Preghiamo che la compassione"
+    }
+  },
+  {
+    "start": 165539,
+    "end": 169739,
+    "text": {
+      "en": "outlives all our fates. This is our love,",
+      "it": "sopravviva a tutti i nostri destini. Questo è il nostro amore,"
+    }
+  },
+  {
+    "start": 170360,
+    "end": 174880,
+    "text": {
+      "en": "kindness crowns us all. Let's paint our",
+      "it": "la gentilezza ci incorona tutti. Dipingiamo i nostri"
+    }
+  },
+  {
+    "start": 174979,
+    "end": 178619,
+    "text": {
+      "en": "hearts with colors unafraid.",
+      "it": "cuori con colori senza paura."
+    }
+  },
+  {
+    "start": 180159,
+    "end": 184659,
+    "text": {
+      "en": "Let the crayons speak where words have strayed.",
+      "it": "Lasciamo che i pastelli parlino dove le parole sono svanite."
+    }
+  },
+  {
+    "start": 186119,
+    "end": 190739,
+    "text": {
+      "en": "Let the brush weave dreams in hues of hope.",
+      "it": "Che il pennello tessa sogni in tinte di speranza,"
+    }
+  },
+  {
+    "start": 192119,
+    "end": 196720,
+    "text": {
+      "en": "Let the canvas cradle our future",
+      "it": "Che la tela culli il nostro futuro"
+    }
+  },
+  {
+    "start": 196899,
+    "end": 201680,
+    "text": {
+      "en": "bright. As roses of Rome let us",
+      "it": "luminoso. Come Rose di Roma, lasciateci"
+    }
+  },
+  {
+    "start": 201739,
+    "end": 206712,
+    "text": {
+      "en": "bloom forever. (instrumental music plays)",
+      "it": "fiorire per sempre. (musica strumentale)"
+    }
+  }
+];
 return vision_duet;
 }

@@ -9652,7 +9652,7 @@ export function VisionDuetLyrics () {
       end: 169739,
       text: {
         en: "outlives all our fates. This is our law,",
-        it: "sopravviva a tutti i nostri destini. Questo è il nostro legge,",
+        it: "sopravviva a tutti i nostri destini. Questo è il nostro legge:,",
       },
     },
     {
