@@ -40,7 +40,8 @@ WelcomeSongItalian,
 VisionShortLyrics,
 VisionItalianLyrics,
 WelcomeSongFemaleLyrics,
-WelcomeSongMaleLyrics
+WelcomeSongMaleLyrics,
+VisionFemaleLyrics,
 } from "./SongData";
 
 // utils/songUUIDs.js
@@ -290,7 +291,7 @@ export function RosesOfRomeSongs() {
         en: "Roses Of Rome Vision (Female)",
         it: "Rosa Di Roma Visione (Feminile)",
       },
-      songLyrics: [],
+      songLyrics: VisionFemaleLyrics(),
       songAlbum: "Roses Of Rome",
     },
     {
