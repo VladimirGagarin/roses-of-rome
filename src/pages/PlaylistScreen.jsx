@@ -31,6 +31,7 @@ export default function PlaylistScreen() {
   const [showShareMenu, setShowShareMenu] = useState(false);
   const [shareMenuPosition, setShareMenuPosition] = useState({ x: 0, y: 0 });
   const [currentSongForShare, setCurrentSongForShare] = useState(null);
+  const [isSharing, setIsSharing] = useState(false);
 
 
   // Placeholder audioRef etc. (should ideally come from AudioComponent or be centralized)
@@ -239,7 +240,7 @@ export default function PlaylistScreen() {
      const baseUrl = `${
        window.location.origin
      }${import.meta.env.BASE_URL.replace(/\/$/, "")}`;
-     const songUrl = `${baseUrl}/#/pages/share/${song.songId}`;
+      const songUrl = `${baseUrl}/#/pages/share/${song.songId}?utm_source=app&utm_medium=share&utm_campaign=song_share`;
      const songTitle = song.songName[language] || song.songName.en;
      const albumName = song.songAlbum || "";
      const textTemplates = {
@@ -254,6 +255,7 @@ export default function PlaylistScreen() {
 
      if (navigator.share) {
        try {
+         setIsSharing(true); // 🔒 disable button while share sheet is open
          await navigator.share({
            title: songTitle,
            text: shareText,
@@ -263,6 +265,9 @@ export default function PlaylistScreen() {
          fallbackCopyToClipboard(songUrl);
          console.warn(err)
        }
+       finally {
+      setIsSharing(false); // 🔓 re-enable button when done/cancelled
+    }
      } else {
        fallbackCopyToClipboard(songUrl);
      }
@@ -349,7 +354,13 @@ export default function PlaylistScreen() {
                   }
                 >
                   <FaShareAlt />
-                  <span>{language === "it" ? "Condividi" : "Share"}</span>
+                <span>
+                  {isSharing
+                    ? (language === "it" ? "Condivisione..." : "Sharing...")
+                    : (language === "it" ? "Condividi" : "Share")}
+                </span>
+
+
                 </button>
               )}
 
@@ -392,10 +403,20 @@ export default function PlaylistScreen() {
               }}
               onClick={(e) => e.stopPropagation()}
             >
-              <button onClick={handleCopyLink}>
+              <button onClick={handleCopyLink} disabled={isSharing}>
                 <FaLink />
-                {language === "it" ? "Copia link" : "Copy link"}
+                <span>
+                {isSharing
+                  ? language === "it"
+                    ? "Copia..."
+                    : "Copying..."
+                  : language === "it"
+                    ? "Copia link"
+                    : "Copy link"}
+              </span>
+
               </button>
+              
               <button onClick={handleCopyEmbed}>
                 <FaCode />
                 {language === "it" ? "Codice embed" : "Embed code"}

@@ -48,7 +48,9 @@ WelcomeSongFemaleLyrics,
 WelcomeSongMaleLyrics,
 VisionFemaleLyrics,
 VisionDuetLyrics,
-EverythingDuetLyrics
+EverythingDuetLyrics,
+ReputationLyrics,
+EverythingRMXLyrics,
 } from "./SongData";
 
 // utils/songUUIDs.js
@@ -334,7 +336,7 @@ export function RosesOfRomeSongs() {
         en: "Everything to see you again (Remix)",
         it: "Tutto per rivederti (RMX)",
       },
-      songLyrics: [],
+      songLyrics: EverythingRMXLyrics(),
       songAlbum: "Roses Of Rome",
     },
     {
@@ -354,7 +356,7 @@ export function RosesOfRomeSongs() {
         en: "Reputation",
         it: "Reputazione",
       },
-      songLyrics: [],
+      songLyrics: ReputationLyrics(),
       songAlbum: "Cantabile",
     },
     {
@@ -390,3 +392,4 @@ export function RosesOfRomeSongs() {
   ];
   return songs;
 }
+ 

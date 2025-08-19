@@ -9986,3 +9986,278 @@ export function EverythingDuetLyrics() {
 
   return everythingsSubtitles;
 }
+
+export function ReputationLyrics() {
+  const lyrics = [
+    { start: 6339, end: 10300, text: { en: "In our world, where shadows speak our name.", it: "Nel nostro mondo, dove le ombre dicono il nostro nome." } },
+    { start: 12199, end: 15980, text: { en: "In our hearts, where pride ignites the flame.", it: "Nei nostri cuori, dove l'orgoglio accende la fiamma." } },
+    { start: 17520, end: 22200, text: { en: "We are chained to echoes time has spun. The", it: "Siamo incatenati agli echi che il tempo ha tessuto. Il" } },
+    { start: 22340, end: 26719, text: { en: "value of reputation, never undone.", it: "valore della reputazione, mai annullato." } },
+    { start: 27239, end: 31499, text: { en: "In our reputation, we breed the", it: "Nella nostra reputazione, generiamo la" } },
+    { start: 31659, end: 36080, text: { en: "fame. In our choices, we carve the", it: "fama. Nelle nostre scelte, incidiamo il" } },
+    { start: 36139, end: 40639, text: { en: "name. The world will see your light,", it: "nome. Il mondo vedrà la tua luce," } },
+    { start: 40860, end: 45500, text: { en: "without demand. Just live truthfully,", it: "senza pretese. Vivi semplicemente con verità," } },
+    { start: 45700, end: 49100, text: { en: "gently, gently — in balance you stand.", it: "con dolcezza, dolcezza — in equilibrio stai." } },
+    { start: 50919, end: 54959, text: { en: "In our dawn, the silence breaks with song.", it: "Nella nostra alba, il silenzio si rompe con un canto." } },
+    { start: 56559, end: 60540, text: { en: "In our hearts, the gentle find the strong.", it: "Nei nostri cuori, i miti trovano la forza." } },
+    { start: 62099, end: 66860, text: { en: "We are free when truth becomes our guide. The", it: "Siamo liberi quando la verità diventa la nostra guida. Il" } },
+    { start: 66979, end: 71479, text: { en: "worth of reputation — love sanctified.", it: "valore della reputazione — amore santificato." } },
+    { start: 71919, end: 76220, text: { en: "In our reputation, we breed the", it: "Nella nostra reputazione, generiamo la" } },
+    { start: 76299, end: 80720, text: { en: "flame. In our choices, we carve the", it: "fiamma. Nelle nostre scelte, incidiamo il" } },
+    { start: 80839, end: 85379, text: { en: "name. The world will see your light,", it: "nome. Il mondo vedrà la tua luce," } },
+    { start: 85519, end: 90179, text: { en: "without demand. Just live truthfully,", it: "senza pretese. Vivi semplicemente con verità," } },
+    { start: 90319, end: 93780, text: { en: "gently — in balance you stand.", it: "con dolcezza — in equilibrio stai." } },
+    { start: 95540, end: 99739, text: { en: "Through the storms, our honor will remain.", it: "Attraverso le tempeste, il nostro onore rimarrà." } },
+    { start: 101159, end: 105179, text: { en: "Like the sun that rises after rain.", it: "Come il sole che sorge dopo la pioggia." } },
+    { start: 106739, end: 111539, text: { en: "Not by crowns, nor by fleeting praise, but by", it: "Non per corone, né per lodi fugaci, ma per" } },
+    { start: 111639, end: 115039, text: { en: "love that lives beyond the days.", it: "amore che vive oltre i giorni." } },
+    { start: 116559, end: 120799, text: { en: "In our reputation, we breed the", it: "Nella nostra reputazione, generiamo la" } },
+    { start: 121000, end: 125379, text: { en: "fame. In our choices, we carve the", it: "fama. Nelle nostre scelte, incidiamo il" } },
+    { start: 125419, end: 130100, text: { en: "name. The world will see your light,", it: "nome. Il mondo vedrà la tua luce," } },
+    { start: 130160, end: 134760, text: { en: "without demand. Just live truthfully,", it: "senza pretese. Vivi semplicemente con verità," } },
+    { start: 134979, end: 139339, text: { en: "gently — in balance you stand. So guard the", it: "con dolcezza — in equilibrio stai. Quindi custodisci la" } },
+    { start: 139379, end: 142239, text: { en: "truth that carries you through. Let your", it: "verità che ti sostiene. Lascia che il tuo" } },
+    { start: 142339, end: 146120, text: { en: "spirit shine in all you do.", it: "spirito risplenda in tutto ciò che fai." } },
+    { start: 149660, end: 153820, text: { en: "A legacy written in hearts not sand.", it: "Un'eredità scritta nei cuori, non nella sabbia." } },
+    { start: 154179, end: 158599, text: { en: "Reputation eternal, in balance you", it: "Reputazione eterna, in equilibrio" } },
+    { start: 158639, end: 162880, text: { en: "stand. Through the storms, our honor will", it: "stai. Attraverso le tempeste, il nostro onore" } },
+    { start: 162919, end: 167399, text: { en: "remain. Like the sun that", it: "rimarrà. Come il sole che" } },
+    { start: 167440, end: 171479, text: { en: "rises after rain. Not by crowns nor by", it: "sorge dopo la pioggia. Non per corone né per" } },
+    { start: 171580, end: 176499, text: { en: "fleeting praise, but by love", it: "lodi fugaci, ma per amore" } },
+    { start: 176519, end: 179259, text: { en: "that lives beyond the days.", it: "che vive oltre i giorni." } },
+    { start: 183399, end: 187919, text: { en: "Through the storms, our honor will", it: "Attraverso le tempeste, il nostro onore" } },
+    { start: 188039, end: 192860, text: { en: "remain. Like the sun that rises after rain.", it: "rimarrà. Come il sole che sorge dopo la pioggia." } },
+    { start: 193239, end: 197439, text: { en: "Not by crowns nor by fleeting praise,", it: "Non per corone né per lodi fugaci," } },
+    { start: 198839, end: 202960, text: { en: "but by love that lives beyond the days.", it: "ma per amore che vive oltre i giorni." } },
+    { start: 203879, end: 208180, text: { en: "So guard the truth that carries you through.", it: "Quindi custodisci la verità che ti sostiene." } },
+    { start: 209299, end: 213680, text: { en: "Let your spirit shine in all you do.", it: "Lascia che il tuo spirito risplenda in tutto ciò che fai." } },
+    { start: 215239, end: 219399, text: { en: "A legacy written in hearts not sand.", it: "Un'eredità scritta nei cuori, non nella sabbia." } },
+    { start: 219779, end: 224139, text: { en: "Reputation eternal, in balance you", it: "Reputazione eterna, in equilibrio" } },
+    { start: 224220, end: 236040, text: { en: "stand.", it: "stai." } }
+  ];
+  return lyrics;
+}
+
+
+export function EverythingRMXLyrics() {
+  const lyrics2 = [
+    {
+      start: 6219,
+      end: 11079,
+      text: {
+        en: "When the world feels broken and far away.",
+        it: "Quando il mondo sembra spezzato e lontano.",
+      },
+    },
+    {
+      start: 12099,
+      end: 16299,
+      text: {
+        en: "When the days turn heavy and fade to",
+        it: "Quando i giorni si fanno pesanti e svaniscono in",
+      },
+    },
+    {
+      start: 16420,
+      end: 20699,
+      text: {
+        en: "gray. When time itself seems",
+        it: "grigio. Quando il tempo stesso sembra",
+      },
+    },
+    {
+      start: 20840,
+      end: 25119,
+      text: {
+        en: "lost, all's unknown. My heart is",
+        it: "perso, tutto è sconosciuto. Il mio cuore",
+      },
+    },
+    {
+      start: 25239,
+      end: 29999,
+      text: {
+        en: "waiting to bring you home. I'd tear the sky",
+        it: "aspetta di riportarti a casa. Strapperei il cielo",
+      },
+    },
+    {
+      start: 30099,
+      end: 35060,
+      text: {
+        en: "open just to see you again. I will",
+        it: "aperto solo per rivederti. Attraverserò",
+      },
+    },
+    {
+      start: 35099,
+      end: 39140,
+      text: {
+        en: "cross the oceans to see you back again.",
+        it: "gli oceani per riaverti di nuovo.",
+      },
+    },
+    {
+      start: 40599,
+      end: 45200,
+      text: {
+        en: "I will love you deeply to erase your pain. I will sing forever your",
+        it: "Ti amerò profondamente per cancellare il tuo dolore. Canterò per sempre il tuo",
+      },
+    },
+    {
+      start: 45279,
+      end: 50019,
+      text: {
+        en: "sweetest refrain. I will paint the heavens with your",
+        it: "dolcissimo ritornello. Dipingerò i cieli con il tuo",
+      },
+    },
+    {
+      start: 50139,
+      end: 54559,
+      text: {
+        en: "name. I will do everything just to see you again.",
+        it: "nome. Farò di tutto solo per rivederti.",
+      },
+    },
+    {
+      start: 58699,
+      end: 62979,
+      text: {
+        en: "When the stars forget their silver",
+        it: "Quando le stelle dimenticano il loro argenteo",
+      },
+    },
+    {
+      start: 63219,
+      end: 68119,
+      text: {
+        en: "glow. When the rivers stop the way",
+        it: "splendore. Quando i fiumi fermano il modo",
+      },
+    },
+    {
+      start: 68419,
+      end: 73360,
+      text: {
+        en: "they flow. When every song has",
+        it: "in cui scorrono. Quando ogni canzone ha",
+      },
+    },
+    {
+      start: 73519,
+      end: 77720,
+      text: {
+        en: "lost its tune. I'll be the",
+        it: "perso la sua melodia. Sarò l'",
+      },
+    },
+    {
+      start: 77900,
+      end: 82540,
+      text: {
+        en: "dawn that breaks your gloom. I'll",
+        it: "alba che rompe la tua oscurità. Ti",
+      },
+    },
+    {
+      start: 82639,
+      end: 87179,
+      text: {
+        en: "breathe you meaning when hope is thin.",
+        it: "darò significato quando la speranza è esile.",
+      },
+    },
+    {
+      start: 88180,
+      end: 93159,
+      text: {
+        en: "I'll arrange the sky where your sun begins.",
+        it: "Disporrò il cielo dove il tuo sole comincia.",
+      },
+    },
+    {
+      start: 93259,
+      end: 97640,
+      text: {
+        en: "I'd tear the sky open just to see you again.",
+        it: "Strapperei il cielo aperto solo per rivederti.",
+      },
+    },
+    {
+      start: 99119,
+      end: 103539,
+      text: {
+        en: "I will cross the oceans to see you back again.",
+        it: "Attraverserò gli oceani per riaverti di nuovo.",
+      },
+    },
+    {
+      start: 105019,
+      end: 109660,
+      text: {
+        en: "I will love you deeply to erase your pain. I will sing forever your",
+        it: "Ti amerò profondamente per cancellare il tuo dolore. Canterò per sempre il tuo",
+      },
+    },
+    {
+      start: 109680,
+      end: 114419,
+      text: {
+        en: "sweetest refrain. I will paint the heavens with your",
+        it: "dolcissimo ritornello. Dipingerò i cieli con il tuo",
+      },
+    },
+    {
+      start: 114540,
+      end: 118859,
+      text: {
+        en: "name. I will do everything just to see you again.",
+        it: "nome. Farò di tutto solo per rivederti.",
+      },
+    },
+    {
+      start: 129000,
+      end: 133499,
+      text: {
+        en: "And if the world should fade to dust, my heart will still",
+        it: "E se il mondo dovesse svanire in polvere, il mio cuore",
+      },
+    },
+    {
+      start: 133580,
+      end: 137779,
+      text: {
+        en: "remember us. No void so vast, no night so long,",
+        it: "ricorderà ancora noi. Nessun vuoto così vasto, nessuna notte così lunga,",
+      },
+    },
+    {
+      start: 138479,
+      end: 142860,
+      text: {
+        en: "no silence so deep, no shadow too wide can steal the love I hold",
+        it: "nessun silenzio così profondo, nessuna ombra troppo larga può rubare l'amore che custodisco",
+      },
+    },
+    {
+      start: 142899,
+      end: 147820,
+      text: {
+        en: "inside. And in the last light, let it be clear. I loved you",
+        it: "dentro. E nell'ultima luce, che sia chiaro. Ti ho amato",
+      },
+    },
+    {
+      start: 147860,
+      end: 151320,
+      text: {
+        en: "always loud and clear, Roses of",
+        it: "sempre forte e chiaro, Rose di",
+      },
+    },
+    { start: 151379, end: 159480, text: { en: "Rome.", it: "Roma." } },
+  ];
+  return lyrics2;
+}

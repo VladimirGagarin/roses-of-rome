@@ -48,7 +48,7 @@ export default function ShareScreen() {
     if (foundSong) {
       setCurrentSongObj(foundSong);
     } else {
-      navigate("/pages/home", {replace: true});
+      navigate("/", {replace: true});
     }
   }, [id, navigate]);
 
@@ -198,7 +198,7 @@ export default function ShareScreen() {
   // Handle sharing
  const handleShare = async (song) => {
    // Always use the correct path with '/roses-of-rome/'
-   const shareUrl = `${window.location.origin}/roses-of-rome/#/pages/share/${song.songId}`;
+   const shareUrl = `${window.location.origin}/roses-of-rome/#/pages/share/${song.songId}?utm_source=app&utm_medium=share&utm_campaign=song_share`;
 
    const shareData = {
      title: song.songName[language] || song.songName.en,
@@ -258,7 +258,7 @@ export default function ShareScreen() {
       <nav className="share-nav">
         <button
           className="nav-button"
-          onClick={() => navigate("/pages/home")}
+          onClick={() => navigate("/")}
           aria-label={language === "it" ? "Torna alla Home" : "Go to Home"}
         >
           <FaHome />
