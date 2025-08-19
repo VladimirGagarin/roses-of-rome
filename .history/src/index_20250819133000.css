@@ -147,7 +147,7 @@ body {
 
 /* Base container for the sonnet */
 .sonnet {
-  max-width: 95%;
+  max-width: 90%;
   margin: 3rem auto;
   padding: 2rem;
   background-image: linear-gradient(

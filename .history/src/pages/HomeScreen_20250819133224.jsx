@@ -166,7 +166,7 @@ export default function HomeScreen() {
   const audioTitles = {
     romeOne: {
       en: "Roses Of Rome Sonnet",
-      it: "Rose di Roma Sonneto",
+      it: "Rose di Roma I",
     },
     romeTwo: {
       en: "Roses Of Rome Anthem (Epic Version)",

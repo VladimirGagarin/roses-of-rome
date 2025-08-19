@@ -26,7 +26,6 @@ import Tutto from "../assets/audios/tutto.mp3";
 import Reputation from "../assets/audios/reputations.mp3";
 import ReputationDuet from "../assets/audios/reputations_duet.mp3";
 import ReputationVocal from "../assets/audios/reputations_vocal.mp3";
-import Everythings from "../assets/audios/everythings.mp3";
 // lyrics
 import {
   AnthemLyrics,
@@ -348,33 +347,13 @@ export function RosesOfRomeSongs() {
     },
     {
       songId: SONG_UUIDS.rorMusic_026,
-      songFile: Reputation,
+      songFile: Tutto,
       songName: {
-        en: "Reputation",
-        it: "Reputazione",
+        en: "Everything to see you again",
+        it: "Tutto per rivederti",
       },
       songLyrics: [],
-      songAlbum: "Cantabile",
-    },
-    {
-      songId: SONG_UUIDS.rorMusic_027,
-      songFile: ReputationDuet,
-      songName: {
-        en: "Reputation Duet",
-        it: "Reputazione Duetto",
-      },
-      songLyrics: [],
-      songAlbum: "Cantabile",
-    },
-    {
-      songId: SONG_UUIDS.rorMusic_028,
-      songFile: Everythings,
-      songName: {
-        en: "Everything to see you again (Duet)",
-        it: "Tutto per rivederti (Duettto)",
-      },
-      songLyrics: [],
-      songAlbum: "Cantabile",
+      songAlbum: "Roses Of Rome",
     },
   ];
   return songs;

@@ -165,8 +165,8 @@ export default function HomeScreen() {
 
   const audioTitles = {
     romeOne: {
-      en: "Roses Of Rome Sonnet",
-      it: "Rose di Roma Sonneto",
+      en: "Roses Of Rome Anthem",
+      it: "Rose di Roma Inno",
     },
     romeTwo: {
       en: "Roses Of Rome Anthem (Epic Version)",
@@ -174,11 +174,11 @@ export default function HomeScreen() {
     },
     hybrid: {
       en: "Roses Of Rome Anthem Duet (Male)",
-      it: "Rose di Roma Inno Duetto (Male)",
+      it: "Rose di Roma Inno Duetto (Male",
     },
     hybrid2: {
       en: "Roses Of Rome Anthem Duet (Female)",
-      it: "Rose di Roma Inno Duetto (Feminile)",
+      it: "Ibrida",
     },
   };
 

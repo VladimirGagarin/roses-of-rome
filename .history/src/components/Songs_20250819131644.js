@@ -370,8 +370,8 @@ export function RosesOfRomeSongs() {
       songId: SONG_UUIDS.rorMusic_028,
       songFile: Everythings,
       songName: {
-        en: "Everything to see you again (Duet)",
-        it: "Tutto per rivederti (Duettto)",
+        en: "Everything to see you again Duet",
+        it: "Tutto per rivederti ",
       },
       songLyrics: [],
       songAlbum: "Cantabile",
