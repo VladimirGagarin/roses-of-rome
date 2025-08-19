@@ -1,5 +1,5 @@
 import Logo from "../assets/images/rorps.png";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./About.css"
 import { FaBell, FaUserPlus, FaWhatsapp } from "react-icons/fa";
 import { useLanguage } from "./LanguageContext";
@@ -13,22 +13,7 @@ export default function AboutComponent() {
     const { language } = useLanguage();
     const [showMore, setIsShowingMore] = useState(false);
   const navigate = useNavigate();
-  const [aboutIsPlaying, setAboutIsPlaying] = useState(false);
-  
-   useEffect(() => {
-     const handleSetCurrent = (e) => {
-       // Check if the current audio is the About Hymn
-       if (e.detail && e.detail.src?.includes("about_roses.mp3")) {
-         setAboutIsPlaying(true);
-       } else {
-         setAboutIsPlaying(false);
-       }
-     };
-
-     window.addEventListener("set-current-audio", handleSetCurrent);
-     return () =>
-       window.removeEventListener("set-current-audio", handleSetCurrent);
-   }, []);
+    const [aboutIsPlaying, setAboutIsPlaying] = useState(false);
 
     const allTexts = {
          headerTitle: {
@@ -128,18 +113,14 @@ export default function AboutComponent() {
                 />
               </div>
 
-              <button
-                className="exit-btn"
-                onClick={() => {
-                  // ✅ Only stop About Hymn if it was playing
-                  if (aboutIsPlaying) {
-                    window.dispatchEvent(
-                      new CustomEvent("pause-all-audio", { detail: null })
-                    );
-                  }
-                  setIsShowingMore(false);
-                }}
-              >
+              <button onClick={() => {
+                if (e.detail === AboutHymn) {
+                  window.dispatchEvent(
+                    new CustomEvent("pause-all-audio", { detail: null })
+                  );
+                }
+                setIsShowingMore(false)
+              }}>
                 {language === "en" ? "Close" : "Chiudi"}
               </button>
             </div>

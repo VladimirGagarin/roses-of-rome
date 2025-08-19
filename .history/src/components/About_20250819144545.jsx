@@ -1,11 +1,9 @@
 import Logo from "../assets/images/rorps.png";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./About.css"
 import { FaBell, FaUserPlus, FaWhatsapp } from "react-icons/fa";
 import { useLanguage } from "./LanguageContext";
-import { useNavigate } from "react-router-dom";
-import AboutHymn from "../assets/audios/about_roses.mp3";
-import AudioComponent from "./AudioPlayer";
+import {useNavigate} from "react-router-dom"
 
 
 
@@ -13,42 +11,27 @@ export default function AboutComponent() {
     const { language } = useLanguage();
     const [showMore, setIsShowingMore] = useState(false);
   const navigate = useNavigate();
-  const [aboutIsPlaying, setAboutIsPlaying] = useState(false);
-  
-   useEffect(() => {
-     const handleSetCurrent = (e) => {
-       // Check if the current audio is the About Hymn
-       if (e.detail && e.detail.src?.includes("about_roses.mp3")) {
-         setAboutIsPlaying(true);
-       } else {
-         setAboutIsPlaying(false);
-       }
-     };
-
-     window.addEventListener("set-current-audio", handleSetCurrent);
-     return () =>
-       window.removeEventListener("set-current-audio", handleSetCurrent);
-   }, []);
 
     const allTexts = {
-         headerTitle: {
-          en: "Roses Of Rome Pictures.",
-          it: "Rosa Di Roma Immagini",
-        },
-      introText: {
-        en: "Roses of Rome Pictures – Aeternum Floreamus...",
-        it: "Rose di Roma Immagini – Aeternum Floreamus...",
+      headerTitle: {
+        en: "Roses Of Rome Pictures.",
+        it: "Rosa Di Roma Immagini",
       },
-      moreText: {
-        en: `Roses of Rome Pictures – Aeternum Floreamus\n
-             A creative sanctuary where stories bloom like roses, timeless and radiant. 
-            We rise with love, beauty, and kindness, crafting epics that inspire hearts across generations.\n
-            Aeternum floreamus!`,
-        it: `Rose di Roma Immagini – Aeternum Floreamus\n
-            Un santuario creativo dove le storie sbocciano come rose, eterne e splendenti. 
-            Ci eleviamo con amore, bellezza e gentilezza, creando epiche che ispirano i cuori attraverso le generazioni.\n
-            Aeternum floreamus!`,
-      },
+        introText: { 
+  en: "Roses of Rome Pictures – Aeternum Floreamus...", 
+  it: "Rose di Roma Immagini – Aeternum Floreamus..." 
+},
+moreText: {
+  en: `Roses of Rome Pictures – Aeternum Floreamus\n
+A creative sanctuary where stories bloom like roses, timeless and radiant. 
+We rise with love, beauty, and kindness, crafting epics that inspire hearts across generations.\n
+Aeternum floreamus!`,
+  it: `Rose di Roma Immagini – Aeternum Floreamus\n
+Un santuario creativo dove le storie sbocciano come rose, eterne e splendenti. 
+Ci eleviamo con amore, bellezza e gentilezza, creando epiche che ispirano i cuori attraverso le generazioni.\n
+Aeternum floreamus!`,
+},
+
     };
 
     return (
@@ -99,6 +82,7 @@ export default function AboutComponent() {
               href="https://chat.whatsapp.com/IoJTdMJyJPpFjEOL8yFxWa"
               target="_blank"
               rel="noopener noreferrer"
+              
             >
               <FaWhatsapp />
               {language === "it" ? "Unisciti" : "Join"}
@@ -117,29 +101,7 @@ export default function AboutComponent() {
                   {line.trim()}
                 </p>
               ))}
-              <div className="audio-wrapper">
-                <AudioComponent
-                  audioFile={AboutHymn}
-                  title={
-                    language === "it"
-                      ? "Rosa Di Roma about"
-                      : "About Roses Of Rome"
-                  }
-                />
-              </div>
-
-              <button
-                className="exit-btn"
-                onClick={() => {
-                  // ✅ Only stop About Hymn if it was playing
-                  if (aboutIsPlaying) {
-                    window.dispatchEvent(
-                      new CustomEvent("pause-all-audio", { detail: null })
-                    );
-                  }
-                  setIsShowingMore(false);
-                }}
-              >
+              <button onClick={() => setIsShowingMore(false)}>
                 {language === "en" ? "Close" : "Chiudi"}
               </button>
             </div>

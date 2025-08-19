@@ -116,8 +116,8 @@
   cursor: pointer;
 }
 
-.overlay-content .audio-wrapper{
-  width: 95%;
+.audio-wrapper{
+  wi
 }
 
 /* --- Responsive adjustments for 768px and below --- */
@@ -194,11 +194,6 @@
     font-size: 1rem;
     padding: 0.75rem;
   }
-
-  
-.overlay-content .audio-wrapper{
-  width: 90%;
-}
 }
 
 

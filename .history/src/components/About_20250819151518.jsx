@@ -129,7 +129,7 @@ export default function AboutComponent() {
               </div>
 
               <button
-                className="exit-btn"
+                class
                 onClick={() => {
                   // ✅ Only stop About Hymn if it was playing
                   if (aboutIsPlaying) {

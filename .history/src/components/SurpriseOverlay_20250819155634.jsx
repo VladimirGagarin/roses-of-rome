@@ -1,6 +1,7 @@
 // SurpriseOverlay.jsx
 import { useEffect, useState, useRef } from "react";
 import { FaPlay, FaPause, FaSpinner } from "react-icons/fa6";
+import BgVid from "../assets/videos/bg_vid2.mp4";
 import BgImg from "../assets/images/ror.png";
 import "../index.css";
 
@@ -17,8 +18,8 @@ export default function SurpriseOverlay({
   song,
   setCurrentLine
 }) {
-    
-  const [isOnMobile, setIsOnMobile] = useState(() => window.innerWidth <= 800);
+    const [isSlowNetwork, setIsSlowNetwork] = useState(true);
+  const [isOnMobile, setIsOnMobile] = useState(() => window.innerWidth <= 768);
    
     const progressRef = useRef(null);
     const frameRef = useRef();
@@ -33,7 +34,30 @@ export default function SurpriseOverlay({
      return () => window.removeEventListener("resize", handleResize);
    }, []);
 
-  
+  useEffect(() => {
+    if ("connection" in navigator) {
+      const connection =
+        navigator.connection ||
+        navigator.mozConnection ||
+        navigator.webkitConnection;
+
+      const checkNetworkSpeed = () => {
+        if (connection.effectiveType) {
+          // Mark as slow if 3g, 2g, or slow-2g
+          setIsSlowNetwork(
+            ["slow-2g", "2g", "3g"].includes(connection.effectiveType)
+          );
+        }
+      };
+
+      checkNetworkSpeed();
+      connection.addEventListener("change", checkNetworkSpeed);
+
+      return () => {
+        connection.removeEventListener("change", checkNetworkSpeed);
+      };
+    }
+  }, []);
 
  useEffect(() => {
     const audio = audioRef.current;
@@ -102,7 +126,7 @@ export default function SurpriseOverlay({
 
   return (
     <div className="overlay-modal-suprise">
-      
+      {isSlowNetwork ? (
         <img
           src={BgImg}
           key={BgImg}
@@ -110,7 +134,7 @@ export default function SurpriseOverlay({
           className="video-background"
           onContextMenu={(e) => e.preventDefault()}
         />
-      
+      ) }
 
       <div className="overlay-content-surprise">
         <audio ref={audioRef}>

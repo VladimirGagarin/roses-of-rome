@@ -110,14 +110,11 @@
 
   border: none;
   width: 100%;
-  font-size: 1rem;
-  padding: 0.75rem;
+    font-size: 1rem;
+    padding: 0.75rem;
+  }=
   border-radius: 4px;
   cursor: pointer;
-}
-
-.overlay-content .audio-wrapper{
-  width: 95%;
 }
 
 /* --- Responsive adjustments for 768px and below --- */
@@ -194,11 +191,6 @@
     font-size: 1rem;
     padding: 0.75rem;
   }
-
-  
-.overlay-content .audio-wrapper{
-  width: 90%;
-}
 }
 
 

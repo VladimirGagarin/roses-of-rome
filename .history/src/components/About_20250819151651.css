@@ -116,10 +116,6 @@
   cursor: pointer;
 }
 
-.overlay-content .audio-wrapper{
-  width: 95%;
-}
-
 /* --- Responsive adjustments for 768px and below --- */
 @media (max-width: 800px) {
   .about-container {
@@ -194,11 +190,6 @@
     font-size: 1rem;
     padding: 0.75rem;
   }
-
-  
-.overlay-content .audio-wrapper{
-  width: 90%;
-}
 }
 
 

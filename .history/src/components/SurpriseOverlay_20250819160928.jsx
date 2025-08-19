@@ -33,7 +33,30 @@ export default function SurpriseOverlay({
      return () => window.removeEventListener("resize", handleResize);
    }, []);
 
-  
+  useEffect(() => {
+    if ("connection" in navigator) {
+      const connection =
+        navigator.connection ||
+        navigator.mozConnection ||
+        navigator.webkitConnection;
+
+      const checkNetworkSpeed = () => {
+        if (connection.effectiveType) {
+          // Mark as slow if 3g, 2g, or slow-2g
+          setIsSlowNetwork(
+            ["slow-2g", "2g", "3g"].includes(connection.effectiveType)
+          );
+        }
+      };
+
+      checkNetworkSpeed();
+      connection.addEventListener("change", checkNetworkSpeed);
+
+      return () => {
+        connection.removeEventListener("change", checkNetworkSpeed);
+      };
+    }
+  }, []);
 
  useEffect(() => {
     const audio = audioRef.current;

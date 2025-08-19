@@ -105,19 +105,13 @@
   border: 2px solid #0056b3;
 }
 
-.overlay-content .exit-btn {
+.overlay-content button {
   margin-top: 1rem;
 
   border: none;
-  width: 100%;
-  font-size: 1rem;
-  padding: 0.75rem;
+  padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.overlay-content .audio-wrapper{
-  width: 95%;
 }
 
 /* --- Responsive adjustments for 768px and below --- */
@@ -189,16 +183,11 @@
     border-radius: 8px;
   }
 
-  .overlay-content .exit-btn {
+  .overlay-content button:last-child {
     width: 100%;
     font-size: 1rem;
     padding: 0.75rem;
   }
-
-  
-.overlay-content .audio-wrapper{
-  width: 90%;
-}
 }
 
 

@@ -47,7 +47,7 @@ export function getLifeLyrics() {
       { start: 143320, end: 145420, text: "a life to live" },
       { start: 146240, end: 149180, text: "a dance a prayer" },
       { start: 149480, end: 152220, text: "a voice that live" },
-        { start: 152640, end: 155780, text: "beyond despair" },
+      { start: 152640, end: 155780, text: "beyond despair" },
       { start: 155800, end: 158460, text: "through mist and flame" },
       { start: 159e3, end: 162140, text: "through dark and dawn" },
       { start: 163320, end: 165560, text: "magdalene shines" },
@@ -9716,7 +9716,7 @@ return vision_duet;
 }
 
 
-export function EverythingDuetLyrics() {
+export function EveryThingDuetLyrics() {
  const everythingsSubtitles = [
   {
     "start": 6199,
@@ -9984,5 +9984,5 @@ export function EverythingDuetLyrics() {
   }
 ];
 
-  return everythingsSubtitles;
+  return e;
 }

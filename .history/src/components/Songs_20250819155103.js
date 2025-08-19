@@ -48,7 +48,7 @@ WelcomeSongFemaleLyrics,
 WelcomeSongMaleLyrics,
 VisionFemaleLyrics,
 VisionDuetLyrics,
-EverythingDuetLyrics
+
 } from "./SongData";
 
 // utils/songUUIDs.js
@@ -369,7 +369,7 @@ export function RosesOfRomeSongs() {
     },
      {
       songId: SONG_UUIDS.rorMusic_028,
-      songFile: ReputationVocal,
+      songFile: ReputationDuet,
       songName: {
         en: "Reputation vocal",
         it: "Reputazione vocale",

@@ -48,7 +48,7 @@ WelcomeSongFemaleLyrics,
 WelcomeSongMaleLyrics,
 VisionFemaleLyrics,
 VisionDuetLyrics,
-EverythingDuetLyrics
+
 } from "./SongData";
 
 // utils/songUUIDs.js
@@ -367,16 +367,7 @@ export function RosesOfRomeSongs() {
       songLyrics: [],
       songAlbum: "Cantabile",
     },
-     {
-      songId: SONG_UUIDS.rorMusic_028,
-      songFile: ReputationVocal,
-      songName: {
-        en: "Reputation vocal",
-        it: "Reputazione vocale",
-      },
-      songLyrics: [],
-      songAlbum: "Cantabile",
-    },
+    
     {
       songId: SONG_UUIDS.rorMusic_029,
       songFile: Everythings,

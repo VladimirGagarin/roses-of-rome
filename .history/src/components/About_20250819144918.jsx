@@ -1,5 +1,5 @@
 import Logo from "../assets/images/rorps.png";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./About.css"
 import { FaBell, FaUserPlus, FaWhatsapp } from "react-icons/fa";
 import { useLanguage } from "./LanguageContext";
@@ -13,28 +13,12 @@ export default function AboutComponent() {
     const { language } = useLanguage();
     const [showMore, setIsShowingMore] = useState(false);
   const navigate = useNavigate();
-  const [aboutIsPlaying, setAboutIsPlaying] = useState(false);
-  
-   useEffect(() => {
-     const handleSetCurrent = (e) => {
-       // Check if the current audio is the About Hymn
-       if (e.detail && e.detail.src?.includes("about_roses.mp3")) {
-         setAboutIsPlaying(true);
-       } else {
-         setAboutIsPlaying(false);
-       }
-     };
-
-     window.addEventListener("set-current-audio", handleSetCurrent);
-     return () =>
-       window.removeEventListener("set-current-audio", handleSetCurrent);
-   }, []);
 
     const allTexts = {
-         headerTitle: {
-          en: "Roses Of Rome Pictures.",
-          it: "Rosa Di Roma Immagini",
-        },
+      headerTitle: {
+        en: "Roses Of Rome Pictures.",
+        it: "Rosa Di Roma Immagini",
+      },
       introText: {
         en: "Roses of Rome Pictures – Aeternum Floreamus...",
         it: "Rose di Roma Immagini – Aeternum Floreamus...",
@@ -99,6 +83,7 @@ export default function AboutComponent() {
               href="https://chat.whatsapp.com/IoJTdMJyJPpFjEOL8yFxWa"
               target="_blank"
               rel="noopener noreferrer"
+              
             >
               <FaWhatsapp />
               {language === "it" ? "Unisciti" : "Join"}
@@ -117,29 +102,8 @@ export default function AboutComponent() {
                   {line.trim()}
                 </p>
               ))}
-              <div className="audio-wrapper">
-                <AudioComponent
-                  audioFile={AboutHymn}
-                  title={
-                    language === "it"
-                      ? "Rosa Di Roma about"
-                      : "About Roses Of Rome"
-                  }
-                />
-              </div>
-
-              <button
-                className="exit-btn"
-                onClick={() => {
-                  // ✅ Only stop About Hymn if it was playing
-                  if (aboutIsPlaying) {
-                    window.dispatchEvent(
-                      new CustomEvent("pause-all-audio", { detail: null })
-                    );
-                  }
-                  setIsShowingMore(false);
-                }}
-              >
+              <AudioComponent audioFile={AboutHymn} title={language === "it" ? "Roses Of Rome"}
+              <button onClick={() => setIsShowingMore(false)}>
                 {language === "en" ? "Close" : "Chiudi"}
               </button>
             </div>

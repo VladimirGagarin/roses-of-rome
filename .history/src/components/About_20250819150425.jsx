@@ -128,18 +128,14 @@ export default function AboutComponent() {
                 />
               </div>
 
-              <button
-                className="exit-btn"
-                onClick={() => {
-                  // ✅ Only stop About Hymn if it was playing
-                  if (aboutIsPlaying) {
-                    window.dispatchEvent(
-                      new CustomEvent("pause-all-audio", { detail: null })
-                    );
-                  }
-                  setIsShowingMore(false);
-                }}
-              >
+              <button onClick={() => {
+                if (e.detail === AboutHymn) {
+                  window.dispatchEvent(
+                    new CustomEvent("pause-all-audio", { detail: null })
+                  );
+                }
+                setIsShowingMore(false)
+              }}>
                 {language === "en" ? "Close" : "Chiudi"}
               </button>
             </div>
