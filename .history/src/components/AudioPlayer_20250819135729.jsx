@@ -64,29 +64,9 @@ export default function AudioComponent({ audioFile, title }) {
     return () => window.removeEventListener("pause-all-audio", handler);
   }, []);
 
-   useEffect(() => {
-     window.dispatchEvent(
-       new CustomEvent("set-current-audio", { detail: null })
-     );
-
-     // also stop/pause audio if you want
-     if (audioRef.current) {
-       audioRef.current.pause();
-       audioRef.current.currentTime = 0;
-     }
-     setIsPlaying(false);
-     setCurrentTime(0);
-     setProgress(0);
-   }, [location.pathname]);
-
   useEffect(() => {
-    window.dispatchEvent(
-      new CustomEvent("set-current-audio", { detail: null })
-    );
-    
     if (audioRef.current) {
       audioRef.current.pause();
-       audioRef.current.currentTime = 0;
       setIsPlaying(false);
       setCurrentTime(0);
       setProgress(0);

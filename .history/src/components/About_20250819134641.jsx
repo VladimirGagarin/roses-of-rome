@@ -40,7 +40,7 @@ export default function AboutComponent() {
 
     return (
       <div className="about-container">
-        <div className="left-side-about" onClick={() => navigate("/")}>
+        <div className="left-side-about" onclick={}>
           <img src={Logo} alt="Rose_Of_Rome_logo" />
         </div>
         <div className="right-side-about">

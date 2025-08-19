@@ -30,7 +30,7 @@ export default function BannerHead({
       <div
         className="Switcher"
         onClick={(e) => {
-          e.stopPropagation();
+          e.stop
           setLanguage(language === "en" ? "it" : "en")
         }}
       >

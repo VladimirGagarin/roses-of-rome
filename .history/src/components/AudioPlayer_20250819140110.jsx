@@ -83,7 +83,6 @@ export default function AudioComponent({ audioFile, title }) {
     window.dispatchEvent(
       new CustomEvent("set-current-audio", { detail: null })
     );
-    
     if (audioRef.current) {
       audioRef.current.pause();
        audioRef.current.currentTime = 0;

@@ -1,7 +1,7 @@
 // src/components/BannerHead.jsx
 import { useLanguage } from "./LanguageContext";
 import "../index.css"; // create this file
-import {useNavigate} from "react-router-dom"
+
 
 export default function BannerHead({
   mediaType = "image",
@@ -9,10 +9,10 @@ export default function BannerHead({
   alt = "Event Banner",
 }) {
     const { language, setLanguage } = useLanguage();
-    const navigate = useNavigate();
+    
 
   return (
-    <div className="banner-container" onClick={() => navigate("/")}>
+    <div className="banner-container">
       {mediaType === "image" && (
         <img src={src} alt={alt} className="banner-media" />
       )}
@@ -27,13 +27,7 @@ export default function BannerHead({
         />
       )}
       {/*Top right switcher */}
-      <div
-        className="Switcher"
-        onClick={(e) => {
-          e.stopPropagation();
-          setLanguage(language === "en" ? "it" : "en")
-        }}
-      >
+      <div className="Switcher" onClick={() => setLanguage(language === "en" ? "it" : "en")}>
         <span
           style={{
             color: language === "en" ? "black" : "#888",
@@ -42,7 +36,10 @@ export default function BannerHead({
         >
           EN
         </span>
-        <div className={`switch ${language === "it" ? "on" : ""}`}></div>
+        <div
+          className={`switch ${language === "it" ? "on" : ""}`}
+          
+        ></div>
         <span
           style={{
             color: language === "it" ? "black" : "#888",

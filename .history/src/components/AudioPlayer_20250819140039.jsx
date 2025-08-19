@@ -80,10 +80,6 @@ export default function AudioComponent({ audioFile, title }) {
    }, [location.pathname]);
 
   useEffect(() => {
-    window.dispatchEvent(
-      new CustomEvent("set-current-audio", { detail: null })
-    );
-    
     if (audioRef.current) {
       audioRef.current.pause();
        audioRef.current.currentTime = 0;

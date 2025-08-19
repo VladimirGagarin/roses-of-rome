@@ -130,7 +130,7 @@
   .right-side-about {
     padding: 0;
     align-items: start;
-   width: 100%
+   with: 100%
 
   }
   .right-side-about .top h1 {

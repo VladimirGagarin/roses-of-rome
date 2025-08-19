@@ -13,11 +13,12 @@ export default function AudioComponent({ audioFile, title }) {
   const [currentTime, setCurrentTime] = useState(0);
   const [loading, setLoading] = useState(false);
   const [stalled, setStalled] = useState(false);
-  const [isCurrent, setIsCurrent] = useState(false);
+   const [isCurrent, setIsCurrent] = useState(false);
   const [error, setError] = useState(null);
   const [isOnline, setIsOnline] = useState(navigator.onLine);
+
   const { language } = useLanguage();
-  const location = useLocation(); // 👈 get current path
+  
 
   const loadingMsg = language === "it" ? "Caricamento..." : "Loading...";
   const stalledMsg = language === "it" ? "Un momento..." : "A moment...";
@@ -26,19 +27,19 @@ export default function AudioComponent({ audioFile, title }) {
   useEffect(() => {
     const handleOnline = () => {
       setIsOnline(true);
-      setLoading(false);
-      setStalled(false);
-      setError(null);
+       setLoading(false);
+       setStalled(false);
+       setError(null);
     };
     const handleOffline = () => {
       setIsOnline(false);
-      setError(true);
-      setLoading(false);
-      setStalled(false);
-      setIsPlaying(false);
-      window.dispatchEvent(
-        new CustomEvent("set-current-audio", { detail: null })
-      );
+       setError(true);
+       setLoading(false);
+       setStalled(false);
+       setIsPlaying(false);
+       window.dispatchEvent(
+         new CustomEvent("set-current-audio", { detail: null })
+       );
     };
 
     window.addEventListener("online", handleOnline);
@@ -64,29 +65,9 @@ export default function AudioComponent({ audioFile, title }) {
     return () => window.removeEventListener("pause-all-audio", handler);
   }, []);
 
-   useEffect(() => {
-     window.dispatchEvent(
-       new CustomEvent("set-current-audio", { detail: null })
-     );
-
-     // also stop/pause audio if you want
-     if (audioRef.current) {
-       audioRef.current.pause();
-       audioRef.current.currentTime = 0;
-     }
-     setIsPlaying(false);
-     setCurrentTime(0);
-     setProgress(0);
-   }, [location.pathname]);
-
   useEffect(() => {
-    window.dispatchEvent(
-      new CustomEvent("set-current-audio", { detail: null })
-    );
-    
     if (audioRef.current) {
       audioRef.current.pause();
-       audioRef.current.currentTime = 0;
       setIsPlaying(false);
       setCurrentTime(0);
       setProgress(0);
@@ -105,14 +86,14 @@ export default function AudioComponent({ audioFile, title }) {
   }, [audioFile]);
 
   useEffect(() => {
-    const handleSetCurrent = (e) => {
-      // if the event is from THIS audio element, mark current
-      setIsCurrent(e.detail === audioRef.current);
-    };
-    window.addEventListener("set-current-audio", handleSetCurrent);
-    return () =>
-      window.removeEventListener("set-current-audio", handleSetCurrent);
-  }, []);
+  const handleSetCurrent = (e) => {
+    // if the event is from THIS audio element, mark current
+    setIsCurrent(e.detail === audioRef.current);
+  };
+  window.addEventListener("set-current-audio", handleSetCurrent);
+  return () => window.removeEventListener("set-current-audio", handleSetCurrent);
+}, []);
+
 
   const handlePlayPause = () => {
     const audio = audioRef.current;
@@ -128,6 +109,7 @@ export default function AudioComponent({ audioFile, title }) {
       );
       audio.play();
     }
+
   };
 
   const handleLoadedMetadata = () => {
@@ -156,10 +138,8 @@ export default function AudioComponent({ audioFile, title }) {
     setLoading(false);
     setStalled(false);
     setError(null);
-    // Tell all AudioComponents who is the current one
-    window.dispatchEvent(
-      new CustomEvent("set-current-audio", { detail: audioRef.current })
-    );
+     // Tell all AudioComponents who is the current one
+  window.dispatchEvent(new CustomEvent("set-current-audio", { detail: audioRef.current }));
   };
   const handlePause = () => setIsPlaying(false);
   const handleWaiting = () => {
@@ -176,107 +156,108 @@ export default function AudioComponent({ audioFile, title }) {
     setIsPlaying(false);
     setCurrentTime(0);
     setProgress(0);
-    window.dispatchEvent(
-      new CustomEvent("set-current-audio", { detail: null })
-    );
+    window.dispatchEvent(new CustomEvent("set-current-audio", { detail: null }));
+
   };
   const handleError = () => {
     setError(true);
     setLoading(false);
     setStalled(false);
     setIsPlaying(false);
-    window.dispatchEvent(
-      new CustomEvent("set-current-audio", { detail: null })
-    );
+     window.dispatchEvent(
+       new CustomEvent("set-current-audio", { detail: null })
+     );
   };
   const handleCanPlayThrough = () => {
     setLoading(false);
     setStalled(false);
     setError(null);
+   
   };
 
-  return (
-    <div className={`audio-component ${isCurrent ? "current" : ""}`}>
-      {!isOnline ? (
-        <div className="network-status">
-          {language === "it" ? "Sei offline" : "You are offline"}
-        </div>
-      ) : (
-        <>
-          <div className="audio-header">
-            <span className="audio-title">{title}</span>
-          </div>
+ return (
+   <div className={`audio-component ${isCurrent ? "current" : ""}`}>
+     {!isOnline ? (
+       <div className="network-status">
+         {language === "it" ? "Sei offline" : "You are offline"}
+       </div>
+     ) : (
+       <>
+         <div className="audio-header">
+           <span className="audio-title">{title}</span>
+         </div>
 
-          <audio
-            ref={audioRef}
-            src={audioFile}
-            onLoadedMetadata={handleLoadedMetadata}
-            onLoadedData={handleLoadedMetadata}
-            onTimeUpdate={handleTimeUpdate}
-            onPlay={handlePlaying}
-            onPause={handlePause}
-            onWaiting={handleWaiting}
-            onStalled={handleStalled}
-            onEnded={handleEnded}
-            onPlaying={handlePlaying}
-            onError={handleError}
-            onCanPlay={handleCanPlayThrough}
-            onCanPlayThrough={handleCanPlayThrough}
-            preload="auto"
-          />
+         <audio
+           ref={audioRef}
+           src={audioFile}
+           onLoadedMetadata={handleLoadedMetadata}
+           onLoadedData={handleLoadedMetadata}
+           onTimeUpdate={handleTimeUpdate}
+           onPlay={handlePlaying}
+           onPause={handlePause}
+           onWaiting={handleWaiting}
+           onStalled={handleStalled}
+           onEnded={handleEnded}
+           onPlaying={handlePlaying}
+           onError={handleError}
+           onCanPlay={handleCanPlayThrough}
+           onCanPlayThrough={handleCanPlayThrough}
+           preload="auto"
+         />
 
-          <div className="audio-controls">
-            <button
-              className="audio-playpause"
-              onClick={handlePlayPause}
-              aria-label={
-                isPlaying
-                  ? language === "it"
-                    ? "Pausa"
-                    : "Pause"
-                  : language === "it"
-                  ? "Riproduci"
-                  : "Play"
-              }
-              title={
-                isPlaying
-                  ? language === "it"
-                    ? "Pausa"
-                    : "Pause"
-                  : language === "it"
-                  ? "Riproduci"
-                  : "Play"
-              }
-            >
-              {isPlaying ? <FaPause /> : <FaPlay />}
-            </button>
+         <div className="audio-controls">
+           <button
+             className="audio-playpause"
+             onClick={handlePlayPause}
+             aria-label={
+               isPlaying
+                 ? language === "it"
+                   ? "Pausa"
+                   : "Pause"
+                 : language === "it"
+                 ? "Riproduci"
+                 : "Play"
+             }
+             title={
+               isPlaying
+                 ? language === "it"
+                   ? "Pausa"
+                   : "Pause"
+                 : language === "it"
+                 ? "Riproduci"
+                 : "Play"
+             }
+           >
+             {isPlaying ? <FaPause /> : <FaPlay />}
+           </button>
 
-            <div
-              className="audio-progress-container"
-              onClick={handleProgressBarClick}
-            >
-              <div className="audio-progress-bar">
-                <div
-                  className={`audio-progress ${isCurrent ? "active" : ""}`}
-                  style={{ width: `${progress * 100}%` }}
-                />
-              </div>
-            </div>
+           <div
+             className="audio-progress-container"
+             onClick={handleProgressBarClick}
+           >
+             <div className="audio-progress-bar">
+               <div
+                 className={`audio-progress ${isCurrent ? "active" : ""}`}
+                 style={{ width: `${progress * 100}%` }}
+               />
+             </div>
+           </div>
 
-            <span className="audio-time">
-              {formatTime(currentTime)} / {formatTime(duration)}
-            </span>
-          </div>
+           <span className="audio-time">
+             {formatTime(currentTime)} / {formatTime(duration)}
+           </span>
+         </div>
 
-          {(loading || stalled || error) && (
-            <div className="audio-overlay">
-              {error ? errorMsg : loading ? loadingMsg : stalledMsg}
-            </div>
-          )}
-        </>
-      )}
-    </div>
-  );
+         {(loading || stalled || error) && (
+           <div className="audio-overlay">
+             {error ? errorMsg : loading ? loadingMsg : stalledMsg}
+           </div>
+         )}
+       </>
+     )}
+   </div>
+ );
+
 }
 
 function formatTime(sec) {

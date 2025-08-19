@@ -29,10 +29,7 @@ export default function BannerHead({
       {/*Top right switcher */}
       <div
         className="Switcher"
-        onClick={(e) => {
-          e.stopPropagation();
-          setLanguage(language === "en" ? "it" : "en")
-        }}
+        onClick={() => {setLanguage(language === "en" ? "it" : "en")}}
       >
         <span
           style={{

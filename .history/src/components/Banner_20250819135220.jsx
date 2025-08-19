@@ -29,8 +29,7 @@ export default function BannerHead({
       {/*Top right switcher */}
       <div
         className="Switcher"
-        onClick={(e) => {
-          e.stopPropagation();
+        onClick={() => {
           setLanguage(language === "en" ? "it" : "en")
         }}
       >

@@ -3,14 +3,13 @@ import { useState } from "react";
 import "./About.css"
 import { FaBell, FaUserPlus, FaWhatsapp } from "react-icons/fa";
 import { useLanguage } from "./LanguageContext";
-import {useNavigate} from "react-router-dom"
+import {useNavigate} from ".."
 
 
 
 export default function AboutComponent() {
     const { language } = useLanguage();
     const [showMore, setIsShowingMore] = useState(false);
-  const navigate = useNavigate();
 
     const allTexts = {
       headerTitle: {
@@ -40,7 +39,7 @@ export default function AboutComponent() {
 
     return (
       <div className="about-container">
-        <div className="left-side-about" onClick={() => navigate("/")}>
+        <div className="left-side-about">
           <img src={Logo} alt="Rose_Of_Rome_logo" />
         </div>
         <div className="right-side-about">
