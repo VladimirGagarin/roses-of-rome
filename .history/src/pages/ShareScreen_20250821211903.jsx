@@ -197,6 +197,7 @@ export default function ShareScreen() {
 
   // Handle sharing
 //  const handleShare = async (song) => {
+//    // Always use the correct path with '/roses-of-rome/'
 //    const shareUrl = `${window.location.origin}/roses-of-rome/#/pages/share/${song.songId}?utm_source=app&utm_medium=share&utm_campaign=song_share`;
 
 //    const shareData = {

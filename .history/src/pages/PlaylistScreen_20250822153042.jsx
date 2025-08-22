@@ -12,11 +12,21 @@ import BgImg5 from "../assets/images/txt_bg5.jpg";
 import "../App.css";
 import AlbumFilter from "../components/Album.jsx";
 
+const shuffleArray = (array) => {
+  const newArray = [...array];
+  for (let i = newArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+  }
+  return newArray;
+};
+
 
 
 export default function PlaylistScreen() {
   const allSongs = RosesOfRomeSongs();
   const { language } = useLanguage();
+  const [shuffledSongs, setShuffledSongs] = useState([]);
    const [filteredSongs, setFilteredSongs] = useState(allSongs);
   const [selectedAlbum, setSelectedAlbum] = useState("all");
   const [albums, setAlbums] = useState([]);
@@ -56,10 +66,12 @@ export default function PlaylistScreen() {
     };
   }, []);
 
- 
+  useEffect(() => {
+    setShuffledSongs(shuffleArray(allSongs));
+  }, [allSongs]);
 
   useEffect(() => {
-    const uniqueAlbums = [...new Set(allSongs.map((song) => song.songAlbum))];
+    const uniqueAlbums = [...new Set(shuffledSongs.map((song) => song.songAlbum))];
     setAlbums(uniqueAlbums);
   }, [allSongs]);
 
@@ -250,7 +262,7 @@ export default function PlaylistScreen() {
 
     if (navigator.share) {
       try {
-        setIsSharing(true); 
+        setIsSharing(true); // 🔒 disable button while share sheet is open
         await navigator.share({
           title: songTitle,
           text: shareText,
@@ -260,7 +272,7 @@ export default function PlaylistScreen() {
         fallbackCopyToClipboard(songUrl);
         console.warn(err);
       } finally {
-        setIsSharing(false); 
+        setIsSharing(false); // 🔓 re-enable button when done/cancelled
       }
     } else {
       fallbackCopyToClipboard(songUrl);
@@ -318,14 +330,13 @@ export default function PlaylistScreen() {
   };
 
   return (
-    <>
-     <AlbumFilter
+    <div className="playlist-container">
+      {/* Album filter component */}
+      <AlbumFilter
         albums={albums}
         selectedAlbum={selectedAlbum}
         onSelectAlbum={handleAlbumSelect}
       />
-    <div className="playlist-container">
-      {/* Album filter component */}
 
       {filteredSongs.map((song) => (
         <div className="song-card" key={song.songId}>
@@ -435,6 +446,5 @@ export default function PlaylistScreen() {
         />
       )}
     </div>
-    </>
   );
 }

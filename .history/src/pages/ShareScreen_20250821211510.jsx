@@ -196,35 +196,36 @@ export default function ShareScreen() {
       };
 
   // Handle sharing
-//  const handleShare = async (song) => {
-//    const shareUrl = `${window.location.origin}/roses-of-rome/#/pages/share/${song.songId}?utm_source=app&utm_medium=share&utm_campaign=song_share`;
+ const handleShare = async (song) => {
+   // Always use the correct path with '/roses-of-rome/'
+   const shareUrl = `${window.location.origin}/roses-of-rome/#/pages/share/${song.songId}?utm_source=app&utm_medium=share&utm_campaign=song_share`;
 
-//    const shareData = {
-//      title: song.songName[language] || song.songName.en,
-//      text:
-//        language === "it"
-//          ? `Ascolta "${song.songName[language]}" 🎶`
-//          : `Listen to "${song.songName[language]}" 🎶`,
-//      url: shareUrl,
-//    };
+   const shareData = {
+     title: song.songName[language] || song.songName.en,
+     text:
+       language === "it"
+         ? `Ascolta "${song.songName[language]}" 🎶`
+         : `Listen to "${song.songName[language]}" 🎶`,
+     url: shareUrl,
+   };
 
-//    try {
-//      if (navigator.share) {
-//        await navigator.share(shareData);
-//      } else {
-//        await navigator.clipboard.writeText(
-//          `${shareData.text}\n${shareData.url}`
-//        );
-//        alert(
-//          language === "it"
-//            ? "Link copiato negli appunti!"
-//            : "Link copied to clipboard!"
-//        );
-//      }
-//    } catch (err) {
-//      console.error("Sharing failed Try agin:", err);
-//    }
-//  };
+   try {
+     if (navigator.share) {
+       await navigator.share(shareData);
+     } else {
+       await navigator.clipboard.writeText(
+         `${shareData.text}\n${shareData.url}`
+       );
+       alert(
+         language === "it"
+           ? "Link copiato negli appunti!"
+           : "Link copied to clipboard!"
+       );
+     }
+   } catch (err) {
+     console.error("Sharing failed Try agin:", err);
+   }
+ };
 
   // Fallback UI if song not found
   if (!currentSongObj) {
@@ -297,7 +298,7 @@ export default function ShareScreen() {
 
           <div className="more-action-card">
             {/* Replace <p> with Share Button */}
-            {/* {currentSongObj.songId && (
+            {currentSongObj.songId && (
               <button
                 className="share-button"
                 onClick={() => handleShare(currentSongObj)}
@@ -306,10 +307,10 @@ export default function ShareScreen() {
                   language === "it" ? "Condividi canzone" : "Share song"
                 }
               >
-                <FaShareAlt /> 
+                <FaShareAlt /> {/* Using react-icons' share icon */}
                 <span>{language === "it" ? "Condividi" : "Share"}</span>
               </button>
-            )} */}
+            )}
             {/* Existing YouTube Button */}
             {Array.isArray(currentSongObj.songLyrics) &&
               currentSongObj.songLyrics.length > 0 && (

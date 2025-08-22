@@ -28,7 +28,7 @@ import ReputationDuet from "../assets/audios/reputations_duet.mp3";
 import ReputationVocal from "../assets/audios/reputations_vocal.mp3";
 import Everythings from "../assets/audios/everythings.mp3";
 import CottolengoSisters from "../assets/audios/suor.mp3";
-import CottolengoSistersRMX from "../assets/audios/suor _rmx.mp3";
+import CottolengoSistersRMX from "../assets/audios/sour (Remix)";
 import CottolengoSistersIT from "../assets/audios/suor_it.mp3";
 // lyrics
 import {
@@ -393,34 +393,14 @@ export function RosesOfRomeSongs() {
       songAlbum: "Cantabile",
     },
     {
-      songId: SONG_UUIDS.rorMusic_030,
-      songFile: CottolengoSisters,
+      songId: SONG_UUIDS.rorMusic_029,
+      songFile: Everythings,
       songName: {
-        en: "Cottolengo Sisters",
-        it: "Suor Cottolengo",
+        en: "Everything to see you again (Duet)",
+        it: "Tutto per rivederti (Duettto)",
       },
-      songLyrics: [],
-      songAlbum: "Piccola Casa della Gioia",
-    },
-    {
-      songId: SONG_UUIDS.rorMusic_031,
-      songFile: CottolengoSistersRMX,
-      songName: {
-        en: "Cottolengo Sisters (RMX)",
-        it: "Suor Cottolengo (RMX)",
-      },
-      songLyrics: [],
-      songAlbum: "Piccola Casa della Gioia",
-    },
-    {
-      songId: SONG_UUIDS.rorMusic_032,
-      songFile: CottolengoSistersIT,
-      songName: {
-        en: "Cottolengo Sisters (Italian)",
-        it: "Suor Cottolengo (Italiano)",
-      },
-      songLyrics: [],
-      songAlbum: "Piccola Casa della Gioia",
+      songLyrics: EverythingDuetLyrics(),
+      songAlbum: "Cantabile",
     },
   ];
   return songs;

@@ -10,14 +10,22 @@ import BgImg3 from "../assets/images/txt_bg3.jpg";
 import BgImg4 from "../assets/images/txt_bg4.jpg";
 import BgImg5 from "../assets/images/txt_bg5.jpg";
 import "../App.css";
-import AlbumFilter from "../components/Album.jsx";
+
+const shuffleArray = (array) => {
+  const newArray = [...array];
+  for (let i = newArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+  }
+  return newArray;
+};
 
 
 
 export default function PlaylistScreen() {
   const allSongs = RosesOfRomeSongs();
   const { language } = useLanguage();
-   const [filteredSongs, setFilteredSongs] = useState(allSongs);
+  const [shuffledSongs, setShuffledSongs] = useState([]);
   const [selectedAlbum, setSelectedAlbum] = useState("all");
   const [albums, setAlbums] = useState([]);
 
@@ -56,7 +64,9 @@ export default function PlaylistScreen() {
     };
   }, []);
 
- 
+  useEffect(() => {
+    setShuffledSongs(shuffleArray(allSongs));
+  }, []);
 
   useEffect(() => {
     const uniqueAlbums = [...new Set(allSongs.map((song) => song.songAlbum))];
@@ -69,10 +79,10 @@ export default function PlaylistScreen() {
       setFilteredSongs(allSongs);
     } else {
       setFilteredSongs(
-       allSongs.filter((song) => song.songAlbum === selectedAlbum)
+        allSongs.filter((song) => song.songAlbum === selectedAlbum)
       );
     }
-  }, [selectedAlbum,allSongs]);
+  }, [selectedAlbum, allSongs]);
 
   const handleAlbumSelect = (album) => {
     setSelectedAlbum(album);
@@ -92,8 +102,7 @@ export default function PlaylistScreen() {
 
   useEffect(() => {
     setCurrentImg((prev) => (prev + 1) % bgsImg.length);
-  }, [currentLine, bgsImg.length]);
-
+  }, [currentLine]);
   const handleShareClick = (song, event) => {
     setCurrentSongForShare(song);
     setShareMenuPosition({
@@ -250,7 +259,7 @@ export default function PlaylistScreen() {
 
     if (navigator.share) {
       try {
-        setIsSharing(true); 
+        setIsSharing(true); // 🔒 disable button while share sheet is open
         await navigator.share({
           title: songTitle,
           text: shareText,
@@ -260,7 +269,7 @@ export default function PlaylistScreen() {
         fallbackCopyToClipboard(songUrl);
         console.warn(err);
       } finally {
-        setIsSharing(false); 
+        setIsSharing(false); // 🔓 re-enable button when done/cancelled
       }
     } else {
       fallbackCopyToClipboard(songUrl);
@@ -318,16 +327,8 @@ export default function PlaylistScreen() {
   };
 
   return (
-    <>
-     <AlbumFilter
-        albums={albums}
-        selectedAlbum={selectedAlbum}
-        onSelectAlbum={handleAlbumSelect}
-      />
     <div className="playlist-container">
-      {/* Album filter component */}
-
-      {filteredSongs.map((song) => (
+      {shuffledSongs.map((song) => (
         <div className="song-card" key={song.songId}>
           <div className="audio-wrapper">
             <AudioComponent
@@ -435,6 +436,5 @@ export default function PlaylistScreen() {
         />
       )}
     </div>
-    </>
   );
 }

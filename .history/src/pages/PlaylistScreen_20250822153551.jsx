@@ -250,7 +250,7 @@ export default function PlaylistScreen() {
 
     if (navigator.share) {
       try {
-        setIsSharing(true); 
+        setIsSharing(true); // 🔒 disable button while share sheet is open
         await navigator.share({
           title: songTitle,
           text: shareText,
@@ -260,7 +260,7 @@ export default function PlaylistScreen() {
         fallbackCopyToClipboard(songUrl);
         console.warn(err);
       } finally {
-        setIsSharing(false); 
+        setIsSharing(false); // 🔓 re-enable button when done/cancelled
       }
     } else {
       fallbackCopyToClipboard(songUrl);
@@ -318,14 +318,9 @@ export default function PlaylistScreen() {
   };
 
   return (
-    <>
-     <AlbumFilter
-        albums={albums}
-        selectedAlbum={selectedAlbum}
-        onSelectAlbum={handleAlbumSelect}
-      />
     <div className="playlist-container">
       {/* Album filter component */}
+     
 
       {filteredSongs.map((song) => (
         <div className="song-card" key={song.songId}>
@@ -435,6 +430,5 @@ export default function PlaylistScreen() {
         />
       )}
     </div>
-    </>
   );
 }

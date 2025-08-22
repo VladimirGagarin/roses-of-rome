@@ -28,7 +28,7 @@ import ReputationDuet from "../assets/audios/reputations_duet.mp3";
 import ReputationVocal from "../assets/audios/reputations_vocal.mp3";
 import Everythings from "../assets/audios/everythings.mp3";
 import CottolengoSisters from "../assets/audios/suor.mp3";
-import CottolengoSistersRMX from "../assets/audios/suor _rmx.mp3";
+import CottolengoSistersRMX from "../assets/audios/sour (Remix)";
 import CottolengoSistersIT from "../assets/audios/suor_it.mp3";
 // lyrics
 import {
@@ -412,16 +412,7 @@ export function RosesOfRomeSongs() {
       songLyrics: [],
       songAlbum: "Piccola Casa della Gioia",
     },
-    {
-      songId: SONG_UUIDS.rorMusic_032,
-      songFile: CottolengoSistersIT,
-      songName: {
-        en: "Cottolengo Sisters (Italian)",
-        it: "Suor Cottolengo (Italiano)",
-      },
-      songLyrics: [],
-      songAlbum: "Piccola Casa della Gioia",
-    },
+    
   ];
   return songs;
 }
