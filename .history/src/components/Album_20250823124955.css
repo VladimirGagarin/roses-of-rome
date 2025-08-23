@@ -1,0 +1,55 @@
+/* AlbumFilter.css */
+.album-filter {
+  margin: 20px 0;
+  padding: 10px 0;
+  width: 100%;
+  overflow-x: auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+
+
+.album-scroller {
+  display: flex;
+  gap: 10px;
+  padding: 10px 15px;
+  align-items: center;
+}
+
+.album-chip {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.album-chip:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.album-chip.active {
+  background: #646cff;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(100, 108, 255, 0.3);
+}
+
+@media (prefers-color-scheme: dark) 
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+  .album-scroller {
+    padding: 8px 12px;
+  }
+
+  .album-chip {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
