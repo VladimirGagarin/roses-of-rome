@@ -72,7 +72,7 @@
                
                 width: 30%;
                 height: 300px;
-                margin-bottom: 20px;
+                
                 
             }
             .left-side img {
@@ -93,7 +93,7 @@
             margin: 20px 0;
 
             .left-side{
-                width: 90%;
+                width: 30%;
                 height: 300px;
 
             }
@@ -114,61 +114,7 @@
             border:2px solid #000;
             width: 60%;
             padding:20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            position:relative;
         }
-
-        .lyrics {
-            font-family: "Georgia", serif;
-            line-height: 1.6;
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: center;
-          
-
-        }
-
-            .lyrics-section {
-            margin: 20px 0;
-            padding: 10px;
-            }
-
-            .lyrics-section h4 {
-            margin-bottom: 8px;
-            font-size: 1.2em;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: #007bff; /* rose red vibe */
-            }
-
-            .lyrics-section p {
-            margin: 0;
-            white-space: pre-line; /* preserves line breaks */
-            }
-            /*top right corner*/
-            .song-section button {
-                background-color: #4CAF50;
-                color: white;
-                border: none;
-                border-radius: 4px;
-                padding: 10px 15px;
-                cursor: pointer;
-                font-size: 1.2rem;
-                position: absolute;
-                top: 20px;
-                right: 20px;
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            }
-
-            .song-section h3 {
-                font-size: 1.4rem;
-            }
-
 
         @media (prefers-color-scheme: dark) {
             .Thankyou-note {
@@ -182,9 +128,6 @@
             }
             .song-section {
                 border-color: #fff;
-            }
-            .lyrics-section h4 {
-                color: orange;
             }
          }
 
@@ -204,14 +147,7 @@
         }
 
         
-        footer{
-            width: 100%;
-            display: flex;
-            align-items:center;
-            flex-direction: column;
-            justify-content: center;
-            margin-:20px;
-        }
+        
 
         /* small screen styles */
         @media (max-width: 800px) {
@@ -222,15 +158,12 @@
             }
 
             .left-side,
-            .right-side{
+            .right-side {
                 width: 100%;
                 height: auto;
-                padding: 0;
+                padding: 10px 0;
                 text-align: center;
                 gap: 10px;
-            }
-            .Thankyou-note .left-side, .donation-method  .left-side{
-                width: 100%;
             }
             .right-side p {
                 text-align: justify;
@@ -246,9 +179,6 @@
             }
             ol li {
                 text-align: justify;
-            }
-            .song-section{
-                width: 90%;
             }
         }
 
@@ -318,18 +248,12 @@
        </div>
 
        <div class="song-section">
-                <h3 data-en="Forever Blessed" data-it="Per sempre benedetto">Forever Blessed </h3>
                <div class="lyrics-text"></div>
                <div class="songs-toggle">
                 <audio class="songUrl"></audio> 
-                <button class="playPauseBtn" title="Play">&#9654;</button>
+                <button class="playPauseBtn" ><i class="fa-solid fa-play"></i></button>
                </div>
        </div>
-
-       <footer>
-        <a href="https://vladimirgagarin.github.io/roses-of-rome/" data-en="Visit our Website" data-it="Visita il nostro sito web" rel="noopener noreferrer" target="_blank" class="home-link">Visit our Website</a>
-        <p data-en="&copy; 2025 Roses of Rome. All rights reserved." data-it="&copy; 2025 Roses of Rome. Tutti i diritti riservati.">&copy; 2025 Roses of Rome. All rights reserved.</p>
-       </footer>
 
        <script>
             document.addEventListener("DOMContentLoaded", function() {
@@ -337,7 +261,7 @@
                 const isItalian = userLang.startsWith("it");
                 const copyNumber = "+254 741 146 031";
                 const copyNumBtn = document.querySelector(".copy-number");
-                const songUrl = "/bless.mp3";
+                const songUrl = "https://vladimirgagarin.github.io/roses-of-rome/assets/audios/bless.mp3";
                 const lyricsSection = document.querySelector(".song-section .lyrics-text");
                 const audioElement = document.querySelector(".song-section .songUrl");
                 const playBtn = document.querySelector(".song-section .playPauseBtn");
@@ -355,14 +279,14 @@
                         text: `Forever blessed, your heart that gives,
                     You lift our dreams, you bring us to live.
                     Roses of Rome will remember you forever,
-                    We bloom together — be bless forever.`
+                    We bloom together — be blessed forever.`
                     },
                     {
                         title: "Verse 2",
                         text: `Every prayer, every gift, every hand,
                     Builds our story, a castle that stands.
                     Hope is stronger, when love’s expressed,
-                    Your faith has made us forever bless.`
+                    Your faith has made us forever blessed.`
                     },
                     {
                         title: "Bridge",
@@ -379,48 +303,10 @@
                     Our well-wishers, forever bless.`
                     }
                     ];
-                    const italianLyrics = [
-                        {
-                            title: "Verso 1",
-                            text: `Nel giardino dove cresce la tua bontà,
-                        Ogni sorriso è il sole che brillerà.
-                        Tra le prove, tra i test del cuore,
-                        Il tuo amore ci rende per sempre onore.`
-                        },
-                        {
-                            title: "Coro",
-                            text: `Per sempre beati dal cuore che dona,
-                        Alzi i sogni, la vita risuona.
-                        Le Rose di Roma per sempre ricorderanno,
-                        Fioriamo insieme — benedetti restiamo.`
-                        },
-                        {
-                            title: "Verso 2",
-                            text: `Ogni preghiera, ogni dono, ogni mano,
-                        Costruisce la storia, un castello sovrano.
-                        La speranza cresce, l’amore è espresso,
-                        La tua fede ci rende per sempre benedetto.`
-                        },
-                        {
-                            title: "Ponte",
-                            text: `Tra le rose, tra la pioggia che scende,
-                        La gratitudine mai si arrende.
-                        Ogni desiderio, ogni canto, ogni festa,
-                        Hai reso il nostro cammino per sempre benedetta.`
-                        },
-                        {
-                            title: "Coro Finale",
-                            text: `Per sempre beati dall’amore vissuto,
-                        In ogni seme di bontà che hai voluto.
-                        Le Rose di Roma fioriranno, confessate —
-                        I nostri amici, per sempre beati.`
-                        }
-                    ];
-
 
                     function renderLyrics(lyricsArray) {
-                   
-                    lyricsSection.innerHTML = ""; // clear first
+                    const container = document.getElementById("lyricsSection");
+                    container.innerHTML = ""; // clear first
 
                     lyricsArray.forEach(section => {
                         const div = document.createElement("div");
@@ -431,44 +317,22 @@
                         <p>${section.text}</p>
                         `;
 
-                        lyricsSection.appendChild(div);
+                        container.appendChild(div);
                     });
                     }
 
-                    const lyrics = isItalian ? italianLyrics : englishLyrics;
-                    renderLyrics(lyrics);
+                    // render English for now
+                    renderLyrics(englishLyrics);
 
                 audioElement.src = songUrl;
                 playBtn.onclick = () => {
-                    if(!audioElement.src) {
-                        audioElement.src = songUrl;
-                    }
-
                     if (audioElement.paused) {
                         audioElement.play();
-                        playBtn.innerHTML = "&#10074;&#10074;";
+                        playBtn.innerHTML = "<i class='fa-solid fa-pause'></i>";
                     } else {
                         audioElement.pause();
-                        playBtn.innerHTML = "&#9654;";
+                        playBtn.innerHTML = "<i class='fa-solid fa-play'></i>";
                     }
-
-
-                    if(audioElement.ended) {
-                        playBtn.innerHTML = "&#9654;";
-                    }
-
-                    if(audioElement.error) {
-                        alert(isItalian ? "Errore nel caricamento della canzone." : "Error loading the song.");
-                    }
-
-                    if(audioElement.playing) {
-                        playBtn.innerHTML = "&#10074;&#10074;";
-                    }
-
-                    if(audioElement.stalled) {
-                          playBtn.innerHTML = "&#9654;";
-                    }
-
                 };
 
                 copyNumBtn.addEventListener("click", function() {

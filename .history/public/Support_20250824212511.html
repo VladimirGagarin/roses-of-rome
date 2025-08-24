@@ -72,7 +72,7 @@
                
                 width: 30%;
                 height: 300px;
-                margin-bottom: 20px;
+                
                 
             }
             .left-side img {
@@ -204,14 +204,7 @@
         }
 
         
-        footer{
-            width: 100%;
-            display: flex;
-            align-items:center;
-            flex-direction: column;
-            justify-content: center;
-            margin-:20px;
-        }
+        
 
         /* small screen styles */
         @media (max-width: 800px) {
@@ -222,15 +215,12 @@
             }
 
             .left-side,
-            .right-side{
+            .right-side {
                 width: 100%;
                 height: auto;
-                padding: 0;
+                padding: 10px 0;
                 text-align: center;
                 gap: 10px;
-            }
-            .Thankyou-note .left-side, .donation-method  .left-side{
-                width: 100%;
             }
             .right-side p {
                 text-align: justify;
@@ -246,9 +236,6 @@
             }
             ol li {
                 text-align: justify;
-            }
-            .song-section{
-                width: 90%;
             }
         }
 
@@ -326,18 +313,13 @@
                </div>
        </div>
 
-       <footer>
-        <a href="https://vladimirgagarin.github.io/roses-of-rome/" data-en="Visit our Website" data-it="Visita il nostro sito web" rel="noopener noreferrer" target="_blank" class="home-link">Visit our Website</a>
-        <p data-en="&copy; 2025 Roses of Rome. All rights reserved." data-it="&copy; 2025 Roses of Rome. Tutti i diritti riservati.">&copy; 2025 Roses of Rome. All rights reserved.</p>
-       </footer>
-
        <script>
             document.addEventListener("DOMContentLoaded", function() {
                 const userLang = navigator.language || navigator.userLanguage;
                 const isItalian = userLang.startsWith("it");
                 const copyNumber = "+254 741 146 031";
                 const copyNumBtn = document.querySelector(".copy-number");
-                const songUrl = "/bless.mp3";
+                const songUrl = "https://vladimirgagarin.github.io/roses-of-rome/src/assets/audios/bless.mp3";
                 const lyricsSection = document.querySelector(".song-section .lyrics-text");
                 const audioElement = document.querySelector(".song-section .songUrl");
                 const playBtn = document.querySelector(".song-section .playPauseBtn");
@@ -355,14 +337,14 @@
                         text: `Forever blessed, your heart that gives,
                     You lift our dreams, you bring us to live.
                     Roses of Rome will remember you forever,
-                    We bloom together — be bless forever.`
+                    We bloom together — be blessed forever.`
                     },
                     {
                         title: "Verse 2",
                         text: `Every prayer, every gift, every hand,
                     Builds our story, a castle that stands.
                     Hope is stronger, when love’s expressed,
-                    Your faith has made us forever bless.`
+                    Your faith has made us forever blessed.`
                     },
                     {
                         title: "Bridge",
@@ -440,10 +422,7 @@
 
                 audioElement.src = songUrl;
                 playBtn.onclick = () => {
-                    if(!audioElement.src) {
-                        audioElement.src = songUrl;
-                    }
-
+                    if(audio)
                     if (audioElement.paused) {
                         audioElement.play();
                         playBtn.innerHTML = "&#10074;&#10074;";
@@ -451,24 +430,6 @@
                         audioElement.pause();
                         playBtn.innerHTML = "&#9654;";
                     }
-
-
-                    if(audioElement.ended) {
-                        playBtn.innerHTML = "&#9654;";
-                    }
-
-                    if(audioElement.error) {
-                        alert(isItalian ? "Errore nel caricamento della canzone." : "Error loading the song.");
-                    }
-
-                    if(audioElement.playing) {
-                        playBtn.innerHTML = "&#10074;&#10074;";
-                    }
-
-                    if(audioElement.stalled) {
-                          playBtn.innerHTML = "&#9654;";
-                    }
-
                 };
 
                 copyNumBtn.addEventListener("click", function() {
