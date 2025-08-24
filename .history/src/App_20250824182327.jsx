@@ -211,16 +211,14 @@ function App() {
         <Navs />
       </header>
       <Outlet />
-      <footer className="footer">
+       <footer className="footer">
         <a
           href="https://vladimirgagarin.github.io/roses-of-rome/Support.html"
           rel="noopener noreferrer"
           target="_blank"
           className="footer-link"
         >
-          {language === "it"
-            ? "Aiuta le Rose di Roma"
-            : "Support Roses of Rome"}
+          {language === "it" ? "Aiuta le Rose di Roma" : "Support Roses of Rome"}
         </a>
       </footer>
 

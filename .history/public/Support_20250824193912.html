@@ -136,12 +136,6 @@
         a:hover {
             text-decoration: underline;
         }
-
-        .song-section{
-            border:2px solid #000;
-            width: 60%;
-            
-        }
         
 
         /* small screen styles */
@@ -259,7 +253,6 @@
                 const songUrl = "https://vladimirgagarin.github.io/roses-of-rome/assets/audios/bless.mp3";
                 const lyricsSection = document.querySelector(".song-section .lyrics-text");
                 const audioElement = document.querySelector(".song-section .songUrl");
-                const playBtn = document.querySelector(".song-section .playPauseBtn");
 
                 const englishText = `Verse 1
                 In the garden where your kindness grows,
@@ -342,16 +335,6 @@
 
 
                 lyricsSection.textContent = isItalian ? italianText : englishText;
-                audioElement.src = songUrl;
-                playBtn.onclick = () => {
-                    if (audioElement.paused) {
-                        audioElement.play();
-                        playBtn.innerHTML = "<i class='fa-solid fa-pause'></i>";
-                    } else {
-                        audioElement.pause();
-                        playBtn.innerHTML = "<i class='fa-solid fa-play'></i>";
-                    }
-                };
 
                 copyNumBtn.addEventListener("click", function() {
                     copyToClipboard(copyNumber);

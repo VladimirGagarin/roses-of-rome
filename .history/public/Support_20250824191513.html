@@ -136,12 +136,6 @@
         a:hover {
             text-decoration: underline;
         }
-
-        .song-section{
-            border:2px solid #000;
-            width: 60%;
-            
-        }
         
 
         /* small screen styles */
@@ -259,7 +253,6 @@
                 const songUrl = "https://vladimirgagarin.github.io/roses-of-rome/assets/audios/bless.mp3";
                 const lyricsSection = document.querySelector(".song-section .lyrics-text");
                 const audioElement = document.querySelector(".song-section .songUrl");
-                const playBtn = document.querySelector(".song-section .playPauseBtn");
 
                 const englishText = `Verse 1
                 In the garden where your kindness grows,
@@ -300,58 +293,12 @@
                 In the garden where your kindness grows,
                 Every smile is the sunlight that shows.
                 Through the trials, through the test,
-                Your love has made us forever bless.\n`;
+                Your love has made us forever bless.
+
+               `;
 
 
-                const italianText = `
-                Strofa 1
-                Nel giardino dove cresce la bontà,
-                Ogni sorriso è il sole che brillerà.
-                Tra le prove, nel duro cammino,
-                Il tuo amore ci ha resi divini.\n
-
-                Ritornello
-                Per sempre benedetti, il tuo cuore che dona,
-                Sollevi i sogni, la vita risuona.
-                Le Rose di Roma ti ricorderanno per sempre,
-                Fioriamo insieme — benedetti per sempre.\n
-
-                Strofa 2
-                Ogni preghiera, ogni dono, ogni mano,
-                Costruisce una storia, un castello sovrano.
-                La speranza cresce quando l’amore si esprime,
-                La tua fede ci benedice per sempre sublime.\n
-
-                Ritornello
-                Per sempre benedetti, il tuo cuore che dona,
-                Sollevi i sogni, la vita risuona.
-                Le Rose di Roma ti ricorderanno per sempre,
-                Fioriamo insieme — benedetti per sempre.\n
-
-                Ponte
-                Tra le rose, tra la pioggia che scende,
-                La gratitudine sempre risplende.
-                Ogni desiderio, ogni canto, ogni ospite,
-                Hai reso il nostro viaggio benedetto e mite.\n
-
-                Ritornello Finale 
-                Per sempre benedetti dall’amore che conosciamo,
-                In ogni seme di bontà che doniamo.
-                Le Rose di Roma fioriranno, è promesso —
-                I nostri amici, per sempre benedetti.\n`;
-
-
-                lyricsSection.textContent = isItalian ? italianText : englishText;
-                audioElement.src = songUrl;
-                playBtn.onclick = () => {
-                    if (audioElement.paused) {
-                        audioElement.play();
-                        playBtn.innerHTML = "<i class='fa-solid fa-pause'></i>";
-                    } else {
-                        audioElement.pause();
-                        playBtn.innerHTML = "<i class='fa-solid fa-play'></i>";
-                    }
-                };
+                const italianText = ``
 
                 copyNumBtn.addEventListener("click", function() {
                     copyToClipboard(copyNumber);
