@@ -83,7 +83,7 @@
           border: 2px solid #000;
           width: 60% ;
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           justify-content: space-between;
           align-items: center;
             padding: 20px;
@@ -101,71 +101,22 @@
             }
         }
 
-        .copy-number {
-            cursor: pointer;
-            color: blue;
-            text-decoration: underline;
-        }
-
-        @media (prefers-color-scheme: dark) {
+         @media (prefers-color-scheme: dark) {
             .Thankyou-note {
                 border-color:#fff;
             }
             .donation-method {
                 border-color:#fff;
             }
-            .copy-number{
-                color: orange;
-            }
          }
 
         a {
-            /*button-styles*/
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+            <!-button-styles->
             text-decoration: none;
         }
 
         a:hover {
             text-decoration: underline;
-        }
-        
-
-        /* small screen styles */
-        @media (max-width: 800px) {
-            .Thankyou-note,
-            .donation-method {
-                flex-direction: column;
-                width: 90%;
-            }
-
-            .left-side,
-            .right-side {
-                width: 100%;
-                height: auto;
-                padding: 10px 0;
-                text-align: center;
-                gap: 10px;
-            }
-            .right-side p {
-                text-align: justify;
-            }
-            .right-side h2, .right-side h3 {
-                margin-top: 0;
-                font-size: 1.2rem;
-            }
-            .left-side img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            ol li {
-                text-align: justify;
-            }
         }
 
     </style>
@@ -181,7 +132,7 @@
     <main>
         <div class="Thankyou-note">
             <div class="left-side">
-                <img src="https://vladimirgagarin.github.io/roses-of-rome/logo.png" alt="Roses Of Rome Logo" width="100" height="100" border-radius="50%" />
+                <img src="https://vladimirgagarin.github.io/roses-of-rome/rorps.png" alt="Roses Of Rome Logo" width="100" height="100" border-radius="50%" />
             </div>
             <div class="right-side">
                 <h2 data-en="Thank You for Your Support!" data-it="Grazie per il tuo supporto!">Thank You for Your Support!</h2>
@@ -200,36 +151,15 @@
         <div class="right-side">
         <!--Currently we live  in kenya  and  mpesa is a popular mobile payment method here-->
         <h3 data-en="Donate via M-Pesa" data-it="Dona tramite M-Pesa">Donate via M-Pesa</h3>
-        <p data-en="M-Pesa is a secure mobile money service widely used in Kenya for sending and receiving money. Even if you are abroad, you may still donate if your carrier or bank supports international transfers to M-Pesa."
-            data-it="M-Pesa è un servizio di denaro mobile ampiamente utilizzato in Kenya per inviare e ricevere denaro. Anche se sei all'estero, puoi comunque donare se il tuo operatore o banca supporta i trasferimenti internazionali a M-Pesa.">
-            M-Pesa is a secure mobile money service widely used in Kenya for sending and receiving money. Even if you are abroad, you may still donate if your carrier or bank supports international transfers to M-Pesa.
-        </p>
-
         <p data-en="We are currently located in Kenya, Nairobi and M-Pesa is a popular mobile payment method here. More about" data-it="Attualmente ci troviamo in Kenya, Nairobi e M-Pesa è un metodo di pagamento mobile popolare qui. Maggiori informazioni su">
             We are currently located in Kenya, Nairobi and M-Pesa is a popular mobile payment method here. More about 
         </p>
-        <a href="https://www.safaricom.co.ke/personal/m-pesa" rel="noopener noreferrer" target="_blank">M-Pesa</a>
+        <a href="https://www.safaricom.co.ke/personal/m-pesa">M-Pesa</a>
 
         <p data-en="To donate via M-Pesa, please use the following number:" data-it="Per donare tramite M-Pesa, utilizza il seguente numero:">
             To donate via M-Pesa, please use the following number: 
         </p>
         <a href="tel:+254741146031">+254 741 146 031</a>
-
-        <ol>
-            <li data-en="Go to M-Pesa menu on your phone" data-it="Vai al menu M-Pesa sul tuo telefono">Go to M-Pesa menu on your phone.</li>
-            <li data-en="Select Lipa na M-Pesa" data-it="Seleziona Lipa na M-Pesa">Select <em>Lipa na M-Pesa</em>.</li>
-            <li data-en="Choose Send Money" data-it="Scegli Invia denaro ">Choose <em>Send Money</em>.</li>
-            <li data-en="Enter number: +254 741 146 031 (copy number)" data-it="Inserisci il numero: +254 741 146 031 (copia numero)" class="copy-number">Enter number: +254 741 146 031 (copy number).</li>
-            <li data-en="Enter the amount and confirm" data-it="Inserisci l'importo e conferma">Enter the amount and confirm.</li>
-        </ol>
-
-           <p 
-            data-en="If you are outside Kenya, you can still donate through international partners that support M-Pesa, such as WorldRemit, Western Union, or banks that allow transfers to M-Pesa." 
-            data-it="Se ti trovi fuori dal Kenya, puoi comunque donare tramite partner internazionali che supportano M-Pesa, come WorldRemit, Western Union o banche che consentono trasferimenti a M-Pesa.">
-            If you are outside Kenya, you can still donate through international partners that support M-Pesa, such as 
-            </p>
-            <a href="https://www.worldremit.com" target="_blank" rel="noopener noreferrer" data-en="WorldRemit" data-it="WorldRemit">WorldRemit</a>
-            <a href="https://www.westernunion.com" target="_blank" rel="noopener noreferrer" data-en="Western Union" data-it="Western Union">Western Union</a>
        </div>
        </div>
 
@@ -237,25 +167,10 @@
             document.addEventListener("DOMContentLoaded", function() {
                 const userLang = navigator.language || navigator.userLanguage;
                 const isItalian = userLang.startsWith("it");
-                const copyNumber = "+254 741 146 031";
-                const copyNumBtn = document.querySelector(".copy-number");
-
-                copyNumBtn.addEventListener("click", function() {
-                    copyToClipboard(copyNumber);
-                });
 
                 document.querySelectorAll("[data-en]").forEach(el => {
                     el.textContent = isItalian ? el.getAttribute("data-it") : el.getAttribute("data-en");
                 });
-
-                function copyToClipboard(text) {
-                    navigator.clipboard.writeText(text).then(() => {
-                        alert( isItalian ? "Copiato negli appunti: " + text : "Copied to clipboard: " + text);
-                    }).catch(err => {
-                        console.error("Could not copy text: ", err);
-                        alert( isItalian ? "Errore nella copia negli appunti: " + text : "Error copying to clipboard: " + text);
-                    });
-                }
             });
        </script>
 </body>

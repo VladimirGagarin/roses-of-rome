@@ -213,10 +213,7 @@ function App() {
       <Outlet />
        <footer className="footer">
         <a
-          href="https://www.vladimirgagarin.github.io/roses-of-rome/Support.html"
-          rel="noopener noreferrer"
-          target="_blank"
-          className="footer-link"
+          href="https:"
         >
           {language === "it" ? "Aiuta le Rose di Roma" : "Support Roses of Rome"}
         </a>

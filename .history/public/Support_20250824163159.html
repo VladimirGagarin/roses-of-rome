@@ -115,7 +115,7 @@
                 border-color:#fff;
             }
             .copy-number{
-                color: orange;
+                color: goldenrod
             }
          }
 
@@ -140,31 +140,12 @@
             .Thankyou-note,
             .donation-method {
                 flex-direction: column;
-                width: 90%;
             }
 
             .left-side,
             .right-side {
                 width: 100%;
                 height: auto;
-                padding: 10px 0;
-                text-align: center;
-                gap: 10px;
-            }
-            .right-side p {
-                text-align: justify;
-            }
-            .right-side h2, .right-side h3 {
-                margin-top: 0;
-                font-size: 1.2rem;
-            }
-            .left-side img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            ol li {
-                text-align: justify;
             }
         }
 
@@ -181,7 +162,7 @@
     <main>
         <div class="Thankyou-note">
             <div class="left-side">
-                <img src="https://vladimirgagarin.github.io/roses-of-rome/logo.png" alt="Roses Of Rome Logo" width="100" height="100" border-radius="50%" />
+                <img src="https://vladimirgagarin.github.io/roses-of-rome/rorps.png" alt="Roses Of Rome Logo" width="100" height="100" border-radius="50%" />
             </div>
             <div class="right-side">
                 <h2 data-en="Thank You for Your Support!" data-it="Grazie per il tuo supporto!">Thank You for Your Support!</h2>
@@ -218,8 +199,8 @@
         <ol>
             <li data-en="Go to M-Pesa menu on your phone" data-it="Vai al menu M-Pesa sul tuo telefono">Go to M-Pesa menu on your phone.</li>
             <li data-en="Select Lipa na M-Pesa" data-it="Seleziona Lipa na M-Pesa">Select <em>Lipa na M-Pesa</em>.</li>
-            <li data-en="Choose Send Money" data-it="Scegli Invia denaro ">Choose <em>Send Money</em>.</li>
-            <li data-en="Enter number: +254 741 146 031 (copy number)" data-it="Inserisci il numero: +254 741 146 031 (copia numero)" class="copy-number">Enter number: +254 741 146 031 (copy number).</li>
+            <li data-en="Choose Send Money (or Paybill if you have one)" data-it="Scegli Invia denaro (o Paybill se ne hai uno)">Choose <em>Send Money</em> (or Paybill if you have one).</li>
+            <li data-en="Enter number: +254 741 146 031 (copy number)" data-it="Inserisci il numero: +254 741 146 031 (copia numero)" onclick="copyToClipboard('+254 741 146 031')" class="copy-number">Enter number: +254 741 146 031 (copy number).</li>
             <li data-en="Enter the amount and confirm" data-it="Inserisci l'importo e conferma">Enter the amount and confirm.</li>
         </ol>
 
@@ -236,13 +217,7 @@
        <script>
             document.addEventListener("DOMContentLoaded", function() {
                 const userLang = navigator.language || navigator.userLanguage;
-                const isItalian = userLang.startsWith("it");
-                const copyNumber = "+254 741 146 031";
-                const copyNumBtn = document.querySelector(".copy-number");
-
-                copyNumBtn.addEventListener("click", function() {
-                    copyToClipboard(copyNumber);
-                });
+                const isItalian = userLang.startsWith("en");
 
                 document.querySelectorAll("[data-en]").forEach(el => {
                     el.textContent = isItalian ? el.getAttribute("data-it") : el.getAttribute("data-en");

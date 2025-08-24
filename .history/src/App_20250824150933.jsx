@@ -213,7 +213,7 @@ function App() {
       <Outlet />
        <footer className="footer">
         <a
-          href="https://www.vladimirgagarin.github.io/roses-of-rome/Support.html"
+          href="https://www.vladimirgagarin.github.io/roses-of-rome/support.html"
           rel="noopener noreferrer"
           target="_blank"
           className="footer-link"

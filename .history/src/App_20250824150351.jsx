@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from 'react-router-dom'
+import { Outlet, useLocation, Link } from 'react-router-dom'
 import Navs from './components/Header'
 import BannerHead from './components/Banner';
 import homePhoto from "./assets/images/banner_01.jpeg";
@@ -212,14 +212,11 @@ function App() {
       </header>
       <Outlet />
        <footer className="footer">
-        <a
-          href="https://www.vladimirgagarin.github.io/roses-of-rome/Support.html"
-          rel="noopener noreferrer"
-          target="_blank"
-          className="footer-link"
+        <Link
+          to="/support.html"
         >
           {language === "it" ? "Aiuta le Rose di Roma" : "Support Roses of Rome"}
-        </a>
+        </Link>
       </footer>
 
       {showSurprise && (
