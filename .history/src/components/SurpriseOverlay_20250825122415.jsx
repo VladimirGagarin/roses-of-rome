@@ -218,7 +218,7 @@ export default function SurpriseOverlay({
                 setPlaying(false);
               }
               setSurprise(false);
-             
+              setCurrentLine("");
             }}
           >
             ✕

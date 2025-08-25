@@ -8,8 +8,7 @@ import ShortVideo5 from "../assets/videos/short_005.mp4";
 import ShortVideo6 from "../assets/videos/short_006.mp4";
 import ShortVideo7 from "../assets/videos/short_007.mp4";
 import ShortVideo8 from "../assets/videos/short_008.mp4";
-import ShortVideo9 from "../assets/videos/short_009.mp4";
-
+import ShortVideo9 from "../assets/videos/"
 import "../components/AllShortsStyles.css";
 import { useEffect, useRef, useState } from "react";
 
@@ -22,7 +21,6 @@ import { useEffect, useRef, useState } from "react";
    ShortVideo6,
    ShortVideo7,
    ShortVideo8,
-   ShortVideo9,
  ];
 
 export default function ShortsScreen() {

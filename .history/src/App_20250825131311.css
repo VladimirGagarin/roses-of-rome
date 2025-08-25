@@ -207,7 +207,7 @@ header {
   background-color: var(--footer-bg-light);
   color: var(--footer-text-light);
   transition: background-color 0.3s ease, color 0.3s ease;
-  margin-top: 20px;
+  marg
 }
 
 .footer a {

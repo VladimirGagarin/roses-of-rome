@@ -2,7 +2,7 @@ import { RosesOfRomeSongs } from "../components/Songs.js";
 import AudioComponent from "../components/AudioPlayer";
 import { useLanguage } from "../components/LanguageContext";
 import { FaYoutube, FaShareAlt, FaCode, FaLink } from "react-icons/fa";
-import { useRef, useEffect, useState, useMemo } from "react";
+import { useRef, useEffect, useState } from "react";
 import SurpriseOverlay from "../components/SurpriseOverlay";
 import BgImg from "../assets/images/wh_sonnet_bg.jpg";
 import BgImg2 from "../assets/images/txt_bg2.jpg";
@@ -15,9 +15,9 @@ import AlbumFilter from "../components/Album.jsx";
 
 
 export default function PlaylistScreen() {
- const allSongs = useMemo(() => RosesOfRomeSongs(), []);
+  const allSongs = RosesOfRomeSongs();
   const { language } = useLanguage();
-  const [filteredSongs, setFilteredSongs] = useState(allSongs);
+   const [filteredSongs, setFilteredSongs] = useState(allSongs);
   const [selectedAlbum, setSelectedAlbum] = useState("all");
   const [albums, setAlbums] = useState([]);
 
@@ -56,6 +56,8 @@ export default function PlaylistScreen() {
     };
   }, []);
 
+ 
+
   useEffect(() => {
     const uniqueAlbums = [...new Set(allSongs.map((song) => song.songAlbum))];
     setAlbums(uniqueAlbums);
@@ -67,10 +69,10 @@ export default function PlaylistScreen() {
       setFilteredSongs(allSongs);
     } else {
       setFilteredSongs(
-        allSongs.filter((song) => song.songAlbum === selectedAlbum)
+       allSongs.filter((song) => song.songAlbum === selectedAlbum)
       );
     }
-  }, [selectedAlbum, allSongs]);
+  }, [selectedAlbum,allSongs]);
 
   const handleAlbumSelect = (album) => {
     setSelectedAlbum(album);
@@ -88,11 +90,12 @@ export default function PlaylistScreen() {
     }
   }, [showSurprise]);
 
-  useEffect(() => {
-    if (currentLine) {
-      setCurrentImg((prev) => (prev + 1) % bgsImg.length);
-    }
-  }, [currentLine]); // remove bgsImg.length
+ useEffect(() => {
+  if (currentLine) {
+    setCurrentImg((prev) => (prev + 1) % bgsImg.length);
+  }
+}, [currentLine]); // remove bgsImg.length
+
 
   const handleShareClick = (song, event) => {
     setCurrentSongForShare(song);
@@ -250,7 +253,7 @@ export default function PlaylistScreen() {
 
     if (navigator.share) {
       try {
-        setIsSharing(true);
+        setIsSharing(true); 
         await navigator.share({
           title: songTitle,
           text: shareText,
@@ -260,7 +263,7 @@ export default function PlaylistScreen() {
         fallbackCopyToClipboard(songUrl);
         console.warn(err);
       } finally {
-        setIsSharing(false);
+        setIsSharing(false); 
       }
     } else {
       fallbackCopyToClipboard(songUrl);
@@ -319,121 +322,123 @@ export default function PlaylistScreen() {
 
   return (
     <>
-      <AlbumFilter
+     <AlbumFilter
         albums={albums}
         selectedAlbum={selectedAlbum}
         onSelectAlbum={handleAlbumSelect}
       />
-      <div className="playlist-container">
-        {/* Album filter component */}
+    <div className="playlist-container">
+      {/* Album filter component */}
 
-        {filteredSongs.map((song) => (
-          <div className="song-card" key={song.songId}>
-            <div className="audio-wrapper">
-              <AudioComponent
-                audioFile={song.songFile}
-                title={song.songName[language] || ""}
-              />
-            </div>
-
-            <div className="more-action-card">
-              {/* Single Share Button that will show the menu */}
-              {song.songId && (
-                <button
-                  className="share-button"
-                  onClick={(e) => handleShareClick(song, e)}
-                  title={language === "it" ? "Condividi canzone" : "Share song"}
-                  aria-label={
-                    language === "it" ? "Condividi canzone" : "Share song"
-                  }
-                >
-                  <FaShareAlt />
-                  <span>
-                    {isSharing
-                      ? language === "it"
-                        ? "Condivisione..."
-                        : "Sharing..."
-                      : language === "it"
-                      ? "Condividi"
-                      : "Share"}
-                  </span>
-                </button>
-              )}
-
-              {/* Existing YouTube Button */}
-              {Array.isArray(song.songLyrics) &&
-                song.songLyrics.length > 0 &&
-                isOnline && (
-                  <button
-                    className="surprise-button"
-                    onClick={() => handleSurprise(song)}
-                    title={language === "it" ? "Guarda i testi" : "View lyrics"}
-                    aria-label={
-                      language === "it" ? "Guarda i testi" : "View lyrics"
-                    }
-                  >
-                    <FaYoutube />
-                    {language === "it" ? "Liriche" : "Lyrics"}
-                  </button>
-                )}
-            </div>
+      {filteredSongs.map((song) => (
+        <div className="song-card" key={song.songId}>
+          <div className="audio-wrapper">
+            <AudioComponent
+              audioFile={song.songFile}
+              title={song.songName[language] || ""}
+            />
           </div>
-        ))}
 
-        {/* Share Menu Overlay */}
-        {showShareMenu && (
-          <div className="share-menu-overlay" onClick={closeShareMenu}>
-            <div
-              className="share-menu"
-              style={{
-                position: "fixed",
-                left: `${Math.min(
-                  shareMenuPosition.x,
-                  window.innerWidth - 200
-                )}px`,
-                top: `${shareMenuPosition.y}px`,
-                transform:
-                  shareMenuPosition.y > window.innerHeight - 150
-                    ? "translateY(-100%)"
-                    : "none",
-              }}
-              onClick={(e) => e.stopPropagation()}
-            >
-              <button onClick={handleCopyLink} disabled={isSharing}>
-                <FaLink />
+          <div className="more-action-card">
+            {/* Single Share Button that will show the menu */}
+            {song.songId && (
+              <button
+                className="share-button"
+                onClick={(e) => handleShareClick(song, e)}
+                title={language === "it" ? "Condividi canzone" : "Share song"}
+                aria-label={
+                  language === "it" ? "Condividi canzone" : "Share song"
+                }
+              >
+                <FaShareAlt />
                 <span>
                   {isSharing
                     ? language === "it"
-                      ? "Copia..."
-                      : "Copying..."
+                      ? "Condivisione..."
+                      : "Sharing..."
                     : language === "it"
-                    ? "Copia link"
-                    : "Copy link"}
+                    ? "Condividi"
+                    : "Share"}
                 </span>
               </button>
+            )}
 
-              <button onClick={handleCopyEmbed}>
-                <FaCode />
-                {language === "it" ? "Codice embed" : "Embed code"}
-              </button>
-            </div>
+            {/* Existing YouTube Button */}
+            {Array.isArray(song.songLyrics) &&
+              song.songLyrics.length > 0 &&
+              isOnline && (
+                <button
+                  className="surprise-button"
+                  onClick={() => handleSurprise(song)}
+                  title={language === "it" ? "Guarda i testi" : "View lyrics"}
+                  aria-label={
+                    language === "it" ? "Guarda i testi" : "View lyrics"
+                  }
+                >
+                  <FaYoutube />
+                  {language === "it" ? "Liriche" : "Lyrics"}
+                </button>
+              )}
           </div>
-        )}
+        </div>
+      ))}
 
-        {showSurprise && supriseSong && (
-          <SurpriseOverlay
-            language={language}
-            audioRef={audioRef}
-            currentLine={currentLine}
-            isPlaying={isPlaying}
-            setPlaying={setPlaying}
-            audioState={audioState}
-            setSurprise={setShowSurprise}
-            dynamicBgImage={bgsImg[currentImg]}
-            song={supriseSong}
-          />
-        )}
-      </div>
+      {/* Share Menu Overlay */}
+      {showShareMenu && (
+        <div className="share-menu-overlay" onClick={closeShareMenu}>
+          <div
+            className="share-menu"
+            style={{
+              position: "fixed",
+              left: `${Math.min(
+                shareMenuPosition.x,
+                window.innerWidth - 200
+              )}px`,
+              top: `${shareMenuPosition.y}px`,
+              transform:
+                shareMenuPosition.y > window.innerHeight - 150
+                  ? "translateY(-100%)"
+                  : "none",
+            }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button onClick={handleCopyLink} disabled={isSharing}>
+              <FaLink />
+              <span>
+                {isSharing
+                  ? language === "it"
+                    ? "Copia..."
+                    : "Copying..."
+                  : language === "it"
+                  ? "Copia link"
+                  : "Copy link"}
+              </span>
+            </button>
+
+            <button onClick={handleCopyEmbed}>
+              <FaCode />
+              {language === "it" ? "Codice embed" : "Embed code"}
+            </button>
+          </div>
+        </div>
+      )}
+
+      {showSurprise && supriseSong && (
+        <SurpriseOverlay
+          language={language}
+          audioRef={audioRef}
+          currentLine={currentLine}
+      
+          isPlaying={isPlaying}
+          setPlaying={setPlaying}
+          audioState={audioState}
+          setSurprise={setShowSurprise}
+          dynamicBgImage={bgsImg[currentImg]}
+          song={supriseSong}
+        />
+
+      )}
+    </div>
     </>
   );
 }

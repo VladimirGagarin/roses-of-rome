@@ -22,7 +22,7 @@ import { useEffect, useRef, useState } from "react";
    ShortVideo6,
    ShortVideo7,
    ShortVideo8,
-   ShortVideo9,
+   Sho
  ];
 
 export default function ShortsScreen() {

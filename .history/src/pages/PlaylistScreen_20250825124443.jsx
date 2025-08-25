@@ -2,7 +2,7 @@ import { RosesOfRomeSongs } from "../components/Songs.js";
 import AudioComponent from "../components/AudioPlayer";
 import { useLanguage } from "../components/LanguageContext";
 import { FaYoutube, FaShareAlt, FaCode, FaLink } from "react-icons/fa";
-import { useRef, useEffect, useState, useMemo } from "react";
+import { useRef, useEffect, useState } from "react";
 import SurpriseOverlay from "../components/SurpriseOverlay";
 import BgImg from "../assets/images/wh_sonnet_bg.jpg";
 import BgImg2 from "../assets/images/txt_bg2.jpg";

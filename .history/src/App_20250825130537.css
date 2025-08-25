@@ -207,7 +207,6 @@ header {
   background-color: var(--footer-bg-light);
   color: var(--footer-text-light);
   transition: background-color 0.3s ease, color 0.3s ease;
-  margin-top: 20px;
 }
 
 .footer a {
@@ -348,10 +347,8 @@ header {
     width: 100%;
     padding: 0;
   }
-  .footer{
-    width: 99%;
-    overflow: hidden;
-    padding: 0;
+  footer{
+    width: 90%;
   }
 }
 

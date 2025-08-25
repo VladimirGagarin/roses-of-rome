@@ -7,7 +7,7 @@ import Video6 from "../assets/videos/vid_006.mp4";
 import Video7 from "../assets/videos/vid_007.mp4";
 import Video8 from "../assets/videos/anthem-swm.mp4";
 import Video9 from "../assets/videos/vision.mp4";
-import Video13 from "../assets/videos/vid_013.mp4";
+import Video13 from "../assets/videos/vid_013,mp4";
 
 export function RosesOfRomeVideos () {
     const videos = [
@@ -216,7 +216,7 @@ export function RosesOfRomeVideos () {
           en: "Roses Of Rome Vision",
           it: "Rosa Di Roma Visione",
         },
-        description: {
+       description: {
           en: "We are Roses of Rome: humble in spirit, turning strangers into kin, opening our gates with compassion, and crowned by kindness.",
           it: "Siamo le Rose di Roma: umili nello spirito, trasformiamo gli stranieri in fratelli, apriamo le nostre porte con compassione e siamo incoronati dalla gentilezza.",
         },
@@ -235,22 +235,9 @@ export function RosesOfRomeVideos () {
         src: Video13,
         type: "long",
         title: {
-          en: "Everything to see you again",
-          it: "Tutto per rivederti",
-        },
-        description: {
-          en: "A heartfelt message of longing and connection.",
-          it: "Un messaggio sentito di desiderio e connessione.",
-        },
-        thumbnail: null,
-        author: "Roses Of Rome",
-        datePublished: null,
-        captions: null,
-        copyright: false,
-        playlist: "Roses Of Rome",
-        externalLink: "https://youtu.be/4QyNZwyNNKI?si=K2qQF7ouPYTixY9M",
-        permission: true,
-      },
+          e
+        }
+      }
     ];
 
     return videos

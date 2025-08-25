@@ -216,7 +216,7 @@ export function RosesOfRomeVideos () {
           en: "Roses Of Rome Vision",
           it: "Rosa Di Roma Visione",
         },
-        description: {
+       description: {
           en: "We are Roses of Rome: humble in spirit, turning strangers into kin, opening our gates with compassion, and crowned by kindness.",
           it: "Siamo le Rose di Roma: umili nello spirito, trasformiamo gli stranieri in fratelli, apriamo le nostre porte con compassione e siamo incoronati dalla gentilezza.",
         },
@@ -236,11 +236,11 @@ export function RosesOfRomeVideos () {
         type: "long",
         title: {
           en: "Everything to see you again",
-          it: "Tutto per rivederti",
+          it: "Tutto per rivederti"
         },
         description: {
           en: "A heartfelt message of longing and connection.",
-          it: "Un messaggio sentito di desiderio e connessione.",
+          it: "Un messaggio sentito di desiderio e connessione."
         },
         thumbnail: null,
         author: "Roses Of Rome",
@@ -248,9 +248,9 @@ export function RosesOfRomeVideos () {
         captions: null,
         copyright: false,
         playlist: "Roses Of Rome",
-        externalLink: "https://youtu.be/4QyNZwyNNKI?si=K2qQF7ouPYTixY9M",
+        externalLink: "https://youtu.be/mm_YE8V6HZM",
         permission: true,
-      },
+      }
     ];
 
     return videos
