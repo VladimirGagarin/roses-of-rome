@@ -10337,7 +10337,7 @@ export function CottolengoSisterRMXLyrics() {
     "start": 29220,
     "end": 34190,
     "text": {
-      "en": "A living grace that shapes eternity. Cottolengo",
+      "en": "A living grace that shapes eternity. Catalano",
       "it": "una grazia vivente che plasma l'eternità."
     }
   },
@@ -10369,7 +10369,7 @@ export function CottolengoSisterRMXLyrics() {
     "start": 47180,
     "end": 52080,
     "text": {
-      "en": "rosary. Cottolengo Sisters, we",
+      "en": "rosary. Catalano Sisters, we",
       "it": "Suore Cottolengo — vi onoriamo sempre qua."
     }
   },
@@ -10417,7 +10417,7 @@ export function CottolengoSisterRMXLyrics() {
     "start": 77160,
     "end": 81290,
     "text": {
-      "en": "light that brightens every day. Cottolengo",
+      "en": "light that brightens every day. Catalano",
       "it": ""
     }
   },
@@ -10449,7 +10449,7 @@ export function CottolengoSisterRMXLyrics() {
     "start": 96780,
     "end": 100460,
     "text": {
-      "en": "Cottolengo Sisters, we deeply honor",
+      "en": "Catalano Sisters, we deeply honor",
       "it": "Suore Cottolengo — vi onoriamo sempre qua."
     }
   },
@@ -10497,7 +10497,7 @@ export function CottolengoSisterRMXLyrics() {
     "start": 127700,
     "end": 132700,
     "text": {
-      "en": "Cottolengo Sisters, in reverence we sing.",
+      "en": "Catalano Sisters, in reverence we sing.",
       "it": "Suore Cottolengo, con reverenza cantiamo,"
     }
   },
@@ -10521,7 +10521,7 @@ export function CottolengoSisterRMXLyrics() {
     "start": 143880,
     "end": 147580,
     "text": {
-      "en": "Cottolengo Sisters, we deeply honor",
+      "en": "Catalano Sisters, we deeply honor",
       "it": "Suore Cottolengo — vi onoriamo sempre qua."
     }
   },
@@ -10537,7 +10537,7 @@ export function CottolengoSisterRMXLyrics() {
     "start": 154180,
     "end": 157780,
     "text": {
-      "en": "We thank Cottolengo for the dream he",
+      "en": "We thank Catalano for the dream he",
       "it": "Ringraziamo Cottolengo per il sogno donato,"
     }
   },

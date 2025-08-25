@@ -10337,7 +10337,7 @@ export function CottolengoSisterRMXLyrics() {
     "start": 29220,
     "end": 34190,
     "text": {
-      "en": "A living grace that shapes eternity. Cottolengo",
+      "en": "A living grace that shapes eternity. Catalano",
       "it": "una grazia vivente che plasma l'eternità."
     }
   },
@@ -10369,7 +10369,7 @@ export function CottolengoSisterRMXLyrics() {
     "start": 47180,
     "end": 52080,
     "text": {
-      "en": "rosary. Cottolengo Sisters, we",
+      "en": "rosary. Catalano Sisters, we",
       "it": "Suore Cottolengo — vi onoriamo sempre qua."
     }
   },
@@ -10417,7 +10417,7 @@ export function CottolengoSisterRMXLyrics() {
     "start": 77160,
     "end": 81290,
     "text": {
-      "en": "light that brightens every day. Cottolengo",
+      "en": "light that brightens every day. Catalano",
       "it": ""
     }
   },
@@ -10449,7 +10449,7 @@ export function CottolengoSisterRMXLyrics() {
     "start": 96780,
     "end": 100460,
     "text": {
-      "en": "Cottolengo Sisters, we deeply honor",
+      "en": "Catalano Sisters, we deeply honor",
       "it": "Suore Cottolengo — vi onoriamo sempre qua."
     }
   },
@@ -10497,7 +10497,7 @@ export function CottolengoSisterRMXLyrics() {
     "start": 127700,
     "end": 132700,
     "text": {
-      "en": "Cottolengo Sisters, in reverence we sing.",
+      "en": "Catalano Sisters, in reverence we sing.",
       "it": "Suore Cottolengo, con reverenza cantiamo,"
     }
   },
@@ -10521,7 +10521,7 @@ export function CottolengoSisterRMXLyrics() {
     "start": 143880,
     "end": 147580,
     "text": {
-      "en": "Cottolengo Sisters, we deeply honor",
+      "en": "Catalano Sisters, we deeply honor",
       "it": "Suore Cottolengo — vi onoriamo sempre qua."
     }
   },
@@ -10537,7 +10537,7 @@ export function CottolengoSisterRMXLyrics() {
     "start": 154180,
     "end": 157780,
     "text": {
-      "en": "We thank Cottolengo for the dream he",
+      "en": "We thank Catalano for the dream he",
       "it": "Ringraziamo Cottolengo per il sogno donato,"
     }
   },
@@ -10593,352 +10593,7 @@ export function CottolengoSisterRMXLyrics() {
   return sub;
 }
 
-export function CottolengoSisterRMXLyricsIT() {
-  const sub = [
-  {
-    "start": 80,
-    "end": 7200,
-    "text": {
-      "en": "(instrumental music plays)",
-      "it": "(Baila la Jota)"
-    }
-  },
-  {
-    "start": 7240,
-    "end": 11640,
-    "text": {
-      "en": "Through your gentle hands the wounded are",
-      "it": "Dalle tue mani gentili il ferito è"
-    }
-  },
-  {
-    "start": 11760,
-    "end": 15940,
-    "text": {
-      "en": "healed, through your humble hearts",
-      "it": "guarito nei tuoi cuori umili"
-    }
-  },
-  {
-    "start": 16700,
-    "end": 20340,
-    "text": {
-      "en": "God's mysteries revealed, through your",
-      "it": "il mistero è svelato con la tua"
-    }
-  },
-  {
-    "start": 20420,
-    "end": 24880,
-    "text": {
-      "en": "kind devotion, each prayer is a shield,",
-      "it": "devozione ogni preghiera è scudo"
-    }
-  },
-  {
-    "start": 25740,
-    "end": 29540,
-    "text": {
-      "en": "A living grace that shapes",
-      "it": "una grazia vivente che plasma"
-    }
-  },
-  {
-    "start": 29560,
-    "end": 33880,
-    "text": {
-      "en": "eternity.",
-      "it": "l'eternità."
-    }
-  },
-  {
-    "start": 36440,
-    "end": 41400,
-    "text": {
-      "en": "Cottolengo Sisters, in reverence we sing,",
-      "it": "Suore cottolengo con reverenza cantiamo"
-    }
-  },
-  {
-    "start": 42900,
-    "end": 46080,
-    "text": {
-      "en": "In our hearts your love shall",
-      "it": "nei nostri cuori il vostro amore"
-    }
-  },
-  {
-    "start": 46140,
-    "end": 50380,
-    "text": {
-      "en": "forever be. In our prayers",
-      "it": "resterà. Nelle nostre preghiere"
-    }
-  },
-  {
-    "start": 50940,
-    "end": 55020,
-    "text": {
-      "en": "you bloom like a rosary, Cottolengo",
-      "it": "fiorite come rosario, suore"
-    }
-  },
-  {
-    "start": 55100,
-    "end": 58500,
-    "text": {
-      "en": "Sisters, we deeply honor",
-      "it": "cottolengo, vi onoriamo sempre"
-    }
-  },
-  {
-    "start": 58600,
-    "end": 61240,
-    "text": {
-      "en": "thee.",
-      "it": "qua."
-    }
-  },
-  {
-    "start": 65800,
-    "end": 70080,
-    "text": {
-      "en": "Through your tireless care, the hungry are",
-      "it": "Con la tua cura instancabile, l'affamato e"
-    }
-  },
-  {
-    "start": 70220,
-    "end": 75220,
-    "text": {
-      "en": "fed, through your quiet strength,",
-      "it": "nutrito, con la tua forza silenziosa, la"
-    }
-  },
-  {
-    "start": 75260,
-    "end": 79060,
-    "text": {
-      "en": "hope rises instead, through your faithful",
-      "it": "speranza è rinata con i tuoi passi"
-    }
-  },
-  {
-    "start": 79260,
-    "end": 83180,
-    "text": {
-      "en": "steps, the lost find the way",
-      "it": "fedeli, lo smarrito trova via"
-    }
-  },
-  {
-    "start": 84160,
-    "end": 88480,
-    "text": {
-      "en": "A guiding light that brightens every",
-      "it": "una luce che illumina ogni nuovo"
-    }
-  },
-  {
-    "start": 88680,
-    "end": 91240,
-    "text": {
-      "en": "day.",
-      "it": "dì."
-    }
-  },
-  {
-    "start": 94880,
-    "end": 98520,
-    "text": {
-      "en": "Cottolengo Sisters, in reverence",
-      "it": "Suore cottolengo, con reverenza"
-    }
-  },
-  {
-    "start": 98720,
-    "end": 103180,
-    "text": {
-      "en": "we sing. In our hearts your",
-      "it": "cantiamo. Nei nostri cuori il"
-    }
-  },
-  {
-    "start": 103260,
-    "end": 107620,
-    "text": {
-      "en": "love shall forever be. In our",
-      "it": "vostro amore resterà. Nelle nostre"
-    }
-  },
-  {
-    "start": 107760,
-    "end": 110600,
-    "text": {
-      "en": "prayers you bloom like",
-      "it": "preghiere fiorite come"
-    }
-  },
-  {
-    "start": 110760,
-    "end": 115740,
-    "text": {
-      "en": "a rosary, Cottolengo Sisters,",
-      "it": "rosario, suore cottolengo, vi"
-    }
-  },
-  {
-    "start": 115760,
-    "end": 118259,
-    "text": {
-      "en": "we deeply honor thee.",
-      "it": "onoriamo sempre qua."
-    }
-  },
-  {
-    "start": 124270,
-    "end": 128538,
-    "text": {
-      "en": "Through your prayers the heavens",
-      "it": "Con le tue preghiere il cielo si"
-    }
-  },
-  {
-    "start": 128740,
-    "end": 132740,
-    "text": {
-      "en": "open wide, through your sacrifice",
-      "it": "spalanca, con il tuo sacrificio"
-    }
-  },
-  {
-    "start": 133840,
-    "end": 137980,
-    "text": {
-      "en": "love is glorified, through your hearts the",
-      "it": "l'amore si innalza, con i tuoi cuori la"
-    }
-  },
-  {
-    "start": 138040,
-    "end": 142580,
-    "text": {
-      "en": "cross is crowned with grace,",
-      "it": "croce si corona di grazia,"
-    }
-  },
-  {
-    "start": 142640,
-    "end": 146609,
-    "text": {
-      "en": "A living witness of faith and",
-      "it": "testimoni viventi di fede e"
-    }
-  },
-  {
-    "start": 146660,
-    "end": 151240,
-    "text": {
-      "en": "grace.",
-      "it": "speranza."
-    }
-  },
-  {
-    "start": 153460,
-    "end": 158380,
-    "text": {
-      "en": "Cottolengo Sisters in reverence we sing",
-      "it": "Suore cottolengo con reverenza cantiamo"
-    }
-  },
-  {
-    "start": 159860,
-    "end": 163080,
-    "text": {
-      "en": "In our hearts your love shall",
-      "it": "nei nostri cuori il vostro amore"
-    }
-  },
-  {
-    "start": 163140,
-    "end": 167380,
-    "text": {
-      "en": "forever be, in our prayers",
-      "it": "resterà, nelle nostre preghiere"
-    }
-  },
-  {
-    "start": 167980,
-    "end": 172020,
-    "text": {
-      "en": "you bloom like a rosary, Cottolengo",
-      "it": "fiorite come rosario, suore"
-    }
-  },
-  {
-    "start": 172120,
-    "end": 176660,
-    "text": {
-      "en": "Sisters, we deeply honor thee.",
-      "it": "cottolengo, vi onoriamo sempre qua."
-    }
-  },
-  {
-    "start": 176760,
-    "end": 181140,
-    "text": {
-      "en": "We thank Cottolengo for the dream",
-      "it": "Ringraziamo cottolengo per il sogno"
-    }
-  },
-  {
-    "start": 181260,
-    "end": 185380,
-    "text": {
-      "en": "he gave, a garden of sisters",
-      "it": "donato un giardino di suore"
-    }
-  },
-  {
-    "start": 186320,
-    "end": 190020,
-    "text": {
-      "en": "so faithful, so brave, in velvet",
-      "it": "fedeli coraggiose, in velluto di"
-    }
-  },
-  {
-    "start": 190120,
-    "end": 193240,
-    "text": {
-      "en": "devotion their love is",
-      "it": "devozione il loro amore"
-    }
-  },
-  {
-    "start": 193300,
-    "end": 197520,
-    "text": {
-      "en": "adorned, a blessing eternal",
-      "it": "risplende, una benedizione eterna"
-    }
-  },
-  {
-    "start": 198280,
-    "end": 199240,
-    "text": {
-      "en": "forever",
-      "it": "per sempre"
-    }
-  },
-  {
-    "start": 199320,
-    "end": 207480,
-    "text": {
-      "en": "borne.",
-      "it": "vivente."
-    }
-  }
-];
+export function CotttolengoSistersITLyrycs() {
+  const sub = [];
   return sub;
 }

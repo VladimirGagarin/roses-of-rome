@@ -424,7 +424,7 @@ export function RosesOfRomeSongs() {
         en: "Cottolengo Sisters (Italian)",
         it: "Suor Cottolengo (Italiano)",
       },
-      songLyrics: CottolengoSisterRMXLyricsIT(),
+      songLyrics: ,
       songAlbum: "Piccola Casa della Gioia",
     },
    

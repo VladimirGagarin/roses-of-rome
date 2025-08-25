@@ -57,8 +57,7 @@ EverythingDuetLyrics,
 ReputationLyrics,
 EverythingRMXLyrics,
 ReputationDuetLyrics,
-CottolengoSisterRMXLyrics,
-CottolengoSisterRMXLyricsIT
+
 } from "./SongData";
 
 // utils/songUUIDs.js
@@ -414,7 +413,7 @@ export function RosesOfRomeSongs() {
         en: "Cottolengo Sisters (RMX)",
         it: "Suor Cottolengo (RMX)",
       },
-      songLyrics: CottolengoSisterRMXLyrics(),
+      songLyrics: ,
       songAlbum: "Piccola Casa della Gioia",
     },
     {
@@ -424,7 +423,7 @@ export function RosesOfRomeSongs() {
         en: "Cottolengo Sisters (Italian)",
         it: "Suor Cottolengo (Italiano)",
       },
-      songLyrics: CottolengoSisterRMXLyricsIT(),
+      songLyrics: [],
       songAlbum: "Piccola Casa della Gioia",
     },
    
