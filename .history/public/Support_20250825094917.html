@@ -325,7 +325,6 @@
             </p>
             <a href="https://www.worldremit.com" target="_blank" rel="noopener noreferrer" data-en="WorldRemit" data-it="WorldRemit">WorldRemit</a>
             <a href="https://www.westernunion.com" target="_blank" rel="noopener noreferrer" data-en="Western Union" data-it="Western Union">Western Union</a>
-             <p data-en="1 Euro will make a dream come true." data-it="1 Euro realizzerà un sogno." class="inspiration">1 Euro  will make a dream come true.</p>
        </div>
        </div>
 
@@ -351,7 +350,7 @@
                 const isItalian = userLang.startsWith("it");
                 const copyNumber = "+254 741 146 031";
                 const copyNumBtn = document.querySelector(".copy-number");
-                const songUrl = "https://vladimirgagarin.github.io/roses-of-rome/bless.mp3";
+                const songUrl = "/bless.mp3";
                 const lyricsSection = document.querySelector(".song-section .lyrics-text");
                 const audioElement = document.querySelector(".song-section .songUrl");
                 const playBtn = document.querySelector(".song-section .playPauseBtn");
@@ -473,7 +472,6 @@
 
                     if(audioElement.error) {
                         alert(isItalian ? "Errore nel caricamento della canzone." : "Error loading the song.");
-                        playBtn.innerHTML = "&#9654;";
                     }
 
                     if(audioElement.playing) {
