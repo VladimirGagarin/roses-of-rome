@@ -510,14 +510,7 @@
                     playBtn.innerHTML = "&#9654;";
                 });
 
-                audioElement.addEventListener("error", () => {
-                    alert(isItalian ? "Errore nel caricamento della canzone." : "Error loading the song.");
-                    playBtn.innerHTML = "&#9654;";
-                });
-
-                audioElement.addEventListener("stalled", () => {
-                    playBtn.innerHTML = "&#9654;";
-                });
+                au
 
                 copyNumBtn.addEventListener("click", function() {
                     copyToClipboard(copyNumber);

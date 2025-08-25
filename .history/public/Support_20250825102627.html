@@ -200,7 +200,7 @@
                 color: orange;
             }
             h1{
-                color:#fff;
+                color:#fff
             }
          }
 
@@ -500,24 +500,7 @@
 
                 audioElement.addEventListener("ended", () => {
                       playBtn.innerHTML = "&#9654;";
-                });
-
-                audioElement.addEventListener("playing", () => {
-                    playBtn.innerHTML = "&#10074;&#10074;";
-                });
-
-                audioElement.addEventListener("pause", () => {
-                    playBtn.innerHTML = "&#9654;";
-                });
-
-                audioElement.addEventListener("error", () => {
-                    alert(isItalian ? "Errore nel caricamento della canzone." : "Error loading the song.");
-                    playBtn.innerHTML = "&#9654;";
-                });
-
-                audioElement.addEventListener("stalled", () => {
-                    playBtn.innerHTML = "&#9654;";
-                });
+                })
 
                 copyNumBtn.addEventListener("click", function() {
                     copyToClipboard(copyNumber);

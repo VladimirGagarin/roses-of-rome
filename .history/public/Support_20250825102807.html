@@ -515,9 +515,7 @@
                     playBtn.innerHTML = "&#9654;";
                 });
 
-                audioElement.addEventListener("stalled", () => {
-                    playBtn.innerHTML = "&#9654;";
-                });
+                audioElement
 
                 copyNumBtn.addEventListener("click", function() {
                     copyToClipboard(copyNumber);

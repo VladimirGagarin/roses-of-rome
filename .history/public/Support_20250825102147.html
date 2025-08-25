@@ -27,22 +27,17 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-           background-color: #f4f4f4;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+           background-color
            }
 
         header {
+         
             padding: 10px 0;
             text-align: center;
-            color: #000;
         }
 
         h1 {
             margin: 0;
-            color: #000;
         }
         main{
             display: flex;
@@ -64,7 +59,7 @@
             flex-direction: row;
             width: 60%;
             border: 2px solid #000;
-             
+              color: #000;
 
            
         }
@@ -89,9 +84,9 @@
           flex-direction: column;
           justify-content: space-between;
           align-items: center;
-          padding: 20px;
-          margin: 20px 0;
-          
+            padding: 20px;
+            margin: 20px 0;
+              color: #000;
         }
          .donation-method .left-side{
                 width: 90%;
@@ -198,9 +193,6 @@
             }
             .inspiration {
                 color: orange;
-            }
-            h1{
-                color:#fff;
             }
          }
 
@@ -500,24 +492,7 @@
 
                 audioElement.addEventListener("ended", () => {
                       playBtn.innerHTML = "&#9654;";
-                });
-
-                audioElement.addEventListener("playing", () => {
-                    playBtn.innerHTML = "&#10074;&#10074;";
-                });
-
-                audioElement.addEventListener("pause", () => {
-                    playBtn.innerHTML = "&#9654;";
-                });
-
-                audioElement.addEventListener("error", () => {
-                    alert(isItalian ? "Errore nel caricamento della canzone." : "Error loading the song.");
-                    playBtn.innerHTML = "&#9654;";
-                });
-
-                audioElement.addEventListener("stalled", () => {
-                    playBtn.innerHTML = "&#9654;";
-                });
+                })
 
                 copyNumBtn.addEventListener("click", function() {
                     copyToClipboard(copyNumber);
