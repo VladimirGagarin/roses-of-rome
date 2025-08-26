@@ -61,7 +61,6 @@ import {
   CottolengoSisterRMXLyrics,
   CottolengoSisterRMXLyricsIT,
   BoomerangAirwaveLyrics,
-  CongratsLyrics
 } from "./SongData";
 
 // utils/songUUIDs.js
@@ -229,7 +228,7 @@ export function RosesOfRomeSongs() {
         en: "Congratulations",
         it: "Congratulazioni",
       },
-      songLyrics: CongratsLyrics(),
+      songLyrics: [],
       songAlbum: "Cantabile",
     },
     {

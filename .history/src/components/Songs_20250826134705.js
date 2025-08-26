@@ -47,21 +47,19 @@ import {
   DivineFMVLyrics,
   DivneITLyrics,
   BoomerangLyrics,
-  WelcomeSongItalian,
-  VisionShortLyrics,
-  VisionItalianLyrics,
-  WelcomeSongFemaleLyrics,
-  WelcomeSongMaleLyrics,
-  VisionFemaleLyrics,
-  VisionDuetLyrics,
-  EverythingDuetLyrics,
-  ReputationLyrics,
-  EverythingRMXLyrics,
-  ReputationDuetLyrics,
-  CottolengoSisterRMXLyrics,
-  CottolengoSisterRMXLyricsIT,
-  BoomerangAirwaveLyrics,
-  CongratsLyrics
+WelcomeSongItalian,
+VisionShortLyrics,
+VisionItalianLyrics,
+WelcomeSongFemaleLyrics,
+WelcomeSongMaleLyrics,
+VisionFemaleLyrics,
+VisionDuetLyrics,
+EverythingDuetLyrics,
+ReputationLyrics,
+EverythingRMXLyrics,
+ReputationDuetLyrics,
+CottolengoSisterRMXLyrics,
+CottolengoSisterRMXLyricsIT
 } from "./SongData";
 
 // utils/songUUIDs.js
@@ -107,7 +105,7 @@ const SONG_UUIDS = {
   rorMusic_039: "c0d4e6f8-0a2b-64c7-95d8-e3f5a7b9c1d3",
   rorMusic_040: "d1e5f7a9-1b2c-75d8-a6e9-f4a6b8c0d2e4",
   rorMusic_041: "e2f6a8b0-2c3d-86e9-b7f0-g5h6i7j8k9l0",
-  rorMusic_042: "f3g7h8i9-j0k1-2345-6789-0abcdef12345",
+  rorM
 };
 
 export function RosesOfRomeSongs() {
@@ -229,7 +227,7 @@ export function RosesOfRomeSongs() {
         en: "Congratulations",
         it: "Congratulazioni",
       },
-      songLyrics: CongratsLyrics(),
+      songLyrics: [],
       songAlbum: "Cantabile",
     },
     {
@@ -433,25 +431,27 @@ export function RosesOfRomeSongs() {
       songAlbum: "Piccola Casa della Gioia",
     },
     {
-      songId: SONG_UUIDS.rorMusic_033,
+      songId:SONG_UUIDS.rorMusic_033,
       songFile: Boomerang5,
       songName: {
         en: "Boomerang of Love (EDM)",
         it: "Boomerang dell'Amore (EDM)",
       },
-      songLyrics: BoomerangAirwaveLyrics(),
+      songLyrics: [],
       songAlbum: "Cantabile",
     },
-    //  {
-    //     songId:SONG_UUIDS.rorMusic_034,
-    //     songFile: ForeverBlessed,
-    //     songName: {
-    //       en: "Forever Blessed",
-    //       it: "Per Sempre Benedicto",
-    //     },
-    //     songLyrics: [],
-    //     songAlbum: "Rosa",
-    //   },
+   {
+      songId:SONG_UUIDS.rorMusic_034,
+      songFile: ForeverBlessed,
+      songName: {
+        en: "Forever Blessed",
+        it: "Per Sempre Benedicto",
+      },
+      songLyrics: [],
+      songAlbum: "Rosa",
+    },
+   
   ];
   return songs;
 }
+ 

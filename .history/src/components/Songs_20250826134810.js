@@ -47,21 +47,19 @@ import {
   DivineFMVLyrics,
   DivneITLyrics,
   BoomerangLyrics,
-  WelcomeSongItalian,
-  VisionShortLyrics,
-  VisionItalianLyrics,
-  WelcomeSongFemaleLyrics,
-  WelcomeSongMaleLyrics,
-  VisionFemaleLyrics,
-  VisionDuetLyrics,
-  EverythingDuetLyrics,
-  ReputationLyrics,
-  EverythingRMXLyrics,
-  ReputationDuetLyrics,
-  CottolengoSisterRMXLyrics,
-  CottolengoSisterRMXLyricsIT,
-  BoomerangAirwaveLyrics,
-  CongratsLyrics
+WelcomeSongItalian,
+VisionShortLyrics,
+VisionItalianLyrics,
+WelcomeSongFemaleLyrics,
+WelcomeSongMaleLyrics,
+VisionFemaleLyrics,
+VisionDuetLyrics,
+EverythingDuetLyrics,
+ReputationLyrics,
+EverythingRMXLyrics,
+ReputationDuetLyrics,
+CottolengoSisterRMXLyrics,
+CottolengoSisterRMXLyricsIT
 } from "./SongData";
 
 // utils/songUUIDs.js
@@ -229,7 +227,7 @@ export function RosesOfRomeSongs() {
         en: "Congratulations",
         it: "Congratulazioni",
       },
-      songLyrics: CongratsLyrics(),
+      songLyrics: [],
       songAlbum: "Cantabile",
     },
     {
@@ -433,25 +431,27 @@ export function RosesOfRomeSongs() {
       songAlbum: "Piccola Casa della Gioia",
     },
     {
-      songId: SONG_UUIDS.rorMusic_033,
+      songId:SONG_UUIDS.rorMusic_033,
       songFile: Boomerang5,
       songName: {
         en: "Boomerang of Love (EDM)",
         it: "Boomerang dell'Amore (EDM)",
       },
-      songLyrics: BoomerangAirwaveLyrics(),
+      songLyrics: [],
       songAlbum: "Cantabile",
     },
-    //  {
-    //     songId:SONG_UUIDS.rorMusic_034,
-    //     songFile: ForeverBlessed,
-    //     songName: {
-    //       en: "Forever Blessed",
-    //       it: "Per Sempre Benedicto",
-    //     },
-    //     songLyrics: [],
-    //     songAlbum: "Rosa",
-    //   },
+   {
+      songId:SONG_UUIDS.rorMusic_034,
+      songFile: ForeverBlessed,
+      songName: {
+        en: "Forever Blessed",
+        it: "Per Sempre Benedicto",
+      },
+      songLyrics: [],
+      songAlbum: "Rosa",
+    },
+   
   ];
   return songs;
 }
+ 
