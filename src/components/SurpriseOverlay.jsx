@@ -22,6 +22,26 @@ export default function SurpriseOverlay({
    
     const progressRef = useRef(null);
     const frameRef = useRef();
+     const [isOnline, setIsOnline] = useState(navigator.onLine);
+
+
+
+      useEffect(() => {
+        const handleOnline = () => {
+          setIsOnline(true);
+        };
+        const handleOffline = () => {
+          setIsOnline(false);
+        };
+
+        window.addEventListener("online", handleOnline);
+        window.addEventListener("offline", handleOffline);
+
+        return () => {
+          window.removeEventListener("online", handleOnline);
+          window.removeEventListener("offline", handleOffline);
+        };
+      }, []);
     
   
    useEffect(() => {
@@ -34,6 +54,9 @@ export default function SurpriseOverlay({
    }, []);
 
   
+   useEffect(() => {
+     setSurprise(isOnline);
+   }, [isOnline])
 
  useEffect(() => {
     const audio = audioRef.current;

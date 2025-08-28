@@ -469,3 +469,148 @@ export function TheVision() {
 
   return sonnet;
 }
+
+
+
+export function ThePaintMessage() {
+  const song = {
+    title: {
+      en: "Paint Tomorrow with Your Ambitions.",
+      it: "Dipingi il Domani con le Tue Ambizioni."
+    },
+    verses: [
+      {
+        type: "verse1",
+        lines: [
+          {
+            lineId: 1,
+            en: "In the silence of the night, your dreams awake,",
+            it: "Nel silenzio della notte, i tuoi sogni si destano."
+          },
+          {
+            lineId: 2,
+            en: "Shadows fade as brighter paths you make.",
+            it: "Le ombre svaniscono, strade luminose creano."
+          },
+          {
+            lineId: 3,
+            en: "Every step a color, every breath a flame,",
+            it: "Ogni passo è colore, ogni respiro una fiamma."
+          },
+          {
+            lineId: 4,
+            en: "Your tomorrow waits to call your name.",
+            it: "Il domani attende e ti chiama."
+          }
+        ]
+      },
+      {
+        type: "chorus",
+        lines: [
+          {
+            lineId: 5,
+            en: "Paint tomorrow with your ambitions,",
+            it: "Dipingi il domani con le tue ambizioni."
+          },
+          {
+            lineId: 6,
+            en: "Let your courage carve the sky.",
+            it: "Lascia che il coraggio scolpisca i cieli."
+          },
+          {
+            lineId: 7,
+            en: "Every heartbeat, a new vision,",
+            it: "Ogni battito, una nuova visione."
+          },
+          {
+            lineId: 8,
+            en: "Every dream has wings to fly.",
+            it: "Ogni sogno ha ali fedeli."
+          }
+        ]
+      },
+      {
+        type: "verse2",
+        lines: [
+          {
+            lineId: 9,
+            en: "Even storms can’t wash the canvas clear,",
+            it: "Neanche le tempeste cancellano il quadro."
+          },
+          {
+            lineId: 10,
+            en: "Hope will shine, the masterpiece appears.",
+            it: "La speranza brilla, appare il capolavoro."
+          },
+          {
+            lineId: 11,
+            en: "Hold your colors, don’t let go,",
+            it: "Stringi i tuoi colori, non lasciarli andar via."
+          },
+          {
+            lineId: 12,
+            en: "Your ambitions are the seeds that grow.",
+            it: "Le ambizioni son semi di poesia."
+          }
+        ]
+      },
+      {
+        type: "bridge",
+        lines: [
+          {
+            lineId: 13,
+            en: "Brushstrokes rising, never in vain,",
+            it: "Pennellate che salgono, mai invano."
+          },
+          {
+            lineId: 14,
+            en: "Through the struggle, beauty remains.",
+            it: "Tra le lotte resta il bello umano."
+          },
+          {
+            lineId: 15,
+            en: "A thousand hues born from your fight,",
+            it: "Mille sfumature nate dal tuo ardore."
+          },
+          {
+            lineId: 16,
+            en: "Tomorrow blooms in radiant light.",
+            it: "Il domani fiorisce in fulgido splendore."
+          }
+        ]
+      },
+      {
+        type: "finalChorus",
+        lines: [
+          {
+            lineId: 17,
+            en: "Paint tomorrow with your ambitions,",
+            it: "Dipingi il domani con le tue ambizioni."
+          },
+          {
+            lineId: 18,
+            en: "Turn your spirit into gold.",
+            it: "Trasforma lo spirito in oro che brilla."
+          },
+          {
+            lineId: 19,
+            en: "In the story of your mission,",
+            it: "Nella storia della tua missione."
+          },
+          {
+            lineId: 20,
+            en: "Let your masterpiece unfold.",
+            it: "Lascia che il capolavoro scintilla."
+          }
+        ]
+      }
+    ],
+    metadata: {
+      style: ["heroic", "motivational", "uplifting"],
+      languageSupport: ["en", "it"],
+      theme: "Ambition and hope"
+    }
+  };
+
+  return song;
+}

@@ -11376,3 +11376,692 @@ export function CongratsLyrics() {
   ];
   return sub;
 }
+
+export function BoomerangFemaleLyrics() {
+   const sub = [
+  {
+    "id": 1,
+    "start": 80,
+    "end": 10850,
+    "text": {
+      "en": "(Chill piano music)",
+      "it": "(Chill piano music)"
+    }
+  },
+  {
+    "id": 2,
+    "start": 11160,
+    "end": 15740,
+    "text": {
+      "en": "No matter the distance, no matter how years",
+      "it": "Non conta la distanza, né gli anni che van,"
+    }
+  },
+  {
+    "id": 3,
+    "start": 15800,
+    "end": 20720,
+    "text": {
+      "en": "turn, love takes flight, with a promise of",
+      "it": "l’amore si alza, con promessa tornerà."
+    }
+  },
+  {
+    "id": 4,
+    "start": 20740,
+    "end": 24200,
+    "text": {
+      "en": "return. It circles the",
+      "it": "Gira il mondo intero, sa dove posar,"
+    }
+  },
+  {
+    "id": 5,
+    "start": 24240,
+    "end": 29000,
+    "text": {
+      "en": "world, it knows where to land,",
+      "it": "ancora caldo nel tocco di chi sa aspettar."
+    }
+  },
+  {
+    "id": 6,
+    "start": 29140,
+    "end": 34040,
+    "text": {
+      "en": "still warm in the touch of a welcoming hand.",
+      "it": ""
+    }
+  },
+  {
+    "id": 7,
+    "start": 34820,
+    "end": 39680,
+    "text": {
+      "en": "Boomerang of love, a flight never lost,",
+      "it": "Boomerang d’amore, un volo che non si perde,"
+    }
+  },
+  {
+    "id": 8,
+    "start": 40220,
+    "end": 45120,
+    "text": {
+      "en": "through shadows and storms, it still makes its",
+      "it": "tra ombre e tempeste, la sua rotta si stende."
+    }
+  },
+  {
+    "id": 9,
+    "start": 45220,
+    "end": 49720,
+    "text": {
+      "en": "course. Each time it is cast, it will",
+      "it": "Ogni volta lanciato, più in alto volerà,"
+    }
+  },
+  {
+    "id": 10,
+    "start": 49840,
+    "end": 53520,
+    "text": {
+      "en": "rise far above, returning",
+      "it": "ritornando per sempre — il Boomerang d’amor sarà."
+    }
+  },
+  {
+    "id": 11,
+    "start": 53660,
+    "end": 57180,
+    "text": {
+      "en": "again, the boomerang of",
+      "it": ""
+    }
+  },
+  {
+    "id": 12,
+    "start": 57260,
+    "end": 59860,
+    "text": {
+      "en": "love.",
+      "it": ""
+    }
+  },
+  {
+    "id": 13,
+    "start": 59930,
+    "end": 68100,
+    "text": {
+      "en": "(Chill piano music)",
+      "it": "(Chill piano music)"
+    }
+  },
+  {
+    "id": 14,
+    "start": 68140,
+    "end": 72440,
+    "text": {
+      "en": "Return, oh boomerang, to hearts that are",
+      "it": "Ritorna, o boomerang, ai cuori che sanno scaldar,"
+    }
+  },
+  {
+    "id": 15,
+    "start": 72500,
+    "end": 76700,
+    "text": {
+      "en": "warm, to the unloved, the",
+      "it": "agli incompresi, ai gentili, ai buoni nel mar."
+    }
+  },
+  {
+    "id": 16,
+    "start": 76800,
+    "end": 81560,
+    "text": {
+      "en": "gentle, the kind in the storm. And above",
+      "it": ""
+    }
+  },
+  {
+    "id": 17,
+    "start": 81680,
+    "end": 86200,
+    "text": {
+      "en": "all, return with the truth from above,",
+      "it": "E sopra ogni cosa, ritorna con verità,"
+    }
+  },
+  {
+    "id": 18,
+    "start": 86860,
+    "end": 91260,
+    "text": {
+      "en": "to restore what was given, return as",
+      "it": "per ridare ciò che fu dato — ritorna come amor sarà."
+    }
+  },
+  {
+    "id": 19,
+    "start": 91400,
+    "end": 96360,
+    "text": {
+      "en": "love. Boomerang of love, a flight never",
+      "it": "Boomerang d’amore, un volo che non si perde,"
+    }
+  },
+  {
+    "id": 20,
+    "start": 96480,
+    "end": 101380,
+    "text": {
+      "en": "lost, through shadows and storms, it",
+      "it": "tra ombre e tempeste, la sua rotta si stende."
+    }
+  },
+  {
+    "id": 21,
+    "start": 101420,
+    "end": 106400,
+    "text": {
+      "en": "still makes its course. Each time it is cast,",
+      "it": "Ogni volta lanciato, più in alto volerà,"
+    }
+  },
+  {
+    "id": 22,
+    "start": 106440,
+    "end": 110540,
+    "text": {
+      "en": "it will rise far above, returning",
+      "it": "ritornando per sempre — il Boomerang d’amor sarà."
+    }
+  },
+  {
+    "id": 23,
+    "start": 110600,
+    "end": 114160,
+    "text": {
+      "en": "again, the boomerang of",
+      "it": ""
+    }
+  },
+  {
+    "id": 24,
+    "start": 114280,
+    "end": 119220,
+    "text": {
+      "en": "love. Through the arc of the sky and the breadth",
+      "it": "Attraverso l’arco del cielo e il respiro della terra,"
+    }
+  },
+  {
+    "id": 25,
+    "start": 119280,
+    "end": 123900,
+    "text": {
+      "en": "of the earth, love finds the lost",
+      "it": "l’amore trova chi è perso e la speranza riafferra."
+    }
+  },
+  {
+    "id": 26,
+    "start": 124400,
+    "end": 129038,
+    "text": {
+      "en": "and rekindles their worth. No force can",
+      "it": "Nessuna forza lo ferma, nessuna ombra lo può legar,"
+    }
+  },
+  {
+    "id": 27,
+    "start": 129080,
+    "end": 131680,
+    "text": {
+      "en": "deter, no shadow can",
+      "it": ""
+    }
+  },
+  {
+    "id": 28,
+    "start": 131780,
+    "end": 136580,
+    "text": {
+      "en": "stay, the path of love's promise will",
+      "it": "la strada promessa dall’amor saprà sempre trovar."
+    }
+  },
+  {
+    "id": 29,
+    "start": 136780,
+    "end": 141080,
+    "text": {
+      "en": "find its own way. Boomerang of",
+      "it": ""
+    }
+  },
+  {
+    "id": 30,
+    "start": 141160,
+    "end": 142562,
+    "text": {
+      "en": "love, a flight never lost, through",
+      "it": "Boomerang d’amore, un volo che non si perde,"
+    }
+  },
+  {
+    "id": 31,
+    "start": 142572,
+    "end": 143080,
+    "text": {
+      "en": "shadows and storms, it still makes its",
+      "it": "tra ombre e tempeste, la sua rotta si stende."
+    }
+  },
+  {
+    "id": 32,
+    "start": 143200,
+    "end": 144720,
+    "text": {
+      "en": "course. Each time it is cast, it will",
+      "it": "Ogni volta lanciato, più in alto volerà,"
+    }
+  },
+  {
+    "id": 33,
+    "start": 144780,
+    "end": 145520,
+    "text": {
+      "en": "rise far above, returning",
+      "it": "ritornando per sempre — il Boomerang d’amor sarà."
+    }
+  },
+  {
+    "id": 34,
+    "start": 145620,
+    "end": 146140,
+    "text": {
+      "en": "again, the boomerang of",
+      "it": ""
+    }
+  },
+  {
+    "id": 35,
+    "start": 146260,
+    "end": 147780,
+    "text": {
+      "en": "love.",
+      "it": ""
+    }
+  },
+  {
+    "id": 36,
+    "start": 148260,
+    "end": 150690,
+    "text": {
+      "en": "(Chill piano music)",
+      "it": "(Chill piano music)"
+    }
+  },
+  {
+    "id": 37,
+    "start": 153200,
+    "end": 158060,
+    "text": {
+      "en": "Forever it circles, forever it flies,",
+      "it": "Per sempre gira, per sempre volerà,"
+    }
+  },
+  {
+    "id": 38,
+    "start": 158560,
+    "end": 160273,
+    "text": {
+      "en": "beneath the sun, through unending",
+      "it": "sotto il sole, nei cieli senza finità."
+    }
+  },
+  {
+    "id": 39,
+    "start": 160294,
+    "end": 160626,
+    "text": {
+      "en": "skies. Boomerang of",
+      "it": "Boomerang d’amore, nel suo eterno tornar,"
+    }
+  },
+  {
+    "id": 40,
+    "start": 160634,
+    "end": 161160,
+    "text": {
+      "en": "love, in its endless return,",
+      "it": ""
+    }
+  },
+  {
+    "id": 41,
+    "start": 161180,
+    "end": 161494,
+    "text": {
+      "en": "the fire keeps glowing, the heart's ever",
+      "it": "la fiamma rimane, i cuori a bruciar."
+    }
+  },
+  {
+    "id": 42,
+    "start": 161506,
+    "end": 161680,
+    "text": {
+      "en": "burn.",
+      "it": ""
+    }
+  },
+  {
+    "id": 43,
+    "start": 161786,
+    "end": 162971,
+    "text": {
+      "en": "(Chill piano music)",
+      "it": "(Chill piano music)"
+    }
+  }
+];
+
+return sub
+}
+
+
+export function BoomerangITLyrics() {
+  const boomerang3Lyrics = [
+    {
+      start: 0,
+      end: 11660,
+      text: {
+        en: "No matter the distance, no matter how years turn,",
+        it: "Non"
+      }
+    },
+    {
+      start: 11670,
+      end: 14860,
+      text: {
+        en: "Love takes flight with a promise of return.",
+        it: "conta la distanza, né gli anni che"
+      }
+    },
+    {
+      start: 14920,
+      end: 19700,
+      text: {
+        en: "It circles the world, it knows where to land,",
+        it: "van. L'amore si alza, con promessa"
+      }
+    },
+    {
+      start: 19720,
+      end: 24640,
+      text: {
+        en: "Still warm in the touch of a welcoming hand.",
+        it: "tornerà. Gira il mondo intero sa"
+      }
+    },
+    {
+      start: 25340,
+      end: 30340,
+      text: {
+        en: "Boomerang of love, a flight never lost,",
+        it: "dove posar. Ancora caldo nel tocco di chi"
+      }
+    },
+    {
+      start: 30360,
+      end: 35160,
+      text: {
+        en: "Through shadows and storms, it still makes its course.",
+        it: "sa aspettar. Boomerang d'amore, un"
+      }
+    },
+    {
+      start: 35240,
+      end: 38910,
+      text: {
+        en: "Each time it is cast, it will rise far above,",
+        it: "volo che non si perde, tra ombre e"
+      }
+    },
+    {
+      start: 39000,
+      end: 43660,
+      text: {
+        en: "Returning again — the Boomerang of Love.",
+        it: "tempeste, la sua rotta si stende. Ogni"
+      }
+    },
+    {
+      start: 43740,
+      end: 46940,
+      text: {
+        en: "Return, O boomerang, to hearts that are warm,",
+        it: "volta lancio, più in alto"
+      }
+    },
+    {
+      start: 47020,
+      end: 51840,
+      text: {
+        en: "To the unloved, the gentle, the kind in the storm.",
+        it: "volerà, ritornando per sempre, il"
+      }
+    },
+    {
+      start: 51900,
+      end: 55830,
+      text: {
+        en: "And above all, return with the truth from above,",
+        it: "boomerang d'amor sarà. Ritorna, oh"
+      }
+    },
+    {
+      start: 55860,
+      end: 60080,
+      text: {
+        en: "To restore what was given — return as love.",
+        it: "boomerang, ai cuori che sanno scaldar."
+      }
+    },
+    {
+      start: 60780,
+      end: 64980,
+      text: {
+        en: "Boomerang of love, a flight never lost,",
+        it: "Agli incompresi, ai gentili, ai buoni nel mar."
+      }
+    },
+    {
+      start: 66060,
+      end: 70320,
+      text: {
+        en: "Through shadows and storms, it still makes its course.",
+        it: "E sopra ogni cosa ritorna con verità."
+      }
+    },
+    {
+      start: 72020,
+      end: 76440,
+      text: {
+        en: "Each time it is cast, it will rise far above,",
+        it: "Per ridare ciò che fu dato, ritorna come amor sarà."
+      }
+    },
+    {
+      start: 76480,
+      end: 80080,
+      text: {
+        en: "Returning again — the Boomerang of Love.",
+        it: "Boomerang d'amore, un volo che non si"
+      }
+    },
+    {
+      start: 80220,
+      end: 84600,
+      text: {
+        en: "Through the arc of the sky and the breath of the earth,",
+        it: "perde, tra ombre e tempeste, la sua"
+      }
+    },
+    {
+      start: 84640,
+      end: 88000,
+      text: {
+        en: "Love finds the lost and rekindles their worth.",
+        it: "rotta si stende. Ogni volta"
+      }
+    },
+    {
+      start: 88040,
+      end: 92420,
+      text: {
+        en: "No force can deter, no shadow can stay,",
+        it: "lanciato, più in alto volerà,"
+      }
+    },
+    {
+      start: 92440,
+      end: 96980,
+      text: {
+        en: "The path of love's promise will find its own way.",
+        it: "ritornando per sempre, il boomerang d'amor"
+      }
+    },
+    {
+      start: 97060,
+      end: 101960,
+      text: {
+        en: "Boomerang of love, a flight never lost,",
+        it: "sarà. Attraverso l'arco del cielo e l respiro"
+      }
+    },
+    {
+      start: 102040,
+      end: 106140,
+      text: {
+        en: "Through shadows and storms, it still makes its course.",
+        it: "della terra, l'amore trova chi è perso e la"
+      }
+    },
+    {
+      start: 106220,
+      end: 110320,
+      text: {
+        en: "Each time it is cast, it will rise far above,",
+        it: "speranza riafferra. Nessuna forza lo"
+      }
+    },
+    {
+      start: 110400,
+      end: 115200,
+      text: {
+        en: "Returning again — the Boomerang of Love.",
+        it: "ferma, nessuna ombra lo può legar. La"
+      }
+    },
+    {
+      start: 115240,
+      end: 120100,
+      text: {
+        en: "Forever it circles, forever it flies,",
+        it: "strada promessa dall'amor saprà sempre trovar."
+      }
+    },
+    {
+      start: 120120,
+      end: 123700,
+      text: {
+        en: "Beneath the sun, through unending skies.",
+        it: "Boomerang d'amore, un volo che non si"
+      }
+    },
+    {
+      start: 123840,
+      end: 128799,
+      text: {
+        en: "Boomerang of love, in its endless return,",
+        it: "perde, tra ombre e tempeste, la sua rotta"
+      }
+    },
+    {
+      start: 128940,
+      end: 133740,
+      text: {
+        en: "The fire keeps glowing, the hearts ever burn.",
+        it: "si stende. Ogni volta lanciato, più in"
+      }
+    },
+    {
+      start: 133860,
+      end: 137400,
+      text: {
+        en: "",
+        it: "alto volerà, ritornando per"
+      }
+    },
+    {
+      start: 137520,
+      end: 142500,
+      text: {
+        en: "",
+        it: "sempre, il boomerang d'amor sarà. Per"
+      }
+    },
+    {
+      start: 142540,
+      end: 146320,
+      text: {
+        en: "",
+        it: "sempre gira, per sempre volerà"
+      }
+    },
+    {
+      start: 147340,
+      end: 150580,
+      text: {
+        en: "",
+        it: "sotto il sole, nei cieli senza"
+      }
+    },
+    {
+      start: 150600,
+      end: 155380,
+      text: {
+        en: "",
+        it: "affinità. Boomerang d'amore, nel suo"
+      }
+    },
+    {
+      start: 155420,
+      end: 158940,
+      text: {
+        en: "",
+        it: "eterno tornar, la fiamma"
+      }
+    },
+    {
+      start: 159020,
+      end: 161560,
+      text: {
+        en: "",
+        it: "rimane, i cuori a"
+      }
+    },
+    {
+      start: 161680,
+      end: 169992,
+      text: {
+        en: "",
+        it: "bruciar."
+      }
+    }
+  ];
+  return boomerang3Lyrics;
+}

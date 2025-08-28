@@ -1,0 +1,176 @@
+/* DirectorMsgs.css */
+.director-message {
+  padding: 2rem;
+  margin: 10px auto;
+  min-height: 100vh;
+}
+
+.director-message h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.messages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.message-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #e1e5e9;
+}
+
+.message-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.message-card.active {
+  border-color: #4299e1;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  color: #2d3748;
+}
+
+.audio-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.lyrics-content {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.lyrics-verse {
+  margin-bottom: 1.5rem;
+  border-bottom:1px solid #000
+}
+
+.lyrics-line {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+  color: #4a5568;
+  text-align: justify;
+}
+
+.lyrics-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #ff4d6d;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 9px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255,77,109,0.4);
+}
+
+.lyrics-btn:hover {
+ box-shadow: 0 4px 15px rgba(255, 117, 140, 0.6);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(255,51,85,0.6);
+}
+
+/* Dark mode using prefers-color-scheme */
+@media (prefers-color-scheme: dark) {
+  
+  
+  .director-message h2 {
+    color: #f7fafc;
+  }
+  
+  .message-card {
+    background-color: #2d3748;
+    border-color: #4a5568;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .message-card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .message-card.active {
+    border-color: #63b3ed;
+  }
+  
+  .card-header h3 {
+    color: #f7fafc;
+  }
+  
+  .lyrics-content {
+    border-top-color: #4a5568;
+  }
+  
+  .lyrics-line {
+    color: #e2e8f0;
+  }
+
+  .lyrics-verse {
+
+  border-bottom:1px solid #fff
+}
+}
+
+/* Responsive design */
+@media (max-width: 800px) {
+  .director-message {
+    padding: 0;
+  }
+  
+  .messages-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .message-card {
+    padding: 1rem;
+  }
+  
+  .director-message h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+
+/* Audio player styling */
+.audio-wrapper audio {
+  width: 100%;
+  border-radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .audio-wrapper audio {
+    filter: invert(0.9);
+  }
+}

@@ -1,7 +1,8 @@
 /* index.css or App.css */
 :root {
   --bg-color: white;
-  --text-color: #000000d8;
+  --text-color: #1a202c;
+  
 }
 
 /* Default: Light mode */
@@ -712,6 +713,8 @@ body {
    body {
     background-color: var(--text-color);
     color: var( --bg-color);
+
+  
   }
 .Switcher{
   background-color: #fff;

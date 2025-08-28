@@ -29,6 +29,24 @@ function App() {
   const [isPlaying, setPlaying] = useState(false);
   const [audioState, setAudioState] = useState("idle"); // 'idle' | 'loading' | 'stalled' | 'waiting
   const audioRef = useRef(null);
+   const [isOnline, setIsOnline] = useState(navigator.onLine);
+
+   useEffect(() => {
+    const handleOnline = () => {
+      setIsOnline(true);
+    };
+    const handleOffline = () => {
+      setIsOnline(false);
+    };
+
+    window.addEventListener("online", handleOnline);
+    window.addEventListener("offline", handleOffline);
+
+    return () => {
+      window.removeEventListener("online", handleOnline);
+      window.removeEventListener("offline", handleOffline);
+    };
+  }, []);
 
   
  useEffect(() => {
@@ -193,6 +211,7 @@ function App() {
               }
             />
 
+            {isOnline && (
             <button
               className="lyrics-btn"
               onClick={() => {
@@ -205,6 +224,7 @@ function App() {
             >
               <FaYoutube /> {language === "it" ? "Liriche" : "Lyrics"}
             </button>
+              )}
           </div>
         )}
 

@@ -14,6 +14,9 @@ import BgImg from "../assets/images/txt_bg.jpg";
 import SurpriseOverlay from "../components/SurpriseOverlay";
 import VisionSong from "../assets/audios/vision.mp3"
 import VisionShortSongIt from "../assets/audios/vision_it.mp3";
+import VisionFemale from "../assets/audios/vision_female.mp3";
+import DirectorMessage from "../components/DirectorMsg";
+
 import "../index.css"
 
 export default function HomeScreen() {
@@ -249,6 +252,15 @@ export default function HomeScreen() {
           title={language === "it" ? "La Nostra Visione" : "Our Vision"}
         />
       </div>
+
+       <div className="audio-wrapper">
+        <AudioComponent
+          audioFile={VisionFemale}
+          title={language === "it" ? "La Nostra Visione (Versione feminile)" : "Our Vision (female version)"}
+        />
+      </div>
+
+      <DirectorMessage/>
 
       {showSurprise && (
         <SurpriseOverlay

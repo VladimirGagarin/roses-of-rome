@@ -61,7 +61,9 @@ import {
   CottolengoSisterRMXLyrics,
   CottolengoSisterRMXLyricsIT,
   BoomerangAirwaveLyrics,
-  CongratsLyrics
+  CongratsLyrics,
+  BoomerangFemaleLyrics,
+  BoomerangITLyrics
 } from "./SongData";
 
 // utils/songUUIDs.js
@@ -230,7 +232,7 @@ export function RosesOfRomeSongs() {
         it: "Congratulazioni",
       },
       songLyrics: CongratsLyrics(),
-      songAlbum: "Cantabile",
+      songAlbum: "Rosa",
     },
     {
       songId: SONG_UUIDS.rorMusic_013,
@@ -249,7 +251,7 @@ export function RosesOfRomeSongs() {
         en: "Boomerang Love (Italian)",
         it: "Amore Boomerang(Italiano)",
       },
-      songLyrics: [],
+      songLyrics: BoomerangITLyrics(),
       songAlbum: "Cantabile",
     },
     {
@@ -259,7 +261,7 @@ export function RosesOfRomeSongs() {
         en: "Boomerang Love (Soft version)",
         it: "Amore Boomerang (versione soft)",
       },
-      songLyrics: [],
+      songLyrics: BoomerangFemaleLyrics(),
       songAlbum: "Cantabile",
     },
     {
@@ -270,6 +272,16 @@ export function RosesOfRomeSongs() {
         it: "Amore Boomerang (versione country)",
       },
       songLyrics: [],
+      songAlbum: "Cantabile",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_033,
+      songFile: Boomerang5,
+      songName: {
+        en: "Boomerang of Love (EDM)",
+        it: "Boomerang dell'Amore (EDM)",
+      },
+      songLyrics: BoomerangAirwaveLyrics(),
       songAlbum: "Cantabile",
     },
     {
@@ -362,6 +374,16 @@ export function RosesOfRomeSongs() {
       songLyrics: [],
       songAlbum: "Cantabile",
     },
+     {
+      songId: SONG_UUIDS.rorMusic_029,
+      songFile: Everythings,
+      songName: {
+        en: "Everything to see you again (Duet)",
+        it: "Tutto per rivederti (Duettto)",
+      },
+      songLyrics: EverythingDuetLyrics(),
+      songAlbum: "Cantabile",
+    },
     {
       songId: SONG_UUIDS.rorMusic_026,
       songFile: Reputation,
@@ -390,16 +412,6 @@ export function RosesOfRomeSongs() {
         it: "Reputazione vocale",
       },
       songLyrics: [],
-      songAlbum: "Cantabile",
-    },
-    {
-      songId: SONG_UUIDS.rorMusic_029,
-      songFile: Everythings,
-      songName: {
-        en: "Everything to see you again (Duet)",
-        it: "Tutto per rivederti (Duettto)",
-      },
-      songLyrics: EverythingDuetLyrics(),
       songAlbum: "Cantabile",
     },
     {
@@ -432,16 +444,7 @@ export function RosesOfRomeSongs() {
       songLyrics: CottolengoSisterRMXLyricsIT(),
       songAlbum: "Piccola Casa della Gioia",
     },
-    {
-      songId: SONG_UUIDS.rorMusic_033,
-      songFile: Boomerang5,
-      songName: {
-        en: "Boomerang of Love (EDM)",
-        it: "Boomerang dell'Amore (EDM)",
-      },
-      songLyrics: BoomerangAirwaveLyrics(),
-      songAlbum: "Cantabile",
-    },
+    
     //  {
     //     songId:SONG_UUIDS.rorMusic_034,
     //     songFile: ForeverBlessed,
