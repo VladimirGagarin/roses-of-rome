@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { useLanguage } from "./LanguageContext";
 import "./DirectorMsgs.css";
-import { ThePaintMessage } from "./Utils";
+import { ThePaintMessage, MakeYourLifeColorful } from "./Utils";
 import PaintSong from "../assets/audios/paint.mp3";
 import PaintSongIt from "../assets/audios/paint_it.mp3";
+import ColorfulSong from "../assets/audios/colorful.mp3";
 import AudioComponent from "./AudioPlayer";
 
 export default function DirectorMessage() {
@@ -18,8 +19,8 @@ export default function DirectorMessage() {
     },
     { 
       title: { en: "Make Your Life Colorful", it: "Rendi la Tua Vita Colorata" }, 
-      lyricsArray: null, 
-      songFile: null 
+      lyricsArray: MakeYourLifeColorful(), 
+      songFile: ColorfulSong 
     },
     { 
       title: { en: "Paint Tomorrow with Your Ambitions", it: "Dipingi il Domani con le Tue Ambizioni" }, 
@@ -44,6 +45,7 @@ export default function DirectorMessage() {
               className={`message-card ${activeIndex === index ? "active" : ""}`}
              
             >
+                
               <div className="card-header">
                
                 <div className="audio-wrapper">
@@ -54,7 +56,7 @@ export default function DirectorMessage() {
                 </div>
               </div>
 
-              <button  className="lyrics-btn" onClick={() => handleLyricsToggle(index)}> {language === "it" ? "Canzon Liriche" : "Song lyrics"}</button>
+              <button  className="lyrics-btn" onClick={() => handleLyricsToggle(index)}> {language === "it" ? "Testo della Canzone" : "Song Lyrics"}</button>
 
               {activeIndex === index && msg.lyricsArray && (
                 <div className="lyrics-content">

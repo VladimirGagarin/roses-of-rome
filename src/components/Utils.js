@@ -614,3 +614,94 @@ export function ThePaintMessage() {
 
   return song;
 }
+
+
+export function MakeYourLifeColorful() {
+  const song = {
+    title: { 
+      en: "Make Your Life Colorful", 
+      it: "Rendi la Tua Vita Colorata" 
+    },
+    verses: [
+      {
+        type: "verse",
+        lines: [
+          { lineId: 1, en: "In a world of black and white, you wander through the gray", it: "In un mondo di bianco e nero, vaghi attraverso il grigio" },
+          { lineId: 2, en: "Searching for the spectrum hidden far away", it: "Cercando lo spettro nascosto lontano" },
+          { lineId: 3, en: "There's a palette waiting just beyond your sight", it: "C'è una tavolozza che attende appena oltre la tua vista" },
+          { lineId: 4, en: "A million different colors burning ever bright", it: "Un milione di colori diversi che bruciano sempre luminosi" }
+        ]
+      },
+      {
+        type: "chorus",
+        lines: [
+          { lineId: 5, en: "So make your life colorful, paint outside the lines", it: "Allora rendi la vita colorata, dipingi fuori dalle righe" },
+          { lineId: 6, en: "Let your spirit radiate in brilliant, bold designs", it: "Lascia che il tuo spirito irradi in disegni brillanti e audaci" },
+          { lineId: 7, en: "Don't be afraid to shine in hues they've never seen", it: "Non aver paura di splendere in tonalità che non hanno mai visto" },
+          { lineId: 8, en: "Make your life colorful, vibrant and serene", it: "Rendi la tua vita colorata, vibrante e serena" }
+        ]
+      },
+      {
+        type: "verse",
+        lines: [
+          { lineId: 9, en: "Some will tell you blend in, fade into the mold", it: "Alcuni ti diranno di mimetizzarti, sfumare nello stampo" },
+          { lineId: 10, en: "But there's a story in your heart that's waiting to unfold", it: "Ma c'è una storia nel tuo cuore che aspetta di dispiegarsi" },
+          { lineId: 11, en: "Every shade of feeling, every tone of dreams", it: "Ogni sfumatura di sentimento, ogni tono di sogni" },
+          { lineId: 12, en: "Is part of what makes you more than what it seems", it: "È parte di ciò che ti rende più di quello che sembri" }
+        ]
+      },
+      {
+        type: "chorus",
+        lines: [
+          { lineId: 13, en: "So make your life colorful, paint outside the lines", it: "Allora rendi la vita colorata, dipingi fuori dalle righe" },
+          { lineId: 14, en: "Let your spirit radiate in brilliant, bold designs", it: "Lascia che il tuo spirito irradi in disegni brillanti e audaci" },
+          { lineId: 15, en: "Don't be afraid to shine in hues they've never seen", it: "Non aver paura di splendere in tonalità che non hanno mai visto" },
+          { lineId: 16, en: "Make your life colorful, vibrant and serene", it: "Rendi la tua vita colorata, vibrante e serena" }
+        ]
+      },
+      {
+        type: "bridge",
+        lines: [
+          { lineId: 17, en: "When the rain comes falling and the skies turn dark", it: "Quando la pioggia scende e i cieli si fanno scuri" },
+          { lineId: 18, en: "That's when your colors make their most lasting mark", it: "È allora che i tuoi colori lasciano il segno più duraturo" },
+          { lineId: 19, en: "The contrast defines you, the shadows make the light", it: "Il contrasto ti definisce, le ombre esaltano la luce" },
+          { lineId: 20, en: "That much more breathtaking, incredibly bright", it: "Così tanto più mozzafiato, incredibilmente luminosa" }
+        ]
+      },
+      {
+        type: "verse",
+        lines: [
+          { lineId: 21, en: "Now take your brush with courage, dip it in the sun", it: "Ora prendi il tuo pennello con coraggio, intingilo nel sole" },
+          { lineId: 22, en: "Paint your days with passion till each moment's done", it: "Dipingi i tuoi giorni con passione finché ogni momento è compiuto" },
+          { lineId: 23, en: "Mix the joy with sorrow, the laughter with the tears", it: "Mescola la gioia con il dolore, le risate con le lacrime" },
+          { lineId: 24, en: "Create a masterpiece across the coming years", it: "Crea un capolavoro attraverso gli anni a venire" }
+        ]
+      },
+      {
+        type: "chorus",
+        lines: [
+          { lineId: 25, en: "So make your life colorful, paint outside the lines", it: "Allora rendi la vita colorata, dipingi fuori dalle righe" },
+          { lineId: 26, en: "Let your spirit radiate in brilliant, bold designs", it: "Lascia che il tuo spirito irradi in disegni brillanti e audaci" },
+          { lineId: 27, en: "Don't be afraid to shine in hues they've never seen", it: "Non aver paura di splendere in tonalità che non hanno mai visto" },
+          { lineId: 28, en: "Make your life colorful, vibrant and serene", it: "Rendi la tua vita colorata, vibrante e serena" },
+          { lineId: 29, en: "Make your life colorful—the brightest there has been!", it: "Rendi la tua vita colorata—la più luminosa che ci sia stata!" }
+        ]
+      },
+      {
+        type: "outro",
+        lines: [
+          { lineId: 30, en: "Colorful... so colorful...", it: "Colorata... così colorata..." },
+          { lineId: 31, en: "Let your true colors show...", it: "Lascia che i tuoi veri colori si mostrino..." },
+          { lineId: 32, en: "Make your life colorful... wherever you may go...", it: "Rendi la tua vita colorata... ovunque tu possa andare..." }
+        ]
+      }
+    ],
+    metadata: {
+      style: ["heroic", "motivational", "uplifting"],
+      languageSupport: ["en", "it"],
+      theme: "Ambition and hope"
+    }
+  };
+
+  return song;
+}

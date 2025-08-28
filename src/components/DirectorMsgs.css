@@ -15,8 +15,8 @@
 
 .messages-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: 1fr;
+    gap: 1.5rem;
 }
 
 .message-card {
@@ -24,13 +24,12 @@
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  cursor: pointer;
   transition: all 0.3s ease;
   border: 1px solid #e1e5e9;
 }
 
 .message-card:hover {
-  transform: translateY(-5px);
+  
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -46,13 +45,7 @@
   margin-bottom: 1rem;
 }
 
-.card-header h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  text-align: center;
-  margin: 0;
-  color: #2d3748;
-}
+
 
 .audio-wrapper {
   width: 100%;
@@ -64,6 +57,7 @@
   margin-top: 1.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid #e2e8f0;
+  
 }
 
 .lyrics-verse {
@@ -76,6 +70,8 @@
   line-height: 1.6;
   color: #4a5568;
   text-align: justify;
+  pointer-events: none;
+  user-select: none;
 }
 
 .lyrics-btn {
