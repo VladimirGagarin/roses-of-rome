@@ -706,19 +706,3 @@ export function MakeYourLifeColorful() {
   return song;
 }
 
-export function BelieveSongLyrics() {
-  const song = {
-    title: {
-      en: "Believe in Yourself",
-      it: "Credi in Te Stesso"
-    },
-    verses: [],
-    metadata: {
-      style: ["heroic", "motivational", "uplifting"],
-      languageSupport: ["en", "it"],
-      theme: "Ambition and hope"
-    }
-  };
-
-  return song;
-}

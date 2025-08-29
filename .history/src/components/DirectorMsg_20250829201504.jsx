@@ -57,10 +57,10 @@ export default function DirectorMessage() {
                 </div>
               </div>
               {msg.lyricsArray.verses.length > 0 && Array.isArray(msg.lyricsArray.verses) && (
-              <button  className="lyrics-btn" onClick={() => handleLyricsToggle(index)}> {language === "it" ? "Leggi Messaggio" : "Read Message"}</button>
+              <button  className="lyrics-btn" onClick={() => handleLyricsToggle(index)}> {language === "it" ? "Testo della Canzone" : "Song Lyrics"}</button>
               )}
 
-              {activeIndex === index && msg.lyricsArray && (
+              {activeIndex === index && msg.lyricsArray && && (
                 <div className="lyrics-content">
                   {msg.lyricsArray.verses.map((verse, vIndex) => (
                     <div key={vIndex} className={`lyrics-verse ${verse.type}`}>

@@ -43,12 +43,15 @@
   align-items: center;
   gap: 1rem;
   margin-bottom: 1rem;
-  padding: 1rem 2rem;
 }
 
 
 
-
+.audio-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 .lyrics-content {
   margin-top: 1.5rem;

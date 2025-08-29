@@ -712,11 +712,27 @@ export function BelieveSongLyrics() {
       en: "Believe in Yourself",
       it: "Credi in Te Stesso"
     },
-    verses: [],
+    verses: [
+      {
+        lines: [
+          { lineId: 1, en: "Believe in yourself, it's your time to shine", it: "Credi in te stesso, è il tuo momento di brillare" },
+          { lineId: 2, en: "Embrace your dreams, let them be your guide", it: "Abbraccia i tuoi sogni, lascia che siano la tua guida" },
+          { lineId: 3, en: "With every step, you're closer to the prize", it: "Con ogni passo, sei più vicino al premio" },
+          { lineId: 4, en: "Believe in yourself, let your spirit rise", it: "Credi in te stesso, lascia che il tuo spirito si elevi" }
+        ]
+      },  
+      {
+        lines: [
+          { lineId: 5, en: "When doubts surround you, and the road seems long", it: "Quando i dubbi ti circondano e la strada sembra lunga" },
+          { lineId: 6, en: "Remember your strength, you are brave and strong", it: "Ricorda la tua forza, sei coraggioso e forte" },
+          { lineId: 7, en: "With faith in your heart, you can do no wrong", it: "Con fede nel tuo cuore, non puoi sbagliare" },
+          { lineId: 8, en: "Believe in yourself, you are where you belong", it: "Credi in te stesso, sei dove appartieni" }
+        ]
+      }
+    ],
     metadata: {
       style: ["heroic", "motivational", "uplifting"],
-      languageSupport: ["en", "it"],
-      theme: "Ambition and hope"
+      
     }
   };
 

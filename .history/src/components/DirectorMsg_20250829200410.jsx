@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useLanguage } from "./LanguageContext";
 import "./DirectorMsgs.css";
-import { ThePaintMessage, MakeYourLifeColorful, BelieveSongLyrics } from "./Utils";
+import { ThePaintMessage, MakeYourLifeColorful, B } from "./Utils";
 import PaintSong from "../assets/audios/paint.mp3";
 import PaintSongIt from "../assets/audios/paint_it.mp3";
 import ColorfulSong from "../assets/audios/colorful.mp3";
@@ -56,8 +56,8 @@ export default function DirectorMessage() {
                   />
                 </div>
               </div>
-              {msg.lyricsArray.verses.length > 0 && Array.isArray(msg.lyricsArray.verses) && (
-              <button  className="lyrics-btn" onClick={() => handleLyricsToggle(index)}> {language === "it" ? "Leggi Messaggio" : "Read Message"}</button>
+              {msg.lyricsArray.length > 0 && Array.isArray(msg.lyricsArray) && (
+              <button  className="lyrics-btn" onClick={() => handleLyricsToggle(index)}> {language === "it" ? "Testo della Canzone" : "Song Lyrics"}</button>
               )}
 
               {activeIndex === index && msg.lyricsArray && (
