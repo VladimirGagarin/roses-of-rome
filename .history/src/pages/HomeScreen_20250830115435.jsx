@@ -15,10 +15,10 @@ import SurpriseOverlay from "../components/SurpriseOverlay";
 import VisionSong from "../assets/audios/vision.mp3"
 import VisionShortSongIt from "../assets/audios/vision_it.mp3";
 import VisionFemale from "../assets/audios/vision_female.mp3";
-import VisonItSong from "../assets/audios/vision-italian-versione.mp3";
+import  VisonItSong from "../assets/audios/vison-italian-versione.mp3";
 import DirectorMessage from "../components/DirectorMsg";
 
-import "../index.css";
+import "../index.css"
 
 export default function HomeScreen() {
   const { language } = useLanguage();

@@ -18,7 +18,7 @@ import VisionFemale from "../assets/audios/vision_female.mp3";
 import VisonItSong from "../assets/audios/vision-italian-versione.mp3";
 import DirectorMessage from "../components/DirectorMsg";
 
-import "../index.css";
+import "../index.css"
 
 export default function HomeScreen() {
   const { language } = useLanguage();
