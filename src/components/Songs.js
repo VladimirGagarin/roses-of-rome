@@ -32,6 +32,7 @@ import CottolengoSisters from "../assets/audios/suor.mp3";
 import CottolengoSistersRMX from "../assets/audios/suor _rmx.mp3";
 import CottolengoSistersIT from "../assets/audios/suor_it.mp3";
 import ForeverBlessed from "../assets/audios/bless.mp3";
+import CompassSong from "../assets/audios/compass.mp3";
 
 // lyrics
 import {
@@ -443,6 +444,17 @@ export function RosesOfRomeSongs() {
       },
       songLyrics: CottolengoSisterRMXLyricsIT(),
       songAlbum: "Piccola Casa della Gioia",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_035,
+      songFile:CompassSong,
+      songName: {
+        en: "Compass",
+        it: "Bussola"
+      },
+      songLyrics: [],
+      songAlbum: "Merito",
+      songLink: "https://youtu.be/GR3qkECLJbw?list=RDGR3qkECLJbw",
     },
     
     //  {
