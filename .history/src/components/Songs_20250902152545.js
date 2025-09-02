@@ -145,7 +145,7 @@ export function RosesOfRomeSongs() {
         it: "Inno - Canti Con Magdalena",
       },
       songLyrics: AnthemLyrics(),
-      songAlbum: "SWM",
+      songAlbum: "Sing With Magdalene",
     },
     {
       songId: SONG_UUIDS.rorMusic_004,
@@ -462,22 +462,9 @@ export function RosesOfRomeSongs() {
       songId: SONG_UUIDS.rorMusic_036,
       songFile: SWMAnthem2,
       songName: {
-        en: "Anthem - Sing With Magdalene (soft version)",
-        it: "Utunno - Canti Con Magdalena (versione soft)"
-      },
-      songLyrics: [],
-      songAlbum: "SWM",
-    },
-    {
-      songId: SONG_UUIDS.rorMusic_037,
-      songFile: SomewhereSong,
-      songName: {
-        en: "Somewhere",
-        it: "Da Qualche Parte"
-      },
-      songLyrics: [],
-      songAlbum: "SWM",
-    },
+        en: Anthem-
+      }
+    }
     
     //  {
     //     songId:SONG_UUIDS.rorMusic_034,

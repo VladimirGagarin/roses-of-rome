@@ -470,13 +470,6 @@ export function RosesOfRomeSongs() {
     },
     {
       songId: SONG_UUIDS.rorMusic_037,
-      songFile: SomewhereSong,
-      songName: {
-        en: "Somewhere",
-        it: "Da Qualche Parte"
-      },
-      songLyrics: [],
-      songAlbum: "SWM",
     },
     
     //  {

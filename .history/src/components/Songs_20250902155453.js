@@ -469,14 +469,7 @@ export function RosesOfRomeSongs() {
       songAlbum: "SWM",
     },
     {
-      songId: SONG_UUIDS.rorMusic_037,
-      songFile: SomewhereSong,
-      songName: {
-        en: "Somewhere",
-        it: "Da Qualche Parte"
-      },
-      songLyrics: [],
-      songAlbum: "SWM",
+      
     },
     
     //  {
