@@ -2363,90 +2363,69 @@ export function FYSongLyrics() {
 }
 
 export function softAnthemLyrics() {
-  const scribbledLyrics = [
-   { start: 99, end: 5639, text: {en:"(soft piano music)", it: "(musica pianoforte soffice)"} },
-   { start: 5639, end: 10500, text: {en:"(woman singing) When our", it: "(voce femminile canta) Quando le nostre"} },
-   {
-    start: 10559,
-    end: 15439,
-    text: {
-      en: "voices rise from quiet ground. Our songs",
-      it: "voci si alzano dal terreno silenzioso. Le nostre canzoni"
-    }
-   },
-   {
-    start: 15439,
-    end: 18739,
-    text: {
-      en: "are scribbled on life's pages unbound.",
-      it: "sono scarabocchiate sulle pagine della vita senza limiti."
-    }
-   },
-   {
-    start: 20180,
-    end: 24039,
-    text: {
-      en: "Every word a seed in the heart it finds.",
-      it: "Ogni parola un seme nel cuore che trova."
-    }
-   },
-   {
-    start: 25219,
-    end: 28799,
-    text: {
-      en: "We are ready to chant the great hymns of time.",
-      it: "Siamo pronti a cantare i grandi inni del tempo."
-    }
-   },
-   { start: 30319, end: 35020, text: {en:"We will sing with Magdalene. On every", it:"Canteremo con Maddalena. Su ogni"} },
-   { start: 35099, end: 39779, text: {en:"scroll, the stars design. On", it:"pergamena che le stelle disegnano. Su"} },
-   { start: 39819, end: 44740, text: {en:"every sacred scribbled line. Let the", it:"ogni sacra linea scarabocchiata. Lascia che"} },
-   { start: 44819, end: 47819, text: {en:"melody carve the light.", it:"la melodia scolpisca la luce."} },
-   { start: 49520, end: 54340, text: {en:"In every echo lost in time forever,", it:"In ogni eco persa nel tempo per sempre,"} },
-   { start: 55520, end: 59100, text: {en:"we will sing with Magdalene.", it:"canteremo con Maddalena."} },
-   { start: 62859, end: 66279, text: {en:"Ooh, ooh, ooh.", it:"Oh, oh, oh."} },
-   { start: 68099, end: 71500, text: {en:"When time fades our scribbled pages,", it:"Quando il tempo sfuma le nostre pagine scarabocchiate,"} },
-   {
-    start: 73220,
-    end: 76559,
-    text: {
-      en: "and our hearts lie in forgotten stages.",
-      it: "e i nostri cuori giacciono in palcoscenici dimenticati."
-    }
-   },
-   {
-    start: 78259,
-    end: 81919,
-    text: {
-      en: "Let the silence still remember our song.",
-      it: "Lascia che il silenzio ricordi ancora la nostra canzone."
-    }
-   },
-   { start: 83639, end: 88339, text: {en:"A melody that forever belongs. Not", it:"Una melodia che per sempre appartiene. Non"} },
-   { start: 88379, end: 92459, text: {en:"today, not tomorrow, but forever.", it:"oggi, non domani, ma per sempre."} },
-   { start: 93459, end: 98180, text: {en:"We will sing with Magdalene. On every", it:"Canteremo con Maddalena. Su ogni"} },
-   { start: 98239, end: 103239, text: {en:"scroll, the stars design. On every", it:"pergamena che le stelle disegnano. Su ogni"} },
-   { start: 103379, end: 107919, text: {en:"sacred scribbled line. Let the", it:"sacra linea scarabocchiata. Lascia che"} },
-   { start: 107979, end: 110719, text: {en:"melody carve the light.", it:"la melodia scolpisca la luce."} },
-   { start: 112739, end: 117519, text: {en:"In every echo lost in time forever,", it:"In ogni eco persa nel tempo per sempre,"} },
-   { start: 118699, end: 123559, text: {en:"we will sing with Magdalene. Ooh,", it:"canteremo con Maddalena. Oh,"} },
-   { start: 123559, end: 126519, text: {en:"ooh,", it:"oh,"} },
-   { start: 127899, end: 132739, text: {en:"ooh. Forever,", it:"oh. Per sempre,"} },
-   {
-    start: 133860,
-    end: 138600,
-    text: {
-      en: "we will sing with Magdalene. On every",
-      it: "canteremo con Maddalena. Su ogni"
-    }
-   },
-   { start: 138660, end: 143659, text: {en:"scroll, the stars design. On every", it:"pergamena che le stelle disegnano. Su ogni"} },
-   { start: 143800, end: 148319, text: {en:"sacred scribbled line. Let the", it:"sacra linea scarabocchiata. Lascia che"} },
-   { start: 148399, end: 151220, text: {en:"melody carve the light.", it:"la melodia scolpisca la luce."} },
-   { start: 153160, end: 157919, text: {en:"In every echo lost in time forever,", it:"In ogni eco persa nel tempo per sempre,"} },
-   { start: 159099, end: 162719, text: {en:"we will sing with Magdalene.", it:"canteremo con Maddalena."} },
-   { start: 168919, end: 172779, text: {en:"Ooh, ooh.", it:"Oh, oh."} },
-   { start: 173639, end: 186504, text: {en:"(soft piano music)", it:"(musica pianoforte soffice)"} },
+   const scribbledLyrics = [
+    { start: 99, end: 5639, text: "(soft piano music)" },
+    { start: 5639, end: 10500, text: "(woman singing) When our" },
+    {
+      start: 10559,
+      end: 15439,
+      text: "voices rise from quiet ground. Our songs",
+    },
+    {
+      start: 15439,
+      end: 18739,
+      text: "are scribbled on life's pages unbound.",
+    },
+    {
+      start: 20180,
+      end: 24039,
+      text: "Every word a seed in the heart it finds.",
+    },
+    {
+      start: 25219,
+      end: 28799,
+      text: "We are ready to chant the great hymns of time.",
+    },
+    { start: 30319, end: 35020, text: "We will sing with Magdalene. On every" },
+    { start: 35099, end: 39779, text: "scroll, the stars design. On" },
+    { start: 39819, end: 44740, text: "every sacred scribbled line. Let the" },
+    { start: 44819, end: 47819, text: "melody carve the light." },
+    { start: 49520, end: 54340, text: "In every echo lost in time forever," },
+    { start: 55520, end: 59100, text: "we will sing with Magdalene." },
+    { start: 62859, end: 66279, text: "Ooh, ooh, ooh." },
+    { start: 68099, end: 71500, text: "When time fades our scribbled pages," },
+    {
+      start: 73220,
+      end: 76559,
+      text: "and our hearts lie in forgotten stages.",
+    },
+    {
+      start: 78259,
+      end: 81919,
+      text: "Let the silence still remember our song.",
+    },
+    { start: 83639, end: 88339, text: "A melody that forever belongs. Not" },
+    { start: 88379, end: 92459, text: "today, not tomorrow, but forever." },
+    { start: 93459, end: 98180, text: "We will sing with Magdalene. On every" },
+    { start: 98239, end: 103239, text: "scroll, the stars design. On every" },
+    { start: 103379, end: 107919, text: "sacred scribbled line. Let the" },
+    { start: 107979, end: 110719, text: "melody carve the light." },
+    { start: 112739, end: 117519, text: "In every echo lost in time forever," },
+    { start: 118699, end: 123559, text: "we will sing with Magdalene. Ooh," },
+    { start: 123559, end: 126519, text: "ooh," },
+    { start: 127899, end: 132739, text: "ooh. Forever," },
+    {
+      start: 133860,
+      end: 138600,
+      text: "we will sing with Magdalene. On every",
+    },
+    { start: 138660, end: 143659, text: "scroll, the stars design. On every" },
+    { start: 143800, end: 148319, text: "sacred scribbled line. Let the" },
+    { start: 148399, end: 151220, text: "melody carve the light." },
+    { start: 153160, end: 157919, text: "In every echo lost in time forever," },
+    { start: 159099, end: 162719, text: "we will sing with Magdalene." },
+    { start: 168919, end: 172779, text: "Ooh, ooh." },
+    { start: 173639, end: 186504, text: "(soft piano music)" },
   ];
 
   return scribbledLyrics
@@ -4558,69 +4537,137 @@ export function SomewhereCountryLyrics() {
 
 export function SomewhereFemLy() {
   const subtitles = [
-    { start: 0, end: 4000, text: { en: "Somewhere in our hearts, you’re breathing,", it: "Da qualche parte nei nostri cuori, stai respirando," } },
-    { start: 4000, end: 7000, text: { en: "With the songs you left behind.", it: "Con le canzoni che hai lasciato." } },
-    { start: 7000, end: 11000, text: { en: "Every note, a kind of healing,", it: "Ogni nota, una sorta di guarigione," } },
-    { start: 11000, end: 14000, text: { en: "Playing softly through our minds.", it: "Che suona dolcemente nelle nostre menti." } },
-    { start: 14000, end: 18000, text: { en: "Though the silence now surrounds us,", it: "Anche se ora il silenzio ci circonda," } },
-    { start: 18000, end: 21000, text: { en: "Your light hums through every part—", it: "La tua luce vibra in ogni parte—" } },
-    { start: 21000, end: 25000, text: { en: "Like a prayer we keep repeating,", it: "Come una preghiera che continuiamo a ripetere," } },
-    { start: 25000, end: 28000, text: { en: "You belong inside our heart.", it: "Tu appartieni al nostro cuore." } },
+    { start: 0, end: 4000, text: "Somewhere in our hearts, you’re breathing," },
+    { start: 4000, end: 7000, text: "With the songs you left behind." },
+    { start: 7000, end: 11000, text: "Every note, a kind of healing," },
+    { start: 11000, end: 14000, text: "Playing softly through our minds." },
+    { start: 14000, end: 18000, text: "Though the silence now surrounds us," },
+    { start: 18000, end: 21000, text: "Your light hums through every part—" },
+    { start: 21000, end: 25000, text: "Like a prayer we keep repeating," },
+    { start: 25000, end: 28000, text: "You belong inside our heart." },
 
     // Pre-Chorus
-    { start: 29000, end: 32000, text: { en: "And when the world forgets to listen,", it: "E quando il mondo dimentica di ascoltare," } },
-    { start: 32000, end: 35000, text: { en: "We still hear your lullaby.", it: "Sentiamo ancora la tua ninna nanna." } },
-    { start: 35000, end: 39000, text: { en: "You left a spark in all this quiet—", it: "Hai lasciato una scintilla in tutto questo silenzio—" } },
-    { start: 39000, end: 43000, text: { en: "A voice that never says goodbye.", it: "Una voce che non dice mai addio." } },
+    { start: 29000, end: 32000, text: "And when the world forgets to listen," },
+    { start: 32000, end: 35000, text: "We still hear your lullaby." },
+    { start: 35000, end: 39000, text: "You left a spark in all this quiet—" },
+    { start: 39000, end: 43000, text: "A voice that never says goodbye." },
 
     // Chorus
-    { start: 43000, end: 46000, text: { en: "Somewhere in our hearts, you’re singing,", it: "Da qualche parte nei nostri cuori, stai cantando," } },
-    { start: 46000, end: 50000, text: { en: "In the silence, clear and strong.", it: "Nel silenzio, chiaro e forte." } },
-    { start: 50000, end: 53000, text: { en: "Every breath a note still ringing,", it: "Ogni respiro è una nota che risuona ancora," } },
-    { start: 53000, end: 57000, text: { en: "A voice that never says goodbye.", it: "Una voce che non dice mai addio." } },
-    { start: 58000, end: 61000, text: { en: "Though you're gone beyond the shadows,", it: "Anche se sei andata oltre le ombre," } },
-    { start: 61000, end: 64000, text: { en: "You’ve been here all along—", it: "Sei sempre stata qui—" } },
-    { start: 65000, end: 67000, text: { en: "Somewhere in our hearts,", it: "Da qualche parte nei nostri cuori," } },
-    { start: 67000, end: 71000, text: { en: "Magdalene and your songs belong.", it: "Magdalene e le tue canzoni appartengono qui." } },
+    {
+      start: 43000,
+      end: 46000,
+      text: "Somewhere in our hearts, you’re singing,",
+    },
+    { start: 46000, end: 50000, text: "In the silence, clear and strong." },
+    { start: 50000, end: 53000, text: "Every breath a note still ringing," },
+    { start: 53000, end: 57000, text: "A voice that never says goodbye." },
+    {
+      start: 58000,
+      end: 61000,
+      text: "Though you're gone beyond the shadows,",
+    },
+    { start: 61000, end: 64000, text: "You’ve been here all along—" },
+    { start: 65000, end: 67000, text: "Somewhere in our hearts," },
+    { start: 67000, end: 71000, text: "Magdalene and your songs belong." },
 
     // Verse 2
-    { start: 72000, end: 75000, text: { en: "We still find you in the stillness,", it: "Ti troviamo ancora nella quiete," } },
-    { start: 75000, end: 78000, text: { en: "In a chord the world forgot.", it: "In un accordo che il mondo ha dimenticato." } },
-    { start: 79000, end: 82000, text: { en: "In the shimmer of forgiveness,", it: "Nel luccichio del perdono," } },
-    { start: 82000, end: 85000, text: { en: "In the quiet of a thought.", it: "Nella quiete di un pensiero." } },
-    { start: 86000, end: 89000, text: { en: "Every echo feels like morning,", it: "Ogni eco sembra mattina," } },
-    { start: 89000, end: 93000, text: { en: "Like the day you used to bring—", it: "Come il giorno che portavi—" } },
-    { start: 93000, end: 96000, text: { en: "And we carry you inside us,", it: "E ti portiamo dentro di noi," } },
-    { start: 96000, end: 99000, text: { en: "Like the hush inside a string.", it: "Come il silenzio dentro una corda." } },
+    { start: 72000, end: 75000, text: "We still find you in the stillness," },
+    { start: 75000, end: 78000, text: "In a chord the world forgot." },
+    { start: 79000, end: 82000, text: "In the shimmer of forgiveness," },
+    { start: 82000, end: 85000, text: "In the quiet of a thought." },
+    { start: 86000, end: 89000, text: "Every echo feels like morning," },
+    { start: 89000, end: 93000, text: "Like the day you used to bring—" },
+    { start: 93000, end: 96000, text: "And we carry you inside us," },
+    { start: 96000, end: 99000, text: "Like the hush inside a string." },
 
     // Chorus
-    { start: 100000, end: 103000, text: { en: "Somewhere in our hearts, you’re singing,", it: "Da qualche parte nei nostri cuori, stai cantando," } },
-    { start: 103000, end: 107000, text: { en: "In the silence, clear and strong.", it: "Nel silenzio, chiaro e forte." } },
-    { start: 107000, end: 110000, text: { en: "Every breath a note still ringing,", it: "Ogni respiro è una nota che risuona ancora," } },
-    { start: 110000, end: 114000, text: { en: "A voice that never says goodbye.", it: "Una voce che non dice mai addio." } },
-    { start: 115000, end: 118000, text: { en: "Though you're gone beyond the shadows,", it: "Anche se sei andata oltre le ombre," } },
-    { start: 118000, end: 121000, text: { en: "You’ve been here all along—", it: "Sei sempre stata qui—" } },
-    { start: 123000, end: 124000, text: { en: "Somewhere in our hearts,", it: "Da qualche parte nei nostri cuori," } },
-    { start: 124000, end: 128000, text: { en: "Magdalene and your songs belong.", it: "Magdalene e le tue canzoni appartengono qui." } },
+    {
+      start: 100000,
+      end: 103000,
+      text: "Somewhere in our hearts, you’re singing,",
+    },
+    { start: 103000, end: 107000, text: "In the silence, clear and strong." },
+    { start: 107000, end: 110000, text: "Every breath a note still ringing," },
+    { start: 110000, end: 114000, text: "A voice that never says goodbye." },
+    {
+      start: 115000,
+      end: 118000,
+      text: "Though you're gone beyond the shadows,",
+    },
+    { start: 118000, end: 121000, text: "You’ve been here all along—" },
+    { start: 123000, end: 124000, text: "Somewhere in our hearts," },
+    { start: 124000, end: 128000, text: "Magdalene and your songs belong." },
 
     // Outro
-    { start: 131000, end: 135000, text: { en: "Somewhere… Still singing in the dark.", it: "Da qualche parte… Ancora cantando nel buio." } },
-    { start: 138000, end: 143000, text: { en: "Somewhere… You’re cradled in our hearts.", it: "Da qualche parte… Sei cullata nei nostri cuori." } },
-    { start: 144000, end: 146000, text: { en: "No goodbye…", it: "Nessun addio…" } },
-    { start: 146000, end: 149000, text: { en: "Just a song that lingers on.", it: "Solo una canzone che rimane." } },
-    { start: 151000, end: 153000, text: { en: "Somewhere in our hearts,", it: "Da qualche parte nei nostri cuori," } },
-    { start: 153000, end: 157000, text: { en: "Magdalene and your songs… belong.", it: "Magdalene e le tue canzoni… appartengono qui." } },
-    { start: 166000, end: 167000, text: { en: "Along", it: "Insieme" } },
-    { start: 203000, end: 206000, text: { en: "Somewhere in our hearts you're breathing", it: "Da qualche parte nei nostri cuori stai respirando" } },
-    { start: 206000, end: 209000, text: { en: "With songs you left behind", it: "Con le canzoni che hai lasciato" } },
-    { start: 210000, end: 213000, text: { en: "Every note a kind of healing", it: "Ogni nota una sorta di guarigione" } },
-    { start: 213000, end: 216000, text: { en: "Playing softly through our minds", it: "Che suona dolcemente nelle nostre menti" } },
-    { start: 217000, end: 220000, text: { en: "Though the silence now surrounds us", it: "Anche se ora il silenzio ci circonda" } },
-    { start: 220000, end: 223000, text: { en: "Your light hums through every part", it: "La tua luce vibra in ogni parte" } },
-    { start: 224000, end: 227000, text: { en: "Like a prayer we keep repeating", it: "Come una preghiera che continuiamo a ripetere" } },
-    { start: 227000, end: 230000, text: { en: "You belong inside our hearts", it: "Tu appartieni ai nostri cuori" } },
-    { start: 231000, end: 234000, text: { en: "And when the world forgets to listen", it: "E quando il mondo dimentica di ascoltare" } },
-    { start: 234000, end: 236000, text: { en: "We still hear you", it: "Ti sentiamo ancora" } },
+    {
+      start: 131000,
+      end: 135000,
+      text: "Somewhere… Still singing in the dark.",
+    },
+    {
+      start: 138000,
+      end: 143000,
+      text: "Somewhere… You’re cradled in our hearts.",
+    },
+    { start: 144000, end: 146000, text: "No goodbye…" },
+    { start: 146000, end: 149000, text: "Just a song that lingers on." },
+    { start: 151000, end: 153000, text: "Somewhere in our hearts," },
+    { start: 153000, end: 157000, text: "Magdalene and your songs… belong." },
+    {
+      start: 166000,
+      end: 167000,
+      text: "Along",
+    },
+    {
+      start: 203000,
+      end: 206000,
+      text: "Somewhere in our hearts you're breathing",
+    },
+    {
+      start: 206000,
+      end: 209000,
+      text: "With songs you left behind",
+    },
+    {
+      start: 210000,
+      end: 213000,
+      text: "Every note a kind of healing",
+    },
+    {
+      start: 213000,
+      end: 216000,
+      text: "Playing softly through our minds",
+    },
+    {
+      start: 217000,
+      end: 220000,
+      text: "Though the silence now surrounds us",
+    },
+    {
+      start: 220000,
+      end: 223000,
+      text: "Your light hums through every part",
+    },
+    {
+      start: 224000,
+      end: 227000,
+      text: "Like a prayer we keep repeating",
+    },
+    {
+      start: 227000,
+      end: 230000,
+      text: "You belong inside our hearts",
+    },
+    {
+      start: 231000,
+      end: 234000,
+      text: "And when the world forgets to listen",
+    },
+    {
+      start: 234000,
+      end: 236000,
+      text: "We still hear you",
+    },
   ];
   return subtitles;
 }

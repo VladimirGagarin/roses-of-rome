@@ -91,7 +91,14 @@ export default function PlaylistScreen() {
     }
   }, [showSurprise]);
 
-
+  // a logic to change bgImg  in every showSurprise change
+ useEffect(() => {
+   if (showSurprise) {
+     // Pick a random background
+     const randomIndex = Math.floor(Math.random() * bgsImg.length);
+     setCurrentImg(randomIndex);
+   }
+ }, [showSurprise, bgsImg]);
 
 
   const handleShareClick = (song, event) => {
@@ -232,9 +239,9 @@ export default function PlaylistScreen() {
     setShowSurprise(true);
     setLyricsArray(song.songLyrics);
 
-    // Change background every new song
-    const randomIndex = Math.floor(Math.random() * bgsImg.length);
-    setCurrentImg(randomIndex);
+    // // Change background every new song
+    // const randomIndex = Math.floor(Math.random() * bgsImg.length);
+    // setCurrentImg(randomIndex);
   };
 
   const handleShareSong = async (song) => {

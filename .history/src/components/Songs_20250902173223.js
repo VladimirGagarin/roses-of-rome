@@ -66,9 +66,7 @@ import {
   BoomerangAirwaveLyrics,
   CongratsLyrics,
   BoomerangFemaleLyrics,
-  BoomerangITLyrics,
-  softAnthemLyrics,
-  SomewhereFemLy
+  BoomerangITLyrics
 } from "./SongData";
 
 // utils/songUUIDs.js
@@ -477,7 +475,7 @@ export function RosesOfRomeSongs() {
         en: "Somewhere",
         it: "Da Qualche Parte"
       },
-      songLyrics: SomewhereFemLy(),
+      songLyrics: [],
       songAlbum: "SWM",
     },
     

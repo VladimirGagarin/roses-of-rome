@@ -91,8 +91,8 @@ export default function PlaylistScreen() {
     }
   }, [showSurprise]);
 
-
-
+  // change bgImg per song instead
+  
 
   const handleShareClick = (song, event) => {
     setCurrentSongForShare(song);
@@ -231,10 +231,6 @@ export default function PlaylistScreen() {
     setSurpriseSong(song.songFile);
     setShowSurprise(true);
     setLyricsArray(song.songLyrics);
-
-    // Change background every new song
-    const randomIndex = Math.floor(Math.random() * bgsImg.length);
-    setCurrentImg(randomIndex);
   };
 
   const handleShareSong = async (song) => {

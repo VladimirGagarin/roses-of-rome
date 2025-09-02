@@ -67,8 +67,7 @@ import {
   CongratsLyrics,
   BoomerangFemaleLyrics,
   BoomerangITLyrics,
-  softAnthemLyrics,
-  SomewhereFemLy
+  softAnthemLyrics
 } from "./SongData";
 
 // utils/songUUIDs.js
