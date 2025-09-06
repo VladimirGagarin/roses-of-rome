@@ -1,0 +1,12403 @@
+
+
+export function getLifeLyrics() {
+    const t = [
+      { start: 13120, end: 16120, text: "a whisper wakes the morning mist" },
+      { start: 16120, end: 19200, text: "a dream stirs deep inside" },
+      {
+        start: 19200,
+        end: 22520,
+        text: "through shadowed woods and golden light",
+      },
+      { start: 22520, end: 25420, text: "a heart finds room to glide" },
+      { start: 25640, end: 31340, text: "with every breath the story spins" },
+      { start: 32040, end: 33640, text: "with every step" },
+      { start: 33640, end: 36460, text: "a chance to give" },
+      { start: 38120, end: 40560, text: "through mist and flame" },
+      { start: 40560, end: 43420, text: "she finds her name" },
+      { start: 44600, end: 50020, text: "a life a life to live" },
+      { start: 53480, end: 55980, text: "a life to live" },
+      { start: 56640, end: 59220, text: "a song to share" },
+      { start: 60040, end: 65660, text: "a hopeful flame upon the air" },
+      {
+        start: 66200,
+        end: 72100,
+        text: "through trials deep through stars above",
+      },
+      { start: 73720, end: 78700, text: "magdalene shines strength and love" },
+      {
+        start: 79e3,
+        end: 84900,
+        text: "through midnight sky rising morning sun",
+      },
+      { start: 85480, end: 91300, text: "a heart can rise when days begun" },
+      { start: 91840, end: 94180, text: "a life to live" },
+      { start: 95040, end: 97660, text: "a chance to give" },
+      { start: 98520, end: 100280, text: "through it all" },
+      {
+        start: 100280,
+        end: 108200,
+        text: "she shines she shines through mist",
+      },
+      { start: 108200, end: 112660, text: "and midnight light will rise" },
+      { start: 113360, end: 117300, text: "through pain a dream can grow" },
+      { start: 119760, end: 122960, text: "a life to live" },
+      { start: 122960, end: 125580, text: "with open eyes" },
+      { start: 126440, end: 131260, text: "a seed that blooms and shows" },
+      { start: 143320, end: 145420, text: "a life to live" },
+      { start: 146240, end: 149180, text: "a dance a prayer" },
+      { start: 149480, end: 152220, text: "a voice that live" },
+        { start: 152640, end: 155780, text: "beyond despair" },
+      { start: 155800, end: 158460, text: "through mist and flame" },
+      { start: 159e3, end: 162140, text: "through dark and dawn" },
+      { start: 163320, end: 165560, text: "magdalene shines" },
+      { start: 165560, end: 169700, text: "she carries on on" },
+      { start: 175e3, end: 177620, text: "a life to live" },
+      { start: 178240, end: 181300, text: "a dance of prayer" },
+      { start: 181440, end: 184680, text: "a voice that lives" },
+      { start: 184680, end: 187380, text: "beyond despair" },
+      { start: 187800, end: 190420, text: "a mist and flame" },
+      { start: 191e3, end: 194140, text: "through dark and dawn" },
+      { start: 195360, end: 198240, text: "magdalene shines" },
+      { start: 198240, end: 200900, text: "she carries on" },
+    ];
+
+    return t
+}
+
+export function beginningLyrics() {
+    const t = [
+      {
+        start: 15320,
+        end: 18560,
+        text: "it all started with a breath of light",
+      },
+      {
+        start: 18560,
+        end: 21720,
+        text: "a new page written in the stars that night",
+      },
+      { start: 21720, end: 25e3, text: "a new chapter born in hush and flame" },
+      { start: 25e3, end: 27780, text: "a new verse whispered with her name" },
+      {
+        start: 28040,
+        end: 31280,
+        text: "a new thread of life from heaven's fun",
+      },
+      { start: 31280, end: 34400, text: "a new dawn rising before the sun" },
+      {
+        start: 34400,
+        end: 38e3,
+        text: "a new songs starts with hearts of joy",
+      },
+      { start: 38e3, end: 41700, text: "magdalene a noble child of glory" },
+      { start: 41720, end: 43580, text: "the beginning" },
+      { start: 47120, end: 50360, text: "of a love the world has never known" },
+      {
+        start: 50360,
+        end: 53560,
+        text: "of a grace that blooms from flesh and bone",
+      },
+      { start: 53560, end: 56680, text: "of a hope that rose on quiet wings" },
+      {
+        start: 56680,
+        end: 60400,
+        text: "of a joy that crowns all earthly things",
+      },
+      { start: 60400, end: 64900, text: "magdalene you are the beginning" },
+      { start: 66760, end: 68040, text: "the bells were soft" },
+      {
+        start: 68040,
+        end: 72540,
+        text: "the moon was kind as angels lined the skies",
+      },
+      { start: 72720, end: 75880, text: "the flowers lean to catch her name" },
+      { start: 75880, end: 78300, text: "and kissed her lullabies" },
+      { start: 79080, end: 81840, text: "the wind that used to wander" },
+      { start: 81840, end: 85260, text: "lost now dances where she lay" },
+      { start: 85280, end: 88680, text: "and every mother's aching dream" },
+      { start: 88680, end: 91500, text: "began to find its way" },
+      { start: 92600, end: 94300, text: "the beginning" },
+      {
+        start: 94840,
+        end: 98040,
+        text: "of a  love the world has never known",
+      },
+      {
+        start: 98040,
+        end: 101280,
+        text: "of a grace that blooms from flesh and bone",
+      },
+      {
+        start: 101280,
+        end: 104360,
+        text: "of a hope that rose on quiet wings",
+      },
+      {
+        start: 104360,
+        end: 107920,
+        text: "of a  joy that crowns all earthly things",
+      },
+      { start: 107920, end: 112460, text: "Magdalene you are the beginning" },
+      {
+        start: 113840,
+        end: 117020,
+        text: "they waited long they wandered far",
+      },
+      { start: 117160, end: 120100, text: "for the rising of her star" },
+      { start: 120240, end: 123660, text: "but in the cradle of the night" },
+      {
+        start: 123760,
+        end: 127020,
+        text: "she came and made all things right",
+      },
+      { start: 129160, end: 130860, text: "the beginning" },
+      { start: 131400, end: 134680, text: "of forever isn't soft and true" },
+      { start: 134680, end: 137840, text: "of forever kissed by morning dew" },
+      { start: 137840, end: 141e3, text: "of forever where the stars align" },
+      { start: 141e3, end: 144640, text: "of forever touched by hands divine" },
+      { start: 144640, end: 148340, text: "magdalene you are the beginning" },
+      { start: 150080, end: 151540, text: "forever" },
+      { start: 152480, end: 155340, text: "you are the beginning" },
+    ];
+
+    return t
+}
+
+export function IamMegLyrics() {
+  const lyrics = [
+    { start: 0, end: 4140, text: "We all have names," },
+    { start: 4880, end: 8580, text: "names that carry hope" },
+    { start: 8580, end: 13000, text: "Names that breathe out peace" },
+    { start: 13000, end: 17140, text: "And I was meant to be Magdalene" },
+    { start: 18759, end: 22020, text: "We all have songs," },
+    { start: 22120, end: 26300, text: "songs that heal the night" },
+    { start: 27520, end: 32380, text: "Songs that light the dawn And I was" },
+    { start: 32380, end: 35020, text: "meant to sing Magdalene" },
+    { start: 36780, end: 40920, text: "The moment we know our names" },
+    { start: 40920, end: 45280, text: "Is the moment our fire ignites" },
+    { start: 45280, end: 50140, text: "A spark within becomes a flame And in that" },
+    { start: 50140, end: 52880, text: "glow we rise to light" },
+    { start: 54620, end: 59000, text: "The moment we know our names" },
+    { start: 59000, end: 63200, text: "Is the moment our fire ignites" },
+    { start: 63200, end: 67580, text: "A spark within becomes a flame" },
+    { start: 67580, end: 72380, text: "And in that glow we rise to light" },
+    { start: 73440, end: 78260, text: "Magdalene is not just a name It's a light full of joy" },
+    { start: 78260, end: 83080, text: "and flame It is a story carved in grace A" },
+    { start: 83080, end: 87880, text: "journey time cannot erase It is magic full of wonders A" },
+    { start: 87880, end: 92880, text: "song that sings and never slumbers It is a song" },
+    { start: 92880, end: 97860, text: "that sets me free It is Magdalene" },
+    { start: 97860, end: 102720, text: "I was meant to be We all" },
+    { start: 102720, end: 107320, text: "have scars Marks that teach" },
+    { start: 107320, end: 111620, text: "us grace Maps of where" },
+    { start: 111620, end: 115700, text: "we've been And I was meant to bear the" },
+    { start: 115700, end: 120640, text: "Magdalene Call me by" },
+    { start: 120640, end: 125460, text: "the wind Call me through the" },
+    { start: 125460, end: 130060, text: "flame Every hidden amber" },
+    { start: 130060, end: 134660, text: "rises When you speak my name" },
+    { start: 135700, end: 140460, text: "Magdalene is not just a name It's a light full of joy" },
+    { start: 140460, end: 145380, text: "and flame It is a story carved in grace It is a story carved in grace A" },
+    { start: 145380, end: 150100, text: "journey time cannot erase It is magic full of wonders A" },
+    { start: 150100, end: 155080, text: "soul that sings and never slumbers It is a song" },
+    { start: 155080, end: 160020, text: "that sets me free It is Magdalene" },
+    { start: 160020, end: 161920, text: "I was meant to be" },
+    { start: 165440, end: 168520, text: "Call me by the wind" },
+    { start: 169880, end: 173400, text: "Call me through the flame" },
+    { start: 173400, end: 178380, text: "Every hidden amber rises When you speak" },
+    { start: 178380, end: 183360, text: "my name Magdalene is not just a name It's" },
+    { start: 183360, end: 187880, text: "a light full of joy and flame It is a" },
+    { start: 187880, end: 192780, text: "story carved in grace A journey time cannot erase It is magic" },
+    { start: 192780, end: 197480, text: "full of wonders A soul that sings and never slumbers" },
+    { start: 197480, end: 201540, text: "It is a song that sets me free" },
+  ];
+  return lyrics;
+}
+
+
+export function fightSongLyrics () {
+  const lyrics = [
+    {
+      start: 0,
+      end: 14000,
+      text: "Like a small bird in the sky Flying through the thunder's cry",
+    },
+    {
+      start: 14000,
+      end: 18000,
+      text: "Like how a single word can shake the silence deeply heard.",
+    },
+    {
+      start: 18000,
+      end: 23000,
+      text: "I might have only small wings, But I was made for mighty things.",
+    },
+    {
+      start: 24000,
+      end: 31000,
+      text: "They called me lost, they called me wrong But in my soul, I held",
+    },
+    {
+      start: 31000,
+      end: 36000,
+      text: "a song And now the fire inside me grows— It's time the world finally knows",
+    },
+    {
+      start: 36000,
+      end: 44000,
+      text: "This time  this is my rise song, Magdalene’s voice, forever strong.",
+    },
+    {
+      start: 44000,
+      end: 49000,
+      text: "I won’t fade in the shadows, I was born for more than sorrow.",
+    },
+    {
+      start: 50000,
+      end: 55000,
+      text: "I’ll stand tall, where I belong— This time, this is my fight song.",
+    },
+    {
+      start: 63000,
+      end: 68000,
+      text: "They judged my name, and I walked alone, Felt like a stranger in my own home",
+    },
+    {
+      start: 68000,
+      end: 72000,
+      text: "Too far gone, they said I lost my way— But I held on when I couldn't pray",
+    },
+    {
+      start: 72000,
+      end: 77000,
+      text: "It's been one night but I still breathe There's a hope burning deep in me",
+    },
+    {
+      start: 78000,
+      end: 83000,
+      text: "I still believe, oh I still believe They called me lost, they called me wrong",
+    },
+    {
+      start: 83000,
+      end: 88000,
+      text: "But in my soul, I held a song and now the fire inside me grows—",
+    },
+    {
+      start: 88000,
+      end: 94000,
+      text: "It's time the world finally knows This time, this is my rise song",
+    },
+    {
+      start: 94000,
+      end: 101000,
+      text: "Magdalene’s voice, forever strong. I won’t fade in the shadows",
+    },
+    {
+      start: 102000,
+      end: 107000,
+      text: "I was born for more than sorrow  I’ll stand tall, where I belong—",
+    },
+    { start: 107000, end: 110000, text: "This time, this is my fight song." },
+    {
+      start: 117000,
+      end: 125000,
+      text: "They judged my name, and I walked alone, Felt like a stranger in my own home",
+    },
+    {
+      start: 126000,
+      end: 131000,
+      text: "Too far gone they said I lost my way But I held on when I couldn’t pray",
+    },
+    {
+      start: 131000,
+      end: 136000,
+      text: "It’s been long nights, but I still breathe, There's a hope burning deep in me.",
+    },
+    {
+      start: 136000,
+      end: 142000,
+      text: "I still believe, oh I still believe They called me lost, they called me wrong",
+    },
+    {
+      start: 142000,
+      end: 147000,
+      text: "But in my soul, I held a song And now the fire inside me grows—",
+    },
+    {
+      start: 147000,
+      end: 153000,
+      text: "It's time the world finally knows This time, this is my rise song",
+    },
+    {
+      start: 154000,
+      end: 160000,
+      text: "Call my name — I'm Magdalene strong. No more hiding in the shadows,",
+    },
+    {
+      start: 160000,
+      end: 165000,
+      text: "I was born for more than sorrows Watch me soar, I’ve come so long—",
+    },
+    { start: 165000, end: 168000, text: "This time this is my fight song" },
+    { start: 183000, end: 185000, text: "You" },
+  ];
+  return lyrics
+}
+
+
+export function swmLyrics() {
+  const lyrics = [
+    {
+      "start": 10820,
+      "end": 15300,
+      "text": "When your heart feels weak and"
+    },
+    {
+      "start": 15300,
+      "end": 20140,
+      "text": "worn When your soul feels"
+    },
+    {
+      "start": 20140,
+      "end": 24680,
+      "text": "lost forlorn When your"
+    },
+    {
+      "start": 24680,
+      "end": 28120,
+      "text": "day is dim with rain"
+    },
+    {
+      "start": 28120,
+      "end": 32900,
+      "text": "When your time is wrapped"
+    },
+    {
+      "start": 32900,
+      "end": 37180,
+      "text": "in pain Magdalene"
+    },
+    {
+      "start": 37180,
+      "end": 40520,
+      "text": "will take your hand"
+    },
+    {
+      "start": 40520,
+      "end": 45120,
+      "text": "Guide you through the quiet"
+    },
+    {
+      "start": 45120,
+      "end": 49180,
+      "text": "land Sing with Magdalene,"
+    },
+    {
+      "start": 50020,
+      "end": 54700,
+      "text": "don't be afraid In her"
+    },
+    {
+      "start": 54700,
+      "end": 58040,
+      "text": "voice your fear will fade"
+    },
+    {
+      "start": 58800,
+      "end": 63220,
+      "text": "In her voice the silence"
+    },
+    {
+      "start": 63220,
+      "end": 67960,
+      "text": "sings In her voice your"
+    },
+    {
+      "start": 67960,
+      "end": 71880,
+      "text": "spirit clings Sing with"
+    },
+    {
+      "start": 71880,
+      "end": 76120,
+      "text": "Magdalene, it's a moment of light"
+    },
+    {
+      "start": 76640,
+      "end": 81260,
+      "text": "Sing with Magdalene, joy transcending"
+    },
+    {
+      "start": 81260,
+      "end": 85980,
+      "text": "night Songs have light, no"
+    },
+    {
+      "start": 85980,
+      "end": 90500,
+      "text": "dark can hide Songs carry"
+    },
+    {
+      "start": 90500,
+      "end": 93940,
+      "text": "truth, the soul can't divide"
+    },
+    {
+      "start": 93940,
+      "end": 98060,
+      "text": "Songs will rise where"
+    },
+    {
+      "start": 98060,
+      "end": 103040,
+      "text": "hope has flown And that's when singing"
+    },
+    {
+      "start": 103040,
+      "end": 107900,
+      "text": "with Magdalene  you're not alone Sing with"
+    },
+    {
+      "start": 107900,
+      "end": 112280,
+      "text": "Magdalene, don't be afraid"
+    },
+    {
+      "start": 112280,
+      "end": 116820,
+      "text": "In her voice your fear"
+    },
+    {
+      "start": 116820,
+      "end": 121480,
+      "text": "will fade In her voice"
+    },
+    {
+      "start": 121480,
+      "end": 126280,
+      "text": "the silence sings In"
+    },
+    {
+      "start": 126280,
+      "end": 129820,
+      "text": "her voice your spirit clears"
+    },
+    {
+      "start": 130380,
+      "end": 135260,
+      "text": "Sing with Magdalene, it's a moment of"
+    },
+    {
+      "start": 135260,
+      "end": 139820,
+      "text": "light Sing with Magdalene, joy"
+    },
+    {
+      "start": 139820,
+      "end": 142080,
+      "text": "transcending night"
+    },
+    {
+      "start": 145100,
+      "end": 148780,
+      "text": "Sing with Magdalene,"
+    },
+    {
+      "start": 149960,
+      "end": 154940,
+      "text": "sing with Magdalene Sing with Magdalene,"
+    },
+    {
+      "start": 155060,
+      "end": 159680,
+      "text": "don't be afraid In her"
+    },
+    {
+      "start": 159680,
+      "end": 162920,
+      "text": "voice your fear will fade"
+    },
+    {
+      "start": 174820,
+      "end": 179800,
+      "text": "Sing with Magdalene, it's a moment"
+    },
+    {
+      "start": 179800,
+      "end": 184760,
+      "text": "of light Sing with Magdalene, joy"
+    },
+    {
+      "start": 184760,
+      "end": 187560,
+      "text": "transcending night"
+    },
+    {
+      "start": 190480,
+      "end": 194540,
+      "text": "Sing with Magdalene, it's a moment of light Joy"
+    },
+    {
+      "start": 194540,
+      "end": 198040,
+      "text": "transcending night, joy"
+    },
+    {
+      "start": 198040,
+      "end": 208820,
+      "text": "transcending"
+    },
+    {
+      "start": 208820,
+      "end": 212960,
+      "text": "night Sing with Magdalene, sing"
+    },
+    {
+      "start": 212960,
+      "end": 214500,
+      "text": "with Magdalene Sing with Magdalene, sing with Magdalene Thank you."
+    }
+  ];
+
+  return lyrics
+}
+
+export function butterflyLyrics() {
+  const lyrics = [
+    {
+      start: 79,
+      end: 4199,
+      text: "(soft music)",
+    },
+    {
+      start: 6420,
+      end: 11220,
+      text: "The colors of sky wake up a flower field. A beauty so deep it",
+    },
+    {
+      start: 11239,
+      end: 16079,
+      text: "cannot be concealed. Through petals and breeze, a whisper sings.",
+    },
+    {
+      start: 16199,
+      end: 21159,
+      text: "Like secrets sewn on butterfly wings. Each step you take,",
+    },
+    {
+      start: 21180,
+      end: 26139,
+      text: "the daylight sighs. Magdalene, written in the skies.",
+    },
+    {
+      start: 26139,
+      end: 31079,
+      text: "I follow the wind where your spirit clings. Drawn to the hush of",
+    },
+    {
+      start: 31099,
+      end: 35860,
+      text: "unfolding wings. A voice unseen yet always near.",
+    },
+    {
+      start: 36259,
+      end: 41080,
+      text: "It leads me through, it brings me here. A scribbled sonnet",
+    },
+    {
+      start: 41159,
+      end: 46080,
+      text: "on butterfly wings. Magdalene, you bloom where silence sings.",
+    },
+    {
+      start: 46579,
+      end: 51139,
+      text: "A scribbled sonnet on butterfly wings. Magdalene, you drift where",
+    },
+    {
+      start: 51219,
+      end: 55999,
+      text: "no one clings. A scribbled sonnet on butterfly wings.",
+    },
+    {
+      start: 56119,
+      end: 61099,
+      text: "Magdalene, you live in secret things. Only butterflies will",
+    },
+    {
+      start: 61159,
+      end: 63880,
+      text: "understand this Magdalene.",
+    },
+    {
+      start: 65979,
+      end: 70639,
+      text: "When colors fade into softer hues. When words fall short",
+    },
+    {
+      start: 70839,
+      end: 75479,
+      text: "of what is true. When songs dissolve in morning light.",
+    },
+    {
+      start: 75580,
+      end: 80239,
+      text: "All will be scribbled in silent flight. On butterfly",
+    },
+    {
+      start: 80319,
+      end: 84419,
+      text: "wings, they'll find what's true. Magdalene, written in the skies.",
+    },
+    {
+      start: 84419,
+      end: 89119,
+      text: "This will all be you. A scribbled sonnet on butterfly wings.",
+    },
+    {
+      start: 89239,
+      end: 94039,
+      text: "Magdalene, you bloom where silence sings. A scribbled sonnet",
+    },
+    {
+      start: 94099,
+      end: 99099,
+      text: "on butterfly wings. Magdalene, you drift where no one clings.",
+    },
+    {
+      start: 99540,
+      end: 104080,
+      text: "A scribbled sonnet on butterfly wings. Magdalene, you live in",
+    },
+    {
+      start: 104119,
+      end: 109080,
+      text: "secret things. Only butterflies will understand this",
+    },
+    {
+      start: 109119,
+      end: 113999,
+      text: "Magdalene. Sonnets have meaning too deep for the",
+    },
+    {
+      start: 114059,
+      end: 117979,
+      text: "page. Sonnets are whispers that outlive the age.",
+    },
+    {
+      start: 118339,
+      end: 123180,
+      text: "Sonnets are prayers the soul softly sings. Sonnets are stars with",
+    },
+    {
+      start: 123180,
+      end: 127419,
+      text: "invisible strings. A sonnet scribbled on",
+    },
+    {
+      start: 127519,
+      end: 130199,
+      text: "butterfly wings. Magdalene.",
+    },
+    {
+      start: 132039,
+      end: 136999,
+      text: "A scribbled sonnet on butterfly wings. Magdalene, you bloom",
+    },
+    {
+      start: 137000,
+      end: 141539,
+      text: "where silence sings. A scribbled sonnet on butterfly",
+    },
+    {
+      start: 141599,
+      end: 146479,
+      text: "wings. Magdalene, you drift where no one clings. A scribbled",
+    },
+    {
+      start: 146539,
+      end: 151220,
+      text: "sonnet on butterfly wings. Magdalene, you live in secret",
+    },
+    {
+      start: 151279,
+      end: 155399,
+      text: "things. Only butterflies will understand this",
+    },
+    {
+      start: 155459,
+      end: 160239,
+      text: "Magdalene. Butterflies color",
+    },
+    {
+      start: 160259,
+      end: 165000,
+      text: "our world in flight. With scribbled sonnets made of light.",
+    },
+    {
+      start: 165580,
+      end: 167059,
+      text: "Magdalene.",
+    },
+    {
+      start: 172360,
+      end: 176959,
+      text: "(air whooshing) When colors of",
+    },
+    {
+      start: 177019,
+      end: 181679,
+      text: "sky wake up the flower field. A beauty so deep it cannot be",
+    },
+    {
+      start: 181720,
+      end: 186319,
+      text: "concealed. Through petals and breeze, a whisper sings.",
+    },
+    {
+      start: 186479,
+      end: 189739,
+      text: "Like secrets sewn on butterfly wings.",
+    },
+  ];
+  return lyrics
+}
+
+export function HopeLyrics(){
+   const lyrics = [
+     {
+       start: 5200,
+       end: 9860,
+       text: "When days grow cold, when moments lose their",
+     },
+     {
+       start: 9860,
+       end: 14640,
+       text: "spark When despair surrounds the heart",
+     },
+     {
+       start: 14640,
+       end: 19480,
+       text: "A little light begins to gleam",
+     },
+     {
+       start: 19480,
+       end: 22260,
+       text: "A chance to redream",
+     },
+     {
+       start: 25600,
+       end: 30300,
+       text: "Just before the morning light When the soul",
+     },
+     {
+       start: 30300,
+       end: 35220,
+       text: "still clings to night A whisper dares to softly sing There's still",
+     },
+     {
+       start: 35220,
+       end: 39940,
+       text: "hope in everything Magdalene once said",
+     },
+     {
+       start: 39940,
+       end: 44560,
+       text: "Hope is a chance to redream Hope is the",
+     },
+     {
+       start: 44560,
+       end: 49560,
+       text: "aurora of golden days Hope is the",
+     },
+     {
+       start: 49560,
+       end: 54300,
+       text: "first breath when despair has gone Let your hope",
+     },
+     {
+       start: 54300,
+       end: 59000,
+       text: "become the finest dream You've ever dared",
+     },
+     {
+       start: 62500,
+       end: 64620,
+       text: "Ever dared",
+     },
+     {
+       start: 69240,
+       end: 73860,
+       text: "When tears have dried And silence fills the",
+     },
+     {
+       start: 73860,
+       end: 78360,
+       text: "room When the night has lingered far too long",
+     },
+     {
+       start: 78880,
+       end: 83520,
+       text: "Even then, within the gloom",
+     },
+     {
+       start: 83520,
+       end: 87640,
+       text: "A voice will hum a healing tune",
+     },
+     {
+       start: 89759,
+       end: 94560,
+       text: "Magdalene once said Hope is a chance to",
+     },
+     {
+       start: 94560,
+       end: 98480,
+       text: "redream Hope is the aurora of golden",
+     },
+     {
+       start: 98480,
+       end: 102920,
+       text: "days Hope is the first breath when",
+     },
+     {
+       start: 102920,
+       end: 107200,
+       text: "despair has gone Let your hope become the",
+     },
+     {
+       start: 107200,
+       end: 111900,
+       text: "finest dream You've ever dared Little",
+     },
+     {
+       start: 111900,
+       end: 116480,
+       text: "wings hope to fly Little legs hope to walk",
+     },
+     {
+       start: 116480,
+       end: 120720,
+       text: "Little arms hope to carry love Little hearts hope to spark",
+     },
+     {
+       start: 122060,
+       end: 127000,
+       text: "Magdalene's little prayer Hope's to intercede your heart With",
+     },
+     {
+       start: 127000,
+       end: 130979,
+       text: "little hope,  we redream The greatest things will ever",
+     },
+     {
+       start: 130979,
+       end: 135600,
+       text: "start Magdalene once said Hope",
+     },
+     {
+       start: 135600,
+       end: 140280,
+       text: "is a chance to redream Hope is the aurora of",
+     },
+     {
+       start: 140280,
+       end: 145220,
+       text: "golden days Hope is the first breath",
+     },
+     {
+       start: 145220,
+       end: 149840,
+       text: "when despair has gone Let your hope become the",
+     },
+     {
+       start: 149840,
+       end: 154480,
+       text: "finest dream You've ever dared So",
+     },
+     {
+       start: 154480,
+       end: 158220,
+       text: "hold to hope Though small it seems",
+     },
+     {
+       start: 158220,
+       end: 162840,
+       text: "Through little prayers We birth great dreams",
+     },
+   ];
+
+  return lyrics;
+}
+
+
+export function DreamLyrics() {
+  const subtitles = [
+    {
+      start: 579,
+      end: 4799,
+      text: "In the quiet hours, whispers of dreams take",
+    },
+    {
+      start: 4880,
+      end: 9019,
+      text: "flight. Gliding past the doubts that linger in the night.",
+    },
+    {
+      start: 15539,
+      end: 19719,
+      text: "Moments won't take a chance to wait, but hopes",
+    },
+    {
+      start: 19760,
+      end: 24380,
+      text: "arise when hearts create, and joy becomes the dawn we hesitate.",
+    },
+    { start: 24479, end: 27739, text: "dawn we hesitate." },
+    {
+      start: 29920,
+      end: 33500,
+      text: "A promise is cradled in the corridors of the heart.",
+    },
+    {
+      start: 33599,
+      end: 38040,
+      text: "A dream is scribbled on the pages torn apart.",
+    },
+    {
+      start: 44259,
+      end: 48899,
+      text: "A crescendo rises from ashes of despair, stillness",
+    },
+    {
+      start: 48979,
+      end: 53500,
+      text: "trembles with something rare. Dreams vibrate in vibrant colors.",
+    },
+    { start: 53579, end: 57200, text: "vibrant colors." },
+    {
+      start: 58719,
+      end: 63499,
+      text: "Dreams paint in hues the stars remember.",
+    },
+    {
+      start: 63539,
+      end: 68120,
+      text: "Dreams glow in sacred silence. Dreams drift where",
+    },
+    { start: 68139, end: 71039, text: "hope has ever been." },
+    { start: 71319, end: 78219, text: "A crescendo of dreams, Magdalene." },
+    {
+      start: 80799,
+      end: 85719,
+      text: "In vast-length dreams, reach beyond the sea.",
+    },
+    {
+      start: 88159,
+      end: 92979,
+      text: "Skies hold stories in trembling light.",
+    },
+    {
+      start: 95459,
+      end: 99979,
+      text: "Stardust gathers like prayers in motion, each step a hymn,",
+    },
+    {
+      start: 99979,
+      end: 104179,
+      text: "each heart an ocean. A crescendo of dreams, Magdalene.",
+    },
+    {
+      start: 109639,
+      end: 114419,
+      text: "Dreams vibrate in vibrant colors, dreams",
+    },
+    { start: 114500, end: 118379, text: "paint in hues the stars remember." },
+    {
+      start: 120559,
+      end: 125399,
+      text: "Dreams glow in sacred silence, dreams drift where",
+    },
+    {
+      start: 125419,
+      end: 129639,
+      text: "hope has ever been, a crescendo of dreams, Magdalene.",
+    },
+    {
+      start: 135339,
+      end: 139900,
+      text: "Carrying pieces of who we're meant to be, they lead where",
+    },
+    {
+      start: 139959,
+      end: 144439,
+      text: "fear and wonder meet, a destiny shaped in sacred design.",
+    },
+    { start: 144479, end: 147279, text: "sacred design." },
+    {
+      start: 152960,
+      end: 157460,
+      text: "Dreams vibrate in vibrant colors, dreams",
+    },
+    { start: 157479, end: 161379, text: "paint in hues the stars remember." },
+    {
+      start: 161400,
+      end: 165200,
+      text: "Dreams glow in sacred silence, dreams drift where",
+    },
+    {
+      start: 165220,
+      end: 169000,
+      text: "hope has ever been, a crescendo of dreams, Magdalene.",
+    },
+    {
+      start: 171000,
+      end: 175400,
+      text: "Dreams are the music that time cannot still, each crescendo",
+    },
+    { start: 175500, end: 177160, text: "whispers the name" },
+    { start: 178000, end: 191400, text: "Magdalene." },
+  ];
+  return subtitles;
+}
+
+export function DreamLyrics2() {
+  const lyrics = [
+    { start: 99, end: 14599, text: "(music)" },
+    {
+      start: 14599,
+      end: 18919,
+      text: "In the quiet hours, whispers of dreams take flight.",
+    },
+    {
+      start: 21699,
+      end: 25780,
+      text: "Gliding past the doubts that linger in the night.",
+    },
+    {
+      start: 28279,
+      end: 33200,
+      text: "The moments won't take chance to wait, but hopes arise when",
+    },
+    {
+      start: 33219,
+      end: 37299,
+      text: "hearts create, and joy becomes the dawn we",
+    },
+    { start: 37380, end: 42220, text: "hesitate. The promise is cradled" },
+    {
+      start: 42239,
+      end: 46819,
+      text: "in the corridors of the heart. A dream is scribbled on the pages torn",
+    },
+    {
+      start: 46840,
+      end: 51079,
+      text: "apart. A crescendo rises from ashes of",
+    },
+    { start: 51159, end: 55619, text: "despair, and stillness" },
+    {
+      start: 55699,
+      end: 60020,
+      text: "trembles with something rare. Dreams vibrate in",
+    },
+    {
+      start: 60099,
+      end: 64799,
+      text: "vibrant colors. Dreams paint in hues the stars remember.",
+    },
+    {
+      start: 65059,
+      end: 69879,
+      text: "Dreams glow in sacred silence. Dreams drift where",
+    },
+    {
+      start: 69919,
+      end: 74519,
+      text: "hope has ever been. A crescendo of dreams,",
+    },
+    { start: 74519, end: 75960, text: "Magdalene." },
+    {
+      start: 81259,
+      end: 85779,
+      text: "In vast length, dreams reach beyond the scene. Skies hold",
+    },
+    {
+      start: 85839,
+      end: 90679,
+      text: "stories in trembling light. Stardust gathers like prayers in",
+    },
+    {
+      start: 90739,
+      end: 95459,
+      text: "motion, each step a hymn, each heart an ocean. A",
+    },
+    {
+      start: 95479,
+      end: 100040,
+      text: "crescendo of dreams, Magdalene. Dreams vibrate in",
+    },
+    {
+      start: 100099,
+      end: 104839,
+      text: "vibrant colors. Dreams paint in hues the stars remember.",
+    },
+    {
+      start: 105059,
+      end: 109859,
+      text: "Dreams glow in sacred silence. Dreams drift where",
+    },
+    {
+      start: 109919,
+      end: 114500,
+      text: "hope has ever been. A crescendo of dreams,",
+    },
+    { start: 114519, end: 115559, text: "Magdalene." },
+    {
+      start: 120079,
+      end: 124859,
+      text: "Carrying pieces of who we're meant to be, they",
+    },
+    {
+      start: 124899,
+      end: 129758,
+      text: "lead where fear and wonder meet. A destiny shaped in",
+    },
+    { start: 129878, end: 134159, text: "sacred design. Dreams" },
+    {
+      start: 134239,
+      end: 138839,
+      text: "vibrate in vibrant colors. Dreams paint in hues the stars",
+    },
+    {
+      start: 138860,
+      end: 143199,
+      text: "remember. Dreams glow in sacred silence.",
+    },
+    {
+      start: 143399,
+      end: 147959,
+      text: "Dreams drift where hope has ever been. A",
+    },
+    {
+      start: 147979,
+      end: 152979,
+      text: "crescendo of dreams, Magdalene. Dreams are the music that time cannot still,",
+    },
+    {
+      start: 153019,
+      end: 157199,
+      text: "each crescendo whispers her name, Magdalene.",
+    },
+    { start: 165039, end: 174699, text: "(music)" },
+    {
+      start: 174699,
+      end: 179540,
+      text: "Vibrate in vibrant colors. Dreams paint in hues the stars",
+    },
+    {
+      start: 179580,
+      end: 183860,
+      text: "remember. Dreams glow in sacred silence.",
+    },
+    {
+      start: 184099,
+      end: 188679,
+      text: "Dreams drift where hope has ever been. A",
+    },
+    { start: 188699, end: 190752, text: "crescendo of dreams, Magdalene." },
+  ];
+  return lyrics;
+}
+
+export function SimplicityLyrics() {
+  const lyrics = [
+    { start: 79, end: 5079, text: "(instrumental music plays) In the" },
+    {
+      start: 5139,
+      end: 8480,
+      text: "unfathomable chaos of the world, randomness dances,",
+    },
+    {
+      start: 8500,
+      end: 13039,
+      text: "patterns swirl. Entropy whispers in every breath, everything and",
+    },
+    {
+      start: 13119,
+      end: 17360,
+      text: "nothing meet in depth, but still simplicity matters.",
+    },
+    {
+      start: 20020,
+      end: 24680,
+      text: "The magic of simplicity is not to flee, but to be still where storms may",
+    },
+    {
+      start: 24760,
+      end: 29439,
+      text: "be. No need for more, no need to see, to fathom",
+    },
+    {
+      start: 29539,
+      end: 34380,
+      text: "simplicity. Ask Magdeline what it is, she",
+    },
+    {
+      start: 34500,
+      end: 39479,
+      text: "is a world of gentle grace. She holds the joy of silent space,",
+    },
+    {
+      start: 40559,
+      end: 45259,
+      text: "to fathom. Seen like the eye can't see, she hums the tune of",
+    },
+    {
+      start: 45319,
+      end: 49299,
+      text: "mystery. She is the best simplicity, still",
+    },
+    {
+      start: 49659,
+      end: 53579,
+      text: "simplicity matters. When things go wrong and break apart,",
+    },
+    {
+      start: 53699,
+      end: 58679,
+      text: "simplicity solves with a quiet heart. When the world is loud and full of fear,",
+    },
+    {
+      start: 58879,
+      end: 62719,
+      text: "simplicity brings what feels most near to understand",
+    },
+    { start: 62959, end: 67699, text: "simplicity. Ask Magdeline what it is," },
+    {
+      start: 67819,
+      end: 72399,
+      text: "she is a world of gentle grace. She holds the joy of silent",
+    },
+    {
+      start: 72459,
+      end: 77059,
+      text: "space, to fathom. Seen like the eye can't",
+    },
+    {
+      start: 77080,
+      end: 81419,
+      text: "see, she hums the tune of mystery. She is the best",
+    },
+    {
+      start: 81419,
+      end: 86339,
+      text: "simplicity, still simplicity matters. Ask",
+    },
+    { start: 86400, end: 91219, text: "Magdeline what it is, she is a world" },
+    { start: 91259, end: 95900, text: "of gentle grace. She holds the" },
+    {
+      start: 95959,
+      end: 100179,
+      text: "joy of silent space. She walks in light the eye can't see.",
+    },
+    {
+      start: 100259,
+      end: 105119,
+      text: "She hums the tune of mystery. She is the best simplicity,",
+    },
+    { start: 105399, end: 107139, text: "still simplicity matters." },
+    {
+      start: 107139,
+      end: 111499,
+      text: "(instrumental music plays) Still simplicity",
+    },
+    {
+      start: 111680,
+      end: 116479,
+      text: "matters. (instrumental music plays) When things",
+    },
+    {
+      start: 116540,
+      end: 121539,
+      text: "go wrong and break apart, simplicity solves with a quiet heart.",
+    },
+    {
+      start: 121540,
+      end: 126120,
+      text: "When the world is loud and full of fear, simplicity brings with fear,",
+    },
+    {
+      start: 126219,
+      end: 131199,
+      text: "Simplicity brings what feels most near. Ask Magdeline what it is,",
+    },
+    {
+      start: 131379,
+      end: 135979,
+      text: "she is a world of gentle grace. She holds the joy of silent",
+    },
+    {
+      start: 136020,
+      end: 140559,
+      text: "space, to fathom. Sen like the eye can't",
+    },
+    {
+      start: 140660,
+      end: 144959,
+      text: "see, she hums the tune of mystery. She is the best",
+    },
+    {
+      start: 144979,
+      end: 148839,
+      text: "simplicity, still simplicity matters.",
+    },
+    {
+      start: 149879,
+      end: 153739,
+      text: "(instrumental music plays) Simplicity is not an answer,",
+    },
+    {
+      start: 154759,
+      end: 159440,
+      text: "it is the silence that understands. Understands. It is the",
+    },
+    {
+      start: 159479,
+      end: 163839,
+      text: "breath that holds no weight, it is the truth that waits.",
+    },
+    {
+      start: 163919,
+      end: 167999,
+      text: "It is the magic the stars remember. Remember.",
+    },
+    {
+      start: 169160,
+      end: 172839,
+      text: "And then go with softer steps and hearts that know,",
+    },
+    {
+      start: 174239,
+      end: 178339,
+      text: "no map, no road, no final wall, Magdeline knows it",
+    },
+    { start: 178360, end: 180192, text: "all." },
+  ];
+
+  return lyrics;
+}
+
+export function SingingBirdSongLyrics() {
+  const lyrics = [
+    {
+      start: 6139,
+      end: 10259,
+      text: "Out on the porch where the dawn light glows.",
+    },
+    {
+      start: 11019,
+      end: 15639,
+      text: "A breeze brings songs that my spirit knows.",
+    },
+    {
+      start: 16899,
+      end: 21739,
+      text: "You perch unseen in the olive tree. But",
+    },
+    {
+      start: 21779,
+      end: 25780,
+      text: "your voice flies wild and sings to me.",
+    },
+    {
+      start: 27039,
+      end: 31860,
+      text: "I close my eyes, the world turns still.",
+    },
+    {
+      start: 32680,
+      end: 36600,
+      text: "You sing her songs, my heart you fill.",
+    },
+    { start: 37579, end: 42319, text: "Singing bird, carry me home. Every" },
+    {
+      start: 42419,
+      end: 47059,
+      text: "morning don't sing alone. Every melody a thread",
+    },
+    {
+      start: 47119,
+      end: 51659,
+      text: "of grace. Sing Magdalene's songs through",
+    },
+    {
+      start: 51719,
+      end: 56579,
+      text: "time and space. Tomorrow don't forget my",
+    },
+    {
+      start: 56699,
+      end: 61539,
+      text: "song. The Magdalene one I've loved so long.",
+    },
+    {
+      start: 65720,
+      end: 70139,
+      text: "Through fields of silence and restless skies.",
+    },
+    {
+      start: 70860,
+      end: 75639,
+      text: "Your voice still lifts when my courage dies.",
+    },
+    { start: 76979, end: 80919, text: "You echo love that I once knew." },
+    {
+      start: 81599,
+      end: 85000,
+      text: "Each note a prayer that pulls me through.",
+    },
+    { start: 87139, end: 91839, text: "And when I'm lost or feeling small." },
+    { start: 92659, end: 96259, text: "Your hymns of Magdalene recall." },
+    { start: 97639, end: 102339, text: "Singing bird, carry me home. Every" },
+    {
+      start: 102419,
+      end: 107059,
+      text: "morning don't sing alone. Every melody a thread",
+    },
+    {
+      start: 107119,
+      end: 111659,
+      text: "of grace. Sing Magdalene's songs through",
+    },
+    {
+      start: 111739,
+      end: 116639,
+      text: "time and space. Tomorrow don't forget my",
+    },
+    {
+      start: 116699,
+      end: 121119,
+      text: "song. The Magdalene one I've loved so",
+    },
+    { start: 121259, end: 125739, text: "long. You are no" },
+    { start: 125799, end: 130339, text: "ordinary bird, I know. You" },
+    { start: 130459, end: 134240, text: "carry her voice wherever you go." },
+    {
+      start: 135539,
+      end: 140220,
+      text: "So sing through the stars, sing over the",
+    },
+    {
+      start: 140339,
+      end: 145159,
+      text: "sea. Bring Magdalene's heart back to me.",
+    },
+    { start: 146739, end: 150479, text: "Singing bird, carry me home." },
+    {
+      start: 152319,
+      end: 156219,
+      text: "At sunrise and twilight's golden dome.",
+    },
+    { start: 157800, end: 161600, text: "Every melody a thread of grace." },
+    { start: 163160, end: 167519, text: "Sing Magdalene's songs that whisper" },
+    {
+      start: 167580,
+      end: 171899,
+      text: "peace. Tomorrow don't forget my song. The",
+    },
+    {
+      start: 171959,
+      end: 175739,
+      text: "Magdalene one, still singing strong.",
+    },
+    {
+      start: 177179,
+      end: 182179,
+      text: "Yes, singing bird, don't ever go. You sing what only",
+    },
+    { start: 182319, end: 185199, text: "heaven knows, the Magdalene" },
+    { start: 185319, end: 201024, text: "song." },
+  ];
+  return lyrics;
+}
+
+export function WeKnowLyrics(){
+  const voiceOfMagdaleneLyrics = [
+    { start: 1220, end: 6059, text: "Bum bum baka. Bum zehn zehn. Bum bum" },
+    { start: 6059, end: 8460, text: "baka. Bum zehn zehn." },
+    { start: 8460, end: 35799, text: "(singing in Swahili)" },
+    { start: 35799, end: 41699, text: "We" },
+    { start: 41739, end: 46619, text: "feel her voice in the stars above. It calls us" },
+    { start: 46659, end: 51479, text: "home with sacred love. In every breeze," },
+    { start: 51500, end: 56099, text: "her song is near. A song of peace that" },
+    { start: 56119, end: 60619, text: "conquers fear. Oh, oh, oh, oh. We walk the" },
+    { start: 60659, end: 65579, text: "path, our hearts aligned. To find the voice we left behind." },
+    { start: 66680, end: 71500, text: "Oh, oh, oh, oh. The song of Magdalene we hold inside." },
+    { start: 71799, end: 76639, text: "When we are lost, it is our guide. Oh, oh, oh, oh." },
+    { start: 76900, end: 81720, text: "We are the ones who carry her flame. Telling" },
+    { start: 81779, end: 86639, text: "the story, keeping her name. Oh, oh, oh, oh." },
+    { start: 87319, end: 90079, text: "(singing in Swahili)" },
+    { start: 90919, end: 95279, text: "We know the song. Oh, oh, oh, oh." },
+    { start: 96839, end: 100279, text: "(singing in Swahili)" },
+    { start: 100639, end: 103460, text: "We know the song." },
+    { start: 105500, end: 110499, text: "(singing in Swahili)" },
+    { start: 110499, end: 115080, text: "We feel her voice in the stars above. It" },
+    { start: 115119, end: 119979, text: "calls us home with sacred love. Oh, oh. In every" },
+    { start: 120119, end: 125099, text: "breeze, her song is near. A song of peace that" },
+    { start: 125180, end: 129880, text: "conquers fear. Bum bum baka. We walk the path, our hearts aligned." },
+    { start: 130199, end: 134279, text: "To find the voice we left behind. Oh, oh, oh, oh." },
+    { start: 134520, end: 139259, text: "The song of Magdalene, we hold inside. When we are" },
+    { start: 139399, end: 144240, text: "lost, it is our guide. Oh, oh, oh, oh. We are the ones who carry" },
+    { start: 144300, end: 148960, text: "her flame. Telling the story, keeping her" },
+    { start: 149139, end: 151540, text: "name. Oh, oh, oh, oh." },
+    { start: 152179, end: 157119, text: "(singing in Swahili)." },
+    { start: 157179, end: 160259, text: "We know the song. Oh, oh, oh, oh." },
+    { start: 160259, end: 165119, text: "(singing in Swahili)" },
+    { start: 165500, end: 169879, text: "We know the song. Oh, oh, oh, oh." },
+    { start: 170379, end: 172620, text: "(singing in Swahili) Bum bum baka." },
+    { start: 172879, end: 177800, text: "We are the ones" },
+    { start: 177800, end: 181199, text: "who carry her flame. Telling the story, keeping her name." },
+    { start: 181800, end: 184079, text: "Oh, oh, oh, oh." },
+    { start: 185300, end: 188619, text: "(singing in Swahili)." },
+    { start: 190720, end: 192199, text: "We know the song." },
+    { start: 195800, end: 198479, text: "Bum bum baka. Bum zehn" },
+    { start: 198539, end: 204000, text: "zehn." }
+  ];
+
+  return voiceOfMagdaleneLyrics;
+}
+
+export function VoiceLyrics() {
+  const theVoiceWeAllWantLyrics = [
+    {
+      start: 779,
+      end: 5259,
+      text: "Early in the morning light. Before the world",
+    },
+    {
+      start: 5299,
+      end: 10020,
+      text: "begins to fight. I hear a whisper in the",
+    },
+    {
+      start: 10159,
+      end: 14459,
+      text: "air. A voice so gentle, strong and fair.",
+    },
+    {
+      start: 15119,
+      end: 19979,
+      text: "It sings of love we used to know. Of sacred things the",
+    },
+    {
+      start: 20119,
+      end: 24700,
+      text: "wind still blow. I close my eyes and there it",
+    },
+    { start: 24739, end: 28120, text: "is. The voice we lost, the voice we" },
+    { start: 28299, end: 32720, text: "miss. The voice we all want is in the" },
+    {
+      start: 32840,
+      end: 37120,
+      text: "breeze. The voice we all miss brings hearts to peace.",
+    },
+    {
+      start: 37399,
+      end: 41900,
+      text: "The voice we adore, it heals the pain. The voice we all",
+    },
+    { start: 41979, end: 45680, text: "want is Magdalene. Yeah," },
+    {
+      start: 46200,
+      end: 51199,
+      text: "Magdalene. Ooh, the voice we all want, yeah.",
+    },
+    { start: 51639, end: 56199, text: "Magdalene. Ooh, the voice we all" },
+    { start: 56500, end: 61159, text: "want. We scratch for perfect" },
+    {
+      start: 61219,
+      end: 65939,
+      text: "voices day and night. We write sweet songs hoping they",
+    },
+    {
+      start: 66000,
+      end: 70980,
+      text: "sound right. We chase the sound of carried perfect voices",
+    },
+    {
+      start: 71099,
+      end: 75659,
+      text: "only to find. The voice we all want is",
+    },
+    {
+      start: 75680,
+      end: 80679,
+      text: "in the breeze. The voice we all miss brings hearts to peace.",
+    },
+    {
+      start: 81019,
+      end: 85579,
+      text: "The voice we adore, it heals the pain. The voice we all",
+    },
+    { start: 85599, end: 89360, text: "want is Magdalene. Yeah," },
+    {
+      start: 89860,
+      end: 94779,
+      text: "Magdalene. Ooh, the voice we all want, yeah.",
+    },
+    { start: 95259, end: 100059, text: "Magdalene. Ooh, the voice we all" },
+    { start: 100119, end: 104559, text: "want. Voice of the" },
+    {
+      start: 104680,
+      end: 109139,
+      text: "river, calm and wide. Voice from the fire we",
+    },
+    {
+      start: 109180,
+      end: 113619,
+      text: "hold inside. Voice of the wind through ancient",
+    },
+    {
+      start: 113699,
+      end: 117839,
+      text: "trees. Voice from the silence that sets us free.",
+    },
+    {
+      start: 118279,
+      end: 122739,
+      text: "Voice that heals without a sound. Lifts the",
+    },
+    {
+      start: 122819,
+      end: 127799,
+      text: "lost and shakes the ground. It sings a love we used",
+    },
+    {
+      start: 127879,
+      end: 132799,
+      text: "to know. Of sacred things the wind still blow.",
+    },
+    {
+      start: 133279,
+      end: 137859,
+      text: "I close my eyes and there it is. The voice we lost,",
+    },
+    {
+      start: 138039,
+      end: 142659,
+      text: "the voice we miss. The voice we all want is in the breeze.",
+    },
+    {
+      start: 142839,
+      end: 147139,
+      text: "The voice we all miss brings hearts to peace. The voice we",
+    },
+    {
+      start: 147179,
+      end: 151820,
+      text: "adore, it heals the pain. The voice we all want, all",
+    },
+    {
+      start: 151979,
+      end: 156859,
+      text: "want, is Magdalene. Yeah, Magdalene. Yeah.",
+    },
+    {
+      start: 157160,
+      end: 161879,
+      text: "Ooh, the voice we all want, yeah. Magdalene.",
+    },
+    { start: 162599, end: 166579, text: "Ooh, the voice we all want." },
+    {
+      start: 168279,
+      end: 172779,
+      text: "And when the song is gone from men, that voice will",
+    },
+    {
+      start: 172839,
+      end: 177099,
+      text: "rise and sing again. The voice we all want",
+    },
+    { start: 177819, end: 178019, text: "will" },
+    { start: 178080, end: 186504, text: "remain." },
+  ];
+
+  return theVoiceWeAllWantLyrics;
+}
+
+export function DilMeraLyrics() {
+  const hindiFusionLyrics = [
+    {
+      start: 8679,
+      end: 13659,
+      text: "(भास्कार द्वारा मेरे दिल ने शुरू होता है) जब सुनी तेरी धुन पहली बार। पांव",
+    },
+    { start: 13699, end: 18599, text: "चले जैसे कोई त्योहार। हर धड़कन" },
+    { start: 18719, end: 23559, text: "जैसे कोई लौ। तेरी साजिश" },
+    {
+      start: 23579,
+      end: 28520,
+      text: "ने रू को खोला। Your voice surrounds me like",
+    },
+    {
+      start: 28579,
+      end: 33239,
+      text: "the breeze. It pulls me close with perfect ease. Every breath becomes a",
+    },
+    {
+      start: 33299,
+      end: 38059,
+      text: "song. In your melody, I belong. मेरा दिल नाचे तेरे",
+    },
+    {
+      start: 38119,
+      end: 43099,
+      text: "गीत पे, म्हार दिले। हर धड़कन तुझसे जुड़ी",
+    },
+    {
+      start: 43119,
+      end: 47899,
+      text: "रहै (vocalisation). हर लफ्ज पर बहता जैसे धुन,",
+    },
+    {
+      start: 48139,
+      end: 52240,
+      text: "तेरे सूरज से दिल धगे। Even when silence fills the air,",
+    },
+    {
+      start: 52279,
+      end: 56839,
+      text: "Magdalene (Magdalene). My heart still dances to your song,",
+    },
+    {
+      start: 56899,
+      end: 60919,
+      text: "Magdalene (Magdalene). I’ve heard, a thousand voices",
+    },
+    { start: 61000, end: 65279, text: "rise. The night could touch the glowing" },
+    { start: 65360, end: 70059, text: "skies. Your song remains, it stays, it" },
+    {
+      start: 70099,
+      end: 74960,
+      text: "shines. A sacred fire in these lines. Your voice surrounds me like a breeze.",
+    },
+    {
+      start: 75000,
+      end: 79499,
+      text: "It pulls me close with perfect ease. Every breath becomes a song.",
+    },
+    {
+      start: 79860,
+      end: 84739,
+      text: "In your melody, I belong. मेरा दिल नाचे तेरे गीत पे,",
+    },
+    {
+      start: 85019,
+      end: 89299,
+      text: "म्हार दिले। हर दिले हर धड़कन तुझसे जुड़ी रहै",
+    },
+    {
+      start: 89500,
+      end: 94379,
+      text: "(vocalisation). हर लफ़्ज पर बहता जैसे धुन, तेरे सूरज",
+    },
+    {
+      start: 94419,
+      end: 99400,
+      text: "से दिल धगे। Even when silence fills the air, Magdalene (Magdalene)",
+    },
+    {
+      start: 99400,
+      end: 103939,
+      text: ". My heart still dances to your song, Magdalene (Magdalene).",
+    },
+    {
+      start: 105000,
+      end: 109979,
+      text: "I’ve heard, a thousand voices rise. Your melody, through",
+    },
+    { start: 110139, end: 114379, text: "joy all along. My heart never knew a" },
+    {
+      start: 114439,
+      end: 118940,
+      text: "dance. Until your rhythm gave it a chance. Then every breath becomes a",
+    },
+    {
+      start: 119019,
+      end: 123459,
+      text: "song. In your melody, I belong. मेरा दिल",
+    },
+    {
+      start: 123559,
+      end: 128359,
+      text: "नाचे तेरे गीत पे, म्हार दिले। हर दिले हर धड़कन",
+    },
+    {
+      start: 128419,
+      end: 133059,
+      text: "तुझसे जुड़ी रहै (vocalisation). हर लफ़्ज पर",
+    },
+    {
+      start: 133059,
+      end: 137500,
+      text: "बहता जैसे धुन, तेरे सूरज से दिल धगे। Even when",
+    },
+    {
+      start: 137520,
+      end: 142039,
+      text: "silence fills the air, Magdalene (Magdalene). My heart still",
+    },
+    {
+      start: 142139,
+      end: 146580,
+      text: "dances to your song, Magdalene (Magdalene). I’ve heard,",
+    },
+    {
+      start: 146599,
+      end: 151539,
+      text: "a thousand voices rise. The melody, through joy all along.",
+    },
+    {
+      start: 153279,
+      end: 158160,
+      text: "पहाड़ ने कभी ना रुके मेरे दिल में। हर धड़कन",
+    },
+    { start: 158160, end: 162939, text: "में बस तू ही तू है। सदा के लिए" },
+    { start: 162979, end: 164600, text: "मैं तुझमें मग्न, म्हार" },
+    { start: 164720, end: 169584, text: "दिले। Magdalene" },
+  ];
+
+  return hindiFusionLyrics;
+}
+
+export function EveStarLyrics() {
+  const starLyrics = [
+    { start: 7919, end: 12279, text: "When the sun bows low and the sky turns cold and the" },
+    { start: 12359, end: 17179, text: "silence creeps through the midnight fold, there's a shimmer up" },
+    { start: 17260, end: 21579, text: "high where the heavens are. That's where I find you," },
+    { start: 21879, end: 26519, text: "the evening star. Lonely on a French" },
+    { start: 26579, end: 31479, text: "wood bench, eyes locked on the middle of sky's wide trench." },
+    { start: 31539, end: 36399, text: "With a heart too dry for tears to quench, I wait" },
+    { start: 36439, end: 40680, text: "for the evening star to sing my favorite" },
+    { start: 40779, end: 45619, text: "song. Evening star, won't you twinkle" },
+    { start: 45739, end: 50220, text: "bright? Shine your tune through the quiet night." },
+    { start: 50840, end: 55520, text: "Whisper soft where my heart belongs, strum the" },
+    { start: 55639, end: 60360, text: "wind with your healing songs. Guide me home when the" },
+    { start: 60459, end: 64599, text: "road feels long, my favorite song is" },
+    { start: 64659, end: 65699, text: "Magdalene." },
+    { start: 72619, end: 76699, text: "When your voice breaks through the hush of air," },
+    { start: 77239, end: 82059, text: "even the moon stops to say a prayer. Mountains lean close" },
+    { start: 82119, end: 86459, text: "just to hear the tune, and the stars sway soft" },
+    { start: 86739, end: 91319, text: "beneath the moon. It lifts my soul no matter" },
+    { start: 91419, end: 95839, text: "how far, when you sing you are, the evening star." },
+    { start: 96079, end: 100700, text: "Evening star, won't you twinkle bright? Shine your" },
+    { start: 100739, end: 105599, text: "tune through the quiet night. Whisper soft where my" },
+    { start: 105680, end: 110500, text: "heart belongs, strum the wind with your healing" },
+    { start: 110540, end: 115119, text: "songs. Guide me home when the road feels long," },
+    { start: 115439, end: 119039, text: "my favorite song is Magdalene." },
+    { start: 125899, end: 130160, text: "Every time I lose my way, the melody" },
+    { start: 130258, end: 134979, text: "knows what to say. No choir, no" },
+    { start: 135099, end: 139939, text: "crowd, just you and me, and a song that sets my spirit" },
+    { start: 140039, end: 144659, text: "free. Evening star, won't you twinkle bright?" },
+    { start: 145139, end: 149760, text: "Shine your tune through the quiet night. Whisper" },
+    { start: 149839, end: 154720, text: "soft where my heart belongs, strum the wind with your" },
+    { start: 154800, end: 159619, text: "healing songs. Guide me home when the road feels" },
+    { start: 159679, end: 164299, text: "long, my favorite song is Magdalene." },
+    { start: 165039, end: 169879, text: "So shine on Magdalene, don't fade away. Stay with me" },
+    { start: 169940, end: 174879, text: "till the break of day. When all else sleeps and dreams depart," },
+    { start: 174919, end: 179720, text: "you're the evening star that sings to my heart. (instrumental music plays)" },
+    { start: 179720, end: 180020, text: "..." },
+    { start: 193959, end: 198599, text: "listen with your healing song. Guide" },
+    { start: 198699, end: 202940, text: "me home when the road feels long, my favorite" },
+    { start: 203019, end: 207459, text: "song is Magdalene. So shine on" },
+    { start: 207479, end: 212360, text: "Magdalene, don't fade away. Stay with me till the break of" },
+    { start: 212399, end: 217239, text: "day. When all else sleeps and dreams depart, you're the evening" },
+    { start: 217319, end: 219699, text: "star that sings to my" },
+    { start: 219779, end: 222960, text: "heart." }
+  ];
+
+  return starLyrics;
+}
+
+export function RadioSongLyrics() {
+  const radioLyrics = [
+    { start: 99, end: 3880, text: "(gentle music)" },
+    {
+      start: 5879,
+      end: 10619,
+      text: "Took my coffee, hit the road at dawn. Old Volkswagen humming like a traveling song.",
+    },
+    {
+      start: 11179,
+      end: 15279,
+      text: "Dust on the mirror, breeze in my hair. Chasing peace through open air.",
+    },
+    {
+      start: 16158,
+      end: 20880,
+      text: "Just me in the home of my stereo. And then came that voice I used to",
+    },
+    { start: 20939, end: 25020, text: "know. My old friend, the radio." },
+    {
+      start: 26879,
+      end: 31100,
+      text: "In this wide, wild world of melodies you know.",
+    },
+    {
+      start: 32098,
+      end: 36659,
+      text: "Tune in that song I've loved so long and I'll sing it back with my heart full",
+    },
+    {
+      start: 36840,
+      end: 40880,
+      text: "on. Yeah, radio, you know my favorite one. That",
+    },
+    { start: 41020, end: 43839, text: "Magdalene song. The only one." },
+    {
+      start: 48159,
+      end: 52880,
+      text: "I remember the voice on a porch swing night. Fireflies dancing in the pale",
+    },
+    {
+      start: 52939,
+      end: 57759,
+      text: "porch light. Mama was humming with her eyes half closed as Magdalene played on",
+    },
+    {
+      start: 57759,
+      end: 62659,
+      text: "that FM glow. Back when love was just a word I heard and hope was",
+    },
+    {
+      start: 62680,
+      end: 67459,
+      text: "hiding in every chord. Now every time that melody",
+    },
+    {
+      start: 67559,
+      end: 70739,
+      text: "plays, it pulls me right back to those golden days.",
+    },
+    { start: 70979, end: 74159, text: "My old friend, the radio." },
+    {
+      start: 75959,
+      end: 80219,
+      text: "In this wide, wild world of melodies you know.",
+    },
+    {
+      start: 81220,
+      end: 85760,
+      text: "Tune in that song I've loved so long and I'll sing it back with my heart full",
+    },
+    {
+      start: 85919,
+      end: 90000,
+      text: "on. Yeah, radio, you know my favorite one. That",
+    },
+    { start: 90119, end: 92919, text: "Magdalene song. The only one." },
+    {
+      start: 102540,
+      end: 107400,
+      text: "I remember the voice on a porch swing night. Fireflies dancing in the pale",
+    },
+    {
+      start: 107459,
+      end: 112299,
+      text: "porch light. Mama was humming with her eyes half closed as Magdalene played on",
+    },
+    {
+      start: 112319,
+      end: 117220,
+      text: "that FM glow. Back when love was just a word I heard and hope was",
+    },
+    {
+      start: 117239,
+      end: 122020,
+      text: "hiding in every chord. Now every time that melody",
+    },
+    {
+      start: 122139,
+      end: 125239,
+      text: "plays, it pulls me right back to those golden days.",
+    },
+    { start: 125559, end: 128639, text: "My old friend, the radio." },
+    {
+      start: 130538,
+      end: 134699,
+      text: "In this wide, wild world of melodies you know.",
+    },
+    {
+      start: 135419,
+      end: 140039,
+      text: "Tune in that song I've loved so long and I'll sing it back with my heart",
+    },
+    {
+      start: 140039,
+      end: 144619,
+      text: "full on. Yeah, radio, you know my favorite one. That",
+    },
+    {
+      start: 144660,
+      end: 149619,
+      text: "Magdalene song. The only one. It's more",
+    },
+    {
+      start: 149619,
+      end: 154199,
+      text: "than static, more than sound. It's where lost hearts get found.",
+    },
+    {
+      start: 155239,
+      end: 160059,
+      text: "No map, no plan, just a song that knows how to lead me",
+    },
+    {
+      start: 160160,
+      end: 164580,
+      text: "home when the cold wind blows. My old",
+    },
+    {
+      start: 164739,
+      end: 169519,
+      text: "friend, I cherish the moments you play that song,",
+    },
+    { start: 169559, end: 174359, text: "Magdalene. Just the song and you is" },
+    { start: 174379, end: 176739, text: "enough to carry me" },
+    { start: 177000, end: 186264, text: "through." },
+  ];
+
+  return radioLyrics;
+}
+
+export function LifeDancesLy() {
+  const lifeDancesLyrics = [
+    {
+      start: 5739,
+      end: 9960,
+      text: "Todos amamos bailar. Todos queremos vibrar.",
+    },
+    {
+      start: 10800,
+      end: 15640,
+      text: "Pero no sabemos a qué canción. Hasta que la vida escoge con el",
+    },
+    {
+      start: 15719,
+      end: 19679,
+      text: "corazón. La vida baila su mejor canción. La elige sin duda,",
+    },
+    {
+      start: 19719,
+      end: 24519,
+      text: "sin condición. No le importa si tarda en llegar. Sabe que",
+    },
+    {
+      start: 24659,
+      end: 29360,
+      text: "Magdalena reina al cantar. Y bailará a todos sin descansar.",
+    },
+    {
+      start: 29559,
+      end: 33280,
+      text: "Life dances its best song. It chooses with no doubt,",
+    },
+    {
+      start: 33340,
+      end: 37479,
+      text: "no wrong. Doesn't care if it takes too long. It knows",
+    },
+    {
+      start: 37540,
+      end: 41559,
+      text: "Magdalene is the queen of song, and it'll dance to everyone.",
+    },
+    { start: 45840, end: 50200, text: "Hands in the air. Feet on fire." },
+    {
+      start: 50559,
+      end: 55139,
+      text: "Moving to a rhythm that never tires. She sings, and the night turns",
+    },
+    {
+      start: 55159,
+      end: 60120,
+      text: "gold. Even the silence starts to unfold. From city lights to ocean shores.",
+    },
+    {
+      start: 60479,
+      end: 65179,
+      text: "Her song opens every door. No one escapes, not even me.",
+    },
+    {
+      start: 65419,
+      end: 69839,
+      text: "When Magdalene plays, we all break free. Súbele, súbele al",
+    },
+    {
+      start: 69839,
+      end: 74400,
+      text: "corazón. Que esta vibra no tiene perdón. Cuando canta,",
+    },
+    {
+      start: 74479,
+      end: 79220,
+      text: "no puedo parar. Magdalena me hace volar. La vida",
+    },
+    {
+      start: 79279,
+      end: 83539,
+      text: "baila su mejor canción. La elige sin dudas, sin condición.",
+    },
+    {
+      start: 84019,
+      end: 88719,
+      text: "No le importa si tarda en llegar. Sabe que Magdalena reina al",
+    },
+    {
+      start: 88739,
+      end: 93580,
+      text: "cantar. Y bailará a todos sin descansar. Life dances its best",
+    },
+    {
+      start: 93639,
+      end: 98500,
+      text: "song. It chooses with no doubt, no wrong. Doesn't care if it takes",
+    },
+    {
+      start: 98540,
+      end: 102299,
+      text: "too long. It knows Magdalene's the queen of song,",
+    },
+    { start: 102339, end: 104219, text: "and it'll dance to everyone." },
+    {
+      start: 109939,
+      end: 114239,
+      text: "It's not just rhythm. It's not just sound. It's a miracle when she's",
+    },
+    {
+      start: 114279,
+      end: 119180,
+      text: "around. Every note here is what I've been through. Magdalene is love",
+    },
+    { start: 119219, end: 123879, text: "so true. Baila la vida con" },
+    {
+      start: 123899,
+      end: 128538,
+      text: "Magdalena. She is life's best dance, a song I'll never",
+    },
+    {
+      start: 128580,
+      end: 133379,
+      text: "outgrow. La vida baila su mejor canción. La",
+    },
+    {
+      start: 133379,
+      end: 138359,
+      text: "elige sin duda, sin condición. No le importa si tarda en llegar.",
+    },
+    {
+      start: 138739,
+      end: 143320,
+      text: "Sabe que Magdalena reina al cantar. Y bailará a todos sin",
+    },
+    {
+      start: 143339,
+      end: 148059,
+      text: "descansar. Life dances its best song. It chooses with no doubt,",
+    },
+    {
+      start: 148119,
+      end: 152279,
+      text: "no wrong. Doesn't care if it takes too long. It knows",
+    },
+    {
+      start: 152339,
+      end: 156400,
+      text: "Magdalene's the queen of song, and it'll dance to everyone.",
+    },
+    {
+      start: 166000,
+      end: 170979,
+      text: "It's not just rhythm. It's not break free.",
+    },
+    {
+      start: 172059,
+      end: 175659,
+      text: "We all dance to everyone. We all dance to",
+    },
+    { start: 175720, end: 180720, text: "everyone." },
+  ];
+
+  return lifeDancesLyrics;
+}
+
+export function FYSongLyrics() {
+  const swahiliLyrics = [
+    {
+      start: 3579,
+      end: 8279,
+      text: "(beat starts) Nilipoamka — dam dam — kulikua kimya Lakini rohoni, kulilia",
+    },
+    {
+      start: 8300,
+      end: 12059,
+      text: "wimbo wa ndani. Sauti ya faraja bila jina",
+    },
+    {
+      start: 12139,
+      end: 16979,
+      text: "ilinitafuta kama nuru ya asubuhi. Nikaweka moyo  wangu",
+    },
+    {
+      start: 17119,
+      end: 21920,
+      text: "wazi Maneno yakaanza kunitoka. Sio tu wimbo ni maisha",
+    },
+    {
+      start: 21939,
+      end: 26440,
+      text: "ni mimi. Ndipo nikajua furaha yangu ni ... furaha",
+    },
+    {
+      start: 26479,
+      end: 31459,
+      text: "yangu ni kuimba nyimbo zako. Nyimbo za kufana, nyimbo za",
+    },
+    {
+      start: 31519,
+      end: 36399,
+      text: "furaha zinanipa mwanga, zinanipa upana ndani",
+    },
+    {
+      start: 36399,
+      end: 40839,
+      text: "ya sauti, moyo wangu hutana. Kila siku",
+    },
+    { start: 40959, end: 43879, text: "nitaziimba nyimbo zako." },
+    { start: 50299, end: 52200, text: "(instrumental music plays)" },
+    {
+      start: 54579,
+      end: 59279,
+      text: "Nilipopiga beat pakacha pakacha ikajibu. Mziki ukatanda kama upepo wa",
+    },
+    {
+      start: 59319,
+      end: 64199,
+      text: "dhahabu, watoto wakacheza wazee wakatabasamu kila moyo ulianza kusikia",
+    },
+    {
+      start: 64339,
+      end: 68720,
+      text: "salamu. Sauti haikutaji jina wala sura ilitosha",
+    },
+    {
+      start: 68779,
+      end: 73200,
+      text: "kusikika ilikuwa nuru. Nipo nikasema kwa sauti ya kweli",
+    },
+    {
+      start: 73360,
+      end: 77879,
+      text: "Hii si wimbo tu… ni furaha yenyewe. Furaha yangu ni",
+    },
+    {
+      start: 77939,
+      end: 82680,
+      text: "kuimba nyimbo zako. Nyimbo za kufana. Nyimbo za furaha",
+    },
+    {
+      start: 82860,
+      end: 87759,
+      text: "zinanipa mwanga zinanipa upana. Ndani ya sauti",
+    },
+    {
+      start: 88180,
+      end: 92680,
+      text: "moyo wangu hutanda. Kila siku nitazima",
+    },
+    { start: 92739, end: 94379, text: "nyimbo zako." },
+    {
+      start: 97639,
+      end: 101859,
+      text: "(instrumental music plays) Na we nyimbo zako nyimbo zako.",
+    },
+    {
+      start: 102739,
+      end: 107739,
+      text: "Ye, ye, ye. Nilipopiga beat pakacha pakacha",
+    },
+    {
+      start: 107799,
+      end: 112639,
+      text: "ikajibu mziki ukatanda kama upepo wa dhahabu watoto wakacheza wazee",
+    },
+    {
+      start: 112659,
+      end: 117559,
+      text: "wakata basamu kila moyo ulianza kusikia salamu. Sauti haikutaji jina",
+    },
+    {
+      start: 117599,
+      end: 122599,
+      text: "wala sura ili tosha kusikika ili kuwa nuru. Nipo nikasema kwa sauti",
+    },
+    {
+      start: 122639,
+      end: 127519,
+      text: "ya kweli hizi wimbo tu ni furaha yenyewe. Furaha",
+    },
+    {
+      start: 127559,
+      end: 132499,
+      text: "yangu ni kuimba nyimbo zako. Nyimbo za kufana. Nyimbo za",
+    },
+    {
+      start: 132580,
+      end: 136740,
+      text: "furaha zinanipa mwanga ni nyimbo zako",
+    },
+    { start: 137000, end: 142464, text: "daima." },
+  ];
+
+  return swahiliLyrics;
+}
+
+export function softAnthemLyrics() {
+  const scribbledLyrics = [
+   { start: 99, end: 5639, text: {en:"(soft piano music)", it: "(musica pianoforte soffice)"} },
+   { start: 5639, end: 10500, text: {en:"(woman singing) When our", it: "(voce femminile canta) Quando le nostre"} },
+   {
+    start: 10559,
+    end: 15439,
+    text: {
+      en: "voices rise from quiet ground. Our songs",
+      it: "voci si alzano dal terreno silenzioso. Le nostre canzoni"
+    }
+   },
+   {
+    start: 15439,
+    end: 18739,
+    text: {
+      en: "are scribbled on life's pages unbound.",
+      it: "sono scarabocchiate sulle pagine della vita senza limiti."
+    }
+   },
+   {
+    start: 20180,
+    end: 24039,
+    text: {
+      en: "Every word a seed in the heart it finds.",
+      it: "Ogni parola un seme nel cuore che trova."
+    }
+   },
+   {
+    start: 25219,
+    end: 28799,
+    text: {
+      en: "We are ready to chant the great hymns of time.",
+      it: "Siamo pronti a cantare i grandi inni del tempo."
+    }
+   },
+   { start: 30319, end: 35020, text: {en:"We will sing with Magdalene. On every", it:"Canteremo con Maddalena. Su ogni"} },
+   { start: 35099, end: 39779, text: {en:"scroll, the stars design. On", it:"pergamena che le stelle disegnano. Su"} },
+   { start: 39819, end: 44740, text: {en:"every sacred scribbled line. Let the", it:"ogni sacra linea scarabocchiata. Lascia che"} },
+   { start: 44819, end: 47819, text: {en:"melody carve the light.", it:"la melodia scolpisca la luce."} },
+   { start: 49520, end: 54340, text: {en:"In every echo lost in time forever,", it:"In ogni eco persa nel tempo per sempre,"} },
+   { start: 55520, end: 59100, text: {en:"we will sing with Magdalene.", it:"canteremo con Maddalena."} },
+   { start: 62859, end: 66279, text: {en:"Ooh, ooh, ooh.", it:"Oh, oh, oh."} },
+   { start: 68099, end: 71500, text: {en:"When time fades our scribbled pages,", it:"Quando il tempo sfuma le nostre pagine scarabocchiate,"} },
+   {
+    start: 73220,
+    end: 76559,
+    text: {
+      en: "and our hearts lie in forgotten stages.",
+      it: "e i nostri cuori giacciono in palcoscenici dimenticati."
+    }
+   },
+   {
+    start: 78259,
+    end: 81919,
+    text: {
+      en: "Let the silence still remember our song.",
+      it: "Lascia che il silenzio ricordi ancora la nostra canzone."
+    }
+   },
+   { start: 83639, end: 88339, text: {en:"A melody that forever belongs. Not", it:"Una melodia che per sempre appartiene. Non"} },
+   { start: 88379, end: 92459, text: {en:"today, not tomorrow, but forever.", it:"oggi, non domani, ma per sempre."} },
+   { start: 93459, end: 98180, text: {en:"We will sing with Magdalene. On every", it:"Canteremo con Maddalena. Su ogni"} },
+   { start: 98239, end: 103239, text: {en:"scroll, the stars design. On every", it:"pergamena che le stelle disegnano. Su ogni"} },
+   { start: 103379, end: 107919, text: {en:"sacred scribbled line. Let the", it:"sacra linea scarabocchiata. Lascia che"} },
+   { start: 107979, end: 110719, text: {en:"melody carve the light.", it:"la melodia scolpisca la luce."} },
+   { start: 112739, end: 117519, text: {en:"In every echo lost in time forever,", it:"In ogni eco persa nel tempo per sempre,"} },
+   { start: 118699, end: 123559, text: {en:"we will sing with Magdalene. Ooh,", it:"canteremo con Maddalena. Oh,"} },
+   { start: 123559, end: 126519, text: {en:"ooh,", it:"oh,"} },
+   { start: 127899, end: 132739, text: {en:"ooh. Forever,", it:"oh. Per sempre,"} },
+   {
+    start: 133860,
+    end: 138600,
+    text: {
+      en: "we will sing with Magdalene. On every",
+      it: "canteremo con Maddalena. Su ogni"
+    }
+   },
+   { start: 138660, end: 143659, text: {en:"scroll, the stars design. On every", it:"pergamena che le stelle disegnano. Su ogni"} },
+   { start: 143800, end: 148319, text: {en:"sacred scribbled line. Let the", it:"sacra linea scarabocchiata. Lascia che"} },
+   { start: 148399, end: 151220, text: {en:"melody carve the light.", it:"la melodia scolpisca la luce."} },
+   { start: 153160, end: 157919, text: {en:"In every echo lost in time forever,", it:"In ogni eco persa nel tempo per sempre,"} },
+   { start: 159099, end: 162719, text: {en:"we will sing with Magdalene.", it:"canteremo con Maddalena."} },
+   { start: 168919, end: 172779, text: {en:"Ooh, ooh.", it:"Oh, oh."} },
+   { start: 173639, end: 186504, text: {en:"(soft piano music)", it:"(musica pianoforte soffice)"} },
+  ];
+
+  return scribbledLyrics
+}
+
+export function AnthemLyrics() {
+   const scribbledOrchestralLyrics = [
+    { 
+      start: 99, 
+      end: 20319, 
+      text: {
+        en: "(dramatic orchestral music plays)",
+        it: "(musica orchestrale drammatica)"
+      } 
+    },
+    {
+      start: 20359,
+      end: 24839,
+      text: {
+        en: "When our voices rise from quiet ground.",
+        it: "Quando le nostre voci si alzano dal terreno silenzioso."
+      }
+    },
+    {
+      start: 28459,
+      end: 32159,
+      text: {
+        en: "Our songs are scribbled on life's pages",
+        it: "Le nostre canzoni sono scarabocchiate sulle pagine della vita"
+      }
+    },
+    { 
+      start: 32200, 
+      end: 33519, 
+      text: {
+        en: "unbound.",
+        it: "senza limiti."
+      } 
+    },
+    {
+      start: 37259,
+      end: 42240,
+      text: {
+        en: "Every word a seed in the heart it finds. We are",
+        it: "Ogni parola un seme nel cuore che trova. Noi siamo"
+      }
+    },
+    {
+      start: 42360,
+      end: 46259,
+      text: {
+        en: "ready to chant the great hymns of time.",
+        it: "pronti a cantare i grandi inni del tempo."
+      }
+    },
+    {
+      start: 47399,
+      end: 52340,
+      text: {
+        en: "We will sing with Magdalene on every scroll the",
+        it: "Canteremo con Maddalena su ogni pergamena che le"
+      }
+    },
+    { 
+      start: 52399, 
+      end: 56899, 
+      text: {
+        en: "stars design. On every sacred",
+        it: "stelle disegnano. Su ogni sacra"
+      } 
+    },
+    { 
+      start: 56939, 
+      end: 61419, 
+      text: {
+        en: "scribbled line. Let the melody",
+        it: "linea scarabocchiata. Lascia che la melodia"
+      } 
+    },
+    { 
+      start: 61520, 
+      end: 65959, 
+      text: {
+        en: "carve a light in every echo",
+        it: "scolpisca una luce in ogni eco"
+      } 
+    },
+    { 
+      start: 66059, 
+      end: 70519, 
+      text: {
+        en: "lost in time. Forever we will",
+        it: "persa nel tempo. Per sempre canteremo"
+      } 
+    },
+    { 
+      start: 70580, 
+      end: 73239, 
+      text: {
+        en: "sing with Magdalene.",
+        it: "con Maddalena."
+      } 
+    },
+    {
+      start: 79379,
+      end: 84000,
+      text: {
+        en: "(dramatic orchestral music plays) As time fades our",
+        it: "(musica orchestrale drammatica) Mentre il tempo sfuma le nostre"
+      }
+    },
+    { 
+      start: 84080, 
+      end: 86540, 
+      text: {
+        en: "scribbled pages.",
+        it: "pagine scarabocchiate."
+      } 
+    },
+    { 
+      start: 90400, 
+      end: 94199, 
+      text: {
+        en: "And our hearts lie in forgotten",
+        it: "E i nostri cuori giacciono in dimenticati"
+      } 
+    },
+    { 
+      start: 94259, 
+      end: 95640, 
+      text: {
+        en: "stages.",
+        it: "palcoscenici."
+      } 
+    },
+    {
+      start: 99459,
+      end: 103059,
+      text: {
+        en: "Let the silence still remember our song.",
+        it: "Lascia che il silenzio ricordi ancora la nostra canzone."
+      }
+    },
+    { 
+      start: 104279, 
+      end: 108779, 
+      text: {
+        en: "A melody that forever belongs. Not",
+        it: "Una melodia che per sempre appartiene. Non"
+      } 
+    },
+    {
+      start: 108819,
+      end: 113699,
+      text: {
+        en: "today, not tomorrow, but forever. We will",
+        it: "oggi, non domani, ma per sempre. Noi"
+      }
+    },
+    {
+      start: 113860,
+      end: 118720,
+      text: {
+        en: "sing with Magdalene on every scroll the stars",
+        it: "canteremo con Maddalena su ogni pergamena che le stelle"
+      }
+    },
+    { 
+      start: 118739, 
+      end: 123659, 
+      text: {
+        en: "design. On every sacred scribbled",
+        it: "disegnano. Su ogni sacra scarabocchiata"
+      } 
+    },
+    { 
+      start: 123799, 
+      end: 128179, 
+      text: {
+        en: "line. Let the melody carve a",
+        it: "linea. Lascia che la melodia scolpisca una"
+      } 
+    },
+    { 
+      start: 128318, 
+      end: 133259, 
+      text: {
+        en: "light in every echo lost in time.",
+        it: "luce in ogni eco persa nel tempo."
+      } 
+    },
+    {
+      start: 133699,
+      end: 137979,
+      text: {
+        en: "Forever we will sing with Magdalene.",
+        it: "Per sempre canteremo con Maddalena."
+      }
+    },
+    { 
+      start: 137979, 
+      end: 146600, 
+      text: {
+        en: "(dramatic orchestral music plays)",
+        it: "(musica orchestrale drammatica)"
+      } 
+    },
+    {
+      start: 146639,
+      end: 151139,
+      text: {
+        en: "We will sing with Magdalene on every",
+        it: "Canteremo con Maddalena su ogni"
+      }
+    },
+    { 
+      start: 151160, 
+      end: 155639, 
+      text: {
+        en: "scroll the stars design. On every",
+        it: "pergamena che le stelle disegnano. Su ogni"
+      } 
+    },
+    { 
+      start: 155759, 
+      end: 159919, 
+      text: {
+        en: "sacred scribbled line. Let the",
+        it: "sacra linea scarabocchiata. Lascia che la"
+      } 
+    },
+    { 
+      start: 160039, 
+      end: 164839, 
+      text: {
+        en: "melody carve a light in every",
+        it: "melodia scolpisca una luce in ogni"
+      } 
+    },
+    {
+      start: 164919,
+      end: 169899,
+      text: {
+        en: "echo lost in time. Forever we will sing",
+        it: "eco persa nel tempo. Per sempre canteremo"
+      }
+    },
+    { 
+      start: 169940, 
+      end: 174679, 
+      text: {
+        en: "with Magdalene. We will sing with",
+        it: "con Maddalena. Noi canteremo con"
+      } 
+    },
+    { 
+      start: 174739, 
+      end: 179239, 
+      text: {
+        en: "Magdalene. We will sing with",
+        it: "Maddalena. Noi canteremo con"
+      } 
+    },
+    { 
+      start: 179300, 
+      end: 183240, 
+      text: {
+        en: "Magdalene on every scroll the stars",
+        it: "Maddalena su ogni pergamena che le stelle"
+      } 
+    },
+    { 
+      start: 183259, 
+      end: 187799, 
+      text: {
+        en: "design. On every sacred scribbled",
+        it: "disegnano. Su ogni sacra scarabocchiata"
+      } 
+    },
+    { 
+      start: 188239, 
+      end: 190919, 
+      text: {
+        en: "line. Magdalene.",
+        it: "linea. Maddalena."
+      } 
+    },
+    {
+      start: 192360,
+      end: 197359,
+      text: {
+        en: "(dramatic orchestral music plays) And when time fades our scribbled",
+        it: "(musica orchestrale drammatica) E quando il tempo sfuma i nostri scarabocchi"
+      }
+    },
+    { 
+      start: 197399, 
+      end: 198659, 
+      text: {
+        en: "pages.",
+        it: "pagine."
+      } 
+    },
+    { 
+      start: 202500, 
+      end: 206199, 
+      text: {
+        en: "And our hearts lie in forgotten",
+        it: "E i nostri cuori giacciono in dimenticati"
+      } 
+    },
+    { 
+      start: 206339, 
+      end: 207699, 
+      text: {
+        en: "stages.",
+        it: "palcoscenici."
+      } 
+    },
+    {
+      start: 211500,
+      end: 214960,
+      text: {
+        en: "Let the silence still remember our song.",
+        it: "Lascia che il silenzio ricordi ancora la nostra canzone."
+      }
+    },
+    { 
+      start: 216360, 
+      end: 220860, 
+      text: {
+        en: "A melody that forever belongs. Not",
+        it: "Una melodia che per sempre appartiene. Non"
+      } 
+    },
+    { 
+      start: 220919, 
+      end: 224040, 
+      text: {
+        en: "today, not tomorrow, but forever.",
+        it: "oggi, non domani, ma per sempre."
+      } 
+    },
+    { 
+      start: 227099, 
+      end: 229392, 
+      text: {
+        en: "(music fades out)",
+        it: "(la musica si spegne)"
+      } 
+    },
+];
+  return scribbledOrchestralLyrics;
+}
+
+export function PhoenixSongLyrics() {
+  const phoenixLyrics = [
+    {
+      "start": 99,
+      "end": 16659,
+      "text": "(intro music plays)"
+    },
+    {
+      "start": 16659,
+      "end": 20039,
+      "text": "(choir sings) Oh, Phoenix, at the heaven's sacred gate,"
+    },
+    {
+      "start": 20039,
+      "end": 24259,
+      "text": "you rise. Flame‑winged, sentinel in dawn's reborn skies."
+    },
+    {
+      "start": 24319,
+      "end": 29199,
+      "text": "You distilled the fires of courage in your flame. We absolve"
+    },
+    {
+      "start": 29239,
+      "end": 34119,
+      "text": "all doubt and call upon your name. From ember's heart"
+    },
+    {
+      "start": 34180,
+      "end": 39180,
+      "text": "to gilded throne. Your wings enfold her, she's not"
+    },
+    {
+      "start": 39259,
+      "end": 44119,
+      "text": "alone. In rising heat of morning's glow."
+    },
+    {
+      "start": 44379,
+      "end": 48380,
+      "text": "We feel your promise overflow."
+    },
+    {
+      "start": 50599,
+      "end": 55180,
+      "text": "Phoenix the mighty, the protector, the flame. Ever strong,"
+    },
+    {
+      "start": 55219,
+      "end": 59619,
+      "text": "ever bold. Your power we claim, With you Magdalene is"
+    },
+    {
+      "start": 59619,
+      "end": 64239,
+      "text": "shielded, honored and free. We'll chant hymns of Magdalene,"
+    },
+    {
+      "start": 64360,
+      "end": 68559,
+      "text": "her song of victory. Safe in your"
+    },
+    {
+      "start": 68720,
+      "end": 72339,
+      "text": "rising fire, she'll sing"
+    },
+    {
+      "start": 72400,
+      "end": 77239,
+      "text": "eternally. Oh,"
+    },
+    {
+      "start": 77639,
+      "end": 82359,
+      "text": "valiant bird, in scarlet flame arrayed. You rise from ashes,"
+    },
+    {
+      "start": 82400,
+      "end": 87259,
+      "text": "undaunted, unafraid. Through storm and shadow, through war and"
+    },
+    {
+      "start": 87319,
+      "end": 92179,
+      "text": "despair. You guard Magdalene with unyielding love."
+    },
+    {
+      "start": 92299,
+      "end": 97219,
+      "text": "From ember's heart to gilded throne. Your wings"
+    },
+    {
+      "start": 97239,
+      "end": 102239,
+      "text": "enfold her, she's not alone. In rising heat"
+    },
+    {
+      "start": 102279,
+      "end": 106459,
+      "text": "of morning's glow. We feel your promise"
+    },
+    {
+      "start": 106759,
+      "end": 111499,
+      "text": "overflow. Phoenix the"
+    },
+    {
+      "start": 111659,
+      "end": 116159,
+      "text": "mighty, the protector, the flame. Ever strong, ever bold."
+    },
+    {
+      "start": 116360,
+      "end": 121360,
+      "text": "Your power we claim, With you Magdalene is shielded, honored"
+    },
+    {
+      "start": 121379,
+      "end": 125179,
+      "text": "and free. We'll chant hymns of Magdalene, her song of"
+    },
+    {
+      "start": 125199,
+      "end": 129500,
+      "text": "victory. Safe in your rising"
+    },
+    {
+      "start": 129580,
+      "end": 134359,
+      "text": "fire, she'll sing eternally."
+    },
+    {
+      "start": 136660,
+      "end": 141500,
+      "text": "Let every feather bear her name in flame. Through burning"
+    },
+    {
+      "start": 141580,
+      "end": 146520,
+      "text": "skies, she'll rise in sacred fame. No fear shall silence what"
+    },
+    {
+      "start": 146639,
+      "end": 150699,
+      "text": "she must sing. For you, oh Phoenix, guard"
+    },
+    {
+      "start": 150819,
+      "end": 155479,
+      "text": "everything. Phoenix the"
+    },
+    {
+      "start": 155660,
+      "end": 160160,
+      "text": "mighty, the protector, the flame. Ever strong, ever bold."
+    },
+    {
+      "start": 160360,
+      "end": 165360,
+      "text": "Your power we claim, With you Magdalene is shielded, honored"
+    },
+    {
+      "start": 165379,
+      "end": 170219,
+      "text": "and free. We'll chant hymns of Magdalene, her song of victory."
+    },
+    {
+      "start": 171239,
+      "end": 175639,
+      "text": "Safe in your rising fire, she'll"
+    },
+    {
+      "start": 175699,
+      "end": 180440,
+      "text": "sing eternally. Phoenix the valiant, the"
+    },
+    {
+      "start": 180519,
+      "end": 185299,
+      "text": "flame that won't fall. Stand with Magdalene, answer"
+    },
+    {
+      "start": 185319,
+      "end": 190159,
+      "text": "her call. Her voice is our anthem, her song is our plea."
+    },
+    {
+      "start": 190339,
+      "end": 195199,
+      "text": "With wings of fire, she sings eternally. With wings"
+    },
+    {
+      "start": 195279,
+      "end": 199872,
+      "text": "of fire, she sings eternally."
+    }
+  ];
+
+  return phoenixLyrics;
+}
+
+export function replayLy() {
+  const replayLyrics = [
+    {
+      start: 0,
+      end: 12000,
+      text: "Music",
+    },
+    {
+      start: 12000,
+      end: 15000,
+      text: "When cherished moment's passed,",
+    },
+    {
+      start: 15000,
+      end: 18000,
+      text: "They never truly fade",
+    },
+    {
+      start: 18000,
+      end: 23000,
+      text: "Our hearts still echo where the memories played.",
+    },
+    {
+      start: 23000,
+      end: 26000,
+      text: "In every silent glance",
+    },
+    {
+      start: 26000,
+      end: 29000,
+      text: "In the words we didn't say",
+    },
+    {
+      start: 29000,
+      end: 34000,
+      text: "That's when our wishes become replay",
+    },
+    {
+      start: 34000,
+      end: 37000,
+      text: "Replay the magic we once sung,",
+    },
+    {
+      start: 37000,
+      end: 40000,
+      text: "Every moment, every breath is so young",
+    },
+    {
+      start: 40000,
+      end: 45000,
+      text: "Every heartbeat, every joy on our tongue",
+    },
+    {
+      start: 46000,
+      end: 49000,
+      text: "Replay our song with Magdalene,",
+    },
+    {
+      start: 49000,
+      end: 51000,
+      text: "Every tune, every beat",
+    },
+    {
+      start: 51000,
+      end: 54000,
+      text: "Let it all begin, replay",
+    },
+    {
+      start: 54000,
+      end: 57000,
+      text: "Again and again, songs of magdalene.",
+    },
+    {
+      start: 58000,
+      end: 63000,
+      text: "Let it be — freeze our memories in time,",
+    },
+    {
+      start: 64000,
+      end: 69000,
+      text: "Like a photo, framed in rhythm and rhyme",
+    },
+    {
+      start: 70000,
+      end: 74000,
+      text: "Every heartbeat, every word left to stay,",
+    },
+    {
+      start: 75000,
+      end: 80000,
+      text: "Still echoes with us as we press replay",
+    },
+    {
+      start: 81000,
+      end: 84000,
+      text: "Replay the magic we once sung,",
+    },
+    {
+      start: 84000,
+      end: 87000,
+      text: "Every moment, every breath is so young",
+    },
+    {
+      start: 87000,
+      end: 91000,
+      text: "Every heartbeat, every joy on our tongue",
+    },
+    {
+      start: 93000,
+      end: 95000,
+      text: "Replay our song with Magdalene,",
+    },
+    {
+      start: 95000,
+      end: 97000,
+      text: "Every tune, every beat",
+    },
+    {
+      start: 97000,
+      end: 100000,
+      text: "Let it all begin, replay",
+    },
+    {
+      start: 100000,
+      end: 103000,
+      text: "Again and again, songs of magdalene.",
+    },
+    {
+      start: 105000,
+      end: 109000,
+      text: "Let it be, freeze our memories in time",
+    },
+    {
+      start: 110000,
+      end: 115000,
+      text: "Like a photo, framed in rhythm and rhyme",
+    },
+    {
+      start: 116000,
+      end: 120000,
+      text: "Every heartbeat, every word we left to say",
+    },
+    {
+      start: 121000,
+      end: 126000,
+      text: "Still echoes with us as we press replay",
+    },
+    {
+      start: 127000,
+      end: 130000,
+      text: "Replay the magic we once sung,",
+    },
+    {
+      start: 130000,
+      end: 133000,
+      text: "Every moment, every breath is so young",
+    },
+    {
+      start: 133000,
+      end: 138000,
+      text: "Every heartbeat, every joy on our tongue",
+    },
+    {
+      start: 139000,
+      end: 141000,
+      text: "Replay our song with Magdalene,",
+    },
+    {
+      start: 141000,
+      end: 143000,
+      text: "Every tune, every beat",
+    },
+    {
+      start: 143000,
+      end: 146000,
+      text: "Let it all begin, replay",
+    },
+    {
+      start: 146000,
+      end: 149000,
+      text: "Again and again, songs of magdalene.",
+    },
+    {
+      start: 151000,
+      end: 154000,
+      text: "Replay, not just the word we say",
+    },
+    {
+      start: 154000,
+      end: 157000,
+      text: "But a feeling that refuses to fade away.",
+    },
+    {
+      start: 158000,
+      end: 160000,
+      text: "In every beat, we find our way —",
+    },
+    {
+      start: 160000,
+      end: 163000,
+      text: "Back to the song we still play",
+    },
+    {
+      start: 169000,
+      end: 171000,
+      text: "Replay the magic we once sung",
+    },
+    {
+      start: 171000,
+      end: 173000,
+      text: "Every beat we once sung",
+    },
+    {
+      start: 173000,
+      end: 175000,
+      text: "Every beat we once sung",
+    },
+    {
+      start: 175000,
+      end: 177000,
+      text: "Every beat we once sung",
+    },
+    {
+      start: 177000,
+      end: 179000,
+      text: "Every beat we once sung",
+    },
+    {
+      start: 179000,
+      end: 181000,
+      text: "Every beat we once sung",
+    },
+    {
+      start: 181000,
+      end: 183000,
+      text: "Every beat we once sung",
+    },
+    {
+      start: 183000,
+      end: 185000,
+      text: "Every beat we once sung",
+    },
+    {
+      start: 185000,
+      end: 187000,
+      text: "Every beat we once sung",
+    },
+    {
+      start: 187000,
+      end: 189000,
+      text: "Every beat we once sung",
+    },
+    {
+      start: 189000,
+      end: 191000,
+      text: "Every beat we once sung",
+    },
+    {
+      start: 191000,
+      end: 193000,
+      text: "Every beat we once sung",
+    },
+    {
+      start: 193000,
+      end: 195000,
+      text: "Every beat we once sung",
+    },
+    {
+      start: 195000,
+      end: 197000,
+      text: "Every beat we once sung",
+    },
+  ];
+  return replayLyrics;
+}
+
+
+export function etchedLyricsSong() {
+  const etchedLyrics = [
+    {
+      start: 0,
+      end: 9000,
+      text: "Music",
+    },
+    {
+      start: 9000,
+      end: 12000,
+      text: "In halls where the silence still breathes her name,",
+    },
+    {
+      start: 12000,
+      end: 16000,
+      text: "We gather in twilight, no heart is the same.",
+    },
+    {
+      start: 16000,
+      end: 20000,
+      text: "With candles that shimmer like stars in the night",
+    },
+    {
+      start: 20000,
+      end: 25000,
+      text: "We waltz in her memory, soft and polite",
+    },
+    {
+      start: 25000,
+      end: 29000,
+      text: "Etched in our hearts are the songs of Magdalene,",
+    },
+    {
+      start: 29000,
+      end: 33000,
+      text: "From cadence to silence, through joy and through pain.",
+    },
+    {
+      start: 33000,
+      end: 37000,
+      text: "Songs that orchestrate our rise and our fall,",
+    },
+    {
+      start: 37000,
+      end: 41000,
+      text: "Songs that still echo in chapel and hall,",
+    },
+    {
+      start: 41000,
+      end: 45000,
+      text: "Songs that redeem us, songs that impart,",
+    },
+    {
+      start: 45000,
+      end: 48000,
+      text: "Forever etched in our hearts",
+    },
+    {
+      start: 50000,
+      end: 54000,
+      text: "All beauty begins in the silence of heart",
+    },
+    {
+      start: 54000,
+      end: 58000,
+      text: "Neither today nor tomorrow, but forever apart",
+    },
+    {
+      start: 59000,
+      end: 62000,
+      text: "Singing with Magdalene in sacred refrain",
+    },
+    {
+      start: 62000,
+      end: 65000,
+      text: "Songs of Magdalene will  remain ",
+    },
+    {
+      start: 65000,
+      end: 71000,
+      text: "Indelible, Etched in our hearts are the songs of Magdalene,",
+    },
+    {
+      start: 71000,
+      end: 75000,
+      text: "From cadence to silence, through joy and through pain.",
+    },
+    {
+      start: 75000,
+      end: 79000,
+      text: "Songs that orchestrate our rise and our fall,",
+    },
+    {
+      start: 79000,
+      end: 83000,
+      text: "Songs that still echo in chapel and hall,",
+    },
+    {
+      start: 83000,
+      end: 87000,
+      text: "Songs that redeem us, songs that impart,",
+    },
+    {
+      start: 87000,
+      end: 90000,
+      text: "Forever etched in our hearts",
+    },
+    {
+      start: 92000,
+      end: 97000,
+      text: "All beauty begins in the silence of heart",
+    },
+    {
+      start: 97000,
+      end: 101000,
+      text: "Neither today nor tomorrow, but forever apart",
+    },
+    {
+      start: 101000,
+      end: 105000,
+      text: "Singing with Magdalene in sacred refrain",
+    },
+    {
+      start: 105000,
+      end: 108000,
+      text: "Songs of Magdalene will  remain",
+    },
+    {
+      start: 108000,
+      end: 110000,
+      text: "Indelible",
+    },
+    {
+      start: 110000,
+      end: 116000,
+      text: "Oh, oh, oh, oh, oh, oh, oh, oh",
+    },
+    {
+      start: 116000,
+      end: 120000,
+      text: "No measure contains what the soul longs to say,",
+    },
+    {
+      start: 120000,
+      end: 124000,
+      text: "Each note a devotion that time can’t betray.",
+    },
+    {
+      start: 124000,
+      end: 128000,
+      text: "Where silence and song in eternity meet,",
+    },
+    {
+      start: 128000,
+      end: 133000,
+      text: "There lies the pulse — serene and complete.",
+    },
+    {
+      start: 133000,
+      end: 137000,
+      text: "Etched in our hearts are the songs of Magdalene,",
+    },
+    {
+      start: 137000,
+      end: 141000,
+      text: "From cadence to silence, through joy and through pain.",
+    },
+    {
+      start: 141000,
+      end: 145000,
+      text: "Songs that orchestrate our rise and our fall,",
+    },
+    {
+      start: 145000,
+      end: 149000,
+      text: "Songs that still echo in chapel and hall,",
+    },
+    {
+      start: 149000,
+      end: 153000,
+      text: "Songs that redeem us, songs that impart,",
+    },
+    {
+      start: 153000,
+      end: 157000,
+      text: "Forever etched in our hearts",
+    },
+    {
+      start: 157000,
+      end: 159000,
+      text: "Songs of Magdalene...",
+    },
+    {
+      start: 159000,
+      end: 162000,
+      text: "Not just sung, but lived",
+    },
+    {
+      start: 162000,
+      end: 167000,
+      text: "Not just remembered, but forever etched in the hearts of those who listen.",
+    },
+    {
+      start: 168000,
+      end: 172000,
+      text: "All over the world",
+    },
+    {
+      start: 172000,
+      end: 187000,
+      text: "(ooh ooh ooh ) Magdalene",
+    },
+  ];
+
+  return etchedLyrics;
+}
+
+
+export function whereLyrics() {
+  const subtitles = [
+    {
+      start: 5532,
+      end: 34964,
+      text: "कही धूप की च्छां में बसा है सुरों का नगर जहां सनातों में भी गुँझे एक अंतर स्वर ना जुबा, ना नाम फिर भी सब जानें उसे जहां हर मौन ने छुपा है कोई राग अनसुना Not every melody needs a name Some are just echoes,",
+    },
+    {
+      start: 35084,
+      end: 61917,
+      text: "some become flame They rise where no eye's ever seen And live in hearts quietly, endlessly गीत बसा है दिल की गहराई में जैसे तारा चमके तनहाई में समाते में वो आसा बन के हो के और हर पल में जो पंचा बसाजे Our",
+    },
+    {
+      start: 61937,
+      end: 92886,
+      text: "hearts remember the songs once sung They echo inside and forever stay young Where the song lives, it's around tonight Bound by love, beyond all sight शाओ और थूप में बहता है सुल आँसु और हसी में",
+    },
+    {
+      start: 93066,
+      end: 123452,
+      text: "पढ़ता है हर असल बिना पाँ चले बिना शब्द कहे आत्मा का वो की जहाँ शान्ती रहे रीत बसा है दिल की गहराई में जैसे तारा चमके तनहाई में समाते में वो आसा बन के उखे और हर पल में चुपन चाप सजे Our hearts remember the songs once",
+    },
+    {
+      start: 123472,
+      end: 148038,
+      text: "sung They echo inside and forever stay young Where the song lives, it's wrapped in light Bound by love, beyond all sight जहाँ गीत बसते हैं वहाँ आत्मा मुस्कुराएं गीत बसा है दिल की नहराई में जैसे तारा",
+    },
+    {
+      start: 148199,
+      end: 198413,
+      text: "चम्दा सना तेरे बास बन के उखे और हर कल में चुप चाब सजे Even when voices fade Its light will stay Through the music is laid वहाँ आतमां मुश्कुराए",
+    },
+  ];
+
+  return subtitles
+}
+
+export function FiestaLyrics() {
+  const subtitles = [
+    {
+      start: 0,
+      end: 19000,
+      text: "Luz en el aire, fuego en el pie, Magdalena canta — ven y cree, Canciones que duermen,",
+    },
+    {
+      start: 19000,
+      end: 28000,
+      text: "en cuna de luz, Despiertan el alma, derriten la cruz. Fiesta del alma,",
+    },
+    {
+      start: 28000,
+      end: 35000,
+      text: "sin miedo, sin fin, Canciones de Magda que viven en mí.",
+    },
+    {
+      start: 35000,
+      end: 41000,
+      text: "This is the party where heaven meets ground, Where timeless grace,",
+    },
+    {
+      start: 41000,
+      end: 48000,
+      text: "becomes rhythm and sound. Baila sin sombra, con fuego y amor",
+    },
+    {
+      start: 48000,
+      end: 57000,
+      text: "Sus notas eternas nos llenan de flor, Dance with the songs she has placed in the light —",
+    },
+    {
+      start: 57000,
+      end: 60000,
+      text: "A cradle of music that shines through the night.",
+    },
+    {
+      start: 60000,
+      end: 65000,
+      text: "This isn’t just rhythm — it’s songs from her hands,",
+    },
+    {
+      start: 67000,
+      end: 69000,
+      text: "Cradled in silence, now danced through the lands.",
+    },
+    {
+      start: 71000,
+      end: 74000,
+      text: "They echo like grace through the pulse of the beat,",
+    },
+    {
+      start: 76000,
+      end: 79000,
+      text: "A timeless embrace where the soul and sound meet.",
+    },
+    {
+      start: 80000,
+      end: 84000,
+      text: "Fiesta del alma, sin miedo, sin fin,",
+    },
+    {
+      start: 85000,
+      end: 88000,
+      text: "Canciones de Magda que viven en mí.",
+    },
+    {
+      start: 89000,
+      end: 93000,
+      text: "This is the party where heaven meets ground,",
+    },
+    {
+      start: 94000,
+      end: 98000,
+      text: "Where timeless grace becomes rhythm and sound.",
+    },
+    {
+      start: 99000,
+      end: 102000,
+      text: "Baila sin sombra, con fuego y amor,",
+    },
+    {
+      start: 103000,
+      end: 107000,
+      text: "Sus notas eternas nos llenan de flor.",
+    },
+    {
+      start: 108000,
+      end: 111000,
+      text: "Dance with the songs she has placed in the light —",
+    },
+    {
+      start: 112000,
+      end: 117000,
+      text: "A cradle of music that shines through the night.",
+    },
+    {
+      start: 118000,
+      end: 126000,
+      text: "We don’t stop dancing when the silence arrives,",
+    },
+    {
+      start: 127000,
+      end: 132000,
+      text: "Her songs are still breathing, they keep us alive.",
+    },
+    {
+      start: 133000,
+      end: 145000,
+      text: "Magdalena… la gracia no se acaba.",
+    },
+    {
+      start: 146000,
+      end: 170000,
+      text: "Magdalena… (Beat continues)",
+    },
+  ];
+  return subtitles;
+}
+
+export  function emberLyrics() {
+  const lyrics = [
+  { start: 0, end: 4000, text: "In the hush between the stars and dawn" },
+  { start: 4000, end: 9000, text: "Where shadows speak of what is gone" },
+  { start: 12000, end: 16000, text: "A single spark still holding tight" },
+  { start: 16000, end: 21000, text: "Keeps a soul awake in the quiet night" },
+  { start: 21000, end: 33000, text: "Ember you are the last song when music fades" },
+  { start: 33000, end: 39000, text: "The final dance when rhythm gently sways" },
+  { start: 39000, end: 45000, text: "You glow where silence dares to start" },
+  { start: 45000, end: 48000, text: "Magdalene" },
+  { start: 48000, end: 52000, text: "The song you leave in every heart" },
+  { start: 52000, end: 58000, text: "Ember a great hope in quiet disguise" },
+  { start: 58000, end: 65000, text: "A light unseen but never dies" },
+  { start: 67000, end: 72000, text: "With Ember the night forgets its fear" },
+  { start: 73000, end: 80000, text: "With Ember dreams choose to stay near" },
+  { start: 80000, end: 85000, text: "With Ember silence finds its voice" },
+  { start: 85000, end: 89000, text: "A tender ache" },
+  { start: 89000, end: 93000, text: "A sacred choice" },
+  { start: 93000, end: 96000, text: "Ember the last dance" },
+  { start: 96000, end: 99000, text: "The last dewdrop’s fall" },
+  { start: 100000, end: 103000, text: "Magdalene" },
+  { start: 103000, end: 106000, text: "The Ember never dies" },
+  { start: 106000, end: 113000, text: "Ember you are the last song when music fades" },
+  { start: 113000, end: 119000, text: "The final dance when rhythm gently sways" },
+  { start: 119000, end: 125000, text: "You glow where silence dares to start" },
+  { start: 125000, end: 128000, text: "Magdalene" },
+  { start: 128000, end: 132000, text: "The song you leave in every heart" },
+  { start: 132000, end: 138000, text: "Ember a great hope in quiet disguise" },
+  { start: 138000, end: 144000, text: "A light unseen but never dies" },
+  { start: 144000, end: 150000, text: "In small things we learn what matters most" },
+  { start: 150000, end: 156000, text: "In little dreams we build our silent hopes" },
+  { start: 156000, end: 163000, text: "In little hope we learn to hold the light" },
+  { start: 163000, end: 170000, text: "In Ember we find what still burns bright" },
+  { start: 170000, end: 175000, text: "The quiet song time can’t erase—" },
+  { start: 175000, end: 179000, text: "A glowing hymn" },
+  { start: 179000, end: 183000, text: "a soft embrace." },
+  { start: 183000, end: 190000, text: "Ember you are the last song when music fades" },
+  { start: 190000, end: 196000, text: "The final dance when rhythm gently sways" },
+  { start: 196000, end: 202000, text: "You glow where silence dares to start" },
+  { start: 202000, end: 205000, text: "Magdalene" }
+];
+
+return lyrics;
+}
+
+
+export function defenderLyrics() {
+  const lyrics = [
+  {
+    "start": 40,
+    "end": 1640,
+    "text": "In vast space"
+  },
+  {
+    "start": 1640,
+    "end": 5500,
+    "text": "where the dreams ember and hope echo"
+  },
+  {
+    "start": 5640,
+    "end": 10180,
+    "text": "Where goal-shouts rise like thunder below,"
+  },
+  {
+    "start": 11280,
+    "end": 16600,
+    "text": "the universe smiles and hushes its flight"
+  },
+  {
+    "start": 16600,
+    "end": 20780,
+    "text": "for it knows she guides both dark and light"
+  },
+  {
+    "start": 22000,
+    "end": 24560,
+    "text": "we have a cradle defender"
+  },
+  {
+    "start": 24560,
+    "end": 27880,
+    "text": "Embered dreams glow bright and tender."
+  },
+  {
+    "start": 27880,
+    "end": 29120,
+    "text": "A beacon of hope"
+  },
+  {
+    "start": 29120,
+    "end": 30960,
+    "text": "she plants in the night,"
+  },
+  {
+    "start": 30960,
+    "end": 33800,
+    "text": "Restoring teams, restoring might."
+  },
+  {
+    "start": 33800,
+    "end": 35600,
+    "text": "Yes, we cradled a defender"
+  },
+  {
+    "start": 35600,
+    "end": 38140,
+    "text": "from the universe"
+  },
+  {
+    "start": 38240,
+    "end": 42100,
+    "text": "and now the palaces feel secure"
+  },
+  {
+    "start": 46720,
+    "end": 49680,
+    "text": "she stands like queen in endgame fights"
+  },
+  {
+    "start": 49680,
+    "end": 52640,
+    "text": "she moves where knights and visions stare"
+  },
+  {
+    "start": 52640,
+    "end": 55280,
+    "text": "across the board with solemn care"
+  },
+  {
+    "start": 55280,
+    "end": 58280,
+    "text": "each step a plan each pause a prayer"
+  },
+  {
+    "start": 58280,
+    "end": 60920,
+    "text": "a queen defending dreams laid there"
+  },
+  {
+    "start": 60920,
+    "end": 63840,
+    "text": "she blocks the checkmate of despair"
+  },
+  {
+    "start": 63840,
+    "end": 66600,
+    "text": "and filled her castles firm with care"
+  },
+  {
+    "start": 66600,
+    "end": 69400,
+    "text": "not walls of stone but grace in flame"
+  },
+  {
+    "start": 69400,
+    "end": 72860,
+    "text": "where joy can rest and hope proclaim"
+  },
+  {
+    "start": 74520,
+    "end": 76840,
+    "text": "we have a cradle defender"
+  },
+  {
+    "start": 76840,
+    "end": 80020,
+    "text": "Embered dreams glow bright and tender"
+  },
+  {
+    "start": 80040,
+    "end": 81280,
+    "text": "a beacon of hope"
+  },
+  {
+    "start": 81280,
+    "end": 83040,
+    "text": "she plants in the night"
+  },
+  {
+    "start": 83040,
+    "end": 85840,
+    "text": "Restoring teams, restoring might."
+  },
+  {
+    "start": 85840,
+    "end": 87520,
+    "text": "Yes, we cradled a defender"
+  },
+  {
+    "start": 87520,
+    "end": 89940,
+    "text": " from the universe"
+  },
+  {
+    "start": 90120,
+    "end": 93640,
+    "text": "And now, the palaces feel secure."
+  },
+  {
+    "start": 93640,
+    "end": 95760,
+    "text": "She guards what songs can’t always say,"
+  },
+  {
+    "start": 95760,
+    "end": 98280,
+    "text": "the joy we lose along the way"
+  },
+  {
+    "start": 98280,
+    "end": 101460,
+    "text": "she is the hush in chaos spun—"
+  },
+  {
+    "start": 101600,
+    "end": 104180,
+    "text": "The quiet breath before the run."
+  },
+  {
+    "start": 105720,
+    "end": 107840,
+    "text": "cradled defender"
+  },
+  {
+    "start": 107840,
+    "end": 110180,
+    "text": "our shield in the storm"
+  },
+  {
+    "start": 111240,
+    "end": 113200,
+    "text": "cradled defender"
+  },
+  {
+    "start": 113200,
+    "end": 115580,
+    "text": "where mercy stay form"
+  },
+  {
+    "start": 116680,
+    "end": 119020,
+    "text": "cradled defender"
+  },
+  {
+    "start": 120360,
+    "end": 126780,
+    "text": "with footsteps wise, cradle defender beneath heaven’s eyes."
+  },
+  {
+    "start": 126840,
+    "end": 129820,
+    "text": "The field grows still… just echo left"
+  },
+  {
+    "start": 129920,
+    "end": 131260,
+    "text": "just her name"
+  },
+  {
+    "start": 132240,
+    "end": 133260,
+    "text": "magdalene"
+  }
+];
+return lyrics
+}
+
+export function RosesOfRomeLyrics() {
+  const rosesLyrics = [
+  { start: 0, end: 21000, text: "When seasons come, your heart shall bloom" },
+  { start: 21000, end: 28000, text: "Every petal within you will shine bright and true" },
+  { start: 28000, end: 36000, text: "Plenty will flourish deep in your heart Magdalene you Bear" },
+  { start: 36000, end: 44000, text: "The seal of roses of Rome Roses of Rome" },
+  { start: 44000, end: 51000, text: "Let us bloom forever Roses of Rome" },
+  { start: 51000, end: 63000, text: "May she always be with you ever" },
+  { start: 63000, end: 70000, text: "Though time may fade, the colors you wear" },
+  { start: 70000, end: 77000, text: "Your roots stand firm where glory finds its home" },
+  { start: 77000, end: 82000, text: "Through every tear, joy and whispered prayer" },
+  { start: 82000, end: 89000, text: "You still remain the roses of Rome" },
+  { start: 89000, end: 100000, text: "Roses of Rome Let us bloom forever Roses of Rome" },
+  { start: 100000, end: 112000, text: "May she always be with you ever" },
+  { start: 112000, end: 119000, text: "So when you part, let memory sing" },
+  { start: 119000, end: 126000, text: "A love immortal carved in stone" },
+  { start: 126000, end: 131000, text: "With every breath in every spring" },
+  { start: 131000, end: 138000, text: "You still remain the roses of Rome" },
+  { start: 138000, end: 149000, text: "Roses of Rome Let us bloom forever Roses of Rome" },
+  { start: 149000, end: 161000, text: "May she always be with you ever" },
+  { start: 179000, end: 190000, text: "Roses of Rome Let us bloom forever Roses of Rome" },
+  { start: 190000, end: 197000, text: "May she always be with you ever" },
+  { start: 209000, end: 217000, text: "Roses of Rome" },
+];
+
+  return rosesLyrics;
+}
+
+export function MagdaleneQuotes() {
+  const quotes = [
+    {
+      text: "Love is the echo of a star dissolving in your veins.",
+      start: 0,
+      end: 9000,
+    },
+    {
+      text: "Life is a dream rehearsing its own awakening.",
+      start: 10000,
+      end: 19000,
+    },
+    {
+      text: "Music is the shadow of time learning to dance.",
+      start: 20000,
+      end: 29000,
+    },
+    {
+      text: "Art is where the soul exhales in color.",
+      start: 30000,
+      end: 38000,
+    },
+    {
+      text: "A skill is a ghost that haunts your hands until they remember.",
+      start: 39000,
+      end: 48000,
+    },
+    {
+      text: "Talent is just memory from a life you haven’t lived yet.",
+      start: 49000,
+      end: 58000,
+    },
+    {
+      text: "Your worth is not earned—it is recognized, like moonlight.",
+      start: 59000,
+      end: 68000,
+    },
+    {
+      text: "To love is to let the universe breathe through your ribs.",
+      start: 69000,
+      end: 78000,
+    },
+    {
+      text: "The best songs are the ones that silence forgot to erase.",
+      start: 79000,
+      end: 88000,
+    },
+    {
+      text: "Creation is the act of stealing fire from your own shadows.",
+      start: 89000,
+      end: 98000,
+    },
+    {
+      text: "A masterpiece is just a wound turned into a compass.",
+      start: 99000,
+      end: 107000,
+    },
+    {
+      text: "You are not broken—you are a mosaic of unlived futures.",
+      start: 108000,
+      end: 117000,
+    },
+    {
+      text: "The soul speaks in melodies too deep for words.",
+      start: 118000,
+      end: 126000,
+    },
+    {
+      text: "Time folds inside a true artist’s hands.",
+      start: 127000,
+      end: 135000,
+    },
+    {
+      text: "A skill mastered is a ghost finally at peace.",
+      start: 136000,
+      end: 144000,
+    },
+    {
+      text: "You are the song the universe hums when it’s lonely.",
+      start: 145000,
+      end: 154000,
+    },
+    {
+      text: "The heart is an artist—it paints even when blind.",
+      start: 155000,
+      end: 163000,
+    },
+    {
+      text: "Genius is just obsession wearing a mask of ease.",
+      start: 164000,
+      end: 172000,
+    },
+    {
+      text: "To be alive is to be a secret the world whispers to itself.",
+      start: 173000,
+      end: 182000,
+    },
+    {
+      text: "You are not lost—you are a note in an infinite symphony.",
+      start: 183000,
+      end: 192000,
+    },
+  ];
+  return quotes;
+}
+
+export  function ThenLyrics(){
+  const lyrics = [
+    {
+      start: 0,
+      end: 15000,
+      text: "When shadows fall beneath the starlit skies, we found our path where still this lies.",
+    },
+    {
+      start: 15000,
+      end: 23000,
+      text: "Then and only then the truth was clear—, love was always waiting here.",
+    },
+    {
+      start: 23000,
+      end: 32000,
+      text: "In quiet dreams we walked as one, beneath the moon, beneath the sun.",
+    },
+    {
+      start: 32000,
+      end: 40000,
+      text: "Then and only then the world stood still, hearts aligned by sacred will.",
+    },
+    {
+      start: 40000,
+      end: 48000,
+      text: "Then and only then, forever ours, time bowed down to love's own powers.",
+    },
+    {
+      start: 48000,
+      end: 57000,
+      text: "Now and always  through all hours—, Then and only then… forever ours.Magdalene.",
+    },
+    {
+      start: 63000,
+      end: 70000,
+      text: "Seasons turned but we remained bound by joy through loss and gain.",
+    },
+    {
+      start: 70000,
+      end: 78000,
+      text: "Then and only then our story flows where love begins and always grows.",
+    },
+    {
+      start: 78000,
+      end: 85000,
+      text: "Then and only then, forever ours, time bowed down to love's own powers.",
+    },
+    {
+      start: 85000,
+      end: 94000,
+      text: "Now and always  through all hours—, Then and only then forever ours.Magdalene.",
+    },
+    {
+      start: 108000,
+      end: 115000,
+      text: "Seasons turned but we remained bound by joy through loss and gain.",
+    },
+    {
+      start: 115000,
+      end: 123000,
+      text: "Then and only then our story flows where love begins and always grows.",
+    },
+    {
+      start: 123000,
+      end: 130000,
+      text: "Then and only then, forever ours, Light restored what once was ours.,",
+    },
+    { start: 130000, end: 134000, text: "Past and present, now endowed—" },
+    {
+      start: 134000,
+      end: 140000,
+      text: "Then and only then forever ours, Magdalene.",
+    },
+    { start: 152000, end: 154000, text: "Magdalene." },
+  ];
+  return lyrics
+}
+
+export function EmpressSongLyrics() {
+  const subtitles = [
+    {
+      start: 0,
+      end: 16000,
+      text: "In the silken dusk her shadow fell In depths of night where silence dwells",
+    },
+    {
+      start: 16000,
+      end: 24000,
+      text: "In vast dominions none have seen The moonlight bends to forge her gleam",
+    },
+    {
+      start: 24000,
+      end: 30000,
+      text: "The stars gaze still in solemn press Behold the mighty Empress",
+    },
+    {
+      start: 30000,
+      end: 38000,
+      text: "Empress, the dawn in veiled repose, The flame where silent wonder grows, Adorable",
+    },
+    {
+      start: 38000,
+      end: 45000,
+      text: "As heaven's hymn unbound Beautiful, where grace and fire are crowned.",
+    },
+    {
+      start: 45000,
+      end: 53000,
+      text: "Magdalene, the Empress we all want — Magdalene the soul we've sought so long",
+    },
+    {
+      start: 54000,
+      end: 61000,
+      text: "The river hums her secret name The winds arise and do the same",
+    },
+    {
+      start: 61000,
+      end: 68000,
+      text: "In petals soft her mercy glows In thunder's hush her wisdom flows",
+    },
+    {
+      start: 68000,
+      end: 75000,
+      text: "The trees they bend with hearts undone They know the impress is the one",
+    },
+    {
+      start: 75000,
+      end: 83000,
+      text: "Empress, the dawn in veiled repose, The flame where silent wonder grows, Adorable",
+    },
+    {
+      start: 83000,
+      end: 89000,
+      text: "As heaven's dim unbound Beautiful with grace and fire our crown",
+    },
+    {
+      start: 89000,
+      end: 96000,
+      text: "Magdalene, the Empress we all want — Magdalene the soul we've sought so long",
+    },
+    {
+      start: 96000,
+      end: 103000,
+      text: "The river hums her secret name The winds arise and do the same",
+    },
+    {
+      start: 103000,
+      end: 111000,
+      text: "In petals soft her mercy glows In thunder's hush her wisdom flows",
+    },
+    {
+      start: 111000,
+      end: 118000,
+      text: "The trees they bend with hearts undone They know the Empress is the one",
+    },
+    {
+      start: 118000,
+      end: 126000,
+      text: "Empress, the dawn in veiled repose, The flame where silent wonder grows, Adorable",
+    },
+    {
+      start: 126000,
+      end: 132000,
+      text: "As heaven's hymn unbound Beautiful, where grace and fire are crowned.",
+    },
+    {
+      start: 132000,
+      end: 139000,
+      text: "Magdalene, the Empress we all want — Magdalene the soul we've sought so long",
+    },
+    {
+      start: 139000,
+      end: 146000,
+      text: "The sea confess beneath the tide She walks where stars and hopes abide",
+    },
+    {
+      start: 146000,
+      end: 153000,
+      text: "The stone once cold now holds her heat, The dust remembers every beat",
+    },
+    {
+      start: 153000,
+      end: 161000,
+      text: "And time itself once wild and free Stilled — to watch her silently.",
+    },
+    { start: 161000, end: 165000, text: "So long long" },
+    {
+      start: 166000,
+      end: 175000,
+      text: "Empress, the dawn in veiled repose, The flame where silent wonder grows, Adorable",
+    },
+    {
+      start: 175000,
+      end: 182000,
+      text: "As heaven's hymn unbound Beautiful, where grace and fire are crowned.",
+    },
+    {
+      start: 182000,
+      end: 189000,
+      text: "Magdalene, the Empress we all want — Magdalene the soul we've sought so long",
+    },
+    {
+      start: 190000,
+      end: 197000,
+      text: "She is the silence crowned in light The final dawn before the night",
+    },
+    {
+      start: 197000,
+      end: 204000,
+      text: "She walks where ancient echoes bloom And sings of life beyond the tomb",
+    },
+    {
+      start: 204000,
+      end: 211000,
+      text: "Magdalene — in stars she’s drawn, The Empress of our aching dawn.",
+    },
+  ];
+return subtitles
+}
+
+export function PocahontasLyrics() {
+  const subtitles = [
+    {
+      start: 1000,
+      end: 2000,
+      text: "You think you own whatever land you land on",
+    },
+    {
+      start: 30000,
+      end: 36000,
+      text: "The earth is just a dead thing you can claim",
+    },
+    {
+      start: 36000,
+      end: 48000,
+      text: "But I know every rock and tree and creature has a life, has a spirit, has a name",
+    },
+    {
+      start: 49000,
+      end: 54000,
+      text: "You think the only people who are people",
+    },
+    {
+      start: 54000,
+      end: 60000,
+      text: "Are the people who look and think like you",
+    },
+    {
+      start: 60000,
+      end: 66000,
+      text: "But if you walk the footsteps of a stranger",
+    },
+    {
+      start: 66000,
+      end: 72000,
+      text: "You'll learn things you never knew you never knew",
+    },
+    {
+      start: 72000,
+      end: 78000,
+      text: "Have you ever heard the wolf cry to the blue corn moon",
+    },
+    {
+      start: 78000,
+      end: 83000,
+      text: "Or asked the grinning bobcat why he grinned?",
+    },
+    {
+      start: 83000,
+      end: 89000,
+      text: "Can you sing with all the voices of the Magdalene?",
+    },
+    {
+      start: 89000,
+      end: 95000,
+      text: "Can you paint with all the colors of the wind?",
+    },
+    {
+      start: 95000,
+      end: 101000,
+      text: "Can you paint with all the colors of the wind?",
+    },
+    {
+      start: 103000,
+      end: 109000,
+      text: "Come run the hidden pine trails of the forest",
+    },
+    {
+      start: 109000,
+      end: 115000,
+      text: "Come taste the sun-sweet berries of the earth",
+    },
+    {
+      start: 115000,
+      end: 120000,
+      text: "Come roll in all the riches all around you",
+    },
+    {
+      start: 120000,
+      end: 126000,
+      text: "And for once, never wonder what they're worth",
+    },
+    {
+      start: 127000,
+      end: 133000,
+      text: "The rainstorm and the river are my brothers",
+    },
+    {
+      start: 133000,
+      end: 138000,
+      text: "The heron and the otter are my friends",
+    },
+    { start: 138000, end: 144000, text: "And we all connected to each other" },
+    {
+      start: 144000,
+      end: 149000,
+      text: "In a circle, in a hoop that never ends",
+    },
+    {
+      start: 149000,
+      end: 155000,
+      text: "Have you ever heard the wolf cry to the blue corn moon",
+    },
+    {
+      start: 155000,
+      end: 160000,
+      text: "Or let the eagle tell you where he's been",
+    },
+    {
+      start: 160000,
+      end: 166000,
+      text: "Can you sing with all the voices of the Magdalene?",
+    },
+    {
+      start: 166000,
+      end: 172000,
+      text: "Can you paint with all the colors of the wind?",
+    },
+    {
+      start: 172000,
+      end: 178000,
+      text: "Can you paint with all the colors of the wind?",
+    },
+    { start: 178000, end: 184000, text: "How high does the sycamore grow?" },
+    {
+      start: 184000,
+      end: 192000,
+      text: "If you cut it down, then you'll never know",
+    },
+    {
+      start: 192000,
+      end: 198000,
+      text: "And you'll never hear the wolf cry to the blue corn moon",
+    },
+    {
+      start: 198000,
+      end: 203000,
+      text: "For whether we are white or copper-skinned",
+    },
+    {
+      start: 203000,
+      end: 209000,
+      text: "We need to sing with all the voices of the Magdalene",
+    },
+    {
+      start: 210000,
+      end: 216000,
+      text: "Need to paint with all the colors of the wind",
+    },
+    {
+      start: 216000,
+      end: 223000,
+      text: "You can own the earth and still, All you'll own is earth until",
+    },
+    {
+      start: 223000,
+      end: 234000,
+      text: "You can paint with all the colors of the wind",
+    },
+    {
+      start: 239000,
+      end: 246000,
+      text: "And you sing with all the voices of the Magdalene",
+    },
+  ];
+return subtitles;
+}
+
+export function TakeMeLyrics(){
+  const subtitles = [
+  { start: 0, end: 17000, text: "Mmmhmm, yeah. Mmmhmm." },
+  { start: 17000, end: 25000, text: "Hiding from the rain and snow, trying to forget but I won't let go." },
+  { start: 25000, end: 33000, text: "Looking at a crowded street, listening to my own heartbeat." },
+  { start: 33000, end: 48000, text: "So many people all around the world tell me where do I find someone like you girl." },
+  { start: 48000, end: 56000, text: "Take me to your heart, take me to your soul, give me your hand before I'm old." },
+  { start: 56000, end: 64000, text: "Show me what lovers haven't got a clue. Show me that wonders can't be true." },
+  { start: 64000, end: 72000, text: "They say nothing lasts forever. We're only here today." },
+  { start: 73000, end: 84000, text: "Love is now or never. Bring me far away. Take me to your heart, take me to your soul," },
+  { start: 84000, end: 92000, text: "give me your hand and hold me. Show me what lovers be, my God in star." },
+  { start: 92000, end: 98000, text: "It's easy. Take me to your heart." },
+  { start: 102000, end: 109000, text: "Mmmhmm." },
+  { start: 109000, end: 116000, text: "Mmmhmm." },
+  { start: 116000, end: 139000, text: "Standing on a mountain high, looking at the moon through a clear blue sky." },
+  { start: 139000, end: 147000, text: "I should go and see some friends, but they don't really comprehend." },
+  { start: 147000, end: 155000, text: "Don't need too much talking without saying anything." },
+  { start: 155000, end: 162000, text: "All I need is someone who makes me want to sing." },
+  { start: 162000, end: 170000, text: "Take me to your heart, take me to your soul, give me your hand before I'm old." },
+  { start: 170000, end: 178000, text: "Show me what lovers haven't got a clue. Show me that wonders can't be true." },
+  { start: 178000, end: 186000, text: "They say nothing lasts forever. We're only here today." },
+  { start: 186000, end: 198000, text: "Love is now or never. Bring me far away. Take me to your heart, take me to your soul," },
+  { start: 198000, end: 206000, text: "give me your hand and hold me. Show me what lovers be, my God in star." },
+  { start: 206000, end: 218000, text: "It's easy. Take me to your heart, take me to your heart, take me to your soul," },
+  { start: 218000, end: 226000, text: "give me your hand and hold me. Show me what lovers be, my God in star." },
+  { start: 226000, end: 232000, text: "It's easy. Take me to your heart." }
+];
+  return subtitles;
+}
+
+export function SomewhereCountryLyrics() {
+  const subtitles = [
+    { start: 0, end: 5000, text: "MUSIC" },
+    {
+      start: 5000,
+      end: 8000,
+      text: "Somewhere in our hearts, you’re breathing,",
+    },
+    { start: 8000, end: 11000, text: "With the songs you left behind" },
+    { start: 11000, end: 14000, text: "Every note, a kind of healing," },
+    { start: 14000, end: 17000, text: "Playing softly through our minds" },
+    { start: 17000, end: 20000, text: "Though the silence now surrounds us" },
+    { start: 20000, end: 23000, text: "Your light hums through every part—" },
+    { start: 23000, end: 26000, text: "Like a prayer we keep repeating" },
+    { start: 26000, end: 28000, text: "You belong inside our heart" },
+    { start: 28000, end: 31000, text: "And when the world forgets to listen" },
+    { start: 31000, end: 34000, text: "We still hear your lullaby" },
+    { start: 34000, end: 37000, text: "You left a spark in all this quiet—" },
+    { start: 37000, end: 40000, text: "A voice that never says goodbye" },
+    {
+      start: 40000,
+      end: 43000,
+      text: "Somewhere in our hearts, you’re singing,",
+    },
+    { start: 43000, end: 46000, text: "In the silence, clear and strong" },
+    { start: 46000, end: 49000, text: "Every breath a note still ringing," },
+    { start: 49000, end: 52000, text: "Every memory, a song." },
+    { start: 52000, end: 55000, text: "Though you're gone beyond the shadows" },
+    { start: 55000, end: 57000, text: "You've been here all along" },
+    { start: 57000, end: 59000, text: "Somewhere in our hearts" },
+    { start: 59000, end: 63000, text: "Magdalene and your songs belong." },
+    { start: 63000, end: 68000, text: "(MUSIC)" },
+    { start: 68000, end: 71000, text: "We still find you in the stillness," },
+    { start: 71000, end: 74000, text: "In a chord the world forgot." },
+    { start: 74000, end: 77000, text: "In the shimmer of forgiveness" },
+    { start: 77000, end: 80000, text: "In the quiet of a thought." },
+    { start: 80000, end: 82000, text: "Every echo feels like morning" },
+    { start: 82000, end: 85000, text: "Like the day you used to bring—" },
+    { start: 85000, end: 88000, text: "And we carry you inside us" },
+    { start: 88000, end: 91000, text: "Like the hush inside a string." },
+    {
+      start: 91000,
+      end: 94000,
+      text: "Somewhere in our hearts, you’re singing,",
+    },
+    { start: 94000, end: 97000, text: "In the silence, clear and strong" },
+    { start: 97000, end: 100000, text: "Every breath a note still ringing," },
+    { start: 100000, end: 103000, text: "Every memory, a song." },
+    {
+      start: 103000,
+      end: 106000,
+      text: "Though you're gone beyond the shadows",
+    },
+    { start: 106000, end: 108000, text: "You've been here all along" },
+    { start: 108000, end: 111000, text: "Somewhere in our hearts" },
+    { start: 111000, end: 114000, text: "Magdalene and your songs belong." },
+    { start: 114000, end: 125000, text: "MUSIC" },
+    {
+      start: 125000,
+      end: 129000,
+      text: "Somewhere… Still singing in the dark.",
+    },
+    {
+      start: 129000,
+      end: 135000,
+      text: "Somewhere… You’re cradled in our hearts.",
+    },
+    {
+      start: 135000,
+      end: 142000,
+      text: "No goodbye just a song that lingers on",
+    },
+    { start: 142000, end: 144000, text: "Somewhere in our hearts" },
+    { start: 144000, end: 149000, text: "Magdalene  and your songs… belong." },
+    { start: 149000, end: 153000, text: "MUSIC" },
+    { start: 153000, end: 156000, text: "We still find you in the stillness Magdalene." },
+  ];
+  return subtitles;
+}
+
+export function SomewhereFemLy() {
+  const subtitles = [
+    { start: 0, end: 4000, text: { en: "Somewhere in our hearts, you’re breathing,", it: "Da qualche parte nei nostri cuori, stai respirando," } },
+    { start: 4000, end: 7000, text: { en: "With the songs you left behind.", it: "Con le canzoni che hai lasciato." } },
+    { start: 7000, end: 11000, text: { en: "Every note, a kind of healing,", it: "Ogni nota, una sorta di guarigione," } },
+    { start: 11000, end: 14000, text: { en: "Playing softly through our minds.", it: "Che suona dolcemente nelle nostre menti." } },
+    { start: 14000, end: 18000, text: { en: "Though the silence now surrounds us,", it: "Anche se ora il silenzio ci circonda," } },
+    { start: 18000, end: 21000, text: { en: "Your light hums through every part—", it: "La tua luce vibra in ogni parte—" } },
+    { start: 21000, end: 25000, text: { en: "Like a prayer we keep repeating,", it: "Come una preghiera che continuiamo a ripetere," } },
+    { start: 25000, end: 28000, text: { en: "You belong inside our heart.", it: "Tu appartieni al nostro cuore." } },
+
+    // Pre-Chorus
+    { start: 29000, end: 32000, text: { en: "And when the world forgets to listen,", it: "E quando il mondo dimentica di ascoltare," } },
+    { start: 32000, end: 35000, text: { en: "We still hear your lullaby.", it: "Sentiamo ancora la tua ninna nanna." } },
+    { start: 35000, end: 39000, text: { en: "You left a spark in all this quiet—", it: "Hai lasciato una scintilla in tutto questo silenzio—" } },
+    { start: 39000, end: 43000, text: { en: "A voice that never says goodbye.", it: "Una voce che non dice mai addio." } },
+
+    // Chorus
+    { start: 43000, end: 46000, text: { en: "Somewhere in our hearts, you’re singing,", it: "Da qualche parte nei nostri cuori, stai cantando," } },
+    { start: 46000, end: 50000, text: { en: "In the silence, clear and strong.", it: "Nel silenzio, chiaro e forte." } },
+    { start: 50000, end: 53000, text: { en: "Every breath a note still ringing,", it: "Ogni respiro è una nota che risuona ancora," } },
+    { start: 53000, end: 57000, text: { en: "A voice that never says goodbye.", it: "Una voce che non dice mai addio." } },
+    { start: 58000, end: 61000, text: { en: "Though you're gone beyond the shadows,", it: "Anche se sei andata oltre le ombre," } },
+    { start: 61000, end: 64000, text: { en: "You’ve been here all along—", it: "Sei sempre stata qui—" } },
+    { start: 65000, end: 67000, text: { en: "Somewhere in our hearts,", it: "Da qualche parte nei nostri cuori," } },
+    { start: 67000, end: 71000, text: { en: "Magdalene and your songs belong.", it: "Magdalene e le tue canzoni appartengono qui." } },
+
+    // Verse 2
+    { start: 72000, end: 75000, text: { en: "We still find you in the stillness,", it: "Ti troviamo ancora nella quiete," } },
+    { start: 75000, end: 78000, text: { en: "In a chord the world forgot.", it: "In un accordo che il mondo ha dimenticato." } },
+    { start: 79000, end: 82000, text: { en: "In the shimmer of forgiveness,", it: "Nel luccichio del perdono," } },
+    { start: 82000, end: 85000, text: { en: "In the quiet of a thought.", it: "Nella quiete di un pensiero." } },
+    { start: 86000, end: 89000, text: { en: "Every echo feels like morning,", it: "Ogni eco sembra mattina," } },
+    { start: 89000, end: 93000, text: { en: "Like the day you used to bring—", it: "Come il giorno che portavi—" } },
+    { start: 93000, end: 96000, text: { en: "And we carry you inside us,", it: "E ti portiamo dentro di noi," } },
+    { start: 96000, end: 99000, text: { en: "Like the hush inside a string.", it: "Come il silenzio dentro una corda." } },
+
+    // Chorus
+    { start: 100000, end: 103000, text: { en: "Somewhere in our hearts, you’re singing,", it: "Da qualche parte nei nostri cuori, stai cantando," } },
+    { start: 103000, end: 107000, text: { en: "In the silence, clear and strong.", it: "Nel silenzio, chiaro e forte." } },
+    { start: 107000, end: 110000, text: { en: "Every breath a note still ringing,", it: "Ogni respiro è una nota che risuona ancora," } },
+    { start: 110000, end: 114000, text: { en: "A voice that never says goodbye.", it: "Una voce che non dice mai addio." } },
+    { start: 115000, end: 118000, text: { en: "Though you're gone beyond the shadows,", it: "Anche se sei andata oltre le ombre," } },
+    { start: 118000, end: 121000, text: { en: "You’ve been here all along—", it: "Sei sempre stata qui—" } },
+    { start: 123000, end: 124000, text: { en: "Somewhere in our hearts,", it: "Da qualche parte nei nostri cuori," } },
+    { start: 124000, end: 128000, text: { en: "Magdalene and your songs belong.", it: "Magdalene e le tue canzoni appartengono qui." } },
+
+    // Outro
+    { start: 131000, end: 135000, text: { en: "Somewhere… Still singing in the dark.", it: "Da qualche parte… Ancora cantando nel buio." } },
+    { start: 138000, end: 143000, text: { en: "Somewhere… You’re cradled in our hearts.", it: "Da qualche parte… Sei cullata nei nostri cuori." } },
+    { start: 144000, end: 146000, text: { en: "No goodbye…", it: "Nessun addio…" } },
+    { start: 146000, end: 149000, text: { en: "Just a song that lingers on.", it: "Solo una canzone che rimane." } },
+    { start: 151000, end: 153000, text: { en: "Somewhere in our hearts,", it: "Da qualche parte nei nostri cuori," } },
+    { start: 153000, end: 157000, text: { en: "Magdalene and your songs… belong.", it: "Magdalene e le tue canzoni… appartengono qui." } },
+    { start: 166000, end: 167000, text: { en: "Along", it: "Insieme" } },
+    { start: 203000, end: 206000, text: { en: "Somewhere in our hearts you're breathing", it: "Da qualche parte nei nostri cuori stai respirando" } },
+    { start: 206000, end: 209000, text: { en: "With songs you left behind", it: "Con le canzoni che hai lasciato" } },
+    { start: 210000, end: 213000, text: { en: "Every note a kind of healing", it: "Ogni nota una sorta di guarigione" } },
+    { start: 213000, end: 216000, text: { en: "Playing softly through our minds", it: "Che suona dolcemente nelle nostre menti" } },
+    { start: 217000, end: 220000, text: { en: "Though the silence now surrounds us", it: "Anche se ora il silenzio ci circonda" } },
+    { start: 220000, end: 223000, text: { en: "Your light hums through every part", it: "La tua luce vibra in ogni parte" } },
+    { start: 224000, end: 227000, text: { en: "Like a prayer we keep repeating", it: "Come una preghiera che continuiamo a ripetere" } },
+    { start: 227000, end: 230000, text: { en: "You belong inside our hearts", it: "Tu appartieni ai nostri cuori" } },
+    { start: 231000, end: 234000, text: { en: "And when the world forgets to listen", it: "E quando il mondo dimentica di ascoltare" } },
+    { start: 234000, end: 236000, text: { en: "We still hear you", it: "Ti sentiamo ancora" } },
+  ];
+  return subtitles;
+}
+
+
+export function SomewhereMaleLyrics() {
+  const lyrics = [
+    {
+      start: 0,
+      end: 12000,
+      text: "Somewhere in our hearts, you’re breathing, with the songs you left behind.",
+    },
+    {
+      start: 12000,
+      end: 19000,
+      text: "Every note, a kind of healing, playing softly through our minds.",
+    },
+    {
+      start: 19000,
+      end: 25000,
+      text: "Though the silence now surrounds us, your light hums through every part—",
+    },
+    {
+      start: 25000,
+      end: 32000,
+      text: "Like a prayer we keep repeating, you belong inside our heart.",
+    },
+
+    // Pre-Chorus
+    {
+      start: 32000,
+      end: 38000,
+      text: "And when the world forgets to listen, we still hear your lullaby.",
+    },
+    {
+      start: 39000,
+      end: 44000,
+      text: "You're left to spark and all is quiet, a voice that never says goodbye",
+    },
+    {
+      start: 45000,
+      end: 51000,
+      text: "Somewhere in our heart you're seeing you, in the silence, clear and strong",
+    },
+    {
+      start: 51000,
+      end: 57000,
+      text: "You're left to spark and all is quiet, a voice that never says goodbye",
+    },
+    {
+      start: 51000,
+      end: 57000,
+      text: "Every breath a note still ringing, every memory, a song.",
+    },
+    {
+      start: 57000,
+      end: 64000,
+      text: "Somewhere in our hearts, you’re singing, in the silence, clear and strong",
+    },
+    {
+      start: 64000,
+      end: 70000,
+      text: "Every breath a note still ringing, Every memory, a song.",
+    },
+    {
+      start: 70000,
+      end: 77000,
+      text: "Though you're gone beyond the shadows, You’ve been here all along—",
+    },
+    {
+      start: 77000,
+      end: 87000,
+      text: "Somewhere in our hearts, Magdalene and your songs belong",
+    },
+    {
+      start: 87000,
+      end: 94000,
+      text: "We still find you in the stillness, In a chord the world forgot.",
+    },
+    {
+      start: 94000,
+      end: 100000,
+      text: "In the shimmer of forgiveness, In the quiet of a thought.",
+    },
+    {
+      start: 101000,
+      end: 107000,
+      text: "Every echo feels like morning, like the day you used to bring",
+    },
+    {
+      start: 107000,
+      end: 113000,
+      text: "And we carry you inside us, Like the hush inside a string.",
+    },
+    {
+      start: 113000,
+      end: 120000,
+      text: "Somewhere in our hearts you’re singing, in the silence, clear and strong",
+    },
+    {
+      start: 120000,
+      end: 126000,
+      text: "Every breath a note still ringing, Every memory, a song.",
+    },
+    {
+      start: 127000,
+      end: 133000,
+      text: "Though you're gone beyond the shadows, You’ve been here all along—",
+    },
+    {
+      start: 133000,
+      end: 139000,
+      text: "Somewhere in our hearts, Magdalene and your songs belong",
+    },
+    {
+      start: 139000,
+      end: 151000,
+      text: "Somewhere… Still singing in the dark, Somewhere… You’re cradled in our hearts.",
+    },
+    {
+      start: 151000,
+      end: 162000,
+      text: "No goodbye… just a song that lingers on., somewhere in our hearts, Magdalene and your songs belong",
+    },
+  ];
+  return lyrics;
+}
+
+
+export function AtAllCost() {
+  const lyrics = [
+    {
+      start: 0,
+      end: 20000,
+      text: "If happiness was a tangible thing, it would be you (Magdalene)",
+    },
+    {
+      start: 20000,
+      end: 27000,
+      text: "If you'd told me the feeling you'd bring, I'd think it untrue",
+    },
+    {
+      start: 27000,
+      end: 33000,
+      text: "And people search for a wonder like you all of their lives",
+    },
+    {
+      start: 33000,
+      end: 40000,
+      text: "You still amaze me after all this time",
+    },
+    {
+      start: 40000,
+      end: 45000,
+      text: "You pull me in like some kind of wind",
+    },
+    {
+      start: 45000,
+      end: 48000,
+      text: "Mesmerized by the hold I'm in",
+    },
+    {
+      start: 48000,
+      end: 54000,
+      text: "Leave you here, I don't wanna, I wanna",
+    },
+    {
+      start: 54000,
+      end: 59000,
+      text: "Promise as one does",
+    },
+    {
+      start: 59000,
+      end: 66000,
+      text: "I will protect you at all costs",
+    },
+    {
+      start: 66000,
+      end: 72000,
+      text: "Keep you safe here in my arms",
+    },
+    {
+      start: 72000,
+      end: 79000,
+      text: "I will protect you at all costs",
+    },
+    {
+      start: 79000,
+      end: 84000,
+      text: "At all costs",
+    },
+    {
+      start: 84000,
+      end: 89000,
+      text: "What's pain when I look at you no way",
+    },
+    {
+      start: 89000,
+      end: 94000,
+      text: "I could explain you, even if I tried to",
+    },
+    {
+      start: 94000,
+      end: 98000,
+      text: "I'll never dream like I used to do",
+    },
+    {
+      start: 98000,
+      end: 102000,
+      text: "If someone tried to hurt you, I don't see how that could happen",
+    },
+    {
+      start: 102000,
+      end: 105000,
+      text: "I'd fight for you in ways you can't imagine",
+    },
+    {
+      start: 105000,
+      end: 108000,
+      text: "Felt this? No, I haven't I hope",
+    },
+    {
+      start: 108000,
+      end: 112000,
+      text: "it would be alright to stay right here beside you",
+    },
+    {
+      start: 112000,
+      end: 117000,
+      text: "And promise as one does",
+    },
+    {
+      start: 117000,
+      end: 124000,
+      text: "I will protect you at all costs",
+    },
+    {
+      start: 124000,
+      end: 130000,
+      text: "Keep you safe here in my arms",
+    },
+    {
+      start: 130000,
+      end: 137000,
+      text: "I will protect you at all costs",
+    },
+    {
+      start: 137000,
+      end: 140000,
+      text: "At all costs",
+    },
+    {
+      start: 140000,
+      end: 145000,
+      text: "If you ever feel like a loss, I'll come find you",
+    },
+    {
+      start: 145000,
+      end: 148000,
+      text: "Man all fronts, There's no ocean ",
+    },
+    {
+      start: 148000,
+      end: 152000,
+      text: "I won't swim  across to be right by you",
+    },
+    {
+      start: 152000,
+      end: 156000,
+      text: "And not just once, Here and now, I swear on my response",
+    },
+    {
+      start: 156000,
+      end: 159000,
+      text: "I'll remind you",
+    },
+    {
+      start: 159000,
+      end: 164000,
+      text: "And promise as one does",
+    },
+    {
+      start: 164000,
+      end: 171000,
+      text: "I will protect you at all costs",
+    },
+    {
+      start: 171000,
+      end: 178000,
+      text: "Keep you safe here in my arms",
+    },
+    {
+      start: 178000,
+      end: 185000,
+      text: "I will protect you at all costs",
+    },
+    {
+      start: 185000,
+      end: 189000,
+      text: "At all costs",
+    },
+  ];
+  return lyrics
+}
+
+export function SonnetLyrics() {
+  const subtitles = [
+    { start: 13480, end: 18500, text: { en: 'when seasons come our hearts will bloom', it: 'Quando le stagioni arrivano, i nostri cuori fioriranno' } },
+    { start: 19960, end: 24780, text: { en: 'Every petal within shines bright and true', it: 'Ogni petalo splende, chiaro e sincero' } },
+    { start: 26480, end: 28380, text: { en: 'plenty will flourish', it: 'Nel profondo dei cuori sboccerà l\'abbondanza' } },
+    { start: 29360, end: 33520, text: { en: 'deep in our hearts we will bear the mark', it: 'Porteremo il segno delle Rose di Roma' } },
+    { start: 33520, end: 36820, text: { en: 'of roses of rome', it: 'Rose di Roma' } },
+    { start: 37200, end: 39540, text: { en: 'roses of rome', it: 'Rose di Roma' } },
+    { start: 40680, end: 43520, text: { en: 'let us bloom forever', it: 'Fioriamo per sempre' } },
+    { start: 43520, end: 46260, text: { en: 'roses of rome', it: 'Rose di Roma' } },
+    { start: 47320, end: 51740, text: { en: 'may we always be with you ever', it: 'Che possiamo sempre essere con te, per sempre' } },
+    { start: 58160, end: 63060, text: { en: 'though time may fade the colors we wear', it: 'Anche se il tempo potrà sbiadire i colori che indossiamo' } },
+    { start: 64400, end: 66280, text: { en: 'our roots stand firm', it: 'Le nostre radici restano salde' } },
+    { start: 66280, end: 69700, text: { en: 'where glory finds its home', it: 'dove la gloria dimora' } },
+    { start: 70760, end: 75960, text: { en: 'Through every tear, joy, and whispered prayer —', it: 'Attraverso ogni lacrima, gioia e preghiera sussurrata' } },
+    { start: 75960, end: 81340, text: { en: 'we still remain the Roses of Rome', it: 'Siamo ancora le Rose di Roma' } },
+    { start: 81920, end: 84500, text: { en: 'Roses of Rome', it: 'Rose di Roma' } },
+    { start: 85600, end: 88360, text: { en: 'let us bloom forever', it: 'Fioriamo per sempre' } },
+    { start: 88360, end: 95260, text: { en: 'Roses of Rome may we always be with you', it: 'Rose di Roma, che possiamo sempre essere con te' } },
+    { start: 96400, end: 101660, text: { en: 'though time may fade the colors we wear', it: 'Anche se il tempo potrà sbiadire i colori che indossiamo' } },
+    { start: 102840, end: 104680, text: { en: 'our roots stand firm', it: 'Le nostre radici restano salde' } },
+    { start: 104680, end: 107860, text: { en: 'where glory finds its home', it: 'dove la gloria dimora' } },
+    { start: 109200, end: 114420, text: { en: 'Through every tear, joy, and whispered prayer —', it: 'Attraverso ogni lacrima, gioia e preghiera sussurrata' } },
+    { start: 115520, end: 119660, text: { en: 'will remain the Roses of Rome', it: 'Siamo ancora le Rose di Roma' } },
+    { start: 120360, end: 126040, text: { en: 'So when we part, let memory', it: 'E quando ci separeremo, che la memoria canti' } },
+    { start: 126040, end: 132020, text: { en: 'sing a love immortal carved in stone', it: 'Un amore immortale scolpito nella pietra' } },
+    { start: 133240, end: 139900, text: { en: 'with every breath in every spring', it: 'Con ogni respiro, in ogni primavera' } },
+    { start: 140000, end: 145460, text: { en: 'we still remain the Roses of Rome', it: 'Siamo ancora le Rose di Roma' } },
+    { start: 145880, end: 152360, text: { en: 'Roses of Rome let us bloom forever', it: 'Rose di Roma, fioriamo per sempre' } },
+    { start: 152360, end: 154700, text: { en: 'Roses of Rome', it: 'Rose di Roma' } },
+    { start: 155920, end: 160400, text: { en: 'may we always be with you forever', it: 'Che possiamo sempre essere con te, per sempre' } },
+    { start: 160400, end: 165660, text: { en: 'though time may fade the colors we wear', it: 'Anche se il tempo potrà sbiadire i colori che indossiamo' } },
+    { start: 166840, end: 168680, text: { en: 'our roots stand firm', it: 'Le nostre radici restano salde' } },
+    { start: 168680, end: 172100, text: { en: 'where glory finds its home', it: 'dove la gloria dimora' } },
+    { start: 173160, end: 178500, text: { en: 'Through every tear, joy, and whispered prayer —', it: 'Attraverso ogni lacrima, gioia e preghiera sussurrata' } },
+    { start: 179720, end: 184220, text: { en: 'We still remain the Roses of Rome.', it: 'Siamo ancora le Rose di Roma' } },
+    { start: 184360, end: 186940, text: { en: 'Roses of Rome', it: 'Rose di Roma' } }
+  ];
+  return subtitles;
+}
+
+export function sonnet2Lyrics() {
+  const subtitles = [
+    { start: 99, end: 7019, text: { en: "(dramatic orchestral music)", it: "(musica orchestrale drammatica)" } },
+    { start: 7019, end: 12960, text: { en: "(singing)", it: "(canto)" } },
+    { start: 12960, end: 17579, text: { en: "When seasons come, our hearts", it: "Quando le stagioni arrivano, i nostri cuori" } },
+    { start: 17659, end: 22539, text: { en: "will bloom. Every petal within shines", it: "fioriranno. Ogni petalo splende" } },
+    { start: 22619, end: 27299, text: { en: "bright and true. Plenty", it: "chiaro e sincero. L'abbondanza" } },
+    { start: 27379, end: 31940, text: { en: "will flourish, deep in our hearts.", it: "sboccerà, nel profondo dei cuori." } },
+    { start: 32200, end: 36479, text: { en: "We will bear the mark of roses", it: "Porteremo il segno delle rose" } },
+    { start: 37040, end: 40619, text: { en: "of Rome. (echoes)", it: "di Roma. (eco)" } },
+    { start: 43000, end: 47119, text: { en: "Roses of Rome, let us bloom", it: "Rose di Roma, fioriamo" } },
+    { start: 47219, end: 52219, text: { en: "forever. Roses of Rome, may we", it: "per sempre. Rose di Roma, possiamo" } },
+    { start: 52340, end: 56819, text: { en: "always be with you, ever. Though", it: "sempre essere con te, per sempre. Sebbene" } },
+    { start: 56939, end: 61180, text: { en: "time may fade the colors we", it: "il tempo possa sbiadire i colori che" } },
+    { start: 61359, end: 65599, text: { en: "wear, our roots stand firm where", it: "indossiamo, le nostre radici restano salde dove" } },
+    { start: 65639, end: 69760, text: { en: "glory finds its home. Through", it: "la gloria dimora. Attraverso" } },
+    { start: 69900, end: 74019, text: { en: "every tear, joy and whispered", it: "ogni lacrima, gioia e sussurrata" } },
+    { start: 74059, end: 78839, text: { en: "prayer, we still remain the roses", it: "preghiera, rimaniamo ancora le rose" } },
+    { start: 78919, end: 82000, text: { en: "of Rome. (echoes)", it: "di Roma. (eco)" } },
+    { start: 84199, end: 88799, text: { en: "Roses of Rome. (echoes)", it: "Rose di Roma. (eco)" } },
+    { start: 90979, end: 95099, text: { en: "Roses of Rome, let us bloom", it: "Rose di Roma, fioriamo" } },
+    { start: 95180, end: 100180, text: { en: "forever. Roses of Rome, may we", it: "per sempre. Rose di Roma, possiamo" } },
+    { start: 100259, end: 103799, text: { en: "always be with you, ever.", it: "sempre essere con te, per sempre." } },
+    { start: 105319, end: 110280, text: { en: "Though time may fade the colors we wear,", it: "Sebbene il tempo possa sbiadire i colori che indossiamo," } },
+    { start: 111799, end: 116599, text: { en: "our roots stand firm where glory finds its home.", it: "le nostre radici restano salde dove la gloria dimora." } },
+    { start: 117339, end: 122040, text: { en: "Through every tear joy and whispered", it: "Attraverso ogni lacrima unita e sussurrata" } },
+    { start: 122040, end: 126839, text: { en: "prayer, we still remain the roses", it: "preghiera, rimaniamo ancora le rose" } },
+    { start: 126899, end: 130559, text: { en: "of Rome. (echoes)", it: "di Roma. (eco)" } },
+    { start: 132160, end: 136080, text: { en: "Roses of Rome, let us bloom", it: "Rose di Roma, fioriamo" } },
+    { start: 136199, end: 140280, text: { en: "forever. Roses of Rome,", it: "per sempre. Rose di Roma," } },
+    { start: 141399, end: 145139, text: { en: "may we always be with you, ever.", it: "possiamo sempre essere con te, per sempre." } },
+    { start: 146839, end: 151059, text: { en: "So when we part, let memories sing.", it: "Così quando ci separeremo, lascia che i ricordi cantino." } },
+    { start: 153360, end: 157320, text: { en: "A love immortal, carved in stone.", it: "Un amore immortale, scolpito nella pietra." } },
+    { start: 159759, end: 163839, text: { en: "With every breath and every spring,", it: "Con ogni respiro e ogni primavera," } },
+    { start: 165360, end: 169960, text: { en: "we still remain the roses of Rome.", it: "rimaniamo ancora le rose di Roma." } },
+    { start: 170000, end: 189552, text: { en: "(song ends)", it: "(fine della canzone)" } }
+  ];
+  return subtitles;
+}
+
+export function SplenderSongLyrics() {
+  const lyrics = [
+    {
+      start: 99,
+      end: 10220,
+      text: {
+        en: "(dramatic music plays)",
+        it: "(musica drammatica)",
+      },
+    },
+    {
+      start: 10260,
+      end: 14879,
+      text: {
+        en: "When all was hushed and dimmed by sorrow.",
+        it: "Quando tutto era silenzio, oscurato dal dolore,",
+      },
+    },
+    {
+      start: 15500,
+      end: 20159,
+      text: {
+        en: "And silence wrapped the aching years.",
+        it: "E il silenzio avvolgeva gli anni dolenti,",
+      },
+    },
+    {
+      start: 20799,
+      end: 25399,
+      text: {
+        en: "A single breath invoked tomorrow.",
+        it: "Un solo respiro invocò il domani,",
+      },
+    },
+    {
+      start: 26059,
+      end: 30520,
+      text: {
+        en: "And stars broke through our hidden tears.",
+        it: "E le stelle ruppero le nostre lacrime nascoste.",
+      },
+    },
+    {
+      start: 30899,
+      end: 34040,
+      text: {
+        en: "Gloria splendoris lux",
+        it: "Gloria splendoris lux",
+      },
+    },
+    {
+      start: 34139,
+      end: 38479,
+      text: {
+        en: "renascentis. Cantemus omnes",
+        it: "renascentis. Cantemus omnes",
+      },
+    },
+    {
+      start: 38680,
+      end: 42720,
+      text: {
+        en: "in lumine. Gloria",
+        it: "in lumine. Gloria",
+      },
+    },
+    {
+      start: 42759,
+      end: 47239,
+      text: {
+        en: "splendoris flamma vivens!. Ecce",
+        it: "splendoris flamma vivens!. Ecce",
+      },
+    },
+    {
+      start: 47299,
+      end: 51740,
+      text: {
+        en: "Novus ordo in floribus!.",
+        it: "Novus ordo in floribus!.",
+      },
+    },
+    {
+      start: 53259,
+      end: 60040,
+      text: {
+        en: "(instrumental music plays)",
+        it: "(musica strumentale)",
+      },
+    },
+    {
+      start: 60059,
+      end: 64659,
+      text: {
+        en: "Oh, splendor rise from embers deep.",
+        it: "O Splendore, sorgi dalle profonde braci.",
+      },
+    },
+    {
+      start: 65619,
+      end: 69860,
+      text: {
+        en: "Like roses blooming after sleep.",
+        it: "Come rose che sbocciano dopo il sonno.",
+      },
+    },
+    {
+      start: 70879,
+      end: 75439,
+      text: {
+        en: "You are the song that grief forgets.",
+        it: "Sei il canto che il dolore dimentica.",
+      },
+    },
+    {
+      start: 76180,
+      end: 80959,
+      text: {
+        en: "The golden flame the night regrets.",
+        it: "",
+      },
+    },
+    {
+      start: 81000,
+      end: 84119,
+      text: {
+        en: "Gloria splendoris lux",
+        it: "Gloria splendoris lux",
+      },
+    },
+    {
+      start: 84199,
+      end: 88500,
+      text: {
+        en: "renascentis. Cantemus omnes",
+        it: "renascentis. Cantemus omnes",
+      },
+    },
+    {
+      start: 88779,
+      end: 92839,
+      text: {
+        en: "in lumine!. Gloria",
+        it: "in lumine!. Gloria",
+      },
+    },
+    {
+      start: 92839,
+      end: 97480,
+      text: {
+        en: "splendoris flamma vivens!. Ecce",
+        it: "splendoris flamma vivens!. Ecce",
+      },
+    },
+    {
+      start: 97860,
+      end: 101419,
+      text: {
+        en: "Novus ordo in floribus!.",
+        it: "Novus ordo in floribus!.",
+      },
+    },
+    {
+      start: 102879,
+      end: 110299,
+      text: {
+        en: "(instrumental music plays)",
+        it: "(musica strumentale)",
+      },
+    },
+    {
+      start: 110459,
+      end: 114619,
+      text: {
+        en: "Now is the hour, the moment divine.",
+        it: "Ora è l’ora, il momento divino.",
+      },
+    },
+    {
+      start: 115759,
+      end: 119799,
+      text: {
+        en: 'Where ashes whisper, "I still shine."',
+        it: 'Dove le ceneri sussurrano: "Brillo ancora."',
+      },
+    },
+    {
+      start: 121059,
+      end: 125319,
+      text: {
+        en: "Our hearts reborn, our voices wide.",
+        it: "I nostri cuori rinati, le nostre voci aperte.",
+      },
+    },
+    {
+      start: 126299,
+      end: 130878,
+      text: {
+        en: "We bloom like Rome in sacred pride.",
+        it: "Sbocciamo come Roma, in sacro orgoglio.",
+      },
+    },
+
+    {
+      start: 131119,
+      end: 136079,
+      text: {
+        en: "Gloria splendoris lux renascentis.",
+        it: "Gloria splendoris lux renascentis.",
+      },
+    },
+    {
+      start: 136520,
+      end: 141139,
+      text: {
+        en: "Cantemus omnes  in lumine.",
+        it: "Cantemus omnes  in lumine.",
+      },
+    },
+    {
+      start: 141660,
+      end: 146639,
+      text: {
+        en: "Gloria splendoris flamma vivens!.",
+        it: "Gloria splendoris flamma vivens!.",
+      },
+    },
+    {
+      start: 147080,
+      end: 152040,
+      text: {
+        en: "Ecce Novus ordo in floribus!.",
+        it: "Ecce Novus ordo in floribus!.",
+      },
+    },
+    {
+      start: 152080,
+      end: 160399,
+      text: {
+        en: "(instrumental music plays)",
+        it: "(musica strumentale)",
+      },
+    },
+    {
+      start: 160539,
+      end: 164939,
+      text: {
+        en: "Though time may fade our earthly names.",
+        it: "Anche se il tempo potrà sbiadire i nostri nomi terreni.",
+      },
+    },
+    {
+      start: 165800,
+      end: 170059,
+      text: {
+        en: "The Splendor stays — in bloom, in flame..",
+        it: "Lo Splendore rimane — in fiore, in fiamma.",
+      },
+    },
+    {
+      start: 171119,
+      end: 175300,
+      text: {
+        en: "We walk as petals kissed by grace.",
+        it: "Camminiamo come petali baciati dalla grazia.",
+      },
+    },
+    {
+      start: 176440,
+      end: 181219,
+      text: {
+        en: "Eternal light upon our face.",
+        it: "Luce eterna sul nostro volto.",
+      },
+    },
+
+    {
+      start: 181220,
+      end: 184399,
+      text: {
+        en: "Gloria splendoris lux",
+        it: "Gloria splendoris lux",
+      },
+    },
+    {
+      start: 184459,
+      end: 188879,
+      text: {
+        en: "renascentis. Cantemus omnes",
+        it: "renascentis. Cantemus omnes",
+      },
+    },
+    {
+      start: 189000,
+      end: 193039,
+      text: {
+        en: "in lumine. Gloria",
+        it: "in lumine. Gloria",
+      },
+    },
+    {
+      start: 193099,
+      end: 197639,
+      text: {
+        en: "splendoris flamma vivens!. Ecce",
+        it: "splendoris flamma vivens!. Ecce",
+      },
+    },
+    {
+      start: 198099,
+      end: 202079,
+      text: {
+        en: "Novus ordo in floribus!.",
+        it: "Novus ordo in floribus!.",
+      },
+    },
+    {
+      start: 212819,
+      end: 224860,
+      text: {
+        en: "(instrumental music plays)",
+        it: "(musica strumentale)",
+      },
+    },
+  ];
+
+  return lyrics;
+}
+
+export function SplenderSong2Lyrics() {
+  const lyrics = [
+    {
+      start: 79,
+      end: 4960,
+      text: {
+        en: "(violin music plays) When",
+        it: "(violino suona) Quando",
+      },
+    },
+    {
+      start: 4960,
+      end: 9679,
+      text: {
+        en: "all was hushed and dimmed by sorrow. And silence",
+        it: "tutto era silenzio, oscurato dal dolore. E il silenzio",
+      },
+    },
+    {
+      start: 9719,
+      end: 14399,
+      text: {
+        en: "wrapped the aching years. A single breath invoked",
+        it: "avvolgeva gli anni dolenti. Un solo respiro invocò",
+      },
+    },
+    {
+      start: 14420,
+      end: 18879,
+      text: {
+        en: "tomorrow. And stars broke through our hidden",
+        it: "il domani. E le stelle ruppero le nostre nascoste",
+      },
+    },
+    {
+      start: 19000,
+      end: 22719,
+      text: {
+        en: "tears. Gloria splendoris, lux",
+        it: "lacrime. Gloria Splendoris, lux",
+      },
+    },
+    {
+      start: 22779,
+      end: 26799,
+      text: {
+        en: "renascentis. Cantamus omnes in",
+        it: "renascentis. Cantemus omnes in",
+      },
+    },
+    {
+      start: 26859,
+      end: 31319,
+      text: {
+        en: "lumine. Gloria splendoris,",
+        it: "lumine. Gloria Splendoris,",
+      },
+    },
+    {
+      start: 31340,
+      end: 36139,
+      text: {
+        en: "flamma vivens. Ecce novus ordo in",
+        it: "flamma vivens. Ecce novus ordo in",
+      },
+    },
+    {
+      start: 36239,
+      end: 37720,
+      text: {
+        en: "floribus.",
+        it: "floribus.",
+      },
+    },
+    {
+      start: 38360,
+      end: 46639,
+      text: {
+        en: "(instrumental music plays)",
+        it: "(musica strumentale)",
+      },
+    },
+    {
+      start: 46639,
+      end: 51500,
+      text: {
+        en: "Oh, splendor rise from embers deep. Like",
+        it: "O Splendore, sorgi dalle braci profonde. Come",
+      },
+    },
+    {
+      start: 51539,
+      end: 56439,
+      text: {
+        en: "roses blooming after sleep. You are the song",
+        it: "rose che sbocciano dopo il sonno. Sei il canto",
+      },
+    },
+    {
+      start: 56479,
+      end: 61339,
+      text: {
+        en: "that grief forgets. The golden flame the night",
+        it: "che il dolore dimentica. La fiamma dorata che la notte",
+      },
+    },
+    {
+      start: 61379,
+      end: 65259,
+      text: {
+        en: "regrets. Gloria splendoris, lux",
+        it: "rimpiange. Gloria Splendoris, lux",
+      },
+    },
+    {
+      start: 65379,
+      end: 69419,
+      text: {
+        en: "renascentis. Cantamus omnes in",
+        it: "renascentis. Cantemus omnes in",
+      },
+    },
+    {
+      start: 69479,
+      end: 73939,
+      text: {
+        en: "lumine. Gloria splendoris,",
+        it: "lumine. Gloria Splendoris,",
+      },
+    },
+    {
+      start: 73939,
+      end: 78760,
+      text: {
+        en: "flamma vivens. Ecce novus ordo in",
+        it: "flamma vivens. Ecce novus ordo in",
+      },
+    },
+    {
+      start: 78839,
+      end: 80220,
+      text: {
+        en: "floribus.",
+        it: "floribus.",
+      },
+    },
+    {
+      start: 85180,
+      end: 90080,
+      text: {
+        en: "(instrumental music plays) Now is",
+        it: "(musica strumentale) Ora è",
+      },
+    },
+    {
+      start: 90139,
+      end: 94880,
+      text: {
+        en: "the hour, the moment divine. Where ashes",
+        it: "l'ora, il momento divino. Dove le ceneri",
+      },
+    },
+    {
+      start: 95000,
+      end: 99059,
+      text: {
+        en: "whisper, I still shine. Our hearts",
+        it: "sussurrano, 'Brillo ancora'. I nostri cuori",
+      },
+    },
+    {
+      start: 99079,
+      end: 104879,
+      text: {
+        en: "reborn, our voices wide. We bloom like",
+        it: "rinati, le nostre voci aperte. Sbocciamo come",
+      },
+    },
+    {
+      start: 104939,
+      end: 109679,
+      text: {
+        en: "Rome in sacred pride. Gloria splendoris,",
+        it: "Roma in sacro orgoglio. Gloria Splendoris,",
+      },
+    },
+    {
+      start: 109739,
+      end: 113139,
+      text: {
+        en: "lux renascentis. Cantamus omnes in",
+        it: "lux renascentis. Cantemus omnes in",
+      },
+    },
+    {
+      start: 113220,
+      end: 117659,
+      text: {
+        en: "lumine. Gloria splendoris,",
+        it: "lumine. Gloria Splendoris,",
+      },
+    },
+    {
+      start: 117659,
+      end: 122480,
+      text: {
+        en: "flamma vivens. Ecce novus ordo in",
+        it: "flamma vivens. Ecce novus ordo in",
+      },
+    },
+    {
+      start: 122559,
+      end: 124079,
+      text: {
+        en: "floribus.",
+        it: "floribus.",
+      },
+    },
+    {
+      start: 125259,
+      end: 130740,
+      text: {
+        en: "(instrumental music plays)",
+        it: "(musica strumentale)",
+      },
+    },
+    {
+      start: 130740,
+      end: 135540,
+      text: {
+        en: "Though time may fade our earthling names. The splendor",
+        it: "Sebbene il tempo sbiadisca i nostri nomi terreni. Lo Splendore",
+      },
+    },
+    {
+      start: 135580,
+      end: 140079,
+      text: {
+        en: "stays in bloom, in flame. We walk as",
+        it: "rimane in fiore, in fiamma. Camminiamo come",
+      },
+    },
+    {
+      start: 140119,
+      end: 144799,
+      text: {
+        en: "petals kissed by grace. Eternal light",
+        it: "petali baciati dalla grazia. Luce eterna",
+      },
+    },
+    {
+      start: 144959,
+      end: 149440,
+      text: {
+        en: "upon our face. Gloria splendoris, lux",
+        it: "sul nostro volto. Gloria Splendoris, lux",
+      },
+    },
+    {
+      start: 149500,
+      end: 153519,
+      text: {
+        en: "renascentis. Cantamus omnes in",
+        it: "renascentis. Cantemus omnes in",
+      },
+    },
+    {
+      start: 153599,
+      end: 158039,
+      text: {
+        en: "lumine. Gloria splendoris,",
+        it: "lumine. Gloria Splendoris,",
+      },
+    },
+    {
+      start: 158039,
+      end: 162819,
+      text: {
+        en: "flamma vivens. Ecce novus ordo in",
+        it: "flamma vivens. Ecce novus ordo in",
+      },
+    },
+    {
+      start: 162940,
+      end: 164460,
+      text: {
+        en: "floribus.",
+        it: "floribus.",
+      },
+    },
+    {
+      start: 164800,
+      end: 179904,
+      text: {
+        en: "(instrumental music plays)",
+        it: "(musica strumentale)",
+      },
+    },
+  ];
+
+  return lyrics;
+}
+
+export function CottolengoAnthemLyrics() {
+  return [
+    {
+      start: 0,
+      end: 12279,
+      text: {
+        en: "(dramatic orchestral music)",
+        it: "(musica orchestrale drammatica)",
+      },
+    },
+    {
+      start: 12279,
+      end: 16879,
+      text: {
+        en: "Life bloomed from roots in sacred ground.",
+        it: "La vita sbocciò da radici sante,",
+      },
+    },
+    {
+      start: 18779,
+      end: 23039,
+      text: {
+        en: "A love was cradled safe and sound.",
+        it: "Un amore cullato, dolce e costante.",
+      },
+    },
+    {
+      start: 24899,
+      end: 29860,
+      text: {
+        en: "A dream was whispered through the rain.",
+        it: "Un sogno sussurrato sotto la pioggia,",
+      },
+    },
+    {
+      start: 29920,
+      end: 33000,
+      text: {
+        en: "And a prayer rose from pain.",
+        it: "E una preghiera nata dalla piaga.",
+      },
+    },
+    {
+      start: 33800,
+      end: 38000,
+      text: {
+        en: "In our hymns, Cottolengo, you are grace.",
+        it: "Nei nostri inni, Cottolengo, sei grazia,",
+      },
+    },
+    {
+      start: 39000,
+      end: 44000,
+      text: {
+        en: "In our psalms, a light no night erases.",
+        it: "Nei nostri salmi, una luce che mai si spegne,",
+      },
+    },
+    {
+      start: 45000,
+      end: 49000,
+      text: {
+        en: "In our voices, your love still flows.",
+        it: "Nelle nostre voci, il tuo amore scorre ancora,",
+      },
+    },
+    {
+      start: 50000,
+      end: 53000,
+      text: {
+        en: "God gave us Cottolengo.",
+        it: "Dio ci donò il Cottolengo —",
+      },
+    },
+    {
+      start: 54000,
+      end: 58000,
+      text: {
+        en: 'Forever we sing, "Deo Gratias."',
+        it: "Per sempre cantiamo: Deo Gracias.",
+      },
+    },
+    {
+      start: 59000,
+      end: 62000,
+      text: {
+        en: "Cottolengo, the name we call home.",
+        it: "Cottolengo—il nome che chiamiamo casa,",
+      },
+    },
+    {
+      start: 65000,
+      end: 68000,
+      text: {
+        en: "A shelter when the thunder roars.",
+        it: "Un rifugio quando il tuono si alza,",
+      },
+    },
+    {
+      start: 69000,
+      end: 71500,
+      text: {
+        en: "A vase where delicate hearts are held.",
+        it: "Un vaso che cuor delicati raccoglie,",
+      },
+    },
+    {
+      start: 72000,
+      end: 74500,
+      text: {
+        en: "A dream that time could never fold.",
+        it: "Un sogno che il tempo non scioglie.",
+      },
+    },
+    {
+      start: 75000,
+      end: 81000,
+      text: {
+        en: "In our hymns, Cottolengo, you are grace.",
+        it: "Nei nostri inni, Cottolengo, sei grazia,",
+      },
+    },
+    {
+      start: 81900,
+      end: 87500,
+      text: {
+        en: "In our psalms, a light no night erases.",
+        it: "Nei nostri salmi, una luce che mai si spegne,",
+      },
+    },
+    {
+      start: 88000,
+      end: 92300,
+      text: {
+        en: "In our voices, your love still flows.",
+        it: "Nelle nostre voci, il tuo amore scorre ancora,",
+      },
+    },
+    {
+      start: 92500,
+      end: 96300,
+      text: {
+        en: "God gave us Cottolengo.",
+        it: "Dio ci donò il Cottolengo —",
+      },
+    },
+    {
+      start: 96400,
+      end: 101500,
+      text: {
+        en: 'Forever we sing, "Deo Gratias."',
+        it: "Per sempre cantiamo: Deo Gracias.",
+      },
+    },
+    {
+      start: 101800,
+      end: 104000,
+      text: {
+        en: "(dramatic orchestral music)",
+        it: "(musica orchestrale drammatica)",
+      },
+    },
+    {
+      start: 105000,
+      end: 107500,
+      text: {
+        en: "We are the roses time can't fade.",
+        it: "Siamo le rose che il tempo non sfiorisce,",
+      },
+    },
+    {
+      start: 108000,
+      end: 110500,
+      text: {
+        en: "We are the joy Cottolengo dreamt.",
+        it: "Siamo la gioia che Cottolengo sognava,",
+      },
+    },
+    {
+      start: 111000,
+      end: 114600,
+      text: {
+        en: "We are the love etched in Cottolengo's heart.",
+        it: "Siamo l'amore inciso nel suo cuore,",
+      },
+    },
+    {
+      start: 114900,
+      end: 117400,
+      text: {
+        en: "Through every tear, joy, and whispered prayer,",
+        it: "Tra ogni lacrima, gioia e sussurrata preghiera,",
+      },
+    },
+    {
+      start: 117900,
+      end: 119900,
+      text: {
+        en: "we'll still remain roses of Cottolengo.",
+        it: "Rimaniamo le rose di Cottolengo.",
+      },
+    },
+    {
+      start: 120000,
+      end: 126000,
+      text: {
+        en: "In our hymns, Cottolengo, you are grace.",
+        it: "Nei nostri inni, Cottolengo, sei grazia,",
+      },
+    },
+    {
+      start: 127000,
+      end: 132000,
+      text: {
+        en: "In our psalms, a light no night erases.",
+        it: "Nei nostri salmi, una luce che mai si spegne,",
+      },
+    },
+    {
+      start: 133000,
+      end: 137000,
+      text: {
+        en: "In our voices, your love still flows.",
+        it: "Nelle nostre voci, il tuo amore scorre ancora,",
+      },
+    },
+    {
+      start: 138000,
+      end: 140000,
+      text: {
+        en: "God gave us Cottolengo.",
+        it: "Dio ci donò il Cottolengo —",
+      },
+    },
+    {
+      start: 141000,
+      end: 145000,
+      text: {
+        en: 'Forever we sing, "Deo Gratias."',
+        it: "Per sempre cantiamo: Deo Gracias.",
+      },
+    },
+    {
+      start: 146000,
+      end: 150000,
+      text: {
+        en: "Caritas Christi urget nos.",
+        it: "Caritas Christi urget nos —",
+      },
+    },
+    {
+      start: 151000,
+      end: 157000,
+      text: {
+        en: "With Cottolengo, Deo Gratias.",
+        it: "Con Cottolengo, Deo Gracias.",
+      },
+    },
+    
+  ];
+}
+
+export function CottolengoAnthemItalianLyrics() {
+  const lyrics = [
+      // Intro (Music)
+      {
+        start: 7899,
+        end: 32340,
+        text: {
+          en: "(Music)",
+          it: "(Musica)"
+        }
+      },
+
+      // Verse 1 (Italian)
+      {
+        start: 38200,
+        end: 42759,
+        text: {
+          en: "Life bloomed from roots in sacred ground,",
+          it: "La vita sbocciò da radici sante,"
+        }
+      },
+      {
+        start: 44059,
+        end: 48460,
+        text: {
+          en: "A love was cradled, safe and sound.",
+          it: "Un amore cullato, dolce e costante."
+        }
+      },
+      {
+        start: 50139,
+        end: 54339,
+        text: {
+          en: "A dream was whispered through the rain,",
+          it: "Un sogno sussurrato sotto la pioggia,"
+        }
+      },
+      {
+        start: 56020,
+        end: 59979,
+        text: {
+          en: "And a prayer rose from pain.",
+          it: "E una preghiera nata dalla piaga."
+        }
+      },
+
+      // Chorus (Ritornello)
+      {
+        start: 61139,
+        end: 65519,
+        text: {
+          en: "In our hymns, Cottolengo, you are grace,",
+          it: "Nei nostri inni, Cottolengo, sei grazia,"
+        }
+      },
+      {
+        start: 67059,
+        end: 70919,
+        text: {
+          en: "In our psalms, a light no night erases,",
+          it: "Nei nostri salmi, una luce che mai si spegne,"
+        }
+      },
+      {
+        start: 71000,
+        end: 75919,
+        text: {
+          en: "In our voices, your love still flows,",
+          it: "Nelle nostre voci, il tuo amore scorre ancora,"
+        }
+      },
+      {
+        start: 76000,
+        end: 80659,
+        text: {
+          en: "God gave us Cottolengo —",
+          it: "Dio ci donò il Cottolengo —"
+        }
+      },
+      {
+        start: 80699,
+        end: 85079,
+        text: {
+          en: "Forever we sing: Deo Gratias.",
+          it: "Per sempre cantiamo: Deo Gracias."
+        }
+      },
+
+      // Verse 2 (Italian)
+      {
+        start: 90099,
+        end: 92460,
+        text: {
+          en: "Cottolengo—the name we call home,",
+          it: "Cottolengo—il nome che chiamiamo casa,"
+        }
+      },
+      {
+        start: 95040,
+        end: 97960,
+        text: {
+          en: "A shelter when the thunder roars,",
+          it: "Un rifugio quando il tuono si alza,"
+        }
+      },
+      {
+        start: 100919,
+        end: 104699,
+        text: {
+          en: "A vase where delicate hearts are held,",
+          it: "Un vaso che cuor delicati raccoglie,"
+        }
+      },
+      {
+        start: 106819,
+        end: 111559,
+        text: {
+          en: "A dream that time could never fold.",
+          it: "Un sogno che il tempo non scioglie."
+        }
+      },
+
+      // Chorus (Repeat)
+      {
+        start: 111639,
+        end: 115759,
+        text: {
+          en: "In our hymns, Cottolengo, you are grace,",
+          it: "Nei nostri inni, Cottolengo, sei grazia,"
+        }
+      },
+      {
+        start: 117099,
+        end: 122039,
+        text: {
+          en: "In our psalms, a light no night erases,",
+          it: "Nei nostri salmi, una luce che mai si spegne,"
+        }
+      },
+      {
+        start: 123000,
+        end: 127859,
+        text: {
+          en: "In our voices, your love still flows,",
+          it: "Nelle nostre voci, il tuo amore scorre ancora,"
+        }
+      },
+      {
+        start: 128899,
+        end: 133580,
+        text: {
+          en: "God gave us Cottolengo.",
+          it: "Dio ci donò il Cottolengo."
+        }
+      },
+      {
+        start: 133679,
+        end: 135920,
+        text: {
+          en: "Forever we sing: Deo Gratias.",
+          it: "Per sempre cantiamo: Deo Gracias."
+        }
+      },
+
+      // Verse 3 (Italian)
+      {
+        start: 147099,
+        end: 151579,
+        text: {
+          en: "We are the roses time can't fade,",
+          it: "Siamo le rose che il tempo non sfiorisce,"
+        }
+      },
+      {
+        start: 152979,
+        end: 157279,
+        text: {
+          en: "We are the joy Cottolengo dreamt,",
+          it: "Siamo la gioia che Cottolengo sognava,"
+        }
+      },
+      {
+        start: 158119,
+        end: 162119,
+        text: {
+          en: "We are the love etched in his heart,",
+          it: "Siamo l’amore inciso nel suo cuore,"
+        }
+      },
+      {
+        start: 162199,
+        end: 167180,
+        text: {
+          en: "Through every tear, joy and whispered prayer,",
+          it: "Tra ogni lacrima, gioia e sussurrata preghiera,"
+        }
+      },
+      {
+        start: 167199,
+        end: 171319,
+        text: {
+          en: "We still remain roses of Cottolengo.",
+          it: "Rimaniamo le rose di Cottolengo."
+        }
+      },
+
+      // Final Chorus
+      {
+        start: 171779,
+        end: 176319,
+        text: {
+          en: "In our hymns, Cottolengo, you are grace,",
+          it: "Nei nostri inni, Cottolengo, sei grazia,"
+        }
+      },
+      {
+        start: 176399,
+        end: 181179,
+        text: {
+          en: "In our psalms, a light no night erases,",
+          it: "Nei nostri salmi, una luce che mai si spegne,"
+        }
+      },
+      {
+        start: 181879,
+        end: 185559,
+        text: {
+          en: "In our voices, your love still flows,",
+          it: "Nelle nostre voci, il tuo amore scorre ancora,"
+        }
+      },
+      {
+        start: 185580,
+        end: 189659,
+        text: {
+          en: "God gave us Cottolengo.",
+          it: "Dio ci donò il Cottolengo."
+        }
+      },
+      {
+        start: 189659,
+        end: 194020,
+        text: {
+          en: "Forever we sing: Deo Gratias.",
+          it: "Per sempre cantiamo: Deo Gracias."
+        }
+      },
+
+      // Outro
+      {
+        start: 198539,
+        end: 200979,
+        text: {
+          en: "Caritas Christi urget nos —",
+          it: "Caritas Christi urget nos —"
+        }
+      },
+      {
+        start: 203899,
+        end: 207024,
+        text: {
+          en: "With Cottolengo, Deo Gratias.",
+          it: "Con Cottolengo, Deo Gracias."
+        }
+      }
+    ];
+
+    return lyrics;
+}
+
+export function DeoGratiasFMVLyrics() {
+  const lyrics = [
+    {
+      start: 99,
+      end: 10699,
+      text: {
+        en: "(instrumental music plays)",
+        it: "(musica strumentale)",
+      },
+    },
+    {
+      start: 10699,
+      end: 15099,
+      text: {
+        en: "Life bloomed from roots in",
+        it: "La vita sbocciò da radici",
+      },
+    },
+    {
+      start: 15179,
+      end: 19719,
+      text: {
+        en: "sacred ground. A love",
+        it: "sante. Un amore",
+      },
+    },
+    {
+      start: 20279,
+      end: 25099,
+      text: {
+        en: "was cradled safe and sound. A",
+        it: "cullato, dolce e costante. Un",
+      },
+    },
+    {
+      start: 25139,
+      end: 29879,
+      text: {
+        en: "dream was whispered through the rain. And a",
+        it: "sogno sussurrato sotto la pioggia. E una",
+      },
+    },
+    {
+      start: 29920,
+      end: 34920,
+      text: {
+        en: "prayer rose from pain. In our hymns,",
+        it: "preghiera nata dalla piaga. Nei nostri inni,",
+      },
+    },
+    {
+      start: 34939,
+      end: 39880,
+      text: {
+        en: "Cottolengo, you are grace. In",
+        it: "Cottolengo, sei grazia. Nei",
+      },
+    },
+    {
+      start: 39979,
+      end: 44580,
+      text: {
+        en: "our Psalms, a light no night erases.",
+        it: "nostri salmi, una luce che mai si spegne.",
+      },
+    },
+    {
+      start: 45719,
+      end: 50679,
+      text: {
+        en: "In our voices, your love still flows. God",
+        it: "Nelle nostre voci, il tuo amore scorre ancora. Dio",
+      },
+    },
+    {
+      start: 50759,
+      end: 55379,
+      text: {
+        en: "gave us Cottolengo. Forever we",
+        it: "ci donò il Cottolengo. Per sempre",
+      },
+    },
+    {
+      start: 55520,
+      end: 60519,
+      text: {
+        en: "sing, Deo Gratias. Cottolengo,",
+        it: "cantiamo: Deo Gracias. Cottolengo—",
+      },
+    },
+    {
+      start: 60539,
+      end: 62879,
+      text: {
+        en: "the name we call home.",
+        it: "il nome che chiamiamo casa.",
+      },
+    },
+    {
+      start: 65500,
+      end: 70279,
+      text: {
+        en: "A shelter when the thunder roars. A Vase where delicate",
+        it: "Un rifugio quando il tuono si alza. Un vaso che cuor",
+      },
+    },
+    {
+      start: 70339,
+      end: 74559,
+      text: {
+        en: "hearts are held. A dream that time can never fold.",
+        it: "delicati raccoglie. Un sogno che il tempo non scioglie.",
+      },
+    },
+    {
+      start: 74939,
+      end: 79559,
+      text: {
+        en: "In our hymns, Cottolengo, you are grace.",
+        it: "Nei nostri inni, Cottolengo, sei grazia.",
+      },
+    },
+    {
+      start: 81119,
+      end: 84279,
+      text: {
+        en: "In our Psalms, a light no night",
+        it: "Nei nostri salmi, una luce che mai",
+      },
+    },
+    {
+      start: 84279,
+      end: 89259,
+      text: {
+        en: "erases. In our voices,",
+        it: "si spegne. Nelle nostre voci,",
+      },
+    },
+    {
+      start: 89559,
+      end: 94299,
+      text: {
+        en: "your love still flows. God gave us Cottolengo.",
+        it: "il tuo amore scorre ancora. Dio ci donò il Cottolengo.",
+      },
+    },
+    {
+      start: 95659,
+      end: 100079,
+      text: {
+        en: "Forever we sing, Deo Gratias.",
+        it: "Per sempre cantiamo: Deo Gracias.",
+      },
+    },
+    {
+      start: 104599,
+      end: 108699,
+      text: {
+        en: "We are the roses time can't fade. We are the joy",
+        it: "Siamo le rose che il tempo non sfiorisce. Siamo la gioia",
+      },
+    },
+    {
+      start: 108779,
+      end: 113579,
+      text: {
+        en: "Cottolengo dreamt. We are the love etched in Cottolengo's",
+        it: "che Cottolengo sognava. Siamo l'amore inciso nel suo",
+      },
+    },
+    {
+      start: 113599,
+      end: 117159,
+      text: {
+        en: "heart. Through every tear, joy, and whispered prayer,",
+        it: "cuore. Tra ogni lacrima, gioia e sussurrata preghiera,",
+      },
+    },
+    {
+      start: 117399,
+      end: 121799,
+      text: {
+        en: "we still remain roses of Cottolengo. In our",
+        it: "rimaniamo le rose di Cottolengo. Nei nostri",
+      },
+    },
+    {
+      start: 121919,
+      end: 125699,
+      text: {
+        en: "hymns, Cottolengo, you are grace.",
+        it: "inni, Cottolengo, sei grazia.",
+      },
+    },
+    {
+      start: 127279,
+      end: 130399,
+      text: {
+        en: "In our Psalms, a light no night",
+        it: "Nei nostri salmi, una luce che mai",
+      },
+    },
+    {
+      start: 130440,
+      end: 135440,
+      text: {
+        en: "erases. In our voices,",
+        it: "si spegne. Nelle nostre voci,",
+      },
+    },
+    {
+      start: 135720,
+      end: 140719,
+      text: {
+        en: "your love still flows. God gave us Cottolengo.",
+        it: "il tuo amore scorre ancora. Dio ci donò il Cottolengo.",
+      },
+    },
+    {
+      start: 141839,
+      end: 146799,
+      text: {
+        en: "Forever we sing Deo Gratias.",
+        it: "Per sempre cantiamo: Deo Gracias.",
+      },
+    },
+    {
+      start: 146799,
+      end: 150659,
+      text: {
+        en: "Caritas Christi Urget Nos. With",
+        it: "Caritas Christi urget nos. Con",
+      },
+    },
+    {
+      start: 150739,
+      end: 154559,
+      text: {
+        en: "Cottolengo, Deo Gratias",
+        it: "Cottolengo, Deo Gracias",
+      },
+    },
+    {
+      start: 154559,
+      end: 161952,
+      text: {
+        en: "(Music ends)",
+        it: "(La musica finisce)",
+      },
+    },
+  ];
+  return lyrics;
+}
+
+
+export function  DivenProvLyrics() {
+  const lyrics = [
+    {
+      start: 99,
+      end: 13960,
+      text: {
+        en: "(instrumental music plays)",
+        it: "(musica strumentale)",
+      },
+    },
+    {
+      start: 13960,
+      end: 18259,
+      text: {
+        en: "First time the unloved knew endless",
+        it: "Prima volta l'amaro conobbe",
+      },
+    },
+    {
+      start: 18319,
+      end: 23099,
+      text: {
+        en: "embrace. First time forgotten heard",
+        it: "abbracci senza confini. Prima volta",
+      },
+    },
+    {
+      start: 23119,
+      end: 27699,
+      text: {
+        en: "their name called with grace. First time",
+        it: "nomi dei dimenticati risuonaron",
+      },
+    },
+    {
+      start: 27799,
+      end: 31799,
+      text: {
+        en: "weary found a path gently laid.",
+        it: "come inni. Prima volta chi era",
+      },
+    },
+    {
+      start: 32779,
+      end: 36959,
+      text: {
+        en: "First time hunger found more than bread a",
+        it: "stanco trovò vie d'oro. Prima volta",
+      },
+    },
+    {
+      start: 36979,
+      end: 41720,
+      text: {
+        en: "home made. Last time despair dared",
+        it: "non solo pane, ma un tetto, un tesoro.",
+      },
+    },
+    {
+      start: 41779,
+      end: 44880,
+      text: {
+        en: "dwell where love now stays. We say",
+        it: "Ultima volta il buio osò sfidar l'aurora.",
+      },
+    },
+    {
+      start: 44939,
+      end: 49519,
+      text: {
+        en: "forever Deo Gratias",
+        it: "Diciamo per sempre Deo gratias",
+      },
+    },
+    {
+      start: 49599,
+      end: 54200,
+      text: {
+        en: "for your guiding grace. In our",
+        it: "per la Tua guida di grazia,",
+      },
+    },
+    {
+      start: 54279,
+      end: 59220,
+      text: {
+        en: "hearts your light will always shine. We will sing,",
+        it: "Nei nostri cuori, la Tua luce brillerà sempre.",
+      },
+    },
+    {
+      start: 59299,
+      end: 63880,
+      text: {
+        en: "pray, and sing again for you. With",
+        it: "Canteremo, pregheremo e canteremo ancora per Te,",
+      },
+    },
+    {
+      start: 64000,
+      end: 68559,
+      text: {
+        en: "love, with kindness, with unshaken",
+        it: "Con amore, con bontà, con fede",
+      },
+    },
+    {
+      start: 68699,
+      end: 73080,
+      text: {
+        en: "faith. Divine providence be with us",
+        it: "incrollabile. Provvidenza Divina,",
+      },
+    },
+    {
+      start: 73180,
+      end: 74019,
+      text: {
+        en: "forever.",
+        it: "resta con noi per sempre.",
+      },
+    },
+    {
+      start: 78400,
+      end: 82639,
+      text: {
+        en: "(instrumental music plays) Through humble hands, the",
+        it: "(musica strumentale) Per mani umili,",
+      },
+    },
+    {
+      start: 82759,
+      end: 87099,
+      text: {
+        en: "hungry were fed. Through open",
+        it: "gli affamati furono nutriti. Per porte",
+      },
+    },
+    {
+      start: 87199,
+      end: 91139,
+      text: {
+        en: "doors, the homeless found rest.",
+        it: "aperte, i senzatetto trovarono riposo.",
+      },
+    },
+    {
+      start: 92439,
+      end: 97359,
+      text: {
+        en: "The sick were cradled in arms of peace,",
+        it: "I malati furono cullati tra braccia di pace,",
+      },
+    },
+    {
+      start: 98079,
+      end: 102739,
+      text: {
+        en: "and tears turned to songs of trust. In every soul,",
+        it: "E le lacrime si mutarono in canti di fiducia.",
+      },
+    },
+    {
+      start: 102779,
+      end: 107059,
+      text: {
+        en: "a seed was planted and in its bloom, your mercy",
+        it: "In ogni anima fu piantato un seme —",
+      },
+    },
+    {
+      start: 107180,
+      end: 110279,
+      text: {
+        en: "shines. We say",
+        it: "E nel suo fiore, la Tua misericordia splende.",
+      },
+    },
+    {
+      start: 110399,
+      end: 114980,
+      text: {
+        en: "forever Deo Gratias",
+        it: "Diciamo per sempre Deo gratias",
+      },
+    },
+    {
+      start: 115059,
+      end: 119659,
+      text: {
+        en: "for your guiding grace. In our",
+        it: "per la Tua guida di grazia,",
+      },
+    },
+    {
+      start: 119759,
+      end: 124719,
+      text: {
+        en: "hearts your light will always shine. We will sing,",
+        it: "Nei nostri cuori, la Tua luce brillerà sempre.",
+      },
+    },
+    {
+      start: 124759,
+      end: 129360,
+      text: {
+        en: "pray, and sing again for you. With",
+        it: "Canteremo, pregheremo e canteremo ancora per Te,",
+      },
+    },
+    {
+      start: 129479,
+      end: 134019,
+      text: {
+        en: "love, with kindness, with unshaken",
+        it: "Con amore, con bontà, con fede",
+      },
+    },
+    {
+      start: 134160,
+      end: 138539,
+      text: {
+        en: "faith. Divine providence be with us",
+        it: "incrollabile. Provvidenza Divina,",
+      },
+    },
+    {
+      start: 138619,
+      end: 143379,
+      text: {
+        en: "forever. We are the roses you have",
+        it: "resta con noi per sempre. Siamo le rose",
+      },
+    },
+    {
+      start: 143500,
+      end: 148039,
+      text: {
+        en: "gathered, planted in the garden of your care. Through the",
+        it: "che Tu hai raccolto, piantate nel giardino",
+      },
+    },
+    {
+      start: 148119,
+      end: 153099,
+      text: {
+        en: "storms your hand has held us. Through the night, your light has led",
+        it: "della Tua cura. Attraverso le tempeste,",
+      },
+    },
+    {
+      start: 153160,
+      end: 156659,
+      text: {
+        en: "us. Every breath a hymn of Deo",
+        it: "la Tua mano ci ha sostenuto. Nella notte,",
+      },
+    },
+    {
+      start: 156759,
+      end: 161159,
+      text: {
+        en: "Gratias. Every heart a",
+        it: "la Tua luce ci ha guidato. Ogni respiro,",
+      },
+    },
+    {
+      start: 161239,
+      end: 164839,
+      text: {
+        en: "living prayer. We say",
+        it: "un inno di Deo gratias. Ogni cuore,",
+      },
+    },
+    {
+      start: 164940,
+      end: 168639,
+      text: {
+        en: "forever Deo Gratias",
+        it: "una preghiera vivente.",
+      },
+    },
+    {
+      start: 169599,
+      end: 174199,
+      text: {
+        en: "for your guiding grace. In our",
+        it: "Diciamo per sempre Deo gratias",
+      },
+    },
+    {
+      start: 174259,
+      end: 178779,
+      text: {
+        en: "hearts your light will always shine. We will",
+        it: "per la Tua guida di grazia, Nei nostri cuori,",
+      },
+    },
+    {
+      start: 178879,
+      end: 183879,
+      text: {
+        en: "sing, pray, and sing again for you. With",
+        it: "la Tua luce brillerà sempre. Canteremo,",
+      },
+    },
+    {
+      start: 184000,
+      end: 188579,
+      text: {
+        en: "love, with kindness, with unshaken",
+        it: "pregheremo e canteremo ancora per Te, Con amore,",
+      },
+    },
+    {
+      start: 188679,
+      end: 193080,
+      text: {
+        en: "faith. Divine providence be with us",
+        it: "con bontà, con fede incrollabile.",
+      },
+    },
+    {
+      start: 193159,
+      end: 193999,
+      text: {
+        en: "forever.",
+        it: "Provvidenza Divina, resta con noi per sempre.",
+      },
+    },
+    {
+      start: 194500,
+      end: 199239,
+      text: {
+        en: "(instrumental music plays) The",
+        it: "(musica strumentale) L'ultimo",
+      },
+    },
+    {
+      start: 199239,
+      end: 203919,
+      text: {
+        en: "last breath of despair is gone, carried",
+        it: "respiro di disperazione è svanito,",
+      },
+    },
+    {
+      start: 203940,
+      end: 208039,
+      text: {
+        en: "away on the wings of divine",
+        it: "portato via sulle ali della",
+      },
+    },
+    {
+      start: 208159,
+      end: 211779,
+      text: {
+        en: "providence. Only the",
+        it: "Provvidenza Divina. Resta solo",
+      },
+    },
+    {
+      start: 211879,
+      end: 215859,
+      text: {
+        en: "fragrance of love remains,",
+        it: "il profumo dell'amore,",
+      },
+    },
+    {
+      start: 217080,
+      end: 221119,
+      text: {
+        en: "and in the stillness, we rest in your",
+        it: "e nella quiete riposiamo nella Tua",
+      },
+    },
+    {
+      start: 221239,
+      end: 225339,
+      text: {
+        en: "light. In Aeternum,",
+        it: "luce. In aeternum,",
+      },
+    },
+    {
+      start: 226080,
+      end: 228299,
+      text: {
+        en: "Deo Gratias.",
+        it: "Deo gratias.",
+      },
+    },
+    {
+      start: 228299,
+      end: 233832,
+      text: {
+        en: "(instrumental music plays)",
+        it: "(musica strumentale)",
+      },
+    },
+  ];
+  return lyrics;
+}
+
+export function DivineFMVLyrics() {
+  const lyrics = [
+  {
+    "start": 0,
+    "end": 7000,
+    "text": {
+      "en": "First time the unloved, new endless embrace",
+      "it": "Prima volta l'amaro conobbe abbracci senza confini"
+    }
+  },
+  {
+    "start": 7000,
+    "end": 13000,
+    "text": {
+      "en": "First time forgotten heard, their name called with grace",
+      "it": "Prima volta nomi dei dimenticati risuonarono come inni"
+    }
+  },
+  {
+    "start": 13000,
+    "end": 19000,
+    "text": {
+      "en": "First time weary found a path gently laid",
+      "it": "Prima volta chi era stanco trovò vie d'oro"
+    }
+  },
+  {
+    "start": 19000,
+    "end": 26000,
+    "text": {
+      "en": "First time hunger found more, the bread of homemade",
+      "it": "Prima volta non solo pane, ma un tetto, un tesoro"
+    }
+  },
+  {
+    "start": 26000,
+    "end": 31000,
+    "text": {
+      "en": "Last time despair dared dwell, where love now stays",
+      "it": "Ultima volta il buio osò sfidare l'aurora"
+    }
+  },
+  {
+    "start": 31000,
+    "end": 40000,
+    "text": {
+      "en": "We say forever, Deo Gratias for your guiding grace",
+      "it": "Diciamo per sempre Deo gratias per la Tua guida di grazia"
+    }
+  },
+  {
+    "start": 40000,
+    "end": 45000,
+    "text": {
+      "en": "In our hearts your light will always shine",
+      "it": "Nei nostri cuori, la Tua luce brillerà sempre"
+    }
+  },
+  {
+    "start": 45000,
+    "end": 50000,
+    "text": {
+      "en": "We will sing pray and sing again for you",
+      "it": "Canteremo, pregheremo e canteremo ancora per Te"
+    }
+  },
+  {
+    "start": 50000,
+    "end": 57000,
+    "text": {
+      "en": "With love, with kindness, with unshaken faith",
+      "it": "Con amore, con bontà, con fede incrollabile"
+    }
+  },
+  {
+    "start": 57000,
+    "end": 64000,
+    "text": {
+      "en": "Divine providence be with us forever",
+      "it": "Provvidenza Divina, resta con noi per sempre"
+    }
+  },
+  {
+    "start": 67000,
+    "end": 73000,
+    "text": {
+      "en": "Through humble hands the hungry were fed",
+      "it": "Per mani umili, gli affamati furono nutriti"
+    }
+  },
+  {
+    "start": 73000,
+    "end": 79000,
+    "text": {
+      "en": "Through open doors the homeless found rest",
+      "it": "Per porte aperte, i senzatetto trovarono riposo"
+    }
+  },
+  {
+    "start": 79000,
+    "end": 85000,
+    "text": {
+      "en": "The sick were cradled in arms of peace",
+      "it": "I malati furono cullati tra braccia di pace"
+    }
+  },
+  {
+    "start": 85000,
+    "end": 91000,
+    "text": {
+      "en": "And tears were turned to songs of trust",
+      "it": "E le lacrime si mutarono in canti di fiducia"
+    }
+  },
+  {
+    "start": 91000,
+    "end": 96000,
+    "text": {
+      "en": "In every soul a seed was planted and in its bloom",
+      "it": "In ogni anima fu piantato un seme —"
+    }
+  },
+  {
+    "start": 96000,
+    "end": 107000,
+    "text": {
+      "en": "Your mercy shines, we say forever, Deo Gratias for your guiding grace",
+      "it": "E nel suo fiore, la Tua misericordia splende"
+    }
+  },
+  {
+    "start": 108000,
+    "end": 113000,
+    "text": {
+      "en": "In our hearts your light will always shine",
+      "it": "Nei nostri cuori, la Tua luce brillerà sempre"
+    }
+  },
+  {
+    "start": 113000,
+    "end": 118000,
+    "text": {
+      "en": "We will sing pray and sing again for you",
+      "it": "Canteremo, pregheremo e canteremo ancora per Te"
+    }
+  },
+  {
+    "start": 118000,
+    "end": 124000,
+    "text": {
+      "en": "With love, with kindness, with unshaken faith",
+      "it": "Con amore, con bontà, con fede incrollabile"
+    }
+  },
+  {
+    "start": 124000,
+    "end": 129000,
+    "text": {
+      "en": "Divine providence be with us forever",
+      "it": "Provvidenza Divina, resta con noi per sempre"
+    }
+  },
+  {
+    "start": 129000,
+    "end": 140000,
+    "text": {
+      "en": "We are the roses you have gathered",
+      "it": "Siamo le rose che Tu hai raccolto"
+    }
+  },
+  {
+    "start": 140000,
+    "end": 146000,
+    "text": {
+      "en": "Planted in the garden of your care",
+      "it": "Piantate nel giardino della Tua cura"
+    }
+  },
+  {
+    "start": 146000,
+    "end": 149000,
+    "text": {
+      "en": "Through the storms your hand has held us",
+      "it": "Attraverso le tempeste, la Tua mano ci ha sostenuto"
+    }
+  },
+  {
+    "start": 149000,
+    "end": 152000,
+    "text": {
+      "en": "Through the night your light has led us",
+      "it": "Nella notte, la Tua luce ci ha guidato"
+    }
+  },
+  {
+    "start": 152000,
+    "end": 157000,
+    "text": {
+      "en": "Every breath a hymn of Deo Gratias",
+      "it": "Ogni respiro, un inno di Deo gratias"
+    }
+  },
+  {
+    "start": 157000,
+    "end": 164000,
+    "text": {
+      "en": "Every heart a living prayer",
+      "it": "Ogni cuore, una preghiera vivente"
+    }
+  },
+  {
+    "start": 164000,
+    "end": 173000,
+    "text": {
+      "en": "We say forever, Deo Gratias for your guiding grace",
+      "it": "Diciamo per sempre Deo gratias per la Tua guida di grazia"
+    }
+  },
+  {
+    "start": 173000,
+    "end": 178000,
+    "text": {
+      "en": "In our hearts your light will always shine",
+      "it": "Nei nostri cuori, la Tua luce brillerà sempre"
+    }
+  },
+  {
+    "start": 178000,
+    "end": 183000,
+    "text": {
+      "en": "We will sing pray and sing again for you",
+      "it": "Canteremo, pregheremo e canteremo ancora per Te"
+    }
+  },
+  {
+    "start": 183000,
+    "end": 189000,
+    "text": {
+      "en": "With love, with kindness, with unshaken faith",
+      "it": "Con amore, con bontà, con fede incrollabile"
+    }
+  },
+  {
+    "start": 189000,
+    "end": 194000,
+    "text": {
+      "en": "Divine providence be with us forever",
+      "it": "Provvidenza Divina, resta con noi per sempre"
+    }
+  }
+];
+
+return lyrics;
+}
+
+
+export  function DivneITLyrics() {
+  const lyrics = [
+  // Verse 1
+  {
+    "start": 0,
+    "end": 20000,
+    "text": {
+      "en": "First time the unloved knew endless embrace.",
+      "it": "Prima volta la maru con opi abbraci senza confini"
+    }
+  },
+  {
+    "start": 20000,
+    "end": 27000,
+    "text": {
+      "en": "First time forgotten heard their name called with grace.",
+      "it": "Prima volta i nomi dei dimenticati risonarono come i miei"
+    }
+  },
+  {
+    "start": 27000,
+    "end": 33000,
+    "text": {
+      "en": "First time weary found a path gently laid.",
+      "it": "Prima volta chierà stanco trovo via d'oro"
+    }
+  },
+  {
+    "start": 33000,
+    "end": 40000,
+    "text": {
+      "en": "First time hunger found more than bread - a home made.",
+      "it": "Prima volta non sono pane, non detto un tesoro"
+    }
+  },
+  {
+    "start": 40000,
+    "end": 46000,
+    "text": {
+      "en": "Last time despair dared dwell where love now stays.",
+      "it": "ultima volta il buio sospidare l'aurora"
+    }
+  },
+
+  // Chorus
+  {
+    "start": 46000,
+    "end": 51000,
+    "text": {
+      "en": "We say forever Deo gratias for Your guiding grace,",
+      "it": "diciamo per sempre deo grazie a svella tua guidà di grazia"
+    }
+  },
+  {
+    "start": 51000,
+    "end": 56000,
+    "text": {
+      "en": "In our hearts, Your light will always shine.",
+      "it": "nei nostri cuori la tua luce brillerà sempre"
+    }
+  },
+  {
+    "start": 56000,
+    "end": 60000,
+    "text": {
+      "en": "We will sing, pray, and sing again for You",
+      "it": "canteremo pregheremo e canteremo ancora per te"
+    }
+  },
+  {
+    "start": 60000,
+    "end": 64000,
+    "text": {
+      "en": "With love, with kindness, with unshaken faith,",
+      "it": "con amore conbontà confede incrollabile"
+    }
+  },
+  {
+    "start": 64000,
+    "end": 71000,
+    "text": {
+      "en": "Divine Providence, be with us forever.",
+      "it": "profidenza di vina resta con noi per sempre"
+    }
+  },
+
+  // Verse 2
+  {
+    "start": 81000,
+    "end": 89000,
+    "text": {
+      "en": "Through humble hands, the hungry were fed,",
+      "it": "per mani umi gli affamati furono nutriti per porti aperti"
+    }
+  },
+  {
+    "start": 89000,
+    "end": 97000,
+    "text": {
+      "en": "Through open doors, the homeless found rest.",
+      "it": "e senza tetto trovarono riposo i malati furono collati"
+    }
+  },
+  {
+    "start": 97000,
+    "end": 106000,
+    "text": {
+      "en": "The sick were cradled in arms of peace,",
+      "it": "tra braccia di pace delle lacri me simutarono in canti di fiducia"
+    }
+  },
+  {
+    "start": 107000,
+    "end": 114000,
+    "text": {
+      "en": "And tears were turned to songs of trust.",
+      "it": "i nomi anima foti antato un seme"
+    }
+  },
+  {
+    "start": 114000,
+    "end": 120000,
+    "text": {
+      "en": "In every soul, a seed was planted —",
+      "it": "e nel soffiore la tua misere ricordia splende"
+    }
+  },
+
+  // Chorus (repeated)
+  {
+    "start": 120000,
+    "end": 125000,
+    "text": {
+      "en": "We say forever Deo gratias for Your guiding grace,",
+      "it": "diciamo per sempre deo grazie a svella tua guidà di grazia"
+    }
+  },
+  {
+    "start": 125000,
+    "end": 130000,
+    "text": {
+      "en": "In our hearts, Your light will always shine.",
+      "it": "meno dei cuori la tua luce brillerà sempre"
+    }
+  },
+  {
+    "start": 130000,
+    "end": 135000,
+    "text": {
+      "en": "We will sing, pray, and sing again for You",
+      "it": "canteremo pregheremo e canteremo ancora per te"
+    }
+  },
+  {
+    "start": 135000,
+    "end": 139000,
+    "text": {
+      "en": "With love, with kindness, with unshaken faith,",
+      "it": "con amore conbontà confede incrollabile"
+    }
+  },
+  {
+    "start": 139000,
+    "end": 146000,
+    "text": {
+      "en": "Divine Providence, be with us forever.",
+      "it": "profidenza di vina resta con noi per sempre"
+    }
+  },
+
+  // Bridge
+  {
+    "start": 155000,
+    "end": 159000,
+    "text": {
+      "en": "We are the roses You have gathered,",
+      "it": "siamo l'erose che tu hai raccolto di antretne"
+    }
+  },
+  {
+    "start": 159000,
+    "end": 164000,
+    "text": {
+      "en": "Planted in the garden of Your care.",
+      "it": "giardino della tua cura attraverso le tempeste"
+    }
+  },
+  {
+    "start": 164000,
+    "end": 170000,
+    "text": {
+      "en": "Through the storms, Your hand has held us,",
+      "it": "la tua mano ci ha sostenuto nella notte la tua luce"
+    }
+  },
+  {
+    "start": 170000,
+    "end": 177000,
+    "text": {
+      "en": "Through the night, Your light has led us.",
+      "it": "ci ha guidato ogni respiro un innodideo grazie a s"
+    }
+  },
+  {
+    "start": 177000,
+    "end": 183000,
+    "text": {
+      "en": "Every breath, a hymn of Deo gratias,",
+      "it": "ogni cuore una prechiera vivente"
+    }
+  },
+
+  // Final Chorus
+  {
+    "start": 183000,
+    "end": 188000,
+    "text": {
+      "en": "We say forever Deo gratias for Your guiding grace,",
+      "it": "diciamo per sempre deo grazie a svella tua guidà di grazia"
+    }
+  },
+  {
+    "start": 188000,
+    "end": 193000,
+    "text": {
+      "en": "In our hearts, Your light will always shine.",
+      "it": "meno dei cuori la tua luce brillerà sempre"
+    }
+  },
+  {
+    "start": 193000,
+    "end": 197000,
+    "text": {
+      "en": "We will sing, pray, and sing again for You",
+      "it": "canteremo pregheremo e canteremo ancora per te"
+    }
+  },
+  {
+    "start": 197000,
+    "end": 202000,
+    "text": {
+      "en": "With love, with kindness, with unshaken faith.",
+      "it": "con amore conbontà confede incrollabile"
+    }
+  }
+];
+return lyrics
+}
+
+export function BoomerangLyrics() {
+  const lyrics = [
+    {
+      start: 10800,
+      end: 12900,
+      text: { 
+        en: "no matter the distance",
+        it: "Non conta la distanza, né gli anni che van,"
+      }
+    },
+    {
+      start: 13320,
+      end: 15620,
+      text: { 
+        en: "no matter how years turn",
+        it: "l'amore si alza, con promessa tornerà."
+      }
+    },
+    {
+      start: 16840,
+      end: 20500,
+      text: { 
+        en: "love takes flight with a promise of return",
+        it: "Gira il mondo intero, sa dove posar,"
+      }
+    },
+    {
+      start: 21520,
+      end: 26540,
+      text: { 
+        en: "it circles the world it knows where to land",
+        it: "ancora caldo nel tocco di chi sa aspettar."
+      }
+    },
+    {
+      start: 26680,
+      end: 31420,
+      text: { 
+        en: "still warm in the touch of a welcoming hand",
+        it: "ancora caldo nel tocco di una mano che accoglie."
+      }
+    },
+    {
+      start: 31920,
+      end: 34560,
+      text: { 
+        en: "boomerang of love",
+        it: "Boomerang d'amore, un volo che non si perde,"
+      }
+    },
+    {
+      start: 34560,
+      end: 36960,
+      text: { 
+        en: "a flight never lost",
+        it: "tra ombre e tempeste, la sua rotta si stende."
+      }
+    },
+    {
+      start: 36960,
+      end: 39760,
+      text: { 
+        en: "through shadows and storms",
+        it: "Ogni volta lanciato, più in alto volerà,"
+      }
+    },
+    {
+      start: 39760,
+      end: 42300,
+      text: { 
+        en: "it still makes its course",
+        it: "ritornando per sempre — il Boomerang d'amor sarà."
+      }
+    },
+    {
+      start: 42480,
+      end: 47780,
+      text: { 
+        en: "each time it is cast it will rise far above",
+        it: "ogni volta lanciato, più in alto si alzerà,"
+      }
+    },
+    {
+      start: 48080,
+      end: 53700,
+      text: { 
+        en: "returning again the boomerang of love",
+        it: "ritornando di nuovo — il Boomerang d'amore."
+      }
+    },
+    {
+      start: 65400,
+      end: 69940,
+      text: { 
+        en: "Return oh boomerang to hearts that are warm",
+        it: "Ritorna, o boomerang, ai cuori che sanno scaldar,"
+      }
+    },
+    {
+      start: 70680,
+      end: 72500,
+      text: { 
+        en: "to the unlove",
+        it: "agli incompresi, ai gentili, ai buoni nel mar."
+      }
+    },
+    {
+      start: 72680,
+      end: 77480,
+      text: { 
+        en: "the gentle the kind and the storm and above",
+        it: "E sopra ogni cosa, ritorna con verità,"
+      }
+    },
+    {
+      start: 77480,
+      end: 80900,
+      text: { 
+        en: "all return with the truth from above",
+        it: "per ridare ciò che fu dato — ritorna come amor sarà."
+      }
+    },
+    {
+      start: 81840,
+      end: 84200,
+      text: { 
+        en: "to restore what was given",
+        it: "per restituire ciò che fu donato,"
+      }
+    },
+    {
+      start: 84200,
+      end: 86420,
+      text: { 
+        en: "return as love",
+        it: "ritorna come amore."
+      }
+    },
+    {
+      start: 86520,
+      end: 89040,
+      text: { 
+        en: "boomerang of love",
+        it: "Boomerang d'amore, un volo che non si perde,"
+      }
+    },
+    {
+      start: 89040,
+      end: 91560,
+      text: { 
+        en: "of flight never lost",
+        it: "tra ombre e tempeste, la sua rotta si stende."
+      }
+    },
+    {
+      start: 91560,
+      end: 94320,
+      text: { 
+        en: "through shadows and storms",
+        it: "Ogni volta lanciato, più in alto volerà,"
+      }
+    },
+    {
+      start: 94320,
+      end: 96860,
+      text: { 
+        en: "it still makes its course",
+        it: "ritornando per sempre — il Boomerang d'amor sarà."
+      }
+    },
+    {
+      start: 97040,
+      end: 102540,
+      text: { 
+        en: "each time it is cast it will rise far above",
+        it: "ogni volta lanciato, più in alto si alzerà,"
+      }
+    },
+    {
+      start: 102640,
+      end: 117000,
+      text: { 
+        en: "returning again the boomerang of love",
+        it: "ritornando di nuovo — il Boomerang d'amore."
+      }
+    },
+    {
+      start: 119800,
+      end: 122240,
+      text: { 
+        en: "through the arc of the sky",
+        it: "Attraverso l'arco del cielo e il respiro della terra,"
+      }
+    },
+    {
+      start: 122240,
+      end: 125380,
+      text: { 
+        en: "and the breath of the earth",
+        it: "l'amore trova chi è perso e la speranza riafferra."
+      }
+    },
+    {
+      start: 125920,
+      end: 127880,
+      text: { 
+        en: "love finds the lost",
+        it: "Nessuna forza lo ferma, nessuna ombra lo può legar,"
+      }
+    },
+    {
+      start: 127880,
+      end: 130740,
+      text: { 
+        en: "and rekindles their worth",
+        it: "la strada promessa dall'amor saprà sempre trovar."
+      }
+    },
+    {
+      start: 130800,
+      end: 134800,
+      text: { 
+        en: "no force can deter",
+        it: "Nessuna forza lo può fermare,"
+      }
+    },
+    {
+      start: 134800,
+      end: 136300,
+      text: { 
+        en: "no shadow can stay",
+        it: "nessuna ombra lo può trattenere."
+      }
+    },
+    {
+      start: 136720,
+      end: 139600,
+      text: { 
+        en: "the path of love's promise",
+        it: "Il cammino della promessa d'amore"
+      }
+    },
+    {
+      start: 139600,
+      end: 142140,
+      text: { 
+        en: "will find its own way",
+        it: "saprà sempre trovare la sua via."
+      }
+    },
+   {
+  start: 143760,  // 00:02:23,760
+  end: 146180,    // 00:02:26,180
+  text: { 
+    en: "boomerang of love",
+    it: "Boomerang d'amore, un volo che non si perde,"
+  }
+},
+{
+  start: 146280,  // 00:02:26,280
+  end: 148840,    // 00:02:28,840
+  text: { 
+    en: "a flight never lost",
+    it: "tra ombre e tempeste, la sua rotta si stende."
+  }
+},
+{
+  start: 148840,  // 00:02:28,840
+  end: 151600,    // 00:02:31,600
+  text: { 
+    en: "through shadows and storms",
+    it: "Ogni volta lanciato, più in alto volerà,"
+  }
+},
+{
+  start: 151600,  // 00:02:31,600
+  end: 153540,    // 00:02:33,540
+  text: { 
+    en: "it still makes its course",
+    it: "ritornando per sempre — il Boomerang d'amor sarà."
+  }
+},
+{
+  start: 154320,  // 00:02:34,320
+  end: 157040,    // 00:02:37,040
+  text: { 
+    en: "each time it is cast",
+    it: "ogni volta che viene lanciato"
+  }
+},
+{
+  start: 157040,  // 00:02:37,040
+  end: 159620,    // 00:02:39,620
+  text: { 
+    en: "it will rise far above",
+    it: "si alzerà sempre più in alto"
+  }
+},
+{
+  start: 159880,  // 00:02:39,880
+  end: 165180,    // 00:02:45,180
+  text: { 
+    en: "returning again the boomerang of love",
+    it: "ritornando di nuovo — il Boomerang d'amore."
+  }
+},
+{
+  start: 167920,  // 00:02:47,920
+  end: 170580,    // 00:02:50,580
+  text: { 
+    en: "boomerang of love",
+    it: "Per sempre gira, per sempre volerà,"
+  }
+},
+{
+  start: 174080,  // 00:02:54,080
+  end: 176700,    // 00:02:56,700
+  text: { 
+    en: "forever it circles",
+    it: "sotto il sole, nei cieli senza finità."
+  }
+},
+{
+  start: 176920,  // 00:02:56,920
+  end: 181460,    // 00:03:01,460
+  text: { 
+    en: "forever it flies beneath the sun",
+    it: "Boomerang d'amore, nel suo eterno tornar,"
+  }
+},
+{
+  start: 182200,  // 00:03:02,200
+  end: 184640,    // 00:03:04,640
+  text: { 
+    en: "through unending skies",
+    it: "la fiamma rimane, i cuori a bruciar."
+  }
+},
+{
+  start: 184640,  // 00:03:04,640
+  end: 187040,    // 00:03:07,040
+  text: { 
+    en: "boomerang of love",
+    it: "Boomerang d'amore,"
+  }
+},
+{
+  start: 187040,  // 00:03:07,040
+  end: 189380,    // 00:03:09,380
+  text: { 
+    en: "in its endless return",
+    it: "nel suo eterno ritorno,"
+  }
+},
+{
+  start: 189880,  // 00:03:09,880
+  end: 192540,    // 00:03:12,540
+  text: { 
+    en: "the fire keeps glowing",
+    it: "la fiamma continua a brillare,"
+  }
+},
+{
+  start: 192680,  // 00:03:12,680
+  end: 194900,    // 00:03:14,900
+  text: { 
+    en: "the heart's ever burned",
+    it: "i cuori restano sempre accesi."
+  }
+}
+  ];
+  return lyrics;
+}
+
+export function WelcomeIntroSongLyrics() {
+  const lyrics = [
+    {
+      start: 99,
+      end: 1359,
+      text: { en: "(intro music plays)", it: "(musica introduttiva)" },
+    },
+    { start: 1359, end: 10319, text: { en: "(singing)", it: "(canto)" } },
+    {
+      start: 10380,
+      end: 15159,
+      text: {
+        en: "Welcome dreamer, you've come home. To the",
+        it: "Benvenuto, sognatore, sei tornato a casa,",
+      },
+    },
+    {
+      start: 15299,
+      end: 19979,
+      text: {
+        en: "garden of Roses of Rome. Where",
+        it: "Nel giardino delle Rose di Roma che abbraccia.",
+      },
+    },
+    {
+      start: 20000,
+      end: 24759,
+      text: {
+        en: "stories bloom and voices rise. A",
+        it: "Dove le storie sbocciano e le voci si alzano,",
+      },
+    },
+    {
+      start: 24859,
+      end: 29059,
+      text: {
+        en: "sanctuary beneath the skies.",
+        it: "Un santuario sotto i cieli che ci abbronzano.",
+      },
+    },
+    {
+      start: 29819,
+      end: 34000,
+      text: {
+        en: "Step inside, let your spirit sing.",
+        it: "Entra, lascia cantare lo spirito tuo,",
+      },
+    },
+    {
+      start: 34719,
+      end: 38620,
+      text: {
+        en: "Here the heart finds everything.",
+        it: "Qui il cuore ritrova ciò che ha perso e più.",
+      },
+    },
+    {
+      start: 39279,
+      end: 43999,
+      text: {
+        en: "Roses of Rome will light your way. With",
+        it: "Le Rose di Roma illumineranno il cammino,",
+      },
+    },
+    {
+      start: 44099,
+      end: 48960,
+      text: {
+        en: "love that never fades away. Oh,",
+        it: "Con un amore eterno, senza destino.",
+      },
+    },
+    {
+      start: 49399,
+      end: 53860,
+      text: { en: "oh, oh. Oh, oh, oh.", it: "Oh, oh, oh. Oh, oh, oh." },
+    },
+    {
+      start: 57879,
+      end: 62439,
+      text: {
+        en: "Every visitor is a friend we hold.",
+        it: "Ogni ospite è un amico da custodire,",
+      },
+    },
+    {
+      start: 62759,
+      end: 66239,
+      text: {
+        en: "Every word a petal of gold.",
+        it: "Ogni parola è un petalo d'oro da offrire.",
+      },
+    },
+    {
+      start: 68139,
+      end: 72139,
+      text: {
+        en: "In our world, no one's alone.",
+        it: "Nel nostro mondo nessuno è solo,",
+      },
+    },
+    {
+      start: 72599,
+      end: 77080,
+      text: {
+        en: "Together we breathe, Roses of Rome.",
+        it: "Respiriamo insieme, Rose di Roma in volo.",
+      },
+    },
+    {
+      start: 77919,
+      end: 82419,
+      text: {
+        en: "Feel the music, let it start.",
+        it: "Senti la musica, lascia che inizi,",
+      },
+    },
+    {
+      start: 82459,
+      end: 86620,
+      text: {
+        en: "A hymn of welcome from the heart.",
+        it: "Un inno di benvenuto che il cuore ci benedici.",
+      },
+    },
+    {
+      start: 87299,
+      end: 91379,
+      text: {
+        en: "Open arms, forever known.",
+        it: "Braccia aperte, per sempre conosciute,",
+      },
+    },
+    {
+      start: 92180,
+      end: 97019,
+      text: {
+        en: "You belong with Roses of Rome. Oh,",
+        it: "Con le Rose di Roma tu sei voluto.",
+      },
+    },
+    {
+      start: 97400,
+      end: 101839,
+      text: { en: "oh, oh. Oh, oh,", it: "Oh, oh, oh. Oh, oh," },
+    },
+    {
+      start: 103399,
+      end: 107759,
+      text: { en: "oh. Oh, oh,", it: "oh. Oh, oh," },
+    },
+    {
+      start: 108040,
+      end: 112619,
+      text: { en: "oh. Oh, oh, oh.", it: "oh. Oh, oh, oh." },
+    },
+    {
+      start: 115319,
+      end: 119299,
+      text: {
+        en: "Step inside, let your spirit sing.",
+        it: "Entra, lascia cantare lo spirito tuo,",
+      },
+    },
+    {
+      start: 120219,
+      end: 123960,
+      text: {
+        en: "Here the heart finds everything.",
+        it: "Qui il cuore ritrova ciò che ha perso e più.",
+      },
+    },
+    {
+      start: 125019,
+      end: 129098,
+      text: {
+        en: "Roses of Rome will light your way.",
+        it: "Le Rose di Roma illumineranno il cammino,",
+      },
+    },
+    {
+      start: 129580,
+      end: 134039,
+      text: {
+        en: "Forever welcome, forever stay.",
+        it: "Per sempre accolto, per sempre vicino.",
+      },
+    },
+    {
+      start: 134679,
+      end: 136079,
+      text: { en: "Let us bloom", it: "Fioriamo" },
+    },
+    { start: 136199, end: 143784, text: { en: "forever.", it: "in eterno." } },
+  ];
+  return lyrics;
+}
+
+export function WelcomeSongItalian() {
+  const liriche = [
+    {
+      start: 239,
+      end: 4899,
+      text: {
+        en: "Welcome, dreamer, you've come home,",
+        it: "Benvenuto sognatore, sei tornato a casa,",
+      },
+    },
+    {
+      start: 5539,
+      end: 9639,
+      text: {
+        en: "To the garden of Roses of Rome.",
+        it: "nel giardino delle rose di Roma che",
+      },
+    },
+    {
+      start: 9679,
+      end: 14179,
+      text: {
+        en: "Where stories bloom and voices rise,",
+        it: "abbraccia. Dove le storie sbocciano e le",
+      },
+    },
+    {
+      start: 14259,
+      end: 19020,
+      text: {
+        en: "A sanctuary beneath the skies.",
+        it: "voci si alzano, un santuario sotto i cieli che",
+      },
+    },
+    {
+      start: 19139,
+      end: 23800,
+      text: { en: "Step inside, let your spirit sing,", it: "Entra lascia" },
+    },
+    {
+      start: 23879,
+      end: 28159,
+      text: {
+        en: "Here the heart finds everything.",
+        it: "cantare lo spirito tuo, qui il",
+      },
+    },
+    {
+      start: 28239,
+      end: 32880,
+      text: {
+        en: "Roses of Rome will light your way,",
+        it: "cuore ritrova ciò che ha perso e più. Le",
+      },
+    },
+    {
+      start: 32899,
+      end: 36900,
+      text: {
+        en: "With love that never fades away.",
+        it: "rose di Roma illumineranno il cammino,",
+      },
+    },
+    {
+      start: 37879,
+      end: 41619,
+      text: {
+        en: "Every visitor is a friend we hold,",
+        it: "con un amore eterno senza",
+      },
+    },
+    {
+      start: 41899,
+      end: 46899,
+      text: { en: "Every word a petal of gold.", it: "destino. Ogni ospite" },
+    },
+    {
+      start: 47099,
+      end: 52059,
+      text: {
+        en: "In our world, no one's alone,",
+        it: "è un amico da custodire, ogni parola è",
+      },
+    },
+    {
+      start: 52059,
+      end: 56839,
+      text: {
+        en: "Together we breathe, Roses of Rome.",
+        it: "un petalo d'oro da offrire. Nel",
+      },
+    },
+    {
+      start: 56919,
+      end: 60120,
+      text: {
+        en: "Feel the music, let it start,",
+        it: "nostro mondo nessuno è solo,",
+      },
+    },
+    {
+      start: 61180,
+      end: 65540,
+      text: {
+        en: "A hymn of welcome from the heart.",
+        it: "respiriamo insieme rose di Roma in",
+      },
+    },
+    {
+      start: 65580,
+      end: 70399,
+      text: {
+        en: "Open arms, forever known,",
+        it: "volo. Entra lascia cantare lo",
+      },
+    },
+    {
+      start: 70459,
+      end: 75419,
+      text: {
+        en: "You belong with Roses of Rome.",
+        it: "spirito tuo, qui il cuore ritrova",
+      },
+    },
+    {
+      start: 75519,
+      end: 79379,
+      text: {
+        en: "Step inside, let your spirit sing,",
+        it: "ciò che ha perso e più. Le rose di Roma",
+      },
+    },
+    {
+      start: 79400,
+      end: 83940,
+      text: {
+        en: "Here the heart finds everything.",
+        it: "illumineranno il cammino, con un",
+      },
+    },
+    {
+      start: 83979,
+      end: 88299,
+      text: {
+        en: "Roses of Rome will light your way,",
+        it: "amore eterno senza destino.",
+      },
+    },
+    {
+      start: 89139,
+      end: 93500,
+      text: {
+        en: "Forever welcome, forever stay.",
+        it: "Senti la musica, lascia che inizi,",
+      },
+    },
+    {
+      start: 93959,
+      end: 98819,
+      text: { en: "", it: "un inno di benvenuto che il cuore ci benedici." },
+    },
+    {
+      start: 99519,
+      end: 104159,
+      text: { en: "", it: "Braccia aperte per sempre conosciute, con" },
+    },
+    {
+      start: 104239,
+      end: 108879,
+      text: { en: "", it: "le rose di Roma tu sei voluto." },
+    },
+    {
+      start: 110500,
+      end: 115280,
+      text: {
+        en: "Step inside, let your spirit sing,",
+        it: "Entra lascia cantare lo spirito tuo,",
+      },
+    },
+    {
+      start: 115519,
+      end: 120159,
+      text: {
+        en: "Here the heart finds everything.",
+        it: "qui il cuore ritrova ciò che ha perso e più.",
+      },
+    },
+    {
+      start: 120599,
+      end: 124960,
+      text: {
+        en: "Roses of Rome will light your way,",
+        it: "Le rose di Roma illumineranno il cammino,",
+      },
+    },
+    {
+      start: 125879,
+      end: 130059,
+      text: {
+        en: "Forever welcome, forever stay.",
+        it: "per sempre accolto, per sempre vicino.",
+      },
+    },
+    {
+      start: 130520,
+      end: 133839,
+      text: { en: "Let us bloom forever,", it: "Fioriamo in eterno, sempre" },
+    },
+    { start: 133919, end: 141984, text: { en: "ever close.", it: "vicino." } },
+  ];
+  return liriche;
+}
+
+
+export function VisionShortLyrics(){
+  const ly = [
+  { "start": 779, "end": 5039, "text": { "en": "We are the ones who carve light from the stone.", "it": "Noi siamo coloro che scolpiscono la luce dalla pietra," }},
+  { "start": 6759, "end": 11500, "text": { "en": "Who turn every street into galleries", "it": "Che trasformano ogni strada in gallerie" }},
+  { "start": 11539, "end": 15879, "text": { "en": "unknown. We paint the world in colors yet", "it": "sconosciute. Dipingeremo il mondo con colori mai" }},
+  { "start": 15899, "end": 20680, "text": { "en": "untold. Yet untold. We shape the marble", "it": "raccontati. Plasmiamo il marmo" }},
+  { "start": 20799, "end": 25220, "text": { "en": "to outlast the gold. (Gold). This is our", "it": "perché superi l'oro. Questo è il nostro" }},
+  { "start": 25319, "end": 30120, "text": { "en": "creed, beauty is heirloom and fire.", "it": "credo: La bellezza è eredità e fiamma." }},
+  { "start": 30199, "end": 34980, "text": { "en": "Let's paint our hearts with colors unafraid.", "it": "Dipingeremo i nostri cuori con colori senza paura," }},
+  { "start": 36559, "end": 41259, "text": { "en": "Let the crayons speak where words have strayed.", "it": "Lasciamo che i pastelli parlino dove le parole sono svanite." }},
+  { "start": 42579, "end": 47139, "text": { "en": "Let the brush weave dreams in hues of hope.", "it": "Che il pennello tessa sogni in tinte di speranza," }},
+  { "start": 48579, "end": 53179, "text": { "en": "Let the canvas cradle our future", "it": "Che la tela culli il nostro futuro" }},
+  { "start": 53340, "end": 58079, "text": { "en": "bright. As roses of Rome, let us", "it": "luminoso. Come Rose di Roma, lasciateci" }},
+  { "start": 58159, "end": 60620, "text": { "en": "bloom forever.", "it": "fiorire per sempre." }},
+  { "start": 64900, "end": 69479, "text": { "en": "(instrumental music plays) We are the ones whose hearts", "it": "(musica strumentale) Noi siamo coloro i cui cuori" }},
+  { "start": 69500, "end": 74099, "text": { "en": "are unbound. Who turn pain", "it": "sono liberi, Che trasformano il dolore" }},
+  { "start": 74299, "end": 79239, "text": { "en": "into light from the deepest wound. We give", "it": "in luce dalle ferite più profonde. Doniamo" }},
+  { "start": 79379, "end": 83439, "text": { "en": "joy like rivers that never run", "it": "gioia come fiumi che non si" }},
+  { "start": 83459, "end": 87760, "text": { "en": "dry. We pray love will find us", "it": "prosciugano mai. Preghiamo che l'amore ci trovi" }},
+  { "start": 88119, "end": 92159, "text": { "en": "beneath every sky. This is our vow,", "it": "sotto ogni cielo. Questo è il nostro voto:" }},
+  { "start": 92839, "end": 97299, "text": { "en": "love conquers all. Let's paint our", "it": "L'amore vince su tutto. Dipingiamo i nostri" }},
+  { "start": 97400, "end": 101079, "text": { "en": "hearts with colors unafraid.", "it": "cuori con colori senza paura." }},
+  { "start": 102579, "end": 106119, "text": { "en": "Let the crayons speak where words have", "it": "Lasciamo che i pastelli parlino dove le parole" }},
+  { "start": 106139, "end": 110419, "text": { "en": "strayed. Let the brush weave", "it": "sono svanite. Che il pennello tessa" }},
+  { "start": 110459, "end": 115099, "text": { "en": "dreams in hues of hope. Let the", "it": "sogni in tinte di speranza. Che la" }},
+  { "start": 115159, "end": 120100, "text": { "en": "canvas cradle our future bright.", "it": "tela culli il nostro futuro luminoso." }},
+  { "start": 120979, "end": 125099, "text": { "en": "As roses of Rome, let us bloom", "it": "Come Rose di Roma, lasciateci fiorire" }},
+  { "start": 125639, "end": 126659, "text": { "en": "forever.", "it": "per sempre." }},
+  { "start": 126759, "end": 137580, "text": { "en": "(instrumental music plays)", "it": "(musica strumentale)" }},
+  { "start": 137899, "end": 142139, "text": { "en": "We are the ones who kneel in the", "it": "Noi siamo coloro che si inginocchiano nella" }},
+  { "start": 142160, "end": 146620, "text": { "en": "dust. Who turn strangers to", "it": "polvere, Che trasformano stranieri in" }},
+  { "start": 146639, "end": 151239, "text": { "en": "kin through unwavering trust. We give", "it": "fratelli con fiducia incrollabile. Doniamo" }},
+  { "start": 151339, "end": 155419, "text": { "en": "not just alms, but the keys to our", "it": "non solo elemosine, ma le chiavi delle nostre" }},
+  { "start": 155500, "end": 159619, "text": { "en": "gates. We pray compassion", "it": "porte. Preghiamo che la compassione" }},
+  { "start": 160000, "end": 163919, "text": { "en": "outlives all our fates. This is our law,", "it": "sopravviva a tutti i nostri destini. Questa è la nostra legge:" }},
+  { "start": 164800, "end": 169339, "text": { "en": "kindness crowns us all. Let's paint our", "it": "La gentilezza incorona tutti. Dipingiamo i nostri" }},
+  { "start": 169399, "end": 172860, "text": { "en": "hearts with colors unafraid.", "it": "cuori con colori senza paura." }},
+  { "start": 174559, "end": 179180, "text": { "en": "Let the crayons speak where words have strayed.", "it": "Lasciamo che i pastelli parlino dove le parole sono svanite." }},
+  { "start": 180379, "end": 184160, "text": { "en": "Let the brush weave dreams in hues of", "it": "Che il pennello tessa sogni in tinte di" }},
+  { "start": 184179, "end": 188299, "text": { "en": "hope. Let the canvas", "it": "speranza. Che la tela" }},
+  { "start": 188419, "end": 193239, "text": { "en": "cradle our future bright. As", "it": "culli il nostro futuro luminoso. Come" }},
+  { "start": 193300, "end": 196939, "text": { "en": "roses of Rome, let us bloom", "it": "Rose di Roma, lasciateci fiorire" }},
+  { "start": 197659, "end": 198579, "text": { "en": "forever.", "it": "per sempre." }},
+  { "start": 199339, "end": 206832, "text": { "en": "(instrumental music plays)", "it": "(musica strumentale)" }}
+];
+  return ly;
+}
+
+export function VisionItalianLyrics() {
+  const lyrics = [
+    {
+      start: 479,
+      end: 5359,
+      text: {
+        en: "(Intro music plays) We are the ones who carve light from the",
+        it: "(Brano sonoro di inizio canzone) Noi siamo coloro che scolpiscono la luce dalla ",
+      },
+    },
+    {
+      start: 5460,
+      end: 9779,
+      text: {
+        en: "stone, who turn every street into",
+        it: "pietra, che trasformano ogni strada in ",
+      },
+    },
+    {
+      start: 9840,
+      end: 14800,
+      text: {
+        en: "galleries unknown. We paint",
+        it: "gallerie sconosciute. Dipingeremo ",
+      },
+    },
+    {
+      start: 14859,
+      end: 19440,
+      text: {
+        en: "the world in colors yet untold.",
+        it: "il mondo con colori mai raccontati. ",
+      },
+    },
+    {
+      start: 20379,
+      end: 24739,
+      text: {
+        en: "We shape the marble to outlast the gold, this is our",
+        it: "Plasmiamo il marmo perché superi l'oro, questo è il nostro ",
+      },
+    },
+    {
+      start: 24819,
+      end: 29499,
+      text: {
+        en: "creed: Beauty is heirloom and flame.",
+        it: "credo. La bellezza eredita e fiamma. ",
+      },
+    },
+    {
+      start: 30399,
+      end: 34760,
+      text: {
+        en: "Let's paint our hearts with colors un",
+        it: "Dipingeremo i nostri cuori con colori senza ",
+      },
+    },
+    {
+      start: 34860,
+      end: 39299,
+      text: {
+        en: "afraid. Let the crayons speak",
+        it: "paura. Lasciamo che i pastelli parlino ",
+      },
+    },
+    {
+      start: 39799,
+      end: 44779,
+      text: {
+        en: "where words have strayed, let the brush weave",
+        it: "dove le parole sono svanite, che il pennello tessa ",
+      },
+    },
+    {
+      start: 44819,
+      end: 49240,
+      text: {
+        en: "dreams in hues of hope,",
+        it: "sogni in tinte di speranza, ",
+      },
+    },
+    {
+      start: 49759,
+      end: 54379,
+      text: {
+        en: "let the canvas cradle our future bright as roses",
+        it: "che la tela culli il nostro futuro luminoso come rose ",
+      },
+    },
+    {
+      start: 54439,
+      end: 59299,
+      text: {
+        en: "of Rome. Let us bloom forever.",
+        it: "di Roma. Fioriamo per sempre. ",
+      },
+    },
+    {
+      start: 60579,
+      end: 64759,
+      text: {
+        en: "We are the ones whose hearts are",
+        it: "Noi siamo coloro i cui cuori sono ",
+      },
+    },
+    {
+      start: 64839,
+      end: 69719,
+      text: {
+        en: "free, who turn pain into",
+        it: "liberi, che trasformano il dolore in ",
+      },
+    },
+    {
+      start: 69779,
+      end: 74279,
+      text: {
+        en: "light from the deepest wounds. We give",
+        it: "luce dalle ferite più profonde. Doniamo ",
+      },
+    },
+    {
+      start: 74319,
+      end: 78319,
+      text: {
+        en: "joy like rivers that never run",
+        it: "gioia come fiumi che non si prosciugano ",
+      },
+    },
+    {
+      start: 78360,
+      end: 82719,
+      text: {
+        en: "dry. We pray that love",
+        it: "mai. Preghiamo che l'amore ",
+      },
+    },
+    {
+      start: 83279,
+      end: 88080,
+      text: {
+        en: "will find us under every sky. This is our",
+        it: "ci trovi sotto ogni cielo. Questo è il nostro ",
+      },
+    },
+    {
+      start: 88180,
+      end: 92659,
+      text: {
+        en: "vow: love conquers all.",
+        it: "voto: l'amore vince su tutto. ",
+      },
+    },
+    {
+      start: 93720,
+      end: 98079,
+      text: {
+        en: "Let's paint our hearts with colors un",
+        it: "Dipingeremo i nostri cuori con colori senza ",
+      },
+    },
+    {
+      start: 98159,
+      end: 102639,
+      text: {
+        en: "afraid. Let the crayons speak",
+        it: "paura. Lasciamo che i pastelli parlino ",
+      },
+    },
+    {
+      start: 103139,
+      end: 108099,
+      text: {
+        en: "where words have strayed, let the brush weave",
+        it: "dove le parole sono svanite, che il pennello tessa ",
+      },
+    },
+    {
+      start: 108119,
+      end: 112580,
+      text: {
+        en: "dreams in hues of hope,",
+        it: "sogni in tinte di speranza, ",
+      },
+    },
+    {
+      start: 113099,
+      end: 117719,
+      text: {
+        en: "let the canvas cradle our future bright as roses",
+        it: "che la tela culli il nostro futuro luminoso come rose ",
+      },
+    },
+    {
+      start: 117759,
+      end: 122659,
+      text: {
+        en: "of Rome. Let us bloom forever.",
+        it: "di Roma. Fioriamo per sempre. ",
+      },
+    },
+    {
+      start: 127319,
+      end: 131599,
+      text: {
+        en: "We are the ones who kneel in the",
+        it: "Noi siamo coloro che si inginocchiano nella ",
+      },
+    },
+    {
+      start: 131699,
+      end: 136599,
+      text: {
+        en: "dust, who turn strangers into",
+        it: "polvere, che trasformano stranieri in ",
+      },
+    },
+    {
+      start: 136660,
+      end: 141580,
+      text: {
+        en: "family through unshakable trust. We give not just",
+        it: "fratelli con fiducia introllabile. Doniamo non solo ",
+      },
+    },
+    {
+      start: 141580,
+      end: 146239,
+      text: {
+        en: "alms, but the keys to our gates.",
+        it: "elemosine, ma le chiavi delle nostre porte. ",
+      },
+    },
+    {
+      start: 147080,
+      end: 151459,
+      text: {
+        en: "We pray compassion outlives all our",
+        it: "Preghiamo che la compassione sopravviva tutti i nostri ",
+      },
+    },
+    {
+      start: 151479,
+      end: 156399,
+      text: {
+        en: "destinies. This is our law:",
+        it: "destini. Questa è la nostra legge: la ",
+      },
+    },
+    {
+      start: 156459,
+      end: 161439,
+      text: {
+        en: "kindness crowns us all. Let's paint our",
+        it: "gentilezza incorona tutti. Dipingeremo i ",
+      },
+    },
+    {
+      start: 161459,
+      end: 166119,
+      text: {
+        en: "hearts with colors unafraid.",
+        it: "nostri cuori con colori senza paura. ",
+      },
+    },
+    {
+      start: 166660,
+      end: 171380,
+      text: {
+        en: "Let the crayons speak where words have",
+        it: "Lasciamo che i pastelli parlino dove le parole sono ",
+      },
+    },
+    {
+      start: 171419,
+      end: 176059,
+      text: {
+        en: "strayed, let the brush weave dreams",
+        it: "svanite, che il pennello tessa sogni ",
+      },
+    },
+    {
+      start: 176679,
+      end: 181419,
+      text: {
+        en: "in hues of hope, let the canvas cradle our",
+        it: "in tinte di speranza, che la tela culli il nostro ",
+      },
+    },
+    {
+      start: 181479,
+      end: 186119,
+      text: {
+        en: "future bright as roses of Rome.",
+        it: "futuro luminoso come rose di Roma. ",
+      },
+    },
+    {
+      start: 186599,
+      end: 187979,
+      text: {
+        en: "Let us bloom",
+        it: "Fioriamo per ",
+      },
+    },
+    {
+      start: 188139,
+      end: 199752,
+      text: {
+        en: "forever.",
+        it: "sempre. ",
+      },
+    },
+  ];
+  return lyrics;
+}
+
+export function WelcomeSongFemaleLyrics() {
+  const subtitles = [
+  {
+    "start": 99,
+    "end": 9920,
+    "text": {
+      "en": "(dramatic orchestral music plays)",
+      "it": "(musica orchestrale drammatica)"
+    }
+  },
+  {
+    "start": 10219,
+    "end": 14879,
+    "text": {
+      "en": "Welcome, dreamer, you've come home. To the",
+      "it": "Benvenuto, sognatore, sei tornato a casa,"
+    }
+  },
+  {
+    "start": 15019,
+    "end": 19659,
+    "text": {
+      "en": "garden of Roses of Rome. Where",
+      "it": "Nel giardino delle Rose di Roma che abbraccia."
+    }
+  },
+  {
+    "start": 19739,
+    "end": 24479,
+    "text": {
+      "en": "stories bloom and voices rise. A",
+      "it": "Dove le storie sbocciano e le voci si alzano,"
+    }
+  },
+  {
+    "start": 24600,
+    "end": 29040,
+    "text": {
+      "en": "sanctuary beneath the skies.",
+      "it": "Un santuario sotto i cieli che ci abbronzano."
+    }
+  },
+  {
+    "start": 29539,
+    "end": 33599,
+    "text": {
+      "en": "Step inside, let your spirit sing.",
+      "it": "Entra, lascia cantare lo spirito tuo,"
+    }
+  },
+  {
+    "start": 34439,
+    "end": 38299,
+    "text": {
+      "en": "Here the heart finds everything.",
+      "it": "Qui il cuore ritrova ciò che ha perso e più."
+    }
+  },
+  {
+    "start": 38979,
+    "end": 43679,
+    "text": {
+      "en": "Roses of Rome will light your way. With",
+      "it": "Le Rose di Roma illumineranno il cammino,"
+    }
+  },
+  {
+    "start": 43779,
+    "end": 46739,
+    "text": {
+      "en": "love that never fades away.",
+      "it": "Con un amore eterno, senza destino."
+    }
+  },
+  {
+    "start": 48000,
+    "end": 51259,
+    "text": {
+      "en": "Oh-oh, oh-oh, oh-oh.",
+      "it": "Oh-oh, oh-oh, oh-oh."
+    }
+  },
+  {
+    "start": 52819,
+    "end": 55639,
+    "text": {
+      "en": "Oh-oh, oh-oh, oh-oh.",
+      "it": "Oh-oh, oh-oh, oh-oh."
+    }
+  },
+  {
+    "start": 57579,
+    "end": 62139,
+    "text": {
+      "en": "Every visitor is a friend we hold.",
+      "it": "Ogni ospite è un amico da custodire,"
+    }
+  },
+  {
+    "start": 62479,
+    "end": 67419,
+    "text": {
+      "en": "Every word a petal of gold (ooh).",
+      "it": "Ogni parola è un petalo d'oro da offrire (ooh)."
+    }
+  },
+  {
+    "start": 67860,
+    "end": 71819,
+    "text": {
+      "en": "In our world, no one's alone.",
+      "it": "Nel nostro mondo nessuno è solo,"
+    }
+  },
+  {
+    "start": 72339,
+    "end": 76860,
+    "text": {
+      "en": "Together we breathe, Roses of Rome.",
+      "it": "Respiriamo insieme, Rose di Roma in volo."
+    }
+  },
+  {
+    "start": 77559,
+    "end": 81699,
+    "text": {
+      "en": "Step inside, let your spirit sing.",
+      "it": "Entra, lascia cantare lo spirito tuo,"
+    }
+  },
+  {
+    "start": 82439,
+    "end": 86319,
+    "text": {
+      "en": "Here the heart finds everything.",
+      "it": "Qui il cuore ritrova ciò che ha perso e più."
+    }
+  },
+  {
+    "start": 86979,
+    "end": 91059,
+    "text": {
+      "en": "Roses of Rome will light your way.",
+      "it": "Le Rose di Roma illumineranno il cammino,"
+    }
+  },
+  {
+    "start": 91500,
+    "end": 95899,
+    "text": {
+      "en": "Forever welcome, forever stay.",
+      "it": "Per sempre accolto, per sempre vicino."
+    }
+  },
+  {
+    "start": 96059,
+    "end": 99659,
+    "text": {
+      "en": "Oh-oh, oh-oh, oh-oh.",
+      "it": "Oh-oh, oh-oh, oh-oh."
+    }
+  },
+  {
+    "start": 100860,
+    "end": 104140,
+    "text": {
+      "en": "Oh-oh, oh-oh, oh-oh.",
+      "it": "Oh-oh, oh-oh, oh-oh."
+    }
+  },
+  {
+    "start": 105659,
+    "end": 109499,
+    "text": {
+      "en": "Oh-oh, oh-oh, oh-oh.",
+      "it": "Oh-oh, oh-oh, oh-oh."
+    }
+  },
+  {
+    "start": 110419,
+    "end": 113399,
+    "text": {
+      "en": "Oh-oh, oh-oh, oh-oh.",
+      "it": "Oh-oh, oh-oh, oh-oh."
+    }
+  },
+  {
+    "start": 114619,
+    "end": 118779,
+    "text": {
+      "en": "Feel the music, let it start",
+      "it": "Senti la musica, lascia che inizi,"
+    }
+  },
+  {
+    "start": 118819,
+    "end": 123660,
+    "text": {
+      "en": "(ooh). A hymn of welcome, from the heart",
+      "it": "(ooh). Un inno di benvenuto che il cuore ci benedici."
+    }
+  },
+  {
+    "start": 125299,
+    "end": 129439,
+    "text": {
+      "en": "(ooh). Open arms, forever known.",
+      "it": "(ooh). Braccia aperte, per sempre conosciute,"
+    }
+  },
+  {
+    "start": 130239,
+    "end": 134479,
+    "text": {
+      "en": "You belong with roses of Rome.",
+      "it": "Con le Rose di Roma tu sei voluto."
+    }
+  },
+  {
+    "start": 135160,
+    "end": 139359,
+    "text": {
+      "en": "Step inside, let your spirit sing.",
+      "it": "Entra, lascia cantare lo spirito tuo,"
+    }
+  },
+  {
+    "start": 140039,
+    "end": 143939,
+    "text": {
+      "en": "Here the heart finds everything.",
+      "it": "Qui il cuore ritrova ciò che ha perso e più."
+    }
+  },
+  {
+    "start": 144580,
+    "end": 148719,
+    "text": {
+      "en": "Roses of Rome will light your way.",
+      "it": "Le Rose di Roma illumineranno il cammino,"
+    }
+  },
+  {
+    "start": 149099,
+    "end": 153539,
+    "text": {
+      "en": "Forever welcome, forever stay.",
+      "it": "Per sempre accolto, per sempre vicino."
+    }
+  },
+  {
+    "start": 153660,
+    "end": 156680,
+    "text": {
+      "en": "Oh-oh, oh-oh, oh-oh.",
+      "it": "Oh-oh, oh-oh, oh-oh."
+    }
+  },
+  {
+    "start": 158459,
+    "end": 161679,
+    "text": {
+      "en": "Oh-oh, oh-oh, oh-oh.",
+      "it": "Oh-oh, oh-oh, oh-oh."
+    }
+  },
+  {
+    "start": 163239,
+    "end": 166559,
+    "text": {
+      "en": "Oh-oh, oh-oh, oh-oh.",
+      "it": "Oh-oh, oh-oh, oh-oh."
+    }
+  },
+  {
+    "start": 168039,
+    "end": 171360,
+    "text": {
+      "en": "Oh-oh, oh-oh, oh-oh.",
+      "it": "Oh-oh, oh-oh, oh-oh."
+    }
+  },
+  {
+    "start": 172779,
+    "end": 176680,
+    "text": {
+      "en": "Oh-oh, oh-oh, oh-oh.",
+      "it": "Oh-oh, oh-oh, oh-oh."
+    }
+  },
+  {
+    "start": 177559,
+    "end": 180960,
+    "text": {
+      "en": "Oh-oh, oh-oh, oh-oh.",
+      "it": "Oh-oh, oh-oh, oh-oh."
+    }
+  },
+  {
+    "start": 182399,
+    "end": 186199,
+    "text": {
+      "en": "Oh-oh, oh-oh, oh-oh.",
+      "it": "Oh-oh, oh-oh, oh-oh."
+    }
+  },
+  {
+    "start": 187220,
+    "end": 189199,
+    "text": {
+      "en": "Oh-oh, oh-oh,",
+      "it": "Oh-oh, oh-oh,"
+    }
+  },
+  {
+    "start": 189479,
+    "end": 195000,
+    "text": {
+      "en": "oh-oh.",
+      "it": "oh-oh."
+    }
+  }
+];
+  return subtitles;
+}
+
+export function WelcomeSongMaleLyrics() {
+  const ly = [
+  {
+    "start": 99,
+    "end": 3220,
+    "text": { "en": "(dramatic orchestral music)", "it": "(musica orchestrale drammatica)" }
+  },
+  {
+    "start": 3220,
+    "end": 10020,
+    "text": { "en": "(singing)", "it": "(canto)" }
+  },
+  {
+    "start": 10139,
+    "end": 14819,
+    "text": { "en": "Welcome, dreamer, you've come home. To the", "it": "Benvenuto, sognatore, sei tornato a casa," }
+  },
+  {
+    "start": 14939,
+    "end": 19579,
+    "text": { "en": "garden of roses of Rome. Where", "it": "Nel giardino delle Rose di Roma che abbraccia." }
+  },
+  {
+    "start": 19639,
+    "end": 24340,
+    "text": { "en": "stories bloom and voices rise. A", "it": "Dove le storie sbocciano e le voci si alzano," }
+  },
+  {
+    "start": 24500,
+    "end": 28759,
+    "text": { "en": "sanctuary beneath the skies.", "it": "Un santuario sotto i cieli che ci abbronzano." }
+  },
+  {
+    "start": 29479,
+    "end": 33619,
+    "text": { "en": "Step inside, let your spirit sing.", "it": "Entra, lascia cantare lo spirito tuo," }
+  },
+  {
+    "start": 34399,
+    "end": 38239,
+    "text": { "en": "Here the heart finds everything.", "it": "Qui il cuore ritrova ciò che ha perso e più." }
+  },
+  {
+    "start": 38879,
+    "end": 43619,
+    "text": { "en": "Roses of Rome will light your way. With", "it": "Le Rose di Roma illumineranno il cammino," }
+  },
+  {
+    "start": 43700,
+    "end": 46719,
+    "text": { "en": "love that never fades away.", "it": "Con un amore eterno, senza destino." }
+  },
+  {
+    "start": 47959,
+    "end": 51940,
+    "text": { "en": "Oh-oh, oh-oh, oh-oh.", "it": "Oh-oh, oh-oh, oh-oh." }
+  },
+  {
+    "start": 52779,
+    "end": 55559,
+    "text": { "en": "Oh-oh, oh-oh, oh-oh.", "it": "Oh-oh, oh-oh, oh-oh." }
+  },
+  {
+    "start": 57360,
+    "end": 62020,
+    "text": { "en": "Every visitor is a friend we hold.", "it": "Ogni ospite è un amico da custodire," }
+  },
+  {
+    "start": 62379,
+    "end": 65939,
+    "text": { "en": "Every word a petal of gold.", "it": "Ogni parola è un petalo d'oro da offrire." }
+  },
+  {
+    "start": 67760,
+    "end": 71720,
+    "text": { "en": "In our world, no one's alone.", "it": "Nel nostro mondo nessuno è solo," }
+  },
+  {
+    "start": 72199,
+    "end": 76799,
+    "text": { "en": "Together we breathe, roses of Rome.", "it": "Respiriamo insieme, Rose di Roma in volo." }
+  },
+  {
+    "start": 77479,
+    "end": 81639,
+    "text": { "en": "Step inside, let your spirit sing.", "it": "Entra, lascia cantare lo spirito tuo," }
+  },
+  {
+    "start": 82400,
+    "end": 86279,
+    "text": { "en": "Here the heart finds everything.", "it": "Qui il cuore ritrova ciò che ha perso e più." }
+  },
+  {
+    "start": 86879,
+    "end": 91619,
+    "text": { "en": "Roses of Rome will light your way. With", "it": "Le Rose di Roma illumineranno il cammino," }
+  },
+  {
+    "start": 91720,
+    "end": 96579,
+    "text": { "en": "love that never fades away. Oh-oh,", "it": "Con un amore eterno, senza destino. Oh-oh," }
+  },
+  {
+    "start": 97059,
+    "end": 101559,
+    "text": { "en": "oh-oh, oh-oh. Oh-oh,", "it": "oh-oh, oh-oh. Oh-oh," }
+  },
+  {
+    "start": 101959,
+    "end": 104139,
+    "text": { "en": "oh-oh, oh-oh.", "it": "oh-oh, oh-oh." }
+  },
+  {
+    "start": 105599,
+    "end": 109439,
+    "text": { "en": "Oh-oh, oh-oh, oh-oh.", "it": "Oh-oh, oh-oh, oh-oh." }
+  },
+  {
+    "start": 110339,
+    "end": 113479,
+    "text": { "en": "Oh-oh, oh-oh, oh-oh.", "it": "Oh-oh, oh-oh, oh-oh." }
+  },
+  {
+    "start": 113899,
+    "end": 118600,
+    "text": { "en": "Hear the music, let it start.", "it": "Senti la musica, lascia che inizi," }
+  },
+  {
+    "start": 119639,
+    "end": 123559,
+    "text": { "en": "A hymn of welcome from the heart", "it": "Un inno di benvenuto che il cuore ci benedici" }
+  },
+  {
+    "start": 124139,
+    "end": 128459,
+    "text": { "en": "(ooh). Open arms, forever", "it": "(ooh). Braccia aperte, per sempre" }
+  },
+  {
+    "start": 128598,
+    "end": 133360,
+    "text": { "en": "known. You belong with roses of", "it": "conosciute. Con le Rose di Roma tu sei" }
+  },
+  {
+    "start": 134440,
+    "end": 138059,
+    "text": { "en": "Rome. Step inside, let your spirit", "it": "voluto. Entra, lascia cantare lo spirito" }
+  },
+  {
+    "start": 138220,
+    "end": 141899,
+    "text": { "en": "sing. Here the heart finds", "it": "tuo. Qui il cuore ritrova" }
+  },
+  {
+    "start": 142020,
+    "end": 146599,
+    "text": { "en": "everything. Roses of Rome will", "it": "ciò che ha perso e più. Le Rose di Roma" }
+  },
+  {
+    "start": 146699,
+    "end": 151279,
+    "text": { "en": "light your way. Forever welcome,", "it": "illumineranno il cammino. Per sempre accolto," }
+  },
+  {
+    "start": 151440,
+    "end": 153979,
+    "text": { "en": "forever stay. Let us", "it": "per sempre vicino. Fioriamo" }
+  },
+  {
+    "start": 154039,
+    "end": 158180,
+    "text": { "en": "bloom,", "it": "in" }
+  },
+  {
+    "start": 158279,
+    "end": 162300,
+    "text": { "en": "forever, forever.", "it": "eterno, per sempre." }
+  },
+  {
+    "start": 163139,
+    "end": 164919,
+    "text": { "en": "Let us bloom,", "it": "Fioriamo," }
+  },
+  {
+    "start": 167919,
+    "end": 171799,
+    "text": { "en": "forever, forever.", "it": "per sempre, per sempre." }
+  },
+  {
+    "start": 172720,
+    "end": 176320,
+    "text": { "en": "Oh-oh, oh-oh, oh-oh.", "it": "Oh-oh, oh-oh, oh-oh." }
+  },
+  {
+    "start": 177559,
+    "end": 180899,
+    "text": { "en": "Oh-oh, oh-oh, oh-oh.", "it": "Oh-oh, oh-oh, oh-oh." }
+  },
+  {
+    "start": 182360,
+    "end": 186279,
+    "text": { "en": "Oh-oh, oh-oh, oh-oh.", "it": "Oh-oh, oh-oh, oh-oh." }
+  },
+  {
+    "start": 187119,
+    "end": 190519,
+    "text": { "en": "Oh-oh, oh-oh, oh-oh.", "it": "Oh-oh, oh-oh, oh-oh." }
+  },
+  {
+    "start": 190519,
+    "end": 197520,
+    "text": { "en": "(music fades)", "it": "(musica si affievolisce)" }
+  }
+];
+return ly
+}
+
+export function VisionFemaleLyrics() {
+  const subtitles = [
+  {
+    "start": 99,
+    "end": 12239,
+    "text": {
+      "en": "(instrumental music plays)",
+      "it": "(musica strumentale)"
+    }
+  },
+  {
+    "start": 12239,
+    "end": 16619,
+    "text": {
+      "en": "We are the ones who carve light from the stone,",
+      "it": "Noi siamo coloro che scolpiscono la luce dalla pietra,"
+    }
+  },
+  {
+    "start": 18260,
+    "end": 23020,
+    "text": {
+      "en": "who turn every street into galleries",
+      "it": "Che trasformano ogni strada in gallerie sconosciute."
+    }
+  },
+  {
+    "start": 23039,
+    "end": 27380,
+    "text": {
+      "en": "unknown. We paint the world in colors yet",
+      "it": "Dipingeremo il mondo con colori mai raccontati,"
+    }
+  },
+  {
+    "start": 27399,
+    "end": 32198,
+    "text": {
+      "en": "untold. We shape the marble",
+      "it": "Plasmiamo il marmo"
+    }
+  },
+  {
+    "start": 32319,
+    "end": 36740,
+    "text": {
+      "en": "to outlast the gold. This is our",
+      "it": "perché superi l'oro. Questo è il nostro"
+    }
+  },
+  {
+    "start": 36819,
+    "end": 41739,
+    "text": {
+      "en": "creed, beauty is heirloom and fire.",
+      "it": "credo: La bellezza è eredità e fiamma."
+    }
+  },
+  {
+    "start": 41759,
+    "end": 46559,
+    "text": {
+      "en": "Let's paint our hearts with colors unafraid.",
+      "it": "Dipingeremo i nostri cuori con colori senza paura,"
+    }
+  },
+  {
+    "start": 48119,
+    "end": 52699,
+    "text": {
+      "en": "Let the crayons speak where words have strayed.",
+      "it": "Lasciamo che i pastelli parlino dove le parole sono svanite."
+    }
+  },
+  {
+    "start": 54139,
+    "end": 58499,
+    "text": {
+      "en": "Let the brush weave dreams in hues of hope.",
+      "it": "Che il pennello tessa sogni in tinte di speranza,"
+    }
+  },
+  {
+    "start": 60099,
+    "end": 64779,
+    "text": {
+      "en": "Let the canvas cradle our future",
+      "it": "Che la tela culli il nostro futuro"
+    }
+  },
+  {
+    "start": 64919,
+    "end": 69599,
+    "text": {
+      "en": "bright. As roses of Rome, let us",
+      "it": "luminoso. Come Rose di Roma,"
+    }
+  },
+  {
+    "start": 69680,
+    "end": 72320,
+    "text": {
+      "en": "bloom forever.",
+      "it": "fioriamo per sempre."
+    }
+  },
+  {
+    "start": 78259,
+    "end": 82799,
+    "text": {
+      "en": "We are the ones whose hearts are unbound,",
+      "it": "Noi siamo coloro i cui cuori sono liberi,"
+    }
+  },
+  {
+    "start": 84059,
+    "end": 88919,
+    "text": {
+      "en": "who turn pain into light from the deepest",
+      "it": "Che trasformano il dolore in luce dalle ferite"
+    }
+  },
+  {
+    "start": 88979,
+    "end": 93839,
+    "text": {
+      "en": "wound. We give joy like rivers that",
+      "it": "più profonde. Doniamo gioia come fiumi che"
+    }
+  },
+  {
+    "start": 93900,
+    "end": 98779,
+    "text": {
+      "en": "never run dry. We pray love will find",
+      "it": "non si prosciugano mai. Preghiamo che l'amore ci trovi"
+    }
+  },
+  {
+    "start": 98879,
+    "end": 103699,
+    "text": {
+      "en": "us beneath every sky. This is our vow,",
+      "it": "sotto ogni cielo. Questo è il nostro voto:"
+    }
+  },
+  {
+    "start": 104360,
+    "end": 108839,
+    "text": {
+      "en": "love conquers all. Let's paint our",
+      "it": "L'amore vince su tutto. Dipingeremo i nostri"
+    }
+  },
+  {
+    "start": 108919,
+    "end": 112619,
+    "text": {
+      "en": "hearts with colors unafraid.",
+      "it": "cuori con colori senza paura,"
+    }
+  },
+  {
+    "start": 114099,
+    "end": 118999,
+    "text": {
+      "en": "Let the crayons speak where words have strayed.",
+      "it": "Lasciamo che i pastelli parlino dove le parole sono svanite."
+    }
+  },
+  {
+    "start": 120099,
+    "end": 124599,
+    "text": {
+      "en": "Let the brush weave dreams in hues of hope.",
+      "it": "Che il pennello tessa sogni in tinte di speranza,"
+    }
+  },
+  {
+    "start": 126099,
+    "end": 130758,
+    "text": {
+      "en": "Let the canvas cradle our future",
+      "it": "Che la tela culli il nostro futuro"
+    }
+  },
+  {
+    "start": 130839,
+    "end": 135619,
+    "text": {
+      "en": "bright. As roses of Rome, let us",
+      "it": "luminoso. Come Rose di Roma,"
+    }
+  },
+  {
+    "start": 135660,
+    "end": 138499,
+    "text": {
+      "en": "bloom forever.",
+      "it": "fioriamo per sempre."
+    }
+  },
+  {
+    "start": 143940,
+    "end": 148620,
+    "text": {
+      "en": "We are the ones who kneel in the dust,",
+      "it": "Noi siamo coloro che si inginocchiano nella polvere,"
+    }
+  },
+  {
+    "start": 150059,
+    "end": 154880,
+    "text": {
+      "en": "who turn strangers to kin through unwavering",
+      "it": "Che trasformano stranieri in fratelli con fiducia"
+    }
+  },
+  {
+    "start": 154940,
+    "end": 159800,
+    "text": {
+      "en": "trust. We give not just alms, but the",
+      "it": "incrollabile. Doniamo non solo elemosine, ma le"
+    }
+  },
+  {
+    "start": 159839,
+    "end": 163860,
+    "text": {
+      "en": "keys to our gates. We pray",
+      "it": "chiavi delle nostre porte. Preghiamo"
+    }
+  },
+  {
+    "start": 163979,
+    "end": 168819,
+    "text": {
+      "en": "compassion outlives all our fates. This is our",
+      "it": "che la compassione sopravviva a tutti i nostri destini. Questa è la nostra"
+    }
+  },
+  {
+    "start": 168879,
+    "end": 172979,
+    "text": {
+      "en": "law, kindness crowns us all.",
+      "it": "legge: La gentilezza incorona tutti."
+    }
+  },
+  {
+    "start": 173759,
+    "end": 178699,
+    "text": {
+      "en": "Let's paint our hearts with colors unafraid.",
+      "it": "Dipingeremo i nostri cuori con colori senza paura,"
+    }
+  },
+  {
+    "start": 180099,
+    "end": 184859,
+    "text": {
+      "en": "Let the crayons speak where words have strayed.",
+      "it": "Lasciamo che i pastelli parlino dove le parole sono svanite."
+    }
+  },
+  {
+    "start": 186099,
+    "end": 190699,
+    "text": {
+      "en": "Let the brush weave dreams in hues of hope.",
+      "it": "Che il pennello tessa sogni in tinte di speranza,"
+    }
+  },
+  {
+    "start": 192099,
+    "end": 196800,
+    "text": {
+      "en": "Let the canvas cradle our future",
+      "it": "Che la tela culli il nostro futuro"
+    }
+  },
+  {
+    "start": 196899,
+    "end": 201660,
+    "text": {
+      "en": "bright. As roses of Rome, let us",
+      "it": "luminoso. Come Rose di Roma,"
+    }
+  },
+  {
+    "start": 201679,
+    "end": 205919,
+    "text": {
+      "en": "bloom forever. Roses of",
+      "it": "fioriamo per sempre. Rose di"
+    }
+  },
+  {
+    "start": 206019,
+    "end": 206832,
+    "text": {
+      "en": "Rome.",
+      "it": "Roma."
+    }
+  }
+];
+
+return subtitles;
+}
+
+export function VisionDuetLyrics () {
+  const vision_duet = [
+    {
+      start: 99,
+      end: 8420,
+      text: {
+        en: "(instrumental music plays)",
+        it: "(musica strumentale)",
+      },
+    },
+    {
+      start: 12359,
+      end: 16799,
+      text: {
+        en: "We are the ones who carve light from the stone,",
+        it: "Noi siamo coloro che scolpiscono la luce dalla pietra,",
+      },
+    },
+    {
+      start: 18319,
+      end: 23040,
+      text: {
+        en: "who turn every street into galleries",
+        it: "Che trasformano ogni strada in gallerie",
+      },
+    },
+    {
+      start: 23079,
+      end: 27399,
+      text: {
+        en: "unknown. We paint the world in colors yet",
+        it: "sconosciute. Dipingeremo il mondo con colori mai",
+      },
+    },
+    {
+      start: 27420,
+      end: 32299,
+      text: {
+        en: "untold (yet untold). We shape the marble",
+        it: "raccontati. Plasmiamo il marmo",
+      },
+    },
+    {
+      start: 32360,
+      end: 36779,
+      text: {
+        en: "to outlast the gold. This is our",
+        it: "perché superi l'oro. Questo è il nostro",
+      },
+    },
+    {
+      start: 36860,
+      end: 41220,
+      text: {
+        en: "creed, beauty is heirloom and",
+        it: "credo: la bellezza è eredità e",
+      },
+    },
+    {
+      start: 41379,
+      end: 45180,
+      text: {
+        en: "fire. Let's paint our hearts with colors",
+        it: "fiamma. Dipingeremo i nostri cuori con colori",
+      },
+    },
+    {
+      start: 45219,
+      end: 48700,
+      text: {
+        en: "unafraid. Let the",
+        it: "senza paura. Lasciamo che",
+      },
+    },
+    {
+      start: 48840,
+      end: 52699,
+      text: {
+        en: "crayons speak where words have strayed.",
+        it: "i pastelli parlino dove le parole sono svanite.",
+      },
+    },
+    {
+      start: 54159,
+      end: 58699,
+      text: {
+        en: "Let the brush weave dreams in hues of hope.",
+        it: "Che il pennello tessa sogni in tinte di speranza,",
+      },
+    },
+    {
+      start: 60159,
+      end: 64779,
+      text: {
+        en: "Let the canvas cradle our future",
+        it: "Che la tela culli il nostro futuro",
+      },
+    },
+    {
+      start: 64860,
+      end: 69660,
+      text: {
+        en: "bright. As roses of Rome let us",
+        it: "luminoso. Come Rose di Roma, lasciateci",
+      },
+    },
+    {
+      start: 69720,
+      end: 72419,
+      text: {
+        en: "bloom forever.",
+        it: "fiorire per sempre.",
+      },
+    },
+    {
+      start: 76639,
+      end: 81559,
+      text: {
+        en: "(instrumental music plays) We are the ones whose hearts are",
+        it: "(musica strumentale) Noi siamo coloro i cui cuori sono",
+      },
+    },
+    {
+      start: 81580,
+      end: 86180,
+      text: {
+        en: "unbound, who turn pain into",
+        it: "liberi, che trasformano il dolore in",
+      },
+    },
+    {
+      start: 86220,
+      end: 90800,
+      text: {
+        en: "light from the deepest wound. We give",
+        it: "luce dalle ferite più profonde. Doniamo",
+      },
+    },
+    {
+      start: 90900,
+      end: 94959,
+      text: {
+        en: "joy like rivers that never run",
+        it: "gioia come fiumi che non si prosciugano",
+      },
+    },
+    {
+      start: 95019,
+      end: 99360,
+      text: {
+        en: "dry. We pray love will find us",
+        it: "mai. Preghiamo che l'amore ci trovi",
+      },
+    },
+    {
+      start: 99699,
+      end: 103739,
+      text: {
+        en: "beneath every sky. This is our vow,",
+        it: "sotto ogni cielo. Questo è il nostro voto:",
+      },
+    },
+    {
+      start: 104399,
+      end: 108839,
+      text: {
+        en: "love conquers all. Let's paint our",
+        it: "l'amore vince su tutto. Dipingiamo i nostri",
+      },
+    },
+    {
+      start: 108959,
+      end: 112659,
+      text: {
+        en: "hearts with colors unafraid.",
+        it: "cuori con colori senza paura.",
+      },
+    },
+    {
+      start: 114139,
+      end: 118979,
+      text: {
+        en: "Let the crayons speak where words have strayed.",
+        it: "Lasciamo che i pastelli parlino dove le parole sono svanite.",
+      },
+    },
+    {
+      start: 120139,
+      end: 124739,
+      text: {
+        en: "Let the brush weave dreams in hues of hope.",
+        it: "Che il pennello tessa sogni in tinte di speranza,",
+      },
+    },
+    {
+      start: 126139,
+      end: 130779,
+      text: {
+        en: "Let the canvas cradle our future",
+        it: "Che la tela culli il nostro futuro",
+      },
+    },
+    {
+      start: 130839,
+      end: 135679,
+      text: {
+        en: "bright. As roses of Rome let us",
+        it: "luminoso. Come Rose di Roma, lasciateci",
+      },
+    },
+    {
+      start: 135699,
+      end: 137879,
+      text: {
+        en: "bloom forever.",
+        it: "fiorire per sempre.",
+      },
+    },
+    {
+      start: 143399,
+      end: 147679,
+      text: {
+        en: "(instrumental music plays) We are the ones who kneel in the",
+        it: "(musica strumentale) Noi siamo coloro che si inginocchiano nella",
+      },
+    },
+    {
+      start: 147739,
+      end: 152179,
+      text: {
+        en: "dust, who turn strangers to",
+        it: "polvere, che trasformano stranieri in",
+      },
+    },
+    {
+      start: 152220,
+      end: 156839,
+      text: {
+        en: "kin through unwavering trust. We give",
+        it: "fratelli con fiducia incrollabile. Doniamo",
+      },
+    },
+    {
+      start: 156899,
+      end: 160979,
+      text: {
+        en: "not just alms, but the keys to our",
+        it: "non solo elemosine, ma le chiavi delle nostre",
+      },
+    },
+    {
+      start: 161059,
+      end: 165159,
+      text: {
+        en: "gates. We pray compassion",
+        it: "porte. Preghiamo che la compassione",
+      },
+    },
+    {
+      start: 165539,
+      end: 169739,
+      text: {
+        en: "outlives all our fates. This is our law,",
+        it: "sopravviva a tutti i nostri destini. Questo è il nostro legge,",
+      },
+    },
+    {
+      start: 170360,
+      end: 174880,
+      text: {
+        en: "kindness crowns us all. Let's paint our",
+        it: "la gentilezza ci incorona tutti. Dipingiamo i nostri",
+      },
+    },
+    {
+      start: 174979,
+      end: 178619,
+      text: {
+        en: "hearts with colors unafraid.",
+        it: "cuori con colori senza paura.",
+      },
+    },
+    {
+      start: 180159,
+      end: 184659,
+      text: {
+        en: "Let the crayons speak where words have strayed.",
+        it: "Lasciamo che i pastelli parlino dove le parole sono svanite.",
+      },
+    },
+    {
+      start: 186119,
+      end: 190739,
+      text: {
+        en: "Let the brush weave dreams in hues of hope.",
+        it: "Che il pennello tessa sogni in tinte di speranza,",
+      },
+    },
+    {
+      start: 192119,
+      end: 196720,
+      text: {
+        en: "Let the canvas cradle our future",
+        it: "Che la tela culli il nostro futuro",
+      },
+    },
+    {
+      start: 196899,
+      end: 201680,
+      text: {
+        en: "bright. As roses of Rome let us",
+        it: "luminoso. Come Rose di Roma, lasciateci",
+      },
+    },
+    {
+      start: 201739,
+      end: 206712,
+      text: {
+        en: "bloom forever. (instrumental music plays)",
+        it: "fiorire per sempre. (musica strumentale)",
+      },
+    },
+  ];
+return vision_duet;
+}
+
+
+export function EverythingDuetLyrics() {
+ const everythingsSubtitles = [
+  {
+    "start": 6199,
+    "end": 11119,
+    "text": {
+      "en": "When the world feels broken and far away.",
+      "it": "Quando il mondo sembra spezzato e lontano."
+    }
+  },
+  {
+    "start": 12019,
+    "end": 16219,
+    "text": {
+      "en": "When the days turn heavy and fade to",
+      "it": "Quando i giorni diventano pesanti e svaniscono nel"
+    }
+  },
+  {
+    "start": 16318,
+    "end": 20659,
+    "text": {
+      "en": "gray. When time itself seems",
+      "it": "grigio. Quando persino il tempo sembra"
+    }
+  },
+  {
+    "start": 20819,
+    "end": 25039,
+    "text": {
+      "en": "lost, unknown. My heart is",
+      "it": "smarrito, sconosciuto. Il mio cuore è"
+    }
+  },
+  {
+    "start": 25239,
+    "end": 29879,
+    "text": {
+      "en": "waiting to bring you home. I'd tear the sky",
+      "it": "in attesa di riportarti a casa. Strapperei il cielo"
+    }
+  },
+  {
+    "start": 30019,
+    "end": 34859,
+    "text": {
+      "en": "open just to see you again. I",
+      "it": "aperto solo per rivederti. Io"
+    }
+  },
+  {
+    "start": 34899,
+    "end": 39059,
+    "text": {
+      "en": "will cross the oceans to see you back again.",
+      "it": "attraverserò gli oceani per riaverti ancora."
+    }
+  },
+  {
+    "start": 40559,
+    "end": 45199,
+    "text": {
+      "en": "I will love you deeply to erase your pain. I will sing forever your",
+      "it": "Ti amerò profondamente per cancellare il tuo dolore. Canterò per sempre il tuo"
+    }
+  },
+  {
+    "start": 45239,
+    "end": 49999,
+    "text": {
+      "en": "sweetest refrain. I will paint the heavens with your",
+      "it": "dolcissimo ritornello. Dipingerò i cieli con il tuo"
+    }
+  },
+  {
+    "start": 50099,
+    "end": 54499,
+    "text": {
+      "en": "name. I will do everything just to see you again.",
+      "it": "nome. Farò tutto, solo per rivederti ancora."
+    }
+  },
+  {
+    "start": 57739,
+    "end": 61579,
+    "text": {
+      "en": "When the stars forget their",
+      "it": "Quando le stelle dimenticano il loro"
+    }
+  },
+  {
+    "start": 61799,
+    "end": 66000,
+    "text": {
+      "en": "silver glow. When the rivers",
+      "it": "bagliore d’argento. Quando i fiumi"
+    }
+  },
+  {
+    "start": 66080,
+    "end": 70839,
+    "text": {
+      "en": "stop the way they flow. When",
+      "it": "smettono di scorrere come dovrebbero. Quando"
+    }
+  },
+  {
+    "start": 71059,
+    "end": 75799,
+    "text": {
+      "en": "every song has lost its tune.",
+      "it": "ogni canzone ha perso la sua melodia."
+    }
+  },
+  {
+    "start": 76400,
+    "end": 80559,
+    "text": {
+      "en": "I'll be the dawn that breaks your",
+      "it": "Sarò l’alba che spezza il tuo"
+    }
+  },
+  {
+    "start": 80639,
+    "end": 85559,
+    "text": {
+      "en": "gloom. I'll breathe new meaning when",
+      "it": "buio. Soffierò nuovo senso quando"
+    }
+  },
+  {
+    "start": 85599,
+    "end": 90259,
+    "text": {
+      "en": "hope is thin. I'll arrange the sky",
+      "it": "la speranza è fragile. Ordinerò il cielo"
+    }
+  },
+  {
+    "start": 90319,
+    "end": 94340,
+    "text": {
+      "en": "where your sun begins. I'd tear the sky",
+      "it": "dove nasce il tuo sole. Strapperei il cielo"
+    }
+  },
+  {
+    "start": 94400,
+    "end": 99260,
+    "text": {
+      "en": "open just to see you again. I",
+      "it": "aperto solo per rivederti. Io"
+    }
+  },
+  {
+    "start": 99279,
+    "end": 103559,
+    "text": {
+      "en": "will cross the oceans to see you back again.",
+      "it": "attraverserò gli oceani per riaverti ancora."
+    }
+  },
+  {
+    "start": 104979,
+    "end": 109619,
+    "text": {
+      "en": "I will love you deeply to erase your pain. I will sing forever your",
+      "it": "Ti amerò profondamente per cancellare il tuo dolore. Canterò per sempre il tuo"
+    }
+  },
+  {
+    "start": 109619,
+    "end": 114400,
+    "text": {
+      "en": "sweetest refrain. I will paint the heavens with your",
+      "it": "dolcissimo ritornello. Dipingerò i cieli con il tuo"
+    }
+  },
+  {
+    "start": 114479,
+    "end": 118899,
+    "text": {
+      "en": "name. I will do everything just to see you again.",
+      "it": "nome. Farò tutto, solo per rivederti ancora."
+    }
+  },
+  {
+    "start": 127619,
+    "end": 131859,
+    "text": {
+      "en": "And if the world should",
+      "it": "E se il mondo dovesse"
+    }
+  },
+  {
+    "start": 132020,
+    "end": 136979,
+    "text": {
+      "en": "fade to dust, my heart will still",
+      "it": "svanire in polvere, il mio cuore ancora"
+    }
+  },
+  {
+    "start": 137199,
+    "end": 142159,
+    "text": {
+      "en": "remember us. No void so",
+      "it": "ci ricorderà. Nessun vuoto così"
+    }
+  },
+  {
+    "start": 142259,
+    "end": 146919,
+    "text": {
+      "en": "vast, no night so long, no",
+      "it": "immenso, nessuna notte così lunga, nessun"
+    }
+  },
+  {
+    "start": 146979,
+    "end": 151599,
+    "text": {
+      "en": "silence so deep, no shadow too",
+      "it": "silenzio così profondo, nessuna ombra troppo"
+    }
+  },
+  {
+    "start": 151759,
+    "end": 156279,
+    "text": {
+      "en": "wide can steal the love I hold",
+      "it": "vasta può rubare l’amore che porto"
+    }
+  },
+  {
+    "start": 156300,
+    "end": 161159,
+    "text": {
+      "en": "inside. And in the last light,",
+      "it": "dentro. E nell’ultima luce,"
+    }
+  },
+  {
+    "start": 161300,
+    "end": 165559,
+    "text": {
+      "en": "let it be clear, I loved you",
+      "it": "sia chiaro: ti ho amato"
+    }
+  },
+  {
+    "start": 165739,
+    "end": 168400,
+    "text": {
+      "en": "always, loud and",
+      "it": "sempre, forte e"
+    }
+  },
+  {
+    "start": 168519,
+    "end": 174384,
+    "text": {
+      "en": "clear.",
+      "it": "chiaro."
+    }
+  }
+];
+
+  return everythingsSubtitles;
+}
+
+export function ReputationLyrics() {
+  const lyrics = [
+    { start: 6339, end: 10300, text: { en: "In our world, where shadows speak our name.", it: "Nel nostro mondo, dove le ombre dicono il nostro nome." } },
+    { start: 12199, end: 15980, text: { en: "In our hearts, where pride ignites the flame.", it: "Nei nostri cuori, dove l'orgoglio accende la fiamma." } },
+    { start: 17520, end: 22200, text: { en: "We are chained to echoes time has spun. The", it: "Siamo incatenati agli echi che il tempo ha tessuto. Il" } },
+    { start: 22340, end: 26719, text: { en: "value of reputation, never undone.", it: "valore della reputazione, mai annullato." } },
+    { start: 27239, end: 31499, text: { en: "In our reputation, we breed the", it: "Nella nostra reputazione, generiamo la" } },
+    { start: 31659, end: 36080, text: { en: "fame. In our choices, we carve the", it: "fama. Nelle nostre scelte, incidiamo il" } },
+    { start: 36139, end: 40639, text: { en: "name. The world will see your light,", it: "nome. Il mondo vedrà la tua luce," } },
+    { start: 40860, end: 45500, text: { en: "without demand. Just live truthfully,", it: "senza pretese. Vivi semplicemente con verità," } },
+    { start: 45700, end: 49100, text: { en: "gently, gently — in balance you stand.", it: "con dolcezza, dolcezza — in equilibrio stai." } },
+    { start: 50919, end: 54959, text: { en: "In our dawn, the silence breaks with song.", it: "Nella nostra alba, il silenzio si rompe con un canto." } },
+    { start: 56559, end: 60540, text: { en: "In our hearts, the gentle find the strong.", it: "Nei nostri cuori, i miti trovano la forza." } },
+    { start: 62099, end: 66860, text: { en: "We are free when truth becomes our guide. The", it: "Siamo liberi quando la verità diventa la nostra guida. Il" } },
+    { start: 66979, end: 71479, text: { en: "worth of reputation — love sanctified.", it: "valore della reputazione — amore santificato." } },
+    { start: 71919, end: 76220, text: { en: "In our reputation, we breed the", it: "Nella nostra reputazione, generiamo la" } },
+    { start: 76299, end: 80720, text: { en: "flame. In our choices, we carve the", it: "fiamma. Nelle nostre scelte, incidiamo il" } },
+    { start: 80839, end: 85379, text: { en: "name. The world will see your light,", it: "nome. Il mondo vedrà la tua luce," } },
+    { start: 85519, end: 90179, text: { en: "without demand. Just live truthfully,", it: "senza pretese. Vivi semplicemente con verità," } },
+    { start: 90319, end: 93780, text: { en: "gently — in balance you stand.", it: "con dolcezza — in equilibrio stai." } },
+    { start: 95540, end: 99739, text: { en: "Through the storms, our honor will remain.", it: "Attraverso le tempeste, il nostro onore rimarrà." } },
+    { start: 101159, end: 105179, text: { en: "Like the sun that rises after rain.", it: "Come il sole che sorge dopo la pioggia." } },
+    { start: 106739, end: 111539, text: { en: "Not by crowns, nor by fleeting praise, but by", it: "Non per corone, né per lodi fugaci, ma per" } },
+    { start: 111639, end: 115039, text: { en: "love that lives beyond the days.", it: "amore che vive oltre i giorni." } },
+    { start: 116559, end: 120799, text: { en: "In our reputation, we breed the", it: "Nella nostra reputazione, generiamo la" } },
+    { start: 121000, end: 125379, text: { en: "fame. In our choices, we carve the", it: "fama. Nelle nostre scelte, incidiamo il" } },
+    { start: 125419, end: 130100, text: { en: "name. The world will see your light,", it: "nome. Il mondo vedrà la tua luce," } },
+    { start: 130160, end: 134760, text: { en: "without demand. Just live truthfully,", it: "senza pretese. Vivi semplicemente con verità," } },
+    { start: 134979, end: 139339, text: { en: "gently — in balance you stand. So guard the", it: "con dolcezza — in equilibrio stai. Quindi custodisci la" } },
+    { start: 139379, end: 142239, text: { en: "truth that carries you through. Let your", it: "verità che ti sostiene. Lascia che il tuo" } },
+    { start: 142339, end: 146120, text: { en: "spirit shine in all you do.", it: "spirito risplenda in tutto ciò che fai." } },
+    { start: 149660, end: 153820, text: { en: "A legacy written in hearts not sand.", it: "Un'eredità scritta nei cuori, non nella sabbia." } },
+    { start: 154179, end: 158599, text: { en: "Reputation eternal, in balance you", it: "Reputazione eterna, in equilibrio" } },
+    { start: 158639, end: 162880, text: { en: "stand. Through the storms, our honor will", it: "stai. Attraverso le tempeste, il nostro onore" } },
+    { start: 162919, end: 167399, text: { en: "remain. Like the sun that", it: "rimarrà. Come il sole che" } },
+    { start: 167440, end: 171479, text: { en: "rises after rain. Not by crowns nor by", it: "sorge dopo la pioggia. Non per corone né per" } },
+    { start: 171580, end: 176499, text: { en: "fleeting praise, but by love", it: "lodi fugaci, ma per amore" } },
+    { start: 176519, end: 179259, text: { en: "that lives beyond the days.", it: "che vive oltre i giorni." } },
+    { start: 183399, end: 187919, text: { en: "Through the storms, our honor will", it: "Attraverso le tempeste, il nostro onore" } },
+    { start: 188039, end: 192860, text: { en: "remain. Like the sun that rises after rain.", it: "rimarrà. Come il sole che sorge dopo la pioggia." } },
+    { start: 193239, end: 197439, text: { en: "Not by crowns nor by fleeting praise,", it: "Non per corone né per lodi fugaci," } },
+    { start: 198839, end: 202960, text: { en: "but by love that lives beyond the days.", it: "ma per amore che vive oltre i giorni." } },
+    { start: 203879, end: 208180, text: { en: "So guard the truth that carries you through.", it: "Quindi custodisci la verità che ti sostiene." } },
+    { start: 209299, end: 213680, text: { en: "Let your spirit shine in all you do.", it: "Lascia che il tuo spirito risplenda in tutto ciò che fai." } },
+    { start: 215239, end: 219399, text: { en: "A legacy written in hearts not sand.", it: "Un'eredità scritta nei cuori, non nella sabbia." } },
+    { start: 219779, end: 224139, text: { en: "Reputation eternal, in balance you", it: "Reputazione eterna, in equilibrio" } },
+    { start: 224220, end: 236040, text: { en: "stand.", it: "stai." } }
+  ];
+  return lyrics;
+}
+
+
+export function EverythingRMXLyrics() {
+  const lyrics2 = [
+    {
+      start: 6219,
+      end: 11079,
+      text: {
+        en: "When the world feels broken and far away.",
+        it: "Quando il mondo sembra spezzato e lontano.",
+      },
+    },
+    {
+      start: 12099,
+      end: 16299,
+      text: {
+        en: "When the days turn heavy and fade to",
+        it: "Quando i giorni si fanno pesanti e svaniscono in",
+      },
+    },
+    {
+      start: 16420,
+      end: 20699,
+      text: {
+        en: "gray. When time itself seems",
+        it: "grigio. Quando il tempo stesso sembra",
+      },
+    },
+    {
+      start: 20840,
+      end: 25119,
+      text: {
+        en: "lost, all's unknown. My heart is",
+        it: "perso, tutto è sconosciuto. Il mio cuore",
+      },
+    },
+    {
+      start: 25239,
+      end: 29999,
+      text: {
+        en: "waiting to bring you home. I'd tear the sky",
+        it: "aspetta di riportarti a casa. Strapperei il cielo",
+      },
+    },
+    {
+      start: 30099,
+      end: 35060,
+      text: {
+        en: "open just to see you again. I will",
+        it: "aperto solo per rivederti. Attraverserò",
+      },
+    },
+    {
+      start: 35099,
+      end: 39140,
+      text: {
+        en: "cross the oceans to see you back again.",
+        it: "gli oceani per riaverti di nuovo.",
+      },
+    },
+    {
+      start: 40599,
+      end: 45200,
+      text: {
+        en: "I will love you deeply to erase your pain. I will sing forever your",
+        it: "Ti amerò profondamente per cancellare il tuo dolore. Canterò per sempre il tuo",
+      },
+    },
+    {
+      start: 45279,
+      end: 50019,
+      text: {
+        en: "sweetest refrain. I will paint the heavens with your",
+        it: "dolcissimo ritornello. Dipingerò i cieli con il tuo",
+      },
+    },
+    {
+      start: 50139,
+      end: 54559,
+      text: {
+        en: "name. I will do everything just to see you again.",
+        it: "nome. Farò di tutto solo per rivederti.",
+      },
+    },
+    {
+      start: 58699,
+      end: 62979,
+      text: {
+        en: "When the stars forget their silver",
+        it: "Quando le stelle dimenticano il loro argenteo",
+      },
+    },
+    {
+      start: 63219,
+      end: 68119,
+      text: {
+        en: "glow. When the rivers stop the way",
+        it: "splendore. Quando i fiumi fermano il modo",
+      },
+    },
+    {
+      start: 68419,
+      end: 73360,
+      text: {
+        en: "they flow. When every song has",
+        it: "in cui scorrono. Quando ogni canzone ha",
+      },
+    },
+    {
+      start: 73519,
+      end: 77720,
+      text: {
+        en: "lost its tune. I'll be the",
+        it: "perso la sua melodia. Sarò l'",
+      },
+    },
+    {
+      start: 77900,
+      end: 82540,
+      text: {
+        en: "dawn that breaks your gloom. I'll",
+        it: "alba che rompe la tua oscurità. Ti",
+      },
+    },
+    {
+      start: 82639,
+      end: 87179,
+      text: {
+        en: "breathe you meaning when hope is thin.",
+        it: "darò significato quando la speranza è esile.",
+      },
+    },
+    {
+      start: 88180,
+      end: 93159,
+      text: {
+        en: "I'll arrange the sky where your sun begins.",
+        it: "Disporrò il cielo dove il tuo sole comincia.",
+      },
+    },
+    {
+      start: 93259,
+      end: 97640,
+      text: {
+        en: "I'd tear the sky open just to see you again.",
+        it: "Strapperei il cielo aperto solo per rivederti.",
+      },
+    },
+    {
+      start: 99119,
+      end: 103539,
+      text: {
+        en: "I will cross the oceans to see you back again.",
+        it: "Attraverserò gli oceani per riaverti di nuovo.",
+      },
+    },
+    {
+      start: 105019,
+      end: 109660,
+      text: {
+        en: "I will love you deeply to erase your pain. I will sing forever your",
+        it: "Ti amerò profondamente per cancellare il tuo dolore. Canterò per sempre il tuo",
+      },
+    },
+    {
+      start: 109680,
+      end: 114419,
+      text: {
+        en: "sweetest refrain. I will paint the heavens with your",
+        it: "dolcissimo ritornello. Dipingerò i cieli con il tuo",
+      },
+    },
+    {
+      start: 114540,
+      end: 118859,
+      text: {
+        en: "name. I will do everything just to see you again.",
+        it: "nome. Farò di tutto solo per rivederti.",
+      },
+    },
+    {
+      start: 129000,
+      end: 133499,
+      text: {
+        en: "And if the world should fade to dust, my heart will still",
+        it: "E se il mondo dovesse svanire in polvere, il mio cuore",
+      },
+    },
+    {
+      start: 133580,
+      end: 137779,
+      text: {
+        en: "remember us. No void so vast, no night so long,",
+        it: "ricorderà ancora noi. Nessun vuoto così vasto, nessuna notte così lunga,",
+      },
+    },
+    {
+      start: 138479,
+      end: 142860,
+      text: {
+        en: "no silence so deep, no shadow too wide can steal the love I hold",
+        it: "nessun silenzio così profondo, nessuna ombra troppo larga può rubare l'amore che custodisco",
+      },
+    },
+    {
+      start: 142899,
+      end: 147820,
+      text: {
+        en: "inside. And in the last light, let it be clear. I loved you",
+        it: "dentro. E nell'ultima luce, che sia chiaro. Ti ho amato",
+      },
+    },
+    {
+      start: 147860,
+      end: 151320,
+      text: {
+        en: "always loud and clear, Roses of",
+        it: "sempre forte e chiaro, Rose di",
+      },
+    },
+    { start: 151379, end: 159480, text: { en: "Rome.", it: "Roma." } },
+  ];
+  return lyrics2;
+}
+
+export function ReputationDuetLyrics() {
+  const subtitles = [
+{ "start": 99, "end": 6499, "text": { "en": "(orchestral music plays)", "it": "(musica orchestrale)" } },
+{ "start": 6519, "end": 10499, "text": { "en": "In our world, where shadows speak our name.", "it": "Nel nostro mondo, dove le ombre pronunciano il nostro nome." } },
+{ "start": 12099, "end": 16178, "text": { "en": "In our hearts, where pride ignites the flame.", "it": "Nei nostri cuori, dove l'orgoglio accende la fiamma." } },
+{ "start": 17659, "end": 22380, "text": { "en": "We are chained to echoes time has spun.", "it": "Siamo incatenati agli echi che il tempo ha creato." } },
+{ "start": 22519, "end": 26919, "text": { "en": "The value of reputation, never undone.", "it": "Il valore della reputazione, mai annullato." } },
+{ "start": 27479, "end": 31739, "text": { "en": "In our reputation, we breed the fame.", "it": "Nella nostra reputazione, generiamo la fama." } },
+{ "start": 31920, "end": 36279, "text": { "en": "In our choices, we carve the name.", "it": "Nelle nostre scelte, incidiamo il nome." } },
+{ "start": 36340, "end": 40840, "text": { "en": "The world will see your light, without demand.", "it": "Il mondo vedrà la tua luce, senza richiederla." } },
+{ "start": 41059, "end": 45659, "text": { "en": "Just live truthfully, gently, in balance you stand.", "it": "Vivi semplicemente con verità, con dolcezza, in equilibrio stai." } },
+{ "start": 51159, "end": 55339, "text": { "en": "In our dawn, the silence breaks with song.", "it": "Nella nostra alba, il silenzio si rompe con un canto." } },
+{ "start": 56779, "end": 60739, "text": { "en": "In our hearts, the gentle find the strong.", "it": "Nei nostri cuori, i miti trovano la forza." } },
+{ "start": 62319, "end": 67099, "text": { "en": "We are free when truth becomes our guide.", "it": "Siamo liberi quando la verità diventa la nostra guida." } },
+{ "start": 67199, "end": 71719, "text": { "en": "The worth of reputation, love sanctified.", "it": "Il valore della reputazione, amore santificato." } },
+{ "start": 72139, "end": 76439, "text": { "en": "In our reputation, we breed the fame.", "it": "Nella nostra reputazione, generiamo la fama." } },
+{ "start": 76559, "end": 80939, "text": { "en": "In our choices, we carve the name.", "it": "Nelle nostre scelte, incidiamo il nome." } },
+{ "start": 81000, "end": 85539, "text": { "en": "The world will see your light, without demand.", "it": "Il mondo vedrà la tua luce, senza richiederla." } },
+{ "start": 85720, "end": 90359, "text": { "en": "Just live truthfully, gently, in balance you stand.", "it": "Vivi semplicemente con verità, con dolcezza, in equilibrio stai." } },
+{ "start": 95759, "end": 99799, "text": { "en": "Through the storms of honor, we'll remain.", "it": "Attraverso le tempeste dell'onore, resisteremo." } },
+{ "start": 101279, "end": 105379, "text": { "en": "Like the sun that rises after rain.", "it": "Come il sole che sorge dopo la pioggia." } },
+{ "start": 106939, "end": 111760, "text": { "en": "Not by crowns, not by fleeting praise.", "it": "Non per corone, non per lodi fugaci." } },
+{ "start": 111799, "end": 115219, "text": { "en": "But by love that lives beyond the days.", "it": "Ma per l'amore che vive oltre i giorni." } },
+{ "start": 116759, "end": 121039, "text": { "en": "In our reputation, we breed the flame.", "it": "Nella nostra reputazione, alimentiamo la fiamma." } },
+{ "start": 121239, "end": 125580, "text": { "en": "In our choices, we carve the name.", "it": "Nelle nostre scelte, incidiamo il nome." } },
+{ "start": 125659, "end": 130120, "text": { "en": "The world will see your light, without demand.", "it": "Il mondo vedrà la tua luce, senza richiederla." } },
+{ "start": 130378, "end": 134960, "text": { "en": "Just live truthfully, gently, in balance you stand.", "it": "Vivi semplicemente con verità, con dolcezza, in equilibrio stai." } },
+{ "start": 140059, "end": 144159, "text": { "en": "So guard the truth that carries you through.", "it": "Custodisci dunque la verità che ti sostiene." } },
+{ "start": 146020, "end": 149779, "text": { "en": "Let your spirit shine in all you do.", "it": "Lascia che il tuo spirito risplenda in tutto ciò che fai." } },
+{ "start": 151279, "end": 155439, "text": { "en": "A legacy written in hearts, not sand.", "it": "Un'eredità scritta nei cuori, non nella sabbia." } },
+{ "start": 155800, "end": 160139, "text": { "en": "Reputation eternal, in balance you stand.", "it": "Reputazione eterna, in equilibrio stai." } },
+{ "start": 160279, "end": 161040, "text": { "en": "Stand.", "it": "Stai." } },
+{ "start": 162119, "end": 167232, "text": { "en": "(music fades out)", "it": "(la musica sfuma)" } }
+]
+return subtitles
+}
+
+export function CottolengoSisterRMXLyrics() {
+  const sub = [
+  {
+    "start": 80,
+    "end": 12420,
+    "text": {
+      "en": "(instrumental music plays)",
+      "it": "(musica strumentale)"
+    }
+  },
+  {
+    "start": 12500,
+    "end": 17500,
+    "text": {
+      "en": "Through your gentle hands, the wounded are healed.",
+      "it": "Dalle tue mani gentili il ferito è guarito,"
+    }
+  },
+  {
+    "start": 18380,
+    "end": 22840,
+    "text": {
+      "en": "Through your humble hearts, God's mysteries revealed.",
+      "it": "nei tuoi cuori umili il mistero è svelato."
+    }
+  },
+  {
+    "start": 24260,
+    "end": 27980,
+    "text": {
+      "en": "Through your kind devotion, each prayer is a shield.",
+      "it": "Con la tua devozione, ogni preghiera è scudo,"
+    }
+  },
+  {
+    "start": 29220,
+    "end": 34190,
+    "text": {
+      "en": "A living grace that shapes eternity. Cottolengo",
+      "it": "una grazia vivente che plasma l'eternità."
+    }
+  },
+  {
+    "start": 34580,
+    "end": 38850,
+    "text": {
+      "en": "Sisters, in reverence we sing. In our",
+      "it": "Suore Cottolengo, con reverenza cantiamo,"
+    }
+  },
+  {
+    "start": 38900,
+    "end": 43080,
+    "text": {
+      "en": "hearts, your love shall forever be.",
+      "it": "nei nostri cuori il vostro amore resterà."
+    }
+  },
+  {
+    "start": 44460,
+    "end": 47100,
+    "text": {
+      "en": "In our prayers, you bloom like a",
+      "it": "Nelle nostre preghiere fiorite come rosario,"
+    }
+  },
+  {
+    "start": 47180,
+    "end": 52080,
+    "text": {
+      "en": "rosary. Cottolengo Sisters, we",
+      "it": "Suore Cottolengo — vi onoriamo sempre qua."
+    }
+  },
+  {
+    "start": 52140,
+    "end": 56320,
+    "text": {
+      "en": "deeply honor thee.",
+      "it": ""
+    }
+  },
+  {
+    "start": 58260,
+    "end": 62480,
+    "text": {
+      "en": "Through your tireless care, the hungry are",
+      "it": "Con la tua cura instancabile l'affamato è nutrito,"
+    }
+  },
+  {
+    "start": 62560,
+    "end": 67320,
+    "text": {
+      "en": "fed. Through your quiet strength,",
+      "it": "con la tua forza silenziosa la speranza è rinata."
+    }
+  },
+  {
+    "start": 67340,
+    "end": 72080,
+    "text": {
+      "en": "hope rises instead. Through your",
+      "it": "Con i tuoi passi fedeli lo smarrito trova via,"
+    }
+  },
+  {
+    "start": 72160,
+    "end": 76990,
+    "text": {
+      "en": "faithful steps, the lost find the way. A guiding",
+      "it": "una luce che illumina ogni nuovo dì."
+    }
+  },
+  {
+    "start": 77160,
+    "end": 81290,
+    "text": {
+      "en": "light that brightens every day. Cottolengo",
+      "it": ""
+    }
+  },
+  {
+    "start": 81640,
+    "end": 85950,
+    "text": {
+      "en": "Sisters, in reverence we sing. In our",
+      "it": "Suore Cottolengo, con reverenza cantiamo,"
+    }
+  },
+  {
+    "start": 86000,
+    "end": 90520,
+    "text": {
+      "en": "hearts, your love shall forever be.",
+      "it": "nei nostri cuori il vostro amore resterà."
+    }
+  },
+  {
+    "start": 91520,
+    "end": 96060,
+    "text": {
+      "en": "In our prayers, you bloom like a rosary.",
+      "it": "Nelle nostre preghiere fiorite come rosario,"
+    }
+  },
+  {
+    "start": 96780,
+    "end": 100460,
+    "text": {
+      "en": "Cottolengo Sisters, we deeply honor",
+      "it": "Suore Cottolengo — vi onoriamo sempre qua."
+    }
+  },
+  {
+    "start": 100500,
+    "end": 104140,
+    "text": {
+      "en": "thee.",
+      "it": ""
+    }
+  },
+  {
+    "start": 106680,
+    "end": 111500,
+    "text": {
+      "en": "Through your prayers, the heavens open wide.",
+      "it": "Con le tue preghiere il cielo si spalanca,"
+    }
+  },
+  {
+    "start": 112560,
+    "end": 116280,
+    "text": {
+      "en": "Through your sacrifice, love is glorified.",
+      "it": "con il tuo sacrificio l'amore si innalza."
+    }
+  },
+  {
+    "start": 118460,
+    "end": 123280,
+    "text": {
+      "en": "Through your hearts, you crown the cross with grace.",
+      "it": "Con i tuoi cuori la croce si corona di grazia,"
+    }
+  },
+  {
+    "start": 123380,
+    "end": 127660,
+    "text": {
+      "en": "A living witness of faith and grace.",
+      "it": "testimoni viventi di fede e speranza."
+    }
+  },
+  {
+    "start": 127700,
+    "end": 132700,
+    "text": {
+      "en": "Cottolengo Sisters, in reverence we sing.",
+      "it": "Suore Cottolengo, con reverenza cantiamo,"
+    }
+  },
+  {
+    "start": 132780,
+    "end": 136860,
+    "text": {
+      "en": "In our hearts, your love shall forever be.",
+      "it": "nei nostri cuori il vostro amore resterà."
+    }
+  },
+  {
+    "start": 138620,
+    "end": 142780,
+    "text": {
+      "en": "In our prayers, you bloom like a rosary.",
+      "it": "Nelle nostre preghiere fiorite come rosario,"
+    }
+  },
+  {
+    "start": 143880,
+    "end": 147580,
+    "text": {
+      "en": "Cottolengo Sisters, we deeply honor",
+      "it": "Suore Cottolengo — vi onoriamo sempre qua."
+    }
+  },
+  {
+    "start": 147640,
+    "end": 149500,
+    "text": {
+      "en": "thee.",
+      "it": ""
+    }
+  },
+  {
+    "start": 154180,
+    "end": 157780,
+    "text": {
+      "en": "We thank Cottolengo for the dream he",
+      "it": "Ringraziamo Cottolengo per il sogno donato,"
+    }
+  },
+  {
+    "start": 157900,
+    "end": 162560,
+    "text": {
+      "en": "gave. A garden of sisters, so",
+      "it": "un giardino di suore, fedeli, coraggiose."
+    }
+  },
+  {
+    "start": 162660,
+    "end": 166799,
+    "text": {
+      "en": "faithful, so brave. In velvet",
+      "it": "In velluto di devozione il loro amore risplende,"
+    }
+  },
+  {
+    "start": 166900,
+    "end": 171840,
+    "text": {
+      "en": "devotion, their love is adorned.",
+      "it": "una benedizione eterna, per sempre vivente."
+    }
+  },
+  {
+    "start": 171900,
+    "end": 175660,
+    "text": {
+      "en": "A blessing eternal, forever",
+      "it": ""
+    }
+  },
+  {
+    "start": 175760,
+    "end": 178460,
+    "text": {
+      "en": "borne.",
+      "it": ""
+    }
+  },
+  {
+    "start": 178840,
+    "end": 190584,
+    "text": {
+      "en": "(instrumental music plays)",
+      "it": "(musica strumentale)"
+    }
+  }
+];
+  return sub;
+}
+
+export function CottolengoSisterRMXLyricsIT() {
+  const sub = [
+  {
+    "start": 80,
+    "end": 7200,
+    "text": {
+      "en": "(instrumental music plays)",
+      "it": "(Baila la Jota)"
+    }
+  },
+  {
+    "start": 7240,
+    "end": 11640,
+    "text": {
+      "en": "Through your gentle hands the wounded are",
+      "it": "Dalle tue mani gentili il ferito è"
+    }
+  },
+  {
+    "start": 11760,
+    "end": 15940,
+    "text": {
+      "en": "healed, through your humble hearts",
+      "it": "guarito nei tuoi cuori umili"
+    }
+  },
+  {
+    "start": 16700,
+    "end": 20340,
+    "text": {
+      "en": "God's mysteries revealed, through your",
+      "it": "il mistero è svelato con la tua"
+    }
+  },
+  {
+    "start": 20420,
+    "end": 24880,
+    "text": {
+      "en": "kind devotion, each prayer is a shield,",
+      "it": "devozione ogni preghiera è scudo"
+    }
+  },
+  {
+    "start": 25740,
+    "end": 29540,
+    "text": {
+      "en": "A living grace that shapes",
+      "it": "una grazia vivente che plasma"
+    }
+  },
+  {
+    "start": 29560,
+    "end": 33880,
+    "text": {
+      "en": "eternity.",
+      "it": "l'eternità."
+    }
+  },
+  {
+    "start": 36440,
+    "end": 41400,
+    "text": {
+      "en": "Cottolengo Sisters, in reverence we sing,",
+      "it": "Suore cottolengo con reverenza cantiamo"
+    }
+  },
+  {
+    "start": 42900,
+    "end": 46080,
+    "text": {
+      "en": "In our hearts your love shall",
+      "it": "nei nostri cuori il vostro amore"
+    }
+  },
+  {
+    "start": 46140,
+    "end": 50380,
+    "text": {
+      "en": "forever be. In our prayers",
+      "it": "resterà. Nelle nostre preghiere"
+    }
+  },
+  {
+    "start": 50940,
+    "end": 55020,
+    "text": {
+      "en": "you bloom like a rosary, Cottolengo",
+      "it": "fiorite come rosario, suore"
+    }
+  },
+  {
+    "start": 55100,
+    "end": 58500,
+    "text": {
+      "en": "Sisters, we deeply honor",
+      "it": "cottolengo, vi onoriamo sempre"
+    }
+  },
+  {
+    "start": 58600,
+    "end": 61240,
+    "text": {
+      "en": "thee.",
+      "it": "qua."
+    }
+  },
+  {
+    "start": 65800,
+    "end": 70080,
+    "text": {
+      "en": "Through your tireless care, the hungry are",
+      "it": "Con la tua cura instancabile, l'affamato e"
+    }
+  },
+  {
+    "start": 70220,
+    "end": 75220,
+    "text": {
+      "en": "fed, through your quiet strength,",
+      "it": "nutrito, con la tua forza silenziosa, la"
+    }
+  },
+  {
+    "start": 75260,
+    "end": 79060,
+    "text": {
+      "en": "hope rises instead, through your faithful",
+      "it": "speranza è rinata con i tuoi passi"
+    }
+  },
+  {
+    "start": 79260,
+    "end": 83180,
+    "text": {
+      "en": "steps, the lost find the way",
+      "it": "fedeli, lo smarrito trova via"
+    }
+  },
+  {
+    "start": 84160,
+    "end": 88480,
+    "text": {
+      "en": "A guiding light that brightens every",
+      "it": "una luce che illumina ogni nuovo"
+    }
+  },
+  {
+    "start": 88680,
+    "end": 91240,
+    "text": {
+      "en": "day.",
+      "it": "dì."
+    }
+  },
+  {
+    "start": 94880,
+    "end": 98520,
+    "text": {
+      "en": "Cottolengo Sisters, in reverence",
+      "it": "Suore cottolengo, con reverenza"
+    }
+  },
+  {
+    "start": 98720,
+    "end": 103180,
+    "text": {
+      "en": "we sing. In our hearts your",
+      "it": "cantiamo. Nei nostri cuori il"
+    }
+  },
+  {
+    "start": 103260,
+    "end": 107620,
+    "text": {
+      "en": "love shall forever be. In our",
+      "it": "vostro amore resterà. Nelle nostre"
+    }
+  },
+  {
+    "start": 107760,
+    "end": 110600,
+    "text": {
+      "en": "prayers you bloom like",
+      "it": "preghiere fiorite come"
+    }
+  },
+  {
+    "start": 110760,
+    "end": 115740,
+    "text": {
+      "en": "a rosary, Cottolengo Sisters,",
+      "it": "rosario, suore cottolengo, vi"
+    }
+  },
+  {
+    "start": 115760,
+    "end": 118259,
+    "text": {
+      "en": "we deeply honor thee.",
+      "it": "onoriamo sempre qua."
+    }
+  },
+  {
+    "start": 124270,
+    "end": 128538,
+    "text": {
+      "en": "Through your prayers the heavens",
+      "it": "Con le tue preghiere il cielo si"
+    }
+  },
+  {
+    "start": 128740,
+    "end": 132740,
+    "text": {
+      "en": "open wide, through your sacrifice",
+      "it": "spalanca, con il tuo sacrificio"
+    }
+  },
+  {
+    "start": 133840,
+    "end": 137980,
+    "text": {
+      "en": "love is glorified, through your hearts the",
+      "it": "l'amore si innalza, con i tuoi cuori la"
+    }
+  },
+  {
+    "start": 138040,
+    "end": 142580,
+    "text": {
+      "en": "cross is crowned with grace,",
+      "it": "croce si corona di grazia,"
+    }
+  },
+  {
+    "start": 142640,
+    "end": 146609,
+    "text": {
+      "en": "A living witness of faith and",
+      "it": "testimoni viventi di fede e"
+    }
+  },
+  {
+    "start": 146660,
+    "end": 151240,
+    "text": {
+      "en": "grace.",
+      "it": "speranza."
+    }
+  },
+  {
+    "start": 153460,
+    "end": 158380,
+    "text": {
+      "en": "Cottolengo Sisters in reverence we sing",
+      "it": "Suore cottolengo con reverenza cantiamo"
+    }
+  },
+  {
+    "start": 159860,
+    "end": 163080,
+    "text": {
+      "en": "In our hearts your love shall",
+      "it": "nei nostri cuori il vostro amore"
+    }
+  },
+  {
+    "start": 163140,
+    "end": 167380,
+    "text": {
+      "en": "forever be, in our prayers",
+      "it": "resterà, nelle nostre preghiere"
+    }
+  },
+  {
+    "start": 167980,
+    "end": 172020,
+    "text": {
+      "en": "you bloom like a rosary, Cottolengo",
+      "it": "fiorite come rosario, suore"
+    }
+  },
+  {
+    "start": 172120,
+    "end": 176660,
+    "text": {
+      "en": "Sisters, we deeply honor thee.",
+      "it": "cottolengo, vi onoriamo sempre qua."
+    }
+  },
+  {
+    "start": 176760,
+    "end": 181140,
+    "text": {
+      "en": "We thank Cottolengo for the dream",
+      "it": "Ringraziamo cottolengo per il sogno"
+    }
+  },
+  {
+    "start": 181260,
+    "end": 185380,
+    "text": {
+      "en": "he gave, a garden of sisters",
+      "it": "donato un giardino di suore"
+    }
+  },
+  {
+    "start": 186320,
+    "end": 190020,
+    "text": {
+      "en": "so faithful, so brave, in velvet",
+      "it": "fedeli coraggiose, in velluto di"
+    }
+  },
+  {
+    "start": 190120,
+    "end": 193240,
+    "text": {
+      "en": "devotion their love is",
+      "it": "devozione il loro amore"
+    }
+  },
+  {
+    "start": 193300,
+    "end": 197520,
+    "text": {
+      "en": "adorned, a blessing eternal",
+      "it": "risplende, una benedizione eterna"
+    }
+  },
+  {
+    "start": 198280,
+    "end": 199240,
+    "text": {
+      "en": "forever",
+      "it": "per sempre"
+    }
+  },
+  {
+    "start": 199320,
+    "end": 207480,
+    "text": {
+      "en": "borne.",
+      "it": "vivente."
+    }
+  }
+];
+  return sub;
+}
+
+
+export function BoomerangAirwaveLyrics() {
+  const sub = [
+    {
+      start: 580,
+      end: 10860,
+      text: {
+        en: "(Upbeat music playing)",
+        it: "(Musica allegra)",
+      },
+    },
+    {
+      start: 13480,
+      end: 17900,
+      text: {
+        en: "No matter the distance, No matter how",
+        it: "Non conta la distanza, né gli anni che van,",
+      },
+    },
+    {
+      start: 18000,
+      end: 22700,
+      text: {
+        en: "years turn. Love takes flight, With the",
+        it: "l’amore si alza, con promessa tornerà.",
+      },
+    },
+    {
+      start: 22820,
+      end: 27720,
+      text: {
+        en: "promise of return. It circles",
+        it: "Gira il mondo intero, sa dove posar,",
+      },
+    },
+    {
+      start: 27780,
+      end: 31280,
+      text: {
+        en: "the world, It knows where to",
+        it: "ancora caldo nel tocco",
+      },
+    },
+    {
+      start: 31340,
+      end: 36260,
+      text: {
+        en: "land, Still warm in the touch, Of",
+        it: "di chi sa aspettar.",
+      },
+    },
+    {
+      start: 36340,
+      end: 41200,
+      text: {
+        en: "a welcoming hand. Boomerang",
+        it: "Boomerang d’amore, un volo che non si perde,",
+      },
+    },
+    {
+      start: 41300,
+      end: 44940,
+      text: {
+        en: "of love, A flight never",
+        it: "tra ombre e tempeste, la sua rotta si stende.",
+      },
+    },
+    {
+      start: 45040,
+      end: 50040,
+      text: {
+        en: "lost, Through shadows and storms,",
+        it: "Ogni volta lanciato, più in alto volerà,",
+      },
+    },
+    {
+      start: 50060,
+      end: 54820,
+      text: {
+        en: "It still makes its course. Each time it",
+        it: "ritornando per sempre — il Boomerang d’amor sarà.",
+      },
+    },
+    {
+      start: 54900,
+      end: 58380,
+      text: {
+        en: "is cast, It will rise far",
+        it: "Ritorna, o boomerang, ai cuori che sanno scaldar,",
+      },
+    },
+    {
+      start: 58480,
+      end: 61840,
+      text: {
+        en: "above, Returning",
+        it: "agli incompresi, ai gentili, ai buoni nel mar.",
+      },
+    },
+    {
+      start: 61900,
+      end: 65379,
+      text: {
+        en: "again, The boomerang of",
+        it: "E sopra ogni cosa, ritorna con verità,",
+      },
+    },
+    {
+      start: 65440,
+      end: 73220,
+      text: {
+        en: "love.",
+        it: "per ridare ciò che fu dato — ritorna come amor sarà.",
+      },
+    },
+    {
+      start: 78200,
+      end: 82860,
+      text: {
+        en: "Return, oh, boomerang, To hearts that are",
+        it: "Boomerang d’amore, un volo che non si perde,",
+      },
+    },
+    {
+      start: 82880,
+      end: 87450,
+      text: {
+        en: "warm, To the unloved, the gentle, The",
+        it: "tra ombre e tempeste, la sua rotta si stende.",
+      },
+    },
+    {
+      start: 87580,
+      end: 92260,
+      text: {
+        en: "kind in the storm. And",
+        it: "Ogni volta lanciato, più in alto volerà,",
+      },
+    },
+    {
+      start: 92440,
+      end: 96080,
+      text: {
+        en: "above all, Return with the truth from",
+        it: "ritornando per sempre — il Boomerang d’amor sarà.",
+      },
+    },
+    {
+      start: 96160,
+      end: 100960,
+      text: {
+        en: "above, To restore what was given,",
+        it: "Attraverso l’arco del cielo e il respiro della terra,",
+      },
+    },
+    {
+      start: 101200,
+      end: 106140,
+      text: {
+        en: "Return as love. Boomerang of",
+        it: "l’amore trova chi è perso e la speranza riafferra.",
+      },
+    },
+    {
+      start: 106280,
+      end: 109620,
+      text: {
+        en: "love, A flight never",
+        it: "Nessuna forza lo ferma, nessuna ombra lo può legar,",
+      },
+    },
+    {
+      start: 109740,
+      end: 113030,
+      text: {
+        en: "lost, Through shadows and",
+        it: "la strada promessa dall’amor saprà sempre trovar.",
+      },
+    },
+    {
+      start: 113140,
+      end: 116480,
+      text: {
+        en: "storms, It still makes its",
+        it: "Boomerang d’amore, un volo che non si perde,",
+      },
+    },
+    {
+      start: 116540,
+      end: 121360,
+      text: {
+        en: "course. Each time it is cast, It",
+        it: "tra ombre e tempeste, la sua rotta si stende.",
+      },
+    },
+    {
+      start: 121420,
+      end: 124120,
+      text: {
+        en: "will rise far above,",
+        it: "Ogni volta lanciato, più in alto volerà,",
+      },
+    },
+    {
+      start: 125040,
+      end: 129940,
+      text: {
+        en: "Returning again, The boomerang",
+        it: "ritornando per sempre — il Boomerang d’amor sarà.",
+      },
+    },
+    {
+      start: 130000,
+      end: 131400,
+      text: {
+        en: "of love.",
+        it: "Per sempre gira, per sempre volerà,",
+      },
+    },
+    {
+      start: 135820,
+      end: 140519,
+      text: {
+        en: "Through the arc of the sky, And the breath of the",
+        it: "sotto il sole, nei cieli senza finità.",
+      },
+    },
+    {
+      start: 140880,
+      end: 145210,
+      text: {
+        en: "earth, Love finds the lost, And",
+        it: "Boomerang d’amore, nel suo eterno tornar,",
+      },
+    },
+    {
+      start: 145260,
+      end: 149820,
+      text: {
+        en: "rekindles their worth. No",
+        it: "la fiamma rimane, i cuori a bruciar.",
+      },
+    },
+    {
+      start: 149940,
+      end: 154280,
+      text: {
+        en: "force can deter, No shadow can",
+        it: "",
+      },
+    },
+    {
+      start: 154380,
+      end: 159160,
+      text: {
+        en: "stay, The path of love's promise, Will",
+        it: "",
+      },
+    },
+    {
+      start: 159320,
+      end: 164060,
+      text: {
+        en: "find its own way. Boomerang of",
+        it: "",
+      },
+    },
+    {
+      start: 164180,
+      end: 167560,
+      text: {
+        en: "love, A flight never",
+        it: "",
+      },
+    },
+    {
+      start: 167640,
+      end: 172620,
+      text: {
+        en: "lost, Through shadows and storms,",
+        it: "",
+      },
+    },
+    {
+      start: 172700,
+      end: 177620,
+      text: {
+        en: "It still makes its course. Each time it",
+        it: "",
+      },
+    },
+    {
+      start: 177680,
+      end: 181020,
+      text: {
+        en: "is cast, It will rise far",
+        it: "",
+      },
+    },
+    {
+      start: 181080,
+      end: 184480,
+      text: {
+        en: "above, Returning",
+        it: "",
+      },
+    },
+    {
+      start: 184540,
+      end: 188040,
+      text: {
+        en: "again, The boomerang of",
+        it: "",
+      },
+    },
+    {
+      start: 188100,
+      end: 189960,
+      text: {
+        en: "love.",
+        it: "",
+      },
+    },
+    {
+      start: 193160,
+      end: 197400,
+      text: {
+        en: "Forever it circles, Forever",
+        it: "",
+      },
+    },
+    {
+      start: 198020,
+      end: 202900,
+      text: {
+        en: "it flies, Beneath the sun,",
+        it: "",
+      },
+    },
+    {
+      start: 202920,
+      end: 206560,
+      text: {
+        en: "Through unending skies.",
+        it: "",
+      },
+    },
+    {
+      start: 207000,
+      end: 211380,
+      text: {
+        en: "Boomerang of love, In its endless",
+        it: "",
+      },
+    },
+    {
+      start: 211500,
+      end: 215500,
+      text: {
+        en: "return, The fire keeps",
+        it: "",
+      },
+    },
+    {
+      start: 215580,
+      end: 218200,
+      text: {
+        en: "glowing, The hearts ever",
+        it: "",
+      },
+    },
+    {
+      start: 218360,
+      end: 221280,
+      text: {
+        en: "burn.",
+        it: "",
+      },
+    },
+    {
+      start: 222660,
+      end: 223704,
+      text: {
+        en: "(Upbeat music fades out)",
+        it: "(La musica allegra sfuma)",
+      },
+    },
+  ];
+  return sub;
+}
+
+
+export function CongratsLyrics() {
+  const sub = [
+    { "start": 5240, "end": 9060, "text": { "en": "From that first trembling step in the hallways of your", "it": "Da quel primo passo tremulo nei corridoi dei tuoi" } },
+    { "start": 9140, "end": 14040, "text": { "en": "dreams. Your heart glided on petals of faith towards", "it": "sogni. Il tuo cuore scivolava su petali di fede verso" } },
+    { "start": 14080, "end": 18300, "text": { "en": "brighter streams. Every step was a chapter in your", "it": "correnti più luminose. Ogni passo era un capitolo della tua" } },
+    { "start": 18480, "end": 22320, "text": { "en": "story. Became the anthem of your", "it": "storia. È diventato l'inno della tua" } },
+    { "start": 22420, "end": 24480, "text": { "en": "glory.", "it": "gloria." } },
+    { "start": 25480, "end": 28820, "text": { "en": "Congratulations, and again we", "it": "Congratulazioni, e ancora noi" } },
+    { "start": 28940, "end": 33840, "text": { "en": "say. May your tremendous journey light", "it": "diciamo. Che il tuo tremendo viaggio illumini" } },
+    { "start": 33860, "end": 38660, "text": { "en": "each day. Roses of Rome we believed right", "it": "ogni giorno. Rose di Roma, abbiamo creduto fin" } },
+    { "start": 38740, "end": 43120, "text": { "en": "from the start. The world has seen your", "it": "dall'inizio. Il mondo ha visto il tuo" } },
+    { "start": 43240, "end": 47840, "text": { "en": "courage and will hold it in its heart. We will forever", "it": "coraggio e lo custodirà nel suo cuore. Noi crederemo per sempre" } },
+    { "start": 48300, "end": 51220, "text": { "en": "believe in your dreams.", "it": "nei tuoi sogni." } },
+    { "start": 54460, "end": 58120, "text": { "en": "Through the trials and the triumphs you stood", "it": "Attraverso le prove e i trionfi sei rimasto" } },
+    { "start": 58220, "end": 62220, "text": { "en": "unafraid. In the garden of hope, your", "it": "impavido. Nel giardino della speranza, le tue" } },
+    { "start": 62280, "end": 67080, "text": { "en": "foundations were laid. Each challenge a bridge", "it": "fondazioni sono state poste. Ogni sfida un ponte" } },
+    { "start": 67200, "end": 72040, "text": { "en": "to a higher story. Each victory a verse in the", "it": "verso una storia più alta. Ogni vittoria un verso nell'" } },
+    { "start": 72180, "end": 74700, "text": { "en": "anthem of your glory.", "it": "inno della tua gloria." } },
+    { "start": 75340, "end": 80080, "text": { "en": "Congratulations. And again we say.", "it": "Congratulazioni. E ancora noi diciamo." } },
+    { "start": 80220, "end": 83640, "text": { "en": "May your tremendous journey light each", "it": "Che il tuo tremendo viaggio illumini ogni" } },
+    { "start": 83680, "end": 88510, "text": { "en": "day. Roses of Rome we believed right from", "it": "giorno. Rose di Roma, abbiamo creduto fin dal" } },
+    { "start": 88600, "end": 93460, "text": { "en": "the start. The world has seen your courage", "it": "l'inizio. Il mondo ha visto il tuo coraggio" } },
+    { "start": 93500, "end": 98420, "text": { "en": "and will hold it in its heart. We will forever believe", "it": "e lo custodirà nel suo cuore. Noi crederemo per sempre" } },
+    { "start": 98440, "end": 102080, "text": { "en": "in your dreams.", "it": "nei tuoi sogni." } },
+    { "start": 103680, "end": 106940, "text": { "en": "We will forever believe in your", "it": "Noi crederemo per sempre nei tuoi" } },
+    { "start": 106960, "end": 111740, "text": { "en": "dreams. Through the trials and the triumphs", "it": "sogni. Attraverso le prove e i trionfi" } },
+    { "start": 112220, "end": 117000, "text": { "en": "you stood unafraid. In the garden of hope, your", "it": "sei rimasto impavido. Nel giardino della speranza, le tue" } },
+    { "start": 117100, "end": 121900, "text": { "en": "foundations were laid. Each challenge a bridge", "it": "fondazioni sono state poste. Ogni sfida un ponte" } },
+    { "start": 121980, "end": 126820, "text": { "en": "to a higher story. Each victory a verse in the", "it": "verso una storia più alta. Ogni vittoria un verso nell'" } },
+    { "start": 126980, "end": 131720, "text": { "en": "anthem of your glory. Now the tassel has", "it": "inno della tua gloria. Ora il nastro ha" } },
+    { "start": 131760, "end": 136660, "text": { "en": "turned and the moment has come. Your tremendous", "it": "girato e il momento è arrivato. Il tuo tremendo" } },
+    { "start": 137020, "end": 141600, "text": { "en": "journey has only begun. Petals of faith", "it": "viaggio è appena iniziato. Petali di fede" } },
+    { "start": 142180, "end": 147400, "text": { "en": "still beneath your feet guiding each step until dreams are complete.", "it": "sono ancora sotto i tuoi piedi a guidare ogni passo finché i sogni non si compiono." } },
+    { "start": 147620, "end": 150980, "text": { "en": "We cheer you. The world hears your name.", "it": "Ti acclamiamo. Il mondo sente il tuo nome." } },
+    { "start": 151320, "end": 153520, "text": { "en": "And roses of rome will always", "it": "E le rose di Roma proclameranno" } },
+    { "start": 153600, "end": 158440, "text": { "en": "proclaim. Oh, we", "it": "sempre. Oh, noi" } },
+    { "start": 158520, "end": 159100, "text": { "en": "will,  believe in your", "it": "crederemo, nei tuoi" } },
+    { "start": 159160, "end": 170040, "text": { "en": "dreams.", "it": "sogni." } }
+  ];
+  return sub;
+}
+
+export function BoomerangFemaleLyrics() {
+   const sub = [
+  {
+    "id": 1,
+    "start": 80,
+    "end": 10850,
+    "text": {
+      "en": "(Chill piano music)",
+      "it": "(Chill piano music)"
+    }
+  },
+  {
+    "id": 2,
+    "start": 11160,
+    "end": 15740,
+    "text": {
+      "en": "No matter the distance, no matter how years",
+      "it": "Non conta la distanza, né gli anni che van,"
+    }
+  },
+  {
+    "id": 3,
+    "start": 15800,
+    "end": 20720,
+    "text": {
+      "en": "turn, love takes flight, with a promise of",
+      "it": "l’amore si alza, con promessa tornerà."
+    }
+  },
+  {
+    "id": 4,
+    "start": 20740,
+    "end": 24200,
+    "text": {
+      "en": "return. It circles the",
+      "it": "Gira il mondo intero, sa dove posar,"
+    }
+  },
+  {
+    "id": 5,
+    "start": 24240,
+    "end": 29000,
+    "text": {
+      "en": "world, it knows where to land,",
+      "it": "ancora caldo nel tocco di chi sa aspettar."
+    }
+  },
+  {
+    "id": 6,
+    "start": 29140,
+    "end": 34040,
+    "text": {
+      "en": "still warm in the touch of a welcoming hand.",
+      "it": ""
+    }
+  },
+  {
+    "id": 7,
+    "start": 34820,
+    "end": 39680,
+    "text": {
+      "en": "Boomerang of love, a flight never lost,",
+      "it": "Boomerang d’amore, un volo che non si perde,"
+    }
+  },
+  {
+    "id": 8,
+    "start": 40220,
+    "end": 45120,
+    "text": {
+      "en": "through shadows and storms, it still makes its",
+      "it": "tra ombre e tempeste, la sua rotta si stende."
+    }
+  },
+  {
+    "id": 9,
+    "start": 45220,
+    "end": 49720,
+    "text": {
+      "en": "course. Each time it is cast, it will",
+      "it": "Ogni volta lanciato, più in alto volerà,"
+    }
+  },
+  {
+    "id": 10,
+    "start": 49840,
+    "end": 53520,
+    "text": {
+      "en": "rise far above, returning",
+      "it": "ritornando per sempre — il Boomerang d’amor sarà."
+    }
+  },
+  {
+    "id": 11,
+    "start": 53660,
+    "end": 57180,
+    "text": {
+      "en": "again, the boomerang of",
+      "it": ""
+    }
+  },
+  {
+    "id": 12,
+    "start": 57260,
+    "end": 59860,
+    "text": {
+      "en": "love.",
+      "it": ""
+    }
+  },
+  {
+    "id": 13,
+    "start": 59930,
+    "end": 68100,
+    "text": {
+      "en": "(Chill piano music)",
+      "it": "(Chill piano music)"
+    }
+  },
+  {
+    "id": 14,
+    "start": 68140,
+    "end": 72440,
+    "text": {
+      "en": "Return, oh boomerang, to hearts that are",
+      "it": "Ritorna, o boomerang, ai cuori che sanno scaldar,"
+    }
+  },
+  {
+    "id": 15,
+    "start": 72500,
+    "end": 76700,
+    "text": {
+      "en": "warm, to the unloved, the",
+      "it": "agli incompresi, ai gentili, ai buoni nel mar."
+    }
+  },
+  {
+    "id": 16,
+    "start": 76800,
+    "end": 81560,
+    "text": {
+      "en": "gentle, the kind in the storm. And above",
+      "it": ""
+    }
+  },
+  {
+    "id": 17,
+    "start": 81680,
+    "end": 86200,
+    "text": {
+      "en": "all, return with the truth from above,",
+      "it": "E sopra ogni cosa, ritorna con verità,"
+    }
+  },
+  {
+    "id": 18,
+    "start": 86860,
+    "end": 91260,
+    "text": {
+      "en": "to restore what was given, return as",
+      "it": "per ridare ciò che fu dato — ritorna come amor sarà."
+    }
+  },
+  {
+    "id": 19,
+    "start": 91400,
+    "end": 96360,
+    "text": {
+      "en": "love. Boomerang of love, a flight never",
+      "it": "Boomerang d’amore, un volo che non si perde,"
+    }
+  },
+  {
+    "id": 20,
+    "start": 96480,
+    "end": 101380,
+    "text": {
+      "en": "lost, through shadows and storms, it",
+      "it": "tra ombre e tempeste, la sua rotta si stende."
+    }
+  },
+  {
+    "id": 21,
+    "start": 101420,
+    "end": 106400,
+    "text": {
+      "en": "still makes its course. Each time it is cast,",
+      "it": "Ogni volta lanciato, più in alto volerà,"
+    }
+  },
+  {
+    "id": 22,
+    "start": 106440,
+    "end": 110540,
+    "text": {
+      "en": "it will rise far above, returning",
+      "it": "ritornando per sempre — il Boomerang d’amor sarà."
+    }
+  },
+  {
+    "id": 23,
+    "start": 110600,
+    "end": 114160,
+    "text": {
+      "en": "again, the boomerang of",
+      "it": ""
+    }
+  },
+  {
+    "id": 24,
+    "start": 114280,
+    "end": 119220,
+    "text": {
+      "en": "love. Through the arc of the sky and the breadth",
+      "it": "Attraverso l’arco del cielo e il respiro della terra,"
+    }
+  },
+  {
+    "id": 25,
+    "start": 119280,
+    "end": 123900,
+    "text": {
+      "en": "of the earth, love finds the lost",
+      "it": "l’amore trova chi è perso e la speranza riafferra."
+    }
+  },
+  {
+    "id": 26,
+    "start": 124400,
+    "end": 129038,
+    "text": {
+      "en": "and rekindles their worth. No force can",
+      "it": "Nessuna forza lo ferma, nessuna ombra lo può legar,"
+    }
+  },
+  {
+    "id": 27,
+    "start": 129080,
+    "end": 131680,
+    "text": {
+      "en": "deter, no shadow can",
+      "it": ""
+    }
+  },
+  {
+    "id": 28,
+    "start": 131780,
+    "end": 136580,
+    "text": {
+      "en": "stay, the path of love's promise will",
+      "it": "la strada promessa dall’amor saprà sempre trovar."
+    }
+  },
+  {
+    "id": 29,
+    "start": 136780,
+    "end": 141080,
+    "text": {
+      "en": "find its own way. Boomerang of",
+      "it": ""
+    }
+  },
+  {
+    "id": 30,
+    "start": 141160,
+    "end": 142562,
+    "text": {
+      "en": "love, a flight never lost, through",
+      "it": "Boomerang d’amore, un volo che non si perde,"
+    }
+  },
+  {
+    "id": 31,
+    "start": 142572,
+    "end": 143080,
+    "text": {
+      "en": "shadows and storms, it still makes its",
+      "it": "tra ombre e tempeste, la sua rotta si stende."
+    }
+  },
+  {
+    "id": 32,
+    "start": 143200,
+    "end": 144720,
+    "text": {
+      "en": "course. Each time it is cast, it will",
+      "it": "Ogni volta lanciato, più in alto volerà,"
+    }
+  },
+  {
+    "id": 33,
+    "start": 144780,
+    "end": 145520,
+    "text": {
+      "en": "rise far above, returning",
+      "it": "ritornando per sempre — il Boomerang d’amor sarà."
+    }
+  },
+  {
+    "id": 34,
+    "start": 145620,
+    "end": 146140,
+    "text": {
+      "en": "again, the boomerang of",
+      "it": ""
+    }
+  },
+  {
+    "id": 35,
+    "start": 146260,
+    "end": 147780,
+    "text": {
+      "en": "love.",
+      "it": ""
+    }
+  },
+  {
+    "id": 36,
+    "start": 148260,
+    "end": 150690,
+    "text": {
+      "en": "(Chill piano music)",
+      "it": "(Chill piano music)"
+    }
+  },
+  {
+    "id": 37,
+    "start": 153200,
+    "end": 158060,
+    "text": {
+      "en": "Forever it circles, forever it flies,",
+      "it": "Per sempre gira, per sempre volerà,"
+    }
+  },
+  {
+    "id": 38,
+    "start": 158560,
+    "end": 160273,
+    "text": {
+      "en": "beneath the sun, through unending",
+      "it": "sotto il sole, nei cieli senza finità."
+    }
+  },
+  {
+    "id": 39,
+    "start": 160294,
+    "end": 160626,
+    "text": {
+      "en": "skies. Boomerang of",
+      "it": "Boomerang d’amore, nel suo eterno tornar,"
+    }
+  },
+  {
+    "id": 40,
+    "start": 160634,
+    "end": 161160,
+    "text": {
+      "en": "love, in its endless return,",
+      "it": ""
+    }
+  },
+  {
+    "id": 41,
+    "start": 161180,
+    "end": 161494,
+    "text": {
+      "en": "the fire keeps glowing, the heart's ever",
+      "it": "la fiamma rimane, i cuori a bruciar."
+    }
+  },
+  {
+    "id": 42,
+    "start": 161506,
+    "end": 161680,
+    "text": {
+      "en": "burn.",
+      "it": ""
+    }
+  },
+  {
+    "id": 43,
+    "start": 161786,
+    "end": 162971,
+    "text": {
+      "en": "(Chill piano music)",
+      "it": "(Chill piano music)"
+    }
+  }
+];
+
+return sub
+}
+
+
+export function BoomerangITLyrics() {
+  const boomerang3Lyrics = [
+    {
+      start: 0,
+      end: 11660,
+      text: {
+        en: "No matter the distance, no matter how years turn,",
+        it: "Non"
+      }
+    },
+    {
+      start: 11670,
+      end: 14860,
+      text: {
+        en: "Love takes flight with a promise of return.",
+        it: "conta la distanza, né gli anni che"
+      }
+    },
+    {
+      start: 14920,
+      end: 19700,
+      text: {
+        en: "It circles the world, it knows where to land,",
+        it: "van. L'amore si alza, con promessa"
+      }
+    },
+    {
+      start: 19720,
+      end: 24640,
+      text: {
+        en: "Still warm in the touch of a welcoming hand.",
+        it: "tornerà. Gira il mondo intero sa"
+      }
+    },
+    {
+      start: 25340,
+      end: 30340,
+      text: {
+        en: "Boomerang of love, a flight never lost,",
+        it: "dove posar. Ancora caldo nel tocco di chi"
+      }
+    },
+    {
+      start: 30360,
+      end: 35160,
+      text: {
+        en: "Through shadows and storms, it still makes its course.",
+        it: "sa aspettar. Boomerang d'amore, un"
+      }
+    },
+    {
+      start: 35240,
+      end: 38910,
+      text: {
+        en: "Each time it is cast, it will rise far above,",
+        it: "volo che non si perde, tra ombre e"
+      }
+    },
+    {
+      start: 39000,
+      end: 43660,
+      text: {
+        en: "Returning again — the Boomerang of Love.",
+        it: "tempeste, la sua rotta si stende. Ogni"
+      }
+    },
+    {
+      start: 43740,
+      end: 46940,
+      text: {
+        en: "Return, O boomerang, to hearts that are warm,",
+        it: "volta lancio, più in alto"
+      }
+    },
+    {
+      start: 47020,
+      end: 51840,
+      text: {
+        en: "To the unloved, the gentle, the kind in the storm.",
+        it: "volerà, ritornando per sempre, il"
+      }
+    },
+    {
+      start: 51900,
+      end: 55830,
+      text: {
+        en: "And above all, return with the truth from above,",
+        it: "boomerang d'amor sarà. Ritorna, oh"
+      }
+    },
+    {
+      start: 55860,
+      end: 60080,
+      text: {
+        en: "To restore what was given — return as love.",
+        it: "boomerang, ai cuori che sanno scaldar."
+      }
+    },
+    {
+      start: 60780,
+      end: 64980,
+      text: {
+        en: "Boomerang of love, a flight never lost,",
+        it: "Agli incompresi, ai gentili, ai buoni nel mar."
+      }
+    },
+    {
+      start: 66060,
+      end: 70320,
+      text: {
+        en: "Through shadows and storms, it still makes its course.",
+        it: "E sopra ogni cosa ritorna con verità."
+      }
+    },
+    {
+      start: 72020,
+      end: 76440,
+      text: {
+        en: "Each time it is cast, it will rise far above,",
+        it: "Per ridare ciò che fu dato, ritorna come amor sarà."
+      }
+    },
+    {
+      start: 76480,
+      end: 80080,
+      text: {
+        en: "Returning again — the Boomerang of Love.",
+        it: "Boomerang d'amore, un volo che non si"
+      }
+    },
+    {
+      start: 80220,
+      end: 84600,
+      text: {
+        en: "Through the arc of the sky and the breath of the earth,",
+        it: "perde, tra ombre e tempeste, la sua"
+      }
+    },
+    {
+      start: 84640,
+      end: 88000,
+      text: {
+        en: "Love finds the lost and rekindles their worth.",
+        it: "rotta si stende. Ogni volta"
+      }
+    },
+    {
+      start: 88040,
+      end: 92420,
+      text: {
+        en: "No force can deter, no shadow can stay,",
+        it: "lanciato, più in alto volerà,"
+      }
+    },
+    {
+      start: 92440,
+      end: 96980,
+      text: {
+        en: "The path of love's promise will find its own way.",
+        it: "ritornando per sempre, il boomerang d'amor"
+      }
+    },
+    {
+      start: 97060,
+      end: 101960,
+      text: {
+        en: "Boomerang of love, a flight never lost,",
+        it: "sarà. Attraverso l'arco del cielo e l respiro"
+      }
+    },
+    {
+      start: 102040,
+      end: 106140,
+      text: {
+        en: "Through shadows and storms, it still makes its course.",
+        it: "della terra, l'amore trova chi è perso e la"
+      }
+    },
+    {
+      start: 106220,
+      end: 110320,
+      text: {
+        en: "Each time it is cast, it will rise far above,",
+        it: "speranza riafferra. Nessuna forza lo"
+      }
+    },
+    {
+      start: 110400,
+      end: 115200,
+      text: {
+        en: "Returning again — the Boomerang of Love.",
+        it: "ferma, nessuna ombra lo può legar. La"
+      }
+    },
+    {
+      start: 115240,
+      end: 120100,
+      text: {
+        en: "Forever it circles, forever it flies,",
+        it: "strada promessa dall'amor saprà sempre trovar."
+      }
+    },
+    {
+      start: 120120,
+      end: 123700,
+      text: {
+        en: "Beneath the sun, through unending skies.",
+        it: "Boomerang d'amore, un volo che non si"
+      }
+    },
+    {
+      start: 123840,
+      end: 128799,
+      text: {
+        en: "Boomerang of love, in its endless return,",
+        it: "perde, tra ombre e tempeste, la sua rotta"
+      }
+    },
+    {
+      start: 128940,
+      end: 133740,
+      text: {
+        en: "The fire keeps glowing, the hearts ever burn.",
+        it: "si stende. Ogni volta lanciato, più in"
+      }
+    },
+    {
+      start: 133860,
+      end: 137400,
+      text: {
+        en: "",
+        it: "alto volerà, ritornando per"
+      }
+    },
+    {
+      start: 137520,
+      end: 142500,
+      text: {
+        en: "",
+        it: "sempre, il boomerang d'amor sarà. Per"
+      }
+    },
+    {
+      start: 142540,
+      end: 146320,
+      text: {
+        en: "",
+        it: "sempre gira, per sempre volerà"
+      }
+    },
+    {
+      start: 147340,
+      end: 150580,
+      text: {
+        en: "",
+        it: "sotto il sole, nei cieli senza"
+      }
+    },
+    {
+      start: 150600,
+      end: 155380,
+      text: {
+        en: "",
+        it: "affinità. Boomerang d'amore, nel suo"
+      }
+    },
+    {
+      start: 155420,
+      end: 158940,
+      text: {
+        en: "",
+        it: "eterno tornar, la fiamma"
+      }
+    },
+    {
+      start: 159020,
+      end: 161560,
+      text: {
+        en: "",
+        it: "rimane, i cuori a"
+      }
+    },
+    {
+      start: 161680,
+      end: 169992,
+      text: {
+        en: "",
+        it: "bruciar."
+      }
+    }
+  ];
+  return boomerang3Lyrics;
+}
+
+
+export function BoomerangLyrics() {
+  const sub = [
+    { start: 200, end: 5060, text: { en: "(melodic piano music)", it: "(musica di pianoforte melodica)" } },
+    { start: 5620, end: 9580, text: { en: "No matter the distance, no matter how", it: "Non conta la distanza, né gli anni" } },
+    { start: 9740, end: 14180, text: { en: "years turn, love takes", it: "che van, l’amore si alza," } },
+    { start: 14300, end: 18500, text: { en: "flight with a promise of return.", it: "con promessa tornerà." } },
+    { start: 19460, end: 23240, text: { en: "It circles the world, it knows where to", it: "Gira il mondo intero, sa dove" } },
+    { start: 23320, end: 28060, text: { en: "land, still warm in the touch of a", it: "posar, ancora caldo nel tocco" } },
+    { start: 28140, end: 32520, text: { en: "welcoming hand. Boomerang of", it: "di chi sa aspettar. Boomerang" } },
+    { start: 32600, end: 37220, text: { en: "love, a flight never lost, through", it: "d’amore, un volo che non si perde," } },
+    { start: 37320, end: 41480, text: { en: "shadows and storms, it still makes its", it: "tra ombre e tempeste, la sua rotta" } },
+    { start: 41580, end: 46360, text: { en: "course. Each time it is cast, it will", it: "si stende. Ogni volta lanciato, più" } },
+    { start: 46420, end: 50480, text: { en: "rise far above, returning", it: "in alto volerà, ritornando" } },
+    { start: 50580, end: 54540, text: { en: "again, the boomerang of", it: "per sempre — il Boomerang" } },
+    { start: 54740, end: 58500, text: { en: "love.", it: "d’amor sarà." } },
+    { start: 59480, end: 63720, text: { en: "Return, oh boomerang, to hearts that are", it: "Ritorna, o boomerang, ai cuori che" } },
+    { start: 63820, end: 67820, text: { en: "warm, to the unloved, the", it: "sanno scaldar, agli incompresi," } },
+    { start: 67920, end: 72360, text: { en: "gentle, the kind in the storm. And", it: "ai gentili, ai buoni nel mar. E" } },
+    { start: 72440, end: 76620, text: { en: "above all, return with the truth from", it: "sopra ogni cosa, ritorna con" } },
+    { start: 76720, end: 81500, text: { en: "above, to restore what was given,", it: "verità, per ridare ciò che fu dato —" } },
+    { start: 81580, end: 86380, text: { en: "return as love. Boomerang of", it: "ritorna come amor sarà. Boomerang" } },
+    { start: 86440, end: 91040, text: { en: "love, a flight never lost, through", it: "d’amore, un volo che non si perde," } },
+    { start: 91180, end: 95320, text: { en: "shadows and storms, it still makes its", it: "tra ombre e tempeste, la sua rotta" } },
+    { start: 95420, end: 100200, text: { en: "course. Each time it is cast, it will", it: "si stende. Ogni volta lanciato, più" } },
+    { start: 100240, end: 104340, text: { en: "rise far above, returning", it: "in alto volerà, ritornando" } },
+    { start: 104500, end: 108380, text: { en: "again, the boomerang of", it: "per sempre — il Boomerang" } },
+    { start: 108520, end: 110540, text: { en: "love.", it: "d’amor sarà." } },
+    { start: 113860, end: 118440, text: { en: "Through the arc of the sky and the breadth of the", it: "Attraverso l’arco del cielo e il respiro" } },
+    { start: 118560, end: 123060, text: { en: "earth, love finds the lost and", it: "della terra, l’amore trova chi è perso" } },
+    { start: 123160, end: 127340, text: { en: "rekindles their worth. No force can", it: "e la speranza riafferra. Nessuna forza" } },
+    { start: 127400, end: 130639, text: { en: "deter, no shadow can", it: "lo ferma, nessuna ombra lo" } },
+    { start: 130720, end: 135720, text: { en: "stain, the path of love's promise will", it: "può legar, la strada promessa dall’amor" } },
+    { start: 135860, end: 139340, text: { en: "find its own way.", it: "saprà sempre trovar." } },
+    { start: 140420, end: 144540, text: { en: "Boomerang of love, a flight never", it: "Boomerang d’amore, un volo che non si" } },
+    { start: 144700, end: 149440, text: { en: "lost, through shadows and storms, it", it: "perde, tra ombre e tempeste, la sua" } },
+    { start: 149640, end: 153820, text: { en: "still makes its course. Each time it is", it: "rotta si stende. Ogni volta lanciato," } },
+    { start: 153900, end: 158680, text: { en: "cast, it will rise far above,", it: "più in alto volerà," } },
+    { start: 158720, end: 163140, text: { en: "returning again, the boomerang", it: "ritornando per sempre — il Boomerang" } },
+    { start: 163280, end: 163760, text: { en: "of", it: "d’amor" } },
+    { start: 163880, end: 171120, text: { en: "love.", it: "sarà." } },
+    { start: 175640, end: 179940, text: { en: "Forever it circles, forever it", it: "Per sempre gira, per sempre" } },
+    { start: 180020, end: 184880, text: { en: "flies, beneath the sun, through", it: "volerà, sotto il sole, nei cieli" } },
+    { start: 184980, end: 189460, text: { en: "unending skies. Boomerang of", it: "senza finità. Boomerang" } },
+    { start: 189500, end: 194220, text: { en: "love, in its endless return, the", it: "d’amore, nel suo eterno tornar, la" } },
+    { start: 194280, end: 198310, text: { en: "fire keeps glowing, the heart to", it: "fiamma rimane, i cuori a" } },
+    { start: 198400, end: 199400, text: { en: "ever", it: "bruciar." } }, // "ever burn" condensed to fit the Italian line ending
+    { start: 199860, end: 207600, text: { en: "burn.", it: "" } }, // Text removed as the translation is complete in the previous segment
+  ];
+  return sub;
+
+}
+
+export function BoomerangLyrics() {
+  const sub = [
+    { start: 200, end: 5060, text: { en: "(melodic piano music)", it: "(musica di pianoforte melodica)" } },
+    { start: 5620, end: 9580, text: { en: "No matter the distance, no matter how", it: "Non conta la distanza, né gli anni" } },
+    { start: 9740, end: 14180, text: { en: "years turn, love takes", it: "che van, l’amore si alza," } },
+    { start: 14300, end: 18500, text: { en: "flight with a promise of return.", it: "con promessa tornerà." } },
+    { start: 19460, end: 23240, text: { en: "It circles the world, it knows where to", it: "Gira il mondo intero, sa dove" } },
+    { start: 23320, end: 28060, text: { en: "land, still warm in the touch of a", it: "posar, ancora caldo nel tocco" } },
+    { start: 28140, end: 32520, text: { en: "welcoming hand. Boomerang of", it: "di chi sa aspettar. Boomerang" } },
+    { start: 32600, end: 37220, text: { en: "love, a flight never lost, through", it: "d’amore, un volo che non si perde," } },
+    { start: 37320, end: 41480, text: { en: "shadows and storms, it still makes its", it: "tra ombre e tempeste, la sua rotta" } },
+    { start: 41580, end: 46360, text: { en: "course. Each time it is cast, it will", it: "si stende. Ogni volta lanciato, più" } },
+    { start: 46420, end: 50480, text: { en: "rise far above, returning", it: "in alto volerà, ritornando" } },
+    { start: 50580, end: 54540, text: { en: "again, the boomerang of", it: "per sempre — il Boomerang" } },
+    { start: 54740, end: 58500, text: { en: "love.", it: "d’amor sarà." } },
+    { start: 59480, end: 63720, text: { en: "Return, oh boomerang, to hearts that are", it: "Ritorna, o boomerang, ai cuori che" } },
+    { start: 63820, end: 67820, text: { en: "warm, to the unloved, the", it: "sanno scaldar, agli incompresi," } },
+    { start: 67920, end: 72360, text: { en: "gentle, the kind in the storm. And", it: "ai gentili, ai buoni nel mar. E" } },
+    { start: 72440, end: 76620, text: { en: "above all, return with the truth from", it: "sopra ogni cosa, ritorna con" } },
+    { start: 76720, end: 81500, text: { en: "above, to restore what was given,", it: "verità, per ridare ciò che fu dato —" } },
+    { start: 81580, end: 86380, text: { en: "return as love. Boomerang of", it: "ritorna come amor sarà. Boomerang" } },
+    { start: 86440, end: 91040, text: { en: "love, a flight never lost, through", it: "d’amore, un volo che non si perde," } },
+    { start: 91180, end: 95320, text: { en: "shadows and storms, it still makes its", it: "tra ombre e tempeste, la sua rotta" } },
+    { start: 95420, end: 100200, text: { en: "course. Each time it is cast, it will", it: "si stende. Ogni volta lanciato, più" } },
+    { start: 100240, end: 104340, text: { en: "rise far above, returning", it: "in alto volerà, ritornando" } },
+    { start: 104500, end: 108380, text: { en: "again, the boomerang of", it: "per sempre — il Boomerang" } },
+    { start: 108520, end: 110540, text: { en: "love.", it: "d’amor sarà." } },
+    { start: 113860, end: 118440, text: { en: "Through the arc of the sky and the breadth of the", it: "Attraverso l’arco del cielo e il respiro" } },
+    { start: 118560, end: 123060, text: { en: "earth, love finds the lost and", it: "della terra, l’amore trova chi è perso" } },
+    { start: 123160, end: 127340, text: { en: "rekindles their worth. No force can", it: "e la speranza riafferra. Nessuna forza" } },
+    { start: 127400, end: 130639, text: { en: "deter, no shadow can", it: "lo ferma, nessuna ombra lo" } },
+    { start: 130720, end: 135720, text: { en: "stain, the path of love's promise will", it: "può legar, la strada promessa dall’amor" } },
+    { start: 135860, end: 139340, text: { en: "find its own way.", it: "saprà sempre trovar." } },
+    { start: 140420, end: 144540, text: { en: "Boomerang of love, a flight never", it: "Boomerang d’amore, un volo che non si" } },
+    { start: 144700, end: 149440, text: { en: "lost, through shadows and storms, it", it: "perde, tra ombre e tempeste, la sua" } },
+    { start: 149640, end: 153820, text: { en: "still makes its course. Each time it is", it: "rotta si stende. Ogni volta lanciato," } },
+    { start: 153900, end: 158680, text: { en: "cast, it will rise far above,", it: "più in alto volerà," } },
+    { start: 158720, end: 163140, text: { en: "returning again, the boomerang", it: "ritornando per sempre — il Boomerang" } },
+    { start: 163280, end: 163760, text: { en: "of", it: "d’amor" } },
+    { start: 163880, end: 171120, text: { en: "love.", it: "sarà." } },
+    { start: 175640, end: 179940, text: { en: "Forever it circles, forever it", it: "Per sempre gira, per sempre" } },
+    { start: 180020, end: 184880, text: { en: "flies, beneath the sun, through", it: "volerà, sotto il sole, nei cieli" } },
+    { start: 184980, end: 189460, text: { en: "unending skies. Boomerang of", it: "senza finità. Boomerang" } },
+    { start: 189500, end: 194220, text: { en: "love, in its endless return, the", it: "d’amore, nel suo eterno tornar, la" } },
+    { start: 194280, end: 198310, text: { en: "fire keeps glowing, the heart to", it: "fiamma rimane, i cuori a" } },
+    { start: 198400, end: 199400, text: { en: "ever", it: "bruciar." } }, // "ever burn" condensed to fit the Italian line ending
+    { start: 199860, end: 207600, text: { en: "burn.", it: "..." } }, // Text removed as the translation is complete in the previous segment
+  ];
+  return sub;
+}
+
+
+export function AboutRosesLyrics() {
+  const sub = [
+  {
+    "start": 80,
+    "end": 14420,
+    "text": {
+      "en": "(dramatic music plays)",
+      "it": "(musica drammatica)"
+    }
+  },
+  {
+    "start": 14430,
+    "end": 19080,
+    "text": {
+      "en": "(singing) From ancient stones, the voices",
+      "it": "(canto) D'antiche pietre, le voci"
+    }
+  },
+  {
+    "start": 19140,
+    "end": 24080,
+    "text": {
+      "en": "rise. A heritage that never dies. In",
+      "it": "san. Un'eredità che non muor mai. Nell'"
+    }
+  },
+  {
+    "start": 24280,
+    "end": 28860,
+    "text": {
+      "en": "love and beauty, we take our stand. With kindness",
+      "it": "amor e bellezza, noi siam qui. Con la gentilezza"
+    }
+  },
+  {
+    "start": 28940,
+    "end": 33820,
+    "text": {
+      "en": "flowing through our hands. Roses of",
+      "it": "che ci scorre tra le man. Rose di"
+    }
+  },
+  {
+    "start": 33860,
+    "end": 38500,
+    "text": {
+      "en": "Rome, forever we bloom. A light in the shadows,",
+      "it": "Roma, in eterno fioriam. Luce nell'ombra,"
+    }
+  },
+  {
+    "start": 38520,
+    "end": 43060,
+    "text": {
+      "en": "dispelling the gloom. From heart to the nations, we",
+      "it": "che scaccia l'oscurità. Dai cuori alle nazioni, noi"
+    }
+  },
+  {
+    "start": 43180,
+    "end": 47580,
+    "text": {
+      "en": "proclaim. Love, beauty, kindness. Eternal, our",
+      "it": "gridiam. Amor, bellezza, bontà. Eterno, il nostro"
+    }
+  },
+  {
+    "start": 47700,
+    "end": 48610,
+    "text": {
+      "en": "name.",
+      "it": "nom."
+    }
+  },
+  {
+    "start": 48620,
+    "end": 57560,
+    "text": {
+      "en": "(instrumental music plays)",
+      "it": "(musica strumentale)"
+    }
+  },
+  {
+    "start": 57680,
+    "end": 62340,
+    "text": {
+      "en": "Rooted deep, where faith was born. In every",
+      "it": "Radici profonde, dove nacque la fè. In ogni"
+    }
+  },
+  {
+    "start": 62360,
+    "end": 67110,
+    "text": {
+      "en": "heart, a rose is sworn. Through every tear, joy,",
+      "it": "cuore, una rosa è. In ogni lacrima, gioia,"
+    }
+  },
+  {
+    "start": 67120,
+    "end": 70990,
+    "text": {
+      "en": "and whispered prayer. Our spirit endures,",
+      "it": "e preghiera. Il nostro spirito persiste,"
+    }
+  },
+  {
+    "start": 71020,
+    "end": 75860,
+    "text": {
+      "en": "forever there. Roses of Rome,",
+      "it": "sempre lì. Rose di Roma,"
+    }
+  },
+  {
+    "start": 75920,
+    "end": 80720,
+    "text": {
+      "en": "forever we bloom. A light in the shadows, dispelling",
+      "it": "in eterno fioriam. Luce nell'ombra, che scaccia"
+    }
+  },
+  {
+    "start": 80840,
+    "end": 85840,
+    "text": {
+      "en": "the gloom. From heart to the nations, we proclaim.",
+      "it": "l'oscurità. Dai cuori alle nazioni, noi gridiam."
+    }
+  },
+  {
+    "start": 86240,
+    "end": 90900,
+    "text": {
+      "en": "Love, beauty, kindness. Eternal, our name. Roses of",
+      "it": "Amor, bellezza, bontà. Eterno, il nostro nom. Rose di"
+    }
+  },
+  {
+    "start": 90960,
+    "end": 95800,
+    "text": {
+      "en": "Rome, forever we bloom.",
+      "it": "Roma, in eterno fioriam."
+    }
+  },
+  {
+    "start": 95860,
+    "end": 100640,
+    "text": {
+      "en": "A light in the shadows, dispelling the gloom. From heart to the",
+      "it": "Luce nell'ombra, che scaccia l'oscurità. Dai cuori alle"
+    }
+  },
+  {
+    "start": 100740,
+    "end": 105660,
+    "text": {
+      "en": "nations, we proclaim. Love, beauty, kindness.",
+      "it": "nazioni, noi gridiam. Amor, bellezza, bontà."
+    }
+  },
+  {
+    "start": 105760,
+    "end": 107399,
+    "text": {
+      "en": "Eternal, our name.",
+      "it": "Eterno, il nostro nom."
+    }
+  },
+  {
+    "start": 107480,
+    "end": 112330,
+    "text": {
+      "en": "(instrumental music plays)",
+      "it": "(musica strumentale)"
+    }
+  },
+  {
+    "start": 114080,
+    "end": 118340,
+    "text": {
+      "en": "Oh, Rome. Oh, rose. Oh, timeless",
+      "it": "Oh, Roma. Oh, rosa. Oh, fiamma"
+    }
+  },
+  {
+    "start": 118440,
+    "end": 123320,
+    "text": {
+      "en": "flame. Your crown of petals guards our",
+      "it": "eterna. La tua corona custodisce il nostro"
+    }
+  },
+  {
+    "start": 123380,
+    "end": 128258,
+    "text": {
+      "en": "name. In every soul, the garden grows. With",
+      "it": "nom. In ogni alma, il giardin fiorì. Con"
+    }
+  },
+  {
+    "start": 128440,
+    "end": 133200,
+    "text": {
+      "en": "every act, the spirit shows.",
+      "it": "ogni atto, lo spirito va."
+    }
+  },
+  {
+    "start": 133400,
+    "end": 137989,
+    "text": {
+      "en": "Roses of Rome, forever we bloom. A light in the",
+      "it": "Rose di Roma, in eterno fioriam. Luce nell'"
+    }
+  },
+  {
+    "start": 138140,
+    "end": 143060,
+    "text": {
+      "en": "shadows, dispelling the gloom. From heart to the nations,",
+      "it": "ombra, che scaccia l'oscurità. Dai cuori alle nazioni,"
+    }
+  },
+  {
+    "start": 143120,
+    "end": 147940,
+    "text": {
+      "en": "we proclaim. Love, beauty, kindness. Eternal, our",
+      "it": "noi gridiam. Amor, bellezza, bontà. Eterno, il nostro"
+    }
+  },
+  {
+    "start": 148060,
+    "end": 151260,
+    "text": {
+      "en": "name. Roses of Rome.",
+      "it": "nom. Rose di Roma."
+    }
+  },
+  {
+    "start": 151720,
+    "end": 180910,
+    "text": {
+      "en": "(instrumental music plays)",
+      "it": "(musica strumentale)"
+    }
+  },
+  {
+    "start": 181680,
+    "end": 185340,
+    "text": {
+      "en": "Roses of Rome,",
+      "it": "Rose di Roma,"
+    }
+  },
+  {
+    "start": 185360,
+    "end": 187020,
+    "text": {
+      "en": "aeternum",
+      "it": "aeternum" // Latin is kept as is for stylistic effect
+    }
+  },
+  {
+    "start": 187080,
+    "end": 195000,
+    "text": {
+      "en": "floremus!",
+      "it": "floremus!" // Latin is kept as is for stylistic effect
+    }
+  }
+];
+  return sub;
+}
