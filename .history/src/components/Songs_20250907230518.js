@@ -229,16 +229,7 @@ export function RosesOfRomeSongs() {
       songLyrics: DeoGratiasFMVLyrics(),
       songAlbum: "Piccola Casa della Gioia",
     },
-    {
-      songId: SONG_UUIDS.rorMusic_045,
-      songFile: DeoGratias5,
-      songName: {
-        en: "Deo Gratias (choir)",
-        it: "Deo Gratias (coro)",
-      },
-      songLyrics: [],
-      songAlbum: "Piccola Casa della Gioia",
-    },
+    {},
     {
       songId: SONG_UUIDS.rorMusic_009,
       songFile: Divine,
