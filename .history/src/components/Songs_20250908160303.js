@@ -45,7 +45,7 @@ import Offenbach from "../assets/audios/offenbach.mp3";
 import NearerMyGod from "../assets/audios/nearer.mp3";
 import ForeverSong from "../assets/audios/forever.mp3";
 import DeoGratias5 from "../assets/audios/DEOGRATIAS5.mp3";
-import FriendSong from "../assets/audios/jess.mp3";
+import Friend Song from ""
 
 // lyrics
 import {
@@ -608,17 +608,6 @@ export function RosesOfRomeSongs() {
       songName: { en: "Forever", it: "Per Sempre" },
       songLyrics: [],
       songAlbum: "Rosa",
-    },
-    {
-      songId: SONG_UUIDS.rorMusic_048,
-      songFile:FriendSong,
-      songName: {
-        en:"Friend (Jessica's Song)",
-        it:"Amica (Canzone di Jessica)"
-      },
-      songLyrics: [],
-      songAlbum: "Cantabile",
-      
     }
     //  {
     //     songId:SONG_UUIDS.rorMusic_034,

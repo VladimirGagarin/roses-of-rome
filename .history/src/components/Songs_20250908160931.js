@@ -617,7 +617,6 @@ export function RosesOfRomeSongs() {
         it:"Amica (Canzone di Jessica)"
       },
       songLyrics: [],
-      songAlbum: "Cantabile",
       
     }
     //  {

@@ -608,17 +608,6 @@ export function RosesOfRomeSongs() {
       songName: { en: "Forever", it: "Per Sempre" },
       songLyrics: [],
       songAlbum: "Rosa",
-    },
-    {
-      songId: SONG_UUIDS.rorMusic_048,
-      songFile:FriendSong,
-      songName: {
-        en:"Friend (Jessica's Song)",
-        it:"Amica (Canzone di Jessica)"
-      },
-      songLyrics: [],
-      songAlbum: "Cantabile",
-      
     }
     //  {
     //     songId:SONG_UUIDS.rorMusic_034,

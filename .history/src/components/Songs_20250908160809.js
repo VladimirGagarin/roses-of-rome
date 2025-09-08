@@ -611,14 +611,7 @@ export function RosesOfRomeSongs() {
     },
     {
       songId: SONG_UUIDS.rorMusic_048,
-      songFile:FriendSong,
-      songName: {
-        en:"Friend (Jessica's Song)",
-        it:"Amica (Canzone di Jessica)"
-      },
-      songLyrics: [],
-      songAlbum: "Cantabile",
-      
+      songF
     }
     //  {
     //     songId:SONG_UUIDS.rorMusic_034,
