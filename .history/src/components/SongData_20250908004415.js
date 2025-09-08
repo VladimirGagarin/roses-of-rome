@@ -12833,12 +12833,12 @@ export function DeoGratias5Lyrics() {
   {
     start: 189260,
     end: 193900,
-    text: { en: "hymns, Cottolengo you are", it: "Nei nostri inni, Cottolengo" }
+    text: { en: "hands, Cottolengo you are", it: "Nei nostri inni, Cottolengo" }
   },
   {
     start: 194040,
     end: 198800,
-    text: { en: "grace in our psalms. A light no", it: "sei grazia, Nei nostri salmi" }
+    text: { en: "grace in our songs. A light no", it: "sei grazia, Nei nostri salmi" }
   },
   {
     start: 198920,

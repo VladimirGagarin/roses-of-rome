@@ -12838,7 +12838,7 @@ export function DeoGratias5Lyrics() {
   {
     start: 194040,
     end: 198800,
-    text: { en: "grace in our psalms. A light no", it: "sei grazia, Nei nostri salmi" }
+    text: { en: "grace in our . A light no", it: "sei grazia, Nei nostri salmi" }
   },
   {
     start: 198920,

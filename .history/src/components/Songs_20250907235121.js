@@ -80,8 +80,7 @@ import {
   softAnthemLyrics,
   SomewhereFemLy,
   BoomerangLyricsCountry,
-  ReputationVocalLyrics,
-  DeoGratias5Lyrics
+  ReputationVocalLyrics
 } from "./SongData";
 
 // utils/songUUIDs.js
@@ -237,7 +236,7 @@ export function RosesOfRomeSongs() {
         en: "Deo Gratias (choir)",
         it: "Deo Gratias (coro)",
       },
-      songLyrics: DeoGratias5Lyrics(),
+      songLyrics: [],
       songAlbum: "Piccola Casa della Gioia",
     },
     {
