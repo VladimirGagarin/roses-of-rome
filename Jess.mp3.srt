@@ -17,7 +17,7 @@ share, everything feels right.
 
 5
 00:00:21,219 --> 00:00:26,079
-In my heart, a light forever shone. I
+In my heart, a light forever shown. I
 
 6
 00:00:26,119 --> 00:00:29,159
@@ -150,4 +150,4 @@ In every
 
 37
 00:02:55,039 --> 00:03:02,040
-step-
+step
