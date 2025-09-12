@@ -1,0 +1,322 @@
+import { useRef, useState, useEffect} from "react";
+import { FaPlay, FaPause, FaRetweet, FaSyncAlt } from "react-icons/fa";
+import "./AudioComponent.css";
+import { useLanguage } from "./LanguageContext";
+import { useLocation } from "react-router-dom";  // 👈 import this
+
+
+export default function AudioComponent({ audioFile, title }) {
+  const audioRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const [duration, setDuration] = useState(0);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [loading, setLoading] = useState(false);
+  const [stalled, setStalled] = useState(false);
+  const [isCurrent, setIsCurrent] = useState(false);
+  const [error, setError] = useState(null);
+  const [isOnline, setIsOnline] = useState(navigator.onLine);
+  const { language } = useLanguage();
+  const location = useLocation(); // 👈 get current path
+  const [isLooping, setIsLooping] = useState(false);
+
+  const loadingMsg = language === "it" ? "Caricamento..." : "Loading...";
+  const stalledMsg = language === "it" ? "Un momento..." : "A moment...";
+  const errorMsg = language === "it" ? "Errore audio" : "Audio error";
+
+  useEffect(() => {
+    const handleOnline = () => {
+      setIsOnline(true);
+      setLoading(false);
+      setStalled(false);
+      setError(null);
+    };
+    const handleOffline = () => {
+      setIsOnline(false);
+      setError(true);
+      setLoading(false);
+      setStalled(false);
+      setIsPlaying(false);
+      window.dispatchEvent(
+        new CustomEvent("set-current-audio", { detail: null })
+      );
+    };
+
+    window.addEventListener("online", handleOnline);
+    window.addEventListener("offline", handleOffline);
+
+    return () => {
+      window.removeEventListener("online", handleOnline);
+      window.removeEventListener("offline", handleOffline);
+    };
+  }, []);
+
+  // Listen for "pause-all-audio" event
+  useEffect(() => {
+    const handler = (e) => {
+      if ((audioRef.current && !e.detail) || e.detail !== audioRef.current) {
+        audioRef.current.pause();
+        setIsPlaying(false);
+        setCurrentTime(0);
+        setProgress(0);
+      }
+    };
+    window.addEventListener("pause-all-audio", handler);
+    return () => window.removeEventListener("pause-all-audio", handler);
+  }, []);
+
+   useEffect(() => {
+     window.dispatchEvent(
+       new CustomEvent("set-current-audio", { detail: null })
+     );
+
+     // also stop/pause audio if you want
+     if (audioRef.current) {
+       audioRef.current.pause();
+       audioRef.current.currentTime = 0;
+     }
+     setIsPlaying(false);
+     setCurrentTime(0);
+     setProgress(0);
+   }, [location.pathname]);
+
+  useEffect(() => {
+    window.dispatchEvent(
+      new CustomEvent("set-current-audio", { detail: null })
+    );
+    
+    if (audioRef.current) {
+      audioRef.current.pause();
+       audioRef.current.currentTime = 0;
+      setIsPlaying(false);
+      setCurrentTime(0);
+      setProgress(0);
+    }
+  }, [language]); // Runs when language changes
+
+  // Pause audio if audioFile changes
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.pause();
+      setIsPlaying(false);
+      setCurrentTime(0);
+      setProgress(0);
+      setError(null);
+    }
+  }, [audioFile]);
+
+  useEffect(() => {
+    const handleSetCurrent = (e) => {
+      // if the event is from THIS audio element, mark current
+      setIsCurrent(e.detail === audioRef.current);
+    };
+    window.addEventListener("set-current-audio", handleSetCurrent);
+    return () =>
+      window.removeEventListener("set-current-audio", handleSetCurrent);
+  }, []);
+
+  const handlePlayPause = () => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    if (loading || error || stalled) return;
+
+    if (isPlaying) {
+      audio.pause();
+    } else {
+      window.dispatchEvent(
+        new CustomEvent("pause-all-audio", { detail: audio })
+      );
+      audio.play();
+    }
+  };
+
+  const handleLoadedMetadata = () => {
+    if (audioRef.current) {
+      setDuration(audioRef.current.duration);
+    }
+  };
+
+  const handleTimeUpdate = () => {
+    if (audioRef.current) {
+      setCurrentTime(audioRef.current.currentTime);
+      setProgress(audioRef.current.currentTime / audioRef.current.duration);
+    }
+  };
+
+  const handleProgressBarClick = (e) => {
+    if (!audioRef.current) return;
+    const rect = e.target.getBoundingClientRect();
+    const clickX = e.clientX - rect.left;
+    const percent = clickX / rect.width;
+    audioRef.current.currentTime = percent * duration;
+  };
+
+  const handlePlaying = () => {
+    setIsPlaying(true);
+    setLoading(false);
+    setStalled(false);
+    setError(null);
+    // Tell all AudioComponents who is the current one
+    window.dispatchEvent(
+      new CustomEvent("set-current-audio", { detail: audioRef.current })
+    );
+
+  };
+  const handlePause = () => setIsPlaying(false);
+  const handleWaiting = () => {
+    setLoading(true);
+    setStalled(false);
+    setIsPlaying(false);
+  };
+  const handleStalled = () => {
+    setLoading(false);
+    setStalled(true);
+    setIsPlaying(false);
+  };
+  const handleEnded = () => {
+    setIsPlaying(false);
+    setCurrentTime(0);
+    setProgress(0);
+
+    if (!isLooping) {
+      window.dispatchEvent(
+        new CustomEvent("set-current-audio", { detail: null })
+      );
+    }
+  };
+  const handleError = () => {
+    setError(true);
+    setLoading(false);
+    setStalled(false);
+    setIsPlaying(false);
+    window.dispatchEvent(
+      new CustomEvent("set-current-audio", { detail: null })
+    );
+  };
+  const handleCanPlayThrough = () => {
+    setLoading(false);
+    setStalled(false);
+    setError(null);
+  };
+
+  const handleLoop = () => {
+    setIsLooping((prev) => !prev);
+  };
+
+  return (
+    <div className={`audio-component ${isCurrent ? "current" : ""}`}>
+      {!isOnline ? (
+        <div className="network-status">
+          {language === "it" ? "Sei offline" : "You are offline"}
+        </div>
+      ) : (
+        <>
+          <div className="audio-header">
+            <span className="audio-title">{title}</span>
+          </div>
+
+          <audio
+            ref={audioRef}
+            src={audioFile}
+            onLoadedMetadata={handleLoadedMetadata}
+            onLoadedData={handleLoadedMetadata}
+            onTimeUpdate={handleTimeUpdate}
+            onPlay={handlePlaying}
+            onPause={handlePause}
+            onWaiting={handleWaiting}
+            onStalled={handleStalled}
+            onEnded={handleEnded}
+            onPlaying={handlePlaying}
+            onError={handleError}
+            onCanPlay={handleCanPlayThrough}
+            onCanPlayThrough={handleCanPlayThrough}
+            preload="auto"
+            loop={isLooping}
+          />
+
+          <div className="audio-controls">
+            <button
+              className="audio-playpause"
+              onClick={handlePlayPause}
+              aria-label={
+                isPlaying
+                  ? language === "it"
+                    ? "Pausa"
+                    : "Pause"
+                  : language === "it"
+                  ? "Riproduci"
+                  : "Play"
+              }
+              title={
+                isPlaying
+                  ? language === "it"
+                    ? "Pausa"
+                    : "Pause"
+                  : language === "it"
+                  ? "Riproduci"
+                  : "Play"
+              }
+            >
+              {isPlaying ? <FaPause /> : <FaPlay />}
+            </button>
+
+            <div
+              className="audio-progress-container"
+              onClick={handleProgressBarClick}
+            >
+              <div className="audio-progress-bar">
+                <div
+                  className={`audio-progress ${isCurrent ? "active" : ""}`}
+                  style={{ width: `${progress * 100}%` }}
+                />
+              </div>
+              </div>
+              
+              {/*Loop button loop audio if it is current */}
+              {isCurrent && (
+                <button
+                  className="audio-loop"
+                  onClick={handleLoop}
+                  aria-label={
+                    language === "it"
+                      ? "Attiva/disattiva ripetizione"
+                      : "Toggle loop"
+                  }
+                  title={isLooping ? (language === "it" ? "Disattiva ripetizione" : "Disable loop") : (language === "it" ? "Attiva ripetizione" : "Enable loop")}
+                >
+                  {isLooping ? <FaSyncAlt /> : <FaRetweet />}
+                </button>
+              )}
+
+            <span className="audio-time">
+              {formatTime(currentTime)} / {formatTime(duration)}
+            </span>
+          </div>
+
+          {(loading || stalled || error) && (
+            <div className="audio-overlay">
+                {error ? errorMsg : loading ? loadingMsg : stalledMsg}
+                {/* if is error a button to reload page*/}
+                {error && (
+                  <button
+                    onClick={() => window.location.reload() >
+                      <FaRetweet/>{language === "it" ? "Ricarica" : "Reload"}
+                  </button>
+                )}
+            </div>
+          )}
+        </>
+      )}
+    </div>
+  );
+}
+
+function formatTime(sec) {
+  if (!isFinite(sec)) return "0:00";
+  const m = Math.floor(sec / 60);
+  const s = Math.floor(sec % 60)
+    .toString()
+    .padStart(2, "0");
+  return `${m}:${s}`;
+}
