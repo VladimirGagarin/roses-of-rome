@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page Not Found / Pagina non trovata</title>
+    <meta http-equiv="refresh" content="0; url=/roses-of-rome/" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="googlebot" content="index, follow">
+    <meta name="author" content="Vivaldi Permaz">
+    <meta name="keywords" content="Roses of Rome, film studio, animation, music, mystical cinema, lyrical visuals">
+
+    <meta name="robots" content="noindex, nofollow" />
+    <style>
+      body {
+        font-family: system-ui, Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        background: #faf7f4;
+        color: #333;
+      }
+      .container {
+        padding-top: 10vh;
+      }
+      h1 {
+        font-size: 2.2em;
+        margin-bottom: 0.5em;
+      }
+      p {
+        font-size: 1.15em;
+        color: #666;
+      }
+      a {
+        color: #b91c1c;
+        text-decoration: underline;
+      }
+      .lang {
+        margin: 0.5em 0 0 0; 
+        font-size: 0.97em;
+        color: #999;
+      }
+    </style>
+    <script>
+      // For older browsers and SPA fallback
+      setTimeout(function() {
+        window.location.replace("/roses-of-rome/");
+      }, 100);
+    </script>
+  </head>
+  <body>
+    <div class="container" id="container404">
+      <!-- The content will be replaced in JS for language support -->
+      <h1>404 - Not Found</h1>
+      <p>
+        The page you are looking for doesn't exist.<br>
+        Redirecting to <a href="/roses-of-rome/">Roses of Rome</a>...
+      </p>
+      <div class="lang">
+        Italiano sotto &middot; Italian below
+      </div>
+      <hr style="max-width:300px; margin:1em auto;">
+      <h1 style="font-size:2em; margin-bottom:0.4em;">404 - Pagina non trovata</h1>
+      <p>
+        La pagina che cerchi non esiste.<br>
+        Reindirizzamento verso <a href="/roses-of-rome/">Roses of Rome</a>...
+      </p>
+    </div>
+    <script>
+      // Optionally do language detection and swap order
+      try {
+        var lang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+        if(lang.startsWith("it")) {
+          document.getElementById("container404").innerHTML = `
+            <h1>404 - Pagina non trovata</h1>
+            <p>
+              La pagina che cerchi non esiste.<br>
+              Reindirizzamento verso <a href="/roses-of-rome/">Roses of Rome</a>...
+            </p>
+            <div class="lang">
+              English below &middot; Inglese sotto
+            </div>
+            <hr style="max-width:300px; margin:1em auto;">
+            <h1 style="font-size:2em; margin-bottom:0.4em;">404 - Not Found</h1>
+            <p>
+              The page you are looking for doesn't exist.<br>
+              Redirecting to <a href="/roses-of-rome/">Roses of Rome</a>...
+            </p>
+          `;
+        }
+      } catch(e){}
+    </script>
+  </body>
+</html>
