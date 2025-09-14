@@ -585,7 +585,6 @@ export function RosesOfRomeSongs() {
         en: "The Second Waltz",
         it: "Il Secondo Valzer",
       },
-
       songAlbum: "Merito",
       songLink: "https://www.youtube.com/watch?v=mmCnQDUSO4I",
     },
@@ -652,7 +651,6 @@ export function RosesOfRomeSongs() {
       },
       songLyrics: JessLyrics(),
       songAlbum: "Cantabile",
-      
     },
     {
       songId: SONG_UUIDS.rorMusic_050,
@@ -689,21 +687,11 @@ export function RosesOfRomeSongs() {
       songFile: YellowSong,
       songName: {
         en: "I love Yellow",
-        it: "Amore yellow"
+        it: "Amore"
       },
       songLyrics: [],
       songAlbum: "Figli"
     }
-    //  {
-    //     songId:SONG_UUIDS.rorMusic_034,
-    //     songFile: ForeverBlessed,
-    //     songName: {
-    //       en: "Forever Blessed",
-    //       it: "Per Sempre Benedetto",
-    //     },
-    //     songLyrics: [],
-    //     songAlbum: "Rosa",
-    //   },
   ];
   return songs;
 }

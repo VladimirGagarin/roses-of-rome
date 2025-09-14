@@ -689,7 +689,7 @@ export function RosesOfRomeSongs() {
       songFile: YellowSong,
       songName: {
         en: "I love Yellow",
-        it: "Amore yellow"
+        it: "Amore y"
       },
       songLyrics: [],
       songAlbum: "Figli"

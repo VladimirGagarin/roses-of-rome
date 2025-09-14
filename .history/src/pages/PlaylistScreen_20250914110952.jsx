@@ -75,7 +75,7 @@ export default function PlaylistScreen() {
     },
     Figli: {
       en: "From the album 'Figli' - A collection of children entertainment.",
-      it: "Dalla raccolta 'Figli' - "
+      it: "Dalla raccolta 'Figli' "
     },
   };
 

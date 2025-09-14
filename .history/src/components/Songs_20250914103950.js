@@ -689,11 +689,12 @@ export function RosesOfRomeSongs() {
       songFile: YellowSong,
       songName: {
         en: "I love Yellow",
-        it: "Amore yellow"
+        it: "Am"
       },
       songLyrics: [],
       songAlbum: "Figli"
     }
+    
     //  {
     //     songId:SONG_UUIDS.rorMusic_034,
     //     songFile: ForeverBlessed,
