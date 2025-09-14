@@ -260,7 +260,7 @@ export function RosesOfRomeSongs() {
       songFile: CinemaGratias,
       songName: {
         en: "Deo Gratias (Cinema version)",
-        it: "Deo Gratias(Versione cinema)",
+        it: "Deo Gratias(Versione ",
       },
       songLyrics: CinemaGratiasLyrics(),
       songAlbum: "Piccola Casa della Gioia",

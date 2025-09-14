@@ -412,7 +412,7 @@ export default function PlaylistScreen() {
               ""}
           </p>
           {/*A button to copy url for the selected button*/}
-          {selectedAlbum !== "all"  && (
+          {selectedAlbum !=== "all" && (
           <button
             className="share-button"
             onClick={() => {

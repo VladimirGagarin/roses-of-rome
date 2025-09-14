@@ -67,8 +67,8 @@ header {
   margin: 20px 0;
   position:relative;
   overflow:hidden;
-  padding: 1rem;
- 
+   /*Add a bg image with a dark overlay*/
+  background-image: url('/rorps3.png') center/cover no-repeat;
 }
 
 /* Song card */
@@ -205,7 +205,10 @@ header {
     color: #fff;
   }
   .playlist-container{
-    background-color: #0001
+     background-image: url("/rorps4.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .surprise-button, .share-button {

@@ -43,35 +43,39 @@ export default function PlaylistScreen() {
   const [isOnline, setIsOnline] = useState(navigator.onLine);
   const bgsImg = [BgImg, BgImg2, BgImg3, BgImg4, BgImg5];
 
-  // Album descriptions with improved clarity, consistency, and completeness
   const albumDescriptions = {
     Rosa: {
-      it: "Dalla raccolta 'Rosa' (2024) — Brani che esplorano amore, speranza e fede, con melodie delicate e testi profondi.",
-      en: "From the album 'Rosa' (2024) — Songs exploring love, hope, and faith, featuring gentle melodies and thoughtful lyrics.",
+      it: "Dalla raccolta 'Rosa' (2024) - Una selezione di brani che esplorano temi di amore, speranza e fede.",
+      en: "From the album 'Rosa' (2024) - A selection of songs exploring themes of love, hope, and faith.",
+
     },
     Merito: {
-      it: "Dalla raccolta 'Merito' — Canzoni apprezzate e utilizzate da Rose of Rome, ma non di loro proprietà.",
-      en: "From the album 'Merito' — Songs appreciated and used by Rose of Rome, but not owned by them.",
+      // songs from merito album are songs that arent owned by Roses of Rome but are used and recognized by them
+      it: "Dalla raccolta 'Merito' - Canzoni riconosciute e utilizzate da Rose of Rome, ma non di sua proprietà.",
+      en: "From the album 'Merito' - Songs recognized and used by Rose of Rome, but not owned by them."
     },
     SWM: {
-      it: "Dalla raccolta 'Sing With Magdalene' (2025) — Un invito a cantare insieme e condividere la gioia della musica.",
-      en: "From the album 'Sing With Magdalene' (2025) — An invitation to sing together and share the joy of music.",
+      // this is special  album called Sing With Magdalene
+      it: "Dalla raccolta 'Sing With Magdalene' (2025) - Un invito a cantare insieme e a condividere la gioia della musica.",
+      en: "From the album 'Sing With Magdalene' (2025) - An invitation to sing together and share the joy of music."
     },
     all: {
-      it: "Tutte le canzoni disponibili — Esplora l'intera collezione musicale di Rose of Rome.",
-      en: "All available songs — Explore the complete musical collection from Rose of Rome.",
+      it: "Tutte le canzoni disponibili - Esplora l'intera collezione di Rose of Rome.",
+      en: "All available songs - Explore the entire collection from Rose of Rome."
     },
     "Piccola Casa della Gioia": {
-      it: "Dalla raccolta 'Piccola casa della Gioia' (2024) — Brani ispirati alla spiritualità e alla comunità di Cottolengo.",
-      en: "From the album 'Piccola casa della Gioia' (2024) — Songs inspired by the spirituality and community of Cottolengo.",
+      it: "Dalla raccolta 'Piccola casa della Gioia' (2024) - Canzoni ispirate alla spiritualità e alla comunità di Cottolengo.",
+      en: "From the album 'Piccola casa della Gioia' (2024) - Songs inspired by spirituality and community of Cottolengo."
     },
     Cantabile: {
-      it: "Dalla raccolta 'Cantabile' — Un inno all'amore, alla bellezza e alla gentilezza, con arrangiamenti raffinati.",
-      en: "From the album 'Cantabile' — A hymn to love, beauty, and kindness, featuring refined arrangements.",
+      //this  is a special album from Rose of Rome that carries love beauty abd kindness
+      it: "Dalla raccolta 'Cantabile' - Un inno all'amore, alla bellezza e alla gentilezza.",
+      en: "From the album 'Cantabile' - A hymn to love, beauty, and kindness."
+
     },
     Figli: {
-      it: "Dalla raccolta 'Figli' — Canzoni dedicate all'intrattenimento e alla gioia dei bambini.",
-      en: "From the album 'Figli' — A collection dedicated to children's entertainment and joy.",
+      en: "From the album 'Figli' - A collection of children entertainment.",
+      it: "Dalla raccolta 'Figli' -  "
     },
   };
 
@@ -412,7 +416,6 @@ export default function PlaylistScreen() {
               ""}
           </p>
           {/*A button to copy url for the selected button*/}
-          {selectedAlbum !== "all"  && (
           <button
             className="share-button"
             onClick={() => {
@@ -433,7 +436,6 @@ export default function PlaylistScreen() {
           >
             {language === "it" ? "Condividi questo album" : "Share this album"}
           </button>
-          )}
         </div>
       )}
 

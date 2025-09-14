@@ -412,7 +412,6 @@ export default function PlaylistScreen() {
               ""}
           </p>
           {/*A button to copy url for the selected button*/}
-          {selectedAlbum !== "all"  && (
           <button
             className="share-button"
             onClick={() => {
@@ -433,7 +432,6 @@ export default function PlaylistScreen() {
           >
             {language === "it" ? "Condividi questo album" : "Share this album"}
           </button>
-          )}
         </div>
       )}
 

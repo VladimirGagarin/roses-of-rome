@@ -66,12 +66,16 @@ export default function PlaylistScreen() {
       en: "From the album 'Piccola casa della Gioia' (2024) — Songs inspired by the spirituality and community of Cottolengo.",
     },
     Cantabile: {
-      it: "Dalla raccolta 'Cantabile' — Un inno all'amore, alla bellezza e alla gentilezza, con arrangiamenti raffinati.",
-      en: "From the album 'Cantabile' — A hymn to love, beauty, and kindness, featuring refined arrangements.",
+    },
+    Cantabile: {
+      //this  is a special album from Rose of Rome that carries love beauty abd kindness
+      it: "Dalla raccolta 'Cantabile' - Un inno all'amore, alla bellezza e alla gentilezza.",
+      en: "From the album 'Cantabile' - A hymn to love, beauty, and kindness."
+
     },
     Figli: {
-      it: "Dalla raccolta 'Figli' — Canzoni dedicate all'intrattenimento e alla gioia dei bambini.",
-      en: "From the album 'Figli' — A collection dedicated to children's entertainment and joy.",
+      en: "From the album 'Figli' - A collection of children entertainment.",
+      it: "Dalla raccolta 'Figli' -  "
     },
   };
 
@@ -412,7 +416,6 @@ export default function PlaylistScreen() {
               ""}
           </p>
           {/*A button to copy url for the selected button*/}
-          {selectedAlbum !== "all"  && (
           <button
             className="share-button"
             onClick={() => {
@@ -433,7 +436,6 @@ export default function PlaylistScreen() {
           >
             {language === "it" ? "Condividi questo album" : "Share this album"}
           </button>
-          )}
         </div>
       )}
 

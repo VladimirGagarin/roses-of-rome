@@ -249,8 +249,8 @@ export function RosesOfRomeSongs() {
       songId: SONG_UUIDS.rorMusic_047,
       songFile: DeoGratias5,
       songName: {
-        en: "Deo Gratias (choir version)",
-        it: "Deo Gratias (Versione coro)",
+        en: "Deo Gratias (choir)",
+        it: "Deo Gratias (coro)",
       },
       songLyrics: DeoGratias5Lyrics(),
       songAlbum: "Piccola Casa della Gioia",
@@ -259,8 +259,8 @@ export function RosesOfRomeSongs() {
       songId: SONG_UUIDS.rorMusic_054,
       songFile: CinemaGratias,
       songName: {
-        en: "Deo Gratias (Cinema version)",
-        it: "Deo Gratias(Versione cinema)",
+        en: " Gratias",
+        it: "Cinema Gratias",
       },
       songLyrics: CinemaGratiasLyrics(),
       songAlbum: "Piccola Casa della Gioia",

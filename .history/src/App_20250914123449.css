@@ -67,7 +67,6 @@ header {
   margin: 20px 0;
   position:relative;
   overflow:hidden;
-  padding: 1rem;
  
 }
 
@@ -205,7 +204,7 @@ header {
     color: #fff;
   }
   .playlist-container{
-    background-color: #0001
+    back
   }
 
   .surprise-button, .share-button {
