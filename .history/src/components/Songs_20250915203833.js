@@ -699,7 +699,7 @@ export function RosesOfRomeSongs() {
       songId: SONG_UUIDS.rorMusic_054,
       songFile: SWRORSong,
       songName: {
-        en: "Sing With Roses Of Rome (from SWM)",
+        en: "Sing With Roses Of Rom (from SWM)",
         it: "Canti Con Rosa Di Rome (dalla SWM)",
       },
       songLyrics: [],

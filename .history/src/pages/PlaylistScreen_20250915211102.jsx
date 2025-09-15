@@ -608,7 +608,7 @@ export default function PlaylistScreen() {
             </div>
           </div>
         )}
-        </div>
+        </d
 
         {showSurprise && supriseSong && (
           <SurpriseOverlay

@@ -174,8 +174,8 @@ export default function HomeScreen() {
 
   const audioTitles = {
     romeOne: {
-      en: "Roses Of Rome Sonnet Version",
-      it: "Rose di Roma Sonneto Versione",
+      en: "Roses Of Rome Sonnet",
+      it: "Rose di Roma Sonneto",
     },
     romeTwo: {
       en: "Roses Of Rome Anthem (Epic Version)",
@@ -189,10 +189,6 @@ export default function HomeScreen() {
       en: "Roses Of Rome Anthem Duet (Female)",
       it: "Rose di Roma Inno Duetto (Feminile)",
     },
-    Inst: {
-      en: "Anthem Instrumental",
-      it: "Instrumentale Inno"
-    }
   };
 
   const SurpriseMessage = {
@@ -226,13 +222,19 @@ export default function HomeScreen() {
       </div>
 
       <Sonnet magic={TheSonnet()} />
-      <div className="audio-wrapper">
+       <div className="audio-wrapper">
         <AudioComponent
-          audioFile={Instrumental}
-          title={audioTitles.Inst[language]}
+          audioFile={Hybrid}
+          title={audioTitles.hybrid[language]}
         />
       </div>
 
+      <div className="audio-wrapper">
+        <AudioComponent
+          audioFile={language === "it" ? ItalianOne : RomeOne}
+          title={audioTitles.romeOne[language]}
+        />
+      </div>
       <div className="audio-wrapper">
         <AudioComponent
           audioFile={language === "it" ? ItalianTwo : RomeTwo}
@@ -261,13 +263,6 @@ export default function HomeScreen() {
         />
       </div>
 
-      <div className="audio-wrapper">
-        <AudioComponent
-          audioFile={language === "it" ? ItalianOne : RomeOne}
-          title={audioTitles.romeOne[language]}
-        />
-      </div>
-
       <Sonnet magic={TheVision()} />
 
       <div className="audio-wrapper">
@@ -293,22 +288,14 @@ export default function HomeScreen() {
       <div className="audio-wrapper">
         <AudioComponent
           audioFile={PrayerSong}
-          title={
-            language === "it"
-              ? "Le Nostro Preghiera (Versione Originale)"
-              : "Our Prayer (Original Version)"
-          }
+          title={language === "it" ? "Le Nostro Preghiera (Versione Originale)" : "Our Prayer (Original Version)"}
         />
       </div>
 
       <div className="audio-wrapper">
         <AudioComponent
           audioFile={PrayerSongSoftVersion}
-          title={
-            language === "it"
-              ? "Le Nostro Preghiera (Versione Soffice)(Inglese)"
-              : "Our Prayer (Soft Version)(English)"
-          }
+          title={language === "it" ? "Le Nostro Preghiera (Versione Soffice)(Inglese)" : "Our Prayer (Soft Version)(English)"}
         />
       </div>
 

@@ -697,13 +697,9 @@ export function RosesOfRomeSongs() {
     },
     {
       songId: SONG_UUIDS.rorMusic_054,
-      songFile: SWRORSong,
-      songName: {
-        en: "Sing With Roses Of Rome (from SWM)",
-        it: "Canti Con Rosa Di Rome (dalla SWM)",
-      },
-      songLyrics: [],
-      songAlbum: "Rosa",
+      songFile: {
+        en: "sing"
+      }
     }
     //  {
     //     songId:SONG_UUIDS.rorMusic_034,

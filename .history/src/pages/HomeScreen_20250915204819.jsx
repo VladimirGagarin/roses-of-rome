@@ -174,8 +174,8 @@ export default function HomeScreen() {
 
   const audioTitles = {
     romeOne: {
-      en: "Roses Of Rome Sonnet Version",
-      it: "Rose di Roma Sonneto Versione",
+      en: "Roses Of Rome Sonnet",
+      it: "Rose di Roma Sonneto",
     },
     romeTwo: {
       en: "Roses Of Rome Anthem (Epic Version)",
@@ -190,8 +190,7 @@ export default function HomeScreen() {
       it: "Rose di Roma Inno Duetto (Feminile)",
     },
     Inst: {
-      en: "Anthem Instrumental",
-      it: "Instrumentale Inno"
+      en: "In"
     }
   };
 
@@ -229,10 +228,16 @@ export default function HomeScreen() {
       <div className="audio-wrapper">
         <AudioComponent
           audioFile={Instrumental}
-          title={audioTitles.Inst[language]}
+          title={audioTitles.inst[language]}
         />
       </div>
 
+      <div className="audio-wrapper">
+        <AudioComponent
+          audioFile={language === "it" ? ItalianOne : RomeOne}
+          title={audioTitles.romeOne[language]}
+        />
+      </div>
       <div className="audio-wrapper">
         <AudioComponent
           audioFile={language === "it" ? ItalianTwo : RomeTwo}
@@ -258,13 +263,6 @@ export default function HomeScreen() {
         <AudioComponent
           audioFile={VisionYouSong}
           title={language === "it" ? "Venere" : "Venus"}
-        />
-      </div>
-
-      <div className="audio-wrapper">
-        <AudioComponent
-          audioFile={language === "it" ? ItalianOne : RomeOne}
-          title={audioTitles.romeOne[language]}
         />
       </div>
 

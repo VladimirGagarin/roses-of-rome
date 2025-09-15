@@ -600,7 +600,7 @@ header {
 
 @media (max-width: 800px) {
   .audio-wrapper{
-    width: 90%;
+    width: 0%;
     
   }
   .audio-header .audio-title{

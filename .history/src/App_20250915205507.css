@@ -106,7 +106,7 @@ header {
 
 /* Audio component wrapper (assuming this is where your audio controls are) */
 .song-card .audio-wrapper {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   width: 90%;
   padding: 0;
   
@@ -189,8 +189,8 @@ header {
 @media (max-width: 800px) {
   .playlist-container {
     grid-template-columns: 1fr;
-    padding: 0;
-    width: 100%;
+    padding: 1rem;
+    width: 90%;
   }
    .song-card {
     overflow:hidden;
@@ -489,7 +489,7 @@ header {
   margin-bottom: 5px;
   width: 97%;
   padding: 10px 0;
-  min-height: 35vh;
+  min-height: 30vh;
   
   
 }

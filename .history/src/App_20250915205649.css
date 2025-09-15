@@ -189,8 +189,8 @@ header {
 @media (max-width: 800px) {
   .playlist-container {
     grid-template-columns: 1fr;
-    padding: 0;
-    width: 100%;
+    padding: 1rem;
+    width: 90%;
   }
    .song-card {
     overflow:hidden;
