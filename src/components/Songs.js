@@ -54,6 +54,10 @@ import PrayerSongVersion3 from "../assets/audios/prayer3.mp3";
 import YellowSong from  "../assets/audios/i love yellow.mp3"; // album Figli
 import SWRORSong from "../assets/audios/SWROR.mp3"; // Rosa album
 import SerendipitySong from "../assets/audios/Serendipity.mp3";
+import KenyaSong1 from "../assets/audios/kenya_official.mp3";
+import  KenyaSong2 from "../assets/audios/kenya_duet.mp3";
+import KenyaSong3 from "../assets/audios/kenya_soft_vocal.mp3";
+import UndyingSong from "../assets/audios/undying.mp3";
 
 // lyrics
 import {
@@ -647,14 +651,13 @@ export function RosesOfRomeSongs() {
     },
     {
       songId: SONG_UUIDS.rorMusic_048,
-      songFile:FriendSong,
+      songFile: FriendSong,
       songName: {
-        en:"Friend (Jessica's Song)",
-        it:"Amica (Canzone di Jessica)"
+        en: "Friend (Jessica's Song)",
+        it: "Amica (Canzone di Jessica)",
       },
       songLyrics: JessLyrics(),
       songAlbum: "Cantabile",
-      
     },
     {
       songId: SONG_UUIDS.rorMusic_050,
@@ -691,10 +694,10 @@ export function RosesOfRomeSongs() {
       songFile: YellowSong,
       songName: {
         en: "I love Yellow",
-        it: "Amore yellow"
+        it: "Amore yellow",
       },
       songLyrics: [],
-      songAlbum: "Figli"
+      songAlbum: "Figli",
     },
     {
       songId: SONG_UUIDS.rorMusic_055,
@@ -715,7 +718,49 @@ export function RosesOfRomeSongs() {
       },
       songLyrics: [],
       songAlbum: "Cantabile",
-    }
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_057,
+      songFile: KenyaSong1,
+      songName: {
+        en: "Mungu Ibariki Kenya official",
+        it: "Dio benedica il Kenya (versione ufficiale)",
+      },
+      songLyrics: [],
+      songAlbum: "Cantabile",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_058,
+      songFile: KenyaSong2,
+      songName: {
+        en: "Mungu Ibariki Kenya (duet)",
+        it: "Dio benedica il Kenya (duetto)",
+      },
+      songLyrics: [],
+      songAlbum: "Cantabile",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_059,
+      songFile: KenyaSong3,
+      songName: {
+        en: "Mungu Ibariki Kenya (soft version)",
+        it: "Dio benedica il Kenya (versione dolce)",
+      },
+      songLyrics: [],
+      songAlbum: "Cantabile",
+    },
+
+    {
+      songId: SONG_UUIDS.rorMusic_060,
+      songFile: UndyingSong,
+      songName: {
+        en: "Undying Faith",
+        it: "Fede incrollabile",
+      },
+      songLyrics: [],
+      songAlbum: "Cantabile",
+    },
+
     //  {
     //     songId:SONG_UUIDS.rorMusic_034,
     //     songFile: ForeverBlessed,
