@@ -1,66 +1,66 @@
 
 
 export function getLifeLyrics() {
-    const t = [
-      { start: 13120, end: 16120, text: "a whisper wakes the morning mist" },
-      { start: 16120, end: 19200, text: "a dream stirs deep inside" },
-      {
-        start: 19200,
-        end: 22520,
-        text: "through shadowed woods and golden light",
-      },
-      { start: 22520, end: 25420, text: "a heart finds room to glide" },
-      { start: 25640, end: 31340, text: "with every breath the story spins" },
-      { start: 32040, end: 33640, text: "with every step" },
-      { start: 33640, end: 36460, text: "a chance to give" },
-      { start: 38120, end: 40560, text: "through mist and flame" },
-      { start: 40560, end: 43420, text: "she finds her name" },
-      { start: 44600, end: 50020, text: "a life a life to live" },
-      { start: 53480, end: 55980, text: "a life to live" },
-      { start: 56640, end: 59220, text: "a song to share" },
-      { start: 60040, end: 65660, text: "a hopeful flame upon the air" },
-      {
-        start: 66200,
-        end: 72100,
-        text: "through trials deep through stars above",
-      },
-      { start: 73720, end: 78700, text: "magdalene shines strength and love" },
-      {
-        start: 79e3,
-        end: 84900,
-        text: "through midnight sky rising morning sun",
-      },
-      { start: 85480, end: 91300, text: "a heart can rise when days begun" },
-      { start: 91840, end: 94180, text: "a life to live" },
-      { start: 95040, end: 97660, text: "a chance to give" },
-      { start: 98520, end: 100280, text: "through it all" },
-      {
-        start: 100280,
-        end: 108200,
-        text: "she shines she shines through mist",
-      },
-      { start: 108200, end: 112660, text: "and midnight light will rise" },
-      { start: 113360, end: 117300, text: "through pain a dream can grow" },
-      { start: 119760, end: 122960, text: "a life to live" },
-      { start: 122960, end: 125580, text: "with open eyes" },
-      { start: 126440, end: 131260, text: "a seed that blooms and shows" },
-      { start: 143320, end: 145420, text: "a life to live" },
-      { start: 146240, end: 149180, text: "a dance a prayer" },
-      { start: 149480, end: 152220, text: "a voice that live" },
-        { start: 152640, end: 155780, text: "beyond despair" },
-      { start: 155800, end: 158460, text: "through mist and flame" },
-      { start: 159e3, end: 162140, text: "through dark and dawn" },
-      { start: 163320, end: 165560, text: "magdalene shines" },
-      { start: 165560, end: 169700, text: "she carries on on" },
-      { start: 175e3, end: 177620, text: "a life to live" },
-      { start: 178240, end: 181300, text: "a dance of prayer" },
-      { start: 181440, end: 184680, text: "a voice that lives" },
-      { start: 184680, end: 187380, text: "beyond despair" },
-      { start: 187800, end: 190420, text: "a mist and flame" },
-      { start: 191e3, end: 194140, text: "through dark and dawn" },
-      { start: 195360, end: 198240, text: "magdalene shines" },
-      { start: 198240, end: 200900, text: "she carries on" },
-    ];
+  const t = [
+   { start: 13120, end: 16120, text: { en: "a whisper wakes the morning mist", it: "un sussurro sveglia la nebbia del mattino" } },
+   { start: 16120, end: 19200, text: { en: "a dream stirs deep inside", it: "un sogno si agita dentro" } },
+   {
+     start: 19200,
+     end: 22520,
+     text: { en: "through shadowed woods and golden light", it: "attraverso boschi ombrosi e luce dorata" },
+   },
+   { start: 22520, end: 25420, text: { en: "a heart finds room to glide", it: "un cuore trova spazio per scivolare" } },
+   { start: 25640, end: 31340, text: { en: "with every breath the story spins", it: "con ogni respiro la storia si dipana" } },
+   { start: 32040, end: 33640, text: { en: "with every step", it: "con ogni passo" } },
+   { start: 33640, end: 36460, text: { en: "a chance to give", it: "un'opportunità di dare" } },
+   { start: 38120, end: 40560, text: { en: "through mist and flame", it: "attraverso nebbia e fiamma" } },
+   { start: 40560, end: 43420, text: { en: "she finds her name", it: "lei trova il suo nome" } },
+   { start: 44600, end: 50020, text: { en: "a life a life to live", it: "una vita, una vita da vivere" } },
+   { start: 53480, end: 55980, text: { en: "a life to live", it: "una vita da vivere" } },
+   { start: 56640, end: 59220, text: { en: "a song to share", it: "una canzone da condividere" } },
+   { start: 60040, end: 65660, text: { en: "a hopeful flame upon the air", it: "una fiamma di speranza nell'aria" } },
+   {
+     start: 66200,
+     end: 72100,
+     text: { en: "through trials deep through stars above", it: "attraverso prove profonde, attraverso le stelle sopra" },
+   },
+   { start: 73720, end: 78700, text: { en: "magdalene shines strength and love", it: "maddalena brilla di forza e amore" } },
+   {
+     start: 79000,
+     end: 84900,
+     text: { en: "through midnight sky rising morning sun", it: "attraverso il cielo di mezzanotte, sorge il sole del mattino" },
+   },
+   { start: 85480, end: 91300, text: { en: "a heart can rise when days begun", it: "un cuore può sorgere quando i giorni iniziano" } },
+   { start: 91840, end: 94180, text: { en: "a life to live", it: "una vita da vivere" } },
+   { start: 95040, end: 97660, text: { en: "a chance to give", it: "un'opportunità di dare" } },
+   { start: 98520, end: 100280, text: { en: "through it all", it: "attraverso tutto" } },
+   {
+     start: 100280,
+     end: 108200,
+     text: { en: "she shines she shines through mist", it: "lei brilla, brilla attraverso la nebbia" },
+   },
+   { start: 108200, end: 112660, text: { en: "and midnight light will rise", it: "e la luce di mezzanotte sorgerà" } },
+   { start: 113360, end: 117300, text: { en: "through pain a dream can grow", it: "attraverso il dolore un sogno può crescere" } },
+   { start: 119760, end: 122960, text: { en: "a life to live", it: "una vita da vivere" } },
+   { start: 122960, end: 125580, text: { en: "with open eyes", it: "con occhi aperti" } },
+   { start: 126440, end: 131260, text: { en: "a seed that blooms and shows", it: "un seme che fiorisce e mostra" } },
+   { start: 143320, end: 145420, text: { en: "a life to live", it: "una vita da vivere" } },
+   { start: 146240, end: 149180, text: { en: "a dance a prayer", it: "una danza, una preghiera" } },
+   { start: 149480, end: 152220, text: { en: "a voice that live", it: "una voce che vive" } },
+   { start: 152640, end: 155780, text: { en: "beyond despair", it: "oltre la disperazione" } },
+   { start: 155800, end: 158460, text: { en: "through mist and flame", it: "attraverso nebbia e fiamma" } },
+   { start: 159000, end: 162140, text: { en: "through dark and dawn", it: "attraverso il buio e l'alba" } },
+   { start: 163320, end: 165560, text: { en: "magdalene shines", it: "maddalena brilla" } },
+   { start: 165560, end: 169700, text: { en: "she carries on on", it: "lei continua" } },
+   { start: 175000, end: 177620, text: { en: "a life to live", it: "una vita da vivere" } },
+   { start: 178240, end: 181300, text: { en: "a dance of prayer", it: "una danza di preghiera" } },
+   { start: 181440, end: 184680, text: { en: "a voice that lives", it: "una voce che vive" } },
+   { start: 184680, end: 187380, text: { en: "beyond despair", it: "oltre la disperazione" } },
+   { start: 187800, end: 190420, text: { en: "a mist and flame", it: "una nebbia e fiamma" } },
+   { start: 191000, end: 194140, text: { en: "through dark and dawn", it: "attraverso il buio e l'alba" } },
+   { start: 195360, end: 198240, text: { en: "magdalene shines", it: "maddalena brilla" } },
+   { start: 198240, end: 200900, text: { en: "she carries on", it: "lei continua" } },
+     ];
 
     return t
 }
@@ -166,180 +166,192 @@ export function beginningLyrics() {
 
 export function IamMegLyrics() {
   const lyrics = [
-    { start: 0, end: 4140, text: "We all have names," },
-    { start: 4880, end: 8580, text: "names that carry hope" },
-    { start: 8580, end: 13000, text: "Names that breathe out peace" },
-    { start: 13000, end: 17140, text: "And I was meant to be Magdalene" },
-    { start: 18759, end: 22020, text: "We all have songs," },
-    { start: 22120, end: 26300, text: "songs that heal the night" },
-    { start: 27520, end: 32380, text: "Songs that light the dawn And I was" },
-    { start: 32380, end: 35020, text: "meant to sing Magdalene" },
-    { start: 36780, end: 40920, text: "The moment we know our names" },
-    { start: 40920, end: 45280, text: "Is the moment our fire ignites" },
-    { start: 45280, end: 50140, text: "A spark within becomes a flame And in that" },
-    { start: 50140, end: 52880, text: "glow we rise to light" },
-    { start: 54620, end: 59000, text: "The moment we know our names" },
-    { start: 59000, end: 63200, text: "Is the moment our fire ignites" },
-    { start: 63200, end: 67580, text: "A spark within becomes a flame" },
-    { start: 67580, end: 72380, text: "And in that glow we rise to light" },
-    { start: 73440, end: 78260, text: "Magdalene is not just a name It's a light full of joy" },
-    { start: 78260, end: 83080, text: "and flame It is a story carved in grace A" },
-    { start: 83080, end: 87880, text: "journey time cannot erase It is magic full of wonders A" },
-    { start: 87880, end: 92880, text: "song that sings and never slumbers It is a song" },
-    { start: 92880, end: 97860, text: "that sets me free It is Magdalene" },
-    { start: 97860, end: 102720, text: "I was meant to be We all" },
-    { start: 102720, end: 107320, text: "have scars Marks that teach" },
-    { start: 107320, end: 111620, text: "us grace Maps of where" },
-    { start: 111620, end: 115700, text: "we've been And I was meant to bear the" },
-    { start: 115700, end: 120640, text: "Magdalene Call me by" },
-    { start: 120640, end: 125460, text: "the wind Call me through the" },
-    { start: 125460, end: 130060, text: "flame Every hidden amber" },
-    { start: 130060, end: 134660, text: "rises When you speak my name" },
-    { start: 135700, end: 140460, text: "Magdalene is not just a name It's a light full of joy" },
-    { start: 140460, end: 145380, text: "and flame It is a story carved in grace It is a story carved in grace A" },
-    { start: 145380, end: 150100, text: "journey time cannot erase It is magic full of wonders A" },
-    { start: 150100, end: 155080, text: "soul that sings and never slumbers It is a song" },
-    { start: 155080, end: 160020, text: "that sets me free It is Magdalene" },
-    { start: 160020, end: 161920, text: "I was meant to be" },
-    { start: 165440, end: 168520, text: "Call me by the wind" },
-    { start: 169880, end: 173400, text: "Call me through the flame" },
-    { start: 173400, end: 178380, text: "Every hidden amber rises When you speak" },
-    { start: 178380, end: 183360, text: "my name Magdalene is not just a name It's" },
-    { start: 183360, end: 187880, text: "a light full of joy and flame It is a" },
-    { start: 187880, end: 192780, text: "story carved in grace A journey time cannot erase It is magic" },
-    { start: 192780, end: 197480, text: "full of wonders A soul that sings and never slumbers" },
-    { start: 197480, end: 201540, text: "It is a song that sets me free" },
+    { start: 0, end: 4140, text: { en: "We all have names,", it: "Abbiamo tutti dei nomi," } },
+    { start: 4880, end: 8580, text: { en: "names that carry hope", it: "nomi che portano speranza" } },
+    { start: 8580, end: 13000, text: { en: "Names that breathe out peace", it: "Nomi che respirano pace" } },
+    { start: 13000, end: 17140, text: { en: "And I was meant to be Magdalene", it: "E io dovevo essere Maddalena" } },
+    { start: 18759, end: 22020, text: { en: "We all have songs,", it: "Abbiamo tutti delle canzoni," } },
+    { start: 22120, end: 26300, text: { en: "songs that heal the night", it: "canzoni che guariscono la notte" } },
+    { start: 27520, end: 32380, text: { en: "Songs that light the dawn And I was", it: "Canzoni che illuminano l'alba e io ero" } },
+    { start: 32380, end: 35020, text: { en: "meant to sing Magdalene", it: "destinato a cantare Maddalena" } },
+    { start: 36780, end: 40920, text: { en: "The moment we know our names", it: "Il momento in cui conosciamo i nostri nomi" } },
+    { start: 40920, end: 45280, text: { en: "Is the moment our fire ignites", it: "È il momento in cui il nostro fuoco si accende" } },
+    { start: 45280, end: 50140, text: { en: "A spark within becomes a flame And in that", it: "Una scintilla dentro diventa una fiamma e in quella" } },
+    { start: 50140, end: 52880, text: { en: "glow we rise to light", it: "luce ci alziamo per illuminare" } },
+    { start: 54620, end: 59000, text: { en: "The moment we know our names", it: "Il momento in cui conosciamo i nostri nomi" } },
+    { start: 59000, end: 63200, text: { en: "Is the moment our fire ignites", it: "È il momento in cui il nostro fuoco si accende" } },
+    { start: 63200, end: 67580, text: { en: "A spark within becomes a flame", it: "Una scintilla dentro diventa una fiamma" } },
+    { start: 67580, end: 72380, text: { en: "And in that glow we rise to light", it: "E in quella luce ci alziamo per illuminare" } },
+    { start: 73440, end: 78260, text: { en: "Magdalene is not just a name It's a light full of joy", it: "Maddalena non è solo un nome, è una luce piena di gioia" } },
+    { start: 78260, end: 83080, text: { en: "and flame It is a story carved in grace A", it: "e fiamma. È una storia scolpita nella grazia" } },
+    { start: 83080, end: 87880, text: { en: "journey time cannot erase It is magic full of wonders A", it: "Un viaggio che il tempo non può cancellare. È magia piena di meraviglie" } },
+    { start: 87880, end: 92880, text: { en: "song that sings and never slumbers It is a song", it: "una canzone che canta e non dorme mai. È una canzone" } },
+    { start: 92880, end: 97860, text: { en: "that sets me free It is Magdalene", it: "che mi libera. È Maddalena" } },
+    { start: 97860, end: 102720, text: { en: "I was meant to be We all", it: "Dovevo essere. Tutti noi" } },
+    { start: 102720, end: 107320, text: { en: "have scars Marks that teach", it: "abbiamo cicatrici. Segni che insegnano" } },
+    { start: 107320, end: 111620, text: { en: "us grace Maps of where", it: "a noi grazia. Mappe di dove" } },
+    { start: 111620, end: 115700, text: { en: "we've been And I was meant to bear the", it: "siamo stati. E io dovevo portare il" } },
+    { start: 115700, end: 120640, text: { en: "Magdalene Call me by", it: "Maddalena. Chiamami dal" } },
+    { start: 120640, end: 125460, text: { en: "the wind Call me through the", it: "vento. Chiamami attraverso il" } },
+    { start: 125460, end: 130060, text: { en: "flame Every hidden amber", it: "fiamma. Ogni ambra nascosta" } },
+    { start: 130060, end: 134660, text: { en: "rises When you speak my name", it: "si alza quando pronunci il mio nome" } },
+    { start: 135700, end: 140460, text: { en: "Magdalene is not just a name It's a light full of joy", it: "Maddalena non è solo un nome, è una luce piena di gioia" } },
+    { start: 140460, end: 145380, text: { en: "and flame It is a story carved in grace It is a story carved in grace A", it: "e fiamma. È una storia scolpita nella grazia. È una storia scolpita nella grazia." } },
+    { start: 145380, end: 150100, text: { en: "journey time cannot erase It is magic full of wonders A", it: "Un viaggio che il tempo non può cancellare. È magia piena di meraviglie." } },
+    { start: 150100, end: 155080, text: { en: "soul that sings and never slumbers It is a song", it: "un'anima che canta e non dorme mai. È una canzone" } },
+    { start: 155080, end: 160020, text: { en: "that sets me free It is Magdalene", it: "che mi libera. È Maddalena" } },
+    { start: 160020, end: 161920, text: { en: "I was meant to be", it: "Dovevo essere" } },
+    { start: 165440, end: 168520, text: { en: "Call me by the wind", it: "Chiamami dal vento" } },
+    { start: 169880, end: 173400, text: { en: "Call me through the flame", it: "Chiamami attraverso la fiamma" } },
+    { start: 173400, end: 178380, text: { en: "Every hidden amber rises When you speak", it: "Ogni ambra nascosta si alza quando parli" } },
+    { start: 178380, end: 183360, text: { en: "my name Magdalene is not just a name It's", it: "il mio nome. Maddalena non è solo un nome, è" } },
+    { start: 183360, end: 187880, text: { en: "a light full of joy and flame It is a", it: "una luce piena di gioia e fiamma. È una" } },
+    { start: 187880, end: 192780, text: { en: "story carved in grace A journey time cannot erase It is magic", it: "storia scolpita nella grazia. Un viaggio che il tempo non può cancellare. È magia" } },
+    { start: 192780, end: 197480, text: { en: "full of wonders A soul that sings and never slumbers", it: "piena di meraviglie. Un'anima che canta e non dorme mai." } },
+    { start: 197480, end: 201540, text: { en: "It is a song that sets me free", it: "È una canzone che mi libera" } },
   ];
   return lyrics;
 }
 
 
-export function fightSongLyrics () {
+export function FightSongLyrics() {
   const lyrics = [
     {
       start: 0,
       end: 14000,
-      text: "Like a small bird in the sky Flying through the thunder's cry",
+      text: {en:"Like a small bird in the sky Flying through the thunder's cry", it:"Come un piccolo uccello nel cielo che vola attraverso il grido del tuono"},
     },
     {
       start: 14000,
-      end: 18000,
-      text: "Like how a single word can shake the silence deeply heard.",
+      end: 18000, 
+      text: {en:"Like how a single word can shake the silence deeply heard.", it:"Come una singola parola può scuotere il silenzio profondamente sentito"},
     },
     {
       start: 18000,
       end: 23000,
-      text: "I might have only small wings, But I was made for mighty things.",
+      text: {en:"I might have only small wings, But I was made for mighty things.", it:"Potrei avere solo piccole ali, ma sono stata fatta per cose potenti"},
     },
     {
       start: 24000,
       end: 31000,
-      text: "They called me lost, they called me wrong But in my soul, I held",
+      text: {en:"They called me lost, they called me wrong But in my soul, I held", it:"Mi chiamavano perduta, mi chiamavano sbagliata Ma nella mia anima, tenevo"},
     },
     {
       start: 31000,
       end: 36000,
-      text: "a song And now the fire inside me grows— It's time the world finally knows",
+      text: {en:"a song And now the fire inside me grows— It's time the world finally knows", it:"una canzone E ora il fuoco dentro di me cresce— È tempo che il mondo finalmente sappia"},
     },
     {
       start: 36000,
       end: 44000,
-      text: "This time  this is my rise song, Magdalene’s voice, forever strong.",
+      text: {en:"This time this is my rise song, Magdalene's voice, forever strong.", it:"Questa volta questa è la mia canzone di ascesa, la voce di Maddalena, per sempre forte"},
     },
     {
       start: 44000,
       end: 49000,
-      text: "I won’t fade in the shadows, I was born for more than sorrow.",
+      text: {en:"I won't fade in the shadows, I was born for more than sorrow.", it:"Non svanirò nelle ombre, sono nata per più del dolore"},
     },
     {
       start: 50000,
       end: 55000,
-      text: "I’ll stand tall, where I belong— This time, this is my fight song.",
+      text: {en:"I'll stand tall, where I belong— This time, this is my fight song.", it:"Starò dritta, dove appartengo— Questa volta, questa è la mia canzone di battaglia"},
     },
     {
       start: 63000,
       end: 68000,
-      text: "They judged my name, and I walked alone, Felt like a stranger in my own home",
+      text: {en:"They judged my name, and I walked alone, Felt like a stranger in my own home", it:"Hanno giudicato il mio nome, e ho camminato sola, Mi sentivo una straniera nella mia casa"},
     },
     {
       start: 68000,
       end: 72000,
-      text: "Too far gone, they said I lost my way— But I held on when I couldn't pray",
+      text: {en:"Too far gone, they said I lost my way— But I held on when I couldn't pray", it:"Troppo lontana, dicevano che avevo perso la strada— Ma ho resistito quando non potevo pregare"},
     },
     {
       start: 72000,
       end: 77000,
-      text: "It's been one night but I still breathe There's a hope burning deep in me",
+      text: {en:"It's been one night but I still breathe There's a hope burning deep in me", it:"È stata una notte ma respiro ancora C'è una speranza che brucia profonda in me"},
     },
     {
       start: 78000,
       end: 83000,
-      text: "I still believe, oh I still believe They called me lost, they called me wrong",
+      text: {en:"I still believe, oh I still believe They called me lost, they called me wrong", it:"Credo ancora, oh credo ancora Mi chiamavano perduta, mi chiamavano sbagliata"},
     },
     {
       start: 83000,
       end: 88000,
-      text: "But in my soul, I held a song and now the fire inside me grows—",
+      text: {en:"But in my soul, I held a song and now the fire inside me grows—", it:"Ma nella mia anima, tenevo una canzone e ora il fuoco dentro di me cresce—"},
     },
     {
       start: 88000,
       end: 94000,
-      text: "It's time the world finally knows This time, this is my rise song",
+      text: {en:"It's time the world finally knows This time, this is my rise song", it:"È tempo che il mondo finalmente sappia Questa volta, questa è la mia canzone di ascesa"},
     },
     {
       start: 94000,
       end: 101000,
-      text: "Magdalene’s voice, forever strong. I won’t fade in the shadows",
+      text: {en:"Magdalene's voice, forever strong. I won't fade in the shadows", it:"La voce di Maddalena, per sempre forte. Non svanirò nelle ombre"},
     },
     {
       start: 102000,
       end: 107000,
-      text: "I was born for more than sorrow  I’ll stand tall, where I belong—",
+      text: {en:"I was born for more than sorrow I'll stand tall, where I belong—", it:"Sono nata per più del dolore Starò dritta, dove appartengo—"},
     },
-    { start: 107000, end: 110000, text: "This time, this is my fight song." },
+    {
+      start: 107000,
+      end: 110000,
+      text: {en:"This time, this is my fight song.", it:"Questa volta, questa è la mia canzone di battaglia"},
+    },
     {
       start: 117000,
       end: 125000,
-      text: "They judged my name, and I walked alone, Felt like a stranger in my own home",
+      text: {en:"They judged my name, and I walked alone, Felt like a stranger in my own home", it:"Hanno giudicato il mio nome, e ho camminato sola, Mi sentivo una straniera nella mia casa"},
     },
     {
       start: 126000,
       end: 131000,
-      text: "Too far gone they said I lost my way But I held on when I couldn’t pray",
+      text: {en:"Too far gone they said I lost my way But I held on when I couldn't pray", it:"Troppo lontana dicevano che avevo perso la strada Ma ho resistito quando non potevo pregare"},
     },
     {
       start: 131000,
       end: 136000,
-      text: "It’s been long nights, but I still breathe, There's a hope burning deep in me.",
+      text: {en:"It's been long nights, but I still breathe, There's a hope burning deep in me.", it:"Sono state lunghe notti, ma respiro ancora, C'è una speranza che brucia profonda in me"},
     },
     {
       start: 136000,
       end: 142000,
-      text: "I still believe, oh I still believe They called me lost, they called me wrong",
+      text: {en:"I still believe, oh I still believe They called me lost, they called me wrong", it:"Credo ancora, oh credo ancora Mi chiamavano perduta, mi chiamavano sbagliata"},
     },
     {
       start: 142000,
       end: 147000,
-      text: "But in my soul, I held a song And now the fire inside me grows—",
+      text: {en:"But in my soul, I held a song And now the fire inside me grows—", it:"Ma nella mia anima, tenevo una canzone E ora il fuoco dentro di me cresce—"},
     },
     {
       start: 147000,
       end: 153000,
-      text: "It's time the world finally knows This time, this is my rise song",
+      text: {en:"It's time the world finally knows This time, this is my rise song", it:"È tempo che il mondo finalmente sappia Questa volta, questa è la mia canzone di ascesa"},
     },
     {
       start: 154000,
       end: 160000,
-      text: "Call my name — I'm Magdalene strong. No more hiding in the shadows,",
+      text: {en:"Call my name — I'm Magdalene strong. No more hiding in the shadows,", it:"Chiama il mio nome — Sono Maddalena forte. Non più nascondersi nelle ombre"},
     },
     {
       start: 160000,
       end: 165000,
-      text: "I was born for more than sorrows Watch me soar, I’ve come so long—",
+      text: {en:"I was born for more than sorrows Watch me soar, I've come so long—", it:"Sono nata per più dei dolori Guardami volare, sono arrivata così lontano—"},
     },
-    { start: 165000, end: 168000, text: "This time this is my fight song" },
-    { start: 183000, end: 185000, text: "You" },
-  ];
+    {
+      start: 165000,
+      end: 168000,
+      text: {en:"This time this is my fight song", it:"Questa volta questa è la mia canzone di battaglia"},
+    },
+    {
+      start: 183000,
+      end: 185000,
+      text: {en:"You", it:"Tu"},
+    },
+    ];
   return lyrics
 }
 
@@ -347,214 +359,214 @@ export function fightSongLyrics () {
 export function swmLyrics() {
   const lyrics = [
     {
-      "start": 10820,
-      "end": 15300,
-      "text": "When your heart feels weak and"
+      start: 10820,
+      end: 15300,
+      text: {en:"When your heart feels weak and", it:"Quando il tuo cuore si sente debole e"}
     },
     {
-      "start": 15300,
-      "end": 20140,
-      "text": "worn When your soul feels"
+      start: 15300,
+      end: 20140,
+      text: {en:"worn When your soul feels", it:"consumato Quando la tua anima si sente"}
     },
     {
-      "start": 20140,
-      "end": 24680,
-      "text": "lost forlorn When your"
+      start: 20140,
+      end: 24680,
+      text: {en:"lost forlorn When your", it:"persa abbandonata Quando il tuo"}
     },
     {
-      "start": 24680,
-      "end": 28120,
-      "text": "day is dim with rain"
+      start: 24680,
+      end: 28120,
+      text: {en:"day is dim with rain", it:"giorno è offuscato dalla pioggia"}
     },
     {
-      "start": 28120,
-      "end": 32900,
-      "text": "When your time is wrapped"
+      start: 28120,
+      end: 32900,
+      text: {en:"When your time is wrapped", it:"Quando il tuo tempo è avvolto"}
     },
     {
-      "start": 32900,
-      "end": 37180,
-      "text": "in pain Magdalene"
+      start: 32900,
+      end: 37180,
+      text: {en:"in pain Magdalene", it:"nel dolore Maddalena"}
     },
     {
-      "start": 37180,
-      "end": 40520,
-      "text": "will take your hand"
+      start: 37180,
+      end: 40520,
+      text: {en:"will take your hand", it:"prenderà la tua mano"}
     },
     {
-      "start": 40520,
-      "end": 45120,
-      "text": "Guide you through the quiet"
+      start: 40520,
+      end: 45120,
+      text: {en:"Guide you through the quiet", it:"Ti guiderà attraverso la tranquilla"}
     },
     {
-      "start": 45120,
-      "end": 49180,
-      "text": "land Sing with Magdalene,"
+      start: 45120,
+      end: 49180,
+      text: {en:"land Sing with Magdalene,", it:"terra Canta con Maddalena,"}
     },
     {
-      "start": 50020,
-      "end": 54700,
-      "text": "don't be afraid In her"
+      start: 50020,
+      end: 54700,
+      text: {en:"don't be afraid In her", it:"non aver paura Nella sua"}
     },
     {
-      "start": 54700,
-      "end": 58040,
-      "text": "voice your fear will fade"
+      start: 54700,
+      end: 58040,
+      text: {en:"voice your fear will fade", it:"voce la tua paura svanirà"}
     },
     {
-      "start": 58800,
-      "end": 63220,
-      "text": "In her voice the silence"
+      start: 58800,
+      end: 63220,
+      text: {en:"In her voice the silence", it:"Nella sua voce il silenzio"}
     },
     {
-      "start": 63220,
-      "end": 67960,
-      "text": "sings In her voice your"
+      start: 63220,
+      end: 67960,
+      text: {en:"sings In her voice your", it:"canta Nella sua voce il tuo"}
     },
     {
-      "start": 67960,
-      "end": 71880,
-      "text": "spirit clings Sing with"
+      start: 67960,
+      end: 71880,
+      text: {en:"spirit clings Sing with", it:"spirito si aggrappa Canta con"}
     },
     {
-      "start": 71880,
-      "end": 76120,
-      "text": "Magdalene, it's a moment of light"
+      start: 71880,
+      end: 76120,
+      text: {en:"Magdalene, it's a moment of light", it:"Maddalena, è un momento di luce"}
     },
     {
-      "start": 76640,
-      "end": 81260,
-      "text": "Sing with Magdalene, joy transcending"
+      start: 76640,
+      end: 81260,
+      text: {en:"Sing with Magdalene, joy transcending", it:"Canta con Maddalena, gioia che trascende"}
     },
     {
-      "start": 81260,
-      "end": 85980,
-      "text": "night Songs have light, no"
+      start: 81260,
+      end: 85980,
+      text: {en:"night Songs have light, no", it:"la notte Le canzoni hanno luce, nessun"}
     },
     {
-      "start": 85980,
-      "end": 90500,
-      "text": "dark can hide Songs carry"
+      start: 85980,
+      end: 90500,
+      text: {en:"dark can hide Songs carry", it:"buio può nascondere Le canzoni portano"}
     },
     {
-      "start": 90500,
-      "end": 93940,
-      "text": "truth, the soul can't divide"
+      start: 90500,
+      end: 93940,
+      text: {en:"truth, the soul can't divide", it:"verità, l'anima non può dividere"}
     },
     {
-      "start": 93940,
-      "end": 98060,
-      "text": "Songs will rise where"
+      start: 93940,
+      end: 98060,
+      text: {en:"Songs will rise where", it:"Le canzoni si alzeranno dove"}
     },
     {
-      "start": 98060,
-      "end": 103040,
-      "text": "hope has flown And that's when singing"
+      start: 98060,
+      end: 103040,
+      text: {en:"hope has flown And that's when singing", it:"la speranza è volata via E allora cantando"}
     },
     {
-      "start": 103040,
-      "end": 107900,
-      "text": "with Magdalene  you're not alone Sing with"
+      start: 103040,
+      end: 107900,
+      text: {en:"with Magdalene you're not alone Sing with", it:"con Maddalena non sei solo Canta con"}
     },
     {
-      "start": 107900,
-      "end": 112280,
-      "text": "Magdalene, don't be afraid"
+      start: 107900,
+      end: 112280,
+      text: {en:"Magdalene, don't be afraid", it:"Maddalena, non aver paura"}
     },
     {
-      "start": 112280,
-      "end": 116820,
-      "text": "In her voice your fear"
+      start: 112280,
+      end: 116820,
+      text: {en:"In her voice your fear", it:"Nella sua voce la tua paura"}
     },
     {
-      "start": 116820,
-      "end": 121480,
-      "text": "will fade In her voice"
+      start: 116820,
+      end: 121480,
+      text: {en:"will fade In her voice", it:"svanirà Nella sua voce"}
     },
     {
-      "start": 121480,
-      "end": 126280,
-      "text": "the silence sings In"
+      start: 121480,
+      end: 126280,
+      text: {en:"the silence sings In", it:"il silenzio canta In"}
     },
     {
-      "start": 126280,
-      "end": 129820,
-      "text": "her voice your spirit clears"
+      start: 126280,
+      end: 129820,
+      text: {en:"her voice your spirit clears", it:"la sua voce il tuo spirito si schiarisce"}
     },
     {
-      "start": 130380,
-      "end": 135260,
-      "text": "Sing with Magdalene, it's a moment of"
+      start: 130380,
+      end: 135260,
+      text: {en:"Sing with Magdalene, it's a moment of", it:"Canta con Maddalena, è un momento di"}
     },
     {
-      "start": 135260,
-      "end": 139820,
-      "text": "light Sing with Magdalene, joy"
+      start: 135260,
+      end: 139820,
+      text: {en:"light Sing with Magdalene, joy", it:"luce Canta con Maddalena, gioia"}
     },
     {
-      "start": 139820,
-      "end": 142080,
-      "text": "transcending night"
+      start: 139820,
+      end: 142080,
+      text: {en:"transcending night", it:"che trascende la notte"}
     },
     {
-      "start": 145100,
-      "end": 148780,
-      "text": "Sing with Magdalene,"
+      start: 145100,
+      end: 148780,
+      text: {en:"Sing with Magdalene,", it:"Canta con Maddalena,"}
     },
     {
-      "start": 149960,
-      "end": 154940,
-      "text": "sing with Magdalene Sing with Magdalene,"
+      start: 149960,
+      end: 154940,
+      text: {en:"sing with Magdalene Sing with Magdalene,", it:"canta con Maddalena Canta con Maddalena,"}
     },
     {
-      "start": 155060,
-      "end": 159680,
-      "text": "don't be afraid In her"
+      start: 155060,
+      end: 159680,
+      text: {en:"don't be afraid In her", it:"non aver paura Nella sua"}
     },
     {
-      "start": 159680,
-      "end": 162920,
-      "text": "voice your fear will fade"
+      start: 159680,
+      end: 162920,
+      text: {en:"voice your fear will fade", it:"voce la tua paura svanirà"}
     },
     {
-      "start": 174820,
-      "end": 179800,
-      "text": "Sing with Magdalene, it's a moment"
+      start: 174820,
+      end: 179800,
+      text: {en:"Sing with Magdalene, it's a moment", it:"Canta con Maddalena, è un momento"}
     },
     {
-      "start": 179800,
-      "end": 184760,
-      "text": "of light Sing with Magdalene, joy"
+      start: 179800,
+      end: 184760,
+      text: {en:"of light Sing with Magdalene, joy", it:"di luce Canta con Maddalena, gioia"}
     },
     {
-      "start": 184760,
-      "end": 187560,
-      "text": "transcending night"
+      start: 184760,
+      end: 187560,
+      text: {en:"transcending night", it:"che trascende la notte"}
     },
     {
-      "start": 190480,
-      "end": 194540,
-      "text": "Sing with Magdalene, it's a moment of light Joy"
+      start: 190480,
+      end: 194540,
+      text: {en:"Sing with Magdalene, it's a moment of light Joy", it:"Canta con Maddalena, è un momento di luce Gioia"}
     },
     {
-      "start": 194540,
-      "end": 198040,
-      "text": "transcending night, joy"
+      start: 194540,
+      end: 198040,
+      text: {en:"transcending night, joy", it:"che trascende la notte, gioia"}
     },
     {
-      "start": 198040,
-      "end": 208820,
-      "text": "transcending"
+      start: 198040,
+      end: 208820,
+      text: {en:"transcending", it:"che trascende"}
     },
     {
-      "start": 208820,
-      "end": 212960,
-      "text": "night Sing with Magdalene, sing"
+      start: 208820,
+      end: 212960,
+      text: {en:"night Sing with Magdalene, sing", it:"la notte Canta con Maddalena, canta"}
     },
     {
-      "start": 212960,
-      "end": 214500,
-      "text": "with Magdalene Sing with Magdalene, sing with Magdalene Thank you."
+      start: 212960,
+      end: 214500,
+      text: {en:"with Magdalene Sing with Magdalene, sing with Magdalene Thank you.", it:"con Maddalena Canta con Maddalena, canta con Maddalena Grazie."}
     }
   ];
 
@@ -1062,150 +1074,150 @@ export function DreamLyrics() {
 
 export function DreamLyrics2() {
   const lyrics = [
-    { start: 99, end: 14599, text: "(music)" },
+    { start: 99, end: 14599, text: { en: "(music)", it: "(musica)" } },
     {
       start: 14599,
       end: 18919,
-      text: "In the quiet hours, whispers of dreams take flight.",
+      text: { en: "In the quiet hours, whispers of dreams take flight.", it: "Nelle ore di silenzio, i sussurri dei sogni prendono il volo." },
     },
     {
       start: 21699,
       end: 25780,
-      text: "Gliding past the doubts that linger in the night.",
+      text: { en: "Gliding past the doubts that linger in the night.", it: "Scivolando oltre i dubbi che indugiano nella notte." },
     },
     {
       start: 28279,
       end: 33200,
-      text: "The moments won't take chance to wait, but hopes arise when",
+      text: { en: "The moments won't take chance to wait, but hopes arise when", it: "I momenti non aspettano, ma le speranze sorgono quando" },
     },
     {
       start: 33219,
       end: 37299,
-      text: "hearts create, and joy becomes the dawn we",
+      text: { en: "hearts create, and joy becomes the dawn we", it: "i cuori creano, e la gioia diventa l'alba che" },
     },
-    { start: 37380, end: 42220, text: "hesitate. The promise is cradled" },
+    { start: 37380, end: 42220, text: { en: "hesitate. The promise is cradled", it: "esitiamo. La promessa è cullata" } },
     {
       start: 42239,
       end: 46819,
-      text: "in the corridors of the heart. A dream is scribbled on the pages torn",
+      text: { en: "in the corridors of the heart. A dream is scribbled on the pages torn", it: "nei corridoi del cuore. Un sogno è scarabocchiato sulle pagine lacerate" },
     },
     {
       start: 46840,
       end: 51079,
-      text: "apart. A crescendo rises from ashes of",
+      text: { en: "apart. A crescendo rises from ashes of", it: "a pezzi. Un crescendo sorge dalle ceneri di" },
     },
-    { start: 51159, end: 55619, text: "despair, and stillness" },
+    { start: 51159, end: 55619, text: { en: "despair, and stillness", it: "disperazione, e il silenzio" } },
     {
       start: 55699,
       end: 60020,
-      text: "trembles with something rare. Dreams vibrate in",
+      text: { en: "trembles with something rare. Dreams vibrate in", it: "trema per qualcosa di raro. I sogni vibrano in" },
     },
     {
       start: 60099,
       end: 64799,
-      text: "vibrant colors. Dreams paint in hues the stars remember.",
+      text: { en: "vibrant colors. Dreams paint in hues the stars remember.", it: "colori vibranti. I sogni dipingono in tonalità che le stelle ricordano." },
     },
     {
       start: 65059,
       end: 69879,
-      text: "Dreams glow in sacred silence. Dreams drift where",
+      text: { en: "Dreams glow in sacred silence. Dreams drift where", it: "I sogni brillano nel silenzio sacro. I sogni fluttuano dove" },
     },
     {
       start: 69919,
       end: 74519,
-      text: "hope has ever been. A crescendo of dreams,",
+      text: { en: "hope has ever been. A crescendo of dreams,", it: "la speranza è sempre esistita. Un crescendo di sogni," },
     },
-    { start: 74519, end: 75960, text: "Magdalene." },
+    { start: 74519, end: 75960, text: { en: "Magdalene.", it: "Maddalena." } },
     {
       start: 81259,
       end: 85779,
-      text: "In vast length, dreams reach beyond the scene. Skies hold",
+      text: { en: "In vast length, dreams reach beyond the scene. Skies hold", it: "In ampiezza, i sogni raggiungono oltre la scena. I cieli custodiscono" },
     },
     {
       start: 85839,
       end: 90679,
-      text: "stories in trembling light. Stardust gathers like prayers in",
+      text: { en: "stories in trembling light. Stardust gathers like prayers in", it: "storie in luce tremante. La polvere di stelle si raccoglie come preghiere in" },
     },
     {
       start: 90739,
       end: 95459,
-      text: "motion, each step a hymn, each heart an ocean. A",
+      text: { en: "motion, each step a hymn, each heart an ocean. A", it: "movimento, ogni passo un inno, ogni cuore un oceano. Un" },
     },
     {
       start: 95479,
       end: 100040,
-      text: "crescendo of dreams, Magdalene. Dreams vibrate in",
+      text: { en: "crescendo of dreams, Magdalene. Dreams vibrate in", it: "crescendo di sogni, Maddalena. I sogni vibrano in" },
     },
     {
       start: 100099,
       end: 104839,
-      text: "vibrant colors. Dreams paint in hues the stars remember.",
+      text: { en: "vibrant colors. Dreams paint in hues the stars remember.", it: "colori vibranti. I sogni dipingono in tonalità che le stelle ricordano." },
     },
     {
       start: 105059,
       end: 109859,
-      text: "Dreams glow in sacred silence. Dreams drift where",
+      text: { en: "Dreams glow in sacred silence. Dreams drift where", it: "I sogni brillano nel silenzio sacro. I sogni fluttuano dove" },
     },
     {
       start: 109919,
       end: 114500,
-      text: "hope has ever been. A crescendo of dreams,",
+      text: { en: "hope has ever been. A crescendo of dreams,", it: "la speranza è sempre esistita. Un crescendo di sogni," },
     },
-    { start: 114519, end: 115559, text: "Magdalene." },
+    { start: 114519, end: 115559, text: { en: "Magdalene.", it: "Maddalena." } },
     {
       start: 120079,
       end: 124859,
-      text: "Carrying pieces of who we're meant to be, they",
+      text: { en: "Carrying pieces of who we're meant to be, they", it: "Portando pezzi di chi siamo destinati a essere, essi" },
     },
     {
       start: 124899,
       end: 129758,
-      text: "lead where fear and wonder meet. A destiny shaped in",
+      text: { en: "lead where fear and wonder meet. A destiny shaped in", it: "conducono dove paura e meraviglia si incontrano. Un destino plasmato in" },
     },
-    { start: 129878, end: 134159, text: "sacred design. Dreams" },
+    { start: 129878, end: 134159, text: { en: "sacred design. Dreams", it: "disegno sacro. I sogni" } },
     {
       start: 134239,
       end: 138839,
-      text: "vibrate in vibrant colors. Dreams paint in hues the stars",
+      text: { en: "vibrate in vibrant colors. Dreams paint in hues the stars", it: "vibrano in colori vivaci. I sogni dipingono in tonalità che le stelle" },
     },
     {
       start: 138860,
       end: 143199,
-      text: "remember. Dreams glow in sacred silence.",
+      text: { en: "remember. Dreams glow in sacred silence.", it: "ricordano. I sogni brillano nel sacro silenzio." },
     },
     {
       start: 143399,
       end: 147959,
-      text: "Dreams drift where hope has ever been. A",
+      text: { en: "Dreams drift where hope has ever been. A", it: "I sogni fluttuano dove la speranza è sempre esistita. Un" },
     },
     {
       start: 147979,
       end: 152979,
-      text: "crescendo of dreams, Magdalene. Dreams are the music that time cannot still,",
+      text: { en: "crescendo of dreams, Magdalene. Dreams are the music that time cannot still,", it: "crescendo di sogni, Maddalena. I sogni sono la musica che il tempo non può fermare," },
     },
     {
       start: 153019,
       end: 157199,
-      text: "each crescendo whispers her name, Magdalene.",
+      text: { en: "each crescendo whispers her name, Magdalene.", it: "ogni crescendo sussurra il suo nome, Maddalena." },
     },
-    { start: 165039, end: 174699, text: "(music)" },
+    { start: 165039, end: 174699, text: { en: "(music)", it: "(musica)" } },
     {
       start: 174699,
       end: 179540,
-      text: "Vibrate in vibrant colors. Dreams paint in hues the stars",
+      text: { en: "Vibrate in vibrant colors. Dreams paint in hues the stars", it: "Vibrano in colori vivaci. I sogni dipingono in tonalità che le stelle" },
     },
     {
       start: 179580,
       end: 183860,
-      text: "remember. Dreams glow in sacred silence.",
+      text: { en: "remember. Dreams glow in sacred silence.", it: "ricordano. I sogni brillano nel sacro silenzio." },
     },
     {
       start: 184099,
       end: 188679,
-      text: "Dreams drift where hope has ever been. A",
+      text: { en: "Dreams drift where hope has ever been. A", it: "I sogni fluttuano dove la speranza è sempre esistita. Un" },
     },
-    { start: 188699, end: 190752, text: "crescendo of dreams, Magdalene." },
-  ];
+    { start: 188699, end: 190752, text: { en: "crescendo of dreams, Magdalene.", it: "crescendo di sogni, Maddalena." } },
+    ];
   return lyrics;
 }
 
@@ -1683,45 +1695,45 @@ export function SingingBirdSongLyrics() {
 
 export function WeKnowLyrics(){
   const voiceOfMagdaleneLyrics = [
-    { start: 1220, end: 6059, text: "Bum bum baka. Bum zehn zehn. Bum bum" },
-    { start: 6059, end: 8460, text: "baka. Bum zehn zehn." },
-    { start: 8460, end: 35799, text: "(singing in Swahili)" },
-    { start: 35799, end: 41699, text: "We" },
-    { start: 41739, end: 46619, text: "feel her voice in the stars above. It calls us" },
-    { start: 46659, end: 51479, text: "home with sacred love. In every breeze," },
-    { start: 51500, end: 56099, text: "her song is near. A song of peace that" },
-    { start: 56119, end: 60619, text: "conquers fear. Oh, oh, oh, oh. We walk the" },
-    { start: 60659, end: 65579, text: "path, our hearts aligned. To find the voice we left behind." },
-    { start: 66680, end: 71500, text: "Oh, oh, oh, oh. The song of Magdalene we hold inside." },
-    { start: 71799, end: 76639, text: "When we are lost, it is our guide. Oh, oh, oh, oh." },
-    { start: 76900, end: 81720, text: "We are the ones who carry her flame. Telling" },
-    { start: 81779, end: 86639, text: "the story, keeping her name. Oh, oh, oh, oh." },
-    { start: 87319, end: 90079, text: "(singing in Swahili)" },
-    { start: 90919, end: 95279, text: "We know the song. Oh, oh, oh, oh." },
-    { start: 96839, end: 100279, text: "(singing in Swahili)" },
-    { start: 100639, end: 103460, text: "We know the song." },
-    { start: 105500, end: 110499, text: "(singing in Swahili)" },
-    { start: 110499, end: 115080, text: "We feel her voice in the stars above. It" },
-    { start: 115119, end: 119979, text: "calls us home with sacred love. Oh, oh. In every" },
-    { start: 120119, end: 125099, text: "breeze, her song is near. A song of peace that" },
-    { start: 125180, end: 129880, text: "conquers fear. Bum bum baka. We walk the path, our hearts aligned." },
-    { start: 130199, end: 134279, text: "To find the voice we left behind. Oh, oh, oh, oh." },
-    { start: 134520, end: 139259, text: "The song of Magdalene, we hold inside. When we are" },
-    { start: 139399, end: 144240, text: "lost, it is our guide. Oh, oh, oh, oh. We are the ones who carry" },
-    { start: 144300, end: 148960, text: "her flame. Telling the story, keeping her" },
-    { start: 149139, end: 151540, text: "name. Oh, oh, oh, oh." },
-    { start: 152179, end: 157119, text: "(singing in Swahili)." },
-    { start: 157179, end: 160259, text: "We know the song. Oh, oh, oh, oh." },
-    { start: 160259, end: 165119, text: "(singing in Swahili)" },
-    { start: 165500, end: 169879, text: "We know the song. Oh, oh, oh, oh." },
-    { start: 170379, end: 172620, text: "(singing in Swahili) Bum bum baka." },
-    { start: 172879, end: 177800, text: "We are the ones" },
-    { start: 177800, end: 181199, text: "who carry her flame. Telling the story, keeping her name." },
-    { start: 181800, end: 184079, text: "Oh, oh, oh, oh." },
-    { start: 185300, end: 188619, text: "(singing in Swahili)." },
-    { start: 190720, end: 192199, text: "We know the song." },
-    { start: 195800, end: 198479, text: "Bum bum baka. Bum zehn" },
-    { start: 198539, end: 204000, text: "zehn." }
+    { start: 1220, end: 6059, text: { en: "Bum bum baka. Bum zehn zehn. Bum bum", it: "Bum bum baka. Bum zehn zehn. Bum bum" } },
+    { start: 6059, end: 8460, text: { en: "baka. Bum zehn zehn.", it: "baka. Bum zehn zehn." } },
+    { start: 8460, end: 35799, text: { en: "(singing in Swahili)", it: "(cantato in swahili)" } },
+    { start: 35799, end: 41699, text: { en: "We", it: "Noi" } },
+    { start: 41739, end: 46619, text: { en: "feel her voice in the stars above. It calls us", it: "sentiamo la sua voce tra le stelle. Ci chiama" } },
+    { start: 46659, end: 51479, text: { en: "home with sacred love. In every breeze,", it: "a casa con amore sacro. In ogni brezza," } },
+    { start: 51500, end: 56099, text: { en: "her song is near. A song of peace that", it: "la sua canzone è vicina. Una canzone di pace che" } },
+    { start: 56119, end: 60619, text: { en: "conquers fear. Oh, oh, oh, oh. We walk the", it: "sconfigge la paura. Oh, oh, oh, oh. Camminiamo sul" } },
+    { start: 60659, end: 65579, text: { en: "path, our hearts aligned. To find the voice we left behind.", it: "sentiero, i nostri cuori allineati. Per trovare la voce che abbiamo lasciato indietro." } },
+    { start: 66680, end: 71500, text: { en: "Oh, oh, oh, oh. The song of Magdalene we hold inside.", it: "Oh, oh, oh, oh. La canzone di Maddalena che custodiamo dentro." } },
+    { start: 71799, end: 76639, text: { en: "When we are lost, it is our guide. Oh, oh, oh, oh.", it: "Quando siamo perduti, è la nostra guida. Oh, oh, oh, oh." } },
+    { start: 76900, end: 81720, text: { en: "We are the ones who carry her flame. Telling", it: "Siamo coloro che portano la sua fiamma. Raccontando" } },
+    { start: 81779, end: 86639, text: { en: "the story, keeping her name. Oh, oh, oh, oh.", it: "la storia, custodendo il suo nome. Oh, oh, oh, oh." } },
+    { start: 87319, end: 90079, text: { en: "(singing in Swahili)", it: "(cantato in swahili)" } },
+    { start: 90919, end: 95279, text: { en: "We know the song. Oh, oh, oh, oh.", it: "Conosciamo la canzone. Oh, oh, oh, oh." } },
+    { start: 96839, end: 100279, text: { en: "(singing in Swahili)", it: "(cantato in swahili)" } },
+    { start: 100639, end: 103460, text: { en: "We know the song.", it: "Conosciamo la canzone." } },
+    { start: 105500, end: 110499, text: { en: "(singing in Swahili)", it: "(cantato in swahili)" } },
+    { start: 110499, end: 115080, text: { en: "We feel her voice in the stars above. It", it: "Sentiamo la sua voce tra le stelle. Essa" } },
+    { start: 115119, end: 119979, text: { en: "calls us home with sacred love. Oh, oh. In every", it: "ci chiama a casa con amore sacro. Oh, oh. In ogni" } },
+    { start: 120119, end: 125099, text: { en: "breeze, her song is near. A song of peace that", it: "brezza, la sua canzone è vicina. Una canzone di pace che" } },
+    { start: 125180, end: 129880, text: { en: "conquers fear. Bum bum baka. We walk the path, our hearts aligned.", it: "sconfigge la paura. Bum bum baka. Camminiamo il sentiero, i nostri cuori allineati." } },
+    { start: 130199, end: 134279, text: { en: "To find the voice we left behind. Oh, oh, oh, oh.", it: "Per trovare la voce che abbiamo lasciato indietro. Oh, oh, oh, oh." } },
+    { start: 134520, end: 139259, text: { en: "The song of Magdalene, we hold inside. When we are", it: "La canzone di Maddalena, la custodiamo dentro. Quando siamo" } },
+    { start: 139399, end: 144240, text: { en: "lost, it is our guide. Oh, oh, oh, oh. We are the ones who carry", it: "persi, è la nostra guida. Oh, oh, oh, oh. Siamo coloro che portano" } },
+    { start: 144300, end: 148960, text: { en: "her flame. Telling the story, keeping her", it: "la sua fiamma. Raccontando la storia, custodendo il suo" } },
+    { start: 149139, end: 151540, text: { en: "name. Oh, oh, oh, oh.", it: "nome. Oh, oh, oh, oh." } },
+    { start: 152179, end: 157119, text: { en: "(singing in Swahili).", it: "(cantato in swahili)." } },
+    { start: 157179, end: 160259, text: { en: "We know the song. Oh, oh, oh, oh.", it: "Conosciamo la canzone. Oh, oh, oh, oh." } },
+    { start: 160259, end: 165119, text: { en: "(singing in Swahili)", it: "(cantato in swahili)" } },
+    { start: 165500, end: 169879, text: { en: "We know the song. Oh, oh, oh, oh.", it: "Conosciamo la canzone. Oh, oh, oh, oh." } },
+    { start: 170379, end: 172620, text: { en: "(singing in Swahili) Bum bum baka.", it: "(cantato in swahili) Bum bum baka." } },
+    { start: 172879, end: 177800, text: { en: "We are the ones", it: "Siamo coloro" } },
+    { start: 177800, end: 181199, text: { en: "who carry her flame. Telling the story, keeping her name.", it: "che portano la sua fiamma. Raccontando la storia, custodendo il suo nome." } },
+    { start: 181800, end: 184079, text: { en: "Oh, oh, oh, oh.", it: "Oh, oh, oh, oh." } },
+    { start: 185300, end: 188619, text: { en: "(singing in Swahili).", it: "(cantato in swahili)." } },
+    { start: 190720, end: 192199, text: { en: "We know the song.", it: "Conosciamo la canzone." } },
+    { start: 195800, end: 198479, text: { en: "Bum bum baka. Bum zehn", it: "Bum bum baka. Bum zehn" } },
+    { start: 198539, end: 204000, text: { en: "zehn.", it: "zehn." } }
   ];
 
   return voiceOfMagdaleneLyrics;
@@ -1890,143 +1902,142 @@ export function DilMeraLyrics() {
     {
       start: 8679,
       end: 13659,
-      text: "(भास्कार द्वारा मेरे दिल ने शुरू होता है) जब सुनी तेरी धुन पहली बार। पांव",
+      text: {en:"(भास्कार द्वारा मेरे दिल ने शुरू होता है) जब सुनी तेरी धुन पहली बार। पांव", it: "(Bhāskār dvārā mere dil ne śurū hotā hai) Jab sunī terī dhun pahilī bār. Pāṁv"},
     },
-    { start: 13699, end: 18599, text: "चले जैसे कोई त्योहार। हर धड़कन" },
-    { start: 18719, end: 23559, text: "जैसे कोई लौ। तेरी साजिश" },
+    { start: 13699, end: 18599, text: {en:"चले जैसे कोई त्योहार। हर धड़कन", it: "Come un festival. Ogni battito"} },
+    { start: 18719, end: 23559, text: {en:"जैसे कोई लौ। तेरी साजिश", it: "Come una fiamma. La tua cospirazione"} },
     {
       start: 23579,
       end: 28520,
-      text: "ने रू को खोला। Your voice surrounds me like",
+      text: {en:"ने रू को खोला। Your voice surrounds me like", it: "ha aperto la porta. La tua voce mi circonda come"},
     },
     {
       start: 28579,
       end: 33239,
-      text: "the breeze. It pulls me close with perfect ease. Every breath becomes a",
+      text: {en:"the breeze. It pulls me close with perfect ease. Every breath becomes a", it: "la brezza. Mi avvicina con perfetta facilità. Ogni respiro diventa una"},
     },
     {
       start: 33299,
       end: 38059,
-      text: "song. In your melody, I belong. मेरा दिल नाचे तेरे",
+      text: {en:"song. In your melody, I belong. मेरा दिल नाचे तेरे", it: "canzone. Nella tua melodia, appartengo. Il mio cuore danza al tuo"},
     },
     {
       start: 38119,
       end: 43099,
-      text: "गीत पे, म्हार दिले। हर धड़कन तुझसे जुड़ी",
+      text: {en:"गीत पे, म्हार दिले। हर धड़कन तुझसे जुड़ी", it: "canzone, il mio cuore. Ogni battito è connesso a te"},
     },
     {
       start: 43119,
       end: 47899,
-      text: "रहै (vocalisation). हर लफ्ज पर बहता जैसे धुन,",
+      text: {en:"रहै (vocalisation). हर लफ्ज पर बहता जैसे धुन,", it: "rimane (vocalizzazione). Ogni parola scorre come una melodia,"},
     },
     {
       start: 48139,
       end: 52240,
-      text: "तेरे सूरज से दिल धगे। Even when silence fills the air,",
+      text: {en:"तेरे सूरज से दिल धगे। Even when silence fills the air,", it: "il mio cuore è legato al tuo sole. Anche quando il silenzio riempie l'aria,"},
     },
     {
       start: 52279,
       end: 56839,
-      text: "Magdalene (Magdalene). My heart still dances to your song,",
+      text: {en:"Magdalene (Magdalene). My heart still dances to your song,", it: "Magdalene (Magdalene). Il mio cuore danza ancora alla tua canzone,"},
     },
     {
       start: 56899,
       end: 60919,
-      text: "Magdalene (Magdalene). I’ve heard, a thousand voices",
+      text: {en:"Magdalene (Magdalene). I’ve heard, a thousand voices", it: "Magdalene (Magdalene). Ho sentito, mille voci"},
     },
-    { start: 61000, end: 65279, text: "rise. The night could touch the glowing" },
-    { start: 65360, end: 70059, text: "skies. Your song remains, it stays, it" },
+    { start: 61000, end: 65279, text: {en:"rise. The night could touch the glowing", it: "salire. La notte potrebbe toccare il brillante"} },
+    { start: 65360, end: 70059, text: {en:"skies. Your song remains, it stays, it", it: "cieli. La tua canzone rimane, resta, si"} },
     {
       start: 70099,
       end: 74960,
-      text: "shines. A sacred fire in these lines. Your voice surrounds me like a breeze.",
+      text: {en:"shines. A sacred fire in these lines. Your voice surrounds me like a breeze.", it: "illumina. Un fuoco sacro in queste righe. La tua voce mi circonda come una brezza."},
     },
     {
       start: 75000,
       end: 79499,
-      text: "It pulls me close with perfect ease. Every breath becomes a song.",
+      text: {en:"It pulls me close with perfect ease. Every breath becomes a song.", it: "Mi avvicina con perfetta facilità. Ogni respiro diventa una canzone."},
     },
     {
       start: 79860,
       end: 84739,
-      text: "In your melody, I belong. मेरा दिल नाचे तेरे गीत पे,",
+      text: {en:"In your melody, I belong. मेरा दिल नाचे तेरे गीत पे,", it: "Nella tua melodia, appartengo. Il mio cuore danza alla tua canzone,"},
     },
     {
       start: 85019,
       end: 89299,
-      text: "म्हार दिले। हर दिले हर धड़कन तुझसे जुड़ी रहै",
+      text: {en:"म्हार दिले। हर दिले हर धड़कन तुझसे जुड़ी रहै", it: "il mio cuore. Ogni battito è connesso a te"},
     },
     {
       start: 89500,
       end: 94379,
-      text: "(vocalisation). हर लफ़्ज पर बहता जैसे धुन, तेरे सूरज",
+      text: {en:"(vocalisation). हर लफ़्ज पर बहता जैसे धुन, तेरे सूरज", it: "(vocalizzazione). Ogni parola scorre come una melodia, il tuo sole"},
     },
     {
       start: 94419,
       end: 99400,
-      text: "से दिल धगे। Even when silence fills the air, Magdalene (Magdalene)",
+      text: {en:"से दिल धगे। Even when silence fills the air, Magdalene (Magdalene)", it: "è legato al mio cuore. Anche quando il silenzio riempie l'aria, Magdalene (Magdalene)"},
     },
     {
       start: 99400,
       end: 103939,
-      text: ". My heart still dances to your song, Magdalene (Magdalene).",
+      text: {en:". My heart still dances to your song, Magdalene (Magdalene).", it: ". Il mio cuore danza ancora alla tua canzone, Magdalene (Magdalene)."},
     },
     {
       start: 105000,
       end: 109979,
-      text: "I’ve heard, a thousand voices rise. Your melody, through",
+      text: {en:"I’ve heard, a thousand voices rise. Your melody, through", it: "Ho sentito, mille voci salire. La tua melodia, attraverso"},
     },
-    { start: 110139, end: 114379, text: "joy all along. My heart never knew a" },
+    { start: 110139, end: 114379, text: {en:"joy all along. My heart never knew a", it: "gioia lungo. Il mio cuore non ha mai conosciuto una"} },
     {
       start: 114439,
       end: 118940,
-      text: "dance. Until your rhythm gave it a chance. Then every breath becomes a",
+      text: {en:"dance. Until your rhythm gave it a chance. Then every breath becomes a", it: "danza. Fino a quando il tuo ritmo gli ha dato una possibilità. Poi ogni respiro diventa una"},
     },
     {
       start: 119019,
       end: 123459,
-      text: "song. In your melody, I belong. मेरा दिल",
+      text: {en:"song. In your melody, I belong. मेरा दिल", it: "canzone. Nella tua melodia, appartengo. Il mio cuore"},
     },
     {
       start: 123559,
       end: 128359,
-      text: "नाचे तेरे गीत पे, म्हार दिले। हर दिले हर धड़कन",
+      text: {en:"नाचे तेरे गीत पे, म्हार दिले। हर दिले हर धड़कन", it: "danza alla tua canzone, il mio cuore. Ogni battito"},
     },
     {
       start: 128419,
       end: 133059,
-      text: "तुझसे जुड़ी रहै (vocalisation). हर लफ़्ज पर",
+      text: {en:"तुझसे जुड़ी रहै (vocalisation). हर लफ़्ज पर", it: "è connesso a te (vocalizzazione). Ogni parola"},
     },
     {
       start: 133059,
       end: 137500,
-      text: "बहता जैसे धुन, तेरे सूरज से दिल धगे। Even when",
+      text: {en:"बहता जैसे धुन, तेरे सूरज से दिल धगे। Even when", it: "scorre come una melodia, il tuo sole. Anche quando"},
     },
     {
       start: 137520,
       end: 142039,
-      text: "silence fills the air, Magdalene (Magdalene). My heart still",
+      text: {en:"silence fills the air, Magdalene (Magdalene). My heart still", it: "il silenzio riempie l'aria, Magdalene (Magdalene). Il mio cuore ancora"},
     },
     {
       start: 142139,
       end: 146580,
-      text: "dances to your song, Magdalene (Magdalene). I’ve heard,",
+      text: {en:"dances to your song, Magdalene (Magdalene). I’ve heard,", it: "danza alla tua canzone, Magdalene (Magdalene). Ho sentito,"},
     },
     {
       start: 146599,
       end: 151539,
-      text: "a thousand voices rise. The melody, through joy all along.",
+      text: {en:"a thousand voices rise. The melody, through joy all along.", it: "mille voci salire. La melodia, attraverso la gioia lungo."},
     },
     {
       start: 153279,
       end: 158160,
-      text: "पहाड़ ने कभी ना रुके मेरे दिल में। हर धड़कन",
+      text: {en:"पहाड़ ने कभी ना रुके मेरे दिल में। हर धड़कन", it: "Le montagne non si sono mai fermate nel mio cuore. Ogni battito"},
     },
-    { start: 158160, end: 162939, text: "में बस तू ही तू है। सदा के लिए" },
-    { start: 162979, end: 164600, text: "मैं तुझमें मग्न, म्हार" },
-    { start: 164720, end: 169584, text: "दिले। Magdalene" },
+    { start: 158160, end: 162939, text: {en:"में बस तू ही तू है। सदा के लिए", it: "è solo tu. Per sempre"} },
+    { start: 162979, end: 164600, text: {en:"मैं तुझमें मग्न, म्हार", it: "Sono immerso in te, il mio"} },
+    { start: 164720, end: 169584, text: {en:"दिले। Magdalene", it: "cuore. Magdalene"} },
   ];
-
   return hindiFusionLyrics;
 }
 
@@ -3701,117 +3712,117 @@ export function FiestaLyrics() {
     {
       start: 0,
       end: 19000,
-      text: "Luz en el aire, fuego en el pie, Magdalena canta — ven y cree, Canciones que duermen,",
+      text: {en:"Luz en el aire, fuego en el pie, Magdalena canta — ven y cree, Canciones que duermen,",it:"Luce nell'aria, fuoco nel piede, Maddalena canta — vieni e credi, Canzoni che dormono,"},
     },
     {
       start: 19000,
       end: 28000,
-      text: "en cuna de luz, Despiertan el alma, derriten la cruz. Fiesta del alma,",
+      text: {en: "en cuna de luz, Despiertan el alma, derriten la cruz. Fiesta del alma,",it:"in culla di luce, Risvegliano l'anima, sciolgono la croce. Festa dell'anima,"},
     },
     {
       start: 28000,
       end: 35000,
-      text: "sin miedo, sin fin, Canciones de Magda que viven en mí.",
+      text: {en:"sin miedo, sin fin, Canciones de Magda que viven en mí.", it:"senza paura, senza fine, Canzoni di Magda che vivono in me."},
     },
     {
       start: 35000,
       end: 41000,
-      text: "This is the party where heaven meets ground, Where timeless grace,",
+      text: {en:"This is the party where heaven meets ground, Where timeless grace,",it:"Questa è la festa dove il cielo incontra la terra, Dove la grazia senza tempo,"},
     },
     {
       start: 41000,
       end: 48000,
-      text: "becomes rhythm and sound. Baila sin sombra, con fuego y amor",
+      text: {en:"becomes rhythm and sound. Baila sin sombra, con fuego y amor", it:"divertiti senza ombra, con fuoco e amore" },
     },
     {
       start: 48000,
       end: 57000,
-      text: "Sus notas eternas nos llenan de flor, Dance with the songs she has placed in the light —",
+      text: {en:"Sus notas eternas nos llenan de flor, Dance with the songs she has placed in the light —", it:"Le sue note eterne ci riempiono di fiori, Balla con le canzoni che ha posto nella luce —" },
     },
     {
       start: 57000,
       end: 60000,
-      text: "A cradle of music that shines through the night.",
+      text: {en:"A cradle of music that shines through the night.", it:"Una culla di musica che brilla attraverso la notte."},
     },
     {
       start: 60000,
       end: 65000,
-      text: "This isn’t just rhythm — it’s songs from her hands,",
+      text: {en:"This isn’t just rhythm — it’s songs from her hands,",it:"Non è solo ritmo — sono canzoni dalle sue mani,"},
     },
     {
       start: 67000,
       end: 69000,
-      text: "Cradled in silence, now danced through the lands.",
+      text: {en:"Cradled in silence, now danced through the lands.", it:"Cullate nel silenzio, ora ballate attraverso le terre."},
     },
     {
       start: 71000,
       end: 74000,
-      text: "They echo like grace through the pulse of the beat,",
+      text: {en:"They echo like grace through the pulse of the beat,", it:"Echeggiano come grazia attraverso il battito del ritmo,"},
     },
     {
       start: 76000,
       end: 79000,
-      text: "A timeless embrace where the soul and sound meet.",
+      text: {en:"A timeless embrace where the soul and sound meet.", it:"Un abbraccio senza tempo dove l'anima e il suono si incontrano."},
     },
     {
       start: 80000,
       end: 84000,
-      text: "Fiesta del alma, sin miedo, sin fin,",
+      text: {en:"Fiesta del alma, sin miedo, sin fin,", it:"Festa dell'anima, senza paura, senza fine,"},
     },
     {
       start: 85000,
       end: 88000,
-      text: "Canciones de Magda que viven en mí.",
+      text: {en:"Canciones de Magda que viven en mí.", it:"Canzoni di Magda che vivono in me."},
     },
     {
       start: 89000,
       end: 93000,
-      text: "This is the party where heaven meets ground,",
+      text: {en:"This is the party where heaven meets ground,", it:"Questa è la festa dove il cielo incontra la terra,"},
     },
     {
       start: 94000,
       end: 98000,
-      text: "Where timeless grace becomes rhythm and sound.",
+      text: {en:"Where timeless grace becomes rhythm and sound.", it:"Dove la grazia senza tempo diventa ritmo e suono."},
     },
     {
       start: 99000,
       end: 102000,
-      text: "Baila sin sombra, con fuego y amor,",
+      text: {en:"Baila sin sombra, con fuego y amor,", it:"Divertiti senza ombra, con fuoco e amore" },
     },
     {
       start: 103000,
       end: 107000,
-      text: "Sus notas eternas nos llenan de flor.",
+      text: {en:"Sus notas eternas nos llenan de flor.", it:"Le sue note eterne ci riempiono di fiori."},
     },
     {
       start: 108000,
       end: 111000,
-      text: "Dance with the songs she has placed in the light —",
+      text: {en:"Dance with the songs she has placed in the light —", it:"Balla con le canzoni che ha posto nella luce —"},
     },
     {
       start: 112000,
       end: 117000,
-      text: "A cradle of music that shines through the night.",
+      text: {en:"A cradle of music that shines through the night.", it:"Una culla di musica che brilla attraverso la notte."},
     },
     {
       start: 118000,
       end: 126000,
-      text: "We don’t stop dancing when the silence arrives,",
+      text: {en:"We don’t stop dancing when the silence arrives,", it:"Non smettiamo di ballare quando arriva il silenzio,"},
     },
     {
       start: 127000,
       end: 132000,
-      text: "Her songs are still breathing, they keep us alive.",
+      text: {en:"Her songs are still breathing, they keep us alive.", it:"Le sue canzoni stanno ancora respirando, ci tengono in vita."},
     },
     {
       start: 133000,
       end: 145000,
-      text: "Magdalena… la gracia no se acaba.",
+      text: {en:"Magdalena… la gracia no se acaba.", it:"Maddalena… la grazia non finisce."},
     },
     {
       start: 146000,
       end: 170000,
-      text: "Magdalena… (Beat continues)",
+      text: {en:"Magdalena… (Beat continues)", it:"Maddalena… (Il ritmo continua)"},
     },
   ];
   return subtitles;
@@ -4638,81 +4649,81 @@ export function TakeMeLyrics(){
 
 export function SomewhereCountryLyrics() {
   const subtitles = [
-    { start: 0, end: 5000, text: "MUSIC" },
+    { start: 0, end: 5000, text: {en:"MUSIC", it:"MUSICA"} },
     {
       start: 5000,
       end: 8000,
-      text: "Somewhere in our hearts, you’re breathing,",
+      text: {en:"Somewhere in our hearts, you’re breathing,", it:"Da qualche parte nei nostri cuori, tu respiri,"},
     },
-    { start: 8000, end: 11000, text: "With the songs you left behind" },
-    { start: 11000, end: 14000, text: "Every note, a kind of healing," },
-    { start: 14000, end: 17000, text: "Playing softly through our minds" },
-    { start: 17000, end: 20000, text: "Though the silence now surrounds us" },
-    { start: 20000, end: 23000, text: "Your light hums through every part—" },
-    { start: 23000, end: 26000, text: "Like a prayer we keep repeating" },
-    { start: 26000, end: 28000, text: "You belong inside our heart" },
-    { start: 28000, end: 31000, text: "And when the world forgets to listen" },
-    { start: 31000, end: 34000, text: "We still hear your lullaby" },
-    { start: 34000, end: 37000, text: "You left a spark in all this quiet—" },
-    { start: 37000, end: 40000, text: "A voice that never says goodbye" },
+    { start: 8000, end: 11000, text: {en:"With the songs you left behind", it: "Con le canzoni che hai lasciato"} },
+    { start: 11000, end: 14000, text: {en:"Every note, a kind of healing,", it: "Ogni nota, una sorta di guarigione,"} },
+    { start: 14000, end: 17000, text: {en:"Playing softly through our minds", it: "Che suona dolcemente nelle nostre menti"} },
+    { start: 17000, end: 20000, text: {en:"Though the silence now surrounds us", it: "Anche se ora il silenzio ci circonda"} },
+    { start: 20000, end: 23000, text: {en:"Your light hums through every part—", it: "La tua luce vibra in ogni parte—"} },
+    { start: 23000, end: 26000, text: {en:"Like a prayer we keep repeating", it: "Come una preghiera che continuiamo a ripetere"} },
+    { start: 26000, end: 28000, text: {en:"You belong inside our heart", it: "Tu appartieni al nostro cuore"} },
+    { start: 28000, end: 31000, text: {en:"And when the world forgets to listen", it: "E quando il mondo dimentica di ascoltare"} },
+    { start: 31000, end: 34000, text: {en:"We still hear your lullaby", it: "Sentiamo ancora la tua ninna nanna"} },
+    { start: 34000, end: 37000, text: {en:"You left a spark in all this quiet—", it: "Hai lasciato una scintilla in tutto questo silenzio—"} },
+    { start: 37000, end: 40000, text: {en:"A voice that never says goodbye", it: "Una voce che non dice mai addio"} },
     {
       start: 40000,
       end: 43000,
-      text: "Somewhere in our hearts, you’re singing,",
+      text: {en:"Somewhere in our hearts, you’re singing,", it: "Da qualche parte nei nostri cuori, stai cantando,"},
     },
-    { start: 43000, end: 46000, text: "In the silence, clear and strong" },
-    { start: 46000, end: 49000, text: "Every breath a note still ringing," },
-    { start: 49000, end: 52000, text: "Every memory, a song." },
-    { start: 52000, end: 55000, text: "Though you're gone beyond the shadows" },
-    { start: 55000, end: 57000, text: "You've been here all along" },
-    { start: 57000, end: 59000, text: "Somewhere in our hearts" },
-    { start: 59000, end: 63000, text: "Magdalene and your songs belong." },
-    { start: 63000, end: 68000, text: "(MUSIC)" },
-    { start: 68000, end: 71000, text: "We still find you in the stillness," },
-    { start: 71000, end: 74000, text: "In a chord the world forgot." },
-    { start: 74000, end: 77000, text: "In the shimmer of forgiveness" },
-    { start: 77000, end: 80000, text: "In the quiet of a thought." },
-    { start: 80000, end: 82000, text: "Every echo feels like morning" },
-    { start: 82000, end: 85000, text: "Like the day you used to bring—" },
-    { start: 85000, end: 88000, text: "And we carry you inside us" },
-    { start: 88000, end: 91000, text: "Like the hush inside a string." },
+    { start: 43000, end: 46000, text: {en:"In the silence, clear and strong", it: "Nel silenzio, chiaro e forte"} },
+    { start: 46000, end: 49000, text: {en:"Every breath a note still ringing,", it: "Ogni respiro è una nota che risuona ancora,"} },
+    { start: 49000, end: 52000, text: {en:"Every memory, a song.", it: "Ogni ricordo, una canzone."} },
+    { start: 52000, end: 55000, text: {en:"Though you're gone beyond the shadows", it: "Anche se sei andata oltre le ombre"} },
+    { start: 55000, end: 57000, text: {en:"You've been here all along", it: "Sei sempre stata qui"} },
+    { start: 57000, end: 59000, text: {en:"Somewhere in our hearts", it: "Da qualche parte nei nostri cuori"} },
+    { start: 59000, end: 63000, text: {en:"Magdalene and your songs belong.", it: "Magdalene e le tue canzoni appartengono qui."} },
+    { start: 63000, end: 68000, text: {en:"(MUSIC)", it: "(MUSICA)"} },
+    { start: 68000, end: 71000, text: {en:"We still find you in the stillness,", it: "Ti troviamo ancora nella quiete,"} },
+    { start: 71000, end: 74000, text: {en:"In a chord the world forgot.", it: "In un accordo che il mondo ha dimenticato."} },
+    { start: 74000, end: 77000, text: {en:"In the shimmer of forgiveness", it: "Nel luccichio del perdono"} },
+    { start: 77000, end: 80000, text: {en:"In the quiet of a thought.", it: "Nella quiete di un pensiero."} },
+    { start: 80000, end: 82000, text: {en:"Every echo feels like morning", it: "Ogni eco sembra mattina"} },
+    { start: 82000, end: 85000, text: {en:"Like the day you used to bring—", it: "Come il giorno che portavi—"} },
+    { start: 85000, end: 88000, text: {en:"And we carry you inside us", it: "E ti portiamo dentro di noi"} },
+    { start: 88000, end: 91000, text: {en:"Like the hush inside a string.", it: "Come il silenzio dentro una corda."} },
     {
       start: 91000,
       end: 94000,
-      text: "Somewhere in our hearts, you’re singing,",
+      text: {en:"Somewhere in our hearts, you’re singing,", it: "Da qualche parte nei nostri cuori, stai cantando,"},
     },
-    { start: 94000, end: 97000, text: "In the silence, clear and strong" },
-    { start: 97000, end: 100000, text: "Every breath a note still ringing," },
-    { start: 100000, end: 103000, text: "Every memory, a song." },
+    { start: 94000, end: 97000, text: {en:"In the silence, clear and strong", it: "Nel silenzio, chiaro e forte"} },
+    { start: 97000, end: 100000, text: {en:"Every breath a note still ringing,", it: "Ogni respiro è una nota che risuona ancora,"} },
+    { start: 100000, end: 103000, text: {en:"Every memory, a song.", it: "Ogni ricordo, una canzone."} },
     {
       start: 103000,
       end: 106000,
-      text: "Though you're gone beyond the shadows",
+      text: {en:"Though you're gone beyond the shadows", it: "Anche se sei andata oltre le ombre"},
     },
-    { start: 106000, end: 108000, text: "You've been here all along" },
-    { start: 108000, end: 111000, text: "Somewhere in our hearts" },
-    { start: 111000, end: 114000, text: "Magdalene and your songs belong." },
-    { start: 114000, end: 125000, text: "MUSIC" },
+    { start: 106000, end: 108000, text: {en:"You've been here all along", it: "Sei sempre stata qui"} },
+    { start: 108000, end: 111000, text: {en:"Somewhere in our hearts", it: "Da qualche parte nei nostri cuori"} },
+    { start: 111000, end: 114000, text: {en:"Magdalene and your songs belong.", it: "Magdalene e le tue canzoni appartengono qui."} },
+    { start: 114000, end: 125000, text: {en:"MUSIC", it: "MUSICA"} },
     {
       start: 125000,
       end: 129000,
-      text: "Somewhere… Still singing in the dark.",
+      text: {en:"Somewhere… Still singing in the dark.", it: "Da qualche parte… Ancora cantando nel buio."},
     },
     {
       start: 129000,
       end: 135000,
-      text: "Somewhere… You’re cradled in our hearts.",
+      text: {en:"Somewhere… You’re cradled in our hearts.", it: "Da qualche parte… Sei cullata nei nostri cuori."},
     },
     {
       start: 135000,
       end: 142000,
-      text: "No goodbye just a song that lingers on",
+      text: {en:"No goodbye just a song that lingers on", it: "Nessun addio, solo una canzone che perdura"},
     },
-    { start: 142000, end: 144000, text: "Somewhere in our hearts" },
-    { start: 144000, end: 149000, text: "Magdalene  and your songs… belong." },
-    { start: 149000, end: 153000, text: "MUSIC" },
-    { start: 153000, end: 156000, text: "We still find you in the stillness Magdalene." },
-  ];
+    { start: 142000, end: 144000, text: {en:"Somewhere in our hearts", it: "Da qualche parte nei nostri cuori"} },
+    { start: 144000, end: 149000, text: {en:"Magdalene  and your songs… belong.", it: "Magdalene e le tue canzoni… appartengono qui."} },
+    { start: 149000, end: 153000, text: {en:"MUSIC", it: "MUSICA"} },
+    { start: 153000, end: 156000, text: {en:"We still find you in the stillness Magdalene.", it: "Ti troviamo ancora nella quiete, Maddalena."} },
+    ];
   return subtitles;
 }
 

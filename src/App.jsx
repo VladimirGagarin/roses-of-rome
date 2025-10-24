@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from 'react-router-dom'
 import Navs from './components/Header'
 import BannerHead from './components/Banner';
-import homePhoto from "./assets/images/banner_01.jpeg";
+import homePhoto from "./assets/images/official_flag.png";
 import './App.css';
 import AboutComponent from './components/About';
 import { useEffect, useState, useRef } from 'react';

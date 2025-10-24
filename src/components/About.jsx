@@ -1,5 +1,5 @@
-import Logo from "../assets/images/rorps.png";
-import Logo2 from "../assets/images/rorps2.png";
+import Logo from "../assets/images/transparent_logo.png";
+import Logo2 from "../assets/images/rorps0.png";
 import { useState, useEffect, useRef } from "react";
 import "./About.css"
 import { FaBell, FaUserPlus, FaWhatsapp } from "react-icons/fa";

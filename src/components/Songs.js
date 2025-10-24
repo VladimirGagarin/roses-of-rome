@@ -58,6 +58,17 @@ import KenyaSong1 from "../assets/audios/kenya_official.mp3";
 import  KenyaSong2 from "../assets/audios/kenya_duet.mp3";
 import KenyaSong3 from "../assets/audios/kenya_soft_vocal.mp3";
 import UndyingSong from "../assets/audios/undying.mp3";
+import OneLoveSong from "../assets/audios/onelove.mp3"; // cantabile album
+import IamMagdaleneSong from "../assets/audios/IamMagdalene-BCLjkyF3.mp3"; // SWM album
+import  ALifeToLiveSong from "../assets/audios/meg-CvwHBZ8H.mp3"; // SWM album
+import MyHeartDancesSong from "../assets/audios/mera-CnL_5UpW.mp3"; // SWM album
+import SomewhereCountrySong from "../assets/audios/somewhere-D2in_U3S.mp3" //SWM album
+import SingWithMagdaleneSong from "../assets/audios/swm-DS8X2-5o.mp3" // SWM album
+import WeKnowTheSong from "../assets/audios/tunaimba-CibnJc1u.mp3" // SWM album
+import DreamSong from "../assets/audios/dream-BlsUMwB5.mp3" // SWM album
+import FightSong from "../assets/audios/Fight_song-Sing With Magdalene.mp3" // SWM album
+import FiestaSong from "../assets/audios/Fiesta-CK_l3DnT.mp3" // SWM album
+import GOATSong from "../assets/audios/goat_1 (Cover).mp3" // Cantabile album
 
 // lyrics
 import {
@@ -102,6 +113,15 @@ import {
   CottolengoSistersDuetLyrics,
   ForeverLyrics,
   SingingBirdSongLyrics,
+  DreamLyrics2,
+  swmLyrics,
+  IamMegLyrics,
+  getLifeLyrics,
+  WeKnowLyrics,
+  DilMeraLyrics,
+  SomewhereCountryLyrics,
+  FightSongLyrics,
+  FiestaLyrics,
 } from "./SongData";
 
 // utils/songUUIDs.js
@@ -166,6 +186,47 @@ const SONG_UUIDS = {
   rorMusic_058: "p7q8r9s0-t1u2-3456-7890-678901234567",
   rorMusic_059: "q8r9s0t1-u2v3-4567-8901-789012345678",
   rorMusic_060: "r9s0t1u2-v3w4-5678-9012-890123456789",
+  // uuids from 61 -100
+  rorMusic_061: "fa1b2c3d-4e5f-6789-0abc-def123456789",
+  rorMusic_062: "0b1c2d3e-4f5a-6789-0bcd-ef1234567890",
+  rorMusic_063: "1c2d3e4f-5a6b-7890-1cde-f12345678901",
+  rorMusic_064: "2d3e4f5a-6b7c-8901-2def-123456789012",
+  rorMusic_065: "3e4f5a6b-7c8d-9012-3ef1-234567890123",
+  rorMusic_066: "4f5a6b7c-8d9e-0123-4f12-345678901234",
+  rorMusic_067: "5a6b7c8d-9e0f-1234-5g23-456789012345",
+  rorMusic_068: "6b7c8d9e-0f1g-2345-6h34-567890123456",
+  rorMusic_069: "7c8d9e0f-1g2h-3456-7i45-678901234567",
+  rorMusic_070: "8d9e0f1g-2h3i-4567-8j56-789012345678",
+  rorMusic_071: "9e0f1g2h-3i4j-5678-9k67-890123456789",
+  rorMusic_072: "0f1g2h3i-4j5k-6789-0l78-901234567890",
+  rorMusic_073: "1g2h3i4j-5k6l-7890-1m89-012345678901",
+  rorMusic_074: "2h3i4j5k-6l7m-8901-2n90-123456789012",
+  rorMusic_075: "3i4j5k6l-7m8n-9012-3o01-234567890123",
+  rorMusic_076: "4j5k6l7m-8n9o-0123-4p12-345678901234",
+  rorMusic_077: "5k6l7m8n-9o0p-1234-5q23-456789012345",
+  rorMusic_078: "6l7m8n9o-0p1q-2345-6r34-567890123456",
+  rorMusic_079: "7m8n9o0p-1q2r-3456-7s45-678901234567",
+  rorMusic_080: "8n9o0p1q-2r3s-4567-8t56-789012345678",
+  rorMusic_081: "9o0p1q2r-3s4t-5678-9u67-890123456789",
+  rorMusic_082: "0p1q2r3s-4t5u-6789-0v78-901234567890",
+  rorMusic_083: "1q2r3s4t-5u6v-7890-1w89-012345678901",
+  rorMusic_084: "2r3s4t5u-6v7w-8901-2x90-123456789012",
+  rorMusic_085: "3s4t5u6v-7w8x-9012-3y01-234567890123",
+  rorMusic_086: "4t5u6v7w-8x9y-0123-4z12-345678901234",
+  rorMusic_087: "5u6v7w8x-9y0z-1234-5a23-456789012345",
+  rorMusic_088: "6v7w8x9y-0z1a-2345-6b34-567890123456",
+  rorMusic_089: "7w8x9y0z-1a2b-3456-7c45-678901234567",
+  rorMusic_090: "8x9y0z1a-2b3c-4567-8d56-789012345678",
+  rorMusic_091: "9y0z1a2b-3c4d-5678-9e67-890123456789",
+  rorMusic_092: "0z1a2b3c-4d5e-6789-0f78-901234567890",
+  rorMusic_093: "1a2b3c4d-5e6f-7890-1g89-012345678901",
+  rorMusic_094: "2b3c4d5e-6f7g-8901-2h90-123456789012",
+  rorMusic_095: "3c4d5e6f-7g8h-9012-3i01-234567890123",
+  rorMusic_096: "4d5e6f7g-8h9i-0123-4j12-345678901234",
+  rorMusic_097: "5e6f7g8h-9i0j-1234-5k23-456789012345",
+  rorMusic_098: "6f7g8h9i-0j1k-2345-6l34-567890123456",
+  rorMusic_099: "7g8h9i0j-1k2l-3456-7m45-678901234567",
+  rorMusic_100: "8h9i0j1k-2l3m-4567-8n56-789012345678",
   
 };
 
@@ -760,6 +821,116 @@ export function RosesOfRomeSongs() {
       songLyrics: [],
       songAlbum: "Cantabile",
     },
+    {
+      songId: SONG_UUIDS.rorMusic_061,
+      songFile: OneLoveSong,
+      songName: {
+        en: "One Love",
+        it: "Un solo amore",
+      },
+      songLyrics: [],
+      songAlbum: "Cantabile",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_062,
+      songFile: IamMagdaleneSong,
+      songName: {
+        en: "I am Magdalene",
+        it: "Io sono Maddalena",
+      },
+      songLyrics: IamMegLyrics(),
+      songAlbum: "SWM",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_063,
+      songFile: ALifeToLiveSong,
+      songName: {
+        en: "A Life To Live",
+        it: "Una vita da vivere",
+      },
+      songLyrics: getLifeLyrics(),
+      songAlbum: "SWM",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_064,
+      songFile: MyHeartDancesSong,
+      songName: {
+        en: "My Heart Dances to your song",
+        it: "Il mio cuore danza alla tua canzone",
+      },
+      songLyrics: DilMeraLyrics(),
+      songAlbum: "SWM",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_065,
+      songFile: SomewhereCountrySong,
+      songName: {
+        en: "Somewhere (Country version)",
+        it: "Da qualche parte (Versione country)",
+      },  
+      songLyrics: SomewhereCountryLyrics(),
+      songAlbum: "SWM",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_066,
+      songFile: WeKnowTheSong,
+      songName: {
+        en: "We Know The Song (Tunaimba nyimbo)",
+        it: "Conosciamo la canzone (Tunaimba nyimbo)",
+      },
+      songLyrics: WeKnowLyrics(),
+      songAlbum: "SWM",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_067,
+      songFile: SingWithMagdaleneSong,
+      songName: {
+        en: "Sing With Magdalene (Courage) ",
+        it: "Canta con Maddalena  (Coraggio) ",
+      },
+      songLyrics: swmLyrics(),
+      songAlbum: "SWM",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_068,
+      songFile: DreamSong,
+      songName: {
+        en: "A Crescendo Of Dreams",
+        it: "Un Crescendo Di Sogni",
+      },
+      songLyrics: DreamLyrics2(),
+      songAlbum: "SWM",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_069,
+      songFile: FightSong,
+      songName: {
+        en: "Fight Song",
+        it: "Canzone di lotta",
+      },
+      songLyrics: FightSongLyrics(),
+      songAlbum: "SWM",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_070,
+      songFile: FiestaSong,
+      songName: {
+        en: "Fiesta Del alma sin miedo sin fin",
+        it: "Fiesta Del alma sin miedo sin fin",
+      },
+      songLyrics: FiestaLyrics(),
+      songAlbum: "SWM",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_071,
+      songFile: GOATSong,
+      songName: {
+        en: "GOAT - Greatest Of All Time",
+        it: "GOAT - Il più grande di tutti i tempi",
+      },
+      songLyrics: [],
+      songAlbum: "Cantabile",
+    }
 
     //  {
     //     songId:SONG_UUIDS.rorMusic_034,
