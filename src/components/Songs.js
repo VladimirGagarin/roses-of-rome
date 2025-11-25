@@ -69,6 +69,11 @@ import DreamSong from "../assets/audios/dream-BlsUMwB5.mp3" // SWM album
 import FightSong from "../assets/audios/Fight_song-Sing With Magdalene.mp3" // SWM album
 import FiestaSong from "../assets/audios/Fiesta-CK_l3DnT.mp3" // SWM album
 import GOATSong from "../assets/audios/goat_1 (Cover).mp3" // Cantabile album
+import AgesOfPower from "../assets/audios/Ages of Power.mp3" // Cantabile album
+import NumbersDontLie from "../assets/audios/numbers dont  lie (1).mp3" // Cantabile album
+import NumbersDontLieRMX from "../assets/audios/numbers dont  lie_remix.mp3" // Cantabile album
+import YouAreMySunshine from "../assets/audios/sunshine (1).mp3" // Figli album
+
 
 // lyrics
 import {
@@ -930,6 +935,46 @@ export function RosesOfRomeSongs() {
       },
       songLyrics: [],
       songAlbum: "Cantabile",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_072,
+      songFile: AgesOfPower,
+      songName: {
+        en: "Ages of Power",
+        it: "Ere del Potere",
+      },
+      songLyrics: [],
+      songAlbum: "Cantabile",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_073,
+      songFile: NumbersDontLie,
+      songName: {
+        en: "Numbers Don't Lie",
+        it: "I numeri non mentono",
+      },
+      songLyrics: [],
+      songAlbum: "Cantabile",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_074,
+      songFile: NumbersDontLieRMX,
+      songName: {
+        en: "Numbers Don't Lie (RMX)",
+        it: "I numeri non mentono (RMX)",
+      },
+      songLyrics: [],
+      songAlbum: "Cantabile",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_075,
+      songFile: YouAreMySunshine,
+      songName: {
+        en: "You Are My Sunshine",
+        it: "Tu sei il mio sole",
+      },
+      songLyrics: [],
+      songAlbum: "Figli",
     }
 
     //  {
