@@ -73,6 +73,14 @@ import AgesOfPower from "../assets/audios/Ages of Power.mp3" // Cantabile album
 import NumbersDontLie from "../assets/audios/numbers dont  lie (1).mp3" // Cantabile album
 import NumbersDontLieRMX from "../assets/audios/numbers dont  lie_remix.mp3" // Cantabile album
 import YouAreMySunshine from "../assets/audios/sunshine (1).mp3" // Figli album
+import ToughSongFemale from "../assets/audios/when tough gets going.mp3" // Disney-Motivated
+import ToughSongMale from "../assets/audios/the tough gets going.mp3" // Disney-Motivated
+import ToughSongGerman from "../assets/audios/the tough gets going (Cover)-german.mp3"; // Disney-Motivated
+import ToughSongSpanish from "../assets/audios/the tough gets going (Cover) (1)-spanish.mp3"; // Disney-Motivated
+import ToughSongArabic from  "../assets/audios/the tough gets going (Cover)-arabic.mp3"; // Disney-Motivated
+import ToughSongFrench from "../assets/audios/the tough gets going (Cover)- french.mp3" ; // Disney-Motivated
+import ToughSongJapanese from "../assets/audios/the tough gets going (Cover) (1)-japanese.mp3"; // Disney-Motivated
+import ToughSongSwahili from "../assets//audios/the tough gets going (Cover) (1)-swahili.mp3"; // Disney-Motivated
 
 
 // lyrics
@@ -975,10 +983,90 @@ export function RosesOfRomeSongs() {
       },
       songLyrics: [],
       songAlbum: "Figli",
-    }
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_076,
+      songFile: ToughSongFemale,
+      songName: {
+        en: "When the going gets tough (Female Version)",
+        it: "Quando le cose si fanno difficili (Versione femminile)"
+      },
+      songLyrics: [],
+      songAlbum: "Disney"
+    },
+     {
+      songId: SONG_UUIDS.rorMusic_077,
+      songFile: ToughSongMale,
+      songName: {
+        en: "When the going gets tough (Male Version)",
+        it: "Quando le cose si fanno difficili (Versione maschile)"
+      },
+      songLyrics: [],
+      songAlbum: "Disney"
+    },
+     {
+      songId: SONG_UUIDS.rorMusic_078,
+      songFile: ToughSongGerman,
+      songName: {
+        en: "When the going gets tough (German Version)",
+        it: "Quando le cose si fanno difficili (Versione tedesca)"
+      },
+      songLyrics: [],
+      songAlbum: "Disney"
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_079,
+      songFile: ToughSongSpanish,
+      songName: {
+        en: "When the going gets tough (Spanish Version)",
+        it: "Quando le cose si fanno difficili (Versione spagnola)"
+      },
+      songLyrics: [],
+      songAlbum: "Disney"
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_080,
+      songFile: ToughSongArabic,
+      songName: {
+        en: "When the going gets tough (Arabic Version)",
+        it: "Quando le cose si fanno difficili (Versione araba)"
+      },
+      songLyrics: [],
+      songAlbum: "Disney"
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_081,
+      songFile: ToughSongJapanese,
+      songName: {
+        en: "When the going gets tough (Japanese Version)",
+        it: "Quando le cose si fanno difficili (Versione giapponese)"
+      },
+      songLyrics: [],
+      songAlbum: "Disney"
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_082,
+      songFile: ToughSongSwahili,
+      songName: {
+        en: "When the going gets tough (Swahili Version)",
+        it: "Quando le cose si fanno difficili (Versione swahili)"
+      },
+      songLyrics: [],
+      songAlbum: "Disney"
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_083,
+      songFile: ToughSongFrench,
+      songName: {
+        en: "When the going gets tough (French Version)",
+        it: "Quando le cose si fanno difficili (Versione francese)"
+      },
+      songLyrics: [],
+      songAlbum: "Disney"
+    },
 
     //  {
-    //     songId:SONG_UUIDS.rorMusic_034,
+    //     songId: SONG_UUIDS.rorMusic_034,
     //     songFile: ForeverBlessed,
     //     songName: {
     //       en: "Forever Blessed",
