@@ -8,7 +8,7 @@ import  HomeScreen from './pages/HomeScreen.jsx';
 import VideoScreen from './pages/VideoScreen.jsx';
 import PlaylistScreen from './pages/PlaylistScreen.jsx';
 import ShortsScreen from './pages/Shorts.jsx';
-import SearchScreen from './pages/Search.jsx';
+import MoreInfo from './pages/Search.jsx';
 import VideoPlayerScreen from "./pages/VideoPlayerScreen.jsx";
 import ShareScreen from './pages/ShareScreen.jsx';
 import EmbedSong from './pages/EmbededSong.jsx';
@@ -22,7 +22,7 @@ const routes = createHashRouter([
       { path: "pages/videos", element: <VideoScreen /> },
       { path: "pages/playlist", element: <PlaylistScreen /> },
       { path: "pages/shorts", element: <ShortsScreen /> },
-      { path: "pages/notifications", element: <SearchScreen /> },
+      { path: "pages/logo-emblem", element: <MoreInfo /> },
       { path: "pages/vid/:id", element: <VideoPlayerScreen /> },
     ],
   },

@@ -7,7 +7,7 @@ import ItalianTwo from "../assets/audios/italianrome2.mp3";
 import Hybrid from "../assets/audios/hybrid2.mp3";
 import HybridTwo from "../assets/audios/hybrid3.mp3";
 import SupriseSong from "../assets/audios/yourome.mp3";
-import { SupriseSongLyrics, TheVision , TheSonnet, ThePrayer, OurMotive } from "../components/Utils";
+import { SupriseSongLyrics, TheVision , TheSonnet, ThePrayer, OurMotive, Theme } from "../components/Utils";
 import { useLanguage } from "../components/LanguageContext";
 import { useRef, useEffect, useState } from "react";
 import BgImg from "../assets/images/txt_bg.jpg";
@@ -23,6 +23,7 @@ import PrayerSong from "../assets/audios/prayer.mp3";
 import PrayerSongSoftVersion from "../assets/audios/prayer_soft.mp3";
 import Instrumental from "../assets/audios/rome2[music].mp3";
 import MotiveSong from "../assets/audios/motive.mp3";
+import ThemeSong from "../assets/audios/theme_song.wav"
 
 import "../index.css";
 
@@ -175,15 +176,15 @@ export default function HomeScreen() {
 
   const audioTitles = {
     romeOne: {
-      en: "Roses Of Rome Sonnet Version",
+      en: "The Bloong Sonnet Version",
       it: "Rose di Roma Sonneto Versione",
     },
     romeTwo: {
-      en: "Roses Of Rome Anthem (Epic Version)",
+      en: "The Blooming Sonnet",
       it: "Rose di Roma Inno (Versione Epica)",
     },
     hybrid: {
-      en: "Roses Of Rome Anthem Duet (Male)",
+      en: "The Blooming Anthem Duet (Male)",
       it: "Rose di Roma Inno Duetto (Male)",
     },
     hybrid2: {
@@ -193,6 +194,11 @@ export default function HomeScreen() {
     Inst: {
       en: "Anthem Instrumental",
       it: "Instrumentale Inno"
+    },
+
+    theme:{
+      en: "Our Theme Song",
+      it: ""
     }
   };
 
@@ -266,6 +272,14 @@ export default function HomeScreen() {
         <AudioComponent
           audioFile={language === "it" ? ItalianOne : RomeOne}
           title={audioTitles.romeOne[language]}
+        />
+      </div>
+
+      <Sonnet magic={Theme()} />
+      <div className="audio-wrapper">
+        <AudioComponent
+          audioFile={ThemeSong}
+          title={audioTitles.theme[language]}
         />
       </div>
 

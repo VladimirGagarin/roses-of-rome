@@ -10,7 +10,7 @@ import AudioComponent from "./AudioPlayer";
 import { AboutRosesLyrics } from "../components/SongData";
 import SurpriseOverlay from "./SurpriseOverlay.jsx";
 import BgImg from "../assets/images/wh_sonnet_bg.jpg";
-
+import RosesLogo from "../assets/images/ros_pic.png"
 
 
 export default function AboutComponent() {
@@ -208,6 +208,11 @@ export default function AboutComponent() {
 
     };
 
+    const showMoreInfo = () => {
+      navigate("/pages/logo-emblem")
+      setIsShowingMore(true)
+    }
+
     return (
       <div className="about-container">
         <div className="left-side-about" onClick={() => navigate("/")}>
@@ -228,7 +233,7 @@ export default function AboutComponent() {
                 : allTexts.introText.it}
 
               <button
-                onClick={() => setIsShowingMore(true)}
+                onClick={() => showMoreInfo()}
                 disabled={showMore}
               >
                 {language === "en" ? "Read" : "Leggi"}

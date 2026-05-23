@@ -1,6 +1,6 @@
 export function TheSonnet() {
   const sonnet = {
-    title: { en: "Our Anthem", it: "Il Nostro Inno" },
+    title: { en: "Our Anthem - Blooming Sonnet", it: "Il Nostro Inno" },
     verses: [
       {
         type: "verse",
@@ -1312,4 +1312,185 @@ export function ThePrayer() {
   };
 
   return sonnet;
+}
+
+
+export function Theme() {
+  const OurTheme = {
+    title: {en: "Our Theme", it: ""},
+    verses: [
+      {
+        type: "verse",
+        verse: [
+          {
+            lineId: 1,
+            en: "The time has come, feel the light again",
+            it: "",
+          },
+          {
+            lineId: 2,
+            en: "From silent nights, our dreams now shine",
+            it: "",
+          },
+          {
+            lineId: 3,
+            en: "No more waiting, the morning is clear",
+            it: "",
+          },
+          {
+            lineId: 4,
+            en: "On this day, our moment is here—",
+            it: "",
+          },
+          {
+            lineId: 5,
+            en: "the time to bloom is finally here",
+            it: "",
+          }
+        ]
+      },
+     {
+        type: "verse",
+        verse: [
+          {
+            lineId: 6,
+            en: "Our dream begins, the world is listening",
+            it: "",
+          },
+          {
+            lineId: 7,
+            en: "From every heart, hear our song!",
+            it: "",
+          },
+          {
+            lineId: 8,
+            en: "This is more than just a dream we're sharing—",
+            it: "",
+          },
+          {
+            lineId: 9,
+            en: "We will dream and share our hope for all!",
+            it: "",
+          }
+        ]
+      },
+      {
+        type: "chorus",
+        verse: [
+          {
+            lineId: 1,
+            en: "Let us bloom forever",
+            it: "",
+          },
+          {
+            lineId: 2,
+            en: "AETERNUM FLOREAMUS!",
+            it: "",
+          },
+          {
+            lineId: 3,
+            en: "In our hearts, we will grow stronger",
+            it: "",
+          },
+          {
+            lineId: 4,
+            en: "In our lifetime, we will always bloom",
+            it: "",
+          },
+          {
+            lineId: 4,
+            en: "May we bloom forever, together",
+            it: "",
+          },
+          {
+            lineId: 6,
+            en: "AETERNUM FLOREAMUS!",
+            it: "",
+          }
+        ]
+      },
+      {
+        type: "verse",
+        verse: [
+          {
+            lineId: 11,
+            en: "The time we bloom, the world grows brighter",
+            it: "",
+          },
+          {
+            lineId: 12,
+            en: "Every moment feels like a dream",
+            it: "",
+          },
+          {
+            lineId: 13,
+            en: "Hope turns shadows into light",
+            it: "",
+          },
+          {
+            lineId: 14,
+            en: "And shows us where we belong",
+            it: "",
+          },
+          {
+            lineId: 15,
+            en: "Today our hearts finally belong",
+            it: "",
+          }
+        ]
+      },
+      {
+        type: "verse",
+        verse: [
+          {
+            lineId: 21,
+            en: "Close your eyes, feel the morning glow",
+            it: "",
+          },
+          {
+            lineId: 22,
+            en: "Every dream begins to grow",
+            it: "",
+          },
+          {
+            lineId: 23,
+            en: "Hand in hand, we light the day",
+            it: "",
+          },
+          {
+            lineId: 24,
+            en: "Kindness leading every way",
+            it: "",
+          }
+        ]
+      },
+      {
+        type: "verse",
+        verse: [
+          {
+            lineId: 21,
+            en: "May we bloom forever, together",
+            it: "",
+          },
+          {
+            lineId: 22,
+            en: "Side by side, now and always",
+            it: "",
+          },
+          {
+            lineId: 23,
+            en: "Let the world remember our dream",
+            it: "",
+          },
+          {
+            lineId: 24,
+            en: "AETERNUM FLOREAMUS",
+            it: "",
+          }
+        ]
+      }
+    ]
+  }
+
+  return OurTheme;
 }

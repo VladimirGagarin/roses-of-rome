@@ -81,6 +81,7 @@ import ToughSongArabic from  "../assets/audios/the tough gets going (Cover)-arab
 import ToughSongFrench from "../assets/audios/the tough gets going (Cover)- french.mp3" ; // Disney-Motivated
 import ToughSongJapanese from "../assets/audios/the tough gets going (Cover) (1)-japanese.mp3"; // Disney-Motivated
 import ToughSongSwahili from "../assets//audios/the tough gets going (Cover) (1)-swahili.mp3"; // Disney-Motivated
+import ThemeSong from "../assets/audios/theme_song.wav"
 
 
 // lyrics
@@ -1064,6 +1065,14 @@ export function RosesOfRomeSongs() {
       songLyrics: [],
       songAlbum: "Disney"
     },
+    {
+      songId: SONG_UUIDS.rorMusic_084,
+      songFile: ThemeSong,
+      songName: { en: "Our Theme Song", it: "" },
+      songLyrics: [],
+      songAlbum: "Rosa",
+      songLink: "",
+    }
 
     //  {
     //     songId: SONG_UUIDS.rorMusic_034,

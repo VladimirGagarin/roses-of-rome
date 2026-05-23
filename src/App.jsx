@@ -1,7 +1,6 @@
 import { Outlet, useLocation } from 'react-router-dom'
 import Navs from './components/Header'
 import BannerHead from './components/Banner';
-import homePhoto from "./assets/images/official_flag.png";
 import './App.css';
 import AboutComponent from './components/About';
 import { useEffect, useState, useRef } from 'react';
@@ -17,6 +16,7 @@ import {
 import SurpriseOverlay from "./components/SurpriseOverlay";
 import BgImg from "./assets/images/txt_bg.jpg";
 import LoadingPage from "./components/LoadingPage";
+import RosesLogo from "./assets/images/ros_pic.png"
 
 function App() {
   const { setLanguage, language } = useLanguage();
@@ -234,7 +234,7 @@ function App() {
   ) : (
     <div className="app-container">
       <header>
-        <BannerHead mediaType="image" src={homePhoto} alt="Roses of Rome" />
+        <BannerHead mediaType="image" src={RosesLogo} alt="Roses of Rome" />
         <AboutComponent />
         {isFromStart && (
           <div className="audio-wrapper">

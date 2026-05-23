@@ -1,8 +1,9 @@
-import { FaHome, FaVideo, FaListUl, FaBolt, FaBell } from "react-icons/fa";
+import { FaHome, FaVideo, FaListUl, FaBolt, FaInfo } from "react-icons/fa";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./Header.css";
 import { useLanguage } from "./LanguageContext";
 import { useState, useEffect } from "react";
+
 
 export default function Navs() {
   const navigate = useNavigate();
@@ -50,14 +51,14 @@ export default function Navs() {
       icon: <FaBolt />,
       path: "/pages/shorts",
     },
-    // {
-    //   tabName: {
-    //     en: "Notifications",
-    //     it: "Notifiche",
-    //   },
-    //   icon: <FaBell />,
-    //   path: "/pages/notifications",
-    // },
+    {
+      tabName: {
+        en: "About",
+        it: "Informazioni",
+      },
+      icon: <FaInfo />,
+      path: "/pages/about",
+    },
   ];
 
   const shouldShowNav = tabs.some(

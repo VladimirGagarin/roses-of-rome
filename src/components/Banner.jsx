@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import Quotes from "./Quotes";
 import { useState } from 'react';
 
+
 export default function BannerHead({
   mediaType = "image",
   src,
