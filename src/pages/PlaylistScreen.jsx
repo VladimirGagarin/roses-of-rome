@@ -9,9 +9,11 @@ import BgImg2 from "../assets/images/txt_bg2.jpg";
 import BgImg3 from "../assets/images/txt_bg3.jpg";
 import BgImg4 from "../assets/images/txt_bg4.jpg";
 import BgImg5 from "../assets/images/txt_bg5.jpg";
-import "../App.css";
+
+import "./Playlistscreen.css";
 import AlbumFilter from "../components/Album.jsx";
 import {useLocation, useNavigate} from "react-router-dom";
+
 
 
 
@@ -43,6 +45,8 @@ export default function PlaylistScreen() {
   const [audioState, setAudioState] = useState({});
   const [currentImg, setCurrentImg] = useState(0);
   const [isOnline, setIsOnline] = useState(navigator.onLine);
+  const [currentSong, setCurrentSong] = useState(null);
+  const [isGridAllowed, setIsGridAllowed] = useState(true); // Example breakpoint for grid layout
   const bgsImg = [BgImg, BgImg2, BgImg3, BgImg4, BgImg5];
 
   // Album descriptions with improved clarity, consistency, and completeness
@@ -78,6 +82,18 @@ export default function PlaylistScreen() {
    Splendore: {
       en: "From 'Your Favorites' — a radiant bouquet of the songs closest to your heart.",
       it: "Da 'I tuoi preferiti' — un radioso bouquet dei brani più vicini al tuo cuore."
+    },
+    Sports: {
+      en: "From the album 'Sports' — energetic and uplifting tracks to inspire movement and joy.",
+      it: "Dalla raccolta 'Sports' — brani energici e stimolanti per ispirare movimento e gioia."
+    },
+    Melodia: {
+      en: "From the album 'Melodia' — a harmonious blend of melodies that soothe the soul and uplift the spirit.",
+      it: "Dalla raccolta 'Melodia' — un'armoniosa miscela di melodie che leniscono l'anima e elevano lo spirito."
+    },
+    Disney: {
+      en: "From the album 'Disney' — magical songs that bring the enchantment of Disney to life.",  
+      it: "Dalla raccolta 'Disney' — brani magici che portano l'incanto di Disney alla vita."
     }
 
   };
@@ -168,6 +184,7 @@ export default function PlaylistScreen() {
 
   const handleShareClick = (song, event) => {
     setCurrentSongForShare(song);
+    event.stopPropagation(); // Prevent triggering other click events
     setShareMenuPosition({
       x: event.clientX,
       y: event.clientY,
@@ -394,7 +411,8 @@ export default function PlaylistScreen() {
     closeShareMenu();
   };
 
-  const handleMerito = (song) => {
+  const handleMerito = (song, event) => {
+    event.stopPropagation(); // Prevent triggering other click events
     // Handle direction to youtube  on blank page
     if (song && song.songLink) {
       window.open(song.songLink, "_blank");
@@ -479,6 +497,34 @@ export default function PlaylistScreen() {
                 {language === "it" ? "Svuota questo album" : "Clear this album"}
               </button>
             )}
+            <button
+              className="share-button"
+              onClick={() => {
+                setIsGridAllowed((prev) => !prev);
+              }}
+              title={
+                language === "it"? isGridAllowed ? "Passa alla vista a lista"
+                    : "Passa alla vista a griglia"
+                  : isGridAllowed                    ? "Switch to list view"
+                    : "Switch to grid view"
+
+              }
+              aria-label={
+                language === "it"? isGridAllowed ? "Passa alla vista a lista"
+                    : "Passa alla vista a griglia"
+                  : isGridAllowed                    ? "Switch to list view"
+                    : "Switch to grid view"
+              }
+            >
+              {language === "it"
+                ? isGridAllowed
+                  ? "Passa alla vista a lista"
+                  : "Passa alla vista a griglia"
+                : isGridAllowed
+                  ? "Switch to list view"
+                  : "Switch to grid view"
+              }
+            </button>
           </div>
         </div>
       )}
@@ -489,16 +535,15 @@ export default function PlaylistScreen() {
         onSelectAlbum={handleAlbumSelect}
       />
 
-      <div className="playlist-container">
+      <div className={`playlist-container ${isGridAllowed ? "grid" : "list"}` }>
         {/* Album filter component */}
 
-        {filteredSongs.map((song) => (
-          <div className="song-card" key={song.songId}>
-            <div className="audio-wrapper">
-              <AudioComponent
-                audioFile={song.songFile}
-                title={song.songName[language] || ""}
-              />
+        {filteredSongs.filter((s) => s.songFile).map((song) => (
+           <div className={`song-card ${currentSong?.songId === song.songId ? "active-song" : ""}`} key={song.songId} onClick={() => setCurrentSong(song)}>
+            <div className="detail-div">
+              <h1 className="song-title">
+                {song.songName[language] || song.songName.en}
+              </h1>
             </div>
 
             <div className="more-action-card">
@@ -529,7 +574,7 @@ export default function PlaylistScreen() {
               {song.songAlbum === "Merito" && isOnline && (
                 <button
                   className="share-button"
-                  onClick={() => handleMerito(song)}
+                  onClick={(e) => handleMerito(song, e)}
                   title={language === "it" ? "Youtube" : "View on Youtube"}
                   aria-label={language === "it" ? "Youtube" : "View on Youtube"}
                 >
@@ -623,6 +668,20 @@ export default function PlaylistScreen() {
             song={supriseSong}
           />
         )}
+
+        {isOnline === true && currentSong && currentSong.songFile && (
+          
+          <div className="mini-player floating">
+            <div className="audio-wrapper floating">
+              <AudioComponent
+                audioFile={currentSong.songFile}
+                title={currentSong.songName[language] || ""}
+                autoplay={true}
+              />
+            </div>
+          </div>
+        )}
+
       
     </>
   );

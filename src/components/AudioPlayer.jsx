@@ -1,12 +1,12 @@
 import { useRef, useState, useEffect, useMemo} from "react";
-import { FaPlay, FaPause, FaRetweet, FaSyncAlt, FaRegHeart, FaHeart } from "react-icons/fa";
+import { FaPlay, FaPause, FaRetweet, FaSyncAlt, FaRegHeart, FaHeart,FaMusic } from "react-icons/fa";
 import "./AudioComponent.css";
 import { useLanguage } from "./LanguageContext";
 import { useLocation } from "react-router-dom";  // 👈 import this
 import { RosesOfRomeSongs } from "./Songs.js";
 
 
-export default function AudioComponent({ audioFile, title }) {
+export default function AudioComponent({ audioFile, title, autoplay = false }) {
   const allSongs = useMemo(() => RosesOfRomeSongs(), []);
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -274,153 +274,131 @@ export default function AudioComponent({ audioFile, title }) {
   };
 
   return (
-    <div className={`audio-component ${isCurrent ? "current" : ""}`} ref={audioComponentElement}>
-      {!isOnline ? (
-        <div className="network-status">
-          {language === "it" ? "Sei offline" : "You are offline"}
-        </div>
-      ) : (
-        <>
+  <div className={`audio-component ${isCurrent ? "current" : ""} ${isPlaying ? "playing" : ""}`} ref={audioComponentElement}>
+    {!isOnline ? (
+      <div className="network-status">
+        <FaWifi className="network-icon" />
+        <span>{language === "it" ? "Sei offline" : "You are offline"}</span>
+      </div>
+    ) : (
+      <>
+        {/* Hidden audio element */}
+        <audio
+          ref={audioRef}
+          src={audioFile}
+          onLoadedMetadata={handleLoadedMetadata}
+          onLoadedData={handleLoadedMetadata}
+          onTimeUpdate={handleTimeUpdate}
+          onPlay={handlePlaying}
+          onPause={handlePause}
+          onWaiting={handleWaiting}
+          onStalled={handleStalled}
+          onEnded={handleEnded}
+          onPlaying={handlePlaying}
+          onError={handleError}
+          onCanPlay={handleCanPlayThrough}
+          onCanPlayThrough={handleCanPlayThrough}
+          preload="auto"
+          loop={isLooping}
+          autoPlay={autoplay}
+        />
+
+        {/* Song Info Section */}
+        <div className="audio-info-section">
+    
           <div className="audio-header">
             <span className="audio-title">{title}</span>
           </div>
+        </div>
 
-          <audio
-            ref={audioRef}
-            src={audioFile}
-            onLoadedMetadata={handleLoadedMetadata}
-            onLoadedData={handleLoadedMetadata}
-            onTimeUpdate={handleTimeUpdate}
-            onPlay={handlePlaying}
-            onPause={handlePause}
-            onWaiting={handleWaiting}
-            onStalled={handleStalled}
-            onEnded={handleEnded}
-            onPlaying={handlePlaying}
-            onError={handleError}
-            onCanPlay={handleCanPlayThrough}
-            onCanPlayThrough={handleCanPlayThrough}
-            preload="auto"
-            loop={isLooping}
-          />
+        {/* Main Controls Section */}
+        <div className="audio-controls-section">
+          {/* Play/Pause Button */}
+          <button
+            className="audio-playpause"
+            onClick={handlePlayPause}
+            aria-label={isPlaying ? (language === "it" ? "Pausa" : "Pause") : (language === "it" ? "Riproduci" : "Play")}
+            title={isPlaying ? (language === "it" ? "Pausa" : "Pause") : (language === "it" ? "Riproduci" : "Play")}
+          >
+            {isPlaying ? <FaPause /> : <FaPlay />}
+          </button>
 
-          <div className="audio-controls">
-            <button
-              className="audio-playpause"
-              onClick={handlePlayPause}
-              aria-label={
-                isPlaying
-                  ? language === "it"
-                    ? "Pausa"
-                    : "Pause"
-                  : language === "it"
-                  ? "Riproduci"
-                  : "Play"
-              }
-              title={
-                isPlaying
-                  ? language === "it"
-                    ? "Pausa"
-                    : "Pause"
-                  : language === "it"
-                  ? "Riproduci"
-                  : "Play"
-              }
-            >
-              {isPlaying ? <FaPause /> : <FaPlay />}
-            </button>
-
-            <div
-              className="audio-progress-container"
-              onClick={handleProgressBarClick}
-            >
-              <div className="audio-progress-bar">
-                <div
-                  className={`audio-progress ${isCurrent ? "active" : ""}`}
-                  style={{ width: `${progress * 100}%` }}
-                />
+          {/* Progress Bar */}
+          <div className="audio-progress-container" onClick={handleProgressBarClick}>
+            <div className="audio-time">
+              <span className="current-time">{formatTime(currentTime)}</span>
+              <span className="time-separator"></span>
+              <span className="total-time">{formatTime(duration)}</span>
+            </div>
+            <div className="audio-progress-bar">
+              <div
+                className={`audio-progress-fill ${isCurrent ? "active" : ""}`}
+                style={{ width: `${progress * 100}%` }}
+              >
+                <div className="progress-handle"></div>
               </div>
             </div>
-
-            <span className="audio-time">
-              {formatTime(currentTime)} / {formatTime(duration)}
-            </span>
           </div>
+
+          {/* Additional Controls (only for current playing song) */}
           {isCurrent && (
-          <div className="other-controls">
-            {/*Loop button loop audio if it is current */}
-            {isCurrent && (
+            <div className="audio-extra-controls">
               <button
-                className="audio-playpause"
+                className={`control-btn loop-btn ${isLooping ? "active" : ""}`}
                 onClick={handleLoop}
-                aria-label={
-                  language === "it"
-                    ? "Attiva/disattiva ripetizione"
-                    : "Toggle loop"
-                }
-                title={
-                  isLooping
-                    ? language === "it"
-                      ? "Disattiva ripetizione"
-                      : "Disable loop"
-                    : language === "it"
-                    ? "Attiva ripetizione"
-                    : "Enable loop"
-                }
+                aria-label={language === "it" ? "Attiva/disattiva ripetizione" : "Toggle loop"}
+                title={isLooping ? (language === "it" ? "Disattiva ripetizione" : "Disable loop") : (language === "it" ? "Attiva ripetizione" : "Enable loop")}
               >
                 {isLooping ? <FaSyncAlt /> : <FaRetweet />}
               </button>
-            )}
-            {/**like button */}
-            {isCurrent && songHasId && (
-              <button
-                className="audio-playpause"
-                onClick={handleLike}
-                aria-label={language === "it" ? "Mi piace" : "Like"}
-                title={
-                  isLiked
-                    ? language === "it"
-                      ? "Non mi piace più"
-                      : "Dislike"
-                    : language === "it"
-                    ? "Mi piace"
-                    : "Like"
-                }
-              >
-                {isLiked ? <FaHeart /> : <FaRegHeart />}
-              </button>
-            )}
-          </div>
-          )}
 
-          {(loading || stalled || error) && (
-            <div className="audio-overlay">
-              {error ? errorMsg : null}
-              {/* if is error a button to reload page*/}
-              {error && (
-                <button onClick={() => {
-                  setError(null);
-                  console.log("i was clicked to reload");
-                  window.location.reload(true);
-                }} className="share-button reload">
-                  <FaSyncAlt />
-                  {language === "it" ? "Ricarica" : "Reload"}
+              {songHasId && (
+                <button
+                  className={`control-btn like-btn ${isLiked ? "active" : ""}`}
+                  onClick={handleLike}
+                  aria-label={language === "it" ? "Mi piace" : "Like"}
+                  title={isLiked ? (language === "it" ? "Non mi piace più" : "Dislike") : (language === "it" ? "Mi piace" : "Like")}
+                >
+                  {isLiked ? <FaHeart /> : <FaRegHeart />}
                 </button>
-              )}
-              {/*Loading spinner for stalled state*/}
-              {(stalled || loading) && (
-                <div className="loading-bars">
-                  <span className="bars"></span>
-                  <span className="bars"></span>
-                  <span className="bars"></span>
-                </div>
               )}
             </div>
           )}
-        </>
-      )}
-    </div>
-  );
+        </div>
+
+        {/* Loading/Error Overlay */}
+        {(loading || stalled || error) && (
+          <div className="audio-overlay">
+            <div className="overlay-content">
+              {error ? (
+                <>
+                  <div className="error-icon">⚠️</div>
+                  <p className="error-message">{errorMsg}</p>
+                  <button onClick={() => {
+                    setError(null);
+                    window.location.reload(true);
+                  }} className="reload-btn">
+                    <FaSyncAlt />
+                    <span>{language === "it" ? "Ricarica" : "Reload"}</span>
+                  </button>
+                </>
+              ) : (
+                <div className="loading-bars">
+                  <span className="bar"></span>
+                  <span className="bar"></span>
+                  <span className="bar"></span>
+                  <span className="loading-text">
+                    {language === "it" ? "Caricamento..." : "Loading..."}
+                  </span>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+      </>
+    )}
+  </div>
+);
 }
 
 function formatTime(sec) {

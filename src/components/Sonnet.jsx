@@ -1,5 +1,5 @@
 import { useLanguage } from "./LanguageContext";
-import "../index.css";
+import "../components/sonnet.css";
 
 export default function Sonnet({magic}) {
   const { language } = useLanguage();

@@ -1,0 +1,306 @@
+/* sonnet.css - Modern & Elegant Design */
+
+.sonnet {
+  --sonnet-primary: #e94560;
+  --sonnet-secondary: #ff6b8a;
+  --sonnet-gold: #ffd700;
+  --sonnet-bg-dark: rgba(26, 26, 46, 0.6);
+  --sonnet-bg-light: rgba(255, 255, 255, 0.03);
+  --sonnet-border: rgba(255, 255, 255, 0.1);
+  --sonnet-glow: rgba(233, 69, 96, 0.3);
+  
+  position: relative;
+  background: linear-gradient(135deg, var(--sonnet-bg-light), rgba(0, 0, 0, 0.2));
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  padding: 2rem;
+  margin: 2rem 0;
+  border: 1px solid var(--sonnet-border);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+/* Decorative background elements */
+.sonnet::before {
+  content: '“';
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  font-size: 120px;
+  font-family: Georgia, serif;
+  color: var(--sonnet-primary);
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.sonnet::after {
+  content: '”';
+  position: absolute;
+  bottom: -40px;
+  right: 20px;
+  font-size: 120px;
+  font-family: Georgia, serif;
+  color: var(--sonnet-primary);
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+/* Animated gradient border */
+.sonnet:hover {
+  border-color: var(--sonnet-primary);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px var(--sonnet-glow);
+}
+
+.sonnet:hover::before,
+.sonnet:hover::after {
+  opacity: 0.15;
+}
+
+/* Title styling */
+.sonnet h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+  background: linear-gradient(135deg, var(--sonnet-primary), var(--sonnet-secondary), var(--sonnet-gold));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  display: inline-block;
+  width: auto;
+  padding-bottom: 0.5rem;
+}
+
+/* Underline effect for title */
+.sonnet h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--sonnet-primary), var(--sonnet-secondary));
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.sonnet:hover h2::after {
+  width: 100px;
+}
+
+/* Section styling */
+.sonnet-section {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Different section types */
+.sonnet-section.quatrain {
+  border-left: 4px solid var(--sonnet-primary);
+  background: linear-gradient(90deg, rgba(233, 69, 96, 0.05), transparent);
+}
+
+.sonnet-section.couplet {
+  border-left: 4px solid var(--sonnet-gold);
+  background: linear-gradient(90deg, rgba(255, 215, 0, 0.05), transparent);
+  margin-top: 2rem;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+.sonnet-section.octave {
+  border-left: 4px solid var(--sonnet-secondary);
+  background: linear-gradient(90deg, rgba(255, 107, 138, 0.05), transparent);
+}
+
+.sonnet-section.sestet {
+  border-left: 4px solid #28a745;
+  background: linear-gradient(90deg, rgba(40, 167, 69, 0.05), transparent);
+}
+
+/* Verse lines */
+.sonnet-line {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 0.5rem 0;
+  color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  transition: all 0.2s ease;
+  padding: 0.25rem 0;
+}
+
+/* Hover effect on lines */
+.sonnet-line:hover {
+  color: var(--sonnet-primary);
+  transform: translateX(8px);
+  padding-left: 0.5rem;
+}
+
+/* First line special styling */
+.sonnet-section .sonnet-line:first-child {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Last line special styling */
+.sonnet-section.couplet .sonnet-line:last-child {
+  font-style: italic;
+  color: var(--sonnet-gold);
+}
+
+/* Add decorative dots between sections */
+.sonnet-section:not(:last-child)::after {
+  content: '• • •';
+  display: block;
+  text-align: center;
+  color: var(--sonnet-primary);
+  font-size: 0.875rem;
+  letter-spacing: 4px;
+  margin-top: 1rem;
+  opacity: 0.5;
+}
+
+/* Remove dots after couplet */
+.sonnet-section.couplet::after {
+  display: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .sonnet {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  
+  .sonnet h2 {
+    font-size: 1.5rem;
+  }
+  
+  .sonnet-line {
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+  
+  .sonnet-section {
+    margin: 1rem 0;
+    padding: 0.75rem;
+  }
+  
+  .sonnet-section.couplet {
+    padding: 0.75rem 0.75rem 0.75rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sonnet {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 16px;
+  }
+  
+  .sonnet h2 {
+    font-size: 1.25rem;
+  }
+  
+  .sonnet h2::after {
+    width: 40px;
+  }
+  
+  .sonnet-line {
+    font-size: 0.813rem;
+    line-height: 1.5;
+  }
+  
+  .sonnet-line:hover {
+    transform: translateX(4px);
+  }
+  
+  .sonnet-section::before {
+    font-size: 0.75rem;
+  }
+}
+
+/* Optional: Card-like styling for each section */
+.sonnet-section {
+  background: var(--sonnet-bg-light);
+  backdrop-filter: blur(5px);
+}
+
+/* Animation for new sonnets */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sonnet {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Scroll reveal animation */
+.sonnet {
+  opacity: 1;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Optional: Add a subtle pattern overlay */
+.sonnet::before {
+  background-image: radial-gradient(var(--sonnet-primary) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.03;
+}
+
+/* Line numbers (optional) */
+.sonnet-line {
+  counter-increment: line;
+}
+
+.sonnet-section .sonnet-line::before {
+  content: counter(line);
+  position: absolute;
+  left: -2rem;
+  font-size: 0.688rem;
+  color: var(--sonnet-primary);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.sonnet-section:hover .sonnet-line::before {
+  opacity: 0.6;
+}
+
+/* Reset counter for each sonnet */
+.sonnet {
+  counter-reset: line;
+}
+
+/* Adjust for RTL languages */
+[dir="rtl"] .sonnet-section {
+  border-left: none;
+  border-right: 4px solid var(--sonnet-primary);
+}
+
+[dir="rtl"] .sonnet-section.couplet {
+  border-right: 4px solid var(--sonnet-gold);
+}
+
+[dir="rtl"] .sonnet-line::before {
+  left: auto;
+  right: -2rem;
+}
+
+[dir="rtl"] .sonnet-line:hover {
+  transform: translateX(-8px);
+  padding-right: 0.5rem;
+  padding-left: 0;
+}

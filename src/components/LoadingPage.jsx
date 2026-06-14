@@ -22,7 +22,7 @@ export default function LoadingPage() {
        }, 6000); // Change text every 6 seconds
 
        return () => clearInterval(interval);
-   }, []);
+   }, [sweetLoadingTexts.length]);
     
     return (
         <div className="loading-page">

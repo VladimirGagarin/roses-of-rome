@@ -81,7 +81,23 @@ import ToughSongArabic from  "../assets/audios/the tough gets going (Cover)-arab
 import ToughSongFrench from "../assets/audios/the tough gets going (Cover)- french.mp3" ; // Disney-Motivated
 import ToughSongJapanese from "../assets/audios/the tough gets going (Cover) (1)-japanese.mp3"; // Disney-Motivated
 import ToughSongSwahili from "../assets//audios/the tough gets going (Cover) (1)-swahili.mp3"; // Disney-Motivated
-import ThemeSong from "../assets/audios/theme_song.wav"
+import ThemeSong from "../assets/audios/theme_song.wav";
+import AeternumFloreamusSportSong from  "../assets/audios/aeternum.mp3";
+import AeternumFloreamusSportSong2 from "../assets/audios/aeternum (Cover).mp3";
+import PowerSong from "../assets/audios/Ages of Power.mp3";
+import ArsenalSong from "../assets/audios/Arsenal Pride Glide.mp3";
+import AnthemSwmRemix from "../assets/audios/Athem_remix (1).mp3";
+import SingAsOne  from "../assets/audios/Athem_sing_as one.mp3";
+import ThankyouCottoSizF from "../assets/audios/Cottolengo Sisters_coool.mp3";
+import ThankyouCottoSizDuet from "../assets/audios/Cottolengo Sisters_rmx_duet.mp3";
+import ThankyouCottoSizSolo from "../assets/audios/Cottolengo Sisters_solo_rmx.mp3";
+import Deutche from "../assets/audios/Deutschlandlied_sonneto.mp3";
+import NameToBe from "../assets/audios/I Was Meant to Be — My name.mp3";
+import JungleMelody from "../assets/audios/Jungle Forever Melody.mp3";
+import  Harmony from "../assets/audios/harmony.mp3";
+import StrongerTogether from "../assets/audios/One Home, Stars___.mp3";
+import StrongerTogetherSport from  "../assets/audios/One Home, Stars.mp3";
+import EnMiCorzon from "../assets/audios/you are always my heart.wav"
 
 
 // lyrics
@@ -241,7 +257,58 @@ const SONG_UUIDS = {
   rorMusic_098: "6f7g8h9i-0j1k-2345-6l34-567890123456",
   rorMusic_099: "7g8h9i0j-1k2l-3456-7m45-678901234567",
   rorMusic_100: "8h9i0j1k-2l3m-4567-8n56-789012345678",
-  
+  // 101 - 150
+  rorMusic_101: "9i0j1k2l-3m4n-5678-9o67-890123456789",
+  rorMusic_102: "0j1k2l3m-4n5o-6789-0p78-901234567890",
+  rorMusic_103: "1k2l3m4n-5o6p-7890-1q89-012345678901",
+  rorMusic_104: "2l3m4n5o-6p7q-8901-2r90-123456789012",
+  rorMusic_105: "3m4n5o6p-7q8r-9012-3s01-234567890123",
+  rorMusic_106: "4n5o6p7q-8r9s-0123-4t12-345678901234",
+  rorMusic_107: "5o6p7q8r-9s0t-1234-5u23-456789012345",
+  rorMusic_108: "6p7q8r9s-0t1u-2345-6v34-567890123456",
+  rorMusic_109: "7q8r9s0t-1u2v-3456-7w45-678901234567",
+  rorMusic_110: "8r9s0t1u-2v3w-4567-8x56-789012345678",
+  rorMusic_111: "9s0t1u2v-3w4x-5678-9y67-890123456789",
+  rorMusic_112: "0t1u2v3w-4x5y-6789-0z78-901234567890",
+  rorMusic_113: "1u2v3w4x-5y6z-7890-1a89-012345678901",
+  rorMusic_114: "2v3w4x5y-6z7a-8901-2b90-123456789012",
+  rorMusic_115: "3w4x5y6z-7a8b-9012-3c01-234567890123",
+  rorMusic_116: "4x5y6z7a-8b9c-0123-4d12-345678901234",
+  rorMusic_117: "5y6z7a8b-9c0d-1234-5e23-456789012345",
+  rorMusic_118: "6z7a8b9c-0d1e-2345-6f34-567890123456",
+  rorMusic_119: "7a8b9c0d-1e2f-3456-7g45-678901234567",
+  rorMusic_120: "8b9c0d1e-2f3g-4567-8h56-789012345678",
+  rorMusic_121: "9c0d1e2f-3g4h-5678-9i67-890123456789",
+  rorMusic_122: "0d1e2f3g-4h5i-6789-0j78-901234567890",
+  rorMusic_123: "1e2f3g4h-5i6j-7890-1k89-012345678901",
+  rorMusic_124: "2f3g4h5i-6j7k-8901-2l90-123456789012",
+  rorMusic_125: "3g4h5i6j-7k8l-9012-3m01-234567890123",
+  rorMusic_126: "4h5i6j7k-8l9m-0123-4n12-345678901234",
+  rorMusic_127: "5i6j7k8l-9m0n-1234-5o23-456789012345",
+  rorMusic_128: "6j7k8l9m-0n1o-2345-6p34-567890123456",
+  rorMusic_129: "7k8l9m0n-1o2p-3456-7q45-678901234567",
+  rorMusic_130: "8l9m0n1o-2p3q-4567-8r56-789012345678",
+  rorMusic_131: "9m0n1o2p-3q4r-5678-9s67-890123456789",
+  rorMusic_132: "0n1o2p3q-4r5s-6789-0t78-901234567890",
+  rorMusic_133: "1o2p3q4r-5s6t-7890-1u89-012345678901",
+  rorMusic_134: "2p3q4r5s-6t7u-8901-2v90-123456789012",
+  rorMusic_135: "3q4r5s6t-7u8v-9012-3w01-234567890123",
+  rorMusic_136: "4r5s6t7u-8v9w-0123-4x12-345678901234",
+  rorMusic_137: "5s6t7u8v-9w0x-1234-5y23-456789012345",
+  rorMusic_138: "6t7u8v9w-0x1y-2345-6z34-567890123456",
+  rorMusic_139: "7u8v9w0x-1y2z-3456-7a45-678901234567",
+  rorMusic_140: "8v9w0x1y-2z3a-4567-8b56-789012345678",
+  rorMusic_141: "9w0x1y2z-3a4b-5678-9c67-890123456789",
+  rorMusic_142: "0x1y2z3a-4b5c-6789-0d78-901234567890",
+  rorMusic_143: "1y2z3a4b-5c6d-7890-1e89-012345678901",
+  rorMusic_144: "2z3a4b5c-6d7e-8901-2f90-123456789012",
+  rorMusic_145: "3a4b5c6d-7e8f-9012-3g01-234567890123",
+  rorMusic_146: "4b5c6d7e-8f9g-0123-4h12-345678901234",
+  rorMusic_147: "5c6d7e8f-9g0h-1234-5i23-456789012345",
+  rorMusic_148: "6d7e8f9g-0h1i-2345-6j34-567890123456",
+  rorMusic_149: "7e8f9g0h-1i2j-3456-7k45-678901234567",
+  rorMusic_150: "8f9g0h1i-2j3k-4567-8l56-789012345678",
+
 };
 
 export function RosesOfRomeSongs() {
@@ -1068,22 +1135,150 @@ export function RosesOfRomeSongs() {
     {
       songId: SONG_UUIDS.rorMusic_084,
       songFile: ThemeSong,
-      songName: { en: "Our Theme Song", it: "" },
+      songName: { en: "Our Theme Song", it: "La nostra canzone tematica" },
       songLyrics: [],
       songAlbum: "Rosa",
       songLink: "",
+    },
+     {
+        songId: SONG_UUIDS.rorMusic_034,
+        songFile: ForeverBlessed,
+        songName: {
+          en: "Forever Blessed",
+          it: "Per Sempre Benedetto",
+        },
+        songLyrics: [],
+        songAlbum: "Rosa",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_085,
+      songFile: AeternumFloreamusSportSong,
+      songName: { en: "Aeternum Floreamus", it: "Fioriamo Per Sempre" },
+      songLyrics: [],
+      songAlbum: "Sports",
+      songLink: "",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_086,
+      songFile: AeternumFloreamusSportSong2,
+      songName: { en: "Aeternum Floreamus II", it: "Fioriamo Per Sempre II" },
+      songLyrics: [],
+      songAlbum: "Sports",
+      songLink: "",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_087,
+      songFile: PowerSong,
+      songName: { en: "Ages to Power", it: "Età per il Potere" },
+      songLyrics: [],
+      songAlbum: "Cantabile",
+      songLink: "",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_088,
+      songFile: ArsenalSong,
+      songName: { en: "Arsenal Song", it: "Canzone dell'Arsenal" },
+      songLyrics: [],
+      songAlbum: "Sports",
+      songLink: "",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_089,
+      songFile: AnthemSwmRemix,
+      songName: { en: "Anthem Remix", it: "Inno Remix" },
+      songLyrics: [],
+      songAlbum: "SWM",
+      songLink: "",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_090,
+      songFile: SingAsOne,
+      songName: { en: "Sing As One", it: "Cantiamo come uno" },
+      songLyrics: [],
+      songAlbum: "SWM",
+      songLink: "",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_091,
+      songFile: ThankyouCottoSizDuet,
+      songName: { en: "Thankyou Cottolengo Sisters", it: "Gratias Cottolengo Sorellas" },
+      songLyrics: [],
+      songAlbum: "Piccola Casa della Gioia",
+      songLink: "",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_092,
+      songFile: ThankyouCottoSizF,
+       songName: { en: "Thankyou Cottolengo Sisters (RMX)", it: "Gratias Cottolengo Sorellas (RMX)" },
+      songLyrics: [],
+      songAlbum: "Piccola Casa della Gioia",
+      songLink: "",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_093,
+      songFile: ThankyouCottoSizSolo,
+      songName: { en: "Thankyou Cottolengo Sisters (solo)", it: "Gratias Cottolengo Sorellas (solo)" },
+      songLyrics: [],
+      songAlbum: "Piccola Casa della Gioia",
+      songLink: "",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_094,
+      songFile: Deutche,
+      songName: { en: "Roses Of Rome anthem|German instruments", it: "Rosi di Roma inno|strumenti tedeschi" },
+      songLyrics: [],
+      songAlbum: "Rosa",
+      songLink: "",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_095,
+      songFile: NameToBe,
+      songName: { en: "I was meant To Be", it: "Ero destinato a essere" },
+      songLyrics: [],
+      songAlbum: "SWM",
+      songLink: "",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_096,
+      songFile: JungleMelody,
+      songName: { en: "Forever Melody (Jungle)", it: "Melodia Per Sempre (Giungla)" },
+      songLyrics: [],
+      songAlbum: "Melodia",
+      songLink: "",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_097,
+      songFile: Harmony,
+      songName: { en: "Forever Melody", it: "Melodia Per Sempre" },
+      songLyrics: [],
+      songAlbum: "Melodia",
+      songLink: "",
+    },
+    {
+      songId: SONG_UUIDS.rorMusic_098,
+      songFile: StrongerTogether,
+      songName: { en: "We are Stronger Together", it: "Siamo Più Forti Insieme" },
+      songLyrics: [],
+      songAlbum: "Cantabile",
+      songLink: "",
+    },
+     {
+      songId: SONG_UUIDS.rorMusic_099,
+      songFile: StrongerTogetherSport,
+      songName: { en: "We are Stronger together", it: "Siamo Più Forti Insieme" },
+      songLyrics: [],
+      songAlbum: "Sports",
+      songLink: "",
+    },
+     {
+      songId: SONG_UUIDS.rorMusic_100,
+      songFile: EnMiCorzon,
+      songName: { en: "You are Always In My Heart", it: "Sei Sempre Nel Mio Cuore" },
+      songLyrics: [],
+      songAlbum: "Melodia",
+      songLink: "",
     }
 
-    //  {
-    //     songId: SONG_UUIDS.rorMusic_034,
-    //     songFile: ForeverBlessed,
-    //     songName: {
-    //       en: "Forever Blessed",
-    //       it: "Per Sempre Benedetto",
-    //     },
-    //     songLyrics: [],
-    //     songAlbum: "Rosa",
-    //   },
   ];
   return songs;
 }

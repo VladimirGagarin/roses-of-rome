@@ -23,7 +23,8 @@ import PrayerSong from "../assets/audios/prayer.mp3";
 import PrayerSongSoftVersion from "../assets/audios/prayer_soft.mp3";
 import Instrumental from "../assets/audios/rome2[music].mp3";
 import MotiveSong from "../assets/audios/motive.mp3";
-import ThemeSong from "../assets/audios/theme_song.wav"
+import ThemeSong from "../assets/audios/theme_song.wav";
+import { FaPlay, FaPause } from "react-icons/fa";
 
 import "../index.css";
 
@@ -35,8 +36,9 @@ export default function HomeScreen() {
   const [currentTime, setCurrentTime] = useState(0);
   const [currentLine, setCurrentLine] = useState("");
   const [isPlaying, setPlaying] = useState(false);
-  const [audioState, setAudioState] = useState("idle"); // 'idle' | 'loading' | 'stalled' | 'waitin
+  const [audioState, setAudioState] = useState("idle"); // 'idle' | 'loading' | 'stalled' | 'waiting'
   const audioRef = useRef(null);
+  const [currentAudio, setCurrentAudio] = useState(null);
 
   useEffect(() => {
     if (containerRef.current) {
@@ -176,8 +178,8 @@ export default function HomeScreen() {
 
   const audioTitles = {
     romeOne: {
-      en: "The Bloong Sonnet Version",
-      it: "Rose di Roma Sonneto Versione",
+      en: "The Blooming Sonnet Version",
+      it: "Rose di Roma Inno (Versione Sbocciata)",
     },
     romeTwo: {
       en: "The Blooming Sonnet",
@@ -188,8 +190,8 @@ export default function HomeScreen() {
       it: "Rose di Roma Inno Duetto (Male)",
     },
     hybrid2: {
-      en: "Roses Of Rome Anthem Duet (Female)",
-      it: "Rose di Roma Inno Duetto (Feminile)",
+      en: "Roses Of Rome Anthem Duet Italian (Female)",
+      it: "Rose di Roma Inno Duetto  Italiano(Feminile)",
     },
     Inst: {
       en: "Anthem Instrumental",
@@ -206,6 +208,24 @@ export default function HomeScreen() {
     en: "We’ve composed a special version of the sonnet just for you — if you’d love to hear a bloom of verse and soul, it's waiting for you in song.",
     it: "Abbiamo composto una versione speciale del sonetto solo per te — se desideri ascoltare un fiore di versi e anima, ti sta aspettando in una canzone.",
   };
+
+  const contentdisplay = [
+    {sonnet: TheSonnet(), audio: RomeTwo, title: audioTitles.romeTwo[language]},
+    {sonnet: TheVision(), audio: language === "it" ? VisionShortSongIt : VisionSong, title: language === "it" ? "La Nostra Visione" : "Our Vision"},
+    {sonnet: OurMotive(), audio: MotiveSong, title: language === "it" ? "I Nostri Motivo" : "Our Motive"},
+    {sonnet: ThePrayer(), audio: PrayerSong, title: language === "it" ? "Le Nostro Preghiera (Versione Originale)" : "Our Prayer (Original Version)"},
+    {sonnet: Theme(), audio: ThemeSong, title: audioTitles.theme[language]}
+  ]
+  const contentWithNoSonnet = [
+    {audio: language === "it" ? ItalianOne : RomeOne, title: audioTitles.romeOne[language]},
+    {audio: language === "it" ? ItalianTwo : RomeTwo, title: audioTitles.romeTwo[language]},
+    {audio: Hybrid, title: audioTitles.hybrid[language]},
+    {audio: HybridTwo, title: audioTitles.hybrid2[language]},
+    {audio: language === "it" ? VisonItSong : VisionYouSong, title: language === "it" ? "La Nostra Visione (Versione Italiana)" : "Our Vision (Italian Version)"},
+    {audio: language === "it" ? VisionFemale : VisionSong, title: language === "it" ? "La Nostra Visione (Versione Femminile)" : "Our Vision (Female Version)"},
+    {audio: Instrumental, title: language === "it" ? "Instrumentale del Sonetto Sbocciato" : "Blooming Sonnet Instrumental"}
+  ]
+  
 
   return (
     <div className="home-container">
@@ -232,109 +252,39 @@ export default function HomeScreen() {
         </button>
       </div>
 
-      <Sonnet magic={TheSonnet()} />
-      <div className="audio-wrapper">
-        <AudioComponent
-          audioFile={Instrumental}
-          title={audioTitles.Inst[language]}
-        />
+
+      {contentdisplay.map((item) => (
+        <div className={`sonnet-wrapper ${item.title === currentAudio?.title && isPlaying ? "playing" : ""}`}>
+        <Sonnet magic={item.sonnet} />
+        <button
+          className={`sonnet-play-btn ${currentAudio && isPlaying ? <FaPause /> : <FaPlay />}`}
+          onClick={() => setCurrentAudio({file: item.audio, title: item.title})}
+          aria-label={currentAudio && isPlaying ? (language === "it" ? "Pause" : "Pause" ): (language === "it" ? "Play" : "Play")}
+        >
+          {currentAudio && isPlaying ? <FaPause /> : <FaPlay />}
+          <span className="play-text">
+            {currentAudio && isPlaying
+              ? (language === "it" ? "In riproduzione" : "Playing")
+              : (language === "it" ? "Ascolta" : "Listen")}
+          </span>
+        </button>
       </div>
+      ))}
 
-      <div className="audio-wrapper">
-        <AudioComponent
-          audioFile={language === "it" ? ItalianTwo : RomeTwo}
-          title={audioTitles.romeTwo[language]}
-        />
-      </div>
+      {contentWithNoSonnet.map((item) => (
+        <div className={`sonnet-wrapper ${item.title === currentAudio?.title && isPlaying ? "playing" : ""}`}>
+          <h3 className="sonnet-title">{item.title}</h3>
+          <button onClick={() => setCurrentAudio({file: item.audio, title: item.title})} className={`sonnet-play-btn ${currentAudio && isPlaying ? <FaPause /> : <FaPlay />}`}>
+            {currentAudio && isPlaying ? <FaPause /> : <FaPlay />}
+            <span className="play-text">
+              {currentAudio && isPlaying
+                ? (language === "it" ? "In riproduzione" : "Playing")
+                : (language === "it" ? "Ascolta" : "Listen")}
+            </span>
+          </button>
+        </div>
+      ))}
 
-      <div className="audio-wrapper">
-        <AudioComponent
-          audioFile={Hybrid}
-          title={audioTitles.hybrid[language]}
-        />
-      </div>
-
-      <div className="audio-wrapper">
-        <AudioComponent
-          audioFile={HybridTwo}
-          title={audioTitles.hybrid2[language]}
-        />
-      </div>
-
-      <div className="audio-wrapper">
-        <AudioComponent
-          audioFile={VisionYouSong}
-          title={language === "it" ? "Venere" : "Venus"}
-        />
-      </div>
-
-      <div className="audio-wrapper">
-        <AudioComponent
-          audioFile={language === "it" ? ItalianOne : RomeOne}
-          title={audioTitles.romeOne[language]}
-        />
-      </div>
-
-      <Sonnet magic={Theme()} />
-      <div className="audio-wrapper">
-        <AudioComponent
-          audioFile={ThemeSong}
-          title={audioTitles.theme[language]}
-        />
-      </div>
-
-      <Sonnet magic={TheVision()} />
-
-      <div className="audio-wrapper">
-        <AudioComponent
-          audioFile={language === "it" ? VisionShortSongIt : VisionSong}
-          title={language === "it" ? "La Nostra Visione" : "Our Vision"}
-        />
-      </div>
-
-      <div className="audio-wrapper">
-        <AudioComponent
-          audioFile={language === "it" ? VisonItSong : VisionFemale}
-          title={
-            language === "it"
-              ? "La Nostra Visione (Versione feminile)"
-              : "Our Vision (female version)"
-          }
-        />
-      </div>
-
-      <Sonnet magic={OurMotive()} />
-
-      <div className="audio-wrapper">
-        <AudioComponent
-          audioFile={MotiveSong}
-          title={language === "it" ? "I Nostri Motivo" : "Our Motive"}
-        />
-      </div>
-
-      <Sonnet magic={ThePrayer()} />
-
-      <div className="audio-wrapper">
-        <AudioComponent
-          audioFile={PrayerSong}
-          title={
-            language === "it"
-              ? "Le Nostro Preghiera (Versione Originale)"
-              : "Our Prayer (Original Version)"
-          }
-        />
-      </div>
-
-      <div className="audio-wrapper">
-        <AudioComponent
-          audioFile={PrayerSongSoftVersion}
-          title={
-            language === "it"
-              ? "Le Nostro Preghiera (Versione Soffice)(Inglese)"
-              : "Our Prayer (Soft Version)(English)"
-          }
-        />
-      </div>
 
       <DirectorMessage />
       <FormsComponent language={language} section="home" />
@@ -357,6 +307,18 @@ export default function HomeScreen() {
           dynamicBgImage={BgImg}
           song={SupriseSong}
         />
+      )}
+
+      {currentAudio && (
+        <div className="mini-player floating">
+          <div className="audio-wrapper floating">
+            <AudioComponent
+              audioFile={currentAudio.file}
+              title={currentAudio.title}
+              autoplay={true}
+            />
+          </div>
+        </div>
       )}
     </div>
   );

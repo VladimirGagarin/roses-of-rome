@@ -233,7 +233,7 @@ export default function AboutComponent() {
                 : allTexts.introText.it}
 
               <button
-                onClick={() => showMoreInfo()}
+                onClick={showMoreInfo}
                 disabled={showMore}
               >
                 {language === "en" ? "Read" : "Leggi"}
