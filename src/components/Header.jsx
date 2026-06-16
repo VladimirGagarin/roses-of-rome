@@ -57,7 +57,7 @@ export default function Navs() {
         it: "Informazioni",
       },
       icon: <FaInfo />,
-      path: "/pages/about",
+      path: "/pages/logo-emblem",
     },
   ];
 
