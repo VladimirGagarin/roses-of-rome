@@ -1,0 +1,373 @@
+/* ============================================================
+   ABOUT / THE STUDIO
+   ============================================================ */
+
+/* ---------- Wikipedia-style profile ---------- */
+.wiki-article {
+  max-width: 980px;
+  margin: 0 auto 4.5rem;
+}
+
+.wiki-title {
+  font-size: clamp(1.6rem, 3.4vw, 2.3rem);
+  letter-spacing: 0.06em;
+  margin: 0 0 0.4rem;
+  border-bottom: 1px solid var(--ro-border-gold);
+  padding-bottom: 0.6rem;
+}
+
+.wiki-shortdesc {
+  font-size: 0.94rem;
+  font-style: italic;
+  color: var(--ro-ink-soft);
+  background: var(--ro-red-soft);
+  border: 1px solid var(--ro-border-gold);
+  border-left: 4px solid var(--ro-gold);
+  border-radius: var(--ro-radius);
+  padding: 0.7rem 1rem;
+  margin: 0 0 1.6rem;
+}
+
+/* ---- Infobox ---- */
+.infobox {
+  float: right;
+  width: min(300px, 48%);
+  margin: 0.4rem 0 1.2rem 1.4rem;
+  border: 1px solid var(--ro-border-gold);
+  border-collapse: collapse;
+  background: var(--ro-marble);
+  box-shadow: var(--ro-shadow-sm);
+  font-size: 0.84rem;
+}
+
+.infobox-cap {
+  padding: 0.9rem 0.8rem 0.6rem;
+  text-align: center;
+  background: linear-gradient(180deg, var(--ro-red-soft), transparent);
+}
+
+.infobox-name {
+  display: block;
+  font-family: var(--ro-font-display);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.infobox-img {
+  max-height: 120px;
+  width: auto;
+  margin: 0 auto 0.5rem;
+}
+
+.infobox-tagline {
+  display: block;
+  font-size: 0.74rem;
+  font-style: italic;
+  color: var(--ro-red);
+}
+
+.infobox th,
+.infobox td {
+  border: 1px solid var(--ro-border);
+  padding: 0.42rem 0.6rem;
+  text-align: left;
+  vertical-align: top;
+}
+.infobox th {
+  background: rgba(201, 162, 39, 0.1);
+  font-family: var(--ro-font-body);
+  font-weight: 700;
+  width: 38%;
+}
+.infobox tfoot th {
+  background: var(--ro-ivory);
+}
+
+.wiki-body {
+  min-width: 0;
+}
+.wiki-lead {
+  font-size: 1.05rem;
+}
+
+.wiki-section h2 {
+  font-size: 1.22rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 1.9rem 0 0.7rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--ro-border-gold);
+}
+
+.wiki-section p {
+  margin: 0.6rem 0;
+}
+
+.wiki-quote {
+  margin: 0.8rem 0 0.8rem 1.2rem;
+  padding: 0.5rem 0.9rem;
+  border-left: 4px solid var(--ro-gold);
+  background: var(--ro-red-soft);
+  border-radius: 0 var(--ro-radius) var(--ro-radius) 0;
+  font-family: var(--ro-font-display);
+  letter-spacing: 0.08em;
+}
+
+.wiki-list {
+  margin: 0.5rem 0 0.8rem;
+}
+.wiki-chain {
+  list-style: none;
+  padding-left: 1.2rem;
+  font-family: var(--ro-font-display);
+}
+.wiki-sublist {
+  margin: 0.3rem 0 0.5rem 1.4rem;
+}
+
+@media (max-width: 720px) {
+  .infobox {
+    float: none;
+    width: 100%;
+    margin: 0 0 1.4rem;
+  }
+}
+
+/* ---------- YouTube playlists cards ---------- */
+.wiki-playlists {
+  margin-top: 2.4rem;
+}
+
+.playlists-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.1rem;
+  margin-top: 1.4rem;
+}
+
+.playlist-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 1.1rem 1.15rem 1.25rem;
+  background: var(--ro-marble);
+  border: 1px solid var(--ro-border-gold);
+  border-radius: var(--ro-radius-lg);
+  box-shadow: var(--ro-shadow-sm);
+  color: var(--ro-ink);
+  text-decoration: none;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+.playlist-card:hover {
+  transform: translateY(-4px);
+  text-decoration: none;
+  color: var(--ro-ink);
+  border-color: var(--ro-gold);
+  box-shadow: var(--ro-shadow-md);
+}
+
+.playlist-cat {
+  font-family: var(--ro-font-display);
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ro-red);
+  align-self: flex-start;
+  padding: 0.18rem 0.6rem;
+  border: 1px solid var(--ro-border-red);
+  border-radius: 12px;
+  background: var(--ro-red-soft);
+}
+
+.playlist-title {
+  font-size: 1.02rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0.2rem 0 0;
+  line-height: 1.25;
+}
+
+.playlist-desc {
+  margin: 0;
+  font-size: 0.94rem;
+  font-style: italic;
+  color: var(--ro-ink-soft);
+  flex: 1;
+}
+
+.playlist-open {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--ro-font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ro-red);
+}
+.playlist-open svg {
+  font-size: 1rem;
+}
+
+/* ============================================================
+   BANNER & EMBLEMS (kept below profile)
+   ============================================================ */
+
+.about-banner {
+  margin: 0 0 3rem;
+  border-radius: var(--ro-radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--ro-border-gold);
+  box-shadow: var(--ro-shadow-md);
+}
+.about-banner img {
+  width: 100%;
+  max-height: 46vh;
+  object-fit: cover;
+}
+
+/* ---------- Official symbols ---------- */
+.about-emblems {
+  margin-bottom: 4rem;
+}
+
+.emblems-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.6rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.emblem-card {
+  margin: 0;
+  padding: 1.2rem;
+  background: var(--ro-marble);
+  border: 1px solid var(--ro-border-gold);
+  border-radius: var(--ro-radius-lg);
+  box-shadow: var(--ro-shadow-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.emblem-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--ro-shadow-lg);
+}
+
+.emblem-card img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  margin-bottom: 0.9rem;
+}
+
+.emblem-card figcaption {
+  font-family: var(--ro-font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ro-red);
+}
+
+.poem {
+  max-width: 760px;
+  margin: 0 auto 4rem;
+  text-align: center;
+  padding: 2.4rem 2rem;
+  border: 1px solid var(--ro-border-gold);
+  border-radius: var(--ro-radius-lg);
+  background:
+    radial-gradient(ellipse at 50% 8%, rgba(201, 162, 39, 0.12), transparent 55%),
+    var(--ro-marble);
+  box-shadow: var(--ro-shadow-md);
+}
+
+.poem-title {
+  font-family: var(--ro-font-display);
+  font-size: clamp(1.1rem, 2.6vw, 1.5rem);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin: 0 0 1.4rem;
+  word-break: break-word;
+  background: linear-gradient(180deg, var(--ro-gold-deep), var(--ro-red));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.video-link.poem-title-link {
+  background: linear-gradient(180deg, var(--ro-gold-deep), var(--ro-red));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-decoration: underline dotted;
+  text-decoration-color: rgba(139, 26, 43, 0.55);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
+}
+.video-link.poem-title-link:hover {
+  text-decoration: underline solid;
+  text-decoration-color: var(--ro-gold);
+}
+
+.poem-block {
+  margin: 1.2rem 0;
+}
+
+.poem-block.chorus {
+  padding: 1rem 0;
+  border-top: 1px solid var(--ro-border-gold);
+  border-bottom: 1px solid var(--ro-border-gold);
+}
+
+.poem-block.bridge {
+  padding: 0.6rem 0;
+}
+
+.poem-line {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--ro-ink-soft);
+}
+
+.poem-block.chorus .poem-line {
+  font-weight: 700;
+  font-style: normal;
+  font-family: var(--ro-font-display);
+  font-size: 1.1rem;
+  color: var(--ro-ink);
+}
+
+.about-release {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+.about-release h2 {
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+.about-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 520px) {
+  .poem {
+    padding: 1.8rem 1.2rem;
+  }
+}

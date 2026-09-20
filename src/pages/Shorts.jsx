@@ -1,83 +1,55 @@
+import { useLanguage } from "../context/LanguageContext";
+import { useSeo } from "../hooks/useSeo";
+import VideoPlayer from "../ui/VideoPlayer";
+import { RosesOfRomeShorts } from "../data/shorts";
+import "./Shorts.css";
 
-import ShortsControls from "../components/ShortControls";
-import ShortVideo1 from "../assets/videos/short_001.mp4";
-import ShortVideo2 from "../assets/videos/short_002.mp4";
-import ShortVideo3 from "../assets/videos/short_003.mp4";
-import ShortVideo4 from "../assets/videos/short_004.mp4";
-import ShortVideo5 from "../assets/videos/short_005.mp4";
-import ShortVideo6 from "../assets/videos/short_006.mp4";
-import ShortVideo7 from "../assets/videos/short_007.mp4";
-import ShortVideo8 from "../assets/videos/short_008.mp4";
-import ShortVideo9 from "../assets/videos/short_009.mp4";
-import ShortVideo10 from "../assets/videos/short_010.mp4";
-import ShortVideo11 from "../assets/videos/short_011.mp4";
-import ShortVideo12 from "../assets/videos/short_012.mp4";
+export default function Shorts() {
+  const { language } = useLanguage();
+  const isIt = language === "it";
+  const shorts = RosesOfRomeShorts();
 
-import "../components/AllShortsStyles.css";
-import { useEffect, useRef, useState } from "react";
+  useSeo({
+    title: "Shorts & Animations — Roses Of Rome Pictures",
+    description: isIt
+      ? "Cortometraggi e animazioni dalle Rose di Roma: piccoli fiori di cinema creati dal cuore dello studio."
+      : "Shorts and animations from Roses of Rome: small blooms of cinema crafted by the heart of the studio.",
+    keywords: "Roses of Rome shorts, animation, short films, cinematic shorts, Roses of Rome studio",
+    path: "/shorts",
+    type: "video.movie",
+    lang: language,
+  });
 
- const videos = [
-   ShortVideo1,
-   ShortVideo2,
-   ShortVideo3,
-   ShortVideo4,
-   ShortVideo5,
-   ShortVideo6,
-   ShortVideo7,
-   ShortVideo8,
-   ShortVideo9,
-   ShortVideo10,
-   ShortVideo11,
-    ShortVideo12,
- ];
-
-export default function ShortsScreen() {
-  const containerRefs = useRef([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    window.scrollTo({
-      top: document.documentElement.scrollHeight,
-      behavior: "smooth", // optional: removes this if you want instant jump
-    });
-  }, []);
-
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const index = Number(entry.target.dataset.index);
-            setCurrentIndex(index);
-          }
-        });
-      },
-      { threshold: 0.6 }
-    );
-
-    containerRefs.current.forEach((ref) => {
-      if (ref) observer.observe(ref);
-    });
-
-    return () => observer.disconnect();
-  }, []);
+  const t = {
+    title: { en: "Shorts & Animations", it: "Corti e Animazioni" },
+    sub: {
+      en: "Tiny petals of wonder — stories in miniature, grown in the rose garden.",
+      it: "Piccoli petali di meraviglia — storie in miniatura, coltivate nel roseto.",
+    },
+    short: { en: "Short", it: "Corto" },
+    animation: { en: "Animation", it: "Animazione" },
+  };
 
   return (
-    <div className="shorts-feed">
-      {videos.map((videoSrc, index) => (
-        <div
-          key={index}
-          ref={(el) => (containerRefs.current[index] = el)}
-          data-index={index}
-          className="short-wrapper "
-        >
-          <ShortsControls
-            videoFile={videoSrc}
-            isCurrent={currentIndex === index}
-          />
-        </div>
-      ))}
+    <div className="container page-section shorts-page">
+      <div className="section-head">
+        <span className="kicker">Roses Of Rome Pictures</span>
+        <h1>{t.title[language]}</h1>
+        <p className="section-sub">{t.sub[language]}</p>
+      </div>
+
+      <div className="shorts-grid">
+        {shorts.map((s) => (
+          <article className="short-card" key={s.id}>
+            <VideoPlayer uid={s.id} src={s.src} />
+            <div className="short-card-body">
+              <span className={`short-kind ${s.kind}`}>{s.kind === "animation" ? t.animation[language] : t.short[language]}</span>
+              <h2 className="short-card-title">{s.title[language]}</h2>
+              <p className="short-card-desc">{s.description[language]}</p>
+            </div>
+          </article>
+        ))}
+      </div>
     </div>
   );
 }

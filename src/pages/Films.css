@@ -1,0 +1,32 @@
+/* ============================================================
+   FILMS PAGE
+   ============================================================ */
+
+.section-sub {
+  max-width: 620px;
+  margin: 0 auto;
+  font-style: italic;
+  font-size: 1.08rem;
+  color: var(--ro-ink-soft);
+}
+
+.films-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.film-card-collection {
+  font-family: var(--ro-font-display);
+  font-size: 0.74rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ro-gold-deep);
+  margin: 0;
+}
+
+@media (max-width: 520px) {
+  .films-grid {
+    grid-template-columns: 1fr;
+  }
+}

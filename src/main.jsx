@@ -1,43 +1,45 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx';
-import LanguageProvider from './components/LanguageContext.jsx';
-import  {createHashRouter, RouterProvider, Navigate } from "react-router-dom"
-import  HomeScreen from './pages/HomeScreen.jsx';
-import VideoScreen from './pages/VideoScreen.jsx';
-import PlaylistScreen from './pages/PlaylistScreen.jsx';
-import ShortsScreen from './pages/Shorts.jsx';
-import MoreInfo from './pages/Search.jsx';
-import VideoPlayerScreen from "./pages/VideoPlayerScreen.jsx";
-import ShareScreen from './pages/ShareScreen.jsx';
-import EmbedSong from './pages/EmbededSong.jsx';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
+import "./index.css";
+import "./App.css";
+import App from "./App.jsx";
+import LanguageProvider from "./context/LanguageContext.jsx";
+import VideoOverlayProvider from "./context/VideoOverlayContext.jsx";
+import YouTubeOverlay from "./ui/YouTubeOverlay.jsx";
+import Home from "./pages/Home.jsx";
+import Films from "./pages/Films.jsx";
+import Music from "./pages/Music.jsx";
+import Shorts from "./pages/Shorts.jsx";
+import About from "./pages/About.jsx";
+import Contact from "./pages/Contact.jsx";
 
-const routes = createHashRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      { path: "pages/home", element: <HomeScreen replace /> },
-      { path: "pages/videos", element: <VideoScreen /> },
-      { path: "pages/playlist", element: <PlaylistScreen /> },
-      { path: "pages/shorts", element: <ShortsScreen /> },
-      { path: "pages/logo-emblem", element: <MoreInfo /> },
-      { path: "pages/vid/:id", element: <VideoPlayerScreen /> },
-    ],
-  },
-  {
-    path: "/pages/share/:id",
-    element: <ShareScreen/>
-  },
-  {path: "/pages/embed/:songId", element: <EmbedSong/>},
-  { path: '*', element: <Navigate to="pages/home" replace /> },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      children: [
+        { index: true, element: <Home /> },
+        { path: "films", element: <Films /> },
+        { path: "music", element: <Music /> },
+        { path: "shorts", element: <Shorts /> },
+        { path: "about", element: <About /> },
+        { path: "contact", element: <Contact /> },
+        { path: "*", element: <Navigate to="/" replace /> },
+      ],
+    },
+  ],
+  { basename: import.meta.env.BASE_URL || "/" }
+);
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     <LanguageProvider>
-      <RouterProvider router={routes}/>
+      <VideoOverlayProvider>
+        <RouterProvider router={router} />
+        <YouTubeOverlay />
+      </VideoOverlayProvider>
     </LanguageProvider>
-  </StrictMode>,
-)
+  </StrictMode>
+);

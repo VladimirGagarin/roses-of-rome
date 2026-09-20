@@ -1,0 +1,153 @@
+/* ============================================================
+   CONTACT PAGE
+   ============================================================ */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2.6rem;
+  align-items: start;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.contact-form-wrap {
+  background: var(--ro-marble);
+  border: 1px solid var(--ro-border-gold);
+  border-radius: var(--ro-radius-lg);
+  padding: 2rem 1.8rem;
+  box-shadow: var(--ro-shadow-md);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.contact-field span {
+  font-family: var(--ro-font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ro-red);
+}
+
+.contact-field input,
+.contact-field textarea {
+  border: 1px solid var(--ro-border);
+  border-radius: var(--ro-radius);
+  background: var(--ro-marble);
+  padding: 0.7rem 0.9rem;
+  font: inherit;
+  color: var(--ro-ink);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.contact-field input:focus,
+.contact-field textarea:focus {
+  outline: none;
+  border-color: var(--ro-gold);
+  box-shadow: 0 0 0 3px var(--ro-gold-soft);
+}
+.contact-field textarea {
+  resize: vertical;
+}
+
+.contact-error {
+  background: var(--ro-red-soft);
+  border: 1px solid var(--ro-border-red);
+  border-radius: var(--ro-radius);
+  color: var(--ro-red);
+  font-size: 0.88rem;
+  padding: 0.7rem 0.9rem;
+  margin: 0;
+}
+
+.contact-spinner {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: roSpin 0.7s linear infinite;
+}
+
+.crimson-btn:disabled {
+  opacity: 0.75;
+  cursor: default;
+}
+
+@keyframes roSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.contact-sent {
+  text-align: center;
+  padding: 1.2rem 0;
+}
+.contact-sent-icon {
+  font-size: 2rem;
+  color: var(--ro-red);
+  margin-bottom: 0.8rem;
+}
+.contact-sent h2 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.6rem;
+}
+.contact-sent p {
+  color: var(--ro-ink-soft);
+  font-style: italic;
+  margin-bottom: 1.4rem;
+}
+
+.contact-direct {
+  background: linear-gradient(165deg, var(--ro-parchment), var(--ro-marble));
+  border: 1px solid var(--ro-border-gold);
+  border-radius: var(--ro-radius-lg);
+  padding: 2rem 1.8rem;
+  box-shadow: var(--ro-shadow-md);
+}
+.contact-direct h2 {
+  font-size: 1.05rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+.contact-direct p {
+  font-style: italic;
+  color: var(--ro-ink-soft);
+  margin-bottom: 1.2rem;
+}
+
+.contact-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.contact-links li {
+  margin-bottom: 0.8rem;
+}
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+  color: var(--ro-ink);
+}
+
+@media (max-width: 800px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

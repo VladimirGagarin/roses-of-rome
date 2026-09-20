@@ -1,0 +1,71 @@
+/* ============================================================
+   SHORTS PAGE
+   ============================================================ */
+
+.shorts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.short-card {
+  background: var(--ro-marble);
+  border: 1px solid var(--ro-border-gold);
+  border-radius: var(--ro-radius);
+  overflow: hidden;
+  box-shadow: var(--ro-shadow-md);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.short-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--ro-shadow-lg);
+}
+
+.short-card-video {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  background: #000;
+  width: 100%;
+}
+
+.short-card-body {
+  padding: 1rem 1.2rem 1.2rem;
+}
+
+.short-kind {
+  display: inline-block;
+  font-family: var(--ro-font-display);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.7rem;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+}
+.short-kind.short {
+  background: rgba(139, 26, 43, 0.1);
+  color: var(--ro-red);
+}
+.short-kind.animation {
+  background: rgba(201, 162, 39, 0.14);
+  color: var(--ro-gold-deep);
+}
+
+.short-card-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0.2rem 0 0.4rem;
+}
+.short-card-desc {
+  margin: 0;
+  font-style: italic;
+  color: var(--ro-ink-soft);
+  font-size: 0.98rem;
+}
+
+@media (max-width: 520px) {
+  .shorts-grid {
+    grid-template-columns: 1fr;
+  }
+}
