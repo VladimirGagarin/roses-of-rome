@@ -1,6 +1,6 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { FaInfoCircle, FaTimes } from "react-icons/fa";
+import { FaInfoCircle, FaTimes, FaPlay, FaListUl } from "react-icons/fa";
 import { useLanguage } from "../context/LanguageContext";
 import { useSeo } from "../hooks/useSeo";
 import { useAudioStore } from "../ui/audioStore";
@@ -12,6 +12,7 @@ import "./Music.css";
 
 const SITE_URL = "https://vladimirgagarin.github.io/roses-of-rome";
 const RESUME_KEY = "roLastPlayed";
+const AUTOPLAY_KEY = "roAutoplay";
 
 function shuffleList(source) {
   const arr = [...source];
@@ -84,6 +85,7 @@ export default function Music() {
     about: { en: "About this Album", it: "Info su questo Album" },
     info: { en: "Album info", it: "Info album" },
     close: { en: "Close", it: "Chiudi" },
+    auto: { en: "Autoplay Next", it: "Riproduci Avanti" },
   };
 
   const songs = useMemo(() => [...RosesOfRomeSongs(), ...NewSongs()], []);
@@ -199,6 +201,48 @@ export default function Music() {
   const [infoAlbum, setInfoAlbum] = useState(null);
   const closeInfo = () => setInfoAlbum(null);
 
+  const [autoNext, setAutoNextState] = useState(() => {
+    try {
+      return sessionStorage.getItem(AUTOPLAY_KEY) === "1";
+    } catch {
+      return false;
+    }
+  });
+  const setAutoNext = (v) => {
+    setAutoNextState(v);
+    try {
+      sessionStorage.setItem(AUTOPLAY_KEY, v ? "1" : "0");
+    } catch {
+      return;
+    }
+  };
+  const endedUid = useAudioStore((s) => s.endedUid);
+  const endedCount = useAudioStore((s) => s.endedCount);
+  const sendPlay = useAudioStore((s) => s.sendPlay);
+
+  const visibleAlbums = useMemo(
+    () => albums.filter(([album]) => album === category),
+    [albums, category]
+  );
+
+  const lastEndedHandledRef = useRef(endedCount);
+  useEffect(() => {
+    if (lastEndedHandledRef.current === endedCount) return;
+    lastEndedHandledRef.current = endedCount;
+    if (!autoNext || !endedUid) return;
+    const albumSongs = visibleAlbums.flatMap(([, list]) => list);
+    const idx = albumSongs.findIndex(
+      (s) => (s.songId || s.songFile) === endedUid
+    );
+    if (idx === -1) return;
+    if (idx < albumSongs.length - 1) {
+      const next = albumSongs[idx + 1];
+      sendPlay(next.songId || next.songFile);
+    } else {
+      setAutoNext(false);
+    }
+  }, [endedCount, autoNext, endedUid, visibleAlbums, sendPlay]);
+
   const activeId = useAudioStore((s) => s.activeId);
   const activeSong = songs.find(
     (s) => (s.songId || s.songFile) === activeId
@@ -277,11 +321,6 @@ export default function Music() {
 
   const total = songs.length;
 
-  const visibleAlbums = useMemo(
-    () => albums.filter(([album]) => album === category),
-    [albums, category]
-  );
-
   return (
     <div className="container page-section music-page">
       <div className="section-head">
@@ -305,7 +344,37 @@ export default function Music() {
               <h2 className="music-album-title">
                 <span className="music-album-rule" aria-hidden="true" />
                 {album}
-                <span className="music-album-count">{albumSongs.length}</span>
+                <button
+                  type="button"
+                  className={`music-autoplay ${autoNext ? "on" : ""}`}
+                  onClick={() => setAutoNext(!autoNext)}
+                  aria-pressed={autoNext}
+                  aria-label={t.auto[language]}
+                  title={t.auto[language]}
+                >
+                  <span className="music-autoplay-side music-autoplay-icon">
+                    <FaListUl />
+                  </span>
+                  <span className="music-autoplay-side music-autoplay-play">
+                    <FaPlay />
+                    {!autoNext && (
+                      <span className="music-autoplay-slash" aria-hidden="true" />
+                    )}
+                  </span>
+                </button>
+                {autoNext &&
+                  activeId &&
+                  (() => {
+                    const idx = albumSongs.findIndex(
+                      (s) => (s.songId || s.songFile) === activeId
+                    );
+                    if (idx < 0) return null;
+                    return (
+                      <span className="music-album-progress">
+                        {idx + 1}/{albumSongs.length}
+                      </span>
+                    );
+                  })()}
               </h2>
               <div className="music-album-grid">
                 {albumSongs.map((song) => {
@@ -317,6 +386,7 @@ export default function Music() {
                       song={song}
                       autoExpand={isShared}
                       autoPrompt={isShared && !!resume && resume.uid === songUid}
+                      loopDisabled={autoNext}
                       onExitFocus={isShared ? clearShareParam : undefined}
                     />
                   );

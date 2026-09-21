@@ -27,6 +27,7 @@ export default function AudioPlayer({
   song,
   autoExpand = false,
   autoPrompt = false,
+  loopDisabled = false,
   onExitFocus,
 }) {
   const { language } = useLanguage();
@@ -54,6 +55,10 @@ export default function AudioPlayer({
   const activeId = useAudioStore((s) => s.activeId);
   const setActive = useAudioStore((s) => s.setActive);
   const clearActive = useAudioStore((s) => s.clearActive);
+  const markEnded = useAudioStore((s) => s.markEnded);
+  const playNextUid = useAudioStore((s) => s.playNextUid);
+  const playNextCount = useAudioStore((s) => s.playNextCount);
+  const ackPlay = useAudioStore((s) => s.ackPlay);
 
   const t = {
     open: { en: "Open lyrics in focus mode", it: "Apri le liriche in modalità focus" },
@@ -115,10 +120,29 @@ export default function AudioPlayer({
     }
   }, [autoExpand, hasLyrics, autoPrompt]);
 
+  useEffect(() => {
+    if (playNextCount === 0 || playNextUid !== uid) return;
+    const audio = audioRef.current;
+    if (!audio) return;
+    ackPlay();
+    if (rootRef.current && typeof rootRef.current.scrollIntoView === "function") {
+      rootRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+    audio.play().catch(() => setRetryPrompt(true));
+  }, [playNextUid, playNextCount, uid, ackPlay]);
+
+  useEffect(() => {
+    if (loopDisabled) setIsLooping(false);
+  }, [loopDisabled]);
+
   const confirmPlay = () => {
     setRetryPrompt(false);
     const audio = audioRef.current;
-    if (audio) audio.play().catch(() => setError(true));
+    if (!audio) return;
+    if (rootRef.current && typeof rootRef.current.scrollIntoView === "function") {
+      rootRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+    audio.play().catch(() => setError(true));
   };
 
   useEffect(() => {
@@ -256,14 +280,16 @@ export default function AudioPlayer({
           {loading ? <span className="player-spinner" /> : isPlaying ? <FaPause /> : <FaPlay />}
         </button>
 
-        <button
-          className={`player-btn ${big ? "expand" : "small"} ${isLooping ? "active" : ""}`}
-          onClick={() => setIsLooping(!isLooping)}
-          aria-label={t.loop[language]}
-          title={isLooping ? t.unloop[language] : t.loop[language]}
-        >
-          <FaSyncAlt />
-        </button>
+        {!loopDisabled && (
+          <button
+            className={`player-btn ${big ? "expand" : "small"} ${isLooping ? "active" : ""}`}
+            onClick={() => setIsLooping(!isLooping)}
+            aria-label={t.loop[language]}
+            title={isLooping ? t.unloop[language] : t.loop[language]}
+          >
+            <FaSyncAlt />
+          </button>
+        )}
 
         {hasId && (
           <button
@@ -365,6 +391,8 @@ export default function AudioPlayer({
         }}
         onEnded={() => {
           setIsPlaying(false);
+          setLyricsExpanded(false);
+          markEnded(uid);
           if (activeId === uid) clearActive();
         }}
         onError={() => setError(true)}

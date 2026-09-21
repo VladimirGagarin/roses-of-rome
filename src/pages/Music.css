@@ -183,12 +183,65 @@
   background: linear-gradient(90deg, var(--ro-gold), transparent);
 }
 
-.music-album-count {
+.music-autoplay {
   margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  line-height: 0;
+  padding: 0.12rem;
+  border: 1px solid var(--ro-border-gold);
+  border-radius: 16px;
+  background: transparent;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.music-autoplay:hover {
+  border-color: var(--ro-red);
+}
+
+.music-autoplay-side {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  font-size: 0.58rem;
+  color: var(--ro-red);
+}
+
+.music-autoplay-play {
+  position: relative;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.music-autoplay.on .music-autoplay-play {
+  background: var(--ro-red);
+  color: #fff;
+}
+
+.music-autoplay-slash {
+  position: absolute;
+  left: 50%;
+  top: 12%;
+  width: 2px;
+  height: 76%;
+  background: var(--ro-red);
+  transform: translateX(-50%) rotate(45deg);
+  transition: background 0.2s ease;
+}
+
+.music-autoplay.on .music-autoplay-slash {
+  display: none;
+}
+
+.music-album-progress {
   font-family: var(--ro-font-display);
   font-size: 0.72rem;
   letter-spacing: 0.1em;
-  padding: 0.25rem 0.65rem;
+  padding: 0.25rem 0.5rem;
   border: 1px solid var(--ro-border-gold);
   border-radius: 12px;
   color: var(--ro-red);
@@ -233,7 +286,7 @@
     min-width: 1.5rem;
   }
 
-  .music-album-count {
+  .music-album-progress {
     font-size: 0.66rem;
     padding: 0.2rem 0.5rem;
   }
