@@ -155,7 +155,7 @@ import {
 } from "./lyrics";
 
 // utils/songUUIDs.js
-const SONG_UUIDS = {
+export const SONG_UUIDS = {
   rorMusic_001: "a1b2c3d4-e5f6-7890-1234-567890abcdef",
   rorMusic_002: "b2c3d4e5-f6g7-8901-2345-67890abcdef1",
   rorMusic_003: "c3d4e5f6-g7h8-9012-3456-7890abcdef12",
@@ -1156,7 +1156,7 @@ export function RosesOfRomeSongs() {
       songName: { en: "Aeternum Floreamus", it: "Fioriamo Per Sempre" },
       songLyrics: [],
       songAlbum: "Sports",
-      songLink: "",
+      songLink: "https://www.youtube.com/watch?v=s-cXnhl15r4",
     },
     {
       songId: SONG_UUIDS.rorMusic_086,
@@ -1164,7 +1164,7 @@ export function RosesOfRomeSongs() {
       songName: { en: "Aeternum Floreamus II", it: "Fioriamo Per Sempre II" },
       songLyrics: [],
       songAlbum: "Sports",
-      songLink: "",
+      songLink: "https://www.youtube.com/watch?v=jIfN-M7M0jI",
     },
     {
       songId: SONG_UUIDS.rorMusic_087,
@@ -1180,7 +1180,7 @@ export function RosesOfRomeSongs() {
       songName: { en: "Arsenal Song", it: "Canzone dell'Arsenal" },
       songLyrics: [],
       songAlbum: "Sports",
-      songLink: "",
+      songLink: "https://www.youtube.com/watch?v=OQ5ITjQg0tM",
     },
     {
       songId: SONG_UUIDS.rorMusic_089,
@@ -1268,7 +1268,7 @@ export function RosesOfRomeSongs() {
       songName: { en: "We are Stronger together", it: "Siamo Più Forti Insieme" },
       songLyrics: [],
       songAlbum: "Sports",
-      songLink: "",
+      songLink: "https://www.youtube.com/watch?v=CrzNmnEWdOM",
     },
      {
       songId: SONG_UUIDS.rorMusic_100,

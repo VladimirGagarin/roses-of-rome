@@ -48,7 +48,8 @@ const INFOBOX_ROWS = [
   ["Motto", "AETERNUM FLOREAMUS"],
   ["English", "&ldquo;Let us bloom forever.&rdquo;"],
   ["Slogan", "&ldquo;Connoisseurs of Film, Music & Animation&rdquo;"],
-  ["Primary platforms", "YouTube, TikTok"],
+  ["Primary platforms",
+    '<a class="infobox-link" href="https://youtube.com/@rosesofrome" target="_blank" rel="noopener noreferrer">YouTube</a>, <a class="infobox-link" href="https://tiktok.com/@roses_of_rome" target="_blank" rel="noopener noreferrer">TikTok</a>'],
   ["Visual emblem", "Golden rose and laurel wreath"],
 ];
 

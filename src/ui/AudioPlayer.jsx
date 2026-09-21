@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { FaPlay, FaPause, FaSyncAlt, FaRegHeart, FaHeart, FaMusic, FaTimes, FaShareAlt, FaCheck } from "react-icons/fa";
+import { FaPlay, FaPause, FaSyncAlt, FaRegHeart, FaHeart, FaMusic, FaTimes, FaShareAlt, FaCheck, FaYoutube } from "react-icons/fa";
 import { FiMaximize2, FiMinimize2 } from "react-icons/fi";
 import { useLanguage } from "../context/LanguageContext";
 import { useAudioStore } from "./audioStore";
@@ -36,6 +36,7 @@ export default function AudioPlayer({ song, autoExpand = false, onExitFocus }) {
   const [isLiked, setIsLiked] = useState(false);
   const [lyricsExpanded, setLyricsExpanded] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [retryPrompt, setRetryPrompt] = useState(false);
 
   const lyrics = Array.isArray(song?.songLyrics) ? song.songLyrics : [];
   const hasLyrics = lyrics.some((l) => lyricText(l, language));
@@ -63,6 +64,17 @@ export default function AudioPlayer({ song, autoExpand = false, onExitFocus }) {
     retry: { en: "Retry", it: "Riprova" },
     share: { en: "Share this song", it: "Condividi questa canzone" },
     copied: { en: "Link copied!", it: "Link copiato!" },
+    confirmCta: {
+      en: "Oops, the song tried to play...",
+      it: "Ops, la canzone ha provato a riprodursi...",
+    },
+    confirmText: {
+      en: "Your browser blocked autoplay. Do you wish to play it?",
+      it: "Il tuo browser ha bloccato la riproduzione automatica. Vuoi riprodurla?",
+    },
+    yes: { en: "Yes", it: "Sì" },
+    no: { en: "No", it: "No" },
+    openYt: { en: "Open on YouTube", it: "Apri su YouTube" },
   };
 
   const current = lyrics.find(
@@ -76,8 +88,25 @@ export default function AudioPlayer({ song, autoExpand = false, onExitFocus }) {
   }, [uid]);
 
   useEffect(() => {
-    if (autoExpand) setLyricsExpanded(true);
-  }, [autoExpand]);
+    if (!autoExpand) return;
+    if (hasLyrics) {
+      setLyricsExpanded(true);
+      return;
+    }
+    if (rootRef.current && typeof rootRef.current.scrollIntoView === "function") {
+      rootRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+    const audio = audioRef.current;
+    if (audio) {
+      audio.play().catch(() => setRetryPrompt(true));
+    }
+  }, [autoExpand, hasLyrics]);
+
+  const confirmPlay = () => {
+    setRetryPrompt(false);
+    const audio = audioRef.current;
+    if (audio) audio.play().catch(() => setError(true));
+  };
 
   useEffect(() => {
     return () => {
@@ -91,6 +120,17 @@ export default function AudioPlayer({ song, autoExpand = false, onExitFocus }) {
       audioRef.current.pause();
     }
   }, [activeId, uid, isPlaying]);
+
+  const prevActiveRef = useRef(null);
+  useEffect(() => {
+    const prev = prevActiveRef.current;
+    if (prev === uid && activeId !== uid && audioRef.current) {
+      audioRef.current.currentTime = 0;
+      setCurrentTime(0);
+      setProgress(0);
+    }
+    prevActiveRef.current = activeId;
+  }, [activeId, uid]);
 
   useEffect(() => {
     if (!lyricsExpanded) return;
@@ -113,7 +153,7 @@ export default function AudioPlayer({ song, autoExpand = false, onExitFocus }) {
   };
 
   const shareUrl = uid
-    ? `${window.location.origin}${import.meta.env.BASE_URL}music?from_share=${encodeURIComponent(uid)}`
+    ? `${window.location.origin}${import.meta.env.BASE_URL}music?category=${encodeURIComponent(album)}&from_share=${encodeURIComponent(uid)}`
     : "";
 
   const handleShare = async () => {
@@ -176,71 +216,92 @@ export default function AudioPlayer({ song, autoExpand = false, onExitFocus }) {
   };
 
   const renderControls = (big) => (
-    <div className="player-controls">
-      <button
-        className="player-btn"
-        onClick={togglePlay}
-        aria-label={isPlaying ? t.pause[language] : t.play[language]}
-        disabled={loading}
-      >
-        {loading ? <span className="player-spinner" /> : isPlaying ? <FaPause /> : <FaPlay />}
-      </button>
-
+    <>
       {big && (
-        <>
-          <div className="player-progress" onClick={seek} role="slider" aria-label={t.seek[language]}>
-            <div className="player-progress-fill" style={{ width: `${progress * 100}%` }} />
+        <div className="player-progress-row">
+          <span className="player-time">{formatTime(currentTime)}</span>
+          <div
+            className="player-progress"
+            onClick={seek}
+            role="slider"
+            aria-label={t.seek[language]}
+          >
+            <div
+              className="player-progress-fill"
+              style={{ width: `${progress * 100}%` }}
+            />
           </div>
-
-          <span className="player-time">
-            {formatTime(currentTime)} / {formatTime(duration)}
-          </span>
-        </>
+          <span className="player-time">{formatTime(duration)}</span>
+        </div>
       )}
 
-      <button
-        className={`player-btn ${big ? "expand" : "small"} ${isLooping ? "active" : ""}`}
-        onClick={() => setIsLooping(!isLooping)}
-        aria-label={t.loop[language]}
-        title={isLooping ? t.unloop[language] : t.loop[language]}
-      >
-        <FaSyncAlt />
-      </button>
-
-      {hasId && (
+      <div className="player-controls">
         <button
-          className={`player-btn ${big ? "expand" : "small"} ${isLiked ? "active" : ""}`}
-          onClick={handleLike}
-          aria-label={t.fav[language]}
-          title={isLiked ? t.unfav[language] : t.fav[language]}
+          className="player-btn"
+          onClick={togglePlay}
+          aria-label={isPlaying ? t.pause[language] : t.play[language]}
+          disabled={loading}
         >
-          {isLiked ? <FaHeart /> : <FaRegHeart />}
+          {loading ? <span className="player-spinner" /> : isPlaying ? <FaPause /> : <FaPlay />}
         </button>
-      )}
 
-      {hasId && (
         <button
-          className={`player-btn ${big ? "expand" : "small"} ${copied ? "active" : ""}`}
-          onClick={handleShare}
-          aria-label={copied ? t.copied[language] : t.share[language]}
-          title={copied ? t.copied[language] : t.share[language]}
+          className={`player-btn ${big ? "expand" : "small"} ${isLooping ? "active" : ""}`}
+          onClick={() => setIsLooping(!isLooping)}
+          aria-label={t.loop[language]}
+          title={isLooping ? t.unloop[language] : t.loop[language]}
         >
-          {copied ? <FaCheck /> : <FaShareAlt />}
+          <FaSyncAlt />
         </button>
-      )}
 
-      {hasLyrics && (
-        <button
-          className={`player-btn ${big ? "expand" : "small"} ${lyricsExpanded ? "active" : ""}`}
-          onClick={() => (lyricsExpanded ? closeFocus() : setLyricsExpanded(true))}
-          aria-label={lyricsExpanded ? t.close[language] : t.open[language]}
-          aria-expanded={lyricsExpanded}
-          title={lyricsExpanded ? t.close[language] : t.open[language]}
-        >
-          {lyricsExpanded && big ? <FiMinimize2 /> : <FiMaximize2 />}
-        </button>
-      )}
-    </div>
+        {hasId && (
+          <button
+            className={`player-btn ${big ? "expand" : "small"} ${isLiked ? "active" : ""}`}
+            onClick={handleLike}
+            aria-label={t.fav[language]}
+            title={isLiked ? t.unfav[language] : t.fav[language]}
+          >
+            {isLiked ? <FaHeart /> : <FaRegHeart />}
+          </button>
+        )}
+
+        {hasId && (
+          <button
+            className={`player-btn ${big ? "expand" : "small"} ${copied ? "active" : ""}`}
+            onClick={handleShare}
+            aria-label={copied ? t.copied[language] : t.share[language]}
+            title={copied ? t.copied[language] : t.share[language]}
+          >
+            {copied ? <FaCheck /> : <FaShareAlt />}
+          </button>
+        )}
+
+        {song?.songLink && (
+          <a
+            className={`player-btn ${big ? "expand" : "small"} yt-link`}
+            href={song.songLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={t.openYt[language]}
+            title={t.openYt[language]}
+          >
+            <FaYoutube />
+          </a>
+        )}
+
+        {hasLyrics && (
+          <button
+            className={`player-btn ${big ? "expand" : "small fullscreen"} ${lyricsExpanded ? "active" : ""}`}
+            onClick={() => (lyricsExpanded ? closeFocus() : setLyricsExpanded(true))}
+            aria-label={lyricsExpanded ? t.close[language] : t.open[language]}
+            aria-expanded={lyricsExpanded}
+            title={lyricsExpanded ? t.close[language] : t.open[language]}
+          >
+            {lyricsExpanded && big ? <FiMinimize2 /> : <FiMaximize2 />}
+          </button>
+        )}
+      </div>
+    </>
   );
 
   const renderLyricDisplay = (big) => {
@@ -354,6 +415,43 @@ export default function AudioPlayer({ song, autoExpand = false, onExitFocus }) {
           </div>
         </div>
       )}
+
+      {/* ============ AUTOPLAY BLOCKED — yes/no confirmation ============ */}
+      {retryPrompt && (
+        <div
+          className="player-confirm"
+          role="alertdialog"
+          aria-modal="true"
+          aria-label={title}
+        >
+          <div className="player-confirm-panel">
+            <span className="player-confirm-icon" aria-hidden="true">
+              <FaMusic />
+            </span>
+            <p className="player-confirm-title">{t.confirmCta[language]}</p>
+            <p className="player-confirm-text">{t.confirmText[language]}</p>
+            <div className="player-confirm-actions">
+              <button
+                type="button"
+                className="player-confirm-yes"
+                onClick={confirmPlay}
+                autoFocus
+              >
+                {t.yes[language]}
+              </button>
+              <button
+                type="button"
+                className="player-confirm-no"
+                onClick={() => setRetryPrompt(false)}
+              >
+                {t.no[language]}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {isPlaying && <div className="page-disco-border" aria-hidden="true" />}
     </div>
   );
 }

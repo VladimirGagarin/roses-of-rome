@@ -45,6 +45,33 @@
   }
 }
 
+.page-disco-border {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  pointer-events: none;
+  padding: 3px;
+  background: conic-gradient(
+    from var(--ro-angle),
+    #e8b64c,
+    #e33a4e,
+    #7a5cff,
+    #2fb5a6,
+    #e33a4e,
+    #e8b64c
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  animation: roDiscoSpin 3s linear infinite;
+  box-shadow: 0 0 34px rgba(201, 162, 39, 0.22);
+}
+
 .player-head {
   margin-bottom: 0.9rem;
 }
@@ -68,10 +95,53 @@
   margin-top: 0.15rem;
 }
 
-.player-controls {
+.player-progress-row {
   display: flex;
   align-items: center;
   gap: 0.7rem;
+  width: 100%;
+  margin: 0 0 1rem;
+}
+
+.player-progress-row .player-progress {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.player-progress-row .player-time {
+  flex: 0 0 auto;
+}
+
+.player-btn.small.fullscreen {
+  background: linear-gradient(
+    180deg,
+    var(--ro-gold-bright),
+    var(--ro-gold-deep)
+  );
+  color: #2a1c06;
+  border-color: var(--ro-gold-deep);
+}
+
+.player-btn.small.fullscreen.active {
+  background: linear-gradient(180deg, var(--ro-red-bright), var(--ro-red));
+  color: #fff6df;
+  border-color: var(--ro-red);
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+.player-btn.yt-link {
+  text-decoration: none;
+  color: #fff6df;
+}
+
+.player-btn.small.yt-link {
+  color: var(--ro-red);
 }
 
 .player-btn {
@@ -422,14 +492,12 @@
     row-gap: 0.7rem;
   }
 
-  .lyrics-panel .player-progress {
-    order: 10;
-    flex: 1 1 0;
-    min-width: 0;
+  .lyrics-panel .player-progress-row {
+    gap: 0.5rem;
   }
 
-  .lyrics-panel .player-time {
-    order: 11;
+  .lyrics-panel .player-progress-row .player-time {
+    font-size: 0.72rem;
   }
 
   .lyrics-panel .player-btn.expand {
@@ -479,6 +547,10 @@
       0 0 0 1px var(--ro-gold-soft),
       var(--ro-shadow-md);
   }
+
+  .page-disco-border {
+    animation: none;
+  }
 }
 
 .player-error {
@@ -496,4 +568,91 @@
   color: var(--ro-red);
   padding: 0.2rem 0.7rem;
   font-size: 0.8rem;
+}
+
+/* ---------- Autoplay blocked confirmation ---------- */
+.player-confirm {
+  position: fixed;
+  inset: 0;
+  z-index: 400;
+  background: rgba(12, 8, 3, 0.72);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  animation: roFadeIn 0.28s ease;
+}
+
+.player-confirm-panel {
+  width: min(380px, 94vw);
+  border-radius: var(--ro-radius-lg);
+  background:
+    radial-gradient(ellipse at 50% 0%, var(--ro-gold-soft), transparent 62%),
+    var(--ro-parchment);
+  border: 1px solid var(--ro-border-gold);
+  box-shadow:
+    var(--ro-shadow-lg),
+    0 0 70px rgba(201, 162, 39, 0.22);
+  padding: 1.8rem 1.6rem;
+  text-align: center;
+}
+
+.player-confirm-icon {
+  font-size: 1.5rem;
+  color: var(--ro-gold);
+  animation: roMusicPulse 2.6s ease-in-out infinite;
+}
+
+.player-confirm-title {
+  font-family: var(--ro-font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ro-ink);
+  margin: 0.55rem 0 0.35rem;
+}
+
+.player-confirm-text {
+  font-size: 0.95rem;
+  color: var(--ro-ink-soft);
+  margin: 0 0 1.4rem;
+}
+
+.player-confirm-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.player-confirm-yes,
+.player-confirm-no {
+  min-width: 92px;
+  padding: 0.55rem 1.2rem;
+  border-radius: 999px;
+  font-family: var(--ro-font-display);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.player-confirm-yes {
+  border: 1px solid var(--ro-border-red);
+  background: linear-gradient(180deg, var(--ro-red-bright), var(--ro-red));
+  color: #fff6df;
+}
+
+.player-confirm-no {
+  border: 1px solid var(--ro-border-gold);
+  background: transparent;
+  color: var(--ro-ink);
+}
+
+.player-confirm-yes:hover,
+.player-confirm-no:hover {
+  transform: scale(1.04);
 }

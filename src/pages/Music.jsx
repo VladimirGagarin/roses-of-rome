@@ -1,8 +1,11 @@
 import { useMemo, useState } from "react";
+import { FaInfoCircle, FaTimes } from "react-icons/fa";
 import { useLanguage } from "../context/LanguageContext";
 import { useSeo } from "../hooks/useSeo";
+import { useAudioStore } from "../ui/audioStore";
 import AudioPlayer from "../ui/AudioPlayer";
 import { RosesOfRomeSongs } from "../data/songs";
+import { NewSongs } from "../data/newSongs";
 import "./Music.css";
 
 function shuffleList(source) {
@@ -14,20 +17,52 @@ function shuffleList(source) {
   return arr;
 }
 
+const CATEGORY_INFO = {
+  Rosa: {
+    en: "The heart of the label: the signature sonnets, vision and theme songs of Roses Of Rome Pictures.",
+    it: "Il cuore dell'etichetta: i sonetti, le visioni e le canzoni caratteristiche di Roses Of Rome Pictures.",
+  },
+  SWM: {
+    en: "Songs born with the Sing With Magdalene project — hymns of courage, faith and joy.",
+    it: "Canzoni nate con il progetto Sing With Magdalene — inni di coraggio, fede e gioia.",
+  },
+  Cantabile: {
+    en: "Artistic pop and classical-inspired melodies that linger long after the last note.",
+    it: "Melodie artistiche e classicheggianti che restano a lungo dopo l'ultima nota.",
+  },
+  "Piccola Casa della Gioia": {
+    en: "Hymns and songs written for the Piccola Casa della Gioia community.",
+    it: "Inni e canti scritti per la comunità della Piccola Casa della Gioia.",
+  },
+  Merito: {
+    en: "Inspired classical and instrumental pieces of merit and beauty.",
+    it: "Pezzi strumentali e classici ispirati, di merito e bellezza.",
+  },
+  Figli: {
+    en: "Songs for the children — tender, light and full of love.",
+    it: "Canzoni per i figli — tenere, leggere e piene d'amore.",
+  },
+  Disney: {
+    en: "Motivated cover versions of \"When the going gets tough\", sung in many languages.",
+    it: "Versioni cover motivate di \"When the going gets tough\", cantate in molte lingue.",
+  },
+  Sports: {
+    en: "Anthems of sport and celebration — unity on the field of play.",
+    it: "Inni di sport e celebrazione — unità nel campo di gioco.",
+  },
+  Melodia: {
+    en: "Melodies that linger like perfume in an old Roman garden.",
+    it: "Melodie che permangono come profumo in un antico giardino romano.",
+  },
+  "Unlisted": {
+    en: "Fresh arrivals from the studio, still waiting to be placed in their proper category.",
+    it: "Nuovi arrivi dallo studio, ancora in attesa di essere collocati nella loro categoria.",
+  },
+};
+
 export default function Music() {
   const { language } = useLanguage();
   const isIt = language === "it";
-
-  useSeo({
-    title: "Music & Albums — Roses Of Rome Pictures",
-    description: isIt
-      ? "Ascolta la musica di Roses of Rome Pictures: inni, sonetti e canti senza tempo raccolti in album poetici."
-      : "Listen to the music of Roses of Rome Pictures: timeless hymns, sonnets, and songs collected in poetic albums.",
-    keywords: "Roses of Rome music, Rome anthem, poetic songs, hymns, spiritual music, SWM anthem",
-    path: "/music",
-    type: "music.playlist",
-    lang: language,
-  });
 
   const t = {
     title: { en: "Our Music", it: "La Nostra Musica" },
@@ -38,9 +73,13 @@ export default function Music() {
     all: { en: "All Songs", it: "Tutte le Canzoni" },
     noAlbum: { en: "Songs", it: "Canzoni" },
     count: { en: "songs", it: "canzoni" },
+    back: { en: "All Albums", it: "Tutti gli Album" },
+    about: { en: "About this Album", it: "Info su questo Album" },
+    info: { en: "Album info", it: "Info album" },
+    close: { en: "Close", it: "Chiudi" },
   };
 
-  const songs = useMemo(() => RosesOfRomeSongs(), []);
+  const songs = useMemo(() => [...RosesOfRomeSongs(), ...NewSongs()], []);
   const [shareId, setShareId] = useState(() =>
     new URLSearchParams(window.location.search).get("from_share")
   );
@@ -51,6 +90,7 @@ export default function Music() {
     window.history.replaceState({}, "", url);
     setShareId(null);
   };
+
   const albums = useMemo(() => {
     const map = new Map();
     for (const song of songs) {
@@ -58,13 +98,83 @@ export default function Music() {
       if (!map.has(album)) map.set(album, []);
       map.get(album).push(song);
     }
-    return Array.from(map.entries()).map(([album, albumSongs]) => [
-      album,
-      shuffleList(albumSongs),
-    ]);
+    return shuffleList(
+      Array.from(map.entries()).map(([album, albumSongs]) => [
+        album,
+        shuffleList(albumSongs),
+      ])
+    );
   }, [songs]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  const [category, setCategory] = useState(() => {
+    const params = new URLSearchParams(window.location.search);
+    const cat = params.get("category");
+    if (cat && albums.some(([album]) => album === cat)) return cat;
+    if (shareId) {
+      const match = albums.find(([, albumSongs]) =>
+        albumSongs.some((song) => (song.songId || song.songFile) === shareId)
+      );
+      if (match) {
+        const url = new URL(window.location.href);
+        url.searchParams.set("category", match[0]);
+        url.searchParams.delete("from_share");
+        window.history.replaceState({}, "", url);
+        return match[0];
+      }
+    }
+    return null;
+  });
+
+  const selectCategory = (cat) => {
+    const url = new URL(window.location.href);
+    if (cat) {
+      url.searchParams.set("category", cat);
+    } else {
+      url.searchParams.delete("category");
+    }
+    url.searchParams.delete("from_share");
+    window.history.replaceState({}, "", url);
+    setCategory(cat);
+    setShareId(null);
+  };
+
+  const [infoAlbum, setInfoAlbum] = useState(null);
+  const closeInfo = () => setInfoAlbum(null);
+
+  const activeId = useAudioStore((s) => s.activeId);
+  const activeSong = songs.find(
+    (s) => (s.songId || s.songFile) === activeId
+  );
+  const activeSongName = activeSong?.songName?.[language] || "";
+  const activeCategory = category || null;
+
+  const seoTitle = activeCategory
+    ? activeSongName
+      ? `${activeCategory} | ${activeSongName}`
+      : activeCategory
+    : t.title[language];
+
+  const seoDescription = activeCategory
+    ? (CATEGORY_INFO[activeCategory]?.[language] || "") || t.sub[language]
+    : isIt
+      ? "Ascolta la musica di Roses of Rome Pictures: inni, sonetti e canti senza tempo raccolti in album poetici."
+      : "Listen to the music of Roses of Rome Pictures: timeless hymns, sonnets, and songs collected in poetic albums.";
+
+  useSeo({
+    title: `${seoTitle} — Roses Of Rome Pictures`,
+    description: seoDescription,
+    keywords: "Roses of Rome music, Rome anthem, poetic songs, hymns, spiritual music, SWM anthem",
+    path: "/music",
+    type: "music.playlist",
+    lang: language,
+  });
+
   const total = songs.length;
+
+  const visibleAlbums = useMemo(
+    () => albums.filter(([album]) => album === category),
+    [albums, category]
+  );
 
   return (
     <div className="container page-section music-page">
@@ -74,29 +184,91 @@ export default function Music() {
         <p className="section-sub">{t.sub[language]}</p>
       </div>
 
-      {albums.map(([album, albumSongs]) => (
-        <section className="music-album" key={album}>
-          <h2 className="music-album-title">
-            <span className="music-album-rule" aria-hidden="true" />
-            {album}
-            <span className="music-album-count">{albumSongs.length}</span>
-          </h2>
-          <div className="music-album-grid">
-            {albumSongs.map((song) => {
-              const songUid = song.songId || song.songFile;
-              const isShared = !!shareId && !!songUid && songUid === shareId;
-              return (
-                <AudioPlayer
-                  key={song.songId || song.songFile}
-                  song={song}
-                  autoExpand={isShared}
-                  onExitFocus={isShared ? clearShareParam : undefined}
-                />
-              );
-            })}
+      {category ? (
+        <>
+          <button
+            type="button"
+            className="music-back"
+            onClick={() => selectCategory(null)}
+          >
+            {t.back[language]}
+          </button>
+
+          {visibleAlbums.map(([album, albumSongs]) => (
+            <section className="music-album" key={album}>
+              <h2 className="music-album-title">
+                <span className="music-album-rule" aria-hidden="true" />
+                {album}
+                <span className="music-album-count">{albumSongs.length}</span>
+              </h2>
+              <div className="music-album-grid">
+                {albumSongs.map((song) => {
+                  const songUid = song.songId || song.songFile;
+                  const isShared = !!shareId && !!songUid && songUid === shareId;
+                  return (
+                    <AudioPlayer
+                      key={song.songId || song.songFile}
+                      song={song}
+                      autoExpand={isShared}
+                      onExitFocus={isShared ? clearShareParam : undefined}
+                    />
+                  );
+                })}
+              </div>
+            </section>
+          ))}
+        </>
+      ) : (
+        <div className="music-cats-grid">
+          {albums.map(([album]) => (
+            <div className="music-cat-card" key={album}>
+              <button
+                type="button"
+                className="music-cat-card-select"
+                onClick={() => selectCategory(album)}
+              >
+                <span className="music-cat-card-name">{album}</span>
+              </button>
+              <button
+                type="button"
+                className="music-cat-card-info"
+                onClick={() => setInfoAlbum(album)}
+                aria-label={`${t.info[language]}: ${album}`}
+                title={t.info[language]}
+              >
+                <FaInfoCircle />
+              </button>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {infoAlbum && (
+        <div
+          className="music-info-overlay"
+          onClick={closeInfo}
+          role="dialog"
+          aria-modal="true"
+        >
+          <div className="music-info-panel" onClick={(e) => e.stopPropagation()}>
+            <button
+              type="button"
+              className="music-info-close"
+              onClick={closeInfo}
+              aria-label={t.close[language]}
+              title={t.close[language]}
+            >
+              <FaTimes />
+            </button>
+            <span className="music-info-kicker">{t.about[language]}</span>
+            <h3 className="music-info-title">{infoAlbum}</h3>
+            <p className="music-info-text">
+              {(CATEGORY_INFO[infoAlbum] || { en: "", it: "" })[language] ||
+                t.sub[language]}
+            </p>
           </div>
-        </section>
-      ))}
+        </div>
+      )}
     </div>
   );
 }

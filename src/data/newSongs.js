@@ -1,5 +1,6 @@
 // Auto-generated: audio files that were not yet wired into the site, added to the Music page.
-// Entries carry a file, a display name and the shared 'New Music' album (no lyrics / no ids).
+// Entries carry a file, a display name and the shared 'Unlisted' album (no lyrics / no ids).
+// Assign each song to its real category by editing its songAlbum value below.
 
 import N0 from "../assets/audios/a song to share, a life to share.mp3";
 import N1 from "../assets/audios/about_roses.mp3";
@@ -105,6 +106,72 @@ import N100 from "../assets/audios/welcome_female _(Cover) (2)_cinema.mp3";
 import N101 from "../assets/audios/welcome_female_intro.mp3";
 import N102 from "../assets/audios/Y el espectáculo debe continuar..mp3";
 import N103 from "../assets/audios/yourome.mp3";
+import { SONG_UUIDS } from "./songs";
+
+// One stable id per unlisted song: first the reusable crypto-random ids
+// already present in SONG_UUIDS (rorMusic_101..150), then freshly generated
+// ones so every song has a unique, permanent identifier.
+const UNLISTED_IDS = [];
+for (let n = 101; n <= 150; n++) {
+  const value = SONG_UUIDS[`rorMusic_${n}`];
+  if (value) UNLISTED_IDS.push(value);
+}
+UNLISTED_IDS.push(
+  "d4d93cd8-f2b1-4aa9-b924-65bf0c309389",
+  "91d25bca-5a5a-40fa-9c04-b63241b67443",
+  "4b5180d8-c6d1-4442-bbe7-b42f9ecdda7a",
+  "8ef0fc59-4a01-4e8c-a094-bdb81bfef7f6",
+  "31258be5-9b4e-4970-a7a9-3bcfa23c7c1c",
+  "dd3a3032-eab8-48e8-9ed9-6e2e4364bd22",
+  "46b2eeed-09db-4a47-a4e8-31033947e08b",
+  "39703066-6244-4429-8dec-a496786b9caf",
+  "8cb23bc0-ad38-44b4-ab3b-dcb5bb18934e",
+  "84703bee-64c7-4545-8955-4d9dbeabbf6b",
+  "7571dde9-bff5-42e6-8d01-6baefbf66aa5",
+  "706a1135-d463-4d12-b23b-ca7de86456a3",
+  "47f57764-7465-47d2-b4f6-b790d5171efe",
+  "cdf926ec-632d-4aca-9c6d-acc09cdd11d5",
+  "aa3887d7-89e7-44df-9a28-ed4a7c194560",
+  "4f7ed700-9ba8-489b-91e6-346c9c9b1f3d",
+  "6ce811f5-cd23-4d2e-ab6e-d23b4dbbb443",
+  "56a3951b-99a1-4f9d-9e9f-319e8ac5573e",
+  "4036d0b4-b06b-40bc-8487-22bfba5cfb4e",
+  "fc7a4b19-65b3-4d6e-a918-02a7fc2496ff",
+  "0328a69f-5b90-4d4f-97b5-30417209ca09",
+  "142909df-5452-495f-b013-1bb1c8e12b81",
+  "426ef8d6-cdcb-46a8-b459-7db395c8c60f",
+  "64017805-21ef-4e23-9a72-e24db17e3e6e",
+  "2e46a059-6740-4b4a-a22f-498e9a2b0bb8",
+  "29fce613-6998-49ca-8ab2-6c9df5b0b045",
+  "b1407948-be8e-4b8b-a7f7-3f21668e6d92",
+  "fd643dd0-1677-49e3-94df-6f1774942cdf",
+  "253fd7c1-a695-44d0-8d1c-98ba51c80bdb",
+  "b6d639fc-e96b-432b-927e-2d8499b07be5",
+  "60b8aa19-d424-4beb-9e51-b9e05a193d8e",
+  "b6c0b08f-6142-4a4f-ac0f-a43b42470d8b",
+  "473bddaf-ce33-4475-895f-23f12328a8ff",
+  "1d3a84b7-d0b9-4a62-add3-6d1a504f0628",
+  "956416b6-caf9-4564-9890-cdf682bd9d3a",
+  "ed40d1dc-9c76-4a04-86f3-6d066ad38e61",
+  "11c5e4a1-2802-40b5-8124-286732191fdf",
+  "ec80e97a-b4fd-46e9-a0d8-4ad8125361a1",
+  "6f54d07e-7422-4c7b-96dc-d0f0ac5de918",
+  "061469bd-10a3-46f3-955d-e1147a42f59f",
+  "2ba76216-22e2-48c7-ae9a-1eb2c9874afd",
+  "ea7e6514-165d-44e5-9fde-eea65144263f",
+  "b01f24c0-f63f-4607-b184-b74286b4194c",
+  "86d7c3dd-4f63-4797-93ad-85192dcd85b5",
+  "a98ab30e-d585-473a-9672-fe444a53fee3",
+  "4e03d74b-b1ad-4673-9cd1-240162b04739",
+  "318ca989-ebaa-47cb-be88-772c38340627",
+  "86a06bf0-7ea3-40a6-aaf1-2c6d5310468f",
+  "3c74dca5-ada9-4119-9c8d-84da199ff486",
+  "98d79c58-07dd-431c-ab86-d51c99881126",
+  "492f7076-6066-423b-9325-63df854990e1",
+  "dac840b7-6185-441d-bd6a-234acf2ef9e6",
+  "600185c6-6028-4487-9370-791f79255ca4",
+  "4f98a160-53ee-4438-b18c-691f6b3db769"
+);
 
 export function NewSongs() {
   return [
@@ -212,5 +279,5 @@ export function NewSongs() {
     { songFile: N101, songName: { en: "welcome female intro", it: "welcome female intro" } },
     { songFile: N102, songName: { en: "Y el espectáculo debe continuar.", it: "Y el espectáculo debe continuar." } },
     { songFile: N103, songName: { en: "yourome", it: "yourome" } },
-  ].map((s) => ({ ...s, songAlbum: "New Music" }));
+  ].map((s, i) => ({ ...s, songId: UNLISTED_IDS[i], songAlbum: "Unlisted" }));
 }

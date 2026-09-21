@@ -84,6 +84,15 @@
 .infobox tfoot th {
   background: var(--ro-ivory);
 }
+.infobox-link {
+  color: #c9a227;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+.infobox-link:hover {
+  color: #e33a4e;
+}
 
 .wiki-body {
   min-width: 0;
