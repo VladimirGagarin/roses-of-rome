@@ -3,6 +3,7 @@ import { FaPlay, FaPause, FaSyncAlt, FaRegHeart, FaHeart, FaMusic, FaTimes, FaSh
 import { FiMaximize2, FiMinimize2 } from "react-icons/fi";
 import { useLanguage } from "../context/LanguageContext";
 import { useAudioStore } from "./audioStore";
+import { songUrl } from "../data/songSlug";
 import "./Player.css";
 
 function formatTime(sec) {
@@ -152,9 +153,7 @@ export default function AudioPlayer({ song, autoExpand = false, onExitFocus }) {
     }
   };
 
-  const shareUrl = uid
-    ? `${window.location.origin}${import.meta.env.BASE_URL}music?category=${encodeURIComponent(album)}&from_share=${encodeURIComponent(uid)}`
-    : "";
+  const shareUrl = song && uid ? songUrl(song) : "";
 
   const handleShare = async () => {
     const shareData = {

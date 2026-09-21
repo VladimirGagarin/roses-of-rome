@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import { FaInfoCircle, FaTimes } from "react-icons/fa";
 import { useLanguage } from "../context/LanguageContext";
 import { useSeo } from "../hooks/useSeo";
@@ -6,7 +7,10 @@ import { useAudioStore } from "../ui/audioStore";
 import AudioPlayer from "../ui/AudioPlayer";
 import { RosesOfRomeSongs } from "../data/songs";
 import { NewSongs } from "../data/newSongs";
+import { songSlug } from "../data/songSlug";
 import "./Music.css";
+
+const SITE_URL = "https://vladimirgagarin.github.io/roses-of-rome";
 
 function shuffleList(source) {
   const arr = [...source];
@@ -62,6 +66,8 @@ const CATEGORY_INFO = {
 
 export default function Music() {
   const { language } = useLanguage();
+  const { songSlug: slugParam } = useParams();
+  const navigate = useNavigate();
   const isIt = language === "it";
 
   const t = {
@@ -80,11 +86,27 @@ export default function Music() {
   };
 
   const songs = useMemo(() => [...RosesOfRomeSongs(), ...NewSongs()], []);
-  const [shareId, setShareId] = useState(() =>
-    new URLSearchParams(window.location.search).get("from_share")
+
+  const slugSong = useMemo(
+    () => (slugParam ? songs.find((s) => songSlug(s) === slugParam) : null),
+    [songs, slugParam]
   );
 
+  const [shareId, setShareId] = useState(() => {
+    const fromShare = new URLSearchParams(window.location.search).get("from_share");
+    if (fromShare) return fromShare;
+    return slugSong ? slugSong.songId || slugSong.songFile : null;
+  });
+
   const clearShareParam = () => {
+    if (slugParam) {
+      navigate({
+        pathname: "/music",
+        search: category ? `?category=${encodeURIComponent(category)}` : "",
+      });
+      setShareId(null);
+      return;
+    }
     const url = new URL(window.location.href);
     url.searchParams.delete("from_share");
     window.history.replaceState({}, "", url);
@@ -115,10 +137,12 @@ export default function Music() {
         albumSongs.some((song) => (song.songId || song.songFile) === shareId)
       );
       if (match) {
-        const url = new URL(window.location.href);
-        url.searchParams.set("category", match[0]);
-        url.searchParams.delete("from_share");
-        window.history.replaceState({}, "", url);
+        if (!slugSong) {
+          const url = new URL(window.location.href);
+          url.searchParams.set("category", match[0]);
+          url.searchParams.delete("from_share");
+          window.history.replaceState({}, "", url);
+        }
         return match[0];
       }
     }
@@ -126,6 +150,15 @@ export default function Music() {
   });
 
   const selectCategory = (cat) => {
+    if (slugParam) {
+      navigate({
+        pathname: "/music",
+        search: cat ? `?category=${encodeURIComponent(cat)}` : "",
+      });
+      setCategory(cat);
+      setShareId(null);
+      return;
+    }
     const url = new URL(window.location.href);
     if (cat) {
       url.searchParams.set("category", cat);
@@ -148,25 +181,59 @@ export default function Music() {
   const activeSongName = activeSong?.songName?.[language] || "";
   const activeCategory = category || null;
 
-  const seoTitle = activeCategory
-    ? activeSongName
-      ? `${activeCategory} | ${activeSongName}`
-      : activeCategory
-    : t.title[language];
+  const focusedSong = useMemo(
+    () =>
+      slugSong ||
+      (shareId
+        ? songs.find((s) => (s.songId || s.songFile) === shareId)
+        : null) ||
+      null,
+    [slugSong, shareId, songs]
+  );
+  const focusedName =
+    focusedSong?.songName?.[language] || focusedSong?.songName?.en || "";
 
-  const seoDescription = activeCategory
-    ? (CATEGORY_INFO[activeCategory]?.[language] || "") || t.sub[language]
-    : isIt
-      ? "Ascolta la musica di Roses of Rome Pictures: inni, sonetti e canti senza tempo raccolti in album poetici."
-      : "Listen to the music of Roses of Rome Pictures: timeless hymns, sonnets, and songs collected in poetic albums.";
+  const seoTitle = focusedName
+    ? `${focusedSong.songAlbum || t.noAlbum[language]} | ${focusedName}`
+    : activeCategory
+      ? activeSongName
+        ? `${activeCategory} | ${activeSongName}`
+        : activeCategory
+      : t.title[language];
+
+  const seoDescription = focusedName
+    ? isIt
+      ? `Ascolta "${focusedName}" di Roses of Rome Pictures — dall'album ${focusedSong.songAlbum || t.noAlbum[language]}.`
+      : `Listen to "${focusedName}" by Roses of Rome Pictures — from the album ${focusedSong.songAlbum || t.noAlbum[language]}.`
+    : activeCategory
+      ? (CATEGORY_INFO[activeCategory]?.[language] || "") || t.sub[language]
+      : isIt
+        ? "Ascolta la musica di Roses of Rome Pictures: inni, sonetti e canti senza tempo raccolti in album poetici."
+        : "Listen to the music of Roses of Rome Pictures: timeless hymns, sonnets, and songs collected in poetic albums.";
+
+  const songLd = useMemo(() => {
+    if (!focusedSong) return null;
+    const albumName =
+      focusedSong.songAlbum || (language === "it" ? "Canzoni" : "Songs");
+    return {
+      "@context": "https://schema.org",
+      "@type": "MusicRecording",
+      name: focusedName || focusedSong.songName?.en || "",
+      byArtist: { "@type": "MusicGroup", name: "Roses Of Rome Pictures" },
+      inAlbum: { "@type": "MusicAlbum", name: albumName },
+      url: `${SITE_URL}/music/${songSlug(focusedSong)}`,
+      ...(focusedSong.songLink ? { sameAs: focusedSong.songLink } : {}),
+    };
+  }, [focusedSong, focusedName, language]);
 
   useSeo({
     title: `${seoTitle} — Roses Of Rome Pictures`,
     description: seoDescription,
     keywords: "Roses of Rome music, Rome anthem, poetic songs, hymns, spiritual music, SWM anthem",
-    path: "/music",
-    type: "music.playlist",
+    path: focusedSong ? `/music/${songSlug(focusedSong)}` : "/music",
+    type: focusedSong ? "music.song" : "music.playlist",
     lang: language,
+    customLd: songLd,
   });
 
   const total = songs.length;

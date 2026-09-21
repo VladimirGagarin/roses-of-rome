@@ -23,6 +23,7 @@ const router = createBrowserRouter(
         { index: true, element: <Home /> },
         { path: "films", element: <Films /> },
         { path: "music", element: <Music /> },
+        { path: "music/:songSlug", element: <Music /> },
         { path: "shorts", element: <Shorts /> },
         { path: "about", element: <About /> },
         { path: "contact", element: <Contact /> },
