@@ -23,7 +23,12 @@ function lyricText(line, language) {
  * Clean audio + synchronized lyrics player.
  * song = { songFile, songName: {en,it}, songAlbum?, songLyrics?: [] }
  */
-export default function AudioPlayer({ song, autoExpand = false, onExitFocus }) {
+export default function AudioPlayer({
+  song,
+  autoExpand = false,
+  autoPrompt = false,
+  onExitFocus,
+}) {
   const { language } = useLanguage();
   const audioRef = useRef(null);
   const rootRef = useRef(null);
@@ -90,6 +95,13 @@ export default function AudioPlayer({ song, autoExpand = false, onExitFocus }) {
 
   useEffect(() => {
     if (!autoExpand) return;
+    if (autoPrompt) {
+      if (rootRef.current && typeof rootRef.current.scrollIntoView === "function") {
+        rootRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+      setRetryPrompt(true);
+      return;
+    }
     if (hasLyrics) {
       setLyricsExpanded(true);
       return;
@@ -101,7 +113,7 @@ export default function AudioPlayer({ song, autoExpand = false, onExitFocus }) {
     if (audio) {
       audio.play().catch(() => setRetryPrompt(true));
     }
-  }, [autoExpand, hasLyrics]);
+  }, [autoExpand, hasLyrics, autoPrompt]);
 
   const confirmPlay = () => {
     setRetryPrompt(false);

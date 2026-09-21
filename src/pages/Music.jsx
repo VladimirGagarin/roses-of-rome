@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { FaInfoCircle, FaTimes } from "react-icons/fa";
 import { useLanguage } from "../context/LanguageContext";
@@ -11,6 +11,7 @@ import { songSlug } from "../data/songSlug";
 import "./Music.css";
 
 const SITE_URL = "https://vladimirgagarin.github.io/roses-of-rome";
+const RESUME_KEY = "roLastPlayed";
 
 function shuffleList(source) {
   const arr = [...source];
@@ -92,10 +93,34 @@ export default function Music() {
     [songs, slugParam]
   );
 
+  const resume = useMemo(() => {
+    if (slugParam) return null;
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("from_share")) return null;
+    try {
+      const raw = sessionStorage.getItem(RESUME_KEY);
+      if (!raw) return null;
+      const saved = JSON.parse(raw);
+      if (!saved || !saved.uid) return null;
+      const song = songs.find((s) => (s.songId || s.songFile) === saved.uid);
+      if (!song) return null;
+      const curCat = params.get("category");
+      if (!curCat || curCat !== saved.album) return null;
+      if (saved.path !== `${window.location.pathname}${window.location.search}`) {
+        return null;
+      }
+      return { uid: saved.uid, album: saved.album };
+    } catch {
+      return null;
+    }
+  }, [songs, slugParam]);
+
   const [shareId, setShareId] = useState(() => {
     const fromShare = new URLSearchParams(window.location.search).get("from_share");
     if (fromShare) return fromShare;
-    return slugSong ? slugSong.songId || slugSong.songFile : null;
+    if (slugSong) return slugSong.songId || slugSong.songFile;
+    if (resume) return resume.uid;
+    return null;
   });
 
   const clearShareParam = () => {
@@ -180,6 +205,20 @@ export default function Music() {
   );
   const activeSongName = activeSong?.songName?.[language] || "";
   const activeCategory = category || null;
+
+  useEffect(() => {
+    if (!activeId) return;
+    const song = songs.find((s) => (s.songId || s.songFile) === activeId);
+    if (!song) return;
+    sessionStorage.setItem(
+      RESUME_KEY,
+      JSON.stringify({
+        uid: activeId,
+        album: song.songAlbum || null,
+        path: `${window.location.pathname}${window.location.search}`,
+      })
+    );
+  }, [activeId, songs]);
 
   const focusedSong = useMemo(
     () =>
@@ -277,6 +316,7 @@ export default function Music() {
                       key={song.songId || song.songFile}
                       song={song}
                       autoExpand={isShared}
+                      autoPrompt={isShared && !!resume && resume.uid === songUid}
                       onExitFocus={isShared ? clearShareParam : undefined}
                     />
                   );
