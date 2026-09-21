@@ -57,7 +57,7 @@ export default function About() {
   const { language } = useLanguage();
 
   useSeo({
-    title: "Roses Of Rome Pictures — Independent Kenyan Creative Studio | Wikipedia-Style Profile",
+    title: "THE STUDIO | RORP — Independent Kenyan Creative Studio, Founded 2025",
     description: "Roses Of Rome Pictures (abbreviated RORP) is an independent creative studio and publishing identity associated with film, music, animation, and visual storytelling. Founded 31 July 2025 in Kenya. Motto: AETERNUM FLOREAMUS, Latin for 'Let us bloom forever.'",
     keywords:
       "Roses Of Rome Pictures, RORP, Kenyan film studio, independent studio, Aeternum Floreamus, Let us bloom forever, Roses of Rome Pictures music, film animation music studio, golden rose laurel wreath",
