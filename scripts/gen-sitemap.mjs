@@ -7,6 +7,7 @@ import { createServer } from "vite";
 import { writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { songSlug } from "../src/data/songSlug.js";
+import { ABOUT_SECTIONS } from "../src/data/aboutPages.js";
 
 const SITE = "https://vladimirgagarin.github.io/roses-of-rome";
 const STATIC_PATHS = ["", "films", "music", "shorts", "about", "contact"];
@@ -38,7 +39,8 @@ async function main() {
       songPaths.push(`music/${slug}`);
     }
 
-    const paths = [...STATIC_PATHS, ...songPaths];
+    const aboutPaths = ABOUT_SECTIONS.map((page) => page.path);
+    const paths = [...STATIC_PATHS, ...aboutPaths, ...songPaths];
     const xml = [
       '<?xml version="1.0" encoding="UTF-8"?>',
       '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',

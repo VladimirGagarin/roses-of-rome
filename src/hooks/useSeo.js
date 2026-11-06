@@ -35,6 +35,7 @@ export function useSeo({
   path = "/",
   type = "website",
   lang = "en",
+  image = DEFAULT_IMAGE,
   customLd = null,
 }) {
   useEffect(() => {
@@ -48,12 +49,12 @@ export function useSeo({
     if (description) setMeta("property", "og:description", description);
     setMeta("property", "og:url", `${SITE_URL}/${path.replace(/^\//, "")}`);
     setMeta("property", "og:type", type);
-    setMeta("property", "og:image", DEFAULT_IMAGE);
+    setMeta("property", "og:image", image);
     setMeta("property", "og:locale", lang === "it" ? "it_IT" : "en_US");
 
     setMeta("name", "twitter:title", title);
     if (description) setMeta("name", "twitter:description", description);
-    setMeta("name", "twitter:image", DEFAULT_IMAGE);
+    setMeta("name", "twitter:image", image);
 
     setCanonical(path);
 
@@ -72,5 +73,5 @@ export function useSeo({
       }
     );
     if (!ld) document.head.appendChild(script);
-  }, [title, description, keywords, path, type, lang, customLd]);
+  }, [title, description, keywords, path, type, lang, image, customLd]);
 }

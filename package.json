@@ -8,6 +8,7 @@
   "dev": "vite",
   "prebuild": "node scripts/gen-sitemap.mjs",
   "build": "vite build",
+  "postbuild": "node scripts/gen-about-pages.mjs",
   "lint": "eslint .",
   "preview": "vite preview",
   "pub": "git add . && git commit -m 'Updated' && git push",

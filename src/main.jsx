@@ -12,6 +12,8 @@ import Films from "./pages/Films.jsx";
 import Music from "./pages/Music.jsx";
 import Shorts from "./pages/Shorts.jsx";
 import About from "./pages/About.jsx";
+import WhoWeAre from "./pages/about/WhoWeAre.jsx";
+import AboutDetail from "./pages/about/AboutDetail.jsx";
 import Contact from "./pages/Contact.jsx";
 
 const router = createBrowserRouter(
@@ -26,6 +28,8 @@ const router = createBrowserRouter(
         { path: "music/:songSlug", element: <Music /> },
         { path: "shorts", element: <Shorts /> },
         { path: "about", element: <About /> },
+        { path: "about/who-we-are", element: <WhoWeAre /> },
+        { path: "about/:section", element: <AboutDetail /> },
         { path: "contact", element: <Contact /> },
         { path: "*", element: <Navigate to="/" replace /> },
       ],

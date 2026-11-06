@@ -106,6 +106,28 @@ import N100 from "../assets/audios/welcome_female _(Cover) (2)_cinema.mp3";
 import N101 from "../assets/audios/welcome_female_intro.mp3";
 import N102 from "../assets/audios/Y el espectáculo debe continuar..mp3";
 import N103 from "../assets/audios/yourome.mp3";
+import N104 from "../assets/audios/A Little Word of Kindness.mp3";
+import N105 from "../assets/audios/Aeternum Floreamus.mp3";
+import N106 from "../assets/audios/Aeternum Floreamus.wav";
+import N107 from "../assets/audios/Baraka Zako Ni Tele.mp3";
+import N108 from "../assets/audios/chelsea dance.mp3";
+import N109 from "../assets/audios/Cottolengo Sisters children.mp3";
+import N110 from "../assets/audios/Cottolengo Sisters.wav";
+import N111 from "../assets/audios/Fahari Yetu Ni Nairobi_wow.mp3";
+import N112 from "../assets/audios/Good Morning, Baby!.mp3";
+import N113 from "../assets/audios/Good Morning, Baby!.wav";
+import N114 from "../assets/audios/Halala Ngempilo.wav";
+import N115 from "../assets/audios/I Want to Be a Fish.mp3";
+import N116 from "../assets/audios/Karibuni Nairobi.mp3";
+import N117 from "../assets/audios/Nitasubiri children gospel.mp3";
+import N118 from "../assets/audios/omg.mp3";
+import N119 from "../assets/audios/oyster_officiale.mp3";
+import N120 from "../assets/audios/settings.mp3";
+import N121 from "../assets/audios/Sing to the Stars.mp3";
+import N122 from "../assets/audios/The Pride of London.mp3";
+import N123 from "../assets/audios/the tough gets going (Cover) (1)-swahili.mp3";
+import N124 from "../assets/audios/Tustawi Milele.mp3";
+import N125 from "../assets/audios/We Sing Your Song.mp3";
 import { SONG_UUIDS } from "./songs";
 
 // One stable id per unlisted song: first the reusable crypto-random ids
@@ -170,7 +192,29 @@ UNLISTED_IDS.push(
   "492f7076-6066-423b-9325-63df854990e1",
   "dac840b7-6185-441d-bd6a-234acf2ef9e6",
   "600185c6-6028-4487-9370-791f79255ca4",
-  "4f98a160-53ee-4438-b18c-691f6b3db769"
+  "4f98a160-53ee-4438-b18c-691f6b3db769",
+  "11111111-1111-4111-8111-000000000001",
+  "11111111-1111-4111-8111-000000000002",
+  "11111111-1111-4111-8111-000000000003",
+  "11111111-1111-4111-8111-000000000004",
+  "11111111-1111-4111-8111-000000000005",
+  "11111111-1111-4111-8111-000000000006",
+  "11111111-1111-4111-8111-000000000007",
+  "11111111-1111-4111-8111-000000000008",
+  "11111111-1111-4111-8111-000000000009",
+  "11111111-1111-4111-8111-000000000010",
+  "11111111-1111-4111-8111-000000000011",
+  "11111111-1111-4111-8111-000000000012",
+  "11111111-1111-4111-8111-000000000013",
+  "11111111-1111-4111-8111-000000000014",
+  "11111111-1111-4111-8111-000000000015",
+  "11111111-1111-4111-8111-000000000016",
+  "11111111-1111-4111-8111-000000000017",
+  "11111111-1111-4111-8111-000000000018",
+  "11111111-1111-4111-8111-000000000019",
+  "11111111-1111-4111-8111-000000000020",
+  "11111111-1111-4111-8111-000000000021",
+  "11111111-1111-4111-8111-000000000022"
 );
 
 export function NewSongs() {
@@ -279,5 +323,27 @@ export function NewSongs() {
     { songFile: N101, songName: { en: "welcome female intro", it: "welcome female intro" } },
     { songFile: N102, songName: { en: "Y el espectáculo debe continuar.", it: "Y el espectáculo debe continuar." } },
     { songFile: N103, songName: { en: "yourome", it: "yourome" } },
+    { songFile: N104, songName: { en: "A Little Word of Kindness", it: "Una piccola parola di gentilezza" } },
+    { songFile: N105, songName: { en: "Aeternum Floreamus (MP3)", it: "Aeternum Floreamus (MP3)" } },
+    { songFile: N106, songName: { en: "Aeternum Floreamus (WAV)", it: "Aeternum Floreamus (WAV)" } },
+    { songFile: N107, songName: { en: "Baraka Zako Ni Tele", it: "Baraka Zako Ni Tele" } },
+    { songFile: N108, songName: { en: "Chelsea Dance", it: "Chelsea Dance" } },
+    { songFile: N109, songName: { en: "Cottolengo Sisters — Children", it: "Suore di Cottolengo — Bambini" } },
+    { songFile: N110, songName: { en: "Cottolengo Sisters (WAV)", it: "Suore di Cottolengo (WAV)" } },
+    { songFile: N111, songName: { en: "Fahari Yetu Ni Nairobi", it: "Fahari Yetu Ni Nairobi" } },
+    { songFile: N112, songName: { en: "Good Morning, Baby! (MP3)", it: "Good Morning, Baby! (MP3)" } },
+    { songFile: N113, songName: { en: "Good Morning, Baby! (WAV)", it: "Good Morning, Baby! (WAV)" } },
+    { songFile: N114, songName: { en: "Halala Ngempilo (WAV)", it: "Halala Ngempilo (WAV)" } },
+    { songFile: N115, songName: { en: "I Want to Be a Fish", it: "Vorrei essere un pesce" } },
+    { songFile: N116, songName: { en: "Karibuni Nairobi", it: "Karibuni Nairobi" } },
+    { songFile: N117, songName: { en: "Nitasubiri — Children Gospel", it: "Nitasubiri — Gospel per bambini" } },
+    { songFile: N118, songName: { en: "OMG", it: "OMG" } },
+    { songFile: N119, songName: { en: "Oyster Officiale", it: "Oyster Officiale" } },
+    { songFile: N120, songName: { en: "Settings", it: "Impostazioni" } },
+    { songFile: N121, songName: { en: "Sing to the Stars", it: "Canta alle stelle" } },
+    { songFile: N122, songName: { en: "The Pride of London", it: "L'orgoglio di Londra" } },
+    { songFile: N123, songName: { en: "When the Going Gets Tough (Swahili)", it: "When the Going Gets Tough (Swahili)" } },
+    { songFile: N124, songName: { en: "Tustawi Milele", it: "Tustawi Milele" } },
+    { songFile: N125, songName: { en: "We Sing Your Song", it: "Cantiamo la tua canzone" } },
   ].map((s, i) => ({ ...s, songId: UNLISTED_IDS[i], songAlbum: "Unlisted" }));
 }
