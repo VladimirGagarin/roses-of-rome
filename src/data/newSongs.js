@@ -128,6 +128,22 @@ import N122 from "../assets/audios/The Pride of London.mp3";
 import N123 from "../assets/audios/the tough gets going (Cover) (1)-swahili.mp3";
 import N124 from "../assets/audios/Tustawi Milele.mp3";
 import N125 from "../assets/audios/We Sing Your Song.mp3";
+import N126 from "../assets/audios/A Crescendo of Dreams.mp3";
+import N127 from "../assets/audios/Confetti Cannon Bloom.mp3";
+import N128 from "../assets/audios/Dua Letu Ni La Amani_official.mp3";
+import N129 from "../assets/audios/Dua Letu Ni La Amani_official.wav";
+import N130 from "../assets/audios/Mere Sajna, Naache Re.mp3";
+import N131 from "../assets/audios/Posthorn Threnody.wav";
+import N132 from "../assets/audios/Road Ends Here.mp3";
+import N133 from "../assets/audios/Wako Forever (1).mp3";
+import N134 from "../assets/audios/in my heart you belong(remix).mp3";
+import N135 from "../assets/audios/nvgu (Cover).mp3";
+import N136 from "../assets/audios/peace (1).mp3";
+import N137 from "../assets/audios/peace_lyrics.mp3";
+import N138 from "../assets/audios/qr-short_duet.mp3";
+import N139 from "../assets/audios/qr-short_unison.mp3";
+import N140 from "../assets/audios/show must go on.mp3";
+import N141 from "../assets/audios/siempre corazon.mp3";
 import { SONG_UUIDS } from "./songs";
 
 // One stable id per unlisted song: first the reusable crypto-random ids
@@ -214,7 +230,23 @@ UNLISTED_IDS.push(
   "11111111-1111-4111-8111-000000000019",
   "11111111-1111-4111-8111-000000000020",
   "11111111-1111-4111-8111-000000000021",
-  "11111111-1111-4111-8111-000000000022"
+  "11111111-1111-4111-8111-000000000022",
+  "bf570265-55d1-4530-9f81-c0af28c01435",
+  "5eae1cce-90c9-45ef-8087-93ef63a3114c",
+  "88b8a0e5-1557-4d9b-a590-4e0b75ae5f12",
+  "a45a72b5-cb90-46cd-86b0-34f8f61d6a3d",
+  "c589ef03-5606-4236-86b0-7aa5d0944fe3",
+  "4d4afa9f-8056-45df-9e25-e2c8de8979ed",
+  "71574489-7d09-4d8c-9cf0-c0a5ac500ed6",
+  "bae07df4-e429-4332-b7f1-fd8c8acce4ee",
+  "0ec7844d-dd5c-46a8-b442-7517697b25b1",
+  "125e5543-7da8-4594-882f-110cd670ad12",
+  "1a28be0f-716f-41ac-ab2a-5475cbcf2e4e",
+  "1521c954-471a-44a7-bd16-e4648e4075b4",
+  "e1269fc2-d664-4b07-ac83-13b169794e88",
+  "4b42ea19-fff1-47d2-b3f5-67fb96454d47",
+  "5305f2e6-1b5d-43d4-9c52-c0640f5dd751",
+  "863dd5ba-56bc-4beb-a5eb-01981ad4463f"
 );
 
 export function NewSongs() {
@@ -345,5 +377,21 @@ export function NewSongs() {
     { songFile: N123, songName: { en: "When the Going Gets Tough (Swahili)", it: "When the Going Gets Tough (Swahili)" } },
     { songFile: N124, songName: { en: "Tustawi Milele", it: "Tustawi Milele" } },
     { songFile: N125, songName: { en: "We Sing Your Song", it: "Cantiamo la tua canzone" } },
+    { songFile: N126, songName: { en: "A Crescendo of Dreams", it: "A Crescendo of Dreams" } },
+    { songFile: N127, songName: { en: "Confetti Cannon Bloom", it: "Confetti Cannon Bloom" } },
+    { songFile: N128, songName: { en: "Dua Letu Ni La Amani (MP3)", it: "Dua Letu Ni La Amani (MP3)" } },
+    { songFile: N129, songName: { en: "Dua Letu Ni La Amani (WAV)", it: "Dua Letu Ni La Amani (WAV)" } },
+    { songFile: N130, songName: { en: "Mere Sajna, Naache Re", it: "Mere Sajna, Naache Re" } },
+    { songFile: N131, songName: { en: "Posthorn Threnody", it: "Posthorn Threnody" } },
+    { songFile: N132, songName: { en: "Road Ends Here (MP3)", it: "Road Ends Here (MP3)" } },
+    { songFile: N133, songName: { en: "Wako Forever", it: "Wako Forever" } },
+    { songFile: N134, songName: { en: "in my heart you belong (remix)", it: "in my heart you belong (remix)" } },
+    { songFile: N135, songName: { en: "nvgu (Cover)", it: "nvgu (Cover)" } },
+    { songFile: N136, songName: { en: "peace", it: "peace" } },
+    { songFile: N137, songName: { en: "peace (lyrics)", it: "peace (lyrics)" } },
+    { songFile: N138, songName: { en: "QR Short (Duet)", it: "QR Short (Duet)" } },
+    { songFile: N139, songName: { en: "QR Short (Unison)", it: "QR Short (Unison)" } },
+    { songFile: N140, songName: { en: "show must go on", it: "show must go on" } },
+    { songFile: N141, songName: { en: "siempre corazon", it: "siempre corazon" } },
   ].map((s, i) => ({ ...s, songId: UNLISTED_IDS[i], songAlbum: "Unlisted" }));
 }
